@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        About excerpts feed    </title>
+        <link href="about/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2011-11-02T10:44:23Z</updated>
+
+    <id>/about/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">Places</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/about/places.html"/>
+            <updated>2011-07-31T13:30:00Z</updated>
+            <published>2011-07-31T13:30:00Z</published>
+            <id>/about/places.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">About this site</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/about/index.html"/>
+            <updated>2011-06-21T10:00:00Z</updated>
+            <published>2011-06-21T10:00:00Z</published>
+            <id>/about/index.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+    </feed>

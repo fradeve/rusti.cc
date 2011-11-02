@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog full text feed    </title>
+        <link href="about/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2011-11-02T10:44:22Z</updated>
+
+    <id>/about/atom.xml/</id>
+
+            <entry>
+            <title type="html">Places</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/about/places.html"/>
+            <updated>2011-07-31T13:30:00Z</updated>
+            <published>2011-07-31T13:30:00Z</published>
+            <id>/about/places.html</id>
+            
+            <content type="html">
+                                &lt;h3 id=&#34;north_america&#34;&gt;North&amp;nbsp;America&lt;/h3&gt;
+&lt;h4 id=&#34;united_states&#34;&gt;United&amp;nbsp;States&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;San Diego, &lt;span class=&#34;caps&#34;&gt;CA&lt;/span&gt; (where I&amp;nbsp;live)&lt;/li&gt;
+&lt;li&gt;San Francisco,&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;CA&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Los Angeles,&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;CA&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;New York,&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;NY&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;State College,&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;PA&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;south_america&#34;&gt;South&amp;nbsp;America&lt;/h3&gt;
+&lt;h4 id=&#34;brazil&#34;&gt;Brazil&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Sao Paulo (lived&amp;nbsp;here) &lt;/li&gt;
+&lt;li&gt;Rio de Janeiro (lived&amp;nbsp;here)&lt;/li&gt;
+&lt;li&gt;Minas&amp;nbsp;Gerais&lt;/li&gt;
+&lt;li&gt;Santa&amp;nbsp;Catarina&lt;/li&gt;
+&lt;li&gt;Parana&lt;/li&gt;
+&lt;li&gt;Rio Grande do&amp;nbsp;Sul&lt;/li&gt;
+&lt;li&gt;Bahia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;argentina&#34;&gt;Argentina&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Buenos Aires (lived&amp;nbsp;here)&lt;/li&gt;
+&lt;li&gt;Cordoba&lt;/li&gt;
+&lt;li&gt;Misiones&lt;/li&gt;
+&lt;li&gt;Rio&amp;nbsp;Negro &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;chile&#34;&gt;Chile&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Punta&amp;nbsp;Arenas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;uruguai&#34;&gt;Uruguai&lt;/h4&gt;
+&lt;h3 id=&#34;europe&#34;&gt;Europe&lt;/h3&gt;
+&lt;h4 id=&#34;united_kindom&#34;&gt;United&amp;nbsp;Kindom&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;London, Jul&amp;nbsp;2011&lt;/li&gt;
+&lt;li&gt;Reading, Jul&amp;nbsp;2011&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;austria&#34;&gt;Austria&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Viena, Jul&amp;nbsp;2011&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;italy&#34;&gt;Italy&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Karthaus, Sep&amp;nbsp;2011&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;antarctica&#34;&gt;Antarctica&lt;/h3&gt;
+&lt;h4 id=&#34;king_george_island_dec_2003&#34;&gt;King George Island, Dec&amp;nbsp;2003&lt;/h4&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">About this site</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/about/index.html"/>
+            <updated>2011-06-21T10:00:00Z</updated>
+            <published>2011-06-21T10:00:00Z</published>
+            <id>/about/index.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;My photo&#34; src=&#34;/media/images/paolo_headshot.png&#34; title=&#34;Me in Sao Paulo, Brazil&#34; /&gt; &lt;/p&gt;
+&lt;p&gt;I am currently a PhD student at the &lt;a href=&#34;http://igpp.ucsd.edu/&#34;&gt;Institute of Geophysics &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; Planetary Physics&lt;/a&gt; at &lt;a href=&#34;http://sio.ucsd.edu&#34;&gt;Scripps Institution of Oceanography&lt;/a&gt;, &lt;a href=&#34;http://www.ucsd.edu&#34;&gt;University of California, San Diego&lt;/a&gt;. My main research interest is the study of Antarctic and Greenland ice sheets using satellite observations. I work in the &lt;a href=&#34;http://glaciology.ucsd.edu&#34;&gt;Glaciology and Remote Sensing Laboratory&lt;/a&gt; where I use a variety of space geodetic measurements to investigate changes in the Antarctic ice shelves and its relation with climate&amp;nbsp;change.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My &lt;a href=&#34;/about/paolo_cv.pdf&#34;&gt;&lt;span class=&#34;caps&#34;&gt;CV&lt;/span&gt; in &lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;education&#34;&gt;Education&lt;/h4&gt;
+&lt;p&gt;Ph.D. (ongoing) Scripps Institution of Oceanography, University of California, San&amp;nbsp;Diego&lt;/p&gt;
+&lt;p&gt;B.S., &lt;span class=&#34;caps&#34;&gt;M.S.&lt;/span&gt; University of Sao Paulo,&amp;nbsp;Brazil&lt;/p&gt;
+&lt;h4 id=&#34;research_interests&#34;&gt;Research&amp;nbsp;interests&lt;/h4&gt;
+&lt;p&gt;Satellite remote sensing of ice sheets, Ice-shelf dynamics, Ice-ocean-atmosphere interaction, Climate&amp;nbsp;change&lt;/p&gt;
+&lt;p&gt;Radar and laser altimetry, Radar interferometry and&amp;nbsp;imagery&lt;/p&gt;
+&lt;h4 id=&#34;programming&#34;&gt;Programming&lt;/h4&gt;
+&lt;p&gt;Python, C/C++, Fortran 90/95, Shell-Script,&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;XHTML&lt;/span&gt;/&lt;span class=&#34;caps&#34;&gt;CSS&lt;/span&gt;/&lt;span class=&#34;caps&#34;&gt;JS&lt;/span&gt;&lt;/p&gt;
+&lt;h4 id=&#34;languages&#34;&gt;Languages&lt;/h4&gt;
+&lt;p&gt;Portuguese, English,&amp;nbsp;Spanish&lt;/p&gt;
+&lt;h2 id=&#34;short-biography&#34;&gt;Short&amp;nbsp;biography&lt;/h2&gt;
+&lt;p&gt;Originally from Brazil, I first became interested in polar research during my undergraduate years while participating in an expedition to Antarctica for over a month as part of the Brazilian Antarctic Program. Seeking a multidisciplinary Earth Science education I studied Oceanography at University of Sao Paulo, where as an undergraduate I was first exposed to the science of remote sensing and had the opportunity to participate in several scientific cruises in the South Atlantic Ocean. During my Masters in Geophysics I gained further experience in space geodetic methods deriving the marine gravity field using satellite altimetry and shipborn measurements. After completing my &lt;span class=&#34;caps&#34;&gt;B.S.&lt;/span&gt; and &lt;span class=&#34;caps&#34;&gt;M.S.&lt;/span&gt; degrees I moved to California, &lt;span class=&#34;caps&#34;&gt;USA&lt;/span&gt;, in August 2009 to pursue a Ph.D. in Earth Sciences at Scripps/&lt;span class=&#34;caps&#34;&gt;UCSD&lt;/span&gt;. Following my fascination in observing the Earth from space, I base my research on the use of very precise satellite-based measurements to detect changes in the polar ice sheets and study the ice-climate interaction. While not in the lab I can be found in the outdoors, running, cycling, climbing, trekking and, of course, traveling to all sort of places as much as I&amp;nbsp;can.&lt;/p&gt;
+&lt;!--[Places I&#39;ve been](about/places.html).--&gt;
+
+&lt;h2 id=&#34;about-this-site&#34;&gt;About this&amp;nbsp;site&lt;/h2&gt;
+&lt;p&gt;I started this site as a place to keep information, source code and documentation available on the web (mostly for myself). So feel free to grab and modify anything you may find useful (for some inconceivable reason). If you have any comment just send me a &lt;a href=&#34;mailto:fspaolo@gmail.com&#34;&gt;message&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;why-a-minimal-design&#34;&gt;Why a minimal&amp;nbsp;design?&lt;/h2&gt;
+&lt;p&gt;The website design follows a &lt;a href=&#34;http://en.wikipedia.org/wiki/Minimalism&#34;&gt;minimalistic&lt;/a&gt; approach, most of which are modifications from a &lt;a href=&#34;http://typesites.com/&#34;&gt;couple&lt;/a&gt; &lt;a href=&#34;http://usesthis.com/&#34;&gt;of&lt;/a&gt; &lt;a href=&#34;http://www.chamainc.com/&#34;&gt;amazing&lt;/a&gt; &lt;a href=&#34;http://www.ilovetypography.com/&#34;&gt;websites&lt;/a&gt; &lt;a href=&#34;http://www.getfinch.com/blog/&#34;&gt;out&lt;/a&gt; &lt;a href=&#34;http://www.gilesrevell.com/&#34;&gt;there&lt;/a&gt; (the fact that I like design and typography doesn&amp;#8217;t mean I am any good at it!). So why a minimal design? In our visually striking polluted world a minimalistic look recovers the simplicity, sophistication and beauty of a clean and modern design. It focus just on the contents&amp;#8217; essential, reducing the subject to its fundamental features, and nothing&amp;nbsp;more&amp;#8230;&lt;/p&gt;            </content>
+        </entry>
+    </feed>
