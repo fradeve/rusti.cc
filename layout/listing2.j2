@@ -1,0 +1,24 @@
+{% extends "base.j2" %}
+{% from "macros.j2" import render_excerpt2 with context  %}
+
+{% block main %}
+
+{% block page_title %}
+    <small>
+    <time datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">
+        Posted on {{ resource.meta.created.strftime('%d %b %Y') }}
+    </time>
+    </small>
+
+    <h1 class="title"><a href='#'>{{ resource.meta.title }}</a></h1>
+{% endblock %}
+
+<ul class="listing2 clear">
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+<li>
+    {{ render_excerpt2(res) }}
+</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

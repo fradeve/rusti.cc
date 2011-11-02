@@ -1,0 +1,567 @@
+/*  
+Theme Name: Typesites
+Theme URI: http://astheria.com/
+Description: Custom theme for typesites.
+Version: 1.0
+Author: Kyle Meyer
+Author URI: http://astheria.com/
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+body {
+	background: #fff url(images/bg.gif) 0 0 repeat-x;
+	font-family: "lucida grande", "lucida sans unicode", arial, sans-serif;
+	color: #555;
+	font-size: 75%;
+	padding-bottom: 60px;
+}
+html>body {
+	font-size: 12px;
+}
+a, h2 a {
+	background: #e8e8e8;
+	color: #222;
+	text-decoration: none;
+	padding: 0.1em 0.2em 0.1em;
+	font-weight: bold;
+}
+a:hover {
+	background: #ffd200;
+	color: #181818;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: helvetica, arial, sans-serif;
+}
+h1 {
+	margin-top: 7px;
+	float: left;
+}
+h1 a {
+	background: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+}
+.post h2 {
+	font-size: 3.5em;
+	padding: 0;
+	font-weight: bold;
+	margin: 5px 0 15px 0;
+	line-height: 1.35em;
+	letter-spacing: -1px;
+}
+.post h2 a, h2 span {
+	background: #181818;
+	color: #ffd200;
+	padding: 0.2em 0.3em;
+	margin-top:2px;
+	text-shadow: 0 0 0 #181818;
+	border: none;
+}
+small.byline a {
+	border: none;
+}
+.post h2 a:hover, small.byline a:hover {
+	background: #181818;
+	color: #fff;
+}
+.post h2 span {
+	padding-top: 0.35em;
+}
+h3, h4 {
+	font-size:1.3em;
+	line-height:1.3em;
+	margin: 1em 0 0.33em;
+	font-weight: bold;
+	color: #111;
+	text-transform: capitalize;
+}
+h3 a, h4 a {
+	background: #fff;
+}
+h3 span, h4 span {
+	font-size: 0.8em;
+}
+p, small.postmetadata, pre {
+	line-height: 1.7em;
+	margin: 0 0 1.586em;
+	font-size: 1em;
+	font-family: "lucida grande", "lucida sans unicode", geneva, arial, sans-serif;
+}
+small, small.postmetadata {
+	font-size: 0.9em;
+	font-style: italic;
+	font-family: Georgia, serif;
+}
+cite {
+	font-style: italic;
+	font-weight: normal;
+	color: #999;
+	font-family: Georgia, serif;
+	display: block;
+}
+code, pre {
+	font-family: Monaco, Courier, monospace;
+	font-size: 0.9em;
+	color: #3399cc;
+	background: #f5f5f5;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 1px 2px;
+}
+pre {
+	overflow: auto;	
+}
+em {
+	font-style: italic;
+	font-family: Georgia, serif;
+}
+span.subscribe {
+	display: block;
+	line-height: 1.7em;
+	padding-top: 16px;
+	border-top: 1px solid #ddd;
+	font-size: 0.9em;
+}
+.post p, .post pre, .post h2, .post h3, .post h4, .post h5, .post h6, .post img, .post ul, .post ol, span.author, span.subscribe, .post .wpcf7-response-output, div.sociable {
+	margin-left: 233px;
+}
+.post .entry ul,
+.post .entry ol {
+	margin-left: 245px;
+}
+ol.commentlist li {
+	list-style: none;
+}
+.post a, span.about a, #content ol.commentlist li span.comment_text a {
+	border-bottom: 2px solid #e8e8e8;
+	padding: 0.1em 0.1em 0;
+	background: #fff;
+}
+.post a:hover, span.about a:hover, #content ol.commentlist li span.comment_text a:hover {
+	border-bottom: 2px solid #ffd200;
+	background: #ffd200;
+}
+.post ol, .post ul {
+	margin-bottom: 1em;
+}
+.post ol ol, .post ol ul, .post ul ol, .post ul ul {
+	margin-left: 1em;
+}
+.post li {
+	line-height: 1.5em;
+	margin: 0 0 0 6px;
+	padding: 2px 0;
+}
+.post a.site_link {
+	padding: 0;
+	margin: 0;
+	background: #fff;
+	border: none;
+}
+.post a.site_link:hover {
+	background: #fff;
+	border: none;
+}
+.post img {
+	border: 5px solid #181818;
+	margin: 0 0 1em 0;
+}
+.post img.main_screenshot {
+	margin-left: 33px;
+	width: 415px;
+	margin-bottom: 15px;
+	border: 5px solid #181818;
+}
+.post span.subscribe {
+	color: #000;
+	font-weight: bold;
+}
+ul.recent_comments {
+	margin-left: 20px;
+	list-style: lower-roman;
+}
+ul.recent_comments li {
+	margin-bottom: 1em;
+	line-height: 1.5em;
+	font-size: 11px;
+}
+ul.recent_comments li a {
+	padding: 0.2em 0.3em 0.2em 0;
+	font-weight: normal;
+}
+.post ol.archives_list li {
+	list-style: none;
+	background: none;
+	padding: 0;
+	margin: 0 0 1em;
+}
+.post ol.archives_list li small.byline, .post ol.archives_list li img.main_screenshot {
+	margin-left: 0;
+}
+.post ol.archives_list a.thumb, a.perma {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: #fff;
+	width: 425px;
+}
+.post ol.archives_list a.thumb:hover, a.perma:hover {
+	padding: 0;
+	border: none;
+	margin: 0;
+	background: #fff;
+}
+small.byline a.title {
+	text-transform: capitalize;
+}
+small.byline {
+	font-style: normal;
+	font-weight: bold;
+	background: #181818;
+	font-family: "helvetica neue", helvetica, sans-serif;
+	color: #fff;
+	padding: 8px 17px 6px 17px;
+	margin-bottom: 6px;
+	margin-left: 33px;
+}
+small.byline a {
+	padding: 0;
+	background: none;
+	color: #ffd200;
+}
+small.byline a:hover {
+	color: #fff;
+}
+span.author {
+	display: block;
+	padding: 1em 0 42px 0;
+}
+small.postmetadata {
+	font-size: 0.9em;
+}
+p.postmetadata {
+	margin-bottom: 1em;
+	color: #666;
+	font-size: 1.1em;
+	font-weight: bold;
+	background: url(images/diags.gif) 0 0 repeat;
+	font-variant: small-caps;				
+	line-height: 2.2em;
+	padding: 0 6px;
+}
+p.postmetadata a {
+	padding-top: 0;
+	background: #fff;
+}
+p.postmetadata a:hover {
+	background: #ffd200;
+}
+blockquote {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 20px;
+	font-style: italic;
+	font-family: Georgia, serif;
+	margin-left: 233px;
+	margin-bottom: 1.586em;
+}
+blockquote p {
+	margin: 0!important;
+	font-family: Georgia, serif;
+}
+blockquote.pullquote {
+	float: left;
+	width: 200px;
+	padding: 1.5em 0;
+	margin: 0;
+}
+blockquote.up {
+	margin-top: 150px;
+}
+blockquote.pullquote p {
+	margin-left: 0;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	font-family: Georgia, serif;
+	font-style: italic;
+	color: #999;
+	text-align: right;
+}
+strong {
+	font-weight: bold;
+}
+/* Layout */
+#wrapper {
+	margin: 30px auto;
+	width: 660px;
+}
+#header {
+	margin-bottom: 40px;
+}
+#nav {
+	list-style: none;
+	float: left;
+	margin-left: 91px;
+	margin-top: 17px;
+}
+#nav li {
+	line-height: 2em;
+	font-size: 11px;
+	display: inline;
+	margin-right: 10px;
+}
+#nav li a:hover {
+	color: #444;
+}
+#nav li a {
+	background: none;
+}
+div#sidebar {
+	float: left;
+	width: 200px;
+	display: block;
+}
+span.about {
+	color: #666;
+}
+div#sidebar img, div#sidebar h4, div#sidebar p {
+	margin-left: 0;
+}
+img.x {
+	margin: 0 0 60px;
+	border: 0;
+}
+#footer_columns {
+	list-style: none;
+	width: 660px;
+	margin: 0 auto;
+	border-top: 1px dotted #ddd;
+	padding-top: 20px;
+}
+#footer_columns li {
+	width: 200px;
+	float: left;
+	margin-right: 29px;
+}
+#footer_columns li.last {
+	margin-right: 0;
+}
+#footer_columns li li {
+	float: none;
+	list-style: none;
+	margin: 0;
+}
+#footer_columns li h5 {
+	margin-bottom: 0.25em;
+	color: #111;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-transform: capitalize;
+	line-height: 1.2em;
+	padding: 0 6px;
+}
+#footer_columns li a {
+	background-color:#fff;
+	color:#222;
+	display:block;
+	font-size:11px;
+	padding:2px 6px;
+	text-decoration:none;
+	line-height: 19px;
+	color: #666;
+	border: none;
+}
+#footer_columns li a:hover {
+	border: none;
+}
+a.feed {
+	background-image: url(images/feed.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+#footer_columns li a:hover {
+	background-color: #ffd200;
+	color: #181818;
+}
+#footer_columns ol {
+	margin-bottom: 1em;
+	width:
+}
+a.more-link {
+	background: #ffd200;
+}
+textarea, input {
+	font: normal 12px/1.5em "lucida grande", "lucida sans unicode", sans-serif;
+	padding: 0.2em;
+	color: #666;
+	border-top: 1px solid #7c7c7c;
+	border-left: 1px solid #9a9a9a;
+	border-right: 1px solid #c3c3c3;
+	border-bottom: 1px solid #ddd;
+	background: #fff url(images/form_shadow.gif) 0 0 repeat-x;
+}
+input {
+	padding: 0.3em;
+}
+input#s {
+	width: 110px;
+	margin-right: 5px;
+	margin-left: 6px;
+}
+img.ajax-loader {
+	display: inline;
+	margin: 5px 0 0 4px;
+	border: none;
+}
+textarea#comment {
+	width: 655px;
+	height: 175px;
+}
+textarea#message {
+	width: 425px;
+	height: 175px;
+}
+input.form_button {
+	border: 3px double #999;
+	border-top-color: #ccc;
+	border-left-color: #ccc;
+	padding: 0.25em;
+	background: #f5f5f5 none;
+	color: #333;
+	font-size: 1em;
+	font-weight: bold;
+}
+input.form_button:active {
+	border: 3px double #ccc;
+	border-top-color: #999;
+	border-left-color: #999;
+}
+input#searchsubmit {
+	font-size: 0.8em;
+	margin-bottom: 1px;
+}
+ol.commentlist {
+	list-style-type: decimal-leading-zero;
+	font-weight: bold;
+	margin:0;
+	font-family: helvetica;
+}
+ol.commentlist li {
+	padding-bottom: 15px;
+	margin-bottom: 7px;
+	padding-top: 14px;
+	color: #bbb;
+	min-height: 100px;
+	font-size: 1.5em;
+	background: url(images/diags.gif) 0 0 repeat-x;
+}
+span.comment_author {
+	padding-top: 10px;
+	width: 160px;
+	margin-right: 33px;
+	float: left;
+	display: block;
+	font-weight: normal;
+	color: #666;
+	font-size: 12px;
+	line-height: 16.5px;
+}
+span.comment_author a {
+	background: none;
+}
+small.commentmetadata {
+	color: #aaa;
+		line-height: 16.5px;
+
+}
+span.comment_text {
+	padding-top: 10px;
+	font-size: 11px;
+	width: 425px;
+	float: right;
+	display: block;
+	color: #555;
+	font-weight: normal;
+}
+span.comment_text blockquote, span.comment_text blockquote p {
+	margin-left: 0;
+}
+span.comment_text p:first-child {
+	margin-top: 0;
+}
+.clearfix {
+	clear: both;
+}
+span.content_search {
+	margin-left: 227px;
+	display: block;
+}
+div.sociable a:hover {
+	background: #fff;
+}
+/* Home page overrides */
+div.index .byline, div.index h2, div.index p {
+	margin-left: 0;
+}
+div.index h2 {
+	font-size: 4em;
+}
+div.index a.intro {
+	background: transparent 0 0 no-repeat;
+	display: block;
+	width:640px;
+	border: 5px solid #181818;
+	padding: 5px;
+	position: relative;
+	height: 377px;
+}
+div.index a.intro:hover {
+	border: 5px solid #ffd200;
+}
+div.index a.intro span {
+	background: #ffd200;
+	width: 250px;
+	padding: 5px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	margin: 0;
+}
+div.index a.intro p {
+	font-size: 1em;
+	font-family: Helvetica, arial, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	line-height: 1.2em;
+	color: #222;
+}
+
+#nav sup {
+	background: rgb(255, 210, 0);
+	text-transform: lowercase;
+	color: #000;
+	font-weight: bold;
+	padding: 0 2px;
+}
+
+/* Make Safari render commentlist correctly */
+/*/*/html*ol.commentlist:first-of-type li {padding-top:0}/* */

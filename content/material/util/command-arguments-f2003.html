@@ -1,0 +1,88 @@
+---
+title: Arguments in F2003
+description: Parsing Unix-like command line arguments with Fortran 2003 standard
+created: !!timestamp '2011-02-12 12:00:00'
+---
+
+Although I'm not a big fan of [Fortran](http://en.wikipedia.org/wiki/Fortran) programming language, when I have to use it (some times is unavoidable) I try to follow the *modern* standards as much as possible (i.e., F95/F2003/F2008). Here is a simple example of parsing Unix-like command line arguments to a program, using the F2003 standard. Note that the following example also works for any F90/F95 code compiled with [gfortran](http://gcc.gnu.org/wiki/GFortran) or [g95](http://www.g95.org/).
+
+Example:
+
+    :::bash
+
+    $ ./thisprog -h 
+
+    usage: ./thisprog [-h] [-a ARG_A] [-b ARG_B] [-c]
+
+    options:
+      -h, --help  print the help message and exit
+      -a ARG_A    print the argument ARG_A
+      -b ARG_B    print the argument ARG_B
+      -c          print the default argument for -c
+
+Code:
+
+    :::fortran
+
+    program main
+       implicit none
+     
+       character(100) :: arg, arg_a, arg_b
+       character(*), parameter :: arg_c = 'Hello!'
+       logical :: jump = .false.
+       integer :: i
+     
+       call get_arguments()
+     
+    contains
+     
+       subroutine get_arguments()
+          if (command_argument_count() < 1) call print_help()
+     
+          do i = 1, command_argument_count()  ! iterate over arguments
+             if (jump) then                   ! jump one iteration
+                 jump = .false.
+                 cycle
+             endif
+             call get_command_argument(i, arg)
+     
+             select case (arg)
+                case ('-h', '--help')
+                   call print_help()
+                case ('-a')
+                   call get_command_argument(i+1, arg_a)
+                   if (arg_a(:1) == '-' .or. arg_a == '') call print_help()  ! check the arg is correct
+                   print '(a)', trim(arg_a)
+                   jump = .true.
+                case ('-b')
+                   call get_command_argument(i+1, arg_b)
+                   if (arg_b(:1) == '-' .or. arg_b == '') call print_help()
+                   print '(a)', trim(arg_b)
+                   jump = .true.
+                case ('-c')
+                   print '(a)', arg_c
+                case default
+                   print '(a,a,/)', 'unrecognized command line option: ', trim(arg)
+                   call print_help()
+             endselect
+          enddo
+       end subroutine get_arguments
+     
+       subroutine print_help()
+          print '(a)', 'usage: ./thisprog [-h] [-a ARG_A] [-b ARG_B] [-c]'
+          print '(a)', ''
+          print '(a)', 'options:'
+          print '(a)', '  -h, --help  print the help message and exit'
+          print '(a)', '  -a ARG_A    print the argument ARG_A'
+          print '(a)', '  -b ARG_B    print the argument ARG_B'
+          print '(a)', '  -c          print the default argument for -c'
+          stop
+       end subroutine print_help
+     
+    end program main
+
+Get the code on [GitHub](https://github.com/fspaolo/code/tree/master/misc).
+
+Read more [about command line arguments](http://fortranwiki.org/fortran/show/Command-line+arguments).
+
+*Note:* this is a modified example from: [http://jblevins.org/log/cmdline](http://jblevins.org/log/cmdline).

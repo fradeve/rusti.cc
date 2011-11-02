@@ -1,0 +1,31 @@
+{% extends "base.j2" %}
+
+{% block main -%}
+<article>
+
+<small>
+<time datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">
+    Posted on {{ resource.meta.created.strftime('%d %b %Y') }}
+</time>
+</small>
+
+<h1 class="title">
+    <a href="{{ content_url(resource.url) }}">
+        {{ resource.meta.title }}
+    </a>
+</h1>
+
+<h6 class="description">
+    <a href="{{ content_url(resource.url) }}">
+        {{ resource.meta.description }}
+    </a>
+</h6>
+
+{% filter markdown|typogrify -%}
+{% mark post -%}
+{% block post -%}{%- endblock %}
+{%- endmark %}
+{%- endfilter %}
+
+</article>
+{%- endblock %}
