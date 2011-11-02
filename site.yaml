@@ -66,7 +66,8 @@ tagger:
 publisher:
     github:
         type: hyde.ext.publishers.dvcs.Git
-        path: ../fspaolo.github.com/deploy
+        #path: ../fspaolo.github.com/deploy  # publish on `deploy` folder
+        path: ../fspaolo.github.com
         url: git@github.com:fspaolo/fspaolo.github.com.git
 markdown:
     extensions:

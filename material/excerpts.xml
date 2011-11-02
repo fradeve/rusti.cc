@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        Material excerpts feed    </title>
+        <link href="material/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2011-11-02T10:44:25Z</updated>
+
+    <id>/material/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">Useful links</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/material/links/links.html"/>
+            <updated>2011-07-06T20:17:00Z</updated>
+            <published>2011-07-06T20:17:00Z</published>
+            <id>/material/links/links.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Talk AAAS 2011</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/material/talks/paolo_AAAS2011.html"/>
+            <updated>2011-06-25T10:00:00Z</updated>
+            <published>2011-06-25T10:00:00Z</published>
+            <id>/material/talks/paolo_AAAS2011.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Arguments in F2003</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/material/util/command-arguments-f2003.html"/>
+            <updated>2011-02-12T12:00:00Z</updated>
+            <published>2011-02-12T12:00:00Z</published>
+            <id>/material/util/command-arguments-f2003.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Remote machines</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/material/util/remote-machines.html"/>
+            <updated>2011-01-21T12:00:00Z</updated>
+            <published>2011-01-21T12:00:00Z</published>
+            <id>/material/util/remote-machines.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Poster AGU 2010</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/material/posters/agu2010.html"/>
+            <updated>2011-01-07T13:12:00Z</updated>
+            <published>2011-01-07T13:12:00Z</published>
+            <id>/material/posters/agu2010.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Poster IGS 2011</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/material/posters/igs2011.html"/>
+            <updated>2011-01-07T13:12:00Z</updated>
+            <published>2011-01-07T13:12:00Z</published>
+            <id>/material/posters/igs2011.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+    </feed>

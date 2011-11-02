@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        Research excerpts feed    </title>
+        <link href="research/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2011-11-02T10:44:28Z</updated>
+
+    <id>/research/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">Publications</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/research/publications.html"/>
+            <updated>2011-07-05T10:00:00Z</updated>
+            <published>2011-07-05T10:00:00Z</published>
+            <id>/research/publications.html</id>
+            
+            <content type="html">
+                &lt;p&gt;&lt;img alt=&#34;Publications&#34; src=&#34;/media/images/publications.png&#34; /&gt;&lt;/p&gt;
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Altimetry over ice</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/research/altim-ice-shelves.html"/>
+            <updated>2011-06-19T10:00:00Z</updated>
+            <published>2011-06-19T10:00:00Z</published>
+            <id>/research/altim-ice-shelves.html</id>
+            
+            <content type="html">
+                &lt;p&gt;&lt;img alt=&#34;Antarctic Peninsula&#34; src=&#34;/media/images/antpen_elev_change.png&#34; /&gt;&lt;/p&gt;
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Altimetry and gravity</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/research/altim-grav-anomalies.html"/>
+            <updated>2011-06-18T10:00:00Z</updated>
+            <published>2011-06-18T10:00:00Z</published>
+            <id>/research/altim-grav-anomalies.html</id>
+            
+            <content type="html">
+                &lt;p&gt;&lt;img alt=&#34;Gravity and Geoid Brazil&#34; src=&#34;/media/images/grav_geoid_br.png&#34; /&gt;&lt;/p&gt;
+                            </content>
+        </entry>
+    </feed>
