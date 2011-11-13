@@ -11,7 +11,7 @@ created: !!timestamp '2011-01-21 12:00:00'
 SSH certificate
 ---------------
 
-How to generate SSH keys for using a SSH connection without having to enter the password every time you log in.
+Generate SSH keys for using a SSH connection without having to enter the password every time you log in.
 
 1) Generate the key (*local machine*):
 
@@ -21,9 +21,7 @@ How to generate SSH keys for using a SSH connection without having to enter the 
     $ ssh-keygen -t rsa -C "username@youremail.com"
     $ chmod 700 id_rsa
 
-if ``.ssh`` does not exist create it: ``mkdir ~/.ssh``. ``ssh-keygen`` will create two files with the *private* and *public* keys: ``id_rsa`` and ``id_rsa.pub``. 
-
-*Note:* skip this step if you have already the keys in your machine!
+if ``.ssh`` does not exist create it: ``mkdir ~/.ssh``. ``ssh-keygen`` will create two files with the *private* and *public* keys: ``id_rsa`` and ``id_rsa.pub``. Skip this step if you have already the keys in your machine!
 
 2) Log on the remote host (*remote machine*):
 
@@ -51,7 +49,7 @@ if ``.ssh`` does not exist create it: ``mkdir ~/.ssh``.
 
 ``pbpaste`` will paste the content from the [Clipboard](http://en.wikipedia.org/wiki/Clipboard_(software)).
 
-Now you can log on the remote machine without entering the password. If necessary, give the path to your *private* key (commonly *not needed*!):
+Log on the remote machine without entering the password. If necessary, give the path to your *private* key (commonly *not needed*!):
 
     :::bash
 
@@ -63,19 +61,19 @@ Read more [about SSH keys](http://help.github.com/mac-key-setup/).
 Restart/shutdown the computer
 -----------------------------
 
-To restart a **local** computer immediately:
+Restart a **local** computer immediately:
 
     :::bash
 
     $ sudo shutdown -r now
 
-To restart a **remote** computer at a specific time:
+Restart a **remote** computer at a specific time:
 
     :::bash
 
     $ ssh -l root computer shutdown -r hhmm
 
-To shut down a **remote** computer in 30 minutes:
+Shut down a **remote** computer in 30 minutes:
 
     :::bash
 
@@ -248,7 +246,7 @@ Copy multiple files (to/from initial local dir):
     $ mget *.ext
     $ mput *.ext
 
-*Note:* for not answering (Y/N) type: ``prompt off``.
+For not answering (Y/N) type: ``prompt off``.
 
 Close the connection:
 
@@ -273,7 +271,7 @@ or
 
     $ curl ftp://ftp.host.name.edu/pub/directory/
 
-*Note:* put the trailing slashes on directories.
+Put the trailing slashes on directories.
 
 Get files:
 
@@ -305,7 +303,7 @@ Some [curl](http://en.wikipedia.org/wiki/CURL) options:
 
     --user username:password  Specify user and password.
 
-*Note:* non-recursive!
+This is non-recursive!
 
 File Transfer via HTTP
 ----------------------

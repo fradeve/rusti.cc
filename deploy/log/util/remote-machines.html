@@ -84,7 +84,7 @@
 </ul>
 </div>
 <h2 id="ssh-certificate"><span class="caps">SSH</span>&nbsp;certificate</h2>
-<p>How to generate <span class="caps">SSH</span> keys for using a <span class="caps">SSH</span> connection without having to enter the password every time you log&nbsp;in.</p>
+<p>Generate <span class="caps">SSH</span> keys for using a <span class="caps">SSH</span> connection without having to enter the password every time you log&nbsp;in.</p>
 <p>1) Generate the key (<em>local machine</em>):</p>
 <div class="codehilite"><pre><span class="nv">$ </span><span class="nb">cd</span> ~/.ssh
 <span class="nv">$ </span>ssh-keygen -t rsa -C <span class="s2">&quot;username@youremail.com&quot;</span>
@@ -92,8 +92,7 @@
 </pre></div>
 
 
-<p>if <code>.ssh</code> does not exist create it: <code>mkdir ~/.ssh</code>. <code>ssh-keygen</code> will create two files with the <em>private</em> and <em>public</em> keys: <code>id_rsa</code> and <code>id_rsa.pub</code>. </p>
-<p><em>Note:</em> skip this step if you have already the keys in your&nbsp;machine!</p>
+<p>if <code>.ssh</code> does not exist create it: <code>mkdir ~/.ssh</code>. <code>ssh-keygen</code> will create two files with the <em>private</em> and <em>public</em> keys: <code>id_rsa</code> and <code>id_rsa.pub</code>. Skip this step if you have already the keys in your&nbsp;machine!</p>
 <p>2) Log on the remote host (<em>remote machine</em>):</p>
 <div class="codehilite"><pre><span class="nv">$ </span>ssh username@remote.host.edu
 <span class="nv">$ </span><span class="nb">cd</span> ~/.ssh
@@ -114,24 +113,24 @@
 
 
 <p><code>pbpaste</code> will paste the content from the <a href="http://en.wikipedia.org/wiki/Clipboard_(software)">Clipboard</a>.</p>
-<p>Now you can log on the remote machine without entering the password. If necessary, give the path to your <em>private</em> key (commonly <em>not needed</em>!):</p>
+<p>Log on the remote machine without entering the password. If necessary, give the path to your <em>private</em> key (commonly <em>not needed</em>!):</p>
 <div class="codehilite"><pre><span class="nv">$ </span>ssh -i ~/.ssh/id_rsa username@remote.host.edu
 </pre></div>
 
 
 <p>Read more <a href="http://help.github.com/mac-key-setup/">about <span class="caps">SSH</span> keys</a>.</p>
 <h2 id="restartshutdown-the-computer">Restart/shutdown the&nbsp;computer</h2>
-<p>To restart a <strong>local</strong> computer&nbsp;immediately:</p>
+<p>Restart a <strong>local</strong> computer&nbsp;immediately:</p>
 <div class="codehilite"><pre><span class="nv">$ </span>sudo shutdown -r now
 </pre></div>
 
 
-<p>To restart a <strong>remote</strong> computer at a specific&nbsp;time:</p>
+<p>Restart a <strong>remote</strong> computer at a specific&nbsp;time:</p>
 <div class="codehilite"><pre><span class="nv">$ </span>ssh -l root computer shutdown -r hhmm
 </pre></div>
 
 
-<p>To shut down a <strong>remote</strong> computer in 30&nbsp;minutes:</p>
+<p>Shut down a <strong>remote</strong> computer in 30&nbsp;minutes:</p>
 <div class="codehilite"><pre>ssh -l root computer shutdown -h +30
 </pre></div>
 
@@ -270,7 +269,7 @@ password: anonymous
 </pre></div>
 
 
-<p><em>Note:</em> for not answering (Y/N) type: <code>prompt off</code>.</p>
+<p>For not answering (Y/N) type: <code>prompt off</code>.</p>
 <p>Close the&nbsp;connection:</p>
 <div class="codehilite"><pre><span class="nv">$ </span>quit
 </pre></div>
@@ -289,7 +288,7 @@ password: anonymous
 </pre></div>
 
 
-<p><em>Note:</em> put the trailing slashes on&nbsp;directories.</p>
+<p>Put the trailing slashes on&nbsp;directories.</p>
 <p>Get&nbsp;files:</p>
 <div class="codehilite"><pre><span class="nv">$ </span>wget ftp://ftp.host.name.edu/pub/directory/*.ext
 </pre></div>
@@ -316,7 +315,7 @@ password: anonymous
 </pre></div>
 
 
-<p><em>Note:</em>&nbsp;non-recursive!</p>
+<p>This is&nbsp;non-recursive!</p>
 <h2 id="file-transfer-via-http">File Transfer via&nbsp;<span class="caps">HTTP</span></h2>
 <p>Download a <em>whole</em> website keeping the original structure&nbsp;(mirror):</p>
 <div class="codehilite"><pre><span class="nv">$ </span>wget -m http://www.website.com/
