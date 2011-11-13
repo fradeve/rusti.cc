@@ -71,7 +71,7 @@ h1, h1 a {
     background: white;
     margin-bottom: -5px;
     }
-h2, h3, h4, h5, h2 a, h3 a, h4 a, h5 a {
+h2, h3, h4, h5, h6, h2 a, h3 a, h4 a, h5 a, h6 a {
     font-family: "Helvetica Neue", helvetica, 'Myriad Pro', sans-serif;
     font-weight: bold;
     color: #222;
