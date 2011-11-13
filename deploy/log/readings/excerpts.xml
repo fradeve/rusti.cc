@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        Research excerpts feed    </title>
+        <link href="log/readings/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2011-11-12T18:06:37Z</updated>
+
+    <id>/log/readings/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">Uncopyright</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/readings/2011/uncopyright.html"/>
+            <updated>2011-05-14T10:00:00Z</updated>
+            <published>2011-05-14T10:00:00Z</published>
+            <id>/log/readings/2011/uncopyright.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Amazonia</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/readings/2010/amazonia.html"/>
+            <updated>2010-11-11T10:00:00Z</updated>
+            <published>2010-11-11T10:00:00Z</published>
+            <id>/log/readings/2010/amazonia.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Religion</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/readings/2010/religion.html"/>
+            <updated>2010-11-09T10:00:00Z</updated>
+            <published>2010-11-09T10:00:00Z</published>
+            <id>/log/readings/2010/religion.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+    </feed>

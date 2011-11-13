@@ -14,29 +14,23 @@ context:
         tweet_via: fspaolo
         menu:
             -
-                name: Research
-                description: Research projects
-                css_class: research
-                type: node
-                url: research
-            -
                 name: Code
                 description: Source code and utilities
                 css_class: code
                 type: node
                 url: https://github.com/fspaolo/code
             -
-                name: Material
-                description: Diverse material
-                css_class: material
+                name: Research
+                description: Research projects
+                css_class: research
                 type: node
-                url: material 
+                url: research
             -
-                name: Readings
-                description: To reflect about certain things
-                css_class: readings
+                name: Log
+                description: Miscellaneous material
+                css_class: log
                 type: node
-                url: readings 
+                url: log 
             -
                 name: About
                 description: About me and this site 

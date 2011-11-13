@@ -1,0 +1,382 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Remote machines</title>
+  <meta name="description" content="Steps and tools (and some trivialities) to work with remote machines.">
+  <meta name="author" content="Fernando Paolo">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+   <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    </head>
+<body id="remote-machines">
+                  <div id="main" role="main">
+
+          <header class="clearfix">
+          </header>
+
+          <section class="content">
+          <article>
+
+<h1 class="title">
+    <a href="/log/util/remote-machines.html">
+        Remote machines
+    </a>
+</h1>
+
+<time datetime="2011-01-21">
+    Posted on 21 Jan 2011
+</time>
+
+<h6 class="description">
+    <a href="/log/util/remote-machines.html">
+        Steps and tools (and some trivialities) to work with remote machines.
+    </a>
+</h6>
+
+<p><strong>Warning:</strong> Some of the information here may be absolutely&nbsp;trivial! </p>
+<div class="toc">
+<ul>
+<li><a href="#ssh-certificate"><span class="caps">SSH</span> certificate</a><ul>
+<li><a href="#restartshutdown-the-computer">Restart/shutdown the&nbsp;computer</a></li>
+<li><a href="#job-control">Job&nbsp;control</a></li>
+<li><a href="#file-transfer-via-ssh">File transfer via&nbsp;<span class="caps">SSH</span></a></li>
+<li><a href="#file-transfer-via-ftp">File Transfer via <span class="caps">FTP</span></a><ul>
+<li><a href="#interactive">Interactive</a></li>
+<li><a href="#non-interactive">Non-interactive</a></li>
+</ul>
+</li>
+<li><a href="#file-transfer-via-http">File Transfer via&nbsp;<span class="caps">HTTP</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="ssh-certificate"><span class="caps">SSH</span>&nbsp;certificate</h2>
+<p>How to generate <span class="caps">SSH</span> keys for using a <span class="caps">SSH</span> connection without having to enter the password every time you log&nbsp;in.</p>
+<p>1) Generate the key (<em>local machine</em>):</p>
+<div class="codehilite"><pre><span class="nv">$ </span><span class="nb">cd</span> ~/.ssh
+<span class="nv">$ </span>ssh-keygen -t rsa -C <span class="s2">&quot;username@youremail.com&quot;</span>
+<span class="nv">$ </span>chmod 700 id_rsa
+</pre></div>
+
+
+<p>if <code>.ssh</code> does not exist create it: <code>mkdir ~/.ssh</code>. <code>ssh-keygen</code> will create two files with the <em>private</em> and <em>public</em> keys: <code>id_rsa</code> and <code>id_rsa.pub</code>. </p>
+<p><em>Note:</em> skip this step if you have already the keys in your&nbsp;machine!</p>
+<p>2) Log on the remote host (<em>remote machine</em>):</p>
+<div class="codehilite"><pre><span class="nv">$ </span>ssh username@remote.host.edu
+<span class="nv">$ </span><span class="nb">cd</span> ~/.ssh
+</pre></div>
+
+
+<p>if <code>.ssh</code> does not exist create it: <code>mkdir ~/.ssh</code>. </p>
+<p>3) Copy your <em>public</em> key (<em>local machine</em>):</p>
+<div class="codehilite"><pre><span class="nv">$ </span>cat ~/.ssh/id_rsa.pub | pbcopy
+</pre></div>
+
+
+<p><code>pbcopy</code> will copy the content to the <a href="http://en.wikipedia.org/wiki/Clipboard_(software)">Clipboard</a>.</p>
+<p>4) Add the <em>public</em> key to the remote host (<em>remote machine</em>):</p>
+<div class="codehilite"><pre><span class="nv">$ </span>pbpaste &gt; ~/.ssh/authorized_keys       <span class="c"># to create the file</span>
+<span class="nv">$ </span>chmod 644 authorized_keys
+</pre></div>
+
+
+<p><code>pbpaste</code> will paste the content from the <a href="http://en.wikipedia.org/wiki/Clipboard_(software)">Clipboard</a>.</p>
+<p>Now you can log on the remote machine without entering the password. If necessary, give the path to your <em>private</em> key (commonly <em>not needed</em>!):</p>
+<div class="codehilite"><pre><span class="nv">$ </span>ssh -i ~/.ssh/id_rsa username@remote.host.edu
+</pre></div>
+
+
+<p>Read more <a href="http://help.github.com/mac-key-setup/">about <span class="caps">SSH</span> keys</a>.</p>
+<h2 id="restartshutdown-the-computer">Restart/shutdown the&nbsp;computer</h2>
+<p>To restart a <strong>local</strong> computer&nbsp;immediately:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo shutdown -r now
+</pre></div>
+
+
+<p>To restart a <strong>remote</strong> computer at a specific&nbsp;time:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>ssh -l root computer shutdown -r hhmm
+</pre></div>
+
+
+<p>To shut down a <strong>remote</strong> computer in 30&nbsp;minutes:</p>
+<div class="codehilite"><pre>ssh -l root computer shutdown -h +30
+</pre></div>
+
+
+<h2 id="job-control">Job&nbsp;control</h2>
+<p>A job (or process) is defined as an &#8220;instance&#8221; of an executing&nbsp;program.</p>
+<p>List the jobs in your job&nbsp;table:</p>
+<div class="codehilite"><pre><span class="nv">$ </span><span class="nb">jobs</span>
+</pre></div>
+
+
+<p>Kill job number [2] on the&nbsp;list:</p>
+<div class="codehilite"><pre><span class="nv">$ </span><span class="nb">kill</span> %2
+</pre></div>
+
+
+<p>Display information about <em>your</em> processes&nbsp;running:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>ps
+</pre></div>
+
+
+<p>Some <code>ps</code> options::</p>
+<div class="codehilite"><pre><span class="o">-</span><span class="n">f</span>  <span class="n">Displays</span> <span class="n">full</span> <span class="n">information</span><span class="o">.</span>
+<span class="o">-</span><span class="n">e</span>  <span class="n">Displays</span> <span class="n">all</span> <span class="n">processes</span> <span class="n">running</span><span class="o">.</span>
+<span class="o">-</span><span class="n">u</span> <span class="o">*</span><span class="n">username</span><span class="o">*</span>  <span class="n">Displays</span> <span class="n">user</span> <span class="n">processes</span> <span class="n">including</span> <span class="n">those</span> <span class="n">from</span> <span class="n">other</span> <span class="n">sessions</span><span class="o">.</span>
+</pre></div>
+
+
+<p>Kill process by <span class="caps">PID</span>&nbsp;number:</p>
+<div class="codehilite"><pre><span class="nv">$ </span><span class="nb">kill </span>3682
+</pre></div>
+
+
+<p><em>Note:</em> if you try to logout and get the&nbsp;message</p>
+<div class="codehilite"><pre><span class="n">There</span> <span class="n">are</span> <span class="n">stopped</span> <span class="n">jobs</span>
+</pre></div>
+
+
+<p>list the jobs (using <code>jobs</code>) and kill the <em>stopped jobs</em> or bring them to the <em>foreground</em> (see bellow), or simply type: <code>logout logout</code> (yes,&nbsp;twice). </p>
+<p>Running a job in the <em>background</em> with <code>&amp;</code>:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>nohup commands <span class="amp">&amp;</span>
+</pre></div>
+
+
+<p><a href="http://en.wikipedia.org/wiki/Nohup">nohup</a> enables the command to keep running after the user has logged out. The output that would normally go to the terminal goes to a file called <code>nohup.out</code> if it has not already been redirected (e.g., <code>&gt; file.out</code>).</p>
+<p>Bring a <em>background</em> (or <em>stopped</em>) job to the <em>foreground</em>:</p>
+<div class="codehilite"><pre><span class="nv">$ </span><span class="nb">fg</span> %jobnumber
+</pre></div>
+
+
+<p>Place a <em>foreground</em> job in the <em>background</em> (to free the&nbsp;terminal):</p>
+<div class="codehilite"><pre><span class="nv">$ </span>^Z    <span class="c"># type Control-z to suspend de job</span>
+<span class="nv">$ </span><span class="nb">bg</span>
+</pre></div>
+
+
+<p>To monitor (in &#8220;real time&#8221;) the main processes running and information about system/hardware usage (e.g., <span class="caps">CPU</span>, memory, network,&nbsp;etc.):</p>
+<div class="codehilite"><pre><span class="nv">$ </span>top
+</pre></div>
+
+
+<p>Read more <a href="http://acs.ucsd.edu/info/jobctrl.shtml">about job control</a>.</p>
+<h2 id="file-transfer-via-ssh">File transfer via&nbsp;<span class="caps">SSH</span></h2>
+<p><a href="http://en.wikipedia.org/wiki/Secure_copy">scp</a> is an application to copy files to, from, or between different hosts. It uses <a href="http://en.wikipedia.org/wiki/Secure_Shell"><span class="caps">SSH</span></a> for data transfer and provides the same authentication and same level of security as <a href="http://en.wikipedia.org/wiki/Secure_Shell"><span class="caps">SSH</span></a>.</p>
+<p><a href="http://en.wikipedia.org/wiki/Rsync">rsync</a> is an application to analyse files and only copy the changes made to files rather than all files. See option bellow for <a href="http://en.wikipedia.org/wiki/Secure_Shell"><span class="caps">SSH</span></a> transfer protocol. The rest, similar syntax as <a href="http://en.wikipedia.org/wiki/Secure_copy">scp</a>. </p>
+<p>Copy file from <strong>remote</strong> host to <strong>local</strong>&nbsp;host:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>scp username@remote.host.edu:/remote/file.ext /local/directory
+</pre></div>
+
+
+<p>Copy file from <strong>local</strong> host to <strong>remote</strong>&nbsp;host:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>scp file.ext username@remote.host.edu:/remote/directory
+</pre></div>
+
+
+<p>Copy file from <strong>remote</strong> host1 to <strong>remote</strong>&nbsp;host2:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>scp username@remote.host1.edu:/remote/file.ext username@remote.host2.edu:/remote/directory
+</pre></div>
+
+
+<p>Copy multiple files from <strong>local</strong> host to <strong>remote</strong>&nbsp;host:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>scp file1.ext file2.ext files3.ext username@remote.host.edu:/remote/directory
+</pre></div>
+
+
+<p><em>Note:</em> for more than a few files, as <a href="http://en.wikipedia.org/wiki/Secure_copy">scp</a> spawns a new process for each file, use <a href="http://en.wikipedia.org/wiki/Rsync">rsync</a>&nbsp;instead.</p>
+<p>Some <a href="http://en.wikipedia.org/wiki/Secure_copy">scp</a>&nbsp;options::</p>
+<div class="codehilite"><pre><span class="o">-</span><span class="n">r</span>  <span class="n">Recursively</span> <span class="n">go</span> <span class="n">through</span> <span class="n">directories</span><span class="o">.</span>
+<span class="o">-</span><span class="n">C</span>  <span class="n">Compress</span> <span class="n">the</span> <span class="n">data</span> <span class="n">before</span> <span class="n">it</span> <span class="n">goes</span> <span class="n">over</span> <span class="n">the</span> <span class="n">network</span><span class="o">.</span>
+</pre></div>
+
+
+<p><em>Note:</em> <code>-r</code> does not know about symbolic links and will blindly follow&nbsp;them.</p>
+<p>Some <a href="http://en.wikipedia.org/wiki/Rsync">rsync</a>&nbsp;options::</p>
+<div class="codehilite"><pre><span class="o">-</span><span class="n">a</span>  <span class="n">Archive</span> <span class="n">mode</span><span class="p">,</span> <span class="n">preserves</span> <span class="n">file</span> <span class="n">permissions</span> <span class="ow">and</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">follow</span> <span class="n">symlinks</span><span class="o">.</span>
+<span class="o">-</span><span class="n">z</span>  <span class="n">Enable</span> <span class="n">compression</span><span class="o">.</span> <span class="n">Compress</span> <span class="nb">each</span> <span class="n">file</span> <span class="n">as</span> <span class="n">it</span> <span class="n">gets</span> <span class="n">sent</span> <span class="n">through</span> <span class="n">the</span> <span class="nb">pipe</span><span class="o">.</span>
+<span class="o">-</span><span class="n">e</span> <span class="n">ssh</span>  <span class="n">Uses</span> <span class="n"><span class="caps">SSH</span></span> <span class="n">as</span> <span class="n">the</span> <span class="n">transport</span><span class="o">.</span>
+<span class="o">-</span><span class="n">v</span>  <span class="n">Verbose</span><span class="p">,</span> <span class="n">lists</span> <span class="n">files</span> <span class="n">being</span> <span class="n">copied</span><span class="o">.</span>
+</pre></div>
+
+
+<p><em>Obs:</em> use of trailing slashes can be&nbsp;confusing.</p>
+<h2 id="file-transfer-via-ftp">File Transfer via&nbsp;<span class="caps">FTP</span></h2>
+<h3 id="interactive">Interactive</h3>
+<p><a href="http://linux.about.com/od/commands/l/blcmdl1_ftp.htm">ftp</a> is an application (client) to transfer files between computers connected via the <a href="http://en.wikipedia.org/wiki/File_Transfer_Protocol">File Transfer Protocol</a>&nbsp;(<span class="caps">FTP</span>).</p>
+<p>Connect to the remote&nbsp;host:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>ftp remote.host.edu
+</pre></div>
+
+
+<p>For a public <span class="caps">FTP</span>&nbsp;use</p>
+<div class="codehilite"><pre>user: username@youremail.com
+password: anonymous
+</pre></div>
+
+
+<p>Change dir and see&nbsp;content:</p>
+<div class="codehilite"><pre><span class="nv">$ </span><span class="nb">cd </span>dirname
+<span class="nv">$ </span>ls
+</pre></div>
+
+
+<p>Copy file from <strong>remote</strong> host to <strong>local</strong> host (initial local&nbsp;dir):</p>
+<div class="codehilite"><pre><span class="nv">$ </span>get remotefile.ext
+</pre></div>
+
+
+<p>Copy file from <strong>local</strong> host (initial local dir) to <strong>remote</strong>&nbsp;host:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>put localfile.ext
+</pre></div>
+
+
+<p>Copy multiple files (to/from initial local&nbsp;dir):</p>
+<div class="codehilite"><pre><span class="nv">$ </span>mget *.ext
+<span class="nv">$ </span>mput *.ext
+</pre></div>
+
+
+<p><em>Note:</em> for not answering (Y/N) type: <code>prompt off</code>.</p>
+<p>Close the&nbsp;connection:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>quit
+</pre></div>
+
+
+<h3 id="non-interactive">Non-interactive</h3>
+<p>For <em>non-interactive download</em> you can use <a href="http://en.wikipedia.org/wiki/Wget">wget</a> or <a href="http://en.wikipedia.org/wiki/CURL">curl</a>.</p>
+<p>List&nbsp;directory:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>wget ftp://ftp.host.name.edu/pub/directory/    <span class="c"># this will generate an index.html file</span>
+<span class="nv">$ </span>open index.html                                <span class="c"># whole directory structure listing</span>
+</pre></div>
+
+
+<p>or</p>
+<div class="codehilite"><pre><span class="nv">$ </span>curl ftp://ftp.host.name.edu/pub/directory/
+</pre></div>
+
+
+<p><em>Note:</em> put the trailing slashes on&nbsp;directories.</p>
+<p>Get&nbsp;files:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>wget ftp://ftp.host.name.edu/pub/directory/*.ext
+</pre></div>
+
+
+<p>or </p>
+<div class="codehilite"><pre><span class="nv">$ </span>curl ftp://ftp.host.name.edu/pub/directory/file.ext -O    <span class="c"># no globbing</span>
+</pre></div>
+
+
+<p>Some <a href="http://en.wikipedia.org/wiki/Wget">wget</a>&nbsp;options:</p>
+<div class="codehilite"><pre>--ftp-user<span class="o">=</span>user  Specifies the username.
+--ftp-password<span class="o">=</span>password  Specifies the password.
+-r  Recursive download.
+-m  Keep a mirror of a directory <span class="o">(</span>-r -N -l<span class="o">)</span>.
+-c  Resume getting a partially-downloaded file.
+-A  Comma-separated list of accepted extensions.
+-R  Comma-separated list of rejected extensions.
+</pre></div>
+
+
+<p>Some <a href="http://en.wikipedia.org/wiki/CURL">curl</a>&nbsp;options:</p>
+<div class="codehilite"><pre>--user username:password  Specify user and password.
+</pre></div>
+
+
+<p><em>Note:</em>&nbsp;non-recursive!</p>
+<h2 id="file-transfer-via-http">File Transfer via&nbsp;<span class="caps">HTTP</span></h2>
+<p>Download a <em>whole</em> website keeping the original structure&nbsp;(mirror):</p>
+<div class="codehilite"><pre><span class="nv">$ </span>wget -m http://www.website.com/
+</pre></div>
+
+
+<p>Download recursively <em>all</em> <code>.html</code> files from a website&nbsp;directory:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>wget -r -A.html http://www.website.com/directory/
+</pre></div>
+
+
+<p><strong>Still working on this&nbsp;page&#8230;</strong></p>
+</article>          <footer>
+          this website is proudly powered by <a href="http://www.python.org/">Python</a>,
+          build with the static site generator <a href="http://hyde.github.com/">Hyde</a>, 
+          pages and source code hosted on <a href="https://github.com/fspaolo/">GitHub</a>,
+          and all the text written using <a href="http://www.vim.org/">VIM</a>.
+          </footer>
+          </section>
+
+          <div id="sidebar">
+                              <nav class=nav>
+    <ul>
+                <li>
+            <a title="Source code and utilities"
+                class="code"
+                href="/https://github.com/fspaolo/code">
+                Code</a>
+        </li>        <li>
+            <a title="Research projects"
+                class="research"
+                href="/research">
+                Research</a>
+        </li>        <li>
+            <a title="Miscellaneous material"
+                class="log"
+                href="/log">
+                Log</a>
+        </li>        <li>
+            <a title="About me and this site"
+                class="about"
+                href="/about">
+                About</a>
+        </li>    </ul>
+</nav>
+                              </div>
+
+          </div>
+        
+    <!-- Javascript at the bottom for fast page loading -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  
+    
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+      
+  </body>
+</html>

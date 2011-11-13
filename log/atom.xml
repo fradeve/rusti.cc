@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog full text feed    </title>
+        <link href="log/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2011-11-12T18:06:35Z</updated>
+
+    <id>/log/atom.xml/</id>
+
+            <entry>
+            <title type="html">Useful links</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/links/links.html"/>
+            <updated>2011-07-06T20:17:00Z</updated>
+            <published>2011-07-06T20:17:00Z</published>
+            <id>/log/links/links.html</id>
+            
+            <content type="html">
+                                &lt;h4 id=&#34;overview_of_gridding_and_interpolation&#34;&gt;Overview of gridding and&amp;nbsp;interpolation&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.spatialanalysisonline.com/output/html/GriddingInterpolationandContouring.html&#34;&gt;spatialanalysisonline.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;style_and_documentation_of_source_code&#34;&gt;Style and documentation of source&amp;nbsp;code&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.python.org/dev/peps/pep-0007/&#34;&gt;Style Guide for C&amp;nbsp;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.python.org/dev/peps/pep-0008/&#34;&gt;Style Guide for Python&amp;nbsp;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;A Guide to NumPy/SciPy&amp;nbsp;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.python.org/dev/peps/pep-0257/&#34;&gt;Docstring&amp;nbsp;Conventions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Talk @ AAAS 2011</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/talks/aaas2011.html"/>
+            <updated>2011-06-25T10:00:00Z</updated>
+            <published>2011-06-25T10:00:00Z</published>
+            <id>/log/talks/aaas2011.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;&lt;span class=&#34;caps&#34;&gt;AAAS&lt;/span&gt; Pacific Division 92nd Annual Meeting in San Diego, Jun 2011, (for general public) &lt;a href=&#34;material/talks/paolo_aaas2011.pptx&#34;&gt;&lt;span class=&#34;caps&#34;&gt;PPT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Uncopyright</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/readings/2011/uncopyright.html"/>
+            <updated>2011-05-14T10:00:00Z</updated>
+            <published>2011-05-14T10:00:00Z</published>
+            <id>/log/readings/2011/uncopyright.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;By &lt;a href=&#34;http://leobabauta.com/&#34;&gt;Leo&amp;nbsp;Babauta&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;As some might know, I&amp;#8217;m not a fan of copyright. In fact, I&amp;#8217;ve &lt;a href=&#34;http://mnmlist.com/uncopyright/&#34;&gt;uncopyrighted&lt;/a&gt; this &lt;a href=&#34;http://mnmlist.com/&#34;&gt;blog&lt;/a&gt; and my other blog, &lt;a href=&#34;http://zenhabits.net/&#34;&gt;Zen Habits&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And while uncopyright and minimalism might seem at first glance to be unrelated, I believe they both stem from the same&amp;nbsp;mindset.&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s&amp;nbsp;how.&lt;/p&gt;
+&lt;p&gt;Copyright stems from a protective mindset, one that believes the creator owns his work, and must protect that ownership in order to profit from said work. The creator will share his work with others, but only at a price, and anyone who takes without paying, or uses it as a basis for further creations, is&amp;nbsp;stealing.&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s the copyright&amp;nbsp;mindset.&lt;/p&gt;
+&lt;p&gt;The uncopyright mindset is that of someone who gives without any guarantee of profit, who lets go of ownership and believes the world owns his creation. He hopes to contribute to the world in a small way, and if others benefit from this contribution, that&amp;#8217;s a good thing. And if others use his contribution to create something new and beautiful, that&amp;#8217;s a wonderful&amp;nbsp;thing.&lt;/p&gt;
+&lt;p&gt;The uncopyright creator lets go of ownership, because to hold on to ownership hurts the world, and to try to protect that ownership leads to unnecessary&amp;nbsp;stress.&lt;/p&gt;
+&lt;p&gt;The minimalist also eschews ownership, at least to some degree, and believes owning things doesn&amp;#8217;t make him happy. Doing things makes him happy. Helping others makes him happy. Creating makes him&amp;nbsp;happy.&lt;/p&gt;
+&lt;p&gt;It is from this place that the minimalist embraces uncopyright, and in doing so gives to the world and hopes that the world will be better for it, at least in a tiny&amp;nbsp;measure.&lt;/p&gt;
+&lt;p&gt;&amp;#8212; Leo&amp;nbsp;Babauta&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Arguments in F2003</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/util/command-arguments-f2003.html"/>
+            <updated>2011-02-12T12:00:00Z</updated>
+            <published>2011-02-12T12:00:00Z</published>
+            <id>/log/util/command-arguments-f2003.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;Although I&amp;#8217;m not a big fan of &lt;a href=&#34;http://en.wikipedia.org/wiki/Fortran&#34;&gt;Fortran&lt;/a&gt; programming language, when I have to use it (some times is unavoidable) I try to follow the &lt;em&gt;modern&lt;/em&gt; standards as much as possible (i.e., F95/F2003/F2008). Here is a simple example of parsing Unix-like command line arguments to a program, using the F2003 standard. Note that the following example also works for any F90/F95 code compiled with &lt;a href=&#34;http://gcc.gnu.org/wiki/GFortran&#34;&gt;gfortran&lt;/a&gt; or &lt;a href=&#34;http://www.g95.org/&#34;&gt;g95&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;./thisprog -h
+
+usage: ./thisprog &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-h&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-a ARG_A&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-b ARG_B&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-c&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+
+options:
+  -h, --help  print the &lt;span class=&#34;nb&#34;&gt;help &lt;/span&gt;message and &lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt;
+  -a ARG_A    print the argument ARG_A
+  -b ARG_B    print the argument ARG_B
+  -c          print the default argument &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; -c
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Code:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;k&#34;&gt;program &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;main&lt;/span&gt;
+   &lt;span class=&#34;k&#34;&gt;implicit none&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;character&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;arg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;arg_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;arg_b&lt;/span&gt;
+   &lt;span class=&#34;kt&#34;&gt;character&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;parameter&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;arg_c&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Hello!&amp;#39;&lt;/span&gt;
+   &lt;span class=&#34;kt&#34;&gt;logical&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;jump&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;.false.&lt;/span&gt;
+   &lt;span class=&#34;kt&#34;&gt;integer&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;i&lt;/span&gt;
+
+   &lt;span class=&#34;k&#34;&gt;call &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;get_arguments&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;contains&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;   subroutine &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;get_arguments&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+      &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;command_argument_count&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;call &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;print_help&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+
+      &lt;span class=&#34;k&#34;&gt;do &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;command_argument_count&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;  &lt;span class=&#34;c&#34;&gt;! iterate over arguments&lt;/span&gt;
+         &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;jump&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;                   &lt;span class=&#34;c&#34;&gt;! jump one iteration&lt;/span&gt;
+             &lt;span class=&#34;nv&#34;&gt;jump&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;.false.&lt;/span&gt;
+             &lt;span class=&#34;k&#34;&gt;cycle&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;         endif&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;         call &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;get_command_argument&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;arg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+
+         &lt;span class=&#34;k&#34;&gt;select case&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;arg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;-h&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;--help&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+               &lt;span class=&#34;k&#34;&gt;call &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;print_help&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+            &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;-a&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+               &lt;span class=&#34;k&#34;&gt;call &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;get_command_argument&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;arg_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+               &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;arg_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;-&amp;#39;&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;.or.&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;arg_a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;call &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;print_help&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;  &lt;span class=&#34;c&#34;&gt;! check the arg is correct&lt;/span&gt;
+               &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;trim&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;arg_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+               &lt;span class=&#34;nv&#34;&gt;jump&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;.true.&lt;/span&gt;
+            &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;-b&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+               &lt;span class=&#34;k&#34;&gt;call &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;get_command_argument&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;arg_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+               &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;arg_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;-&amp;#39;&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;.or.&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;arg_b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;call &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;print_help&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+               &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;trim&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;arg_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+               &lt;span class=&#34;nv&#34;&gt;jump&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;.true.&lt;/span&gt;
+            &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;-c&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+               &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;arg_c&lt;/span&gt;
+            &lt;span class=&#34;k&#34;&gt;case &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;default&lt;/span&gt;
+               &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a,a,/)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;unrecognized command line option: &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;trim&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;arg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+               &lt;span class=&#34;k&#34;&gt;call &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;print_help&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+         &lt;span class=&#34;nv&#34;&gt;endselect&lt;/span&gt;
+      &lt;span class=&#34;nv&#34;&gt;enddo&lt;/span&gt;
+   &lt;span class=&#34;k&#34;&gt;end subroutine &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;get_arguments&lt;/span&gt;
+
+   &lt;span class=&#34;k&#34;&gt;subroutine &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;print_help&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+      &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;usage: ./thisprog [-h] [-a ARG_A] [-b ARG_B] [-c]&amp;#39;&lt;/span&gt;
+      &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+      &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;options:&amp;#39;&lt;/span&gt;
+      &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;  -h, --help  print the help message and exit&amp;#39;&lt;/span&gt;
+      &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;  -a ARG_A    print the argument ARG_A&amp;#39;&lt;/span&gt;
+      &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;  -b ARG_B    print the argument ARG_B&amp;#39;&lt;/span&gt;
+      &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;(a)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;  -c          print the default argument for -c&amp;#39;&lt;/span&gt;
+      &lt;span class=&#34;k&#34;&gt;stop&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;   end subroutine &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;print_help&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;end program &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;main&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Get the code on &lt;a href=&#34;https://github.com/fspaolo/code/tree/master/misc&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Read more &lt;a href=&#34;http://fortranwiki.org/fortran/show/Command-line+arguments&#34;&gt;about command line arguments&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; this is a modified example from: &lt;a href=&#34;http://jblevins.org/log/cmdline&#34;&gt;http://jblevins.org/log/cmdline&lt;/a&gt;.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Remote machines</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/util/remote-machines.html"/>
+            <updated>2011-01-21T12:00:00Z</updated>
+            <published>2011-01-21T12:00:00Z</published>
+            <id>/log/util/remote-machines.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Some of the information here may be absolutely&amp;nbsp;trivial! &lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#ssh-certificate&#34;&gt;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; certificate&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#restartshutdown-the-computer&#34;&gt;Restart/shutdown the&amp;nbsp;computer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#job-control&#34;&gt;Job&amp;nbsp;control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#file-transfer-via-ssh&#34;&gt;File transfer via&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#file-transfer-via-ftp&#34;&gt;File Transfer via &lt;span class=&#34;caps&#34;&gt;FTP&lt;/span&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#interactive&#34;&gt;Interactive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#non-interactive&#34;&gt;Non-interactive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#file-transfer-via-http&#34;&gt;File Transfer via&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;HTTP&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ssh-certificate&#34;&gt;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt;&amp;nbsp;certificate&lt;/h2&gt;
+&lt;p&gt;How to generate &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; keys for using a &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; connection without having to enter the password every time you log&amp;nbsp;in.&lt;/p&gt;
+&lt;p&gt;1) Generate the key (&lt;em&gt;local machine&lt;/em&gt;):&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ~/.ssh
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ssh-keygen -t rsa -C &lt;span class=&#34;s2&#34;&gt;&amp;quot;username@youremail.com&amp;quot;&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;chmod 700 id_rsa
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;if &lt;code&gt;.ssh&lt;/code&gt; does not exist create it: &lt;code&gt;mkdir ~/.ssh&lt;/code&gt;. &lt;code&gt;ssh-keygen&lt;/code&gt; will create two files with the &lt;em&gt;private&lt;/em&gt; and &lt;em&gt;public&lt;/em&gt; keys: &lt;code&gt;id_rsa&lt;/code&gt; and &lt;code&gt;id_rsa.pub&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; skip this step if you have already the keys in your&amp;nbsp;machine!&lt;/p&gt;
+&lt;p&gt;2) Log on the remote host (&lt;em&gt;remote machine&lt;/em&gt;):&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ssh username@remote.host.edu
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ~/.ssh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;if &lt;code&gt;.ssh&lt;/code&gt; does not exist create it: &lt;code&gt;mkdir ~/.ssh&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;3) Copy your &lt;em&gt;public&lt;/em&gt; key (&lt;em&gt;local machine&lt;/em&gt;):&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;cat ~/.ssh/id_rsa.pub | pbcopy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;pbcopy&lt;/code&gt; will copy the content to the &lt;a href=&#34;http://en.wikipedia.org/wiki/Clipboard_(software)&#34;&gt;Clipboard&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;4) Add the &lt;em&gt;public&lt;/em&gt; key to the remote host (&lt;em&gt;remote machine&lt;/em&gt;):&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;pbpaste &amp;gt; ~/.ssh/authorized_keys       &lt;span class=&#34;c&#34;&gt;# to create the file&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;chmod 644 authorized_keys
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;pbpaste&lt;/code&gt; will paste the content from the &lt;a href=&#34;http://en.wikipedia.org/wiki/Clipboard_(software)&#34;&gt;Clipboard&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now you can log on the remote machine without entering the password. If necessary, give the path to your &lt;em&gt;private&lt;/em&gt; key (commonly &lt;em&gt;not needed&lt;/em&gt;!):&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ssh -i ~/.ssh/id_rsa username@remote.host.edu
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Read more &lt;a href=&#34;http://help.github.com/mac-key-setup/&#34;&gt;about &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; keys&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;restartshutdown-the-computer&#34;&gt;Restart/shutdown the&amp;nbsp;computer&lt;/h2&gt;
+&lt;p&gt;To restart a &lt;strong&gt;local&lt;/strong&gt; computer&amp;nbsp;immediately:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;sudo shutdown -r now
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To restart a &lt;strong&gt;remote&lt;/strong&gt; computer at a specific&amp;nbsp;time:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ssh -l root computer shutdown -r hhmm
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To shut down a &lt;strong&gt;remote&lt;/strong&gt; computer in 30&amp;nbsp;minutes:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;ssh -l root computer shutdown -h +30
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id=&#34;job-control&#34;&gt;Job&amp;nbsp;control&lt;/h2&gt;
+&lt;p&gt;A job (or process) is defined as an &amp;#8220;instance&amp;#8221; of an executing&amp;nbsp;program.&lt;/p&gt;
+&lt;p&gt;List the jobs in your job&amp;nbsp;table:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;jobs&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Kill job number [2] on the&amp;nbsp;list:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;kill&lt;/span&gt; %2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Display information about &lt;em&gt;your&lt;/em&gt; processes&amp;nbsp;running:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ps
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Some &lt;code&gt;ps&lt;/code&gt; options::&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;Displays&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;full&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;information&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;Displays&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;all&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;processes&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;running&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;Displays&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;user&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;processes&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;including&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;those&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;other&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sessions&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Kill process by &lt;span class=&#34;caps&#34;&gt;PID&lt;/span&gt;&amp;nbsp;number:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;kill &lt;/span&gt;3682
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; if you try to logout and get the&amp;nbsp;message&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;n&#34;&gt;There&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;are&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;stopped&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;jobs&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;list the jobs (using &lt;code&gt;jobs&lt;/code&gt;) and kill the &lt;em&gt;stopped jobs&lt;/em&gt; or bring them to the &lt;em&gt;foreground&lt;/em&gt; (see bellow), or simply type: &lt;code&gt;logout logout&lt;/code&gt; (yes,&amp;nbsp;twice). &lt;/p&gt;
+&lt;p&gt;Running a job in the &lt;em&gt;background&lt;/em&gt; with &lt;code&gt;&amp;amp;&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;nohup commands &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Nohup&#34;&gt;nohup&lt;/a&gt; enables the command to keep running after the user has logged out. The output that would normally go to the terminal goes to a file called &lt;code&gt;nohup.out&lt;/code&gt; if it has not already been redirected (e.g., &lt;code&gt;&amp;gt; file.out&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Bring a &lt;em&gt;background&lt;/em&gt; (or &lt;em&gt;stopped&lt;/em&gt;) job to the &lt;em&gt;foreground&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;fg&lt;/span&gt; %jobnumber
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Place a &lt;em&gt;foreground&lt;/em&gt; job in the &lt;em&gt;background&lt;/em&gt; (to free the&amp;nbsp;terminal):&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;^Z    &lt;span class=&#34;c&#34;&gt;# type Control-z to suspend de job&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;bg&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To monitor (in &amp;#8220;real time&amp;#8221;) the main processes running and information about system/hardware usage (e.g., &lt;span class=&#34;caps&#34;&gt;CPU&lt;/span&gt;, memory, network,&amp;nbsp;etc.):&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;top
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Read more &lt;a href=&#34;http://acs.ucsd.edu/info/jobctrl.shtml&#34;&gt;about job control&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;file-transfer-via-ssh&#34;&gt;File transfer via&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Secure_copy&#34;&gt;scp&lt;/a&gt; is an application to copy files to, from, or between different hosts. It uses &lt;a href=&#34;http://en.wikipedia.org/wiki/Secure_Shell&#34;&gt;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt;&lt;/a&gt; for data transfer and provides the same authentication and same level of security as &lt;a href=&#34;http://en.wikipedia.org/wiki/Secure_Shell&#34;&gt;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Rsync&#34;&gt;rsync&lt;/a&gt; is an application to analyse files and only copy the changes made to files rather than all files. See option bellow for &lt;a href=&#34;http://en.wikipedia.org/wiki/Secure_Shell&#34;&gt;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt;&lt;/a&gt; transfer protocol. The rest, similar syntax as &lt;a href=&#34;http://en.wikipedia.org/wiki/Secure_copy&#34;&gt;scp&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Copy file from &lt;strong&gt;remote&lt;/strong&gt; host to &lt;strong&gt;local&lt;/strong&gt;&amp;nbsp;host:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;scp username@remote.host.edu:/remote/file.ext /local/directory
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copy file from &lt;strong&gt;local&lt;/strong&gt; host to &lt;strong&gt;remote&lt;/strong&gt;&amp;nbsp;host:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;scp file.ext username@remote.host.edu:/remote/directory
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copy file from &lt;strong&gt;remote&lt;/strong&gt; host1 to &lt;strong&gt;remote&lt;/strong&gt;&amp;nbsp;host2:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;scp username@remote.host1.edu:/remote/file.ext username@remote.host2.edu:/remote/directory
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copy multiple files from &lt;strong&gt;local&lt;/strong&gt; host to &lt;strong&gt;remote&lt;/strong&gt;&amp;nbsp;host:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;scp file1.ext file2.ext files3.ext username@remote.host.edu:/remote/directory
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; for more than a few files, as &lt;a href=&#34;http://en.wikipedia.org/wiki/Secure_copy&#34;&gt;scp&lt;/a&gt; spawns a new process for each file, use &lt;a href=&#34;http://en.wikipedia.org/wiki/Rsync&#34;&gt;rsync&lt;/a&gt;&amp;nbsp;instead.&lt;/p&gt;
+&lt;p&gt;Some &lt;a href=&#34;http://en.wikipedia.org/wiki/Secure_copy&#34;&gt;scp&lt;/a&gt;&amp;nbsp;options::&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;r&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;Recursively&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;go&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;through&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;directories&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;C&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;Compress&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;before&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;it&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;goes&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;over&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;network&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; &lt;code&gt;-r&lt;/code&gt; does not know about symbolic links and will blindly follow&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;Some &lt;a href=&#34;http://en.wikipedia.org/wiki/Rsync&#34;&gt;rsync&lt;/a&gt;&amp;nbsp;options::&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;Archive&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;preserves&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;permissions&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;does&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;follow&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;symlinks&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;z&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;Enable&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;compression&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Compress&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;each&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;it&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;gets&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sent&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;through&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ssh&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;Uses&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;transport&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;Verbose&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lists&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;files&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;being&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;copied&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Obs:&lt;/em&gt; use of trailing slashes can be&amp;nbsp;confusing.&lt;/p&gt;
+&lt;h2 id=&#34;file-transfer-via-ftp&#34;&gt;File Transfer via&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;FTP&lt;/span&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;interactive&#34;&gt;Interactive&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://linux.about.com/od/commands/l/blcmdl1_ftp.htm&#34;&gt;ftp&lt;/a&gt; is an application (client) to transfer files between computers connected via the &lt;a href=&#34;http://en.wikipedia.org/wiki/File_Transfer_Protocol&#34;&gt;File Transfer Protocol&lt;/a&gt;&amp;nbsp;(&lt;span class=&#34;caps&#34;&gt;FTP&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;Connect to the remote&amp;nbsp;host:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ftp remote.host.edu
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;For a public &lt;span class=&#34;caps&#34;&gt;FTP&lt;/span&gt;&amp;nbsp;use&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;user: username@youremail.com
+password: anonymous
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Change dir and see&amp;nbsp;content:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd &lt;/span&gt;dirname
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ls
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copy file from &lt;strong&gt;remote&lt;/strong&gt; host to &lt;strong&gt;local&lt;/strong&gt; host (initial local&amp;nbsp;dir):&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;get remotefile.ext
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copy file from &lt;strong&gt;local&lt;/strong&gt; host (initial local dir) to &lt;strong&gt;remote&lt;/strong&gt;&amp;nbsp;host:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;put localfile.ext
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copy multiple files (to/from initial local&amp;nbsp;dir):&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;mget *.ext
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;mput *.ext
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; for not answering (Y/N) type: &lt;code&gt;prompt off&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Close the&amp;nbsp;connection:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;quit
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id=&#34;non-interactive&#34;&gt;Non-interactive&lt;/h3&gt;
+&lt;p&gt;For &lt;em&gt;non-interactive download&lt;/em&gt; you can use &lt;a href=&#34;http://en.wikipedia.org/wiki/Wget&#34;&gt;wget&lt;/a&gt; or &lt;a href=&#34;http://en.wikipedia.org/wiki/CURL&#34;&gt;curl&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;List&amp;nbsp;directory:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;wget ftp://ftp.host.name.edu/pub/directory/    &lt;span class=&#34;c&#34;&gt;# this will generate an index.html file&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;open index.html                                &lt;span class=&#34;c&#34;&gt;# whole directory structure listing&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;curl ftp://ftp.host.name.edu/pub/directory/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; put the trailing slashes on&amp;nbsp;directories.&lt;/p&gt;
+&lt;p&gt;Get&amp;nbsp;files:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;wget ftp://ftp.host.name.edu/pub/directory/*.ext
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or &lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;curl ftp://ftp.host.name.edu/pub/directory/file.ext -O    &lt;span class=&#34;c&#34;&gt;# no globbing&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Some &lt;a href=&#34;http://en.wikipedia.org/wiki/Wget&#34;&gt;wget&lt;/a&gt;&amp;nbsp;options:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;--ftp-user&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;user  Specifies the username.
+--ftp-password&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;password  Specifies the password.
+-r  Recursive download.
+-m  Keep a mirror of a directory &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;-r -N -l&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.
+-c  Resume getting a partially-downloaded file.
+-A  Comma-separated list of accepted extensions.
+-R  Comma-separated list of rejected extensions.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Some &lt;a href=&#34;http://en.wikipedia.org/wiki/CURL&#34;&gt;curl&lt;/a&gt;&amp;nbsp;options:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;--user username:password  Specify user and password.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt;&amp;nbsp;non-recursive!&lt;/p&gt;
+&lt;h2 id=&#34;file-transfer-via-http&#34;&gt;File Transfer via&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;HTTP&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;Download a &lt;em&gt;whole&lt;/em&gt; website keeping the original structure&amp;nbsp;(mirror):&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;wget -m http://www.website.com/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Download recursively &lt;em&gt;all&lt;/em&gt; &lt;code&gt;.html&lt;/code&gt; files from a website&amp;nbsp;directory:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;wget -r -A.html http://www.website.com/directory/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Still working on this&amp;nbsp;page&amp;#8230;&lt;/strong&gt;&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Poster @ AGU 2010</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/posters/agu2010.html"/>
+            <updated>2011-01-07T13:12:00Z</updated>
+            <published>2011-01-07T13:12:00Z</published>
+            <id>/log/posters/agu2010.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;poster AGU 2010&#34; src=&#34;/media/images/paolo_agu2010.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This poster was made using &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; with the &lt;a href=&#34;http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php&#34;&gt;Beamerposter&lt;/a&gt; package. I&amp;#8217;ve modified one of the default themes to my own needs (and taste). If you are interested in using (and modifying) this template you can download the tarball with the LaTeX source code and&amp;nbsp;figures:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://quakeinfo.ucsd.edu/~fpaolo/files/paolo_agu2010.tar.bz2&#34;&gt;paolo_agu2010.tar.bz2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://quakeinfo.ucsd.edu/~fpaolo/files/paolo_agu2010.pdf&#34;&gt;paolo_agu2010.pdf&lt;/a&gt; (81&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;MB&lt;/span&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To generate a &lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt; poster first decompress the&amp;nbsp;tarball:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;tar xjf paolo_agu2010.tar.bz2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and then compile the source&amp;nbsp;code:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd &lt;/span&gt;paolo_agu2010    
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;pdflatex paolo_agu2010.tex
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That&amp;#8217;s&amp;nbsp;all!&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Poster @ IGS 2011</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/posters/igs2011.html"/>
+            <updated>2011-01-07T13:12:00Z</updated>
+            <published>2011-01-07T13:12:00Z</published>
+            <id>/log/posters/igs2011.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;poster AGU 2010&#34; src=&#34;/media/images/paoloAGU2010.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This poster was made using &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; with the &lt;a href=&#34;http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php&#34;&gt;Beamerposter&lt;/a&gt; package. I&amp;#8217;ve modified one of the default themes to my own needs (and taste). If you are interested in using (and modifying) this template you can download the tarball with the LaTeX source code and&amp;nbsp;figures:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://quakeinfo.ucsd.edu/~fpaolo/files/paoloAGU2010.tar.bz2&#34;&gt;paoloAGU2010.tar.bz2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://quakeinfo.ucsd.edu/~fpaolo/files/paoloAGU2010.pdf&#34;&gt;paoloAGU2010.pdf&lt;/a&gt; (81&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;MB&lt;/span&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To generate a &lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt; poster first decompress the&amp;nbsp;tarball:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;tar xjf paoloAGU2010.tar.bz2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and then compile the source&amp;nbsp;code:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd &lt;/span&gt;paoloAGU2010    
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;pdflatex paoloAGU2010.tex
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That&amp;#8217;s&amp;nbsp;all!&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Amazonia</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/readings/2010/amazonia.html"/>
+            <updated>2010-11-11T10:00:00Z</updated>
+            <published>2010-11-11T10:00:00Z</published>
+            <id>/log/readings/2010/amazonia.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;By &lt;a href=&#34;http://en.wikipedia.org/wiki/Cristovam_Buarque&#34;&gt;Cristovam&amp;nbsp;Buarque&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;During a recent discussion, in the United States, someone asked my opinion regarding the internationalization of the Amazon Region. The youngster asserted that he expected a response of a humanist and not of a&amp;nbsp;Brazilian.&lt;/p&gt;
+&lt;p&gt;This was the first time anyone had established the humanist viewpoint as the starting point for my response. In fact, as a Brazilian I would have responded simply against internationalization of the Amazon Region. Even if our governments have not given the attention that this treasure deserves, it is ours. I responded that, as a humanist, realizing the risk of environmental destruction that threatens the Amazon Region, I could imagine its internationalization, just as for everything else that is important to&amp;nbsp;humanity.&lt;/p&gt;
+&lt;p&gt;If the Amazon Region, from a humanist&amp;#8217;s point of view, has to be internationalized, then we should internationalize the oil reserves of the entire world as well. Oil is just as important to the well being of humanity as the Amazon Region for our future. Nevertheless, the owners of oil reserves feel it is in their right to increase or decrease oil production and to raise or lower the price. The rich of the world, feel they have the right to burn this valuable possession of humanity. Similarly, the financial capital of the wealthy nations should be internationalized. If the Amazon Region is a natural reserve for every human being, then it could not be burned down by the decision of a landowner or a country. To burn down the Amazon Region is so tragic, as the unemployment provoked by the arbitrary decisions of world wide speculators. We cannot permit that the world&amp;#8217;s financial reserves serve to burn down entire nations according to the whims of&amp;nbsp;speculation.&lt;/p&gt;
+&lt;p&gt;Before the (internationalization of the) Amazon Region, I would like to see the internationalization of all the world&amp;#8217;s great museums. The Lourve cannot belong only to France. Each museum in the world is a guardian for the most beautiful works produced by the human genius. It cannot be permitted that these cultural possessions, as the natural posession of the Amazon Region, can be manipulated or be destroyed according to the whims of an owner or a country. Recently, a Japanese millionaire decided to have a painting of a grand master burried with him in the grave. This painting should have been&amp;nbsp;internationalized.&lt;/p&gt;
+&lt;p&gt;At the time of the meeting, in which this question came up, the United Nations convened the Forum of the Millennium and the presidents of several countries had difficulties in attending due to barriers (they faced) at the border. Therefore, I contend that New York, as the base of the United Nations, should be internationalized. At least Manhattan should belong to all of humanity. Similarly Paris, Venice, Rome, London, Rio de Janeiro, Brazilia, Recife, every city with its own beauty, its own history should belong to the whole&amp;nbsp;world.&lt;/p&gt;
+&lt;p&gt;If the United States wants to internationalize the Amazon Region, due to the risk of leaving it in Brazilian hands, then we should internationalize all the nuclear stockpiles of the United States. Particularly since they have already shown that they are capable of using these weapons, causing a destruction thousands of times greater than the sad fires taken place in the Brazilian forests.
+During their debates, the current &lt;span class=&#34;caps&#34;&gt;U.S.&lt;/span&gt; presidential candidates have defended the idea of internationalizing the world forest reserves in exchange for the debt. We could begin to use this debt to guarantee the right of every child in the world to attend school. We could internationalize the children treating all of them, regardless of their birthplace, as a posession which deserves the care and attention of the entire world. Even more so than the Amazon Region. When the world leaders attend to the world΄s poor children as possessions of Humanity, they will no longer permit that these children work when they should be studying, that they die when they should be&amp;nbsp;living.&lt;/p&gt;
+&lt;p&gt;As a humanist I accept to defend the internationalization of the world. So long as the world treats me as a Brazilian, I will fight so that our Amazon Region will be ours. Only&amp;nbsp;ours.&lt;/p&gt;
+&lt;p&gt;&amp;#8212; Cristovam&amp;nbsp;Buarque&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Religion</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/readings/2010/religion.html"/>
+            <updated>2010-11-09T10:00:00Z</updated>
+            <published>2010-11-09T10:00:00Z</published>
+            <id>/log/readings/2010/religion.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;By &lt;a href=&#34;http://en.wikipedia.org/wiki/Paul_Dirac&#34;&gt;Paul&amp;nbsp;Dirac&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;I cannot understand why we idle discussing religion. If we are honest - and scientists have to be - we must admit that religion is a jumble of false assertions, with no basis in reality. The very idea of God is a product of the human imagination. It is quite understandable why primitive people, who were so much more exposed to the overpowering forces of nature than we are today, should have personified these forces in fear and trembling. But nowadays, when we understand so many natural processes, we have no need for such solutions. I can&amp;#8217;t for the life of me see how the postulate of an Almighty God helps us in any way. What I do see is that this assumption leads to such unproductive questions as why God allows so much misery and injustice, the exploitation of the poor by the rich and all the other horrors He might have prevented. If religion is still being taught, it is by no means because its ideas still convince us, but simply because some of us want to keep the lower classes quiet. Quiet people are much easier to govern than clamorous and dissatisfied ones. They are also much easier to&amp;nbsp;exploit.&lt;/p&gt;
+&lt;p&gt;Religion is a kind of opium that allows a nation to lull itself into wishful dreams and so forget the injustices that are being perpetrated against the people. Hence the close alliance between those two great political forces, the State and the Church. Both need the illusion that a kindly God rewards - in heaven if not on earth - all those who have not risen up against injustice, who have done their duty quietly and uncomplainingly. That is precisely why the honest assertion that God is a mere product of the human imagination is branded as the worst of all mortal&amp;nbsp;sins.&lt;/p&gt;
+&lt;p&gt;&amp;#8212; Paul&amp;nbsp;Dirac&lt;/p&gt;            </content>
+        </entry>
+    </feed>

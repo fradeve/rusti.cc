@@ -51,34 +51,11 @@
 </head>
 <body id="{{ resource.meta.id if resource.meta.id else resource.slug }}">
   {% block content %}
-      <div id="bar"></div>
       {% block container %}
           <div id="main" role="main">
 
           <header class="clearfix">
           </header>
-
-          <div id="sidebar">
-          <div id="logo">
-          <a href=index.html><img src="/media/images/logo3.png" /></a>
-          </div>
-          <h4>About this site</h4>
-          <p>Welcome to my website! This is the place where I keep stuff
-          related to my work (or anything I may find useful) online.</p>
-          <h4>Navigation</h4>
-          {% block nav %}
-          {% from "macros.j2" import render_nav with context %}
-          {{ render_nav(menu, 'nav') }}
-          {% endblock %}
-          {% block header -%}
-          {%- endblock %}
-          <h4>Most recent</h4>
-          <p>SLP variability in the Amundsen Sea, to submit <a href="#">more &raquo;</a></p>
-          <p>Poster presented at IGS/FRIS Meeting in San Diego. <a href="#">more &raquo;</a></p>
-          <!--
-          <p>SLP variability in the Amundsen Sea, GRL. <a href="#">more &raquo;</a></p>
-          -->
-          </div>
 
           <section class="content">
           {% block main %}
@@ -87,9 +64,18 @@
           this website is proudly powered by <a href="http://www.python.org/">Python</a>,
           build with the static site generator <a href="http://hyde.github.com/">Hyde</a>, 
           pages and source code hosted on <a href="https://github.com/fspaolo/">GitHub</a>,
-          and all the text written using <a href="http://www.vim.org/">VIM
+          and all the text written using <a href="http://www.vim.org/">VIM</a>.
           </footer>
           </section>
+
+          <div id="sidebar">
+          {% block nav %}
+          {% from "macros.j2" import render_nav with context %}
+          {{ render_nav(menu, 'nav') }}
+          {% endblock %}
+          {% block header -%}
+          {%- endblock %}
+          </div>
 
           </div>
       {% endblock container %}

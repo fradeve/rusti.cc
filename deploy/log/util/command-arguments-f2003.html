@@ -1,0 +1,196 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Arguments in F2003</title>
+  <meta name="description" content="Parsing Unix-like command line arguments with Fortran 2003 standard">
+  <meta name="author" content="Fernando Paolo">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+   <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    </head>
+<body id="command-arguments-f2003">
+                  <div id="main" role="main">
+
+          <header class="clearfix">
+          </header>
+
+          <section class="content">
+          <article>
+
+<h1 class="title">
+    <a href="/log/util/command-arguments-f2003.html">
+        Arguments in F2003
+    </a>
+</h1>
+
+<time datetime="2011-02-12">
+    Posted on 12 Feb 2011
+</time>
+
+<h6 class="description">
+    <a href="/log/util/command-arguments-f2003.html">
+        Parsing Unix-like command line arguments with Fortran 2003 standard
+    </a>
+</h6>
+
+<p>Although I&#8217;m not a big fan of <a href="http://en.wikipedia.org/wiki/Fortran">Fortran</a> programming language, when I have to use it (some times is unavoidable) I try to follow the <em>modern</em> standards as much as possible (i.e., F95/F2003/F2008). Here is a simple example of parsing Unix-like command line arguments to a program, using the F2003 standard. Note that the following example also works for any F90/F95 code compiled with <a href="http://gcc.gnu.org/wiki/GFortran">gfortran</a> or <a href="http://www.g95.org/">g95</a>.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>./thisprog -h
+
+usage: ./thisprog <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-a ARG_A<span class="o">]</span> <span class="o">[</span>-b ARG_B<span class="o">]</span> <span class="o">[</span>-c<span class="o">]</span>
+
+options:
+  -h, --help  print the <span class="nb">help </span>message and <span class="nb">exit</span>
+  -a ARG_A    print the argument ARG_A
+  -b ARG_B    print the argument ARG_B
+  -c          print the default argument <span class="k">for</span> -c
+</pre></div>
+
+
+<p>Code:</p>
+<div class="codehilite"><pre><span class="k">program </span><span class="nv">main</span>
+   <span class="k">implicit none</span>
+
+<span class="k">   </span><span class="kt">character</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="kd">::</span> <span class="nv">arg</span><span class="p">,</span> <span class="nv">arg_a</span><span class="p">,</span> <span class="nv">arg_b</span>
+   <span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span> <span class="k">parameter</span> <span class="kd">::</span> <span class="nv">arg_c</span> <span class="o">=</span> <span class="s1">&#39;Hello!&#39;</span>
+   <span class="kt">logical</span> <span class="kd">::</span> <span class="nv">jump</span> <span class="o">=</span> <span class="nb">.false.</span>
+   <span class="kt">integer</span> <span class="kd">::</span> <span class="nv">i</span>
+
+   <span class="k">call </span><span class="nv">get_arguments</span><span class="p">()</span>
+
+<span class="k">contains</span>
+
+<span class="k">   subroutine </span><span class="nv">get_arguments</span><span class="p">()</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nv">command_argument_count</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">call </span><span class="nv">print_help</span><span class="p">()</span>
+
+      <span class="k">do </span><span class="nv">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">command_argument_count</span><span class="p">()</span>  <span class="c">! iterate over arguments</span>
+         <span class="k">if</span> <span class="p">(</span><span class="nv">jump</span><span class="p">)</span> <span class="k">then</span>                   <span class="c">! jump one iteration</span>
+             <span class="nv">jump</span> <span class="o">=</span> <span class="nb">.false.</span>
+             <span class="k">cycle</span>
+<span class="k">         endif</span>
+<span class="k">         call </span><span class="nv">get_command_argument</span><span class="p">(</span><span class="nv">i</span><span class="p">,</span> <span class="nv">arg</span><span class="p">)</span>
+
+         <span class="k">select case</span> <span class="p">(</span><span class="nv">arg</span><span class="p">)</span>
+            <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-h&#39;</span><span class="p">,</span> <span class="s1">&#39;--help&#39;</span><span class="p">)</span>
+               <span class="k">call </span><span class="nv">print_help</span><span class="p">()</span>
+            <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-a&#39;</span><span class="p">)</span>
+               <span class="k">call </span><span class="nv">get_command_argument</span><span class="p">(</span><span class="nv">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nv">arg_a</span><span class="p">)</span>
+               <span class="k">if</span> <span class="p">(</span><span class="nv">arg_a</span><span class="p">(:</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span> <span class="ow">.or.</span> <span class="nv">arg_a</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">call </span><span class="nv">print_help</span><span class="p">()</span>  <span class="c">! check the arg is correct</span>
+               <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="nb">trim</span><span class="p">(</span><span class="nv">arg_a</span><span class="p">)</span>
+               <span class="nv">jump</span> <span class="o">=</span> <span class="nb">.true.</span>
+            <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-b&#39;</span><span class="p">)</span>
+               <span class="k">call </span><span class="nv">get_command_argument</span><span class="p">(</span><span class="nv">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nv">arg_b</span><span class="p">)</span>
+               <span class="k">if</span> <span class="p">(</span><span class="nv">arg_b</span><span class="p">(:</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span> <span class="ow">.or.</span> <span class="nv">arg_b</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">call </span><span class="nv">print_help</span><span class="p">()</span>
+               <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="nb">trim</span><span class="p">(</span><span class="nv">arg_b</span><span class="p">)</span>
+               <span class="nv">jump</span> <span class="o">=</span> <span class="nb">.true.</span>
+            <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-c&#39;</span><span class="p">)</span>
+               <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="nv">arg_c</span>
+            <span class="k">case </span><span class="nv">default</span>
+               <span class="k">print</span> <span class="s1">&#39;(a,a,/)&#39;</span><span class="p">,</span> <span class="s1">&#39;unrecognized command line option: &#39;</span><span class="p">,</span> <span class="nb">trim</span><span class="p">(</span><span class="nv">arg</span><span class="p">)</span>
+               <span class="k">call </span><span class="nv">print_help</span><span class="p">()</span>
+         <span class="nv">endselect</span>
+      <span class="nv">enddo</span>
+   <span class="k">end subroutine </span><span class="nv">get_arguments</span>
+
+   <span class="k">subroutine </span><span class="nv">print_help</span><span class="p">()</span>
+      <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="s1">&#39;usage: ./thisprog [-h] [-a ARG_A] [-b ARG_B] [-c]&#39;</span>
+      <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span>
+      <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="s1">&#39;options:&#39;</span>
+      <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="s1">&#39;  -h, --help  print the help message and exit&#39;</span>
+      <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="s1">&#39;  -a ARG_A    print the argument ARG_A&#39;</span>
+      <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="s1">&#39;  -b ARG_B    print the argument ARG_B&#39;</span>
+      <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="s1">&#39;  -c          print the default argument for -c&#39;</span>
+      <span class="k">stop</span>
+<span class="k">   end subroutine </span><span class="nv">print_help</span>
+
+<span class="k">end program </span><span class="nv">main</span>
+</pre></div>
+
+
+<p>Get the code on <a href="https://github.com/fspaolo/code/tree/master/misc">GitHub</a>.</p>
+<p>Read more <a href="http://fortranwiki.org/fortran/show/Command-line+arguments">about command line arguments</a>.</p>
+<p><em>Note:</em> this is a modified example from: <a href="http://jblevins.org/log/cmdline">http://jblevins.org/log/cmdline</a>.</p>
+</article>          <footer>
+          this website is proudly powered by <a href="http://www.python.org/">Python</a>,
+          build with the static site generator <a href="http://hyde.github.com/">Hyde</a>, 
+          pages and source code hosted on <a href="https://github.com/fspaolo/">GitHub</a>,
+          and all the text written using <a href="http://www.vim.org/">VIM</a>.
+          </footer>
+          </section>
+
+          <div id="sidebar">
+                              <nav class=nav>
+    <ul>
+                <li>
+            <a title="Source code and utilities"
+                class="code"
+                href="/https://github.com/fspaolo/code">
+                Code</a>
+        </li>        <li>
+            <a title="Research projects"
+                class="research"
+                href="/research">
+                Research</a>
+        </li>        <li>
+            <a title="Miscellaneous material"
+                class="log"
+                href="/log">
+                Log</a>
+        </li>        <li>
+            <a title="About me and this site"
+                class="about"
+                href="/about">
+                About</a>
+        </li>    </ul>
+</nav>
+                              </div>
+
+          </div>
+        
+    <!-- Javascript at the bottom for fast page loading -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  
+    
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+      
+  </body>
+</html>
