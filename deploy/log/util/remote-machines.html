@@ -67,22 +67,6 @@
 </h6>
 
 <p><strong>Warning:</strong> Some of the information here may be absolutely&nbsp;trivial! </p>
-<div class="toc">
-<ul>
-<li><a href="#ssh-certificate"><span class="caps">SSH</span> certificate</a><ul>
-<li><a href="#restartshutdown-the-computer">Restart/shutdown the&nbsp;computer</a></li>
-<li><a href="#job-control">Job&nbsp;control</a></li>
-<li><a href="#file-transfer-via-ssh">File transfer via&nbsp;<span class="caps">SSH</span></a></li>
-<li><a href="#file-transfer-via-ftp">File Transfer via <span class="caps">FTP</span></a><ul>
-<li><a href="#interactive">Interactive</a></li>
-<li><a href="#non-interactive">Non-interactive</a></li>
-</ul>
-</li>
-<li><a href="#file-transfer-via-http">File Transfer via&nbsp;<span class="caps">HTTP</span></a></li>
-</ul>
-</li>
-</ul>
-</div>
 <h2 id="ssh-certificate"><span class="caps">SSH</span>&nbsp;certificate</h2>
 <p>Generate <span class="caps">SSH</span> keys for using a <span class="caps">SSH</span> connection without having to enter the password every time you log&nbsp;in.</p>
 <p>1) Generate the key (<em>local machine</em>):</p>
@@ -131,7 +115,7 @@
 
 
 <p>Shut down a <strong>remote</strong> computer in 30&nbsp;minutes:</p>
-<div class="codehilite"><pre>ssh -l root computer shutdown -h +30
+<div class="codehilite"><pre><span class="nv">$ </span>ssh -l root computer shutdown -h +30
 </pre></div>
 
 
@@ -170,7 +154,7 @@
 
 
 <p>list the jobs (using <code>jobs</code>) and kill the <em>stopped jobs</em> or bring them to the <em>foreground</em> (see bellow), or simply type: <code>logout logout</code> (yes,&nbsp;twice). </p>
-<p>Running a job in the <em>background</em> with <code>&amp;</code>:</p>
+<p>Run a job in the <em>background</em> with <code>&amp;</code>:</p>
 <div class="codehilite"><pre><span class="nv">$ </span>nohup commands <span class="amp">&amp;</span>
 </pre></div>
 
@@ -187,7 +171,7 @@
 </pre></div>
 
 
-<p>To monitor (in &#8220;real time&#8221;) the main processes running and information about system/hardware usage (e.g., <span class="caps">CPU</span>, memory, network,&nbsp;etc.):</p>
+<p>Monitor (in &#8220;real time&#8221;) the main processes running and information about system/hardware usage (e.g., <span class="caps">CPU</span>, memory, network,&nbsp;etc.):</p>
 <div class="codehilite"><pre><span class="nv">$ </span>top
 </pre></div>
 

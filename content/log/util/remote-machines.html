@@ -6,8 +6,6 @@ created: !!timestamp '2011-01-21 12:00:00'
 
 **Warning:** Some of the information here may be absolutely trivial! 
 
-[TOC]
-
 SSH certificate
 ---------------
 
@@ -77,7 +75,7 @@ Shut down a **remote** computer in 30 minutes:
 
     :::bash
 
-    ssh -l root computer shutdown -h +30
+    $ ssh -l root computer shutdown -h +30
 
 
 Job control
@@ -121,7 +119,7 @@ Kill process by PID number:
 
 list the jobs (using ``jobs``) and kill the *stopped jobs* or bring them to the *foreground* (see bellow), or simply type: ``logout logout`` (yes, twice). 
 
-Running a job in the *background* with ``&``:
+Run a job in the *background* with ``&``:
 
     :::bash
 
@@ -142,7 +140,7 @@ Place a *foreground* job in the *background* (to free the terminal):
     $ ^Z    # type Control-z to suspend de job
     $ bg
 
-To monitor (in "real time") the main processes running and information about system/hardware usage (e.g., CPU, memory, network, etc.):
+Monitor (in "real time") the main processes running and information about system/hardware usage (e.g., CPU, memory, network, etc.):
 
     :::bash
 
