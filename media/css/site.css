@@ -195,6 +195,7 @@ header {
     /*
     width: 515px;
     */
+    min-height: 900px;
     width: 40%;
     padding: 50px;
     padding-left: 70px;
