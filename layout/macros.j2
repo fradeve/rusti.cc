@@ -30,6 +30,13 @@
 {% if menu -%}
 <nav {{'class='~cls if cls }}>
     <ul>
+        <!-- added extra item (fspaolo 2011-11-16) -->
+        <li>
+            <a title="Source code" href="https://github.com/fspaolo/code">
+            Code
+            </a>
+        </li>
+        <!-- end added extra item -->
         {% for item in menu -%}
         {% set active = False -%}
         {% if item.type == 'page' -%}

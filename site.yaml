@@ -14,12 +14,6 @@ context:
         tweet_via: fspaolo
         menu:
             -
-                name: Code
-                description: Source code and utilities
-                css_class: code
-                type: node
-                url: https://github.com/fspaolo/code
-            -
                 name: Research
                 description: Research projects
                 css_class: research

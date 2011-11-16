@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2011-11-12T18:59:33Z</updated>
+    <updated>2011-11-16T12:07:34Z</updated>
 
     <id>/log/atom.xml/</id>
 
@@ -73,7 +73,7 @@
             <id>/log/util/command-arguments-f2003.html</id>
             
             <content type="html">
-                                &lt;p&gt;Although I&amp;#8217;m not a big fan of &lt;a href=&#34;http://en.wikipedia.org/wiki/Fortran&#34;&gt;Fortran&lt;/a&gt; programming language, when I have to use it (some times is unavoidable) I try to follow the &lt;em&gt;modern&lt;/em&gt; standards as much as possible (i.e., F95/F2003/F2008). Here is a simple example of parsing Unix-like command line arguments to a program, using the F2003 standard. Note that the following example also works for any F90/F95 code compiled with &lt;a href=&#34;http://gcc.gnu.org/wiki/GFortran&#34;&gt;gfortran&lt;/a&gt; or &lt;a href=&#34;http://www.g95.org/&#34;&gt;g95&lt;/a&gt;.&lt;/p&gt;
+                                &lt;p&gt;Although I&amp;#8217;m not a big fan of &lt;a href=&#34;http://en.wikipedia.org/wiki/Fortran&#34;&gt;Fortran&lt;/a&gt;, here is a simple example of parsing Unix-like command line arguments to a program following the &lt;em&gt;modern&lt;/em&gt; standard of F2003. Note that the following example also works for any F90/F95 code compiled with &lt;a href=&#34;http://gcc.gnu.org/wiki/GFortran&#34;&gt;gfortran&lt;/a&gt; or &lt;a href=&#34;http://www.g95.org/&#34;&gt;g95&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;./thisprog -h
 
@@ -149,7 +149,7 @@ options:
 
 &lt;p&gt;Get the code on &lt;a href=&#34;https://github.com/fspaolo/code/tree/master/misc&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Read more &lt;a href=&#34;http://fortranwiki.org/fortran/show/Command-line+arguments&#34;&gt;about command line arguments&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; this is a modified example from: &lt;a href=&#34;http://jblevins.org/log/cmdline&#34;&gt;http://jblevins.org/log/cmdline&lt;/a&gt;.&lt;/p&gt;            </content>
+&lt;p&gt;This example is modified from: &lt;a href=&#34;http://jblevins.org/log/cmdline&#34;&gt;http://jblevins.org/log/cmdline&lt;/a&gt;.&lt;/p&gt;            </content>
         </entry>
             <entry>
             <title type="html">Remote machines</title>
@@ -161,24 +161,8 @@ options:
             
             <content type="html">
                                 &lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Some of the information here may be absolutely&amp;nbsp;trivial! &lt;/p&gt;
-&lt;div class=&#34;toc&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#ssh-certificate&#34;&gt;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; certificate&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#restartshutdown-the-computer&#34;&gt;Restart/shutdown the&amp;nbsp;computer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#job-control&#34;&gt;Job&amp;nbsp;control&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#file-transfer-via-ssh&#34;&gt;File transfer via&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#file-transfer-via-ftp&#34;&gt;File Transfer via &lt;span class=&#34;caps&#34;&gt;FTP&lt;/span&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#interactive&#34;&gt;Interactive&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#non-interactive&#34;&gt;Non-interactive&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#file-transfer-via-http&#34;&gt;File Transfer via&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;HTTP&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 &lt;h2 id=&#34;ssh-certificate&#34;&gt;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt;&amp;nbsp;certificate&lt;/h2&gt;
-&lt;p&gt;How to generate &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; keys for using a &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; connection without having to enter the password every time you log&amp;nbsp;in.&lt;/p&gt;
+&lt;p&gt;Generate &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; keys for using a &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; connection without having to enter the password every time you log&amp;nbsp;in.&lt;/p&gt;
 &lt;p&gt;1) Generate the key (&lt;em&gt;local machine&lt;/em&gt;):&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ~/.ssh
 &lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ssh-keygen -t rsa -C &lt;span class=&#34;s2&#34;&gt;&amp;quot;username@youremail.com&amp;quot;&lt;/span&gt;
@@ -186,8 +170,7 @@ options:
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;if &lt;code&gt;.ssh&lt;/code&gt; does not exist create it: &lt;code&gt;mkdir ~/.ssh&lt;/code&gt;. &lt;code&gt;ssh-keygen&lt;/code&gt; will create two files with the &lt;em&gt;private&lt;/em&gt; and &lt;em&gt;public&lt;/em&gt; keys: &lt;code&gt;id_rsa&lt;/code&gt; and &lt;code&gt;id_rsa.pub&lt;/code&gt;. &lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; skip this step if you have already the keys in your&amp;nbsp;machine!&lt;/p&gt;
+&lt;p&gt;if &lt;code&gt;.ssh&lt;/code&gt; does not exist create it: &lt;code&gt;mkdir ~/.ssh&lt;/code&gt;. &lt;code&gt;ssh-keygen&lt;/code&gt; will create two files with the &lt;em&gt;private&lt;/em&gt; and &lt;em&gt;public&lt;/em&gt; keys: &lt;code&gt;id_rsa&lt;/code&gt; and &lt;code&gt;id_rsa.pub&lt;/code&gt;. Skip this step if you have already the keys in your&amp;nbsp;machine!&lt;/p&gt;
 &lt;p&gt;2) Log on the remote host (&lt;em&gt;remote machine&lt;/em&gt;):&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ssh username@remote.host.edu
 &lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ~/.ssh
@@ -208,25 +191,25 @@ options:
 
 
 &lt;p&gt;&lt;code&gt;pbpaste&lt;/code&gt; will paste the content from the &lt;a href=&#34;http://en.wikipedia.org/wiki/Clipboard_(software)&#34;&gt;Clipboard&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Now you can log on the remote machine without entering the password. If necessary, give the path to your &lt;em&gt;private&lt;/em&gt; key (commonly &lt;em&gt;not needed&lt;/em&gt;!):&lt;/p&gt;
+&lt;p&gt;Log on the remote machine without entering the password. If necessary, give the path to your &lt;em&gt;private&lt;/em&gt; key (commonly &lt;em&gt;not needed&lt;/em&gt;!):&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ssh -i ~/.ssh/id_rsa username@remote.host.edu
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Read more &lt;a href=&#34;http://help.github.com/mac-key-setup/&#34;&gt;about &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; keys&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;restartshutdown-the-computer&#34;&gt;Restart/shutdown the&amp;nbsp;computer&lt;/h2&gt;
-&lt;p&gt;To restart a &lt;strong&gt;local&lt;/strong&gt; computer&amp;nbsp;immediately:&lt;/p&gt;
+&lt;p&gt;Restart a &lt;strong&gt;local&lt;/strong&gt; computer&amp;nbsp;immediately:&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;sudo shutdown -r now
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;To restart a &lt;strong&gt;remote&lt;/strong&gt; computer at a specific&amp;nbsp;time:&lt;/p&gt;
+&lt;p&gt;Restart a &lt;strong&gt;remote&lt;/strong&gt; computer at a specific&amp;nbsp;time:&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ssh -l root computer shutdown -r hhmm
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;To shut down a &lt;strong&gt;remote&lt;/strong&gt; computer in 30&amp;nbsp;minutes:&lt;/p&gt;
-&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;ssh -l root computer shutdown -h +30
+&lt;p&gt;Shut down a &lt;strong&gt;remote&lt;/strong&gt; computer in 30&amp;nbsp;minutes:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;ssh -l root computer shutdown -h +30
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -265,7 +248,7 @@ options:
 
 
 &lt;p&gt;list the jobs (using &lt;code&gt;jobs&lt;/code&gt;) and kill the &lt;em&gt;stopped jobs&lt;/em&gt; or bring them to the &lt;em&gt;foreground&lt;/em&gt; (see bellow), or simply type: &lt;code&gt;logout logout&lt;/code&gt; (yes,&amp;nbsp;twice). &lt;/p&gt;
-&lt;p&gt;Running a job in the &lt;em&gt;background&lt;/em&gt; with &lt;code&gt;&amp;amp;&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Run a job in the &lt;em&gt;background&lt;/em&gt; with &lt;code&gt;&amp;amp;&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;nohup commands &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -282,7 +265,7 @@ options:
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;To monitor (in &amp;#8220;real time&amp;#8221;) the main processes running and information about system/hardware usage (e.g., &lt;span class=&#34;caps&#34;&gt;CPU&lt;/span&gt;, memory, network,&amp;nbsp;etc.):&lt;/p&gt;
+&lt;p&gt;Monitor (in &amp;#8220;real time&amp;#8221;) the main processes running and information about system/hardware usage (e.g., &lt;span class=&#34;caps&#34;&gt;CPU&lt;/span&gt;, memory, network,&amp;nbsp;etc.):&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;top
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -364,7 +347,7 @@ password: anonymous
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; for not answering (Y/N) type: &lt;code&gt;prompt off&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For not answering (Y/N) type: &lt;code&gt;prompt off&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Close the&amp;nbsp;connection:&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;quit
 &lt;/pre&gt;&lt;/div&gt;
@@ -383,7 +366,7 @@ password: anonymous
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; put the trailing slashes on&amp;nbsp;directories.&lt;/p&gt;
+&lt;p&gt;Put the trailing slashes on&amp;nbsp;directories.&lt;/p&gt;
 &lt;p&gt;Get&amp;nbsp;files:&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;wget ftp://ftp.host.name.edu/pub/directory/*.ext
 &lt;/pre&gt;&lt;/div&gt;
@@ -410,7 +393,7 @@ password: anonymous
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt;&amp;nbsp;non-recursive!&lt;/p&gt;
+&lt;p&gt;This is&amp;nbsp;non-recursive!&lt;/p&gt;
 &lt;h2 id=&#34;file-transfer-via-http&#34;&gt;File Transfer via&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;HTTP&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Download a &lt;em&gt;whole&lt;/em&gt; website keeping the original structure&amp;nbsp;(mirror):&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;wget -m http://www.website.com/
@@ -439,12 +422,12 @@ password: anonymous
 &lt;li&gt;&lt;a href=&#34;http://quakeinfo.ucsd.edu/~fpaolo/files/paolo_agu2010.tar.bz2&#34;&gt;paolo_agu2010.tar.bz2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://quakeinfo.ucsd.edu/~fpaolo/files/paolo_agu2010.pdf&#34;&gt;paolo_agu2010.pdf&lt;/a&gt; (81&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;MB&lt;/span&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;To generate a &lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt; poster first decompress the&amp;nbsp;tarball:&lt;/p&gt;
+&lt;p&gt;Decompress the&amp;nbsp;tarball:&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;tar xjf paolo_agu2010.tar.bz2
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;and then compile the source&amp;nbsp;code:&lt;/p&gt;
+&lt;p&gt;Compile the source code to get a&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt;:&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd &lt;/span&gt;paolo_agu2010    
 &lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;pdflatex paolo_agu2010.tex
 &lt;/pre&gt;&lt;/div&gt;
