@@ -192,11 +192,11 @@ header {
 
 .content {
     float: left;
+    width: 505px;
     /*
-    width: 515px;
+    width: 40%;
     */
     min-height: 900px;
-    width: 40%;
     padding: 50px;
     padding-left: 70px;
     padding-right: 150px;
