@@ -7,10 +7,37 @@
         <link href="/"/>
     
         
-    <updated>2011-11-16T12:07:34Z</updated>
+    <updated>2011-12-13T10:50:32Z</updated>
 
     <id>/log/atom.xml/</id>
 
+            <entry>
+            <title type="html">Poster @ AGU 2011</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/posters/agu2011.html"/>
+            <updated>2011-12-13T10:35:00Z</updated>
+            <published>2011-12-13T10:35:00Z</published>
+            <id>/log/posters/agu2011.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;poster AGU 2011&#34; src=&#34;/media/images/paolo_agu2011.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This poster was made using &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; and the &lt;a href=&#34;http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php&#34;&gt;Beamerposter&lt;/a&gt; package. I&amp;#8217;ve created a custom theme, &lt;code&gt;beamerthemeAGU2011.sty&lt;/code&gt;, based on one of the default themes. If you are interested in using (and modifying) this template you can download the tarball with the LaTeX source code and figures (&lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt; of the poster&amp;nbsp;included):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://dl.dropbox.com/u/12601128/agu/paolo_agu2011.tgz&#34;&gt;paolo_agu2011.tgz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Decompress the&amp;nbsp;tarball:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;tar xzf paolo_agu2011.tgz
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Compile the source code to generate a&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt;:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd &lt;/span&gt;paolo_agu2011
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;pdflatex paolo_agu2011.tex
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That&amp;#8217;s&amp;nbsp;all!&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Useful links</title>
             <author><name>Fernando Paolo</name></author>
@@ -430,34 +457,6 @@ password: anonymous
 &lt;p&gt;Compile the source code to get a&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt;:&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd &lt;/span&gt;paolo_agu2010    
 &lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;pdflatex paolo_agu2010.tex
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;That&amp;#8217;s&amp;nbsp;all!&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">Poster @ IGS 2011</title>
-            <author><name>Fernando Paolo</name></author>
-            <link href="/log/posters/igs2011.html"/>
-            <updated>2011-01-07T13:12:00Z</updated>
-            <published>2011-01-07T13:12:00Z</published>
-            <id>/log/posters/igs2011.html</id>
-            
-            <content type="html">
-                                &lt;p&gt;&lt;img alt=&#34;poster AGU 2010&#34; src=&#34;/media/images/paoloAGU2010.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;This poster was made using &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; with the &lt;a href=&#34;http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php&#34;&gt;Beamerposter&lt;/a&gt; package. I&amp;#8217;ve modified one of the default themes to my own needs (and taste). If you are interested in using (and modifying) this template you can download the tarball with the LaTeX source code and&amp;nbsp;figures:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://quakeinfo.ucsd.edu/~fpaolo/files/paoloAGU2010.tar.bz2&#34;&gt;paoloAGU2010.tar.bz2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://quakeinfo.ucsd.edu/~fpaolo/files/paoloAGU2010.pdf&#34;&gt;paoloAGU2010.pdf&lt;/a&gt; (81&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;MB&lt;/span&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To generate a &lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt; poster first decompress the&amp;nbsp;tarball:&lt;/p&gt;
-&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;tar xjf paoloAGU2010.tar.bz2
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;and then compile the source&amp;nbsp;code:&lt;/p&gt;
-&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd &lt;/span&gt;paoloAGU2010    
-&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;pdflatex paoloAGU2010.tex
 &lt;/pre&gt;&lt;/div&gt;
 
 

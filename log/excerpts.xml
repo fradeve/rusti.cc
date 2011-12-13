@@ -7,10 +7,22 @@
         <link href="/"/>
     
         
-    <updated>2011-11-16T12:07:35Z</updated>
+    <updated>2011-12-13T10:50:34Z</updated>
 
     <id>/log/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Poster @ AGU 2011</title>
+            <author><name>Fernando Paolo</name></author>
+            <link href="/log/posters/agu2011.html"/>
+            <updated>2011-12-13T10:35:00Z</updated>
+            <published>2011-12-13T10:35:00Z</published>
+            <id>/log/posters/agu2011.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
             <entry>
             <title type="html">Useful links</title>
             <author><name>Fernando Paolo</name></author>
@@ -78,18 +90,6 @@
             <updated>2011-01-07T13:12:00Z</updated>
             <published>2011-01-07T13:12:00Z</published>
             <id>/log/posters/agu2010.html</id>
-            
-            <content type="html">
-                
-                            </content>
-        </entry>
-            <entry>
-            <title type="html">Poster @ IGS 2011</title>
-            <author><name>Fernando Paolo</name></author>
-            <link href="/log/posters/igs2011.html"/>
-            <updated>2011-01-07T13:12:00Z</updated>
-            <published>2011-01-07T13:12:00Z</published>
-            <id>/log/posters/igs2011.html</id>
             
             <content type="html">
                 
