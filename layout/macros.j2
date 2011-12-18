@@ -2,14 +2,17 @@
 {% refer to res.url as post %}
 <article {{'class='~class if class }}>
     <a href="{{ content_url(res.url) }}">{{ post.image|markdown|typogrify }}</a>
-    <h3><a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a></h3>
-    <p>{{ res.meta.description }}</p>
-    {{ post.excerpt|markdown|typogrify }}
+    <h5><a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a></h5>
+    <p>
+    {{ res.meta.description }}
     <time datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">
-        Posted on {{ res.meta.created.strftime('%a, %d %b %Y') }}
+      {{ res.meta.created.strftime('%d %b %Y') }}
     </time>
+    </p>
+    {{ post.excerpt|markdown|typogrify }}
 </article>
 {% endmacro %}
+
 
 {% macro render_excerpt2(res, class=None) %}
 {% refer to res.url as post %}
@@ -25,6 +28,7 @@
     {{ post.excerpt|markdown|typogrify }}
 </article>
 {% endmacro %}
+
 
 {% macro render_nav(menu, cls=None) -%}
 {% if menu -%}

@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2011-12-13T10:50:32Z</updated>
+    <updated>2011-12-18T15:50:07Z</updated>
 
     <id>/log/atom.xml/</id>
 
@@ -21,7 +21,7 @@
             
             <content type="html">
                                 &lt;p&gt;&lt;img alt=&#34;poster AGU 2011&#34; src=&#34;/media/images/paolo_agu2011.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;This poster was made using &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; and the &lt;a href=&#34;http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php&#34;&gt;Beamerposter&lt;/a&gt; package. I&amp;#8217;ve created a custom theme, &lt;code&gt;beamerthemeAGU2011.sty&lt;/code&gt;, based on one of the default themes. If you are interested in using (and modifying) this template you can download the tarball with the LaTeX source code and figures (&lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt; of the poster&amp;nbsp;included):&lt;/p&gt;
+&lt;p&gt;This poster was made using &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; and the &lt;a href=&#34;http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php&#34;&gt;Beamerposter&lt;/a&gt; package. I&amp;#8217;ve created a custom theme &lt;code&gt;beamerthemeAGU2011.sty&lt;/code&gt; based on one of the default themes. If you are interested in using (and modifying) this template download the tarball with the LaTeX source code and figures (&lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt; of the poster&amp;nbsp;included):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://dl.dropbox.com/u/12601128/agu/paolo_agu2011.tgz&#34;&gt;paolo_agu2011.tgz&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

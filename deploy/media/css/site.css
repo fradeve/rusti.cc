@@ -77,6 +77,7 @@ h2, h3, h4, h5, h2 a, h3 a, h4 a, h5 a {
     color: #222;
     background: white;
     margin: -2px;
+    margin-left: 0
     }
 h2, h2 a {
     font-size: 26px;
@@ -140,15 +141,16 @@ header {
 /* navigation */
 
 .nav ul {
+    position: absolute;
     font-family: 'Proxima Nova Condensed Regular', Arial, Helvetica, sans-serif;
-    list-style: none outside none;
+    padding-top: 65px;
     }
     .nav li {
+        display: block;
         color: white;
-        float: right;
         font-size: 10px;
         letter-spacing: 1px;
-        padding: 12px 10px 10px 10px;
+        padding: 3px 10px;
         text-transform: uppercase;
         margin-right: 1px;
         }
@@ -190,14 +192,14 @@ header {
 
 .content {
     float: left;
-    width: 505px;
+    width: 500px;
     /*
     width: 40%;
     */
     min-height: 900px;
     padding: 50px;
     padding-left: 70px;
-    padding-right: 150px;
+    padding-right: 130px;
     background-color: white;
     }
     article p {
@@ -227,7 +229,7 @@ header {
         margin-bottom: 15px;
     }
     article img {
-        max-width: 90%;
+        max-width: 92%;
         border: 5px solid #222;
         margin: 0;
     }
@@ -297,7 +299,7 @@ small {
        margin: 0;
        }
    .listing img {
-       width: 415px;
+       width: 400px;
        border: 5px solid #222;
        }
    .listing li, .listing2 li {
@@ -311,12 +313,6 @@ small {
    .listing li {
         padding-bottom: 10px;
         border-bottom: 2px solid #E8E8E8;
-       }
-   .listing li:nth-child(2) {
-       margin-right: 0;
-       }
-   .listing li:nth-child(3) {
-       clear: left;
        }
     
 /* code */

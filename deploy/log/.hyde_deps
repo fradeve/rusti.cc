@@ -22,8 +22,8 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title>Source code</title>
-  <meta name="description" content="Some code I developed during my work/free time.">
+  <title></title>
+  <meta name="description" content="">
   <meta name="author" content="Fernando Paolo">
 
   <!--  Mobile viewport optimized: j.mp/bplateviewport -->
@@ -41,40 +41,33 @@
         enables HTML5 elements & feature detects -->
    <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     </head>
-<body id="index">
+<body id=".hyde_deps">
                   <div id="main" role="main">
 
           <header class="clearfix">
           </header>
 
           <section class="content">
-          
-    <h1 class="title">
-        <a href='#'>Source code</a>
-    </h1>
-    <time datetime="2011-04-01">
-        Posted on 01 Apr 2011
-    </time>
+          <article>
 
-<ul class="listing clear">
-<li>
-    <article >
-    <a href="/code/bin-data.html"></a>
-    <h5><a href="/code/bin-data.html">Bin 2D uneven data</a></h5>
-    <p>
-    Binning irregularly spaced data on independent rectangular cells.
+<h1 class="title">
+    <a href="/log/.hyde_deps">
+        
+    </a>
+</h1>
 
-    <time datetime="2010-11-06">
-      06 Nov 2010
-    </time>
-    </p>
-    
-</article>
+<time datetime="2011-04-01">
+    Posted on 01 Apr 2011
+</time>
 
-</li>
-</ul>
+<h6 class="description">
+    <a href="/log/.hyde_deps">
+        
+    </a>
+</h6>
 
-          <footer>
+<p>{}</p>
+</article>          <footer>
           this website is proudly powered by <a href="http://www.python.org/">Python</a>,
           build with the static site generator <a href="http://hyde.github.com/">Hyde</a>, 
           pages and source code hosted on <a href="https://github.com/fspaolo/">GitHub</a>,
@@ -99,7 +92,7 @@
                 Research</a>
         </li>        <li>
             <a title="Miscellaneous material"
-                class="log"
+                class="active log"
                 href="/log">
                 Log</a>
         </li>        <li>

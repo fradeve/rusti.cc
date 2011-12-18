@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2011-12-13T10:50:28Z</updated>
+    <updated>2011-12-18T15:50:04Z</updated>
 
     <id>/about/atom.xml/</id>
 
@@ -98,9 +98,10 @@
 &lt;h4 id=&#34;languages&#34;&gt;Languages&lt;/h4&gt;
 &lt;p&gt;Portuguese, English,&amp;nbsp;Spanish.&lt;/p&gt;
 &lt;h2 id=&#34;short-biography&#34;&gt;Short&amp;nbsp;biography&lt;/h2&gt;
-&lt;p&gt;Originally from Brazil, I first became interested in polar research during my undergraduate years while participating in an expedition to Antarctica for over a month as part of the Brazilian Antarctic Program. Seeking a multidisciplinary Earth Science education I studied Oceanography at University of Sao Paulo, where as an undergraduate I was first exposed to the science of remote sensing and had the opportunity to participate in several scientific cruises in the South Atlantic Ocean. During my Masters in Geophysics I gained further experience in space geodetic methods deriving the marine gravity field using satellite altimetry and shipborn measurements. After completing my &lt;span class=&#34;caps&#34;&gt;B.S.&lt;/span&gt; and &lt;span class=&#34;caps&#34;&gt;M.S.&lt;/span&gt; degrees I moved to California/&lt;span class=&#34;caps&#34;&gt;USA&lt;/span&gt; in 2009 to pursue a Ph.D. in Earth Sciences at Scripps/&lt;span class=&#34;caps&#34;&gt;UCSD&lt;/span&gt;. Following my fascination in observing the Earth from space, I use very precise satellite-based measurements to detect changes in the polar ice sheets and study the ice-climate interaction. While not in the lab I can be found in the outdoors, running, cycling, climbing, trekking and, of course, traveling to all sort of places as much as I&amp;nbsp;can.&lt;/p&gt;
+&lt;p&gt;Originally from Brazil, I first became interested in polar research during my undergraduate years while participating in an expedition to Antarctica for over a month as part of the Brazilian Antarctic Program. Seeking a multidisciplinary Earth Science education I studied Oceanography at University of Sao Paulo, where as an undergraduate I was first exposed to the science of remote sensing and had the opportunity to participate in several scientific cruises in the South Atlantic Ocean. During my Masters in Geophysics I gained further experience in space geodetic methods deriving the marine gravity field using satellite altimetry and shipborn measurements. After completing my &lt;span class=&#34;caps&#34;&gt;B.S.&lt;/span&gt; and &lt;span class=&#34;caps&#34;&gt;M.S.&lt;/span&gt; degrees I moved to California/&lt;span class=&#34;caps&#34;&gt;USA&lt;/span&gt; in 2009 to pursue a Ph.D. in Earth Sciences at Scripps/&lt;span class=&#34;caps&#34;&gt;UCSD&lt;/span&gt;. Following my fascination in observing the Earth from space, I use very precise satellite-based measurements to detect changes in the polar ice sheets and study the ice-climate interaction. While not in the lab I can be found in the outdoors, running, cycling, trekking and traveling to all sort of places as much as I&amp;nbsp;can.&lt;/p&gt;
 &lt;!--[Places I&#39;ve been](about/places.html).--&gt;
 
+&lt;p&gt;&lt;img alt=&#34;Antarctica&#34; src=&#34;/media/images/antarctica.png&#34; title=&#34;Topography of the Antarctic continent&#34; /&gt; &lt;/p&gt;
 &lt;h2 id=&#34;about-this-site&#34;&gt;About this&amp;nbsp;site&lt;/h2&gt;
 &lt;p&gt;I started this site as a place to keep information, source code and documentation available on the web (mostly for myself). So feel free to grab and modify anything you may find useful (for some inconceivable reason). If you have any comment just send me a &lt;a href=&#34;mailto:fspaolo@gmail.com&#34;&gt;message&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;why-a-minimal-design&#34;&gt;Why a minimal&amp;nbsp;design?&lt;/h2&gt;
