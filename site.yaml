@@ -46,9 +46,9 @@ sorter:
 tagger:
     sorter: time
     archives:
-        blog:
-            source: blog
-            target: blog/tags
+        log:
+            source: log
+            target: log/tags
             template: tagged_posts.j2
             archive_extension: html
 publisher:
@@ -63,5 +63,5 @@ markdown:
         - tables
         - headerid
         - codehilite
-        - toc
         - footnotes
+        - toc

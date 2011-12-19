@@ -105,7 +105,6 @@ h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
     }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     color: #222;
-    text-decoration: none;
     }
 
 em {
@@ -163,6 +162,7 @@ header {
         color: #FFD200;
         background: none;
         text-decoration: none;
+        border: none;
         }
 
 /* toc */
@@ -215,10 +215,9 @@ header {
         padding: 0.1em 0.1em 0;
     }
     article p a:hover, ul a:hover {
-        /*
-        background-color: #FFF091;
-        */
         background-color: #FFD200;
+        color: white;
+        border-bottom: 2px solid #E8E8E8;
         text-decoration: none;
     }
     article ul {
@@ -290,29 +289,21 @@ small {
         color: #222;
         }
     
-.listing, .listing2 {
+.listing {
     margin-top: 25px;
     margin-bottom: 12px;
     }
-   .listing p {
-       color: #666;
-       margin: 0;
-       }
    .listing img {
        width: 400px;
        border: 5px solid #222;
        }
-   .listing li, .listing2 li {
+   .listing li {
        list-style: none;
        background: none;
        float: left;
        width: 100%;
        padding: 0;
-       margin-bottom: 8px;
-       }
-   .listing li {
-        padding-bottom: 10px;
-        border-bottom: 2px solid #E8E8E8;
+       margin-bottom: 4px;
        }
     
 /* code */

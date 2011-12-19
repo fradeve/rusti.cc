@@ -1,5 +1,5 @@
 {% extends "base.j2" %}
-{% from "macros.j2" import render_excerpt with context  %}
+{% from "macros.j2" import render_excerpt2 with context  %}
 
 {% block main %}
 
@@ -15,7 +15,7 @@
 <ul class="listing clear">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 <li>
-    {{ render_excerpt(res) }}
+    {{ render_excerpt2(res) }}
 </li>
 {% endfor %}
 </ul>
