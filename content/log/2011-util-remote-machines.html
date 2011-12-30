@@ -19,7 +19,7 @@ Generate SSH keys for using a SSH connection without having to enter the passwor
     $ ssh-keygen -t rsa -C "username@youremail.com"
     $ chmod 700 id_rsa
 
-if ``.ssh`` does not exist create it: ``mkdir ~/.ssh``. ``ssh-keygen`` will create two files with the *private* and *public* keys: ``id_rsa`` and ``id_rsa.pub``. Skip this step if you have already the keys in your machine!
+if ``.ssh`` does not exist create it: ``mkdir ~/.ssh``. ``ssh-keygen`` will create two files with the *private* and *public* keys: ``id_rsa`` and ``id_rsa.pub``. **Skip this step if you have already the keys in your machine!**
 
 2) Log on the remote host (*remote machine*):
 
