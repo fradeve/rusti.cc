@@ -66,15 +66,16 @@
     </a>
 </h6>
 
-<h2 id="the-xgrid-agent">The Xgrid&nbsp;agent</h2>
-<p>Configure the agent using the Sharing panel in System&nbsp;Preferences.</p>
-<h2 id="the-xgrid-controller">The Xgrid&nbsp;controller</h2>
-<p>Straightforward on Mac <span class="caps">OS</span> X <strong>Server</strong>. On the Desktop version use the <strong>XgridLite</strong> open source software&nbsp;to:</p>
+<h2 id="the-xgrid-agent-worker">The Xgrid agent&nbsp;(worker)</h2>
+<p>Any machine can be an agent. Configure the agent using the Sharing Pane of System Preferences. See <a href="http://docs.info.apple.com/article.html?path=ServerAdmin/10.6/en/xg3c6e05ee.html">Managing Xgrid Agents</a>.</p>
+<h2 id="the-xgrid-controller-master">The Xgrid controller&nbsp;(master)</h2>
+<p>Configuration if straightforward on Mac <span class="caps">OS</span> X <strong>Server</strong>. However&#8230; on the <strong>desktop</strong> version use the <a href="http://edbaskerville.com/software/xgridlite/">XgridLite</a> open source software&nbsp;to:</p>
 <ul>
 <li>Turn on and off the built-in Xgrid controller with a single&nbsp;click</li>
 <li>Set passwords for client and agent&nbsp;authentication</li>
 <li>Reset the controller to default&nbsp;settings</li>
 </ul>
+<p>See <a href="http://docs.info.apple.com/article.html?path=ServerAdmin/10.6/en/xg3c6df80a.html">Managing an Xgrid Controller</a>.</p>
 <h2 id="the-xgrid-daemon-control-interface">The Xgrid Daemon Control&nbsp;Interface</h2>
 <p>Command&nbsp;line: </p>
 <div class="codehilite"><pre><span class="nv">$ </span>xgridctl
@@ -100,9 +101,9 @@ usage: xgridctl <span class="o">[</span>controller|agent<span class="o">]</span>
 
 
 <h2 id="the-xgrid-admin-tool">The Xgrid Admin&nbsp;tool</h2>
-<p>Provides a summary of the activity of the grid. Download a piece of Mac <span class="caps">OS</span> X Server for free from <a href="http://support.apple.com/downloads/">Apple&#8217;s website</a>.</p>
+<p>Provides a summary of the activity of the grid. This software is part of Mac <span class="caps">OS</span> X <strong>Server</strong>. Download it for free from <a href="http://support.apple.com/downloads/">Apple&#8217;s website</a>.</p>
 <h2 id="a-hack-for-snow-leopard">A hack for Snow&nbsp;Leopard&#8230;</h2>
-<p>To have read/write permission on the agents in <code>/Volumes</code> we need kerberos. But it is only available on Mac <span class="caps">OS</span> X <strong>Server</strong>&#8230; instead, one can simply change the configuration&nbsp;files:</p>
+<p>To have read/write permission on the agents in <code>/Volumes</code> we need <a href="http://docs.info.apple.com/article.html?path=Mac/10.6/en/8740.html">kerberos</a>. But it is only available on Mac <span class="caps">OS</span> X <strong>Server</strong>. Instead&#8230; one can simply change the configuration&nbsp;files:</p>
 <div class="codehilite"><pre><span class="nv">$ </span>sudo cp /usr/share/sandbox/xgridagentd_task_nobody.sb  <span class="se">\</span>
           /usr/share/sandbox/xgridagentd_task_nobody.sb.bak
 
@@ -111,15 +112,15 @@ usage: xgridctl <span class="o">[</span>controller|agent<span class="o">]</span>
 </pre></div>
 
 
-<h2 id="the-xgrid-command-line-client">The xgrid command-line&nbsp;client</h2>
-<p>Set the environmental&nbsp;variables:</p>
+<h2 id="the-xgrid-command-line-client-user">The xgrid command-line client&nbsp;(user)</h2>
+<p>Set the environmental variables (or add these to your <code>.bashrc</code>):</p>
 <div class="codehilite"><pre><span class="nv">$ </span><span class="nb">export </span><span class="nv">XGRID_CONTROLLER_HOSTNAME</span><span class="o">=</span>hostname
 <span class="nv">$ </span><span class="nb">export </span><span class="nv">XGRID_CONTROLLER_PASSWORD</span><span class="o">=</span>password
 </pre></div>
 
 
-<p>Client submits jobs to the&nbsp;controller:</p>
-<div class="codehilite"><pre><span class="nv">$ </span>xgrid -job submit /usr/bin/python -O test1.txt
+<p>Client submit jobs to the&nbsp;controller:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>xgrid -job submit /usr/bin/python -O test.py
 
 <span class="o">{</span><span class="nv">jobIdentifier</span> <span class="o">=</span> 231; <span class="o">}</span>
 </pre></div>
@@ -144,7 +145,7 @@ usage: xgridctl <span class="o">[</span>controller|agent<span class="o">]</span>
 <li>The <strong>working&nbsp;dir</strong></li>
 </ul>
 <h2 id="submitting-multiple-jobs">Submitting multiple&nbsp;jobs</h2>
-<p>Single task jobs. Simply let the controller managing the&nbsp;jobs:</p>
+<p>For single task jobs, simply let the controller managing the&nbsp;jobs:</p>
 <div class="codehilite"><pre><span class="nv">$ </span>xgrid -job submit /usr/bin/python test1.py
 <span class="nv">$ </span>xgrid -job submit /usr/bin/python test2.py
 <span class="nv">$ </span>xgrid -job submit /usr/bin/python test3.py
@@ -153,23 +154,24 @@ usage: xgridctl <span class="o">[</span>controller|agent<span class="o">]</span>
 
 
 <h2 id="running-batch-jobs">Running batch&nbsp;jobs</h2>
-<p>Multiple task jobs. Use the following scripts to create and send batch files to the controller, and to retrive the&nbsp;results:</p>
+<p>For multiple task jobs, you can use the following scripts to <strong>create</strong> and <strong>send</strong> batch files to the controller, and to retrive the&nbsp;results:</p>
 <ul>
 <li><a href="https://github.com/fspaolo/code/tree/master/xgrid">xg-batch.py</a></li>
 <li><a href="https://github.com/fspaolo/code/tree/master/xgrid">xg-result.py</a></li>
 </ul>
+<p>Note that the xgrid command line tool does not support &#8220;globbing&#8221; multiple files as argument (e.g. <code>*.ext</code>). For that purpose I&#8217;ve created the above&nbsp;scripts.</p>
 <p>To generate and submit a batch file with jobs that call a program <code>prog</code> with command line argument <code>arg</code> on several&nbsp;files:</p>
 <div class="codehilite"><pre><span class="nv">$ </span>python xg-batch.py -s -j jobname -c <span class="s2">&quot;/path/to/prog -a arg&quot;</span> /path/to/files/*.ext
 </pre></div>
 
 
-<p>Retrieving results by passing <span class="caps">ID</span> files (generated by <code>xg-batch.py</code>):</p>
+<p>To retrieve the results by passing the <span class="caps">ID</span> files (generated by <code>xg-batch.py</code>):</p>
 <div class="codehilite"><pre><span class="nv">$ </span>python xg-result.py file1.id file2.id file3.id ...
 </pre></div>
 
 
-<p>Or by passing a dir containing those&nbsp;files:</p>
-<div class="codehilite"><pre><span class="nv">$ </span>python xg-result.py /path/to/dir
+<p>Or by passing the directory containing those&nbsp;files:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>python xg-result.py /path/to/directory
 </pre></div>
 
 
@@ -177,6 +179,7 @@ usage: xgridctl <span class="o">[</span>controller|agent<span class="o">]</span>
 <ul>
 <li>Xgrid: <a href="http://www.apple.com/science/hardware/gridcomputing.html">http://www.apple.com/science/hardware/gridcomputing.html</a></li>
 <li>Tutorials: <a href="http://macresearch.org/the_xgrid_tutorials">http://macresearch.org/the_xgrid_tutorials</a></li>
+<li>Wiki/Docs/<span class="caps">FAQ</span>/etc: <a href="http://tengrid.com">http://tengrid.com</a></li>
 </ul>
 </article>          <footer>
           this website is proudly powered by <a href="http://www.python.org/">Python</a>,
