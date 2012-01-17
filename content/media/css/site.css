@@ -1,7 +1,13 @@
 /*
-  Style sheet for: fspaolo.net
-  Fernando Paolo <fspaolo@gmail.com>
-  April 23, 2011
+
+ Style sheet for: fspaolo.net
+ Fernando Paolo <fspaolo@gmail.com>
+ April 23, 2011
+
+ colors
+ ------
+ yellow: FFD200
+ red: F00
 
 */
 
@@ -141,29 +147,33 @@ header {
 
 .nav ul {
     position: absolute;
-    font-family: 'Proxima Nova Condensed Regular', Arial, Helvetica, sans-serif;
-    padding-top: 65px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
+                 "Helvetica Neue", sans-serif;
+    padding-top: 70px;
     }
     .nav li {
         display: block;
-        color: white;
-        font-size: 10px;
+        color: #F00;
+        font-size: 25px;
         letter-spacing: 1px;
-        padding: 3px 10px;
+        padding: 0 10px;
         text-transform: uppercase;
-        margin-right: 1px;
+        margin: -16px 0;
         }
     .nav a {
-        color: white;
+        color: #F00;
         font-weight: normal;
         text-decoration: none;
         }
     .nav a:hover {
-        color: #FFD200;
+        color: white;
         background: none;
         text-decoration: none;
         border: none;
         }
+    .nav a:active {
+        color: white;
+    }
 
 /* toc */
 
@@ -206,7 +216,7 @@ header {
         line-height: 1.8em;
         font-size: 1em;
         margin: 0;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         }
     article p a, article ul a {
         font-weight: bold;
@@ -215,7 +225,7 @@ header {
         padding: 0.1em 0.1em 0;
     }
     article p a:hover, ul a:hover {
-        background-color: #FFD200;
+        background-color: #F00;
         color: white;
         border-bottom: 2px solid #E8E8E8;
         text-decoration: none;
@@ -272,6 +282,7 @@ small {
     font-family: "helvetica neue", helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
+    font-size: 13px;
     color: #222;
     }
     small a {
@@ -283,7 +294,7 @@ small {
         }
     small time {
         font-family: "helvetica neue", helvetica, sans-serif;
-        font-size: 0.9em;
+        font-size: 0.85em;
         font-style: normal;
         font-weight: bold;
         color: #222;
