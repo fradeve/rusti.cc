@@ -153,15 +153,15 @@ header {
     }
     .nav li {
         display: block;
-        color: #F00;
-        font-size: 25px;
+        color: #FFD200;
+        font-size: 26px;
         letter-spacing: 1px;
         padding: 0 10px;
         text-transform: uppercase;
-        margin: -16px 0;
+        margin: -17px 0;
         }
     .nav a {
-        color: #F00;
+        color: #FFD200;
         font-weight: normal;
         text-decoration: none;
         }
@@ -225,7 +225,7 @@ header {
         padding: 0.1em 0.1em 0;
     }
     article p a:hover, ul a:hover {
-        background-color: #F00;
+        background-color: #FFD200;
         color: white;
         border-bottom: 2px solid #E8E8E8;
         text-decoration: none;
