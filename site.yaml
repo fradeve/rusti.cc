@@ -14,11 +14,11 @@ context:
         tweet_via: fspaolo
         menu:
             -
-                name: Research
-                description: Research projects
-                css_class: research
+                name: About
+                description: About me and this site 
+                css_class: about
                 type: node
-                url: research
+                url: about
             -
                 name: Log
                 description: Miscellaneous material
@@ -26,11 +26,11 @@ context:
                 type: node
                 url: log 
             -
-                name: About
-                description: About me and this site 
-                css_class: about
+                name: Research
+                description: Research projects
+                css_class: research
                 type: node
-                url: about
+                url: research
 meta:
     nodemeta: meta.yaml
     created: !!timestamp 2011-04-01 00:00:00

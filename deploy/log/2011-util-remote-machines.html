@@ -137,9 +137,9 @@
 
 
 <p>Some <code>ps</code> options::</p>
-<div class="codehilite"><pre><span class="o">-</span><span class="n">f</span>  <span class="n">Displays</span> <span class="n">full</span> <span class="n">information</span><span class="o">.</span>
-<span class="o">-</span><span class="n">e</span>  <span class="n">Displays</span> <span class="n">all</span> <span class="n">processes</span> <span class="n">running</span><span class="o">.</span>
-<span class="o">-</span><span class="n">u</span> <span class="o">*</span><span class="n">username</span><span class="o">*</span>  <span class="n">Displays</span> <span class="n">user</span> <span class="n">processes</span> <span class="n">including</span> <span class="n">those</span> <span class="n">from</span> <span class="n">other</span> <span class="n">sessions</span><span class="o">.</span>
+<div class="codehilite"><pre><span class="o">-</span><span class="n">f</span>  <span class="n">Displays</span> <span class="n">full</span> <span class="n">information</span><span class="p">.</span>
+<span class="o">-</span><span class="n">e</span>  <span class="n">Displays</span> <span class="n">all</span> <span class="n">processes</span> <span class="n">running</span><span class="p">.</span>
+<span class="o">-</span><span class="n">u</span> <span class="o">*</span><span class="n">username</span><span class="o">*</span>  <span class="n">Displays</span> <span class="n">user</span> <span class="n">processes</span> <span class="n">including</span> <span class="n">those</span> <span class="n">from</span> <span class="n">other</span> <span class="n">sessions</span><span class="p">.</span>
 </pre></div>
 
 
@@ -202,17 +202,17 @@
 
 <p><em>Note:</em> for more than a few files, as <a href="http://en.wikipedia.org/wiki/Secure_copy">scp</a> spawns a new process for each file, use <a href="http://en.wikipedia.org/wiki/Rsync">rsync</a>&nbsp;instead.</p>
 <p>Some <a href="http://en.wikipedia.org/wiki/Secure_copy">scp</a>&nbsp;options::</p>
-<div class="codehilite"><pre><span class="o">-</span><span class="n">r</span>  <span class="n">Recursively</span> <span class="n">go</span> <span class="n">through</span> <span class="n">directories</span><span class="o">.</span>
-<span class="o">-</span><span class="n">C</span>  <span class="n">Compress</span> <span class="n">the</span> <span class="n">data</span> <span class="n">before</span> <span class="n">it</span> <span class="n">goes</span> <span class="n">over</span> <span class="n">the</span> <span class="n">network</span><span class="o">.</span>
+<div class="codehilite"><pre><span class="o">-</span><span class="n">r</span>  <span class="n">Recursively</span> <span class="n">go</span> <span class="n">through</span> <span class="n">directories</span><span class="p">.</span>
+<span class="o">-</span><span class="n">C</span>  <span class="n">Compress</span> <span class="n">the</span> <span class="n">data</span> <span class="n">before</span> <span class="n">it</span> <span class="n">goes</span> <span class="n">over</span> <span class="n">the</span> <span class="n">network</span><span class="p">.</span>
 </pre></div>
 
 
 <p><em>Note:</em> <code>-r</code> does not know about symbolic links and will blindly follow&nbsp;them.</p>
 <p>Some <a href="http://en.wikipedia.org/wiki/Rsync">rsync</a>&nbsp;options::</p>
-<div class="codehilite"><pre><span class="o">-</span><span class="n">a</span>  <span class="n">Archive</span> <span class="n">mode</span><span class="p">,</span> <span class="n">preserves</span> <span class="n">file</span> <span class="n">permissions</span> <span class="ow">and</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">follow</span> <span class="n">symlinks</span><span class="o">.</span>
-<span class="o">-</span><span class="n">z</span>  <span class="n">Enable</span> <span class="n">compression</span><span class="o">.</span> <span class="n">Compress</span> <span class="nb">each</span> <span class="n">file</span> <span class="n">as</span> <span class="n">it</span> <span class="n">gets</span> <span class="n">sent</span> <span class="n">through</span> <span class="n">the</span> <span class="nb">pipe</span><span class="o">.</span>
-<span class="o">-</span><span class="n">e</span> <span class="n">ssh</span>  <span class="n">Uses</span> <span class="n"><span class="caps">SSH</span></span> <span class="n">as</span> <span class="n">the</span> <span class="n">transport</span><span class="o">.</span>
-<span class="o">-</span><span class="n">v</span>  <span class="n">Verbose</span><span class="p">,</span> <span class="n">lists</span> <span class="n">files</span> <span class="n">being</span> <span class="n">copied</span><span class="o">.</span>
+<div class="codehilite"><pre><span class="o">-</span><span class="n">a</span>  <span class="n">Archive</span> <span class="n">mode</span><span class="p">,</span> <span class="n">preserves</span> <span class="n">file</span> <span class="n">permissions</span> <span class="n">and</span> <span class="n">does</span> <span class="n">not</span> <span class="n">follow</span> <span class="n">symlinks</span><span class="p">.</span>
+<span class="o">-</span><span class="n">z</span>  <span class="n">Enable</span> <span class="n">compression</span><span class="p">.</span> <span class="n">Compress</span> <span class="n">each</span> <span class="n">file</span> <span class="n">as</span> <span class="n">it</span> <span class="n">gets</span> <span class="n">sent</span> <span class="n">through</span> <span class="n">the</span> <span class="n">pipe</span><span class="p">.</span>
+<span class="o">-</span><span class="n">e</span> <span class="n">ssh</span>  <span class="n">Uses</span> <span class="n"><span class="caps">SSH</span></span> <span class="n">as</span> <span class="n">the</span> <span class="n">transport</span><span class="p">.</span>
+<span class="o">-</span><span class="n">v</span>  <span class="n">Verbose</span><span class="p">,</span> <span class="n">lists</span> <span class="n">files</span> <span class="n">being</span> <span class="n">copied</span><span class="p">.</span>
 </pre></div>
 
 
@@ -323,29 +323,35 @@ password: anonymous
           <div id="sidebar">
                               <nav class=nav>
     <ul>
-        <!-- added extra item (fspaolo 2011-11-16) -->
-        <li>
-            <a title="Source code" href="https://github.com/fspaolo/code">
-            Code
-            </a>
-        </li>
-        <!-- end added extra item -->
                 <li>
-            <a title="Research projects"
-                class="research"
-                href="/research">
-                Research</a>
+            <a title="About me and this site"
+                class="about"
+                href="/about">
+                About</a>
         </li>        <li>
             <a title="Miscellaneous material"
                 class="active log"
                 href="/log">
                 Log</a>
         </li>        <li>
-            <a title="About me and this site"
-                class="about"
-                href="/about">
-                About</a>
-        </li>    </ul>
+            <a title="Research projects"
+                class="research"
+                href="/research">
+                Research</a>
+        </li>        <!-- added extra item (fspaolo: 2011-11-16) -->
+        <li>
+            <a title="Source code" href="https://github.com/fspaolo/code">
+            Code
+            </a>
+        </li>
+        <!-- added extra item (fspaolo: 2012-04-17) -->
+        <li>
+            <a title="Photo Gallery" href="http://www.dropbox.com/gallery/12601128/1/life?h=ce60c3">
+            Photos
+            </a>
+        </li>
+        <!-- end added extra item -->
+    </ul>
 </nav>
                               </div>
 

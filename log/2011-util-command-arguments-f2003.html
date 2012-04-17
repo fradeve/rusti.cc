@@ -94,25 +94,25 @@ options:
 <span class="k">contains</span>
 
 <span class="k">   subroutine </span><span class="nv">get_arguments</span><span class="p">()</span>
-      <span class="k">if</span> <span class="p">(</span><span class="nv">command_argument_count</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">call </span><span class="nv">print_help</span><span class="p">()</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nb">command_argument_count</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">call </span><span class="nv">print_help</span><span class="p">()</span>
 
-      <span class="k">do </span><span class="nv">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">command_argument_count</span><span class="p">()</span>  <span class="c">! iterate over arguments</span>
+      <span class="k">do </span><span class="nv">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">command_argument_count</span><span class="p">()</span>  <span class="c">! iterate over arguments</span>
          <span class="k">if</span> <span class="p">(</span><span class="nv">jump</span><span class="p">)</span> <span class="k">then</span>                   <span class="c">! jump one iteration</span>
              <span class="nv">jump</span> <span class="o">=</span> <span class="nb">.false.</span>
              <span class="k">cycle</span>
 <span class="k">         endif</span>
-<span class="k">         call </span><span class="nv">get_command_argument</span><span class="p">(</span><span class="nv">i</span><span class="p">,</span> <span class="nv">arg</span><span class="p">)</span>
+<span class="k">         call </span><span class="nb">get_command_argument</span><span class="p">(</span><span class="nv">i</span><span class="p">,</span> <span class="nv">arg</span><span class="p">)</span>
 
          <span class="k">select case</span> <span class="p">(</span><span class="nv">arg</span><span class="p">)</span>
             <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-h&#39;</span><span class="p">,</span> <span class="s1">&#39;--help&#39;</span><span class="p">)</span>
                <span class="k">call </span><span class="nv">print_help</span><span class="p">()</span>
             <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-a&#39;</span><span class="p">)</span>
-               <span class="k">call </span><span class="nv">get_command_argument</span><span class="p">(</span><span class="nv">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nv">arg_a</span><span class="p">)</span>
+               <span class="k">call </span><span class="nb">get_command_argument</span><span class="p">(</span><span class="nv">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nv">arg_a</span><span class="p">)</span>
                <span class="k">if</span> <span class="p">(</span><span class="nv">arg_a</span><span class="p">(:</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span> <span class="ow">.or.</span> <span class="nv">arg_a</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">call </span><span class="nv">print_help</span><span class="p">()</span>  <span class="c">! check the arg is correct</span>
                <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="nb">trim</span><span class="p">(</span><span class="nv">arg_a</span><span class="p">)</span>
                <span class="nv">jump</span> <span class="o">=</span> <span class="nb">.true.</span>
             <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-b&#39;</span><span class="p">)</span>
-               <span class="k">call </span><span class="nv">get_command_argument</span><span class="p">(</span><span class="nv">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nv">arg_b</span><span class="p">)</span>
+               <span class="k">call </span><span class="nb">get_command_argument</span><span class="p">(</span><span class="nv">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nv">arg_b</span><span class="p">)</span>
                <span class="k">if</span> <span class="p">(</span><span class="nv">arg_b</span><span class="p">(:</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span> <span class="ow">.or.</span> <span class="nv">arg_b</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">call </span><span class="nv">print_help</span><span class="p">()</span>
                <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="nb">trim</span><span class="p">(</span><span class="nv">arg_b</span><span class="p">)</span>
                <span class="nv">jump</span> <span class="o">=</span> <span class="nb">.true.</span>
@@ -154,29 +154,35 @@ options:
           <div id="sidebar">
                               <nav class=nav>
     <ul>
-        <!-- added extra item (fspaolo 2011-11-16) -->
-        <li>
-            <a title="Source code" href="https://github.com/fspaolo/code">
-            Code
-            </a>
-        </li>
-        <!-- end added extra item -->
                 <li>
-            <a title="Research projects"
-                class="research"
-                href="/research">
-                Research</a>
+            <a title="About me and this site"
+                class="about"
+                href="/about">
+                About</a>
         </li>        <li>
             <a title="Miscellaneous material"
                 class="active log"
                 href="/log">
                 Log</a>
         </li>        <li>
-            <a title="About me and this site"
-                class="about"
-                href="/about">
-                About</a>
-        </li>    </ul>
+            <a title="Research projects"
+                class="research"
+                href="/research">
+                Research</a>
+        </li>        <!-- added extra item (fspaolo: 2011-11-16) -->
+        <li>
+            <a title="Source code" href="https://github.com/fspaolo/code">
+            Code
+            </a>
+        </li>
+        <!-- added extra item (fspaolo: 2012-04-17) -->
+        <li>
+            <a title="Photo Gallery" href="http://www.dropbox.com/gallery/12601128/1/life?h=ce60c3">
+            Photos
+            </a>
+        </li>
+        <!-- end added extra item -->
+    </ul>
 </nav>
                               </div>
 

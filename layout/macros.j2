@@ -34,13 +34,6 @@
 {% if menu -%}
 <nav {{'class='~cls if cls }}>
     <ul>
-        <!-- added extra item (fspaolo 2011-11-16) -->
-        <li>
-            <a title="Source code" href="https://github.com/fspaolo/code">
-            Code
-            </a>
-        </li>
-        <!-- end added extra item -->
         {% for item in menu -%}
         {% set active = False -%}
         {% if item.type == 'page' -%}
@@ -60,6 +53,19 @@
                 {{ item.name }}</a>
         </li>
         {%- endfor %}
+        <!-- added extra item (fspaolo: 2011-11-16) -->
+        <li>
+            <a title="Source code" href="https://github.com/fspaolo/code">
+            Code
+            </a>
+        </li>
+        <!-- added extra item (fspaolo: 2012-04-17) -->
+        <li>
+            <a title="Photo Gallery" href="http://www.dropbox.com/gallery/12601128/1/life?h=ce60c3">
+            Photos
+            </a>
+        </li>
+        <!-- end added extra item -->
     </ul>
 </nav>
 {%- endif %}
