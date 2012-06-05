@@ -1,13 +1,13 @@
 /*
 
- Style sheet for: fspaolo.net
- Fernando Paolo <fspaolo@gmail.com>
- April 23, 2011
+Style sheet for: fspaolo.net
+Fernando Paolo <fspaolo@gmail.com>
+April 23, 2011
 
- colors
- ------
- yellow: FFD200
- red: F00
+colors
+------
+yellow: FFD200
+red: F00
 
 */
 
@@ -149,16 +149,16 @@ header {
     position: absolute;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
                  "Helvetica Neue", sans-serif;
-    padding-top: 70px;
+    padding-top: 75px;
     }
     .nav li {
         display: block;
         color: #FFD200;
-        font-size: 26px;
+        font-size: 36px;
         letter-spacing: 1px;
         padding: 0 10px;
         text-transform: uppercase;
-        margin: -17px 0;
+        margin: -28px 0;
         }
     .nav a {
         color: #FFD200;
@@ -202,7 +202,7 @@ header {
 
 .content {
     float: left;
-    width: 500px;
+    width: 540px;
     /*
     width: 40%;
     */
@@ -238,7 +238,10 @@ header {
         margin-bottom: 15px;
     }
     article img {
+        /*
         max-width: 92%;
+        */
+        max-width: 450px;
         border: 5px solid #222;
         margin: 0;
     }
