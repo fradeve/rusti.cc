@@ -1,0 +1,155 @@
+[[!meta  title="UGS"]]
+[[!meta  date="2009-02-20 12:34:43"]]
+<p class="line903"><strong>UGS</strong> &egrave; uno script in <a href="http://wiki.ubuntu-it.org/Programmazione/Python">Python</a> realizzato per automatizzare l'inserimento delle nuove voci all'interno del <a href="http://wiki.ubuntu-it.org/Giochi">Portale Giochi</a> del <a href="http://wiki.ubuntu-it.org/Documentazione/Indice">Wiki</a>
+di Ubuntu-it. In particolare, lo script si occupa di facilitare la
+compilazione della tabella informativa relativa ad ogni gioco, oltre a
+svolgere altre varie funzioni. Lo script &egrave; rilasciato sotto licenza GPL v3.
+<h2 id="head-7e614fd2f5d11d68002dadafb15cff4241d63904">Utilit&agrave;</h2>
+<p class="line886">Lo script permette di evitare errori comuni durante la scrittura delle pagine di wiki nel Portale Giochi:</p>
+
+<ul>
+	<li>
+<p class="line886">permette anche ai meno esperti della formattazione wiki di poter completare la tabella descrittiva senza difficolt&agrave;;</p>
+</li>
+	<li>
+<p class="line879">permette anche ai meno esperti di ottenere facilmente il codice da inserire nelle pagine di lista (<a href="http://wiki.ubuntu-it.org/Giochi/Azione">Giochi/Azione</a>, <a href="http://wiki.ubuntu-it.org/Giochi/RpgMmorpg">RpgMmorpg</a>, ecc.);</p>
+</li>
+	<li>
+<p class="line879">evita che si possa creare una nuova pagina con un <a href="http://wiki.ubuntu-it.org/NomeWiki">NomeWiki</a> errato (controllo <a href="http://wiki.ubuntu-it.org/NomeWiki">NomeWiki</a> sia sul nome del gioco che su quello dell'utente);</p>
+</li>
+	<li>
+<p class="line886">evita che si dimentichi di inserire la licenza;</p>
+</li>
+	<li>
+<p class="line886">evita che vengano caricate immagini con lo stesso nome, o con nomi non significativi;</p>
+</li>
+	<li>
+<p class="line886">evita che si dimentichi la Category in fondo alla pagina;</p>
+</li>
+</ul>
+<h2 id="head-fe43e45fe57c9aaf6b26be14c56c290e979ff879">Download e Avvio</h2>
+<ol type="0">
+	<li>
+<p class="line879">La versione pi&ugrave; aggiornata dello script &egrave; attualmente scaricabile da <a href="http://dl.getdropbox.com/u/369614/ugs-0.8.8.zip">qui</a></p>
+</li>
+	<li>
+<p class="line879">Al termine del download,</p>
+
+<a href="http://wiki.ubuntu-it.org/AmministrazioneSistema/FormatiDiCompressione">estrarre</a> il pacchetto; &egrave; possibile anche farlo da terminale, con il comando
+<pre>cd
+unzip ugs-*.zip</pre>
+</li>
+	<li>
+<p class="line879">Eliminare l'archivio, ormai inutile, con il comando</p>
+
+<pre>rm ugs-*.zip</pre>
+</li>
+	<li>
+<p class="line879">Entrare nella cartella dello script ed eseguirlo, con i comandi</p>
+
+<pre>cd ugs
+python ugs.py</pre>
+</li>
+</ol>
+<h2 id="head-8268aeaf8932a100605d07864a6150f58fd8a11c">Rilasci e versioni</h2>
+<p class="line903"><strong>0.8.8</strong></p>
+
+<ul>
+	<li>
+<p class="line886">aggiunto supporto per tutti i browser (Firefox, Konqueror, Lynx, Netscape); dovrebbe supportare anche Internet Explorer;</p>
+</li>
+	<li>
+<p class="line886">supportato
+l'inserimento di "qualsiasi" nei campi Processore, RAM e Scheda video
+(automaticamente convertito in minuscolo nel caso si scriva
+"Qualsiasi");</li>
+	<li>
+<p class="line879">aggiunta la pulizia dei file dalla cartella <tt class="backtick">ugs/risultati</tt>, ed eliminati eventuali messaggi d'errore legati all'assenza del file opzionale <tt class="backtick">lista.txt</tt>;</p>
+</li>
+	<li>
+<p class="line879">&egrave; stato pulito un bel p&ograve; il codice, e create le funzioni "def" per snellire il processo del <a href="http://wiki.ubuntu-it.org/NomeWiki">NomeWiki</a> e della pulizia dei file.</p>
+</li>
+</ul>
+<p class="line903"><strong>0.8</strong></p>
+
+<ul>
+	<li>
+<p class="line886">aggiunto controllo su quantit&agrave; di RAM (MiB, GiB);</p>
+</li>
+	<li>
+<p class="line886">aggiunto controllo sulla grandezza del download (KiB, MiB);</p>
+</li>
+	<li>
+<p class="line879">aggiunto controllo sull'indirizzo del sito (supporto per "<a class="http" href="http:///">http://</a>", "www" e "<a class="ftp" href="ftp:///">ftp://</a>");</p>
+</li>
+	<li>
+<p class="line886">migliorata leggibilit&agrave; e pulizia dello script; ordinate sequenze delle azioni.</p>
+</li>
+</ul>
+<p class="line903"><strong>0.7</strong></p>
+
+<ul>
+	<li>
+<p class="line886">aggiunta funzione di creazione della voce per i men&ugrave; di sezione;</p>
+</li>
+	<li>
+<p class="line886">ottimizzato e ridotto il comando di avvio;</p>
+</li>
+	<li>
+<p class="line886">inserita funzione che controlla automaticamente la maiuscola all'inizio della descrizione della voce di lista;</p>
+</li>
+	<li>
+<p class="line886">sistemate cartelle dello script ed eliminati file inutili;</p>
+</li>
+	<li>
+<p class="line886">eliminata opzione non funzionante "modifica dati";</p>
+</li>
+</ul>
+<p class="line903"><strong>0.6</strong></p>
+
+<ul>
+	<li>
+<p class="line879">trasformazione di qualsiasi nome del gioco inserito dall'utente in un <a href="http://wiki.ubuntu-it.org/NomeWiki">NomeWiki</a>;</p>
+</li>
+	<li>
+<p class="line886">inserimento veloce di Categoria, N&deg; Giocatori, Download, Sito Ufficiale, Requisiti Minimi;</p>
+</li>
+	<li>
+<p class="line886">selezione assistita della Licenza;</p>
+</li>
+	<li>
+<p class="line886">rinomina automaticamente l'immagine del gioco con il nome del gioco stesso;</p>
+</li>
+	<li>
+<p class="line879">inserimento della CategoryGiochi solo se la guida &egrave; completa;</p>
+</li>
+	<li>
+<p class="line879">apertura diretta (in modalit&agrave; <em>edit</em>)
+della pagina Prove dell'utente (se la guida &egrave; incompleta) o
+direttamente della pagina del gioco (se la guida &egrave; completa); se il <a href="http://wiki.ubuntu-it.org/NomeWiki">NomeUtente</a> digitato alla richiesta non &egrave; corretto (per esempio, se scrivo <em>Francesco de virgilio</em> al posto di <em>FrancescoDeVirgilio</em>), viene automaticamente corretto dallo script.</li>
+</ul>
+<h2 id="head-98cf11ec99e2339ffb52694dda5829cebd79e84d">Note</h2>
+<ul>
+	<li>
+<p class="line879">Il risultato dell'esecuzione dello script &egrave; visbile nei file <tt class="backtick">risultato.txt</tt> e <tt class="backtick">lista.txt</tt>, generati <em>temporaneamente</em> all'interno della cartella <tt class="backtick">usg/risultati</tt>, ma copiati nella propria <strong>Home</strong>.</p>
+</li>
+	<li>
+<p class="line879">La cartella <tt class="backtick">ugs/non_modificare</tt> contiene file essenziali per ottenere risultati corretti, quindi non vanno modificati n&egrave; rinominati.</p>
+</li>
+	<li>
+<p class="line886">Lo script attualmente supporta tutti i browser per GNU/Linux e dovrebbe funzionare anche su Windows con Internet Explorer.</p>
+</li>
+	<li>
+<p class="line879">Per il corretto funzionamento dello script, non bisogna rimuovere nessuno dei file dalla cartella <tt class="backtick">ugs</tt>.</p>
+</li>
+	<li>
+<p class="line879">Alcune opzioni presenti nello script permettono di entrare nel Wiki di Ubuntu-it direttamente in modalit&agrave; <em>edit</em>, per cui, prima di utilizzarlo, &egrave; consigliabile essere iscritti al Wiki.</p>
+</li>
+</ul>
+
+[[!tag  fic]]
+[[!tag  gnu-linux]]
+[[!tag  python]]
+[[!tag  senza-categoria]]
+[[!tag  ubuntu]]
+[[!tag  ubuntu-it]]

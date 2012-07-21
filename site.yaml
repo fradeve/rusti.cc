@@ -6,12 +6,13 @@ plugins:
     - hyde.ext.plugins.meta.MetaPlugin
     - hyde.ext.plugins.auto_extend.AutoExtendPlugin
     - hyde.ext.plugins.sorter.SorterPlugin
+    - hyde.ext.plugins.grouper.GrouperPlugin
     - hyde.ext.plugins.tagger.TaggerPlugin
     - hyde.ext.plugins.syntext.SyntextPlugin
     - hyde.ext.plugins.textlinks.TextlinksPlugin
 context:
     data:
-        tweet_via: fspaolo
+        tweet_via: fradeve
         menu:
             -
                 name: About
@@ -21,10 +22,22 @@ context:
                 url: about
             -
                 name: Log
-                description: Miscellaneous material
+                description: Wow, a blog!
                 css_class: log
                 type: node
                 url: log 
+            -
+                name: Tags
+                description: Blog's tags
+                css_class: log
+                type: node
+                url: tags
+            -
+                name: Feed
+                description: Blog's feed
+                css_class: log
+                type: page
+                url: atom.xml
             -
                 name: Research
                 description: Research projects
@@ -34,7 +47,10 @@ context:
 meta:
     nodemeta: meta.yaml
     created: !!timestamp 2011-04-01 00:00:00
-    author: Fernando Paolo 
+    author: Francesco de Virgilio
+    usedisqus: true
+    disqus: fradeve
+    featured: no
 sorter:
     time:
         attr:
@@ -48,7 +64,7 @@ tagger:
     archives:
         log:
             source: log
-            target: log/tags
+            target: tags
             template: tagged_posts.j2
             archive_extension: html
 publisher:

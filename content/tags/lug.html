@@ -1,0 +1,9 @@
+---
+extends: false
+
+---
+
+{% set tag = site.tagger.tags['lug'] %}
+{% set source = site.content.node_from_relative_path('log') %}
+{% set walker = source.walk_resources_tagged_with_lug %}
+{% extends "tagged_posts.j2" %}

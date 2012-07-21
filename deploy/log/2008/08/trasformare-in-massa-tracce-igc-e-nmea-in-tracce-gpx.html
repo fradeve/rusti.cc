@@ -1,0 +1,207 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Trasformare in massa tracce igc e nmea in tracce gpx</title>
+  <meta name="description" content="">
+  <meta name="author" content="Francesco de Virgilio">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+   <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    </head>
+<body id="trasformare-in-massa-tracce-igc-e-nmea-in-tracce-gpx">
+                  <div id="main" role="main">
+
+          <header class="clearfix">
+          </header>
+
+          <section class="content">
+          <article>
+
+<h1 class="title">
+    <a href="/log/2008/08/trasformare-in-massa-tracce-igc-e-nmea-in-tracce-gpx.html">
+        Trasformare in massa tracce igc e nmea in tracce gpx
+    </a>
+</h1>
+
+<time datetime="2008-08-18">
+    Posted on 18 Aug 2008
+</time>
+<br>
+<tags>tags:
+	<a href="/tags/python.html">python</a>, 
+	<a href="/tags/openstreetmap.html">openstreetmap</a> 
+</tags>
+
+<h6 class="description">
+    <a href="/log/2008/08/trasformare-in-massa-tracce-igc-e-nmea-in-tracce-gpx.html">
+        
+    </a>
+</h6>
+
+<p>Questo è un post scritto da <a href="http://www.sdonk.org/">Sdonk</a>, ospitato qui sul mio blog&nbsp;:)</p>
+<p>Durante l&#8217;<a href="http://blog.sdonk.org/2008/08/trasformare-in-massa-tracce-igc-e-nmea-in-tracce-gpx/">openstreecamping2008</a> abbiamo avuto
+la necessità di trasformare, con gpsbabel, le decine di tracce igc, il formato
+di tracking che utilizza il cellulare di <a href="http://www.fradeve.org">Fradeve</a>, raccolte durante i giri
+in bici in formato <span class="caps">GPX</span> che e il formato utilizzato da <span class="caps">JOSM</span>. Dopo qualche
+giorno ci siamo resi conto che era noioso ridigitare ogni volta il comando dal
+terminale (ovviamente non tutto, ma modificando semplicemente il nome del file
+nel comando precedente) e potevamo perdere tempo prezioso in questo&nbsp;modo?</p>
+<p>Ovviamente no! Mentre Fradeve leggeva la biografia di Torvalds (ve la
+consiglio) e il caldo era insopportabile, ho scritto un piccolo script in
+python per convertire in massa file igc e nmea in file <span class="caps">GPX</span>. Credo sia
+possibile farlo anche in Bash, ma non conoscendo il Bash ho preferito usare il
+python e in particolare il modulo os, contenuto nella libreria standard, che
+permette al programma di interfacciarsi con il sistema operativo. <a href="http://www.blog.sdonk.org/wp-content/uploads/trasforma.py">Clic qui
+per scaricare lo&nbsp;script</a></p>
+<p>Qualche commento al&nbsp;codice:</p>
+<p>[[!format py &#8220;&#8221;&#8221;
+if formato in ListaFormati:
+    ListaFile = CercaFile(os.listdir(&#8216;.&#8217;) , formato)
+    else : print &#8220;Formato inesistente o non ancora implementato, esco dal programma.&#8221;
+exit()&nbsp;&#8221;&#8220;</p>
+<p>Controlla il formato passato come argomento al programma e, se corretto (i formati
+accettati sono igc e nmea), restituisce una lista, attraverso la funzione
+os.listdir(cartella), con <strong>tutti</strong> i file contenuti nella cartella passata
+come&nbsp;argomento. </p>
+<p>[[!format py &#8220;&#8221;&#8221;
+def CercaFile(lista, flag):
+for i in lista:
+    if flag in i:
+        gpx.append(i)
+        return gpx&nbsp;&#8221;&#8220;</p>
+<p>La funzione CercaFile restituisce una nuova lista contenente soltanto i file con
+l&#8217;estensione interessata (igc o nmea), eliminando tutti gli altri file&nbsp;inutili.</p>
+<p>[[!format py &#8220;&#8221;&#8221;
+if ListaFile != []:
+    c = 0
+    for i in ListaFile:
+        stringa = &#8220;gpsbabel -i &#8221; + formato + &#8221; -f &#8216;&#8221; + i + &#8220;&#8217; -o gpx -F &#8216;&#8221; + i[0:-3] + &#8220;&#8216;gpx&#8221;
+        os.system(stringa)
+        c = c + 1 print &#8220;Ho trasformato &#8221; + str(c) + &#8221; file in gpx ed ho cancellato i file &#8221; + formato + &#8220;&#8221;
+else:
+print &#8220;Non ci sono file da convertire, ciao!&#8221; [/sourcecode]&nbsp;&#8221;&#8220;</p>
+<p>Controlla che ci siano
+file da convertire, in caso positivo passa al sistema, attraverso il la
+funzione os.system, il comando gpsbabel necessario alla conversione dei file.
+La stringa che può sembrare complicata serve a trasformare i file mantenendo
+il nome originale. Per eseguire lo script basta copiare i file da trasformare
+nella stessa cartella dove è presente lo script e poi da terminale&nbsp;digitare:</p>
+<div class="codehilite"><pre>$<span class="p">:</span> <span class="n">python</span> <span class="n">trasforma</span><span class="p">.</span><span class="n">py</span> <span class="n">formato</span>
+</pre></div>
+
+
+<p>dove <code>formato</code> deve essere sostituito con igc o con nmea a seconda del formato
+di partenza dei&nbsp;file.</p>
+<p>Semplice, veloce ed efficace a patto di aver gpsbabel
+installato,&nbsp;ovviamente!</p></article>
+<div id="disqus_thread" ></div>
+<style>
+/* remove unnecessary disqus cruft from view */
+.dsq-comment-header{background:none !important; border:none !important;}
+.dsq-post-tools, .dsq-button, .dsq-textarea-background{ background:none !important;}
+#dsq-like-thread-button .dsq-toolbar-label, #dsq-subscribe, #dsq-sort-select, .dsq-trackback-url, .dsq-brlink {display:none !important;}
+</style>
+<script type="text/javascript">
+        var disqus_developer = 1; // developer mode is on
+        var disqus_shortname = 'jseabold';
+    var disqus_identifier = "log/2008/08/trasformare-in-massa-tracce-igc-e-nmea-in-tracce-gpx.html";
+    var disqus_url = "http://jseabold.netlog/2008/08/trasformare-in-massa-tracce-igc-e-nmea-in-tracce-gpx.html";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+          <footer>
+          <!-- this website is proudly powered by <a href="http://www.python.org/">Python</a>,
+          build with the static site generator <a href="http://hyde.github.com/">Hyde</a>, 
+          source code hosted on <a href="https://github.com/fspaolo/">GitHub</a>,
+	  and written using <a href="http://www.vim.org/">VIM</a>. -->
+          </footer>
+          </section>
+
+          <div id="sidebar">
+                              <nav class=nav>
+    <ul>
+                <li>
+            <a title="About me and this site"
+                class="about"
+                href="/about">
+                About</a>
+        </li>        <li>
+            <a title="Wow, a blog!"
+                class="log"
+                href="/log">
+                Log</a>
+        </li>        <li>
+            <a title="Blog's tags"
+                class="log"
+                href="/tags">
+                Tags</a>
+        </li>        <li>
+            <a title="Blog's feed"
+                class="log"
+                href="/atom.xml">
+                Feed</a>
+        </li>        <li>
+            <a title="Research projects"
+                class="research"
+                href="/research">
+                Research</a>
+        </li>    </ul>
+</nav>
+                              </div>
+
+          </div>
+        
+    <!-- Javascript at the bottom for fast page loading -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  
+    
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+  <!--    -->
+
+  </body>
+</html>

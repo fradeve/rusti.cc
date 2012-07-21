@@ -1,0 +1,31 @@
+## packages
+* fuse-utils
+* gvfs
+* gvfs-fuse
+* davfs2
+
+By default this package is installed so that only root can mount davfs volumes. To mount as other users, you need to set the SUID bit for /sbin/mount.davfs and designate a group whose members can mount davfs volumes. To set the SUID bit, use this command:
+
+sudo chmod u+s /sbin/mount.davfs
+
+You then need to configure davfs so that only members of the group "users" can mount davfs volumes. The config file for davfs is: /etc/davfs/davfs.conf Edit however you like, but to use gedit:
+
+sudo vim /etc/davfs2/davfs2.conf
+
+There should be a line something like:
+
+dav_group $group
+
+This should be changed to:
+
+dav_group users
+
+Now, you should add your user to the users group:
+
+sudo addgroup your-user users
+
+Reboot
+
+sudo chown -R www-data:www-data owncloud
+
+To achieve the same user on the the box.net files and server user, you have to mount the webdav volume as "fradeve" using /etc/fstab

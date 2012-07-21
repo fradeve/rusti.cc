@@ -1,0 +1,19 @@
+menu:
+    -
+        name: About
+        description: About
+        css_class: about
+        type: node
+        url: about
+    -
+        name: Blog
+        description: Wow, a blog!
+        css_class: log
+        type: node
+        url: log
+    -
+        name: Projects
+        description: Projects
+        css_class: research
+        type: node
+        url: research

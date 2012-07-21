@@ -1,0 +1,223 @@
+---
+title: "Backup strategies"
+created: !!timestamp '2012-04-14 15:15:00'
+charset: utf-8
+featured: yes
+tags:
+    - backup
+---
+
+_Ultimo aggiornamento: 01 maggio 2012_
+
+Non ho molto tempo per spiegare l'immagine. In soldoni, è uno schema riassuntivo di come sono organizzati i miei dati ed i miei backup, realizzato anche per approfondire un po' la conoscenza di Graphviz. Il codice è in fondo al post.
+
+<center>![][1]<br>_Storie di ordinario backup_</center>
+
+_Legenda_
+
+* in verde le cartelle cifrate
+* in rosso le parti dell'infrastruttura ancora da creare
+* sono state usate forme e frecce differenti per distinguere i processi
+
+Il codice dell'immagine:
+
+	digraph G {
+		// TODO
+		// * legend
+		// * bold cluster labels
+		graph [ dpi = 300 ];
+		size ="4,6";	// table size
+		compound=true;
+		ranksep="1.5"
+		rankdir="LR"
+
+		subgraph cluster_edgar {
+			style=filled;
+			color=lightgrey;
+			label = "edgar";
+
+			// boxes
+			subgraph cluster_drop {
+				style=filled;
+				color=white;
+				label = "Dropbox";
+
+				irssi [label="~/.irssi",shape=folder,style=filled,fillcolor=green]
+				blog_local [label="blog|site",shape=folder]
+			}
+			
+			// scripts
+			offlineimap [label="offlineimap",shape=component]
+			rsync_off [label="rsync \noffline",shape=component]
+			rsync_on [label="rsync \nonline",shape=component]
+			webdav_edgar [label="DavFS2",shape=component]
+			
+			// folders
+			mail [label="~/.mail",shape=folder,style=filled,fillcolor="#008000"]
+		}
+
+		subgraph cluster_internet {
+			style=filled;
+			color=lightblue;
+			label = "internet";
+
+			// boxes
+			ai [label="A/I \nmail",shape=box3d,style=filled,fillcolor="#808000"]
+			gmail [label="Gmail",shape=box3d]
+			riseup [label="Riseup \nmail",shape=box3d,style=filled,fillcolor="#808000"]
+			boxnet1 [label="Box.net \nstorage 1",shape=box3d,style=filled,fillcolor=green]
+			boxnet2 [label="Box.net \nstorage 2",shape=box3d,style=filled,fillcolor=green]
+			boxnet3 [label="Box.net \nstorage 3",shape=box3d,style=filled,fillcolor=green]
+			skydrive1 [label="Skydrive1",shape=box3d,style=filled,fillcolor=green]
+			skydrive2 [label="Skydrive2",shape=box3d,style=filled,fillcolor=green]
+			drop_online [label="Dropbox \nstorage",shape=box3d]
+			libredocs [label="Libredocs",shape=component]
+		}
+
+		subgraph cluster_ext_storage {
+			style=filled;
+			color=lightgrey;
+			label = "External \nstorage";
+
+			// hds
+			usb8gb [label="USB 8 Gb",shape=folder]
+			subgraph cluster_hd1 {
+				style=filled;
+				color=white;
+				label = "320 Gb";
+
+				immagini_hd1 [label="immagini",shape=folder]
+				video_hd1 [label="video",shape=folder]
+				musica_hd1 [label="musica",shape=folder]
+				books [label="libri",shape=folder]
+			}
+
+			subgraph cluster_hd2 {
+				style=filled;
+				color=white;
+				label = "2 Tb";
+
+				immagini_hd2 [label="immagini",shape=folder]
+				video_hd2 [label="video",shape=folder]
+				musica_hd2 [label="musica",shape=folder]
+				usb8gb_hd2 [label="USB 8 Gb",shape=folder]
+			}
+		}
+
+		subgraph cluster_paranoia {
+			style=filled;
+			color=yellow;
+			label = "paranoia";
+
+			rsnapshot_paranoia [label="rsnapshot",shape=component]
+
+			filesystem_paranoia [label="filesystem",shape=folder]
+			backup_dir_paranoia [label="backup \ndir",shape=folder,style=filled,fillcolor="#008000",color=red]
+			webdav_paranoia[label="DavFS2",shape=component,color=red]
+			
+			subgraph cluster_pubwww_paranoia {
+				style=filled;
+				color=lightblue;
+				label = "Public www";
+				
+				blog_pubwww [label="blog|site",shape=folder]
+				others_pubwww_paranoia [label="others",shape=folder]
+			}
+
+			filesystem_paranoia -> rsnapshot_paranoia -> backup_dir_paranoia
+			backup_dir_paranoia -> webdav_paranoia -> boxnet1 [color=red]
+			others_pubwww_paranoia -> rsnapshot_paranoia
+		}
+
+		subgraph cluster_ovh {
+			style=filled;
+			color=orange;
+			label = "ovh";
+
+			webdav_ovh [label="DavFS2",shape=component,color=red]
+
+			rsnapshot_ovh[label="rsnapshot",shape=component]
+			filesystem_ovh [label="filesystem",shape=folder]
+			backup_dir_ovh [label="backup \ndir",shape=folder,style=filled,fillcolor="#008000",color=red]
+			
+			subgraph cluster_pubwww_ovh {
+				style=filled;
+				color=lightblue;
+				label = "Public www";
+
+				owncloud [label="owncloud",shape=component]
+				others_pubwww_ovh [label="others",shape=folder]
+			}
+
+			filesystem_ovh -> rsnapshot_ovh -> backup_dir_ovh
+			backup_dir_ovh -> webdav_ovh -> boxnet1 [color=red]
+			others_pubwww_ovh -> rsnapshot_ovh [ltail=cluster_pubwww_ovh]
+		}
+
+		subgraph cluster_android {
+			style=filled;
+			color=pink;
+			label = "Android";
+
+			sms [label="Android \nSMS",shape=box3d]
+			calendar [label="calendar",color=red,shape=component]
+			contacts [label="contacts",color=red,shape=component]
+		}
+
+		pings [label="pings",shape=egg]
+		chat [label="Gtalk \nlogs",shape=egg]
+
+		drop_online -> irssi [lhead=cluster_drop,dir=both]
+		pings -> riseup
+		blog_local -> rsync_on [style=dashed]
+		rsync_on -> blog_pubwww [style=dashed]
+		chat -> gmail
+
+		// owncloud -> android
+		owncloud -> calendar [color=red]
+		owncloud -> contacts [color=red]
+		libredocs -> owncloud
+
+		// mail - sms
+		sms -> gmail
+		gmail -> offlineimap [dir=both]
+		ai -> offlineimap [dir=both]
+		riseup -> offlineimap [dir=both]
+		offlineimap -> mail
+		
+		// external storage
+		immagini_hd1 -> rsync_off [style=dotted]
+		video_hd1 -> rsync_off [style=bold]
+		musica_hd1 -> rsync_off
+		usb8gb -> rsync_off [style=dashed]
+		rsync_off -> immagini_hd2 [style=dotted]
+		rsync_off -> video_hd2 [style=bold]
+		rsync_off -> musica_hd2
+		rsync_off -> usb8gb_hd2 [style=dashed]
+
+		// boxes
+		immagini_hd1 -> webdav_edgar [style=dotted]
+		video_hd1 -> webdav_edgar [style=bold,color=red]
+		musica_hd1 -> webdav_edgar
+		//books -> webdav_edgar
+		webdav_edgar -> rsync_on [style=dotted];
+		webdav_edgar -> rsync_on [style=bold,color=red];
+		webdav_edgar -> rsync_on
+		rsync_on -> boxnet1 [style=dotted];
+		rsync_on -> skydrive2 [style=bold,color=red];
+		rsync_on -> boxnet2;
+		rsync_on -> boxnet3;
+		rsync_on -> skydrive1 [color=red];
+		boxnet1 -> webdav_ovh [style=dotted,arrowhead=dot,color=red];
+		boxnet2 -> webdav_ovh [arrowhead=dot,color=red];
+		boxnet3 -> webdav_ovh [arrowhead=dot,color=red];
+		skydrive1 -> webdav_ovh [arrowhead=dot,color=red];
+		skydrive2 -> webdav_ovh [style=bold,arrowhead=dot,color=red];
+
+		webdav_ovh -> owncloud [style=dotted,arrowhead=dot,color=red];
+		webdav_ovh -> owncloud [arrowhead=dot,color=red];
+		webdav_ovh -> owncloud [arrowhead=dot,color=red];
+		webdav_ovh -> owncloud [style=bold,arrowhead=dot,color=red];
+	}
+
+   [1]: http://dl.dropbox.com/u/369614/blog/img_red/backup.png

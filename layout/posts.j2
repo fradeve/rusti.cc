@@ -12,6 +12,12 @@
 <time datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">
     Posted on {{ resource.meta.created.strftime('%d %b %Y') }}
 </time>
+<br>
+<tags>tags:
+{% for tag in resource.meta.tags %}
+	<a href="/tags/{{tag}}.html">{{tag}}</a>{% if tag != resource.meta.tags[-1] %},{% endif %} 
+{% endfor %}
+</tags>
 
 <h6 class="description">
     <a href="{{ content_url(resource.url) }}">
@@ -24,6 +30,6 @@
 {% block post -%}{%- endblock %}
 {%- endmark %}
 {%- endfilter %}
-
 </article>
+{% include "disqus.j2" %}
 {%- endblock %}

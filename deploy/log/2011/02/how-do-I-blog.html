@@ -1,0 +1,232 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>How do I blog?</title>
+  <meta name="description" content="">
+  <meta name="author" content="Francesco de Virgilio">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+   <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    </head>
+<body id="how-do-I-blog">
+                  <div id="main" role="main">
+
+          <header class="clearfix">
+          </header>
+
+          <section class="content">
+          <article>
+
+<h1 class="title">
+    <a href="/log/2011/02/how-do-I-blog.html">
+        How do I blog?
+    </a>
+</h1>
+
+<time datetime="2011-03-06">
+    Posted on 06 Mar 2011
+</time>
+<br>
+<tags>tags:
+	<a href="/tags/socialnetwork.html">socialnetwork</a>, 
+	<a href="/tags/blog.html">blog</a>, 
+	<a href="/tags/ubuntu.html">ubuntu</a> 
+</tags>
+
+<h6 class="description">
+    <a href="/log/2011/02/how-do-I-blog.html">
+        
+    </a>
+</h6>
+
+<p><em>Ultimo aggiornamento:</em> 2 aprile&nbsp;2012</p>
+<h2 id="pippe">Pippe</h2>
+<p><a href="/log/2007/09/finalmente-a-casa.html">Per molto tempo</a> questo blog è servito ad unico scopo: tenere aggiornata la comunità di Ubuntu-it sull&#8217;andamento delle attività nei vari progetti in cui ero coinvolto: gruppo promozione, gruppo documentazione, wiki di Ubuntu-it, ecc. Non a caso è nato in contemporanea con il mio ingresso nella Comunità. Con il passare degli anni, è diventato molto di più: un sistema per condividere annunci, esperienze, riflessioni, appuntamenti con gli eventi della Cultura Libera,&nbsp;ecc.</p>
+<p>Ad un certo punto dello sviluppo di internet, ogni progetto aderente alla cultura del <em>Free Software</em> si è adeguato alla necessità di raccogliere le testimonianze e gli aggiornamenti all&#8217;interno di un blog o di un planet, moltiplicando le fonti e le novità relative al tema in&nbsp;questione.</p>
+<p>Con il tempo, anche le mie esigenze sono cambiate, ed in questi mesi si stanno evolvendo rapidamente anche le necessità di postare miei articoli, non inerenti le attività all&#8217;interno della comunità di Ubuntu, su altri blog. Quando si gestiscono blog in collaborazione con altre persone (come nel caso del <a href="http://www.tecnologiebcuniba.org/wordpress/">blog dei rappresentanti del corso di laurea</a> nel quale scrivo) non si può chiaramente obbligare tutti ad utilizzare Ikiwiki, e così si sceglie una comoda installazione di Wordpress. D&#8217;altro canto, non ho nessuna intenzione&nbsp;di:</p>
+<ul>
+<li>rinunciare allo straordinario combo: Ikiwiki + <span class="caps">GIT</span> + Vim +&nbsp;rsync;</li>
+<li>disperdere i miei articoli; desidero che ne resti una copia comunque sul mio&nbsp;blog.</li>
+</ul>
+<p>Considerato che il blog dei rappresentanti non sarà l&#8217;unico blog nel quale andrò a postare quest&#8217;anno, come risolvere? E soprattutto, come evitare che lunghi e noiosi post riguardanti le attività didattiche del mio corso di laurea inquinino l&#8217;interessantissimo planet di&nbsp;Ubuntu-it?</p>
+<p>La soluzione è arrivata da un semisconosciuto servizio di Yahoo!, <a href="http://pipes.yahoo.com/"><em>Pipes</em></a>, un efficace strumento online per la creazione di sistemi che gestiscono, smistano, filtrano informazioni di tipo testuale e soprattutto caratterizzate da una sintassi ordinata (come quella dell&#8217;<span class="caps">XML</span>). Su Pipes ho appunto <a href="http://pipes.yahoo.com/pipes/pipe.info?_id=71bcdf728b59016dd430d09863e0f731">creato</a> un semplicissimo filtro per il mio feed <span class="caps">RSS</span> principale, dal quale vengono esclusi tutti i post taggati con <a href="/tags/diagnostica.html">diagnostica</a>. In questo modo il feed finale risulterà pulito e potrà arricchire il planet di&nbsp;Ubuntu-it.</p>
+<p>Certo, la pipe è ancora da migliorare, ma per cominciare mi sembra un&#8217;ottima soluzione&nbsp;:)</p>
+<h2 id="configurazioni-dei-feed">Configurazioni dei&nbsp;feed</h2>
+<p>Da qualche tempo, Facebook si rifiuta di importare i miei post dal feed <span class="caps">RSS</span>/Atom generato da Ikiwiki, restituitendomi un sempreverde &#8220;Import failed - We couldn&#8217;t find a feed using the <span class="caps">URL</span> you provided.&#8221;. Ottimo. Pensando che Ping.fm potesse venirmi in aiuto importando i feed <span class="caps">RSS</span> dal blog e rispammandoli su Facebook, ho scoperto con gran rammarico che anche Ping.fm dai primi giorni del 2011 si sta impegnando per fornire disservizi (d&#8217;altro canto, è gratis, quindi di cosa ci&nbsp;lamentiamo?).</p>
+<p>E&nbsp;allora?</p>
+<p>Allora ho deciso di attivare un account su <a href="http://twitterfeed.com">Twitterfeed</a>, che ogni mezz&#8217;ora parsa i feed sia del blog che degli elementi condivisi di Google Reader (altro servizio che Ping.fm allegramente condivideva sul mio account di Facebook) e li riversa nei maggiori social network ai quali sono iscritto: Facebook, Twitter,&nbsp;Identi.ca.</p>
+<p>Questo basta? No. Per giocare un po&#8217; con <a href="http://www.graphviz.org/">Graphviz</a> (cosa che volevo fare da tempo) ho deciso di riassumere questo bel giochetto in un grafico, il cui codice è riportato di seguito. Per <em>pingare</em> da cellulare invio una email da un altro account di posta su Gmail, che viene filtrata e spostata in una certa cartella, il cui feed <span class="caps">RSS</span> viene dato in pasto a <a href="http://www.brdcst.it">Brdcst it!</a> che lo posterà sui vari social network. I feed provenienti dal blog e dagli articoli condivisi sul mio aggregatore di feed <span class="caps">RSS</span> devono passare prima da <a href="http://feedburner.google.com">FeedBurner</a> per essere formattati in Atom (invece che <span class="caps">RSS</span>) prima di essere inoltrati via Brdcst. Purtroppo Brdcst non inoltra verso Linkedin, per cui i retweet (Twitter <span class="caps">RT</span>, presi via <span class="caps">RSS</span> pubblico) devono passare a questo scopo attraverso <a href="http://www.iffft.com">Iffft</a>. Tutti i servizi in verde sono realizzati utilizzando software libero, quelli in rosso sono&nbsp;proprietari.</p>
+<p><center><img alt="" src="http://dl.dropbox.com/u/369614/blog/img_red/dot_sn.png" /><br><em>Collegamenti tra i vari servizi di social networking</em></center></p>
+<div class="codehilite"><pre><span class="n">digraph</span> <span class="n">G</span> <span class="p">{</span>
+    <span class="n">graph</span> <span class="p">[</span> <span class="n">dpi</span> <span class="p">=</span> 300 <span class="p">];</span>
+    <span class="o">//</span> <span class="n">table</span> <span class="nb">size</span>
+    <span class="nb">size</span> <span class="p">=</span>&quot;4<span class="p">,</span>6&quot;<span class="p">;</span>
+
+    <span class="o">////</span> <span class="n"><span class="caps">LABELING</span></span> <span class="o">////</span>
+
+    <span class="o">//</span> <span class="n">means</span>
+    <span class="n">ttrss</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n"><span class="caps">TT</span></span><span class="o">-</span><span class="n"><span class="caps">RSS</span></span> <span class="o">\</span><span class="n">nRSS</span><span class="o">+</span><span class="n">OAuth</span> &quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">record</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+    <span class="n">brdcst</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">brdcst</span> <span class="o">\</span><span class="n">nit</span>!&quot;<span class="p">,</span> <span class="n">shape</span><span class="p">=</span><span class="n">record</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+    <span class="n">ifttt</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">ifttt</span>&quot;<span class="p">,</span> <span class="n">shape</span><span class="p">=</span><span class="n">record</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">red</span><span class="p">]</span>
+    <span class="n">feedburner</span><span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">FeedBurner</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">record</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">red</span><span class="p">]</span>
+    <span class="n">pipes</span><span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Yahoo</span>! <span class="o">\</span><span class="n">nPipes</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">record</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">red</span><span class="p">]</span>
+
+    <span class="o">//</span> <span class="n">sources</span>
+    <span class="n">ttrssshared</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n"><span class="caps">TT</span></span><span class="o">-</span><span class="n"><span class="caps">RSS</span></span> <span class="o">\</span><span class="n">nshared</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+    <span class="n">blog</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Fradeve</span> <span class="o">\</span><span class="n">nOpenblog</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+    <span class="n">mobile</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">mobile</span> <span class="o">\</span><span class="n">ninput</span> <span class="o">\</span><span class="n">n</span><span class="p">(</span><span class="n">email</span><span class="p">)</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+    <span class="n">github</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">GitHub</span> <span class="o">\</span><span class="n">nactivity</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+    <span class="n">twitter</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Twitter</span> <span class="n"><span class="caps">RT</span></span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">red</span><span class="p">]</span>
+    <span class="n">gmail</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Gmail</span> <span class="o">\</span><span class="n">nlabel</span> <span class="n"><span class="caps">RSS</span></span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">red</span><span class="p">]</span>
+
+    <span class="o">//</span> <span class="n">destinations</span>
+    <span class="n">identica</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Identi</span><span class="p">.</span><span class="n">ca</span> <span class="o">\</span><span class="n">nstatus</span> <span class="n">update</span>&quot;<span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+    <span class="n">linkedin</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Linkedin</span> <span class="o">\</span><span class="n">nstatus</span> <span class="n">update</span>&quot;<span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">red</span><span class="p">]</span>
+    <span class="n">facebook</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Facebook</span> <span class="o">\</span><span class="n">nstatus</span> <span class="n">update</span>&quot;<span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">red</span><span class="p">]</span>
+    <span class="n">planetub</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">planet</span> <span class="n">Ubuntu</span><span class="o">-</span><span class="n">it</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">tab</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+    <span class="n">oiablog</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Blog</span> <span class="n">O</span><span class="p">.</span><span class="n">I</span><span class="p">.</span><span class="n">A</span><span class="p">.</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">tab</span><span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+
+    <span class="o">////</span> <span class="n"><span class="caps">CONNECTIONS</span></span> <span class="o">////</span>
+
+    <span class="o">//</span> <span class="n"><span class="caps">RSS</span></span><span class="o">-</span><span class="n">specific</span>
+    <span class="n">blog</span> <span class="o">-&gt;</span> <span class="n">feedburner</span><span class="p">;</span>
+    <span class="n">ttrss</span> <span class="o">-&gt;</span> <span class="n">ttrssshared</span><span class="p">;</span>
+    <span class="n">ttrssshared</span> <span class="o">-&gt;</span> <span class="n">feedburner</span><span class="p">;</span>
+    <span class="n">feedburner</span> <span class="o">-&gt;</span> <span class="n">brdcst</span><span class="p">;</span>
+
+    <span class="o">//</span> <span class="n">connecting</span> <span class="n">sources</span> <span class="n">to</span> <span class="n">carriers</span>
+    <span class="n">mobile</span> <span class="o">-&gt;</span> <span class="n">gmail</span> <span class="p">[</span><span class="n">arrowhead</span><span class="p">=</span><span class="nb">dot</span><span class="p">];</span>
+    <span class="n">gmail</span> <span class="o">-&gt;</span> <span class="n">ttrss</span> <span class="p">[</span><span class="n">arrowhead</span><span class="p">=</span><span class="nb">dot</span><span class="p">];</span>
+    <span class="n">ttrss</span> <span class="o">-&gt;</span> <span class="n">brdcst</span> <span class="p">[</span><span class="n">arrowhead</span><span class="p">=</span><span class="nb">dot</span><span class="p">];</span>
+    <span class="n">twitter</span> <span class="o">-&gt;</span> <span class="n">pipes</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="nb">dot</span><span class="p">];</span>
+    <span class="n">pipes</span> <span class="o">-&gt;</span> <span class="n">brdcst</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="nb">dot</span><span class="p">];</span>
+    <span class="n">pipes</span> <span class="o">-&gt;</span> <span class="n">ifttt</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="nb">dot</span><span class="p">];</span>
+    <span class="n">github</span> <span class="o">-&gt;</span> <span class="n">brdcst</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="n">bold</span><span class="p">];</span>
+    <span class="n">github</span> <span class="o">-&gt;</span> <span class="n">ifttt</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="n">bold</span><span class="p">];</span>
+
+    <span class="o">//</span> <span class="n">connecting</span> <span class="n">carriers</span> <span class="n">to</span> <span class="n">destinations</span>
+    <span class="n">brdcst</span> <span class="o">-&gt;</span> <span class="n">facebook</span><span class="p">;</span>
+    <span class="n">brdcst</span> <span class="o">-&gt;</span> <span class="n">identica</span><span class="p">;</span>
+    <span class="n">ifttt</span> <span class="o">-&gt;</span> <span class="n">linkedin</span><span class="p">;</span>
+
+    <span class="o">//</span> <span class="n">connecting</span> <span class="n">aggregators</span> <span class="n">to</span> <span class="n">blog</span>
+    <span class="n">blog</span> <span class="o">-&gt;</span> <span class="n">planetub</span> <span class="p">[</span><span class="n">arrowhead</span><span class="p">=</span><span class="n">crow</span><span class="p">];</span>
+    <span class="n">blog</span> <span class="o">-&gt;</span> <span class="n">oiablog</span> <span class="p">[</span><span class="n">arrowhead</span><span class="p">=</span><span class="n">crow</span><span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Il comando per generarlo partendo dal file <code>graph.dot</code>:</p>
+<div class="codehilite"><pre><span class="nb">dot</span> <span class="n">graph</span><span class="p">.</span><span class="nb">dot</span> <span class="o">-</span><span class="n">Tpng</span> <span class="o">-</span><span class="n">o</span> <span class="n">hello</span><span class="p">.</span><span class="n">png</span>
+</pre></div></article>
+<div id="disqus_thread" ></div>
+<style>
+/* remove unnecessary disqus cruft from view */
+.dsq-comment-header{background:none !important; border:none !important;}
+.dsq-post-tools, .dsq-button, .dsq-textarea-background{ background:none !important;}
+#dsq-like-thread-button .dsq-toolbar-label, #dsq-subscribe, #dsq-sort-select, .dsq-trackback-url, .dsq-brlink {display:none !important;}
+</style>
+<script type="text/javascript">
+        var disqus_developer = 1; // developer mode is on
+        var disqus_shortname = 'jseabold';
+    var disqus_identifier = "log/2011/02/how-do-I-blog.html";
+    var disqus_url = "http://jseabold.netlog/2011/02/how-do-I-blog.html";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+          <footer>
+          <!-- this website is proudly powered by <a href="http://www.python.org/">Python</a>,
+          build with the static site generator <a href="http://hyde.github.com/">Hyde</a>, 
+          source code hosted on <a href="https://github.com/fspaolo/">GitHub</a>,
+	  and written using <a href="http://www.vim.org/">VIM</a>. -->
+          </footer>
+          </section>
+
+          <div id="sidebar">
+                              <nav class=nav>
+    <ul>
+                <li>
+            <a title="About me and this site"
+                class="about"
+                href="/about">
+                About</a>
+        </li>        <li>
+            <a title="Wow, a blog!"
+                class="log"
+                href="/log">
+                Log</a>
+        </li>        <li>
+            <a title="Blog's tags"
+                class="log"
+                href="/tags">
+                Tags</a>
+        </li>        <li>
+            <a title="Blog's feed"
+                class="log"
+                href="/atom.xml">
+                Feed</a>
+        </li>        <li>
+            <a title="Research projects"
+                class="research"
+                href="/research">
+                Research</a>
+        </li>    </ul>
+</nav>
+                              </div>
+
+          </div>
+        
+    <!-- Javascript at the bottom for fast page loading -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  
+    
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+  <!--    -->
+
+  </body>
+</html>

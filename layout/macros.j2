@@ -14,6 +14,8 @@
 {% endmacro %}
 
 
+{# this macro renders the post list #}
+
 {% macro render_excerpt2(res, class=None) %}
 {% refer to res.url as post %}
 <article {{'class='~class if class }}>
@@ -23,11 +25,48 @@
     <time datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">
         {{ res.meta.created.strftime('%a, %d %b %Y') }}
     </time>
+    {# the following line renders the "featured" tag along the post list #}
+    {% if res.meta.featured %}&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF0000">&#8727;featured</font>{% endif %}
     </small>
     <a href="{{ content_url(res.url) }}">{{ post.image|markdown|typogrify }}</a>
     {{ post.excerpt|markdown|typogrify }}
 </article>
 {% endmacro %}
+
+{# this macro renders a centered image in posts #}
+
+{% macro render_image(description, filename, alt, extlink) -%}
+    <center><a href="{{ extlink }}"><img alt="{{ alt }}" src="/media/images/{{ filename }}" title="{{ description }}" /></a></center>
+{%- endmacro %}
+
+{# this macro renders an horizontal bar graph #}
+
+{% macro render_hgraph3(val1, val2, val3) -%}
+	<script type="text/javascript">
+		window.onload = function () {
+			var r = Raphael("holder"),
+			fin = function () {
+				this.flag = r.popup(this.bar.x, this.bar.y, this.bar.value || "0").insertBefore(this);
+			},
+			fout = function () {
+				this.flag.animate({opacity: 0}, 300, function () {this.remove();});
+			},
+			fin2 = function () {
+				var y = [], res = [];
+				for (var i = this.bars.length; i--;) {
+					y.push(this.bars[i].y);
+					res.push(this.bars[i].value || "0");
+				}
+				this.flag = r.popup(this.bars[0].x, Math.min.apply(Math, y), res.join(", ")).insertBefore(this);
+			},
+			fout2 = function () {
+				this.flag.animate({opacity: 0}, 300, function () {this.remove();});
+			};
+			r.text(160, 10, "Single Series Chart").attr(txtattr);
+			r.hbarchart(10, 10, 300, 220, [[{{ val1 }}, {{ val2 }}, {{ val3 }}]]).hover(fin, fout);
+		};
+	</script>
+{%- endmacro %}
 
 
 {% macro render_nav(menu, cls=None) -%}
@@ -53,19 +92,6 @@
                 {{ item.name }}</a>
         </li>
         {%- endfor %}
-        <!-- added extra item (fspaolo: 2011-11-16) -->
-        <li>
-            <a title="Source code" href="https://github.com/fspaolo/code">
-            Code
-            </a>
-        </li>
-        <!-- added extra item (fspaolo: 2012-04-17) -->
-        <li>
-            <a title="Photo Gallery" href="http://www.dropbox.com/gallery/12601128/1/life?h=ce60c3">
-            Photos
-            </a>
-        </li>
-        <!-- end added extra item -->
     </ul>
 </nav>
 {%- endif %}

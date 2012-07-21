@@ -1,0 +1,28 @@
+== PRIORITÀ ==
+
+* sistemare tutti i recap, la chiusura delle barre percentuali ( "]]) è stata sostituita
+* migrare commenti su Disqus
+* sistemare tutti i tag immagine con il nuovo template
+
+==== finezze ====
+* inserire l'intero XML nel post 2009/04/openmoko*navit*su*shr*testing ed eliminare il file
+* sottovoci di menù visualizzate solo quando si è nella sezione corrispondente
+* aggiungere link next e previous in fondo a post, vedi -->
+  https://github.com/merlinrebrovic/hyde-starter-kit/blob/master/layout/macros.j2
+
+### TIPS
+* per inserire le immagini con link ad immagine dimensione originale
+
+# markdown
+<center>[![didascalia]([[!!images/nomefile.jpg]] 'alt description')](http link immagine estesa)</center>
+
+# html
+<center><a href="{{ extlink }}"><img alt="{{ alt }}" src="/media/images/{{ filename }}" title="{{ description }}" /></a></center>
+
+#jinja2
+{% from "macros.j2" import render_image %}
+{{ render_image('didascalia', 'nomefile', 'alt description', 'link immagine estesa') }}
+
+* per cercare una parola tra i post:
+
+find  -type f -print0 | xargs -0 grep -il 'slide'

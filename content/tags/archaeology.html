@@ -1,0 +1,9 @@
+---
+extends: false
+
+---
+
+{% set tag = site.tagger.tags['archaeology'] %}
+{% set source = site.content.node_from_relative_path('log') %}
+{% set walker = source.walk_resources_tagged_with_archaeology %}
+{% extends "tagged_posts.j2" %}

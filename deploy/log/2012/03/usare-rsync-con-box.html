@@ -1,0 +1,360 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Usare rsync con Box.net</title>
+  <meta name="description" content="">
+  <meta name="author" content="Francesco de Virgilio">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+   <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    </head>
+<body id="usare-rsync-con-box">
+                  <div id="main" role="main">
+
+          <header class="clearfix">
+          </header>
+
+          <section class="content">
+          <article>
+
+<h1 class="title">
+    <a href="/log/2012/03/usare-rsync-con-box.html">
+        Usare rsync con Box.net
+    </a>
+</h1>
+
+<time datetime="2012-03-23">
+    Posted on 23 Mar 2012
+</time>
+<br>
+<tags>tags:
+	<a href="/tags/server.html">server</a> 
+</tags>
+
+<h6 class="description">
+    <a href="/log/2012/03/usare-rsync-con-box.html">
+        
+    </a>
+</h6>
+
+<p><em>Ultimo aggiornamento: 17 aprile&nbsp;2012</em></p>
+<p>In questi giorni, <a href="http://box.net">Box.net</a> sta regalando 50 Gb di spazio a chiunque apra un nuovo account e faccia almeno un login dall&#8217;applicazione ufficiale per Android, occasione davvero ghiotta. È la prima volta che utilizzo questo servizio e la prima cosa che ho notato, con enorme sconcerto, è che Box.net non supporta in nessun modo il <em>timestamp</em> dei file. In altre parole, tutte le informazioni presenti nel file relativi alla data dell&#8217;ultima modifica (tanto per dirne una) vengono sovrascritte, con <a href="http://community.box.com/boxnet/topics/does_box_net_support_timestamps?from_gsfn=true">sommo disappunto degli utenti</a>. Per chi avrebbe tanto voluto 50 Gb di cloud per fare una copia speculare e sincronizzata delle proprie foto, video, documenti con lo straordinario <a href="https://rsync.samba.org/">rsync</a>, tempi&nbsp;bui.</p>
+<p>Almeno, fino all&#8217;arrivo di tale <span class="caps">S0M30N3</span> che, in un fantastico quanto conciso <a href="http://www.heise.de/mobil/newsticker/foren/S-Re-rsync-zu-Box-net/forum-222786/msg-21487182/read/">howto</a> ha tirato fuori dal cilindro un sistema per usare rsync in una partizione criptata con <a href="http://www.arg0.net/encfs">EncFS</a> creata all&#8217;interno della propria Box cloud. Ho testato personalmente il gioco e, porca paletta, funziona. Il tutorial che segue è stato provato su Ubuntu&nbsp;11.04.</p>
+<h3 id="pro">Pro</h3>
+<ul>
+<li>i dati vengono trasmessi via https e inseriti in una partizione criptata all&#8217;interno della cartella: sono illeggibili da chiunque non conosca la password non solo dell&#8217;account Box.net, ma del filesystem&nbsp;criptato</li>
+<li>è l&#8217;unico modo per usare lo straordinario rsync con i propri 50 Gb di&nbsp;cloud</li>
+<li>tutti i vantaggi che derivano da rsync: personalizzazione del backup, integrazione con cron,&nbsp;ecc.</li>
+</ul>
+<h3 id="contro">Contro</h3>
+<ul>
+<li>i dati essendo cifrati sui server di Box.net, non possono essere letti dalle varie app (compresa quella per Android); occorre avere una macchina su cui montare la partizione EncFS e solo allora potremo accedere ai dati; a anche se, a ben pensarci&#8230; leggete fino in fondo&nbsp;;)</li>
+<li>Box.net per gli account gratuiti ha un limite di 100 Mb/file, non dimenticatelo; lo script di rsync riportato di seguito penserà a limitare la sincronizzazione ai soli file al di sotto di questa&nbsp;dimensione</li>
+<li>la sincronizzazione sembra essere un po&#8217;&nbsp;lenta</li>
+</ul>
+<h2 id="1-montare-la-box-in-media-tramite-webdav">1 - Montare la Box in /media tramite&nbsp;WebDAV</h2>
+<p>La cartella di WebDAV può essere montata sia dall&#8217;utente che sta utilizzando la macchina sia dall&#8217;account di root. In questa guida è seguita la prima opzione, che unita ad una adeguata <a href="http://steghide.sourceforge.net/documentation.php">cifratura della cartella Home</a>, permette di mantenere un buon livello di privacy sui propri&nbsp;dati.</p>
+<p>Installare&nbsp;davfs2</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">davfs2</span>
+</pre></div>
+
+
+<p>Permettere all&#8217;utente non-root di montare DavFS, rispondendo <code>Yes</code> alla riconfigurazione del&nbsp;pacchetto</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">dpkg</span><span class="o">-</span><span class="n">reconfigure</span> <span class="n">davfs2</span>
+</pre></div>
+
+
+<p>Aggiungere l&#8217;utente che utilizzerà DavFS2 al gruppo&nbsp;omonimo:</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">adduser</span> $<span class="n"><span class="caps">USER</span></span> <span class="n">davfs2</span>
+</pre></div>
+
+
+<p>creare la cartella in cui verrà montata la&nbsp;Box</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span>
+</pre></div>
+
+
+<p>inserire la seguente riga in <code>/etc/fstab</code>:
+<!-- inserire la seguente riga in <code>/etc/fstab</code>, sostituendo al posto di <code>1000</code> in <code>uid</code> e <code>gid</code> l&#8217;userid e il groupid dell&#8217;utente che accederà alla Box: &#8212;>
+<!-- https://www.box.com/dav /media/box davfs rw,suid,dev,exec,noauto,nouser,async,uid=1000,gid=1000 0 0 --></p>
+<div class="codehilite"><pre><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">box</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">dav</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span>      <span class="n">davfs</span>   <span class="n">noauto</span><span class="p">,</span><span class="n">user</span>   0   0
+</pre></div>
+
+
+<p>Il file <code>/etc/davfs2/davfs2.conf</code> contiene le impostazioni valide per tutto il sistema; decommentare la seguente&nbsp;riga:</p>
+<div class="codehilite"><pre>    <span class="n">use_locks</span>       0
+</pre></div>
+
+
+<p>Creare una copia del file delle configurazioni nella propria&nbsp;home</p>
+<div class="codehilite"><pre><span class="n">mkdir</span> <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span>
+<span class="n">cp</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">davfs2</span><span class="o">/</span><span class="n">davfs2</span><span class="p">.</span><span class="n">conf</span> <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span>
+</pre></div>
+
+
+<p>Per evitare di dover inserire ogni volta le credenziali di accesso alla Box in fase di mount, creare il file <code>secrets</code>, attribuirgli i permessi corretti (<code>600</code>)</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">cp</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">davfs2</span><span class="o">/</span><span class="n">secrets</span> <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span>
+<span class="n">sudo</span> <span class="n">chown</span> $<span class="n"><span class="caps">USER</span></span> <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span><span class="o">/</span><span class="n">secrets</span>
+<span class="n">sudo</span> <span class="n">chmod</span> 600 <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span><span class="o">/</span><span class="n">secrets</span>
+</pre></div>
+
+
+<p>ed inserirvi i dati di&nbsp;accesso</p>
+<div class="codehilite"><pre><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span>  <span class="n">user</span><span class="p">@</span><span class="n">email</span><span class="p">.</span><span class="n">com</span>  <span class="n">password</span>
+</pre></div>
+
+
+<p>Il file <code>~/.davfs/davfs2.conf</code> contiene le impostazioni per l&#8217;utente; in questo, specificare la posizione del file delle password appena creato, decommentando la riga come&nbsp;segue</p>
+<div class="codehilite"><pre><span class="n">secrets</span>         <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span><span class="o">/</span><span class="n">secrets</span>
+</pre></div>
+
+
+<p>Possiamo dotarci di <em>alias</em> in <code>~/.bashrc</code> per montare e smontare rapidamente la Box (ricordando di dare un <code>source ~/.bashrc</code> per rendere operativi gli&nbsp;alias):</p>
+<div class="codehilite"><pre><span class="n">alias</span> <span class="n">boxmount</span><span class="p">=</span><span class="s">&#39;mount /media/box&#39;</span>
+<span class="n">alias</span> <span class="n">boxumount</span><span class="p">=</span><span class="s">&#39;umount /media/box&#39;</span>
+</pre></div>
+
+
+<p>Proviamo a montare la Box con il comando <code>boxmount</code>. Il montaggio della Box al login (e solo dopo la disponibilità di una connessione internet, per evitare errori) può essere <a href="http://blog.nguyenvq.com/2011/12/08/mount-box-net-on-ubuntu-linux-via-webdav/">automatizzato</a>. Se tutto procede bene, andiamo&nbsp;oltre.</p>
+<p><em><span class="caps">ATTENZIONE</span></em>: Il parametro <code>cache_size</code> in <code>~/.davfs2/davfs2.conf</code> è commentato di default. Ciò significa che man mano che DavFS2 trasferisce i file dal filesystem locale a quello remoto di Box, ne lascia una copia (criptata) nella cache. Non avendo nessun limite impostato, ciò potrebbe riempire la partizione in cui è presente la cache (impedendo ad Ubuntu di avviarsi se la cache è nella partizine root &#8212; <span class="caps">GNU</span>/Linux deve avere almeno il 4% di spazio libero in root). È pertanto vivamente consigliato di abilitare il parametro <code>cache_size</code>, impostando un limite ragionevole (per me 250&nbsp;Mb).</p>
+<h2 id="2-creare-una-cartella-criptata-nella-box">2 - Creare una cartella criptata nella&nbsp;Box</h2>
+<p>Alcune&nbsp;spiegazioni:</p>
+<ul>
+<li><em>media/box</em>: punto di mount della Box via&nbsp;WebDAV</li>
+<li><em>media/box/backup</em>: la cartella che <em>fisicamente</em> conterrà i dati, nella nostra&nbsp;Box</li>
+<li><em>media/box.encfs</em> la cartella in cui verrà montato il filesystem criptato, non&nbsp;leggibile</li>
+<li><em>media/box.backup</em>: la cartella in cui riverseremo i nostri dati da backuppare, collegata a <code>box.encfs</code></li>
+</ul>
+<p>Installare EncFS ed aggiungere il proprio utente al gruppo <code>fuse</code></p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">encfs</span>
+<span class="n">sudo</span> <span class="n">addgroup</span> <span class="o">&lt;</span><span class="n"><span class="caps">USER</span></span><span class="o">&gt;</span> <span class="n">fuse</span>
+</pre></div>
+
+
+<p>decommentare la seguente riga in <code>/etc/fuse.conf</code></p>
+<div class="codehilite"><pre><span class="n">user_allow_other</span>
+</pre></div>
+
+
+<p>creare la cartella che conterrà il filesystem criptato, sistemare i permessi (sostituire ad <code>&lt;USER&gt;</code> il proprio nome utente sulla&nbsp;macchina)</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span>
+<span class="n">sudo</span> <span class="n">chown</span> <span class="o">&lt;</span><span class="n"><span class="caps">USER</span></span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n"><span class="caps">USER</span></span><span class="o">&gt;</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span>
+</pre></div>
+
+
+<p>creare la cartella che ospiterà il filesystem criptato e il filesystem&nbsp;criptato</p>
+<div class="codehilite"><pre><span class="n">mkdir</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="o">/</span><span class="n">backup</span><span class="o">/</span>
+<span class="n">encfs</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="o">/</span><span class="n">backup</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span><span class="o">/</span>
+</pre></div>
+
+
+<p>durante la creazione, ci verranno chieste informazioni relative al sistema di cifratura; consiglio di selezionare l&#8217;opzione di default. Al termine della procedura, il filesystem criptato sarà attivo nella nostra&nbsp;Box.</p>
+<h2 id="3-installare-gli-script-per-correggere-le-timestamp">3 - Installare gli script per correggere le&nbsp;timestamp</h2>
+<p>La vera chicca: questi script fanno in modo che i file nel nostro filesystem criptato conservino le timestamp, permettendo a rsync di lavorare. Scaricare gli script&nbsp;con</p>
+<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">bazaar</span><span class="p">.</span><span class="n">launchpad</span><span class="p">.</span><span class="n">net</span><span class="o">/~</span><span class="n">germar</span><span class="o">/</span><span class="n">fusetime</span><span class="o">/</span><span class="n">trunk</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">head</span><span class="p">:</span><span class="o">/</span><span class="n">fusetime</span><span class="p">.</span><span class="n">py</span><span class="o">-</span>20120119150228<span class="o">-</span><span class="n">brsqa2ewllb9euc5</span><span class="o">-</span>1<span class="o">/</span><span class="n">fusetime</span><span class="p">.</span><span class="n">py</span>
+<span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">fusepy</span><span class="p">.</span><span class="n">googlecode</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">svn</span><span class="o">/</span><span class="n">trunk</span><span class="o">/</span><span class="n">fuse</span><span class="p">.</span><span class="n">py</span>
+</pre></div>
+
+
+<p>correggere i permessi, spostarli nella cartella degli&nbsp;eseguibili</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">chown</span> <span class="n">root</span><span class="p">:</span><span class="n">root</span> <span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="n">fuse</span><span class="p">.</span><span class="n">py</span>
+<span class="n">sudo</span> <span class="n">chmod</span> 755 <span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="n">fuse</span><span class="p">.</span><span class="n">py</span>
+<span class="n">sudo</span> <span class="n">mv</span> <span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="n">fuse</span><span class="p">.</span><span class="n">py</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span>
+</pre></div>
+
+
+<h2 id="4-creare-la-cartella-per-la-sincronizzazione-e-avviare-rsync">4 - Creare la cartella per la sincronizzazione e avviare&nbsp;rsync</h2>
+<p>Questo passaggio permetterà di correggere le timestamp grazie agli script installati prima e di avere in <code>/media</code> una cartella che avremo come destinazione per i nostri backup, collegata con quella criptata creata precedentemente. Creare la cartella, attribuire i permessi e avviare lo script sulle&nbsp;cartelle</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span>
+<span class="n">sudo</span> <span class="n">chown</span> <span class="o">&lt;</span><span class="n"><span class="caps">USER</span></span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n"><span class="caps">USER</span></span><span class="o">&gt;</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span>
+<span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span>
+</pre></div>
+
+
+<p>In caso di problemi o errori relativi a con <code>fusermount</code>, soluzione è <a href="http://blog.seljebu.no/2011/05/encfs-over-sshfs-on-linux-mint-10/">a portata di mano</a>. Installare&nbsp;rsync</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">rsync</span>
+</pre></div>
+
+
+<p>Avviare <em>finalmente</em> la sincronizzazione, sostituendo <code>/path/to/files</code> al percorso che vogliamo backuppare; di seguito è riportata un&#8217;istanza di rsync con opzioni &#8220;base&#8221;, che andrà bene per qualsiasi&nbsp;esigenza</p>
+<div class="codehilite"><pre><span class="n">rsync</span> <span class="o">-</span><span class="n">r</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="nb">i</span> <span class="o">--</span><span class="n">times</span> <span class="o">--</span><span class="n">delete</span> <span class="o">--</span><span class="n">max</span><span class="o">-</span><span class="nb">size</span><span class="p">=</span>99<span class="p">.</span>5<span class="n">M</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="nb">perms</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">group</span> <span class="o">--</span><span class="n">progress</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">files</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span>
+</pre></div>
+
+
+<p>Per sincronizzare le mie immagini, ho inserito qualche altra opzione per non copiare nel backup i file <code>Thumbs.db</code>, quelli che con estensione <code>.xmp</code> e <code>.bak</code>; vengono inoltre usati dei file parziali (così da non dover ricominciare da capo il backup di file di grosse dimensioni in caso di interruzioni) e man mano che il programma opera viene mostrato un log in tempo reale che mostra ogni singola operazione di&nbsp;rsync:</p>
+<div class="codehilite"><pre><span class="n">rsync</span> <span class="o">-</span><span class="n">r</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="nb">i</span> <span class="o">--</span><span class="n">times</span> <span class="o">--</span><span class="n">exclude</span> <span class="s">&#39;*.xmp&#39;</span> <span class="o">--</span><span class="n">exclude</span> <span class="s">&#39;*.bak&#39;</span> <span class="o">--</span><span class="n">exclude</span> <span class="s">&#39;Thumbs.db&#39;</span> <span class="o">--</span><span class="n">delete</span> <span class="o">\\</span>
+<span class="o">--</span><span class="n">max</span><span class="o">-</span><span class="nb">size</span><span class="p">=</span>99<span class="p">.</span>5<span class="n">M</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="nb">perms</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">group</span> <span class="o">-</span><span class="n">P</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">v</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">dati</span><span class="o">/</span><span class="n">archivio</span><span class="o">/</span><span class="n">immagini</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span>
+</pre></div>
+
+
+<p>Ricordare che in <code>/media/box.backup/</code> possiamo creare qualsiasi sottocartella, abbiamo la massima libertà; ad esempio, potremo avere rispettivamente come origine e destinazione del&nbsp;backup:</p>
+<div class="codehilite"><pre><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">fradeve</span><span class="o">/</span><span class="n">Immagini</span>  <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span><span class="n">Immagini</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">fradeve</span>       <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span><span class="n">fradeve</span>
+</pre></div>
+
+
+<p>Potremo quindi dimenticarci di tutte le altre cartelle create, che sono soltanto funzionali al sistema degli script e del filesystem, lavorando semplicemente su <code>/media/box.backup</code>. Quando la sincronizzazione sarà finita, potremo smontare le partizioni con i seguenti&nbsp;comandi</p>
+<div class="codehilite"><pre><span class="n">fusermount</span> <span class="o">-</span><span class="n">u</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span>
+<span class="n">fusermount</span> <span class="o">-</span><span class="n">u</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span>
+<span class="n">umount</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span>
+</pre></div>
+
+
+<p>Consiglio vivamente, dopo aver dato il comando di <code>umount</code> per smontare la Box via WebDAV, di attendere che davfs finisca di scrivere le modifiche ancora in cache sulla risorsa WebDAV che, come si può intuire dal parametro <code>async</code> di <code>/etc/fstab</code>, era stata montata per l&#8217;I/O asincrono per ottimizzarne le prestazioni; se si tenta di killare il processo mentre sta scrivendo i dati ancora in cache potrebbero verificarsi perdite di&nbsp;dati.</p>
+<p>Dopo un eventuale riavvio del sistema, potremo far ripartire tutto montando nuovamente il filesystem criptato e avviando lo&nbsp;script</p>
+<div class="codehilite"><pre><span class="n">encfs</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="o">/</span><span class="n">backup</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span><span class="o">/</span>
+<span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span>
+</pre></div>
+
+
+<p>oppure, concatenando i comandi per montare la Box, montare la partizione criptata (che richiederà comunque l&#8217;inserimento manuale della password) e lo script fusetime, è possibile creare un alias in <code>.bashrc</code> che faccia tutto da&nbsp;solo:</p>
+<div class="codehilite"><pre><span class="n">alias</span> <span class="n">boxmount</span><span class="p">=</span><span class="s">&#39;mount /media/box &amp;&amp; encfs /media/box/backup/ /media/box.encfs/ &amp;&amp; fusetime.py /media/box.encfs/ /media/box.backup/&#39;</span>
+</pre></div>
+
+
+<p>fatto ciò, potremo avviare il comando di rsync riportato sopra. Il montaggio di filesystem cifrati in <span class="caps">GNOME</span> può essere automatizzato usando <a href="https://bitbucket.org/obensonne/gnome-encfs">gnome-encfs</a>.</p>
+<h2 id="5-aggiungere-sicurezza">5 - Aggiungere&nbsp;sicurezza</h2>
+<p><span class="caps">ATTENZIONE</span>: questa sezione è ancora in fase di testing, ed ho avuto molti problemi nel farla funzionare. Attendere ulteriori sviluppi prima di testarla sui propri dati. In breve: nonostante teoricamente tutto debba funzionare come riportato di seguito, una volta cancellato il file <code>encfs6.xml</code> dalla radice della cartella cifrata, il filesystem cifrato non viene più&nbsp;montato.</p>
+<p>È sufficiente consultare qualche <a href="http://www.ict.griffith.edu.au/anthony/info/crypto/encfs.hints">howto</a> tecnico relativo ad EncFS per rendersi conto che ci sono alcune problematiche di sicurezza all&#8217;interno di un&#8217;installazione&nbsp;standard:</p>
+<div class="codehilite"><pre><span class="n">Most</span> <span class="n">of</span> <span class="n">the</span> <span class="n">encrypting</span> <span class="n">information</span> <span class="p">(</span><span class="n">apart</span> <span class="n">from</span> <span class="n">password</span><span class="p">)</span> <span class="n">including</span>
+<span class="n">iteration</span> <span class="n">count</span><span class="p">,</span> <span class="n">and</span> <span class="n">salt</span><span class="p">,</span> <span class="n">is</span> <span class="n">visible</span> <span class="n">in</span> <span class="n">the</span> <span class="n">encfs</span> <span class="n">config</span> <span class="n">file</span> <span class="n">at</span> <span class="n">the</span> <span class="n">top</span>
+<span class="n">level</span> <span class="n">of</span> <span class="n">the</span> <span class="n">encfs</span> <span class="n">directory</span> <span class="n">tree</span><span class="p">.</span>  <span class="n">This</span> <span class="n">provides</span> <span class="n">valuable</span> <span class="n">information</span> <span class="n">to</span>
+<span class="n">a</span> <span class="n">hacker</span><span class="p">.</span>
+</pre></div>
+
+
+<p>In altre parole, all&#8217;interno di ogni filesystem criptato creato con EncFS viene generato un file, <code>.encfs6.xml</code> che non contiene (no di certo!) la password di cifratura, ma riassume comunque informazioni che potrebbero tornare utili a chiunque voglia tentare di decifrare i dati a nostra insaputa. Inoltre, per ovvi motivi, essendo un file di configurazione, non è criptato come il resto dei dati, per questo sarebbe meglio copiarlo in un dispositivo sicuro (una penna <span class="caps">USB</span>) ed eliminarlo dalla cartella &#8220;in chiaro&#8221; Box.net (dove rimarrebbe leggibile a chiunque abbia la password del nostro account). Il file deve essere comunque presente nel nostro sistema, da qualche parte, perché è essenziale per decifrare il filesystem criptato (almeno quanto la password). Al momento di montare il filesystem, indicheremo ad EncFS dove prendere il file delle impostazioni. Vediamo&nbsp;come.</p>
+<p>Spostiamo il file nella nostra home, eliminandolo dalla&nbsp;Box </p>
+<div class="codehilite"><pre><span class="n">mv</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="o">/</span><span class="n">backup</span><span class="o">/</span><span class="p">.</span><span class="n">encfs6</span><span class="p">.</span><span class="n">xml</span> <span class="o">~/</span><span class="p">.</span><span class="n">encfs6_box</span><span class="p">.</span><span class="n">xml</span>
+</pre></div>
+
+
+<p>Al nuovo comando per montare il filesystem criptato verrà aggiunto (anche nel vostro eventuale <code>.bashrc</code>) un parametro che indica dove reperire il file xml corretto; tale parametro varia in funzione della versione di EncFS (per cui EncFS 1.6 avrà <code>ENCFS&amp;_CONFIG</code>, EncFS 1.7 avrà <code>ENCFS7_CONFIG</code>):</p>
+<div class="codehilite"><pre><span class="n">ENCFS6_CONFIG</span><span class="p">=</span>&quot;<span class="o">~/</span><span class="p">.</span><span class="n">encfs6_box</span><span class="p">.</span><span class="n">xml</span>&quot; <span class="n">encfs</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="o">/</span><span class="n">backup</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span><span class="o">/</span>
+</pre></div>
+
+
+<p>Questo significa anche&nbsp;che:</p>
+<ul>
+<li>se un giorno configurerete una nuova macchina per accedere alla vostra Box criptata, <code>.encfs6_box.xml</code> dovrete inserirlo a mano nel sistema, perché non sarà più presente in Box. Se non sapete come garantire la sicurezza della copia di <code>.encfs6_box.xml</code> che avrete salvato in una penna <span class="caps">USB</span>, è possibile cifrarlo con <a href="http://www.gnupg.org/howtos/it/GPGMiniHowto-3.html"><span class="caps">GPG</span></a> o usare la <a href="http://steghide.sourceforge.net/documentation.php">steganografia</a></li>
+<li>se usate gnome-encfs per montare la partizione all&#8217;avvio, dovrete fare attenzione a specificare il percorso di <code>.encfs6_box.xml</code> perché tutto funzioni automaticamente al&nbsp;login</li>
+</ul>
+<h2 id="integrazioni">Integrazioni</h2>
+<p>Sicuramente l&#8217;impossibilità di accedere da qualunque dispositivo ai propri dati, e la macchinosità di dover montare sulla macchina dalla quale si vuole accedere una partizione WebDAV e poi configurare EncFS e i vari script è demotivante. Tuttavia, armandosi di un <span class="caps">VPS</span> e un po&#8217; di pazienza, si potrebbe configurare un&#8217;istanza di <a href="http://owncloud.org/">ownCloud</a>, che potrebbe accedere ai file tramite una configurazione come quella descritta nella sezione 1, montata semplicemente in <code>/media/data</code>. Tra l&#8217;altro, ownCloud ha anche un&#8217;<a href="http://owncloud.org/support/android/">applicazione per Android</a>: e con questo,&nbsp;chiudo.</p>
+<h2 id="ulteriori-riferimenti">Ulteriori&nbsp;riferimenti</h2>
+<ul>
+<li><a href="http://doc.ubuntu-fr.org/davfs2">Guida sul wiki di&nbsp;Ubuntu-fr</a></li>
+<li><a href="http://tomalison.com/reference/2010/04/03/webdav/">Guida su&nbsp;tomalison.com</a></li>
+<li><a href="http://ubuntuforums.org/showpost.php?p=11258734&amp;postcount=34">Thread su&nbsp;forum.ubuntu.com</a></li>
+</ul></article>
+<div id="disqus_thread" ></div>
+<style>
+/* remove unnecessary disqus cruft from view */
+.dsq-comment-header{background:none !important; border:none !important;}
+.dsq-post-tools, .dsq-button, .dsq-textarea-background{ background:none !important;}
+#dsq-like-thread-button .dsq-toolbar-label, #dsq-subscribe, #dsq-sort-select, .dsq-trackback-url, .dsq-brlink {display:none !important;}
+</style>
+<script type="text/javascript">
+        var disqus_developer = 1; // developer mode is on
+        var disqus_shortname = 'jseabold';
+    var disqus_identifier = "log/2012/03/usare-rsync-con-box.html";
+    var disqus_url = "http://jseabold.netlog/2012/03/usare-rsync-con-box.html";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+          <footer>
+          <!-- this website is proudly powered by <a href="http://www.python.org/">Python</a>,
+          build with the static site generator <a href="http://hyde.github.com/">Hyde</a>, 
+          source code hosted on <a href="https://github.com/fspaolo/">GitHub</a>,
+	  and written using <a href="http://www.vim.org/">VIM</a>. -->
+          </footer>
+          </section>
+
+          <div id="sidebar">
+                              <nav class=nav>
+    <ul>
+                <li>
+            <a title="About me and this site"
+                class="about"
+                href="/about">
+                About</a>
+        </li>        <li>
+            <a title="Wow, a blog!"
+                class="log"
+                href="/log">
+                Log</a>
+        </li>        <li>
+            <a title="Blog's tags"
+                class="log"
+                href="/tags">
+                Tags</a>
+        </li>        <li>
+            <a title="Blog's feed"
+                class="log"
+                href="/atom.xml">
+                Feed</a>
+        </li>        <li>
+            <a title="Research projects"
+                class="research"
+                href="/research">
+                Research</a>
+        </li>    </ul>
+</nav>
+                              </div>
+
+          </div>
+        
+    <!-- Javascript at the bottom for fast page loading -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  
+    
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+  <!--    -->
+
+  </body>
+</html>

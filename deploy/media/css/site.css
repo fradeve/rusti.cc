@@ -252,6 +252,12 @@ time {
     font-size: 13px;
     color: #999;
 }
+tags {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 12px;
+    color: #999;
+}
 /* footer */
 
 footer {
