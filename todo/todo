@@ -1,10 +1,12 @@
 == PRIORITÀ ==
 
+* test deploy con github.php
 * sistemare tutti i recap, la chiusura delle barre percentuali ( "]]) è stata sostituita
 * migrare commenti su Disqus
 * sistemare tutti i tag immagine con il nuovo template
 
 ==== finezze ====
+* eliminare commendi disqus da pagine non di blog
 * inserire l'intero XML nel post 2009/04/openmoko*navit*su*shr*testing ed eliminare il file
 * sottovoci di menù visualizzate solo quando si è nella sezione corrispondente
 * aggiungere link next e previous in fondo a post, vedi -->

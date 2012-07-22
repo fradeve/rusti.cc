@@ -6,6 +6,7 @@ Hello, this is Francesco de Virgilio's website, originally forked from Fernando 
 * a Jinja2 template to insert images with link to full image version (layout/macros.j2)
 * a Jinja2 template working with [g.raphael library](http://g.raphaeljs.com) to quickly insert graphs (layout/macros.j2)
 * Disqus support
+* added "normal pages" support (layout/normalpage.j2) without tags, subtitle, comments, for non-blog pages
 
 All the code from Fernando Paolo is "freely available" as reported from in [his blog](http://fspaolo.net/about/); all the other code is released under GNU GPL v3 licence, see LICENSE; all the javascript libraries are released in full respect of theire own licences.
 
