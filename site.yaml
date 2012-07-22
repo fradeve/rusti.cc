@@ -67,12 +67,12 @@ tagger:
             target: tags
             template: tagged_posts.j2
             archive_extension: html
-publisher:
-    github:
-        type: hyde.ext.publishers.dvcs.Git
-        #path: ../fspaolo.github.com/deploy  # publish on `deploy` folder
-        path: ../fspaolo.github.com
-        url: git@github.com:fspaolo/fspaolo.github.com.git
+# publisher:
+#    github:
+#        type: hyde.ext.publishers.dvcs.Git
+#        path: ../fradeve.github.com/deploy  # publish on `deploy` folder
+#        path: ../fradeve.github.com
+#        url: git@github.com:fradeve/fradeve.github.com.git
 markdown:
     extensions:
         - def_list
