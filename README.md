@@ -7,6 +7,6 @@ Hello, this is Francesco de Virgilio's website, originally forked from Fernando 
 * a Jinja2 template working with [g.raphael library](http://g.raphaeljs.com) to quickly insert graphs (layout/macros.j2)
 * Disqus support
 
-All the code from Fernando Paolo is "freely available" as reported from in [his blog](INSERISCI LINK); all the other code is released under GNU GPL v3 licence, see LICENCE; all the javascript libraries are released in full respect of theire own licences.
+All the code from Fernando Paolo is "freely available" as reported from in [his blog](http://fspaolo.net/about/); all the other code is released under GNU GPL v3 licence, see LICENSE; all the javascript libraries are released in full respect of theire own licences.
 
 Feel free to fork and enhance this work under the therms of GPL.
