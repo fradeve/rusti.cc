@@ -1,0 +1,287 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Inserire mappe di OpenStreetMap nel proprio sito/blog</title>
+  <meta name="description" content="">
+  <meta name="author" content="Francesco de Virgilio">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+   <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    </head>
+<body id="inserire-mappe-di-openstreetmap-nel-proprio-sitoblog">
+                  <div id="main" role="main">
+
+          <header class="clearfix">
+          </header>
+
+          <section class="content">
+          <article>
+
+<h1 class="title">
+    <a href="/log/2008/08/inserire-mappe-di-openstreetmap-nel-proprio-sitoblog.html">
+        Inserire mappe di OpenStreetMap nel proprio sito/blog
+    </a>
+</h1>
+
+<time datetime="2008-08-19">
+    Posted on 19 Aug 2008
+</time>
+<br>
+<tags>tags:
+	<a href="/tags/openstreetmap.html">openstreetmap</a>, 
+	<a href="/tags/webgis.html">webgis</a> 
+</tags>
+
+<h6 class="description">
+    <a href="/log/2008/08/inserire-mappe-di-openstreetmap-nel-proprio-sitoblog.html">
+        
+    </a>
+</h6>
+
+<p>Qual&#8217;è la più grande soddisfazione per un
+mapper se non quella di mostrare i risultati del proprio lavoro sul sito o sul
+blog personale? Spulciando il <a href="http://wiki.openstreetmap.org/wiki/Main_Page">wiki di OpenStreetMap</a> mi sono imbattuto
+nella pagina <a href="http://wiki.openstreetmap.org/wiki/OpenLayers_Simple_Example">OpenLayers Simple Example</a>, in cui è descritta la procedura
+più semplice per inserire una <em>slippy map</em> standard in una pagina web attraverso
+uno script in Java. Essendo <em>pythonista</em> convinto, di Java non capisco molto, ma
+il codice mi è sembrato molto intuitivo, vediamo insieme il codice della
+pagina&nbsp;html:</p>
+<div class="codehilite"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>Slippy map di Terlizzi<span class="nt">&lt;/title&gt;</span>
+
+<span class="c">&lt;!-- bring in the OpenLayers javascript library</span>
+<span class="c">(here we bring it from the remote site, but you could</span>
+<span class="c">easily serve up this javascript yourself) --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&quot;http://www.openlayers.org/api/OpenLayers.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- bring in the OpenStreetMap OpenLayers layers.</span>
+<span class="c">Using this hosted file will make sure we are kept up</span>
+<span class="c">to date with any necessary changes --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&quot;http://www.openstreetmap.org/openlayers/OpenStreetMap.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+// Start position for the map (hardcoded here for simplicity,
+// but maybe you want to get from <span class="caps">URL</span> params)
+var lat=41.12925
+var lon=16.5449
+var zoom=15
+
+var map; //complex object of type OpenLayers.Map
+
+//Initialise the &#39;map&#39; object
+function init() {
+
+map = new OpenLayers.Map (&quot;map&quot;, {
+controls:[
+new OpenLayers.Control.Navigation(),
+new OpenLayers.Control.PanZoomBar(),
+new OpenLayers.Control.Attribution()],
+maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34),
+maxResolution: 156543.0399,
+numZoomLevels: 19,
+units: &#39;m&#39;,
+projection: new OpenLayers.Projection(&quot;<span class="caps">EPSG</span>:900913&quot;),
+displayProjection: new OpenLayers.Projection(&quot;<span class="caps">EPSG</span>:4326&quot;)
+} );
+
+// Define the map layer
+// Note that we use a predefined layer that will be
+// kept up to date with <span class="caps">URL</span> changes
+// Here we define just one layer, but providing a choice
+// of several layers is also quite simple
+// Other defined layers are OpenLayers.Layer.<span class="caps">OSM</span>.Mapnik, OpenLayers.Layer.<span class="caps">OSM</span>.Maplint and OpenLayers.Layer.<span class="caps">OSM</span>.CycleMap
+layerTilesAtHome = new OpenLayers.Layer.<span class="caps">OSM</span>.Osmarender(&quot;Osmarender&quot;);
+map.addLayer(layerTilesAtHome);
+
+var lonLat = new OpenLayers.LonLat(lon, lat).transform(new OpenLayers.Projection(&quot;<span class="caps">EPSG</span>:4326&quot;), map.getProjectionObject());
+
+map.setCenter (lonLat, zoom);
+}
+
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="c">&lt;!-- body.onload is called once the page is loaded (call the &#39;init&#39; function) --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">&quot;init();&quot;</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- define a <span class="caps">DIV</span> into which the map will appear. Make it take up the whole window --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width:100%; height:100%&quot;</span> <span class="na">id=</span><span class="s">&quot;map&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
+<p>Questa è una pagina html completa che integra una slippy map
+delle stesse dimensioni della pagina html, nel caso vogliate personalizzare il
+titolo della pagina (quello che compare nella finestra del browser) dovete
+modificare ciò che e compreso nel tag <title></title>:</p>
+<div class="codehilite"><pre><span class="nt">&lt;title&gt;</span>Modificare questo testo<span class="nt">&lt;/title&gt;</span>
+</pre></div>
+
+
+<p>Il passo successivo
+consiste nel modificare le coordinate di origine della mappa e lo zoom di
+default, dal [sito][3], cliccando su &#8220;permalink&#8221; in basso a destra dopo aver
+cercato la città o la regione di interesse e lo zoom gradito e copiando il
+nuovo indirizzo che nel frattempo sarà comparso nella barra del browser. Le
+coordinate e lo zoom vanno inserite in questo punto del file&nbsp;html:</p>
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="p">=</span>&quot;<span class="n">text</span><span class="o">/</span><span class="n">javascript</span>&quot;<span class="o">&gt;</span>
+<span class="n">var</span> <span class="n">lat</span><span class="p">=</span>41<span class="p">.</span>12925
+<span class="n">var</span> <span class="n">lon</span><span class="p">=</span>16<span class="p">.</span>5449
+<span class="n">var</span> <span class="n">zoom</span><span class="p">=</span>15
+</pre></div>
+
+
+<p>Se intendiamo utilizzare un solo tipo di layer (vedi punto successivo) possiamo lasciare invariata la porzione di script che inizializza gli oggetti della mappa, in caso contrario dobbiamo aggiungere il LayerSwitcher alla mappa per permettere agli utenti di cambiare layer al volo, modificando il codice che inizializza i controlli da&nbsp;così:</p>
+<div class="codehilite"><pre><span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Control</span><span class="p">.</span><span class="n">Navigation</span><span class="p">(),</span>
+<span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Control</span><span class="p">.</span><span class="n">PanZoomBar</span><span class="p">(),</span>
+<span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Control</span><span class="p">.</span><span class="n">Attribution</span><span class="p">()],</span>
+</pre></div>
+
+
+<p>a&nbsp;così:</p>
+<div class="codehilite"><pre><span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Control</span><span class="p">.</span><span class="n">Navigation</span><span class="p">(),</span>
+<span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Control</span><span class="p">.</span><span class="n">PanZoomBar</span><span class="p">(),</span>
+<span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Control</span><span class="p">.</span><span class="n">LayerSwitcher</span><span class="p">(),</span>
+<span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Control</span><span class="p">.</span><span class="n">Attribution</span><span class="p">()],</span>
+</pre></div>
+
+
+<p>In questo script è implementato solo il layer di Osmarender (il software di rendering open source nato in casa OpenStreetMap e utilizzato dal progetto di rendering distribuito&nbsp;tiles@home):</p>
+<div class="codehilite"><pre><span class="n">layerTilesAtHome</span> <span class="p">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">Osmarender</span><span class="p">(</span>&quot;<span class="n">Osmarender</span>&quot;<span class="p">);</span>
+<span class="n">map</span><span class="p">.</span><span class="n">addLayer</span><span class="p">(</span><span class="n">layerTilesAtHome</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Volendo ottenere una mappa più interattiva è possibile aggiungere anche gli altri due layer standard usati da OpenStreetMap nelle mappe del&nbsp;sito:</p>
+<ul>
+<li>Mapnik layer (lo standard di rendering di&nbsp;OpenStreetMap)</li>
+<li>CycleMap (la mappa con le isoipse utili ai&nbsp;ciclisti)</li>
+</ul>
+<p>Per aggiungere gli altri due layer è necessario modificare il codice precedente in questo&nbsp;modo:</p>
+<div class="codehilite"><pre><span class="n">layerTilesAtHome</span> <span class="p">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">Osmarender</span><span class="p">(</span>&quot;<span class="n">Osmarender</span>&quot;<span class="p">);</span>
+<span class="n">map</span><span class="p">.</span><span class="n">addLayer</span><span class="p">(</span><span class="n">layerTilesAtHome</span><span class="p">);</span>
+<span class="n">layerMapnik</span> <span class="p">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">Mapnik</span><span class="p">(</span>&quot;<span class="n">Mapnik</span>&quot;<span class="p">);</span>
+<span class="n">map</span><span class="p">.</span><span class="n">addLayer</span><span class="p">(</span><span class="n">layerMapnik</span><span class="p">);</span>
+<span class="n">layerCycleMap</span> <span class="p">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">CycleMap</span><span class="p">(</span>&quot;<span class="n">CycleMap</span>&quot;<span class="p">);</span>
+<span class="n">map</span><span class="p">.</span><span class="n">addLayer</span><span class="p">(</span><span class="n">layerCycleMap</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Infine dobbiamo decidere soltanto le dimensioni di visualizzazione della mappa in modo da adattarla al contesto del nostro sito o blog, per fare ciò basta modificare le dimensioni proporzionali della mappa rispetto al <code>&lt;div&gt;</code> in cui è contenuta, in questo caso, essendo su di un file html a parte, ho deciso di lasciare le dimensioni della mappa grandi quanto la pagina&nbsp;html.</p>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width:100%; height:100%&quot;</span> <span class="na">id=</span><span class="s">&quot;map&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div></article>
+<div id="disqus_thread" ></div>
+<style>
+/* remove unnecessary disqus cruft from view */
+.dsq-comment-header{background:none !important; border:none !important;}
+.dsq-post-tools, .dsq-button, .dsq-textarea-background{ background:none !important;}
+#dsq-like-thread-button .dsq-toolbar-label, #dsq-subscribe, #dsq-sort-select, .dsq-trackback-url, .dsq-brlink {display:none !important;}
+</style>
+<script type="text/javascript">
+        var disqus_developer = 1; // developer mode is on
+        var disqus_shortname = 'jseabold';
+    var disqus_identifier = "log/2008/08/inserire-mappe-di-openstreetmap-nel-proprio-sitoblog.html";
+    var disqus_url = "http://jseabold.netlog/2008/08/inserire-mappe-di-openstreetmap-nel-proprio-sitoblog.html";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+          <footer>
+          <!-- this website is proudly powered by <a href="http://www.python.org/">Python</a>,
+          build with the static site generator <a href="http://hyde.github.com/">Hyde</a>, 
+          source code hosted on <a href="https://github.com/fspaolo/">GitHub</a>,
+	  and written using <a href="http://www.vim.org/">VIM</a>. -->
+          </footer>
+          </section>
+
+          <div id="sidebar">
+                              <nav class=nav>
+    <ul>
+                <li>
+            <a title="About me and this site"
+                class="about"
+                href="/about">
+                About</a>
+        </li>        <li>
+            <a title="Wow, a blog!"
+                class="log"
+                href="/log">
+                Log</a>
+        </li>        <li>
+            <a title="Blog's tags"
+                class="log"
+                href="/tags">
+                Tags</a>
+        </li>        <li>
+            <a title="Blog's feed"
+                class="log"
+                href="/atom.xml">
+                Feed</a>
+        </li>        <li>
+            <a title="Research projects"
+                class="research"
+                href="/research">
+                Research</a>
+        </li>    </ul>
+</nav>
+                              </div>
+
+          </div>
+        
+    <!-- Javascript at the bottom for fast page loading -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  
+    
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+  <!--    -->
+
+  </body>
+</html>

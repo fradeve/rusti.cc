@@ -1,1 +1,565 @@
-{}
+!!python/unicode '.hyde_deps': []
+!!python/unicode 'about/index.html': [posts.j2, analytics.j2, disqus.j2, base.j2,
+  macros.j2]
+!!python/unicode 'atom.xml': [atom.j2, macros.j2]
+!!python/unicode 'index.html': []
+!!python/unicode 'log/.hyde_deps': [posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/09/finalmente-a-casa.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2007/10/alex-zahang-openmoko-multi-boot-su-a2100-da-scheda-sd.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/anche-la-h-farm-usa-ubuntu.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/auguri-misti-e-vari.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/debian-e-ubuntu-fanno-la-pace.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/dream-theater.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2007/10/fradeve-openblog-su-tuxfeedit.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/il-wiki-ha-bisogno-di-voi--dominions-2.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/nuove-guide-nel-portale-giochi.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/nuovi-giochi-sul-wiki.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/openmoko--il-punto-della-situazione.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/pix-bros-in-italiano-vi-presento-il-nuovo-traduttore.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/pix-juegos-nel-portale-giochi.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/qtopia-sbarca-su-openmoko.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/richard-stallman-attaccato-dai-ninja-alluniversita-di-yale.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/shuttleworth-vs-ballmer.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/ubuntu-gutsy-permette-scegliere-livello-liberta-utente.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/warcraft-iii-nel-portale-giochi-di-ubuntu-it.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/10/youtube-dl-interfaccia-per-il-programma-da-repo.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/aggiornamenti-dal-portale-giochi.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/aggiornamenti-ed-errori-sul-portale-giochi.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/gta-san-andreas-nel-portale-giochi-e-il-crack-no-cd.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/icone-smart-browsing-per-il-portale-giochi.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/non-resisto-pse-2008-su-ubuntu.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/nuovi-giochi-in-lavorazione-per-il-portale-giochi-di-ubuntu-it.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/nuovi-programmi-su-openmoko.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/openmoko-web-browser-e-player-video-alcune-novita.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/portale-giochi-di-ubuntu-it-rilasciate-nuove-guide.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/portale-giochi-nel-wiki-2-new-entries.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/portale-giochi-uplink-e-tennix-ora-sul-wiki.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/11/ubuntu-710-su-asus-eee-pc.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/12/asus-eee-xubuntu-la-mia-recensione.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/12/doverose-scuse-dall-editore-piu-sprovveduto-del-wiki.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/12/e-lo-screenshot-se-ne-va.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/12/il-grande-passo-da-kde-a-gnome.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/12/il-portale-giochi-di-ubuntu-it-diventa-serioso-d.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/12/lho-fatto-asus-eee-pc-in-arrivo.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/12/ubuntu-it-due-nuovi-giochi-nel-wiki.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/12/ubuntu-itwiki-arrivano-le-nuove-icone-per-la-navigazione-nel-portale-giochi.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/12/ubuntu-itwiki-novita-dal-portale-giochi-alla-finanziaria-2007-sullopen-source.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2007/12/ubuntu-itwiki-sei-nuove-guide-nel-portale-giochi-wine-per-tutti.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/01/buoni-propositi-per-il-nuovo-anno-conoscenza-libera-per-tutti.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/01/giochi-ubuntu-it-a-quota-150-un-po-di-storia.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/01/i-cd-di-ubuntu-piombano-in-casa-tua.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/01/marco-travaglio-e-ubuntu.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/01/openmoko-neo-freerunner.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/01/ubuntu-it-wiki-portale-giochi-5-nuovi-giochi.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/01/ubuntu-it-wiki-portale-giochi-un-mare-di-novita-a-quota-142.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/01/unclutter-your-desk.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/01/unreal-tournament-e-americas-army-su-ubuntu.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/02/.hyde_deps': [posts.j2, analytics.j2, disqus.j2, base.j2,
+  macros.j2]
+!!python/unicode 'log/2008/02/fonera-alcuni-accorgimenti-con-alice.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/02/hot-spot-fon-dentro-il-politecnico-di-bari.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/02/inkscape-creare-un-solfuro.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/02/le-gioie-del-web-20.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/02/sei-nuovi-hotspost-fon-in-provincia-di-bari.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/02/spread-the-love.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2008/02/ubuntu-it-novita-dal-portale-giochi.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/02/uno-script-python-per-il-wiki-di-ubuntu-it.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/03/arte-e-liberta-su-wikipedia-qualcosa-si-muove.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/03/connettersi-alla-rete-uniba-con-ubuntu.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/03/fradeve-promosso-grazie-alla-comunita.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/03/luniversita-degli-studi-di-bari-sceglie-gnulinux.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/03/navigazione-gps-dallopenmoko-allasus-eee.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/03/novita-dal-wiki-di-ubuntu-it-asus-eee-pc-e-portale-giochi.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/03/quaaanto-manca.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2008/03/ubuntu-facciamo-un-riasunto.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/03/un-appello-per-ubuntu.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/disponibile-il-poster-personalizzabile-per-install-party-di-ubuntu-hardy.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/hardy-prime-esperienze.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/la-comunita-italiana-di-wikipedia-premia-ubuntu.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/le-sbalorditive-prestazioni-gps-del-neo-freerunner.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/ma-quante-belle-facce.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/neo-freerunner-il-video-e-le-foto.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/neo1973-alla-riscossa.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/nuove-rivelazioni-sulle-vendite-del-neo-freerunner-in-europa.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/primi-esperimenti-sul-gps-del-neo-freerunner.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/ubuntu-sbarca-alluniversita-di-bari.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/ubunu-it-ce-qualcosa-nellaria.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/un-regalo-per-i-gruppi-dacquisto-di-openmoko.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/04/uno-spunto-per-le-politiche-in-ritardo.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/05/giochi-sul-wiki-di-ubuntu-it-aggiornamenti.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/05/il-neo-freerunner-entrera-in-vendita-questo-mese.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/05/perche-google-maps-fa-schifo.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/05/perche-openstreetmap-parte-1.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/05/perche-openstreetmap-parte-2.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/06/disponibili-gli-account-unificati-per-i-progetti-wikimedia.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/06/guida-pratica-allopenstreetmapping-su-ubuntu.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/06/ho-distrutto-la-mia-antenna-gps-osm-dovra-aspettarmi.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/06/i-neo-freerunner-sono-in-vendita.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/06/neo-freerunner-in-vendita-le-prime-immagini.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/06/nokia-n810-vs-openmoko-ma-stiamo-scherzando.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/06/palmari-e-software-libero-attenti-a-nokia-google.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/07/android-di-google-non-e-aperto-come-sembra.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/07/openmoko-e-neofreerunner-a-che-punto-siamo.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/07/openstreetcamping-edizione-2008.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/07/openstreetmap-in-puglia-200-km-di-bicicletta-in-7-giorni.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/07/stranezze-wiki-pediche.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/08/il-mio-regalo-estivo-ai-progetti-wikimedia.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/08/inserire-mappe-di-openstreetmap-nel-proprio-sitoblog.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/08/openblog-openstreetmap-sdonk.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/08/trasformare-in-massa-tracce-igc-e-nmea-in-tracce-gpx.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/09/debian-xfce4-su-neofreerunner.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/10/un-mese-di-novita.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2008/11/intrepid-ibex-su-asus-eee-901-e-1000h.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/11/network-manager-ubuntu-810-asus-901.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/11/the-book-meme.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2008/11/wikimedia-foundation-partito-lautofinanziamento-2009.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/12/installare-flickrfs-su-ubuntu-810-intrepid-ibex.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2008/12/installare-pymedia-su-ubuntu-810-intrepid-ibex.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/01/fradeve-openblog-adesso-anche-in-versione-mobile.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/01/fradeve-openblog-torna-online.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/01/openstreetmap-su-computer-magazine.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/01/tutti-i-miei-pinguini-2.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/02/dropbox-piu-spazio-e-un-wiki.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/02/gos-ai-bloggers-ci-pensa-danirevi.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/02/neo-freerunner-con-shr-finalmente-un-telefono-utilizzabile.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/02/ottenere-immagini-planetarie-di-openstreetmap-con-marble.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/02/tomboy-dropbox-gnomedo-il-trio-irresistibile.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/02/universita-di-bari-connettersi-alla-wifi-degli-studenti.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/03/arrivati-a-cloudmade-i-nuovi-server-per-openstreetmap.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/03/e-vista-se-ne-va.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2009/03/facciamo-ordine.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2009/03/neo-freerunner-shr-in-testing-e-nuova-openmoko-nel-2009.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/03/openstreetmap-a-terlizzi-un-anno-dopo.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/03/rilasciato-gvsig-mobile-per-openmoko.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/03/ultima-opportunita-aiutiamo-la-nasa-a-scegliere-ubuntu.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/03/un-uomo-una-donna-una-mappa.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/04/archeo-foss-roma-2009.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/04/gestire-la-propria-bibliografia-latex-in-bibtex-con-lyx-e-gnome-referencer.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/04/in-arrivo-tonnellate-di-tracce-gpx-per-la-turchia-su-openstreetmap.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/04/la-fao-dona-i-dati-cartografici-dellafrica-ad-openstreetmap.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/04/openmoko-navit-su-shr-testing.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/04/openstreetmap-e-beni-culturali-un-talk-al-materacamp-2009.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/04/passaggio-a-jaunty-prime-impressioni.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/05/ci-sono-cose-che-un-nerd-non-puo-tenersi-dentro.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/05/intel-su-ubuntu-904-dont-worry-be-happy.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/05/openstreetmap-al-materacamp-2009-il-giorno-dopo.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/05/openstreetmap-e-itc-cnr-di-bari-convivenza.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/05/twitter-e-proviamo-dai.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/05/wikipedia-la-pagina-di-openstreetmap-si-rinnova.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/06/openstreetmap-come-usare-walking-papers.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/06/osmit-2009-qualche-giorno-dopo.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/07/il-disegno-in-inkscape-piu-grosso-che-abbia-mai-fatto.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/07/la-grande-conquista-del-software-libero-unire-le-genti.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/08/nuova-interfaccia-di-editing-per-mediawiki.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/08/windows-file-copy-dialog.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/09/evoluzione.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2009/09/fradeve-libera-le-slide.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/09/liberta-in-italia-wikipedia-imbavagliata-dal-popolo.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/09/linfluenza-a-non-capisco.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/09/planet-di-ubuntu-it-io-ci-sono.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/09/usi-software-libero-al-100.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/10/gli-archeologi-amano-il-software-libero.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/10/osm-at-linux-day-2009potenza-qualche-giorno-dopo.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/11/la-puglia-verso-openstreetmap-28-novembre-a-conversano-ba.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/11/puglia-ubuntu-e-software-libero-in-biblioteca-perche-no.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/11/ubuntu-e-openstreetmap-insieme-per-viedifuga.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/12/ubuntu-e-osm-al-mapping-party-di-ruvo-alcune-ore-dopo.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2009/12/ubuntu-linux-e-openstreetmap-nel-primo-mapping-party-pugliese-20-dicembre.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/01/questione-di-personale.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/01/ubuntu-it-ed-openstreetmap-in-puglia-3-eventi-da-non-perdere.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/02/aggiornare-comodamente-josm-tested-su-ubuntu.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/02/esclusiva-per-ubuntu-it-ubuntu-al-cern-di-ginevra.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/02/getting-things-gnome-tomboy-todo-note.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/02/openstreetmap-live-at-bollenti-spiriti-camp.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/02/openstreetmap-mapping-party-terlizzi-31-01-10-the-day-after.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/02/spyqr-dalla-comunita-pugliese-di-ubuntu-it-una-gui-per-qrencode.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/03/testo-integrale-lectio-magistralis-lawrence-lessig-in-parlamento.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/04/fradeve-su-identica.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/04/the-nerd-score-meme.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/05/things-happens.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2010/06/archeofoss-2010-foggia-diversi-giorni-dopo.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/06/richard-stallman-a-foggia-impressioni.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/06/servizi-al-cittadino-ministero-delleconomia-e-delle-finanze.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/07/usare-il-pacchetto-latex-xfrac-su-ubuntu-lucid.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/07/usare-josm-con-xmonad-su-ubuntu.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/08/backuppare-i-brani-preferiti-di-amarok-1-4-in-dropbox-con-un-comando.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/08/email-ed-efficienza-nella-p-a-.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/08/installare-texlive-da-ctan-su-ubuntu-lucid.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/08/wordpress-latex-plugin-.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/11/cosa_succede.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2010/11/librefm_in_amarok14.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/12/arriva-il-talk-su-wikileaks.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/12/people-who-have-changed-my-life.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2010/12/un-anno-dopo-2010-no-compromises.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/01/obiettivi.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2011/01/osm-a-bari-e-lattribuzione.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/01/regione-puglia-e-software-libero.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/01/uncluttering-the-last-step.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/02/facebook-hack-party-con-ubuntu.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/02/how-do-I-blog.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2011/02/resoconto-consiglio-corso-di-laurea-21-02-11.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/02/stallman-in-puglia-appuntamento-doppio.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/03/aggiornamenti-chimica-analitica.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/03/assemblea-studenti-diagostica.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/03/dona-il-tuo-checkin-ad-osm.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/03/la-diagnostica-e-il-cdl-in-restauro.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/03/litalia-non-ama-wikipedia.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/03/recap-febbraio.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2011/04/autoproduzione-1-i-muffin.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/05/grub-e-opzione-vga-in-ubuntu-natty.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/05/recap-aprile.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2011/06/announcing-dignu.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2011/06/autoproduzione-2-il-sapone.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/06/discorso-sull-istruzione.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/06/recap-giugno.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2011/07/inspiring-music.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2011/07/perche-i-dati-geografici-possono-essere-liberi.html': [
+  posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/08/recap-agosto.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2011/09/l-ecovillaggio-basilico.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/10/gnewarchaeology-nuove-pontificazioni.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/11/addio-howard.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2011/11/gfossday-il-mio-regno-per-talk.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2011/12/amtab-bari-e-diritto-dautore.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2012/.hyde_deps': [posts.j2, analytics.j2, disqus.j2, base.j2,
+  macros.j2]
+!!python/unicode 'log/2012/01/autoproduzione-4-lo-yogurt.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2012/01/buchi-gloriosi-in-cc.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2012/01/cosa-fare-quando-internet-offline.html': [posts.j2,
+  analytics.j2, disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2012/01/my-muttrc.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2012/01/recap-2011.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2012/02/recap-febbraio.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2012/03/google-away.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2012/03/muttrc-take-2.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2012/03/usare-rsync-con-box.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2012/04/anonimato-irc.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2012/04/backup-strategies.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2012/04/github.html': [posts.j2, analytics.j2, disqus.j2, base.j2,
+  macros.j2]
+!!python/unicode 'log/2012/04/recap-aprile.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'log/2012/07/finalmente-casa-take-2.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/index.html': [listing.j2, macros.j2, base.j2, analytics.j2]
+!!python/unicode 'media/css/site.css': []
+!!python/unicode 'media/css/syntax.css': []
+!!python/unicode 'media/js/libs/dd_belatedpng.js': []
+!!python/unicode 'media/js/libs/g.bar-min.js': []
+!!python/unicode 'media/js/libs/g.dot-min.js': []
+!!python/unicode 'media/js/libs/g.line-min.js': []
+!!python/unicode 'media/js/libs/g.pie-min.js': []
+!!python/unicode 'media/js/libs/g.raphael-min.js': []
+!!python/unicode 'media/js/libs/jquery-1.5.1.min.js': []
+!!python/unicode 'media/js/libs/modernizr-1.7.min.js': []
+!!python/unicode 'media/js/libs/raphael.js': []
+!!python/unicode 'research/altimetry-and-gravity.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'research/altimetry-and-ice-shelves.html': [posts.j2, analytics.j2,
+  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'research/index.html': [listing.j2, macros.j2, base.j2, analytics.j2]
+!!python/unicode 'research/publications.html': [posts.j2, analytics.j2, disqus.j2,
+  base.j2, macros.j2]
+!!python/unicode 'tags/amarok.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/android.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/apple.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/archaeology.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/art.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/autoproduzione.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'tags/backup.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/bari.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/bibtex.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/blog.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/calliope.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/cern.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/creativecommons.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'tags/dell.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/diagnostica.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/dropbox.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/fao.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/flickr.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/foggia.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/fon.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/freerunner.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/gfloss.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/gfoss.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/gis.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/gnome.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/gnuinux.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/gnulinux.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/googlemaps.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/gps.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/gtd.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/gvsig.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/index.html': [taglist.j2, macros.j2, base.j2, analytics.j2]
+!!python/unicode 'tags/inkscape.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/intel.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/internet.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/irc.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/josm.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/kernel.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/latex.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/life.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/lug.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/mail.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/matera.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/microsoft.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/music.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/mutt.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/nasa.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/navit.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/nerd.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/nokia.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/oia.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/openmoko.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/openstreetmap.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'tags/osmit.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/privacy.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/puglia.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/pygtk.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/python.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/recap.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/rms.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/ruvodipuglia.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/server.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/slide.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/socialnetwork.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'tags/stato.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/talk.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/tangogps.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/terlizzi.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/trento.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/ubuntu.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/ubuntuit.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/uniba.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/webgis.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/wikimedia.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/wikipedia.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'tags/xmonad.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]

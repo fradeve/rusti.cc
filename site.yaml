@@ -67,7 +67,7 @@ tagger:
             target: tags
             template: tagged_posts.j2
             archive_extension: html
-# publisher:
+#publisher:
 #    github:
 #        type: hyde.ext.publishers.dvcs.Git
 #        path: ../fradeve.github.com/deploy  # publish on `deploy` folder

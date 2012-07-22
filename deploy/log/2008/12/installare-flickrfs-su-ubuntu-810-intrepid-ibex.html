@@ -1,0 +1,221 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Installare Flickrfs su Ubuntu 8.10 Intrepid Ibex</title>
+  <meta name="description" content="">
+  <meta name="author" content="Francesco de Virgilio">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+   <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    </head>
+<body id="installare-flickrfs-su-ubuntu-810-intrepid-ibex">
+                  <div id="main" role="main">
+
+          <header class="clearfix">
+          </header>
+
+          <section class="content">
+          <article>
+
+<h1 class="title">
+    <a href="/log/2008/12/installare-flickrfs-su-ubuntu-810-intrepid-ibex.html">
+        Installare Flickrfs su Ubuntu 8.10 Intrepid Ibex
+    </a>
+</h1>
+
+<time datetime="2008-12-09">
+    Posted on 09 Dec 2008
+</time>
+<br>
+<tags>tags:
+	<a href="/tags/gnulinux.html">gnulinux</a>, 
+	<a href="/tags/python.html">python</a>, 
+	<a href="/tags/ubuntu.html">ubuntu</a> 
+</tags>
+
+<h6 class="description">
+    <a href="/log/2008/12/installare-flickrfs-su-ubuntu-810-intrepid-ibex.html">
+        
+    </a>
+</h6>
+
+<p>Forse tra di voi ci sono moltissimi utenti
+<a href="http://www.flickr.com">Flickr</a>. Bisogna ammettere che da quando molti di noi sono diventati
+dipendenti dai vari servizi online (da Imageshack a Flickr, da Google a
+<a href="http://www.openstreetmap.org">OpenStreetMap</a>, da Launchpad a LastFM) questi fornitori di servizi hanno
+compreso come possa essere utile, al fine di integrare il maggior numero
+possibile di sistemi operativi con il proprio prodotto, realizzare delle <span class="caps">API</span>
+utilizzabili indipendentemente dal proprio sistema&nbsp;operativo.</p>
+<p>È ciò che è successo pressappoco per Flickr: sulla base delle <span class="caps">API</span> rilasciate
+dal vincente progetto di Yahoo!, sono stati realizzati qualcosa come 37
+software per gestire le proprie foto su Flickr.com. Molti di questi sono
+compatibili con <span class="caps">GNU</span>/Linux, alcuni scritti in C, altri in Java, altri in
+Python, altri in Perl. Esistono validissimi software in Gtk, altri in Qt o in
+Tcl/Tk, ma esistono anche alcuni tool da linea di comando. Altri strumenti
+sono stati integrati nei più noti gestori di fotografie per <span class="caps">GNU</span>/Linux (F-Spot,
+Digikam). Ed infine, qualcuno ha pensato di realizzare l&#8217;integrazione con
+Nautilus, partendo da un menù di servizio per caricare le foto selezionate
+direttamente su Flickr, e finendo con l&#8217;integrazione di un filesystem basato
+su <span class="caps">FUSE</span> con le <span class="caps">API</span> di Flickr e con&nbsp;Nautilus.</p>
+<p>Ed è proprio di quest&#8217;ultimo che vorrei parlarvi in questo post. Il software
+si chiama Flickrfs, è disponibile nei repository di Ubuntu Intrepid e consente
+di sfogliare il contenuto del proprio account Flickr come se fosse una
+cartella in Nautilus, quasi un <span class="caps">FTP</span>. Vediamo come&nbsp;installarlo.</p>
+<p>Prima di tutto, faccio notare che non sono ancora riuscito a far caricare dei
+video a FlickrFS, ma solo fotografie. Se non avete un account <span class="caps">PRO</span>, è
+esattamente cio che fa per voi&nbsp;;)</p>
+<h2 id="passo-1">Passo&nbsp;1</h2>
+<p>Installiamo il pacchetto &#8220;flickrfs&#8221;**_ da Synaptic o da linea di&nbsp;comando:</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">flickrfs</span>
+</pre></div>
+
+
+<h2 id="passo-2">Passo&nbsp;2</h2>
+<p>Assicuriamoci che <span class="caps">FUSE</span> sia incluso tra i moduli del kernel (e
+ciò dovrebbe essere vero di default nel 99% dei&nbsp;casi):</p>
+<div class="codehilite"><pre><span class="n">lsmod</span> <span class="o">|</span> <span class="n">grep</span> <span class="o">-</span><span class="nb">i</span> <span class="n">fuse</span>
+</pre></div>
+
+
+<p>Se tutto è ok, dovrebbe essere visualizzata una linea del&nbsp;genere:</p>
+<div class="codehilite"><pre><span class="n">fuse</span>        52892 3
+</pre></div>
+
+
+<h2 id="passo-3">Passo&nbsp;3</h2>
+<p>Creiamo una cartella (dove più ci piace) in cui verranno
+&#8220;ospitate&#8221; le nostre cartelle di Flickr; io l&#8217;ho montata in <em>/media</em>, come
+qualsiasi altra penna <span class="caps">USB</span> o hard disk&nbsp;esterno:</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">flickrfs</span>
+</pre></div>
+
+
+<h2 id="passo-4">Passo&nbsp;4</h2>
+<p>Ordiniamo a Flickrfs di &#8220;montarsi&#8221; all&#8217;interno della cartella
+appena&nbsp;creata:</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">flickrfs</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">flickrfs</span>
+</pre></div>
+
+
+<p>Appena il programma avrà terminato di aggiornare i nostri set, potremo aprire
+Nautilus con privilegi di amministratore e accedere alla nostra&nbsp;cartella:</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">nautilus</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">flickrfs</span>
+</pre></div>
+
+
+<p>Ed ecco le nostre cartelle. Potremo importare/esportare foto come se fossimo
+in una nostra normalissima cartella di sistema, con il drag&amp;drop, con il
+copia/incolla,&nbsp;ecc..</p>
+<p>È utile comunque crearsi un collegamento sul desktop o aggiungere l&#8217;indirizzo
+nei preferiti per aprire direttamente la cartella&nbsp;flickrfs.</p></article>
+<div id="disqus_thread" ></div>
+<style>
+/* remove unnecessary disqus cruft from view */
+.dsq-comment-header{background:none !important; border:none !important;}
+.dsq-post-tools, .dsq-button, .dsq-textarea-background{ background:none !important;}
+#dsq-like-thread-button .dsq-toolbar-label, #dsq-subscribe, #dsq-sort-select, .dsq-trackback-url, .dsq-brlink {display:none !important;}
+</style>
+<script type="text/javascript">
+        var disqus_developer = 1; // developer mode is on
+        var disqus_shortname = 'jseabold';
+    var disqus_identifier = "log/2008/12/installare-flickrfs-su-ubuntu-810-intrepid-ibex.html";
+    var disqus_url = "http://jseabold.netlog/2008/12/installare-flickrfs-su-ubuntu-810-intrepid-ibex.html";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+          <footer>
+          <!-- this website is proudly powered by <a href="http://www.python.org/">Python</a>,
+          build with the static site generator <a href="http://hyde.github.com/">Hyde</a>, 
+          source code hosted on <a href="https://github.com/fspaolo/">GitHub</a>,
+	  and written using <a href="http://www.vim.org/">VIM</a>. -->
+          </footer>
+          </section>
+
+          <div id="sidebar">
+                              <nav class=nav>
+    <ul>
+                <li>
+            <a title="About me and this site"
+                class="about"
+                href="/about">
+                About</a>
+        </li>        <li>
+            <a title="Wow, a blog!"
+                class="log"
+                href="/log">
+                Log</a>
+        </li>        <li>
+            <a title="Blog's tags"
+                class="log"
+                href="/tags">
+                Tags</a>
+        </li>        <li>
+            <a title="Blog's feed"
+                class="log"
+                href="/atom.xml">
+                Feed</a>
+        </li>        <li>
+            <a title="Research projects"
+                class="research"
+                href="/research">
+                Research</a>
+        </li>    </ul>
+</nav>
+                              </div>
+
+          </div>
+        
+    <!-- Javascript at the bottom for fast page loading -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  
+    
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+  <!--    -->
+
+  </body>
+</html>
