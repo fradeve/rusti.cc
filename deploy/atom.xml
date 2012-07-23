@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-07-22T16:51:49Z</updated>
+    <updated>2012-07-23T10:18:20Z</updated>
 
     <id>/atom.xml/</id>
 
@@ -1456,23 +1456,6 @@ Gli effetti collaterali dal punto di vista psicologico potrebbero essere (tra gl
 &lt;/ul&gt;            </content>
         </entry>
             <entry>
-            <title type="html">Satellite altimetry over ice</title>
-            <author><name>Francesco de Virgilio</name></author>
-            <link href="/research/altimetry-and-ice-shelves.html"/>
-            <updated>2011-06-19T10:00:00Z</updated>
-            <published>2011-06-19T10:00:00Z</published>
-            <id>/research/altimetry-and-ice-shelves.html</id>
-            
-            <content type="html">
-                                &lt;p&gt;&lt;img alt=&#34;Antarctic Peninsula&#34; src=&#34;/media/images/fris_dh_map.png&#34; /&gt;
-&lt;strong&gt;Figure 1.&lt;/strong&gt; Example of a high resolution grid where elevation-change time series are constructed for every grid&amp;nbsp;cell.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Antarctic Peninsula&#34; src=&#34;/media/images/antpen_elev_change.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 2.&lt;/strong&gt; Elevation changes over the Antarctic Peninsula ice shelves from 1978 (Seasat) to 2009 (Envisat). Red is negative and blue is&amp;nbsp;positive.&lt;/p&gt;
-&lt;p&gt;Satellite observations have shown an increase in the rate of mass loss from the Antarctic ice sheet over the past two decades. At the same time, rapid changes have occurred in extent of specific ice shelves, and acceleration of grounded ice streams has followed ice shelf collapses; these observations have been interpreted as evidence that ocean forcing can lead to rapid changes in ice sheet dynamic flow and its subsequent contribution to sea level rise. However, all previous large-scale studies of mass balance of Antarctic ice shelves have been limited to the time period since &lt;span class=&#34;caps&#34;&gt;ERS&lt;/span&gt;-1 launch (data since 1992), therefore it is not clear whether the observed trends are representative of the true long-term&amp;nbsp;variability.&lt;/p&gt;
-&lt;p&gt;We use radar altimeter data from Seasat (&lt;span class=&#34;caps&#34;&gt;NASA&lt;/span&gt;), Geosat (&lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt; &lt;span class=&#34;caps&#34;&gt;NAVY&lt;/span&gt;/&lt;span class=&#34;caps&#34;&gt;NOAA&lt;/span&gt;), &lt;span class=&#34;caps&#34;&gt;ERS&lt;/span&gt;-1/2 (&lt;span class=&#34;caps&#34;&gt;ESA&lt;/span&gt;), &lt;span class=&#34;caps&#34;&gt;GFO&lt;/span&gt; (&lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt; &lt;span class=&#34;caps&#34;&gt;NAVY&lt;/span&gt;) and Envisat (&lt;span class=&#34;caps&#34;&gt;ESA&lt;/span&gt;) missions to construct the longest possible history of elevation changes and extend the analyses of surface variability from 1978 to 2010 for all of Antarctica&amp;#8217;s ice shelves north of 72S (for 72S &amp;lt; lat &amp;lt; 81.5S data are available from 1992 to&amp;nbsp;2010).&lt;/p&gt;
-&lt;p&gt;Read more in &lt;a href=&#34;/media/images/paoloAGU2010.png&#34;&gt;Paolo et al. (&lt;span class=&#34;caps&#34;&gt;AGU&lt;/span&gt; 2010)&lt;/a&gt; and &lt;a href=&#34;/media/images/paoloAGU2011.png&#34;&gt;Paolo et al. (&lt;span class=&#34;caps&#34;&gt;AGU&lt;/span&gt; 2011)&lt;/a&gt;.&lt;/p&gt;            </content>
-        </entry>
-            <entry>
             <title type="html">Autoproduzione 2: il sapone</title>
             <author><name>Francesco de Virgilio</name></author>
             <link href="/log/2011/06/autoproduzione-2-il-sapone.html"/>
@@ -1506,20 +1489,6 @@ Gli effetti collaterali dal punto di vista psicologico potrebbero essere (tra gl
 &lt;p&gt;Di seguito, le foto delle prime&amp;nbsp;saponette:&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;&lt;img alt=&#34;&#34; src=&#34;http://dl.dropbox.com/u/369614/blog/img_red/sapone_1.jpg&#34; /&gt;&lt;br&gt;&lt;em&gt;La parte superiore della saponetta&lt;/em&gt;&lt;/center&gt;
 &lt;center&gt;&lt;img alt=&#34;&#34; src=&#34;http://dl.dropbox.com/u/369614/blog/img_red/sapone_2.jpg&#34; /&gt;&lt;br&gt;&lt;em&gt;La parte inferiore della saponetta&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">Satellite altimetry and gravity</title>
-            <author><name>Francesco de Virgilio</name></author>
-            <link href="/research/altimetry-and-gravity.html"/>
-            <updated>2011-06-18T10:00:00Z</updated>
-            <published>2011-06-18T10:00:00Z</published>
-            <id>/research/altimetry-and-gravity.html</id>
-            
-            <content type="html">
-                                &lt;p&gt;&lt;img alt=&#34;Gravity and Geoid Brazil&#34; src=&#34;/media/images/grav_geoid_br.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure.&lt;/strong&gt; Integrated models calculated using sea surface gradients and marine gravity data for the Brazilian coast: free-air gravity anomaly (left) and geoid height&amp;nbsp;(right).&lt;/p&gt;
-&lt;p&gt;Sea surface gradients derived from the Geosat and &lt;span class=&#34;caps&#34;&gt;ERS&lt;/span&gt;-1 satellite altimetry geodetic missions were integrated with marine gravity data from the National Geophysical Data Center and Brazilian national surveys. Using the least squares collocation method, models of free-air gravity anomaly and geoid height were calculated for the coast of Brazil with a resolution of 2&amp;#8217; x 2&amp;#8217;. The integration of satellite and shipborne data showed better statistical results in regions near the coast than using satellite data only, suggesting an improvement when compared to the state-of-the-art global gravity models. Furthermore, these results were obtained with considerably less input information than was used by those reference models. The least squares collocation presented a very low content of high-frequency noise in the predicted gravity anomalies. This may be considered essential to improve the high resolution representation of the gravity field in regions of ocean-continent&amp;nbsp;transition.&lt;/p&gt;
-&lt;p&gt;Read more in &lt;a href=&#34;http://www.sciencedirect.com/science?_ob=ArticleURL&amp;amp;_udi=B6V9X-4YX7KM1-1&amp;amp;_user=10&amp;amp;_coverDate=12/31/2010&amp;amp;_rdoc=1&amp;amp;_fmt=high&amp;amp;_orig=search&amp;amp;_origin=search&amp;amp;_sort=d&amp;amp;_docanchor=&amp;amp;view=c&amp;amp;_acct=C000050221&amp;amp;_version=1&amp;amp;_urlVersion=0&amp;amp;_userid=10&amp;amp;md5=deb2b4c87890d811df3ba0c91b4891ae&amp;amp;searchtype=a&#34;&gt;Paolo and Molina (2010)&lt;/a&gt;.&lt;/p&gt;            </content>
         </entry>
             <entry>
             <title type="html">Announcing diGNU</title>
@@ -8620,9 +8589,9 @@ Bisceglie, Corato) hanno espresso la volontà di voler contribuire allo
 sviluppo di una mappa libera della loro&amp;nbsp;città.&lt;/p&gt;
 &lt;p&gt;La galleria fotografica della giornata è visibile &lt;a href=&#34;http://lugbari.org/bin/view/Main/LinuxDay2008Gallery&#34;&gt;qui&lt;/a&gt;. Di seguito,
 qualche&amp;nbsp;foto:&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://www.flickr.com/photos/leron/2982364727/&#34;&gt;&lt;img alt=&#34;PA250009.JPG&#34; src=&#34;http://farm4.static.flickr.com/3221/2982364727_a52911314a_b.jpg&#34; /&gt;&lt;/a&gt;&lt;/center&gt;
-&lt;center&gt;&lt;a href=&#34;http://www.flickr.com/photos/leron/2982363883/&#34;&gt;&lt;img alt=&#34;PA250007.JPG&#34; src=&#34;http://farm4.static.flickr.com/3209/2982363883_3ed2272856_b.jpg&#34; /&gt;&lt;/a&gt;i&lt;/center&gt;
-&lt;center&gt;&lt;a href=&#34;http://www.flickr.com/photos/leron/2978920585/&#34;&gt;&lt;img alt=&#34;DSCF2106.JPG&#34; src=&#34;http://farm4.static.flickr.com/3034/2978920585_3ae4a162e3_b.jpg&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://farm4.static.flickr.com/3221/2982364727_a52911314a_b.jpg&#34;&gt;&lt;img alt=&#34;PA250009.JPG&#34; src=&#34;/media/images/http://farm4.static.flickr.com/3221/2982364727_a52911314a_b.jpg&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://farm4.static.flickr.com/3209/2982363883_3ed2272856_b.jpg&#34;&gt;&lt;img alt=&#34;PA250007.JPG&#34; src=&#34;/media/images/http://farm4.static.flickr.com/3209/2982363883_3ed2272856_b.jpg&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://farm4.static.flickr.com/3034/2978920585_3ae4a162e3_b.jpg&#34;&gt;&lt;img alt=&#34;DSCF2106.JPG&#34; src=&#34;/media/images/http://farm4.static.flickr.com/3034/2978920585_3ae4a162e3_b.jpg&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;h2 id=&#34;novita-dal-mondo-ubuntu&#34;&gt;Novita dal mondo&amp;nbsp;Ubuntu&lt;/h2&gt;
 &lt;p&gt;Devo scusarmi ancora una volta con la Comunità Italiana di Ubuntu, ma il
 silenzio nel blog è specchio di quanto il periodo tra Agosto e Novembre sia
@@ -8650,7 +8619,7 @@ Italiana. Gli studenti del nostro corso hanno realizzato una bara in cartone
 per celebrare il funerale dell&amp;#8217;Università Pubblica. In quel mentre, ho
 conosciuto un ubuntero che ci ha aiutato a trasportare la bara. Gli avevo
 promesso questo grazie&amp;nbsp;:D&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://www.flickr.com/photos/leron/2982912470/&#34;&gt;&lt;img alt=&#34;DSCF2152.JPG&#34; src=&#34;http://farm4.static.flickr.com/3172/2982912470_361f1642ce_b.jpg&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://farm4.static.flickr.com/3172/2982912470_361f1642ce_b.jpg&#34;&gt;&lt;img alt=&#34;DSCF2152.JPG&#34; src=&#34;/media/images/http://farm4.static.flickr.com/3172/2982912470_361f1642ce_b.jpg&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;h2 id=&#34;wikipedia-e-wikimedia-commons&#34;&gt;Wikipedia e Wikimedia&amp;nbsp;Commons&lt;/h2&gt;
 &lt;p&gt;La mia dolce metà, studentessa di Storia dell&amp;#8217;Arte nonché linguista in erba,
 ha deciso autonomamente di correggere una delle mie traduzioni dalla Wikipedia
@@ -10580,7 +10549,7 @@ recapitato a&amp;nbsp;casa.&lt;/p&gt;
             <content type="html">
                                 &lt;p&gt;Uno studente dell&amp;#8217;Europa dell&amp;#8217;Est (o per lo meno
 così sembra dal nome) &lt;a href=&#34;http://unadventure.wordpress.com/2008/04/28/unscientific-gps-note/&#34;&gt;Andrzej &amp;#8220;balrog-kun&amp;#8221; Zaborowski&lt;/a&gt;, ha avuto la
-geniale idea di mettere nel proprio zaino un Neo1973 (&lt;span class=&#34;caps&#34;&gt;GTA01&lt;/span&gt;), un&lt;a href=&#34;http://dl.dropbox.com/u/369614/blog/public_html/FradeveOpenblog/posts/2008/04/le-sbalorditive-prestazioni-gps-del-neo-freerunner.html&#34;&gt; Neo
+geniale idea di mettere nel proprio zaino un Neo1973 (&lt;span class=&#34;caps&#34;&gt;GTA01&lt;/span&gt;), un&lt;a href=&#34;http://fradeve.org/log/2008/04/le-sbalorditive-prestazioni-gps-del-neo-freerunner.html&#34;&gt; Neo
 FreeRunner&lt;/a&gt; (&lt;span class=&#34;caps&#34;&gt;GTA02&lt;/span&gt;) ed un N800, attivando il tracking del &lt;span class=&#34;caps&#34;&gt;GPS&lt;/span&gt; e catturando
 in questo modo i file .&lt;span class=&#34;caps&#34;&gt;GPX&lt;/span&gt; delle strade che ha percorso nel giro di qualche
 ora. I risultati sono piuttosto incoraggianti, per essere il Neo un
@@ -10601,7 +10570,6 @@ caricato sul suo blog i tracciati &lt;span class=&#34;caps&#34;&gt;GPX&lt;/span&
 in &lt;a href=&#34;http://wiki.openstreetmap.org/index.php/It:JOSM&#34;&gt;&lt;span class=&#34;caps&#34;&gt;JOSM&lt;/span&gt;&lt;/a&gt;, un programma usato dagli &lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; per elaborare le
 tracce che poi verranno caricate sui server del progetto. Questa è la mappa
 con i 3 percorsi catturati dai 3 dispositivi, elaborata su &lt;span class=&#34;caps&#34;&gt;JOSM&lt;/span&gt; da&amp;nbsp;Andrzej:&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt=&#34;&#34; src=&#34;http://dl.dropbox.com/u/369614/blog/img_red/josmsr5.png&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Questi di seguito invece sono degli screenshot di &lt;span class=&#34;caps&#34;&gt;JOSM&lt;/span&gt; su cui ho caricato i 3 &lt;span class=&#34;caps&#34;&gt;GPX&lt;/span&gt;.
 Ho fatto delle foto ravvicinate per mettere in evidenza la scala (in alto a
 sinistra) con cui sono state effettuate le misurazioni; la legenda è la&amp;nbsp;seguente:&lt;/p&gt;
@@ -10610,29 +10578,23 @@ sinistra) con cui sono state effettuate le misurazioni; la legenda è la&amp;nbs
 &lt;li&gt;&lt;span class=&#34;caps&#34;&gt;GTA02&lt;/span&gt; =&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;VERDE&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;Nokia N800 =&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;ROSSO&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt=&#34;&#34; src=&#34;http://dl.dropbox.com/u/369614/blog/img_red/osmneo1mdu6.png&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;In questa immagine il Neo1973 e il Neo FreeRunner hanno catturato due
 serie di coordinate molto vicine tra loro (con uno scarto di circa 25 cm),
 però entrambe distanti dall&amp;#8217;N800 di circa 1 metro se non di&amp;nbsp;più.&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt=&#34;&#34; src=&#34;http://dl.dropbox.com/u/369614/blog/img_red/osmneo2mog7.png&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;In questa
 situazione i 3 dispositivi hanno registrato uno scarto quasi uguale, di circa
 1&amp;nbsp;m.&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt=&#34;&#34; src=&#34;http://dl.dropbox.com/u/369614/blog/img_red/osmneo3mml1.png&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Qui la situazione cambia: il FreeRunner sembra essere completamente
 sballato rispetto al Neo1973 &lt;span class=&#34;caps&#34;&gt;GTA01&lt;/span&gt; e all&amp;#8217;N800, che invece hanno registrato
 quasi esattamente le stesse coordinate. Tra questi ed il FreeRunner c&amp;#8217;è uno
 scarto di circa 3&amp;nbsp;m.&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt=&#34;&#34; src=&#34;http://dl.dropbox.com/u/369614/blog/img_red/osmneo3m2bz1.png&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Qui la situazione comincia a farsi complicata: a
 quanto pare il FreeRunner tende ad &amp;#8220;amplificare&amp;#8221; le coordinate che riceve,
 registrando lo stesso percorso dell&amp;#8217;N800, ma &amp;#8220;traslando&amp;#8221; i valori e
 spostandoli. In questo caso, la differenza è parecchia: tra FreeRunner ed N800
 ci sono più di&amp;nbsp;5m.&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt=&#34;&#34; src=&#34;http://dl.dropbox.com/u/369614/blog/img_red/osmneo4m3wv6.png&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;In questo screen si comprende meglio cosa intendevo
 con &amp;#8220;amplificare&amp;#8221; e &amp;#8220;traslare&amp;#8221; nell&amp;#8217;immagine&amp;nbsp;precedente.&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt=&#34;&#34; src=&#34;http://dl.dropbox.com/u/369614/blog/img_red/osmneo6mik3.png&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Qui invece l&amp;#8217;amplificazione diventa non solo
 evidente, ma&amp;nbsp;spaventosa.&lt;/p&gt;
 &lt;h2 id=&#34;conclusioni&#34;&gt;Conclusioni&lt;/h2&gt;
@@ -10947,8 +10909,7 @@ Neo a fine aprile!!&amp;nbsp;:D&lt;/p&gt;
                         label="Lug" />
             
             <content type="html">
-                                &lt;p&gt;&lt;center&gt;![][1]&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#8230;anche se soltanto come effetto&amp;nbsp;collaterale.&lt;/p&gt;
+                                &lt;p&gt;&amp;#8230;anche se soltanto come effetto&amp;nbsp;collaterale.&lt;/p&gt;
 &lt;p&gt;In soldoni, l&amp;#8217;&lt;a href=&#34;http://www.udu.it/&#34;&gt;&lt;span class=&#34;caps&#34;&gt;UDU&lt;/span&gt;&lt;/a&gt; (Unione degli Universitari) di Bari ha organizzato per
 la mattinata di oggi, 22 Aprile, un seminario dal titolo &amp;#8220;&lt;strong&gt;Software libero:
 idee e prospettive&lt;/strong&gt;&amp;#8220;, per inaugurare la felice iniziativa dell&amp;#8217;&lt;strong&gt;Università

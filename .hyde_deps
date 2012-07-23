@@ -480,8 +480,8 @@
 !!python/unicode 'research/altimetry-and-ice-shelves.html': [posts.j2, analytics.j2,
   disqus.j2, base.j2, macros.j2]
 !!python/unicode 'research/index.html': [listing.j2, macros.j2, base.j2, analytics.j2]
-!!python/unicode 'research/publications.html': [posts.j2, analytics.j2, disqus.j2,
-  base.j2, macros.j2]
+!!python/unicode 'research/publications.html': [macros.j2, base.j2, analytics.j2,
+  normalpage.j2]
 !!python/unicode 'tags/amarok.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
 !!python/unicode 'tags/android.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
 !!python/unicode 'tags/apple.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
