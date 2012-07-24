@@ -6,8 +6,9 @@ tags:
     - openmoko
 ---
 
-<center>[![Free Image Hosting at www.ImageShack.us][1]][2]</center>
-<center>Foto di [Roland][3]</center>
+{% from "macros.j2" import render_int_image %}
+{{ render_int_image('Foto by Roland @ Flickr', 'openmoko_riscossa.jpg', 'Foto by Roland @ Flickr') }}
+<center>Foto by Roland @ Flick</center>
 
 Gli ultimi aggiornamenti sull'avanzamento dei lavori
 sull'ormai famigerato telefoninux, il Neo1973, promettono davvero bene.
@@ -43,10 +44,6 @@ entro la fine di Aprile ;)
 
     I have a very small number of samples headed my way and I want to make
     sure"I listen to ideas and proposals I havent heard.
-
-   [1]: http://img182.imageshack.us/img182/9162/2049683212629d3fd030bduz0.th.jpg
-
-   [2]: http://img182.imageshack.us/my.php?image=2049683212629d3fd030bduz0.jpg
 
    [3]: http://flickr.com/photos/roland/2049683212/
 

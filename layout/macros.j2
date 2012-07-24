@@ -35,7 +35,11 @@
 
 {# this macro renders a centered image in posts #}
 
-{% macro render_image(description, filename, alt, extlink) -%}
+{% macro render_int_image(description, filename, alt) -%}
+    <center><a href="http://fradeve.org/media/images/{{ filename }}"><img alt="{{ alt }}" src="/media/images/{{ filename }}" title="{{ description }}" /></a></center>
+{%- endmacro %}
+
+{% macro render_ext_image(description, filename, alt, extlink) -%}
     <center><a href="{{ extlink }}"><img alt="{{ alt }}" src="/media/images/{{ filename }}" title="{{ description }}" /></a></center>
 {%- endmacro %}
 

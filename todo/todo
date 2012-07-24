@@ -5,12 +5,16 @@
 * migrare commenti su Disqus
 * sistemare tutti i tag immagine con il nuovo template
 
-==== finezze ====
+=== finezze ===
 
 * inserire l'intero XML nel post 2009/04/openmoko*navit*su*shr*testing ed eliminare il file
 * sottovoci di menù visualizzate solo quando si è nella sezione corrispondente
 * aggiungere link next e previous in fondo a post, vedi -->
   https://github.com/merlinrebrovic/hyde-starter-kit/blob/master/layout/macros.j2
+
+### POSTS
+* http://stackoverflow.com/a/11064025/1331873
+* PC City Ferrara
 
 ### TIPS
 * per inserire le immagini con link ad immagine dimensione originale
@@ -22,8 +26,10 @@
 <center><a href="{{ extlink }}"><img alt="{{ alt }}" src="/media/images/{{ filename }}" title="{{ description }}" /></a></center>
 
 #jinja2
-{% from "macros.j2" import render_image %}
-{{ render_image('didascalia', 'nomefile', 'alt description', 'link immagine estesa') }}
+{% from "macros.j2" import render_int_image %}
+{{ render_int_image('didascalia', 'nomefile', 'alt description') }}
+
+{{ render_ext_image('didascalia', 'nomefile', 'alt description', 'link immagine estesa') }}
 
 #default URL for images:
 http://fradeve.org/media/images/

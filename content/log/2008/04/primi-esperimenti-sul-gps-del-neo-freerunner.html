@@ -7,7 +7,7 @@ tags:
     - nokia
     - openmoko
 ---
-{% from "macros.j2" import render_image %}
+{% from "macros.j2" import render_int_image %}
 
 Uno studente dell'Europa dell'Est (o per lo meno
 così sembra dal nome) [Andrzej "balrog-kun" Zaborowski][1], ha avuto la
@@ -33,7 +33,7 @@ in [JOSM][3], un programma usato dagli [OpenStreetMap][4] per elaborare le
 tracce che poi verranno caricate sui server del progetto. Questa è la mappa
 con i 3 percorsi catturati dai 3 dispositivi, elaborata su JOSM da Andrzej:
 
-{{ render_image('', 'josmsr5.png', 'alt description', 'http://fradeve.org/media/images/josmsr5.png') }}
+{{ render_int_image('', 'josmsr5.png', 'alt description') }}
 
 Questi di seguito invece sono degli screenshot di JOSM su cui ho caricato i 3 GPX.
 Ho fatto delle foto ravvicinate per mettere in evidenza la scala (in alto a
@@ -44,26 +44,26 @@ seguente:
   * GTA02 = VERDE
   * Nokia N800 = ROSSO
 
-{{ render_image('', 'osmneo1mdu6.png', 'alt description', 'http://fradeve.org/media/images/osmneo1mdu6.png') }}
+{{ render_int_image('', 'osmneo1mdu6.png', 'alt description') }}
 
 In questa immagine il Neo1973 e il Neo FreeRunner hanno catturato due
 serie di coordinate molto vicine tra loro (con uno scarto di circa 25 cm),
 però entrambe distanti dall'N800 di circa 1 metro se non di più.
 
-{{ render_image('', 'osmneo2mog7.png', 'alt description', 'http://fradeve.org/media/images/osmneo2mog7.png') }}
+{{ render_int_image('', 'osmneo2mog7.png', 'alt description') }}
 
 In questa
 situazione i 3 dispositivi hanno registrato uno scarto quasi uguale, di circa
 1 m.
 
-{{ render_image('', 'osmneo3mml1.png', 'alt description', 'http://fradeve.org/media/images/osmneo3mml1.png') }}
+{{ render_int_image('', 'osmneo3mml1.png', 'alt description') }}
 
 Qui la situazione cambia: il FreeRunner sembra essere completamente
 sballato rispetto al Neo1973 GTA01 e all'N800, che invece hanno registrato
 quasi esattamente le stesse coordinate. Tra questi ed il FreeRunner c'è uno
 scarto di circa 3 m.
 
-{{ render_image('', 'osmneo3m2bz1.png', 'alt description', 'http://fradeve.org/media/images/osmneo3m2bz1.png') }}
+{{ render_int_image('', 'osmneo3m2bz1.png', 'alt description') }}
 
 Qui la situazione comincia a farsi complicata: a
 quanto pare il FreeRunner tende ad "amplificare" le coordinate che riceve,
@@ -71,12 +71,12 @@ registrando lo stesso percorso dell'N800, ma "traslando" i valori e
 spostandoli. In questo caso, la differenza è parecchia: tra FreeRunner ed N800
 ci sono più di 5m.
 
-{{ render_image('', 'osmneo4m3wv6.png', 'alt description', 'http://fradeve.org/media/images/osmneo4m3wv6.png') }}
+{{ render_int_image('', 'osmneo4m3wv6.png', 'alt description') }}
 
 In questo screen si comprende meglio cosa intendevo
 con "amplificare" e "traslare" nell'immagine precedente.
 
-{{ render_image('', 'osmneo6mik3.png', 'alt description', 'http://fradeve.org/media/images/osmneo6mik3.png') }}
+{{ render_int_image('', 'osmneo6mik3.png', 'alt description') }}
 
 Qui invece l'amplificazione diventa non solo
 evidente, ma spaventosa.

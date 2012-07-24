@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-07-23T10:18:20Z</updated>
+    <updated>2012-07-24T15:40:13Z</updated>
 
     <id>/atom.xml/</id>
 
@@ -1442,7 +1442,7 @@ Gli effetti collaterali dal punto di vista psicologico potrebbero essere (tra gl
             <id>/about/index.html</id>
             
             <content type="html">
-                                &lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://upload.wikimedia.org/wikipedia/commons/8/87/Lessig_portrait.jpg&#34;&gt;&lt;img alt=&#34;wow, another image&#34; src=&#34;/media/images/me_surprise.png&#34; title=&#34;Hello World&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
+                                &lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://fradeve.org/media/images/me_surprise.png&#34;&gt;&lt;img alt=&#34;wow, another image&#34; src=&#34;/media/images/me_surprise.png&#34; title=&#34;Hello World&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;h2 id=&#34;about-me&#34;&gt;About&amp;nbsp;me&lt;/h2&gt;
 &lt;p&gt;Please refer to my &lt;a href=&#34;http://me.fradeve.org&#34;&gt;personal website&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;about-this-site&#34;&gt;About this&amp;nbsp;site&lt;/h2&gt;
@@ -10570,6 +10570,7 @@ caricato sul suo blog i tracciati &lt;span class=&#34;caps&#34;&gt;GPX&lt;/span&
 in &lt;a href=&#34;http://wiki.openstreetmap.org/index.php/It:JOSM&#34;&gt;&lt;span class=&#34;caps&#34;&gt;JOSM&lt;/span&gt;&lt;/a&gt;, un programma usato dagli &lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; per elaborare le
 tracce che poi verranno caricate sui server del progetto. Questa è la mappa
 con i 3 percorsi catturati dai 3 dispositivi, elaborata su &lt;span class=&#34;caps&#34;&gt;JOSM&lt;/span&gt; da&amp;nbsp;Andrzej:&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://fradeve.org/media/images/josmsr5.png&#34;&gt;&lt;img alt=&#34;alt description&#34; src=&#34;/media/images/josmsr5.png&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Questi di seguito invece sono degli screenshot di &lt;span class=&#34;caps&#34;&gt;JOSM&lt;/span&gt; su cui ho caricato i 3 &lt;span class=&#34;caps&#34;&gt;GPX&lt;/span&gt;.
 Ho fatto delle foto ravvicinate per mettere in evidenza la scala (in alto a
 sinistra) con cui sono state effettuate le misurazioni; la legenda è la&amp;nbsp;seguente:&lt;/p&gt;
@@ -10578,23 +10579,29 @@ sinistra) con cui sono state effettuate le misurazioni; la legenda è la&amp;nbs
 &lt;li&gt;&lt;span class=&#34;caps&#34;&gt;GTA02&lt;/span&gt; =&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;VERDE&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;Nokia N800 =&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;ROSSO&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://fradeve.org/media/images/osmneo1mdu6.png&#34;&gt;&lt;img alt=&#34;alt description&#34; src=&#34;/media/images/osmneo1mdu6.png&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;In questa immagine il Neo1973 e il Neo FreeRunner hanno catturato due
 serie di coordinate molto vicine tra loro (con uno scarto di circa 25 cm),
 però entrambe distanti dall&amp;#8217;N800 di circa 1 metro se non di&amp;nbsp;più.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://fradeve.org/media/images/osmneo2mog7.png&#34;&gt;&lt;img alt=&#34;alt description&#34; src=&#34;/media/images/osmneo2mog7.png&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;In questa
 situazione i 3 dispositivi hanno registrato uno scarto quasi uguale, di circa
 1&amp;nbsp;m.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://fradeve.org/media/images/osmneo3mml1.png&#34;&gt;&lt;img alt=&#34;alt description&#34; src=&#34;/media/images/osmneo3mml1.png&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Qui la situazione cambia: il FreeRunner sembra essere completamente
 sballato rispetto al Neo1973 &lt;span class=&#34;caps&#34;&gt;GTA01&lt;/span&gt; e all&amp;#8217;N800, che invece hanno registrato
 quasi esattamente le stesse coordinate. Tra questi ed il FreeRunner c&amp;#8217;è uno
 scarto di circa 3&amp;nbsp;m.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://fradeve.org/media/images/osmneo3m2bz1.png&#34;&gt;&lt;img alt=&#34;alt description&#34; src=&#34;/media/images/osmneo3m2bz1.png&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Qui la situazione comincia a farsi complicata: a
 quanto pare il FreeRunner tende ad &amp;#8220;amplificare&amp;#8221; le coordinate che riceve,
 registrando lo stesso percorso dell&amp;#8217;N800, ma &amp;#8220;traslando&amp;#8221; i valori e
 spostandoli. In questo caso, la differenza è parecchia: tra FreeRunner ed N800
 ci sono più di&amp;nbsp;5m.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://fradeve.org/media/images/osmneo4m3wv6.png&#34;&gt;&lt;img alt=&#34;alt description&#34; src=&#34;/media/images/osmneo4m3wv6.png&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;In questo screen si comprende meglio cosa intendevo
 con &amp;#8220;amplificare&amp;#8221; e &amp;#8220;traslare&amp;#8221; nell&amp;#8217;immagine&amp;nbsp;precedente.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&#34;http://fradeve.org/media/images/osmneo6mik3.png&#34;&gt;&lt;img alt=&#34;alt description&#34; src=&#34;/media/images/osmneo6mik3.png&#34; title=&#34;&#34; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Qui invece l&amp;#8217;amplificazione diventa non solo
 evidente, ma&amp;nbsp;spaventosa.&lt;/p&gt;
 &lt;h2 id=&#34;conclusioni&#34;&gt;Conclusioni&lt;/h2&gt;
