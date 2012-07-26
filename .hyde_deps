@@ -1,6 +1,7 @@
 !!python/unicode '.hyde_deps': []
 !!python/unicode 'about/index.html': [macros.j2, base.j2, analytics.j2, normalpage.j2]
 !!python/unicode 'atom.xml': [atom.j2, macros.j2]
+!!python/unicode 'github.php': []
 !!python/unicode 'index.html': []
 !!python/unicode 'log/.hyde_deps': [posts.j2, analytics.j2, disqus.j2, base.j2, macros.j2]
 !!python/unicode 'log/2007/09/finalmente-a-casa.html': [posts.j2, analytics.j2, disqus.j2,
