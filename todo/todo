@@ -1,7 +1,12 @@
 == PRIORITÀ ==
 
 * test deploy con github.php
-* sistemare tutti i recap, la chiusura delle barre percentuali ( "]]) è stata sostituita
+	* https://github.com/logsol/Github-Auto-Deploy
+	* https://github.com/slaFFik/github-auto-deploy
+	* https://gist.github.com/2427549
+	* http://deadlytechnology.com/web-development/deploy-websites-with-git/
+	* http://techiesaurus.wordpress.com/2011/11/29/auto-deploying-your-github-project-to-your-staging-server-using-http/
+* sistemare tutti i recap con raphael JS
 * migrare commenti su Disqus
 * sistemare tutti i tag immagine con il nuovo template
 
