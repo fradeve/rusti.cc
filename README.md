@@ -3,7 +3,7 @@ Hello, this is Francesco de Virgilio's website, originally forked from Fernando 
 * tag support (layout/taglist.j2)
 * featured articles in post list support (layout/macros.j2)
 * Atom posts feed
-* a Jinja2 template to insert images with link to full image version (layout/macros.j2)
+* a Jinja2 template to insert both internal and external images with link to full image version (layout/macros.j2)
 * a Jinja2 template working with [g.raphael library](http://g.raphaeljs.com) to quickly insert graphs (layout/macros.j2)
 * Disqus support
 * added "normal pages" support (layout/normalpage.j2) without tags, subtitle, comments, for non-blog pages

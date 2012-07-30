@@ -7,7 +7,7 @@
 	* http://techiesaurus.wordpress.com/2011/11/29/auto-deploying-your-github-project-to-your-staging-server-using-http/
 * sistemare tutti i recap con raphael JS
 * migrare commenti su Disqus
-* sistemare tutti i tag immagine con il nuovo template
+* inserire nel template nuovo rendering didascalia immagini
 
 === finezze ===
 
@@ -30,10 +30,10 @@
 <center><a href="{{ extlink }}"><img alt="{{ alt }}" src="/media/images/{{ filename }}" title="{{ description }}" /></a></center>
 
 #jinja2
-{% from "macros.j2" import render_int_image %}
-{{ render_int_image('didascalia', 'nomefile', 'alt description') }}
+{% from "macros.j2" import render_image %}
 
-{{ render_ext_image('didascalia', 'nomefile', 'alt description', 'link immagine estesa') }}
+{{ render_image('didascalia', 'nomefile', 'alt description', '') }}
+{{ render_image('didascalia', 'nomefile', 'alt description', 'link immagine estesa') }}
 
 #default URL for images:
 http://fradeve.org/media/images/
