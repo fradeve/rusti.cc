@@ -1,0 +1,54 @@
+Install the plugin using VAM
+
+    :InstallAddons Tagbar
+
+Add some customizations to `.vimrc`
+
+    let g:tagbar_left = 1                                                                                                                                                                                                             map T :TagbarOpen<CR>
+
+install exuberant-ctags and node.js
+
+    sudo apt-get install exuberant-ctags nodejs
+
+add JavaScript support to ctags
+
+    git clone --recursive https://github.com/mozilla/doctorjs.git
+
+Due to a bug, we need to roll back DoctorJS version to older one
+
+    cd doctorjs
+    git checkout 1062dd31625cc002261f15e68af77eedd63a56f6
+
+Now compile and install DoctorJS
+
+    sudo make install
+
+Start VIM and press "T" to open Tagbar for the loaded JS file;
+if this gives and error like:
+
+    Error: require.paths is removed.
+
+you need to roll back the node on the system to version 0.4.x.
+First, let's remove the package manager version of nodeJS
+
+    sudo apt-get remove --purge nodejs
+
+Install nodeJS dependencies:
+
+    sudo apt-get install build-essential libssl-dev python
+
+Install a node virtual machine manager:
+
+    git clone git://github.com/creationix/nvm.git
+    cd nvm
+    . nvm.sh
+    nvm install v0.4.9
+    nvm use v0.4.9
+    nvm alias default v0.4.9
+
+To source `nvm.sh` in every shell and make the node installed always available, insert in `.bashrc`
+
+    ## nvm settings ##
+    . .vim/bundle/nvm/nvm.sh
+
+as my nvm installation is in `~/.vim/bundle`
