@@ -21,265 +21,263 @@ _Legenda_
 
 Il codice dell'immagine:
 
-digraph G {
-	// TODO
-	// * legend
-	// * bold cluster labels
-	graph [ dpi = 300 ];
-	size ="4,6";	// table size
-	compound=true;
-	ranksep="1.5"
-	rankdir="BT"
+	digraph G {
+		// TODO
+		// * legend
+		// * bold cluster labels
+		graph [ dpi = 300 ];
+		size ="4,6";	// table size
+		compound=true;
+		ranksep="1.5"
+		rankdir="BT"
 
-	subgraph cluster_edgar {
-		style=filled;
-		color=lightgrey;
-		label = "edgar";
-
-		// boxes
-		subgraph cluster_drop {
+		subgraph cluster_edgar {
 			style=filled;
-			color=white;
-			label = "Dropbox";
+			color=lightgrey;
+			label = "edgar";
 
-			irssi [label="~/.irssi",shape=folder]
-			rsnapshot [label="backup\ndir",shape=folder]
-		}
-		
-		// scripts
-		offlineimap [label="offlineimap",shape=component]
-		rsync_off [label="rsync \noffline",shape=component]
-		rsync_on [label="rsync \nonline",shape=component]
-		webdav_edgar [label="DavFS2",shape=component]
-		script_rsnapshot [label="rsnapshot",shape=component]
-		
-		// folders
-		mail [label="~/.mail",shape=folder,style=filled,fillcolor="#008000"]
-		filesystem_edgar [label="filesystem",shape=folder]
-	}
+			// boxes
+			subgraph cluster_drop {
+				style=filled;
+				color=white;
+				label = "Dropbox";
 
-	subgraph cluster_mail {
-		style=filled;
-		color=lightblue;
-		label = "Mail services";
-
-		ai [label="A/I \nmail",shape=box3d,style=filled,fillcolor="#808000"]
-		gmail [label="Gmail",shape=box3d]
-		riseup [label="Riseup \nmail",shape=box3d,style=filled,fillcolor="#808000"]
-	}
-
-	subgraph cluster_services {
-		style=filled;
-		color=lightblue;
-		label = "Internet services";
-
-		libredocs [label="Libredocs",shape=component]
-		otixodrop [label="Otixo|Dropbox",shape=component]
-		github [label="GitHub",shape=component]
-	}
-
-	subgraph cluster_hosting{
-		style=filled;
-		color=lightblue;
-		label = "Hosting services";
-
-		// boxes
-		boxnet1 [label="Box.net\nstorage 1",shape=box3d,style=filled,fillcolor=green]
-		boxnet2 [label="Box.net\nstorage 2",shape=box3d,style=filled,fillcolor=green]
-		boxnet3 [label="Box.net\nstorage 3",shape=box3d,style=filled,fillcolor=green]
-
-		subgraph cluster_droponline{
-			style=filled;
-			color=blue;
-			label = "Dropbox";
-
-			irssidrop [label="~/.irssi",shape=folder,style=filled,fillcolor=green]
-			serversbackup [label="servers\nbackup",shape=folder,style=filled,fillcolor=green]
-			rsnapshot_edgar_drop [label="backup\nedgar",shape=folder,style=filled,fillcolor=green]
-		}
-
-		subgraph cluster_4shared2{
-			style=filled;
-			color=blue;
-			label = "4shared2";
-
-			music3 [label="music3",shape=folder,style=filled,fillcolor=green]
-		}
-
-		subgraph cluster_4shared1{
-			style=filled;
-			color=blue;
-			label = "4shared1";
-
-			books4sh [label="books",shape=folder,style=filled,fillcolor=green]
-		}
-
-		subgraph cluster_4shared3{
-			style=filled;
-			color=blue;
-			label = "4shared3";
-
-			video4sh [label="video",shape=folder,style=filled,fillcolor=green]
-		}
-	}
-
-	subgraph cluster_ext_storage {
-		style=filled;
-		color=lightgrey;
-		label = "External \nstorage";
-
-		// hds
-		subgraph cluster_hd1 {
-			style=filled;
-			color=white;
-			label = "320 Gb";
-
-			immagini_hd1 [label="immagini",shape=folder]
-			video_hd1 [label="video",shape=folder]
-			musica_hd1 [label="musica",shape=folder]
-			books_hd1 [label="libri",shape=folder]
-		}
-
-		subgraph cluster_hd2 {
-			style=filled;
-			color=white;
-			label = "2 Tb";
-
-			immagini_hd2 [label="immagini",shape=folder]
-			video_hd2 [label="video",shape=folder]
-			musica_hd2 [label="musica",shape=folder]
-			books_hd2 [label="libri",shape=folder]
-		}
-	}
-
-	subgraph cluster_paranoia {
-		style=filled;
-		color=yellow;
-		label = "paranoia";
-
-		rsnapshot_paranoia [label="rsnapshot",shape=component]
-
-		filesystem_paranoia [label="filesystem",shape=folder]
-		backup_dir_paranoia [label="backup \ndir",shape=folder]
-		webdav_paranoia[label="DavFS2",shape=component,color=red]
-		
-		subgraph cluster_pubwww_paranoia {
-			style=filled;
-			color=lightblue;
-			label = "Public www";
+				irssi [label="~/.irssi",shape=folder]
+				rsnapshot [label="backup\ndir",shape=folder]
+			}
 			
-			blog_pubwww [label="blog|site",shape=folder]
-			others_pubwww_paranoia [label="others",shape=folder]
+			// scripts
+			offlineimap [label="offlineimap",shape=component]
+			rsync_off [label="rsync \noffline",shape=component]
+			rsync_on [label="rsync \nonline",shape=component]
+			webdav_edgar [label="DavFS2",shape=component]
+			script_rsnapshot [label="rsnapshot",shape=component]
+			
+			// folders
+			mail [label="~/.mail",shape=folder,style=filled,fillcolor="#008000"]
+			filesystem_edgar [label="filesystem",shape=folder]
 		}
 
-		filesystem_paranoia -> rsnapshot_paranoia -> backup_dir_paranoia
-		backup_dir_paranoia -> webdav_paranoia [color=red]
-		others_pubwww_paranoia -> rsnapshot_paranoia
-	}
-
-	subgraph cluster_ovh {
-		style=filled;
-		color=orange;
-		label = "ovh";
-
-		webdav_ovh [label="DavFS2",shape=component,color=red]
-
-		rsnapshot_ovh[label="rsnapshot",shape=component]
-		filesystem_ovh [label="filesystem",shape=folder]
-		backup_dir_ovh [label="backup \ndir",shape=folder]
-		
-		subgraph cluster_pubwww_ovh {
+		subgraph cluster_mail {
 			style=filled;
 			color=lightblue;
-			label = "Public www";
+			label = "Mail services";
 
-			owncloud [label="owncloud",shape=component]
-			others_pubwww_ovh [label="others",shape=folder]
+			ai [label="A/I \nmail",shape=box3d,style=filled,fillcolor="#808000"]
+			gmail [label="Gmail",shape=box3d]
+			riseup [label="Riseup \nmail",shape=box3d,style=filled,fillcolor="#808000"]
 		}
 
-		filesystem_ovh -> rsnapshot_ovh -> backup_dir_ovh
-		backup_dir_ovh -> webdav_ovh [color=red]
-		others_pubwww_ovh -> rsnapshot_ovh [ltail=cluster_pubwww_ovh]
+		subgraph cluster_services {
+			style=filled;
+			color=lightblue;
+			label = "Internet services";
+
+			otixodrop [label="Otixo|Dropbox",shape=component]
+			github [label="GitHub",shape=component]
+		}
+
+		subgraph cluster_hosting{
+			style=filled;
+			color=lightblue;
+			label = "Hosting services";
+
+			// boxes
+			boxnet1 [label="Box.net\nstorage 1",shape=box3d,style=filled,fillcolor=green]
+			boxnet2 [label="Box.net\nstorage 2",shape=box3d,style=filled,fillcolor=green]
+			boxnet3 [label="Box.net\nstorage 3",shape=box3d,style=filled,fillcolor=green]
+
+			subgraph cluster_droponline{
+				style=filled;
+				color=blue;
+				label = "Dropbox";
+
+				irssidrop [label="~/.irssi",shape=folder,style=filled,fillcolor=green]
+				serversbackup [label="servers\nbackup",shape=folder,style=filled,fillcolor=green]
+				rsnapshot_edgar_drop [label="backup\nedgar",shape=folder,style=filled,fillcolor=green]
+			}
+
+			subgraph cluster_4shared2{
+				style=filled;
+				color=blue;
+				label = "4shared2";
+
+				music3 [label="music3",shape=folder,style=filled,fillcolor=green]
+			}
+
+			subgraph cluster_4shared1{
+				style=filled;
+				color=blue;
+				label = "4shared1";
+
+				books4sh [label="books",shape=folder,style=filled,fillcolor=green]
+			}
+
+			subgraph cluster_4shared3{
+				style=filled;
+				color=blue;
+				label = "4shared3";
+
+				video4sh [label="video",shape=folder,style=filled,fillcolor=green]
+			}
+		}
+
+		subgraph cluster_ext_storage {
+			style=filled;
+			color=lightgrey;
+			label = "External \nstorage";
+
+			// hds
+			subgraph cluster_hd1 {
+				style=filled;
+				color=white;
+				label = "320 Gb";
+
+				immagini_hd1 [label="immagini",shape=folder]
+				video_hd1 [label="video",shape=folder]
+				musica_hd1 [label="musica",shape=folder]
+				books_hd1 [label="libri",shape=folder]
+			}
+
+			subgraph cluster_hd2 {
+				style=filled;
+				color=white;
+				label = "2 Tb";
+
+				immagini_hd2 [label="immagini",shape=folder]
+				video_hd2 [label="video",shape=folder]
+				musica_hd2 [label="musica",shape=folder]
+				books_hd2 [label="libri",shape=folder]
+			}
+		}
+
+		subgraph cluster_paranoia {
+			style=filled;
+			color=yellow;
+			label = "paranoia";
+
+			rsnapshot_paranoia [label="rsnapshot",shape=component]
+
+			filesystem_paranoia [label="filesystem",shape=folder]
+			backup_dir_paranoia [label="backup \ndir",shape=folder]
+			webdav_paranoia[label="DavFS2",shape=component,color=red]
+			
+			subgraph cluster_pubwww_paranoia {
+				style=filled;
+				color=lightblue;
+				label = "Public www";
+				
+				blog_pubwww [label="blog|site",shape=folder]
+				others_pubwww_paranoia [label="others",shape=folder]
+			}
+
+			filesystem_paranoia -> rsnapshot_paranoia -> backup_dir_paranoia
+			backup_dir_paranoia -> webdav_paranoia [color=red]
+			others_pubwww_paranoia -> rsnapshot_paranoia
+		}
+
+		subgraph cluster_ovh {
+			style=filled;
+			color=orange;
+			label = "ovh";
+
+			webdav_ovh [label="DavFS2",shape=component,color=red]
+
+			rsnapshot_ovh[label="rsnapshot",shape=component]
+			filesystem_ovh [label="filesystem",shape=folder]
+			backup_dir_ovh [label="backup \ndir",shape=folder]
+			
+			subgraph cluster_pubwww_ovh {
+				style=filled;
+				color=lightblue;
+				label = "Public www";
+
+				owncloud [label="owncloud",shape=component]
+				others_pubwww_ovh [label="others",shape=folder]
+			}
+
+			filesystem_ovh -> rsnapshot_ovh -> backup_dir_ovh
+			backup_dir_ovh -> webdav_ovh [color=red]
+			others_pubwww_ovh -> rsnapshot_ovh [ltail=cluster_pubwww_ovh]
+		}
+
+		subgraph cluster_android {
+			style=filled;
+			color=pink;
+			label = "Android";
+
+			sms [label="Android \nSMS",shape=box3d]
+			calendar [label="calendar",color=red,shape=component]
+			contacts [label="contacts",color=red,shape=component]
+			chatmobile [label="Gtalk\nmobile",shape=egg]
+		}
+
+		pings [label="pings",shape=egg]
+		chat [label="Gtalk\ndesktop|web\nlogs",shape=egg]
+		
+		// ## bindings ##
+
+		// chat
+		irssidrop -> irssi [dir=both]
+		pings -> riseup
+		chat -> gmail
+		chatmobile -> gmail
+
+		// owncloud -> android
+		owncloud -> calendar [color=red]
+		owncloud -> contacts [color=red]
+
+		// backup edgar
+		filesystem_edgar -> script_rsnapshot -> rsnapshot -> rsnapshot_edgar_drop [color=forestgreen]
+
+		// mail - sms
+		sms -> gmail
+		gmail -> offlineimap [dir=both]
+		ai -> offlineimap [dir=both]
+		riseup -> offlineimap [dir=both]
+		offlineimap -> mail
+		
+		// immagini
+		immagini_hd1 -> rsync_off [style=dotted]
+		rsync_off -> immagini_hd2 [style=dotted]
+		immagini_hd1 -> webdav_edgar -> rsync_on -> boxnet1 [style=dotted];
+		boxnet1 -> webdav_ovh [style=dotted,arrowhead=dot,color=darkturquoise];
+
+		// video
+		video_hd1 -> rsync_off [style=bold]
+		rsync_off -> video_hd2 [style=bold]
+		video_hd1 -> webdav_edgar [style=bold,color=red]
+		webdav_edgar -> rsync_on [style=bold,color=red]
+		rsync_on -> video4sh [style=bold,color=red]
+		video4sh -> webdav_ovh [arrowhead=dot,color=darkturquoise]
+
+		// musica
+		musica_hd1 -> rsync_off
+		rsync_off -> musica_hd2
+		musica_hd1 -> webdav_edgar -> rsync_on
+		rsync_on -> boxnet2
+		rsync_on -> boxnet3
+		rsync_on -> music3
+		boxnet2 -> webdav_ovh [arrowhead=dot,color=darkturquoise]
+		boxnet3 -> webdav_ovh [arrowhead=dot,color=darkturquoise]
+		music3 -> webdav_ovh [arrowhead=dot,color=darkturquoise]
+
+		// libri
+		books_hd1 -> rsync_off -> books_hd2 [color=goldenrod]
+		books_hd1 -> webdav_edgar -> rsync_on -> books4sh [color=goldenrod]
+		books4sh -> webdav_ovh [arrowhead=dot,color=darkturquoise]
+
+		// internet services
+		github -> blog_pubwww [color=forestgreen]
+		webdav_paranoia -> otixodrop [color=forestgreen]
+		webdav_ovh -> otixodrop [color=forestgreen]
+		otixodrop -> serversbackup [color=forestgreen]
+
+		// images, music, books, video to owncloud
+		webdav_ovh -> owncloud [style=dotted,arrowhead=dot,color=red];
+		webdav_ovh -> owncloud [arrowhead=dot,color=red];
+		webdav_ovh -> owncloud [arrowhead=dot,color=red];
+		webdav_ovh -> owncloud [style=bold,arrowhead=dot,color=red];
 	}
-
-	subgraph cluster_android {
-		style=filled;
-		color=pink;
-		label = "Android";
-
-		sms [label="Android \nSMS",shape=box3d]
-		calendar [label="calendar",color=red,shape=component]
-		contacts [label="contacts",color=red,shape=component]
-		chatmobile [label="Gtalk\nmobile",shape=egg]
-	}
-
-	pings [label="pings",shape=egg]
-	chat [label="Gtalk\ndesktop|web\nlogs",shape=egg]
-	
-	// ## bindings ##
-
-	// chat
-	irssidrop -> irssi [dir=both]
-	pings -> riseup
-	chat -> gmail
-	chatmobile -> gmail
-
-	// owncloud -> android
-	owncloud -> calendar [color=red]
-	owncloud -> contacts [color=red]
-	libredocs -> owncloud
-
-	// backup edgar
-	filesystem_edgar -> script_rsnapshot -> rsnapshot -> rsnapshot_edgar_drop [color=forestgreen]
-
-	// mail - sms
-	sms -> gmail
-	gmail -> offlineimap [dir=both]
-	ai -> offlineimap [dir=both]
-	riseup -> offlineimap [dir=both]
-	offlineimap -> mail
-	
-	// immagini
-	immagini_hd1 -> rsync_off [style=dotted]
-	rsync_off -> immagini_hd2 [style=dotted]
-	immagini_hd1 -> webdav_edgar -> rsync_on -> boxnet1 [style=dotted];
-	boxnet1 -> webdav_ovh [style=dotted,arrowhead=dot,color=darkturquoise];
-
-	// video
-	video_hd1 -> rsync_off [style=bold]
-	rsync_off -> video_hd2 [style=bold]
-	video_hd1 -> webdav_edgar [style=bold,color=red]
-	webdav_edgar -> rsync_on [style=bold,color=red]
-	rsync_on -> video4sh [style=bold,color=red]
-	video4sh -> webdav_ovh [arrowhead=dot,color=darkturquoise]
-
-	// musica
-	musica_hd1 -> rsync_off
-	rsync_off -> musica_hd2
-	musica_hd1 -> webdav_edgar -> rsync_on
-	rsync_on -> boxnet2
-	rsync_on -> boxnet3
-	rsync_on -> music3
-	boxnet2 -> webdav_ovh [arrowhead=dot,color=darkturquoise]
-	boxnet3 -> webdav_ovh [arrowhead=dot,color=darkturquoise]
-	music3 -> webdav_ovh [arrowhead=dot,color=darkturquoise]
-
-	// libri
-	books_hd1 -> rsync_off -> books_hd2 [color=goldenrod]
-	books_hd1 -> webdav_edgar -> rsync_on -> books4sh [color=goldenrod]
-	books4sh -> webdav_ovh [arrowhead=dot,color=darkturquoise]
-
-	// internet services
-	github -> blog_pubwww [color=forestgreen]
-	webdav_paranoia -> otixodrop [color=forestgreen]
-	webdav_ovh -> otixodrop [color=forestgreen]
-	otixodrop -> serversbackup [color=forestgreen]
-
-	// images, music, books, video to owncloud
-	webdav_ovh -> owncloud [style=dotted,arrowhead=dot,color=red];
-	webdav_ovh -> owncloud [arrowhead=dot,color=red];
-	webdav_ovh -> owncloud [arrowhead=dot,color=red];
-	webdav_ovh -> owncloud [style=bold,arrowhead=dot,color=red];
-}
 
    [1]: http://dl.dropbox.com/u/369614/blog/img_red/backup.png
