@@ -39,8 +39,12 @@
 {% macro render_image(description, filename, alt, extlink) -%}
 	{% if extlink == '' -%}
 		<center><a href="http://fradeve.org/media/images/{{ filename }}"><img alt="{{ alt }}" src="/media/images/{{ filename }}" title="{{ description }}" /></a></center>
+		<br>
+		<center><i><small>{{ alt }}</small></i></center>
 	{% else -%}
 		<center><a href="{{ extlink }}"><img alt="{{ alt }}" src="/media/images/{{ filename }}" title="{{ description }}" /></a></center>
+		<br>
+		<center><i><small>{{ alt }}</small></i></center>
 	{%- endif %}
 {%- endmacro %}
 
