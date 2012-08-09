@@ -7,7 +7,7 @@ tags:
     - server
 ---
 
-_Ultimo aggiornamento: 15 aprile 2012_
+_Ultimo aggiornamento: 09 agosto 2012_
 
 In questa pagina raccolgo alcune note sul mio progetto per il biennio 2011-2012: eliminare quasi totalmente la mia dipendenza da servizi web che non danno garanzie sulla sicurezza e sulla privacy dei dati, per passare ad un insieme di servizi basati sulla fiducia in chi li gestisce, e soprattutto sull'utilizzo di software libero. Questa idea nasce nell'estate del 2011 ed è cresciuta piano piano con il passare del tempo; probabilmente vedrà il compimento quest'anno. Gli ultimi a morire saranno sicuramente i social network, ma vedo [Diaspora][35] sempre più vicino. Sarebbe entusiasmante completare la migrazione entro il 29 settembre 2012, giorno in cui questo blog compirà 6 anni. Questa pagina è anche un'ottima occasione per fare il punto sui vari howto che ho scritto per il blog.
 
@@ -18,38 +18,36 @@ Come sempre, perché sbattersi?
 * [Debian: leaving the cloud][44], interessante elenco di software liberi che possono sostituire quelli dei servizi cloud
 
 
-# Da sistemare, parziali #
+## Da sistemare, parziali ##
 
-## Contatti ##
+### Contatti ###
 Attualmente Google Contacts, in fase di sperimentazione [OwnCloud][2] contacts.
 
-## Calendario ##
+### Calendario ###
 Attualmente Google Calendar, in fase di sperimentazione OwnCloud calendar. Update: con OwnCloud 3.0.1 da GIT l'importazione da Google Calendar funziona!
 
-## Musica ##
-Libreria gestita con [Amarok][3]. In copia locale tramite [rsync][4] e sincronizzata su [Google Music][5] tramite client per GNU/Linux, probabilmente in futuro verrà sincronizzata su [Box.net][6] tramite rsync ed [EncFS][7], usando OwnCloud come lettore web.
 
-## Pinging ##
+### Pinging ###
 Lo smistamento degli aggiornamenti "social" è affidato a [Brdcst it!][29], software libero per il _pinging_, che però è insufficiente e viene affiancato da [ifttt][30] e [FeedBurner][41] (purtroppo proprietari) e dal supporto ai feed RSS con OAuth di TT-RSS sulle etichette di Gmail. Qualche idea su come funziona la mia rete social ce la si può fare in [questo post][32].
 
-# Funzionanti #
+## Funzionanti ##
 
-## Sistemi operativi ##
+### Sistemi operativi ###
 * Vedi pagina hardware su [sito][1]
 * tutti i servizi su server sono offerti grazie a [Lighttpd][8], su server amministrato con [Webmin][46]
 
-## Motore di ricerca ##
+### Motore di ricerca ###
 Ovviamente, [DuckDuckGo][9]
 
-## Backup dei dati ##
+### Backup dei dati ###
 Per ogni file, una copia locale e una copia online. La copia online è hostata su Box.net, in una cartella cifrata con EncFS, montata con [Davfs2][10] e sincronizzata con rsync, quest'ultimo usato sia verso la copia web che locale. Howto [qui][28].
 
 In fase di sperimentazione la possibilità di accedere ai dati via web tramite OwnCloud che legge la Box montata sul server tramite Davfs2 + EncFS; accesso mobile tramite [applicazione ufficiale][27] per Android.
 
-## Blog ##
-Generato tramite [Markdown][11] + [Ikiwiki][12] + GIT, sincronizzato via rsync, con statistiche offerte da [Awstats][13].
+### Blog ###
+Generato tramite [Markdown][11] + [Hyde][12] + GIT, sincronizzato via rsync, con statistiche offerte da [Awstats][13].
 
-## Mail ##
+### Mail ###
 * mailing lists: Gmail
 * personale: [Autistici/Inventati][14]
 * lavoro: [Riseup.net][15]
@@ -58,7 +56,7 @@ Generato tramite [Markdown][11] + [Ikiwiki][12] + GIT, sincronizzato via rsync, 
 * Client mobile: [K-9 Mail][18] per Android
 * Client web: vari, in funzione del sito
 
-## Chat ##
+### Chat ###
 Jabber via Google Talk
 
 * client desktop: [IRSSI][19], con supporto OTR, registrazione di logs e impostazioni hostati su un filesystem cifrato con EncFS all'interno di Dropbox
@@ -66,19 +64,25 @@ Jabber via Google Talk
 * client web: GTalk da web
 * backup dei log: via IMAP con OfflineIMAP
 
-## Coding, documenti, pubblicazioni ##
+### Coding, documenti, pubblicazioni ###
 * hosting: [Launchpad][20], usato con [Bazaar][21]
-* editing: [Vim][22] per documenti offline, [Libredocs][47] per la collaborazione online
+* editing: [Vim][22] per documenti offline
 * pubblicazioni [LaTeX][37], usato con [vim-latex][38] da TeXLive, [howto qui][39]
 
-## Bookmarks ##
+### Bookmarks ###
 [A/I Bookmarks][24], offerto da Autistici/Inventati, e basato su [Scuttle][23].
 
-## Aggregatore RSS ##
+### Aggregatore RSS ###
 * web: [TT-RSS][25], servizio offerto direttamente dal creatore del software sui propri server.
 * mobile: [TT-RSS][26] per Android (applicazione non ufficiale, ma sviluppata più attivamente)
 
-## Todo ##
+### Musica ###
+
+* desktop: libreria gestita con [Amarok][3]
+* backup: cifrati con [EncFS][7] via [rsync][4] su servizi di online storage ([Box.net][6], 4shared); in fase di studio la possibilità di usare OwnCloud come lettore musicale via web tramite EncFS e davFS
+* social: statistiche sull'ascolto inviate a [Libre.fm][47]
+
+### Todo ###
 Lista delle cose da fare sincronizzata su PC e cellulare grazie ad [Todo.txt][40]
 
    [1]: http://me.fradeve.org/interessi.html
@@ -92,7 +96,7 @@ Lista delle cose da fare sincronizzata su PC e cellulare grazie ad [Todo.txt][40
    [9]: https://duckduckgo.com/
    [10]: https://savannah.nongnu.org/projects/davfs2
    [11]: http://daringfireball.net/projects/markdown/
-   [12]: http://ikiwiki.info/
+   [12]: http://hyde.github.com/
    [13]: http://awstats.sourceforge.net/
    [14]: http://www.autistici.org/it/
    [15]: https://riseup.net/it
@@ -127,4 +131,4 @@ Lista delle cose da fare sincronizzata su PC e cellulare grazie ad [Todo.txt][40
    [44]: http://wiki.debian.org/FreedomBox/LeavingTheCloud
    [45]: http://beem-project.com/
    [46]: http://www.webmin.com/
-   [47]: http://libredocs.org/
+   [47]: http://libre.fm/

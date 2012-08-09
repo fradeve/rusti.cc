@@ -442,18 +442,18 @@
   disqus.j2, base.j2, macros.j2]
 !!python/unicode 'log/2012/01/cosa-fare-quando-internet-offline.html': [posts.j2,
   analytics.j2, disqus.j2, base.j2, macros.j2]
-!!python/unicode 'log/2012/01/my-muttrc.html': [posts.j2, analytics.j2, disqus.j2,
-  base.j2, macros.j2]
+!!python/unicode 'log/2012/01/my-muttrc.html': [posts.j2, base.j2, analytics.j2, disqus.j2,
+  macros.j2]
 !!python/unicode 'log/2012/01/recap-2011.html': [posts.j2, analytics.j2, disqus.j2,
   base.j2, macros.j2]
 !!python/unicode 'log/2012/02/recap-febbraio.html': [posts.j2, analytics.j2, disqus.j2,
   base.j2, macros.j2]
-!!python/unicode 'log/2012/03/google-away.html': [posts.j2, analytics.j2, disqus.j2,
-  base.j2, macros.j2]
-!!python/unicode 'log/2012/03/muttrc-take-2.html': [posts.j2, analytics.j2, disqus.j2,
-  base.j2, macros.j2]
-!!python/unicode 'log/2012/03/usare-rsync-con-box.html': [posts.j2, analytics.j2,
-  disqus.j2, base.j2, macros.j2]
+!!python/unicode 'log/2012/03/google-away.html': [posts.j2, base.j2, analytics.j2,
+  disqus.j2, macros.j2]
+!!python/unicode 'log/2012/03/muttrc-take-2.html': [posts.j2, base.j2, analytics.j2,
+  disqus.j2, macros.j2]
+!!python/unicode 'log/2012/03/usare-rsync-con-box.html': [posts.j2, base.j2, analytics.j2,
+  disqus.j2, macros.j2]
 !!python/unicode 'log/2012/04/anonimato-irc.html': [posts.j2, analytics.j2, disqus.j2,
   base.j2, macros.j2]
 !!python/unicode 'log/2012/04/backup-strategies.html': [posts.j2, analytics.j2, disqus.j2,

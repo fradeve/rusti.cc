@@ -71,7 +71,7 @@
     </a>
 </h6>
 
-<p><em>Ultimo aggiornamento: 15 aprile&nbsp;2012</em></p>
+<p><em>Ultimo aggiornamento: 09 agosto&nbsp;2012</em></p>
 <p>In questa pagina raccolgo alcune note sul mio progetto per il biennio 2011-2012: eliminare quasi totalmente la mia dipendenza da servizi web che non danno garanzie sulla sicurezza e sulla privacy dei dati, per passare ad un insieme di servizi basati sulla fiducia in chi li gestisce, e soprattutto sull&#8217;utilizzo di software libero. Questa idea nasce nell&#8217;estate del 2011 ed è cresciuta piano piano con il passare del tempo; probabilmente vedrà il compimento quest&#8217;anno. Gli ultimi a morire saranno sicuramente i social network, ma vedo <a href="http://diasporaproject.org/">Diaspora</a> sempre più vicino. Sarebbe entusiasmante completare la migrazione entro il 29 settembre 2012, giorno in cui questo blog compirà 6 anni. Questa pagina è anche un&#8217;ottima occasione per fare il punto sui vari howto che ho scritto per il&nbsp;blog.</p>
 <p>Come sempre, perché&nbsp;sbattersi?</p>
 <ul>
@@ -79,29 +79,27 @@
 <li><a href="https://en.wikipedia.org/wiki/Internet_privacy">Internet&nbsp;privacy</a></li>
 <li><a href="http://wiki.debian.org/FreedomBox/LeavingTheCloud">Debian: leaving the cloud</a>, interessante elenco di software liberi che possono sostituire quelli dei servizi&nbsp;cloud</li>
 </ul>
-<h1 id="da-sistemare-parziali">Da sistemare,&nbsp;parziali</h1>
-<h2 id="contatti">Contatti</h2>
+<h2 id="da-sistemare-parziali">Da sistemare,&nbsp;parziali</h2>
+<h3 id="contatti">Contatti</h3>
 <p>Attualmente Google Contacts, in fase di sperimentazione <a href="http://owncloud.org/">OwnCloud</a>&nbsp;contacts.</p>
-<h2 id="calendario">Calendario</h2>
+<h3 id="calendario">Calendario</h3>
 <p>Attualmente Google Calendar, in fase di sperimentazione OwnCloud calendar. Update: con OwnCloud 3.0.1 da <span class="caps">GIT</span> l&#8217;importazione da Google Calendar&nbsp;funziona!</p>
-<h2 id="musica">Musica</h2>
-<p>Libreria gestita con <a href="http://amarok.kde.org/">Amarok</a>. In copia locale tramite <a href="https://rsync.samba.org/">rsync</a> e sincronizzata su <a href="https://play.google.com/music">Google Music</a> tramite client per <span class="caps">GNU</span>/Linux, probabilmente in futuro verrà sincronizzata su <a href="http://www.box.com">Box.net</a> tramite rsync ed <a href="http://www.arg0.net/encfs">EncFS</a>, usando OwnCloud come lettore&nbsp;web.</p>
-<h2 id="pinging">Pinging</h2>
+<h3 id="pinging">Pinging</h3>
 <p>Lo smistamento degli aggiornamenti &#8220;social&#8221; è affidato a <a href="http://brdcst.it/">Brdcst it!</a>, software libero per il <em>pinging</em>, che però è insufficiente e viene affiancato da <a href="http://ifttt.com">ifttt</a> e <a href="http://feedburner.google.com">FeedBurner</a> (purtroppo proprietari) e dal supporto ai feed <span class="caps">RSS</span> con OAuth di <span class="caps">TT</span>-<span class="caps">RSS</span> sulle etichette di Gmail. Qualche idea su come funziona la mia rete social ce la si può fare in <a href="http://www.fradeve.org/blog/posts/2011/02/how-do-I-blog/">questo post</a>.</p>
-<h1 id="funzionanti">Funzionanti</h1>
-<h2 id="sistemi-operativi">Sistemi&nbsp;operativi</h2>
+<h2 id="funzionanti">Funzionanti</h2>
+<h3 id="sistemi-operativi">Sistemi&nbsp;operativi</h3>
 <ul>
 <li>Vedi pagina hardware su <a href="http://me.fradeve.org/interessi.html">sito</a></li>
 <li>tutti i servizi su server sono offerti grazie a <a href="http://www.lighttpd.net/">Lighttpd</a>, su server amministrato con <a href="http://www.webmin.com/">Webmin</a></li>
 </ul>
-<h2 id="motore-di-ricerca">Motore di&nbsp;ricerca</h2>
+<h3 id="motore-di-ricerca">Motore di&nbsp;ricerca</h3>
 <p>Ovviamente, <a href="https://duckduckgo.com/">DuckDuckGo</a></p>
-<h2 id="backup-dei-dati">Backup dei&nbsp;dati</h2>
+<h3 id="backup-dei-dati">Backup dei&nbsp;dati</h3>
 <p>Per ogni file, una copia locale e una copia online. La copia online è hostata su Box.net, in una cartella cifrata con EncFS, montata con <a href="https://savannah.nongnu.org/projects/davfs2">Davfs2</a> e sincronizzata con rsync, quest&#8217;ultimo usato sia verso la copia web che locale. Howto <a href="/log/2012/03/usare-rsync-con-box.html">qui</a>.</p>
 <p>In fase di sperimentazione la possibilità di accedere ai dati via web tramite OwnCloud che legge la Box montata sul server tramite Davfs2 + EncFS; accesso mobile tramite <a href="https://gitorious.org/owncloud/android">applicazione ufficiale</a> per&nbsp;Android.</p>
-<h2 id="blog">Blog</h2>
-<p>Generato tramite <a href="http://daringfireball.net/projects/markdown/">Markdown</a> + <a href="http://ikiwiki.info/">Ikiwiki</a> + <span class="caps">GIT</span>, sincronizzato via rsync, con statistiche offerte da <a href="http://awstats.sourceforge.net/">Awstats</a>.</p>
-<h2 id="mail">Mail</h2>
+<h3 id="blog">Blog</h3>
+<p>Generato tramite <a href="http://daringfireball.net/projects/markdown/">Markdown</a> + <a href="http://hyde.github.com/">Hyde</a> + <span class="caps">GIT</span>, sincronizzato via rsync, con statistiche offerte da <a href="http://awstats.sourceforge.net/">Awstats</a>.</p>
+<h3 id="mail">Mail</h3>
 <ul>
 <li>mailing lists:&nbsp;Gmail</li>
 <li>personale: <a href="http://www.autistici.org/it/">Autistici/Inventati</a></li>
@@ -114,7 +112,7 @@
 <li>Client mobile: <a href="https://code.google.com/p/k9mail/">K-9 Mail</a> per&nbsp;Android</li>
 <li>Client web: vari, in funzione del&nbsp;sito</li>
 </ul>
-<h2 id="chat">Chat</h2>
+<h3 id="chat">Chat</h3>
 <p>Jabber via Google&nbsp;Talk</p>
 <ul>
 <li>client desktop: <a href="http://www.irssi.org/"><span class="caps">IRSSI</span></a>, con supporto <span class="caps">OTR</span>, registrazione di logs e impostazioni hostati su un filesystem cifrato con EncFS all&#8217;interno di&nbsp;Dropbox</li>
@@ -122,20 +120,26 @@
 <li>client web: GTalk da&nbsp;web</li>
 <li>backup dei log: via <span class="caps">IMAP</span> con&nbsp;OfflineIMAP</li>
 </ul>
-<h2 id="coding-documenti-pubblicazioni">Coding, documenti,&nbsp;pubblicazioni</h2>
+<h3 id="coding-documenti-pubblicazioni">Coding, documenti,&nbsp;pubblicazioni</h3>
 <ul>
 <li>hosting: <a href="https://launchpad.net/">Launchpad</a>, usato con <a href="http://bazaar.canonical.com/en/">Bazaar</a></li>
-<li>editing: <a href="http://www.vim.org/">Vim</a> per documenti offline, <a href="http://libredocs.org/">Libredocs</a> per la collaborazione&nbsp;online</li>
+<li>editing: <a href="http://www.vim.org/">Vim</a> per documenti&nbsp;offline</li>
 <li>pubblicazioni <a href="http://www.guit.sssup.it/">LaTeX</a>, usato con <a href="https://github.com/jcf/vim-latex">vim-latex</a> da TeXLive, <a href="http://www.fradeve.org/blog/posts/2010/08/installare-texlive-da-ctan-su-ubuntu-lucid/">howto&nbsp;qui</a></li>
 </ul>
-<h2 id="bookmarks">Bookmarks</h2>
+<h3 id="bookmarks">Bookmarks</h3>
 <p><a href="https://link.autistici.org/">A/I Bookmarks</a>, offerto da Autistici/Inventati, e basato su <a href="http://sourceforge.net/projects/scuttle/">Scuttle</a>.</p>
-<h2 id="aggregatore-rss">Aggregatore&nbsp;<span class="caps">RSS</span></h2>
+<h3 id="aggregatore-rss">Aggregatore&nbsp;<span class="caps">RSS</span></h3>
 <ul>
 <li>web: <a href="http://tt-rss.org"><span class="caps">TT</span>-<span class="caps">RSS</span></a>, servizio offerto direttamente dal creatore del software sui propri&nbsp;server.</li>
 <li>mobile: <a href="https://code.google.com/p/ttrss-reader-fork/"><span class="caps">TT</span>-<span class="caps">RSS</span></a> per Android (applicazione non ufficiale, ma sviluppata più&nbsp;attivamente)</li>
 </ul>
-<h2 id="todo">Todo</h2>
+<h3 id="musica">Musica</h3>
+<ul>
+<li>desktop: libreria gestita con <a href="http://amarok.kde.org/">Amarok</a></li>
+<li>backup: cifrati con <a href="http://www.arg0.net/encfs">EncFS</a> via <a href="https://rsync.samba.org/">rsync</a> su servizi di online storage (<a href="http://www.box.com">Box.net</a>, 4shared); in fase di studio la possibilità di usare OwnCloud come lettore musicale via web tramite EncFS e&nbsp;davFS</li>
+<li>social: statistiche sull&#8217;ascolto inviate a <a href="http://libre.fm/">Libre.fm</a></li>
+</ul>
+<h3 id="todo">Todo</h3>
 <p>Lista delle cose da fare sincronizzata su <span class="caps">PC</span> e cellulare grazie ad <a href="http://www.todotxt.com/">Todo.txt</a></p></article>
 <div id="disqus_thread" ></div>
 <style>
