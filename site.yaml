@@ -38,12 +38,6 @@ context:
                 css_class: log
                 type: page
                 url: atom.xml
-            -
-                name: Research
-                description: Research projects
-                css_class: research
-                type: node
-                url: research
 meta:
     nodemeta: meta.yaml
     created: !!timestamp 2011-04-01 00:00:00

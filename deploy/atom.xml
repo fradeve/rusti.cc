@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-08-05T16:40:49Z</updated>
+    <updated>2012-08-10T15:08:46Z</updated>
 
     <id>/atom.xml/</id>
 
@@ -479,7 +479,7 @@ totale attività annue=96
                         label="Server" />
             
             <content type="html">
-                                &lt;p&gt;&lt;em&gt;Ultimo aggiornamento: 15 aprile&amp;nbsp;2012&lt;/em&gt;&lt;/p&gt;
+                                &lt;p&gt;&lt;em&gt;Ultimo aggiornamento: 09 agosto&amp;nbsp;2012&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In questa pagina raccolgo alcune note sul mio progetto per il biennio 2011-2012: eliminare quasi totalmente la mia dipendenza da servizi web che non danno garanzie sulla sicurezza e sulla privacy dei dati, per passare ad un insieme di servizi basati sulla fiducia in chi li gestisce, e soprattutto sull&amp;#8217;utilizzo di software libero. Questa idea nasce nell&amp;#8217;estate del 2011 ed è cresciuta piano piano con il passare del tempo; probabilmente vedrà il compimento quest&amp;#8217;anno. Gli ultimi a morire saranno sicuramente i social network, ma vedo &lt;a href=&#34;http://diasporaproject.org/&#34;&gt;Diaspora&lt;/a&gt; sempre più vicino. Sarebbe entusiasmante completare la migrazione entro il 29 settembre 2012, giorno in cui questo blog compirà 6 anni. Questa pagina è anche un&amp;#8217;ottima occasione per fare il punto sui vari howto che ho scritto per il&amp;nbsp;blog.&lt;/p&gt;
 &lt;p&gt;Come sempre, perché&amp;nbsp;sbattersi?&lt;/p&gt;
 &lt;ul&gt;
@@ -487,29 +487,27 @@ totale attività annue=96
 &lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Internet_privacy&#34;&gt;Internet&amp;nbsp;privacy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://wiki.debian.org/FreedomBox/LeavingTheCloud&#34;&gt;Debian: leaving the cloud&lt;/a&gt;, interessante elenco di software liberi che possono sostituire quelli dei servizi&amp;nbsp;cloud&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;da-sistemare-parziali&#34;&gt;Da sistemare,&amp;nbsp;parziali&lt;/h1&gt;
-&lt;h2 id=&#34;contatti&#34;&gt;Contatti&lt;/h2&gt;
+&lt;h2 id=&#34;da-sistemare-parziali&#34;&gt;Da sistemare,&amp;nbsp;parziali&lt;/h2&gt;
+&lt;h3 id=&#34;contatti&#34;&gt;Contatti&lt;/h3&gt;
 &lt;p&gt;Attualmente Google Contacts, in fase di sperimentazione &lt;a href=&#34;http://owncloud.org/&#34;&gt;OwnCloud&lt;/a&gt;&amp;nbsp;contacts.&lt;/p&gt;
-&lt;h2 id=&#34;calendario&#34;&gt;Calendario&lt;/h2&gt;
+&lt;h3 id=&#34;calendario&#34;&gt;Calendario&lt;/h3&gt;
 &lt;p&gt;Attualmente Google Calendar, in fase di sperimentazione OwnCloud calendar. Update: con OwnCloud 3.0.1 da &lt;span class=&#34;caps&#34;&gt;GIT&lt;/span&gt; l&amp;#8217;importazione da Google Calendar&amp;nbsp;funziona!&lt;/p&gt;
-&lt;h2 id=&#34;musica&#34;&gt;Musica&lt;/h2&gt;
-&lt;p&gt;Libreria gestita con &lt;a href=&#34;http://amarok.kde.org/&#34;&gt;Amarok&lt;/a&gt;. In copia locale tramite &lt;a href=&#34;https://rsync.samba.org/&#34;&gt;rsync&lt;/a&gt; e sincronizzata su &lt;a href=&#34;https://play.google.com/music&#34;&gt;Google Music&lt;/a&gt; tramite client per &lt;span class=&#34;caps&#34;&gt;GNU&lt;/span&gt;/Linux, probabilmente in futuro verrà sincronizzata su &lt;a href=&#34;http://www.box.com&#34;&gt;Box.net&lt;/a&gt; tramite rsync ed &lt;a href=&#34;http://www.arg0.net/encfs&#34;&gt;EncFS&lt;/a&gt;, usando OwnCloud come lettore&amp;nbsp;web.&lt;/p&gt;
-&lt;h2 id=&#34;pinging&#34;&gt;Pinging&lt;/h2&gt;
+&lt;h3 id=&#34;pinging&#34;&gt;Pinging&lt;/h3&gt;
 &lt;p&gt;Lo smistamento degli aggiornamenti &amp;#8220;social&amp;#8221; è affidato a &lt;a href=&#34;http://brdcst.it/&#34;&gt;Brdcst it!&lt;/a&gt;, software libero per il &lt;em&gt;pinging&lt;/em&gt;, che però è insufficiente e viene affiancato da &lt;a href=&#34;http://ifttt.com&#34;&gt;ifttt&lt;/a&gt; e &lt;a href=&#34;http://feedburner.google.com&#34;&gt;FeedBurner&lt;/a&gt; (purtroppo proprietari) e dal supporto ai feed &lt;span class=&#34;caps&#34;&gt;RSS&lt;/span&gt; con OAuth di &lt;span class=&#34;caps&#34;&gt;TT&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;RSS&lt;/span&gt; sulle etichette di Gmail. Qualche idea su come funziona la mia rete social ce la si può fare in &lt;a href=&#34;http://www.fradeve.org/blog/posts/2011/02/how-do-I-blog/&#34;&gt;questo post&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;funzionanti&#34;&gt;Funzionanti&lt;/h1&gt;
-&lt;h2 id=&#34;sistemi-operativi&#34;&gt;Sistemi&amp;nbsp;operativi&lt;/h2&gt;
+&lt;h2 id=&#34;funzionanti&#34;&gt;Funzionanti&lt;/h2&gt;
+&lt;h3 id=&#34;sistemi-operativi&#34;&gt;Sistemi&amp;nbsp;operativi&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Vedi pagina hardware su &lt;a href=&#34;http://me.fradeve.org/interessi.html&#34;&gt;sito&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;tutti i servizi su server sono offerti grazie a &lt;a href=&#34;http://www.lighttpd.net/&#34;&gt;Lighttpd&lt;/a&gt;, su server amministrato con &lt;a href=&#34;http://www.webmin.com/&#34;&gt;Webmin&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;motore-di-ricerca&#34;&gt;Motore di&amp;nbsp;ricerca&lt;/h2&gt;
+&lt;h3 id=&#34;motore-di-ricerca&#34;&gt;Motore di&amp;nbsp;ricerca&lt;/h3&gt;
 &lt;p&gt;Ovviamente, &lt;a href=&#34;https://duckduckgo.com/&#34;&gt;DuckDuckGo&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;backup-dei-dati&#34;&gt;Backup dei&amp;nbsp;dati&lt;/h2&gt;
+&lt;h3 id=&#34;backup-dei-dati&#34;&gt;Backup dei&amp;nbsp;dati&lt;/h3&gt;
 &lt;p&gt;Per ogni file, una copia locale e una copia online. La copia online è hostata su Box.net, in una cartella cifrata con EncFS, montata con &lt;a href=&#34;https://savannah.nongnu.org/projects/davfs2&#34;&gt;Davfs2&lt;/a&gt; e sincronizzata con rsync, quest&amp;#8217;ultimo usato sia verso la copia web che locale. Howto &lt;a href=&#34;/log/2012/03/usare-rsync-con-box.html&#34;&gt;qui&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In fase di sperimentazione la possibilità di accedere ai dati via web tramite OwnCloud che legge la Box montata sul server tramite Davfs2 + EncFS; accesso mobile tramite &lt;a href=&#34;https://gitorious.org/owncloud/android&#34;&gt;applicazione ufficiale&lt;/a&gt; per&amp;nbsp;Android.&lt;/p&gt;
-&lt;h2 id=&#34;blog&#34;&gt;Blog&lt;/h2&gt;
-&lt;p&gt;Generato tramite &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; + &lt;a href=&#34;http://ikiwiki.info/&#34;&gt;Ikiwiki&lt;/a&gt; + &lt;span class=&#34;caps&#34;&gt;GIT&lt;/span&gt;, sincronizzato via rsync, con statistiche offerte da &lt;a href=&#34;http://awstats.sourceforge.net/&#34;&gt;Awstats&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;mail&#34;&gt;Mail&lt;/h2&gt;
+&lt;h3 id=&#34;blog&#34;&gt;Blog&lt;/h3&gt;
+&lt;p&gt;Generato tramite &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; + &lt;a href=&#34;http://hyde.github.com/&#34;&gt;Hyde&lt;/a&gt; + &lt;span class=&#34;caps&#34;&gt;GIT&lt;/span&gt;, sincronizzato via rsync, con statistiche offerte da &lt;a href=&#34;http://awstats.sourceforge.net/&#34;&gt;Awstats&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;mail&#34;&gt;Mail&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;mailing lists:&amp;nbsp;Gmail&lt;/li&gt;
 &lt;li&gt;personale: &lt;a href=&#34;http://www.autistici.org/it/&#34;&gt;Autistici/Inventati&lt;/a&gt;&lt;/li&gt;
@@ -522,7 +520,7 @@ totale attività annue=96
 &lt;li&gt;Client mobile: &lt;a href=&#34;https://code.google.com/p/k9mail/&#34;&gt;K-9 Mail&lt;/a&gt; per&amp;nbsp;Android&lt;/li&gt;
 &lt;li&gt;Client web: vari, in funzione del&amp;nbsp;sito&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chat&#34;&gt;Chat&lt;/h2&gt;
+&lt;h3 id=&#34;chat&#34;&gt;Chat&lt;/h3&gt;
 &lt;p&gt;Jabber via Google&amp;nbsp;Talk&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;client desktop: &lt;a href=&#34;http://www.irssi.org/&#34;&gt;&lt;span class=&#34;caps&#34;&gt;IRSSI&lt;/span&gt;&lt;/a&gt;, con supporto &lt;span class=&#34;caps&#34;&gt;OTR&lt;/span&gt;, registrazione di logs e impostazioni hostati su un filesystem cifrato con EncFS all&amp;#8217;interno di&amp;nbsp;Dropbox&lt;/li&gt;
@@ -530,20 +528,26 @@ totale attività annue=96
 &lt;li&gt;client web: GTalk da&amp;nbsp;web&lt;/li&gt;
 &lt;li&gt;backup dei log: via &lt;span class=&#34;caps&#34;&gt;IMAP&lt;/span&gt; con&amp;nbsp;OfflineIMAP&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;coding-documenti-pubblicazioni&#34;&gt;Coding, documenti,&amp;nbsp;pubblicazioni&lt;/h2&gt;
+&lt;h3 id=&#34;coding-documenti-pubblicazioni&#34;&gt;Coding, documenti,&amp;nbsp;pubblicazioni&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;hosting: &lt;a href=&#34;https://launchpad.net/&#34;&gt;Launchpad&lt;/a&gt;, usato con &lt;a href=&#34;http://bazaar.canonical.com/en/&#34;&gt;Bazaar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;editing: &lt;a href=&#34;http://www.vim.org/&#34;&gt;Vim&lt;/a&gt; per documenti offline, &lt;a href=&#34;http://libredocs.org/&#34;&gt;Libredocs&lt;/a&gt; per la collaborazione&amp;nbsp;online&lt;/li&gt;
+&lt;li&gt;editing: &lt;a href=&#34;http://www.vim.org/&#34;&gt;Vim&lt;/a&gt; per documenti&amp;nbsp;offline&lt;/li&gt;
 &lt;li&gt;pubblicazioni &lt;a href=&#34;http://www.guit.sssup.it/&#34;&gt;LaTeX&lt;/a&gt;, usato con &lt;a href=&#34;https://github.com/jcf/vim-latex&#34;&gt;vim-latex&lt;/a&gt; da TeXLive, &lt;a href=&#34;http://www.fradeve.org/blog/posts/2010/08/installare-texlive-da-ctan-su-ubuntu-lucid/&#34;&gt;howto&amp;nbsp;qui&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;bookmarks&#34;&gt;Bookmarks&lt;/h2&gt;
+&lt;h3 id=&#34;bookmarks&#34;&gt;Bookmarks&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://link.autistici.org/&#34;&gt;A/I Bookmarks&lt;/a&gt;, offerto da Autistici/Inventati, e basato su &lt;a href=&#34;http://sourceforge.net/projects/scuttle/&#34;&gt;Scuttle&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;aggregatore-rss&#34;&gt;Aggregatore&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;RSS&lt;/span&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;aggregatore-rss&#34;&gt;Aggregatore&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;RSS&lt;/span&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;web: &lt;a href=&#34;http://tt-rss.org&#34;&gt;&lt;span class=&#34;caps&#34;&gt;TT&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;RSS&lt;/span&gt;&lt;/a&gt;, servizio offerto direttamente dal creatore del software sui propri&amp;nbsp;server.&lt;/li&gt;
 &lt;li&gt;mobile: &lt;a href=&#34;https://code.google.com/p/ttrss-reader-fork/&#34;&gt;&lt;span class=&#34;caps&#34;&gt;TT&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;RSS&lt;/span&gt;&lt;/a&gt; per Android (applicazione non ufficiale, ma sviluppata più&amp;nbsp;attivamente)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;todo&#34;&gt;Todo&lt;/h2&gt;
+&lt;h3 id=&#34;musica&#34;&gt;Musica&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;desktop: libreria gestita con &lt;a href=&#34;http://amarok.kde.org/&#34;&gt;Amarok&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;backup: cifrati con &lt;a href=&#34;http://www.arg0.net/encfs&#34;&gt;EncFS&lt;/a&gt; via &lt;a href=&#34;https://rsync.samba.org/&#34;&gt;rsync&lt;/a&gt; su servizi di online storage (&lt;a href=&#34;http://www.box.com&#34;&gt;Box.net&lt;/a&gt;, 4shared); in fase di studio la possibilità di usare OwnCloud come lettore musicale via web tramite EncFS e&amp;nbsp;davFS&lt;/li&gt;
+&lt;li&gt;social: statistiche sull&amp;#8217;ascolto inviate a &lt;a href=&#34;http://libre.fm/&#34;&gt;Libre.fm&lt;/a&gt; tramite &lt;a href=&#34;http://www.red-bean.com/decklin/lastfmsubmitd/&#34;&gt;lastfmsubmitd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;todo&#34;&gt;Todo&lt;/h3&gt;
 &lt;p&gt;Lista delle cose da fare sincronizzata su &lt;span class=&#34;caps&#34;&gt;PC&lt;/span&gt; e cellulare grazie ad &lt;a href=&#34;http://www.todotxt.com/&#34;&gt;Todo.txt&lt;/a&gt;&lt;/p&gt;            </content>
         </entry>
             <entry>
@@ -573,7 +577,7 @@ totale attività annue=96
 &lt;li&gt;Box.net per gli account gratuiti ha un limite di 100 Mb/file, non dimenticatelo; lo script di rsync riportato di seguito penserà a limitare la sincronizzazione ai soli file al di sotto di questa&amp;nbsp;dimensione&lt;/li&gt;
 &lt;li&gt;la sincronizzazione sembra essere un po&amp;#8217;&amp;nbsp;lenta&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;1-montare-la-box-in-media-tramite-webdav&#34;&gt;1 - Montare la Box in /media tramite&amp;nbsp;WebDAV&lt;/h2&gt;
+&lt;h2 id=&#34;1-montare-la-box-in-media-tramite-webdav&#34;&gt;1 - Montare la Box in &lt;code&gt;/media&lt;/code&gt; tramite&amp;nbsp;WebDAV&lt;/h2&gt;
 &lt;p&gt;La cartella di WebDAV può essere montata sia dall&amp;#8217;utente che sta utilizzando la macchina sia dall&amp;#8217;account di root. In questa guida è seguita la prima opzione, che unita ad una adeguata &lt;a href=&#34;http://steghide.sourceforge.net/documentation.php&#34;&gt;cifratura della cartella Home&lt;/a&gt;, permette di mantenere un buon livello di privacy sui propri&amp;nbsp;dati.&lt;/p&gt;
 &lt;p&gt;Installare&amp;nbsp;davfs2&lt;/p&gt;
 &lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;apt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;davfs2&lt;/span&gt;
@@ -784,13 +788,15 @@ totale attività annue=96
                         label="Mutt" />
             
             <content type="html">
-                                &lt;p&gt;&lt;span class=&#34;caps&#34;&gt;NB&lt;/span&gt;: una versione differente di questo stesso muttrc, con meno funzioni e flessibilità, è reperibile nel mio &lt;a href=&#34;/log/posts/2012/01/my-muttrc.html&#34;&gt;post di gennaio&lt;/a&gt;; ho voluto conservare il vecchio post senza aggiornarlo perché potrebbe tornare utile a chi cerca configurazioni più semplici e &lt;em&gt;monolitiche&lt;/em&gt; (passatemi il&amp;nbsp;termine).&lt;/p&gt;
+                                &lt;p&gt;&lt;em&gt;Ultimo aggiornamento: 09 agosto&amp;nbsp;2012&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;caps&#34;&gt;NB&lt;/span&gt;: una versione differente di questo stesso muttrc, con meno funzioni e flessibilità, è reperibile nel mio &lt;a href=&#34;/log/2012/01/my-muttrc.html&#34;&gt;post di gennaio&lt;/a&gt;; ho voluto conservare il vecchio post senza aggiornarlo perché potrebbe tornare utile a chi cerca configurazioni più semplici e &lt;em&gt;monolitiche&lt;/em&gt; (passatemi il&amp;nbsp;termine).&lt;/p&gt;
 &lt;p&gt;La caratteristica principale di questo nuovo muttrc è la modularità: ogni account ha un suo file di configurazione, nel quale sono riportati i settaggi validi per il medesimo, rimuovendo ogni configurazione precedente nel momento del caricamento, che avviene grazie a semplici&amp;nbsp;shortcut.&lt;/p&gt;
-&lt;p&gt;Rimangono valide le spiegazioni date nel post di gennaio. Tutti i file usati in questo tutorial sono hostati su &lt;a href=&#34;https://code.launchpad.net/~fradeve/mutt-fradeve/trunk&#34;&gt;Launchpad&lt;/a&gt;, con l&amp;#8217;esclusione di &lt;a href=&#34;http://upsilon.cc/~zack/blog/posts/2011/01/how_to_use_Notmuch_with_Mutt/&#34;&gt;mutt-notmuch&lt;/a&gt;. Il codice è scaricabile dopo aver installato &lt;a href=&#34;http://wiki.bazaar.canonical.com/Download&#34;&gt;Bazaar&lt;/a&gt;, con il seguente&amp;nbsp;comando:&lt;/p&gt;
-&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;n&#34;&gt;bzr&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;branch&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fradeve&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mutt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fradeve&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;trunk&lt;/span&gt;
+&lt;p&gt;Rimangono valide le spiegazioni date nel post di gennaio. Tutti i file usati in questo tutorial sono hostati su &lt;a href=&#34;https://github.com/fradeve/dotfiles&#34;&gt;GitHub&lt;/a&gt;, con l&amp;#8217;esclusione di &lt;a href=&#34;http://upsilon.cc/~zack/blog/posts/2011/01/how_to_use_Notmuch_with_Mutt/&#34;&gt;mutt-notmuch&lt;/a&gt;. Il codice è scaricabile dopo aver installato &lt;span class=&#34;caps&#34;&gt;GIT&lt;/span&gt;, con il seguente&amp;nbsp;comando:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;n&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;clone&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fradeve&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dotfiles&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;git&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;p&gt;I file utili a configurare mutt sono nella cartella &lt;code&gt;mutt-fradeve&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;perche-un-muttrc-modulare&#34;&gt;Perché un muttrc&amp;nbsp;modulare&lt;/h2&gt;
 &lt;p&gt;Ciò che ho imparato dal precedente muttrc è che, se si vuol essere perfezionisti, è poco pratico e molto laborioso mantenere tutti i settaggi in un unico file. In fondo, ogni file occupa qualche kilobyte, non rovina la vita a&amp;nbsp;nessuno.&lt;/p&gt;
 &lt;h2 id=&#34;perche-sbattersi&#34;&gt;Perché&amp;nbsp;sbattersi&lt;/h2&gt;
@@ -1041,7 +1047,7 @@ totale attività annue=96
 &lt;li&gt;&lt;code&gt;macro index Z&lt;/code&gt; e seguente, permette di scaricare in blocco tutti gli allegati da una&amp;nbsp;mail;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;macro index .r&lt;/code&gt; permette di segnare come lette tutte le mail nella cartella&amp;nbsp;corrente.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Ci sono tante altre funzioni integrate in questo muttrc, ma niente che non si trovi anche altrove sulla rete. Il file può essere scaricato &lt;a href=&#34;https://github.com/fradeve/mutt-fradeve/tree/master/oldies&#34;&gt;qui&lt;/a&gt;.&lt;/p&gt;            </content>
+&lt;p&gt;Ci sono tante altre funzioni integrate in questo muttrc, ma niente che non si trovi anche altrove sulla&amp;nbsp;rete.&lt;/p&gt;            </content>
         </entry>
             <entry>
             <title type="html">Recap: 2011</title>
@@ -1455,21 +1461,6 @@ Gli effetti collaterali dal punto di vista psicologico potrebbero essere (tra gl
 &lt;p&gt;Le argomentazioni proposte dal prof. Renzo Carlucci sono dettate dal timore tipico di chi vede minacciato il proprio orticello. In un Paese con un&amp;#8217;economia flessibile, che incoraggia ed invoglia i propri cittadini alla cultura, alla conoscenza e all&amp;#8217;innovazione, l&amp;#8217;open data viene recepito come uno stimolo, non una minaccia. Invitare i cittadini a conoscere il proprio territorio divulgando i dati geografici liberamente e &lt;em&gt;gratuitamente&lt;/em&gt; non mi sembra una posizione controproducente. Al contrario, divulgare i dati nella maniera più economica e flessibile a propria disposizione significa dare a tutti gli strumenti per poter prendere l&amp;#8217;iniziativa e agire sul territorio. Poniamoci delle domande: i cittadini sanno quali sono le zone archeologiche del proprio comune? Sanno dove sono ubicate le discariche? Si sono mai interessati della dislocazione delle aree a rischio idrogeologico? Allora, è meglio che i cittadini &lt;em&gt;sappiano&lt;/em&gt; o che rimangano assopiti nel medioevo della partecipazione&amp;nbsp;sociale?&lt;/p&gt;
 &lt;h2 id=&#34;nota-a-margine&#34;&gt;Nota a&amp;nbsp;margine&lt;/h2&gt;
 &lt;p&gt;Il prof. Carlucci sa bene che l&amp;#8217;onere della prova spetta a chi fa un&amp;#8217;affermazione, non a chi vuole smentirla. Sarò felice di riportare e pubblicare link e casi concreti a supporto delle affermazioni di Carlucci, qualora ne vengano mostrati. Fino ad allora per quanto mi riguarda, lo dico senza offesa, si tratta solo di &lt;a href=&#34;https://secure.wikimedia.org/wikipedia/it/wiki/Fear,_uncertainty_and_doubt&#34;&gt;&lt;span class=&#34;caps&#34;&gt;FUD&lt;/span&gt;&lt;/a&gt;, ovvero informazioni &amp;#8220;negative, vaghe, inaccurate&amp;#8221;. &lt;em&gt;Show us the&amp;nbsp;code!&lt;/em&gt;&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">Publications</title>
-            <author><name>Francesco de Virgilio</name></author>
-            <link href="/research/publications.html"/>
-            <updated>2011-07-05T10:00:00Z</updated>
-            <published>2011-07-05T10:00:00Z</published>
-            <id>/research/publications.html</id>
-            
-            <content type="html">
-                                &lt;p&gt;&lt;img alt=&#34;Publications&#34; src=&#34;/media/images/publications.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;De Rydt, J., P. Christoffersen, &lt;strong&gt;&lt;span class=&#34;caps&#34;&gt;F. S.&lt;/span&gt; Paolo&lt;/strong&gt; and &lt;span class=&#34;caps&#34;&gt;H. A.&lt;/span&gt; Fricker, &lt;em&gt;A relation between large-scale atmospheric pressure variability and ice-ocean interactions in the Amundsen Sea, Antarctica&lt;/em&gt;. &lt;a href=&#34;http://#&#34;&gt;&lt;em&gt;Submitted&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paolo, &lt;span class=&#34;caps&#34;&gt;F.S.&lt;/span&gt;&lt;/strong&gt; and &lt;span class=&#34;caps&#34;&gt;E.C.&lt;/span&gt; Molina (2010), &lt;em&gt;Integrated marine gravity field in the Brazilian coast from altimeter-derived sea surface gradient and shipborne gravity&lt;/em&gt;. &lt;a href=&#34;http://dx.doi.org/10.1016/j.jog.2010.04.003&#34;&gt;&lt;em&gt;J. Geodyn.&lt;/em&gt;&lt;/a&gt; &lt;a href=&#34;research/paolo_molina10.pdf&#34;&gt;&lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Bicego, M.C., E. Zanardi-Lamardo, S. Taniguchi, &lt;span class=&#34;caps&#34;&gt;C.C.&lt;/span&gt; Martins, &lt;span class=&#34;caps&#34;&gt;D.A.M.&lt;/span&gt; da Silva, &lt;span class=&#34;caps&#34;&gt;S.T.&lt;/span&gt; Sasaki, &lt;span class=&#34;caps&#34;&gt;A.C.R.&lt;/span&gt; Albergaria-Barbosa, &lt;strong&gt;&lt;span class=&#34;caps&#34;&gt;F.S.&lt;/span&gt; Paolo&lt;/strong&gt;, &lt;span class=&#34;caps&#34;&gt;R.R.&lt;/span&gt; Weber and &lt;span class=&#34;caps&#34;&gt;R.C.&lt;/span&gt; Montone (2009), &lt;em&gt;Results from a 15-year study on hydrocarbon concentrations in water and sediment from Admiralty Bay, King George Island, Antarctica&lt;/em&gt;. &lt;a href=&#34;http://dx.doi.org/10.1017/S0954102009001734&#34;&gt;&lt;em&gt;Antarct. Sci.&lt;/em&gt;&lt;/a&gt; &lt;a href=&#34;research/bicego_etal09.pdf&#34;&gt;&lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paolo, &lt;span class=&#34;caps&#34;&gt;F.S.&lt;/span&gt;&lt;/strong&gt; and &lt;span class=&#34;caps&#34;&gt;M.M.&lt;/span&gt; Mahiques (2008), &lt;em&gt;Utilization of acoustic methods in coastal dynamics studies: example in the Cananeia lagoonal mouth&lt;/em&gt;. &lt;a href=&#34;http://dx.doi.org/10.1590/S0102-261X2008000200008&#34;&gt;&lt;em&gt;Braz. J. Geophys.&lt;/em&gt;&lt;/a&gt; &lt;a href=&#34;research/paolo_mahiques08.pdf&#34;&gt;&lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;            </content>
         </entry>
             <entry>
             <title type="html">Recap: giugno</title>

@@ -11,9 +11,3 @@ menu:
         css_class: log
         type: node
         url: log
-    -
-        name: Projects
-        description: Projects
-        css_class: research
-        type: node
-        url: research
