@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-08-10T15:08:46Z</updated>
+    <updated>2012-08-11T18:41:38Z</updated>
 
     <id>/atom.xml/</id>
 
@@ -74,6 +74,8 @@
             
             <content type="html">
                                 &lt;p&gt;Obiettivi per il bimestre marzo-aprile&amp;nbsp;2012.&lt;/p&gt;
+&lt;script src=&#34;/media/js/libs/raphael.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
+
 &lt;script src=&#34;/media/js/libs/g.raphael-min.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
 
 &lt;script src=&#34;/media/js/libs/g.bar-min.js&#34; type=&#34;text/javascript&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
@@ -81,29 +83,33 @@
 &lt;script src=&#34;/media/js/libs/g.pie-min.js&#34; type=&#34;text/javascript&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;script type=&#34;text/javascript&#34;&gt;
-        window.onload = function () {
-            var r = Raphael(&#34;holder&#34;),
-            fin = function () {
-                this.flag = r.popup(this.bar.x, this.bar.y, this.bar.value || &#34;0&#34;).insertBefore(this);
-            },
-            fout = function () {
-                this.flag.animate({opacity: 0}, 300, function () {this.remove();});
-            },
-            fin2 = function () {
-                var y = [], res = [];
-                for (var i = this.bars.length; i--;) {
-                    y.push(this.bars[i].y);
-                    res.push(this.bars[i].value || &#34;0&#34;);
-                }
-                this.flag = r.popup(this.bars[0].x, Math.min.apply(Math, y), res.join(&#34;, &#34;)).insertBefore(this);
-            },
-            fout2 = function () {
-                this.flag.animate({opacity: 0}, 300, function () {this.remove();});
-            };
-            r.text(160, 10, &#34;Single Series Chart&#34;).attr(txtattr);
-            r.hbarchart(10, 10, 300, 220, [[100, 35, 40]]).hover(fin, fout);
-        };
-    &lt;/script&gt;
+    window.onload = function () {
+        var r = Raphael(&#34;holder&#34;),
+        fin = function () {
+            this.flag = r.popup(this.bar.x, this.bar.y, this.bar.value || &#34;0&#34;).insertBefore(this);
+        },
+        fout = function () {
+            this.flag.animate({opacity: 0}, 300, function () {this.remove();});
+        },
+        fin2 = function () {
+            var y = [], res = [];
+            for (var i = this.bars.length; i--;) {
+                y.push(this.bars[i].y);
+                res.push(this.bars[i].value || &#34;0&#34;);
+            }
+            this.flag = r.popup(this.bars[0].x, Math.min.apply(Math, y), res.join(&#34;, &#34;)).insertBefore(this);
+        },
+        fout2 = function () {
+            this.flag.animate({opacity: 0}, 300, function () {this.remove();});
+        },
+        txtattr = { font: &#34;12px sans-serif&#34; };
+
+        //r.text(160, 10, &#34;Single Series Chart&#34;).attr(txtattr);
+        r.hbarchart(10, 10, 300, 220, [[100, 35, 40]]).hover(fin, fout);
+    };
+&lt;/script&gt;
+
+&lt;div id=&#39;holder&#39;&gt;&lt;/div&gt;
 
 &lt;!--
 ## Libri ##
