@@ -27,6 +27,18 @@ context:
                 type: node
                 url: log 
             -
+                name: it
+                description: Posts in Italian
+                css_class: log
+                type: page
+                url: log/index_it.html
+            -
+                name: en
+                description: Posts in English
+                css_class: log
+                type: page
+                url: log/index_en.html
+            -
                 name: Tags
                 description: Blog's tags
                 css_class: log

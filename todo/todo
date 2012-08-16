@@ -1,13 +1,12 @@
 == PRIORITÀ ==
 
+* sistemare tutti i recap con raphael JS
 * test deploy con github.php
 	* https://github.com/logsol/Github-Auto-Deploy
 	* https://github.com/slaFFik/github-auto-deploy
 	* https://gist.github.com/2427549
 	* http://techiesaurus.wordpress.com/2011/11/29/auto-deploying-your-github-project-to-your-staging-server-using-http/
-* sistemare tutti i recap con raphael JS
 * migrare commenti su Disqus
-* inserire nel template nuovo rendering didascalia immagini
 
 === finezze ===
 

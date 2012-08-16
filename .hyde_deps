@@ -465,6 +465,8 @@
 !!python/unicode 'log/2012/07/finalmente-casa-take-2.html': [posts.j2, base.j2, analytics.j2,
   disqus.j2, macros.j2]
 !!python/unicode 'log/index.html': [listing.j2, macros.j2, base.j2, analytics.j2]
+!!python/unicode 'log/index_en.html': [macros.j2, base.j2, listing_en.j2, analytics.j2]
+!!python/unicode 'log/index_it.html': [macros.j2, base.j2, analytics.j2, listing_it.j2]
 !!python/unicode 'media/css/site.css': []
 !!python/unicode 'media/css/syntax.css': []
 !!python/unicode 'media/js/libs/dd_belatedpng.js': []

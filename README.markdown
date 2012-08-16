@@ -1,0 +1,14 @@
+Hello, this is Francesco de Virgilio's website, originally forked from Fernando Paolo's [website](https://github.com/fspaolo/fspaolo.github.com). I've added some enhancements:
+
+* tag support (`layout/taglist.j2`)
+* per-language post lists (`layout/listings_it.j2`, `layout/listings_en.j2`); the default language is Italian, and `listings_it.j2` ignores the post during list generation if it has `lang` in metadata; all posts in languages different from Italian have a proper `lang = en` tag in metadata
+* featured articles in post list support (`layout/macros.j2`); it reads `featured: yes` in metadata
+* Atom posts feed
+* a Jinja2 template to insert both internal and external images with link to full image version (`layout/macros.j2`)
+* a Jinja2 template working with [g.raphael library](http://g.raphaeljs.com) to quickly insert graphs (`layout/macros.j2`)
+* Disqus support
+* added "normal pages" support (`layout/normalpage.j2`) without tags, subtitle, comments, for non-blog pages
+
+All the code from Fernando Paolo is "freely available" as reported from in [his blog](http://fspaolo.net/about/); all the other code is released under GNU GPL v3 licence, see LICENSE; all the javascript libraries are released in full respect of theire own licences.
+
+Feel free to fork and enhance this work under the therms of GPL.
