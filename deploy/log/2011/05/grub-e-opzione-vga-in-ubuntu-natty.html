@@ -73,27 +73,20 @@
 <p>Dopo l&#8217;upgrade a Natty Narwal, a fasi alterne, <span class="caps">GRUB</span> sembrava non voler avviare la mia installazione. In sostanza, dopo l&#8217;avvio di tutti i processi di sistema, il server X sembrava <em>freezare</em> e non volersi avviare più. Per puro caso ho scorto un messaggio di errore di una frazione di secondo tra la scomparsa di <span class="caps">GRUB</span> e l&#8217;avvio del sistema, che parlava di un problema legato alla voce <code>vga</code>.</p>
 <p>Uno dei grandissimi vantaggi di <span class="caps">GRUB</span> è la possibilità di modificare in tempo reale le opzioni della voce di avvio con la pressione del tasto <code>e</code>, per cui mi è sembrato ragionevole eliminare la voce <code>vga=775</code> e tentare un avvio, cosa che ha&nbsp;funzionato.</p>
 <p><a href="http://pierre.baudu.in/other/grub.vga.modes.html">Indagando oltre</a>, è venuto fuori che l&#8217;opzione <em>vga</em> è quella che permette di modificare la risoluzione e profondità di colore durante l&#8217;avvio del sistema operativo. Per qualche arcano motivo la mia scheda grafica (nVidia Corporation G80 GeForce 8800 <span class="caps">GTS</span> rev a2) o i driver in uso (proprietari, purtroppo) non supporta la modalità 775 e quindi eliminando o modificando la voce <code>vga</code> quantomeno il sistema si avvia. Che fare, procedere per tentativi, o qualcuno conosce una maniera più coerente di affrontare la&nbsp;situazione?</p></article>
-<div id="disqus_thread" ></div>
-<style>
-/* remove unnecessary disqus cruft from view */
-.dsq-comment-header{background:none !important; border:none !important;}
-.dsq-post-tools, .dsq-button, .dsq-textarea-background{ background:none !important;}
-#dsq-like-thread-button .dsq-toolbar-label, #dsq-subscribe, #dsq-sort-select, .dsq-trackback-url, .dsq-brlink {display:none !important;}
-</style>
-<script type="text/javascript">
-        var disqus_developer = 1; // developer mode is on
-        var disqus_shortname = 'fradeveorig';
-    var disqus_identifier = "log/2011/05/grub-e-opzione-vga-in-ubuntu-natty.html";
-    var disqus_url = "http://fradeve.orglog/2011/05/grub-e-opzione-vga-in-ubuntu-natty.html";
+<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		var disqus_shortname = 'fradeveorig'; // required: replace example with your forum shortname
 
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
           <footer>
           <!-- this website is proudly powered by <a href="http://www.python.org/">Python</a>,
           build with the static site generator <a href="http://hyde.github.com/">Hyde</a>, 
