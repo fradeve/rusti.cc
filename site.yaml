@@ -55,7 +55,6 @@ meta:
     created: !!timestamp 2011-04-01 00:00:00
     author: Francesco de Virgilio
     usedisqus: true
-    disqus: fradeve
     featured: no
 sorter:
     time:
