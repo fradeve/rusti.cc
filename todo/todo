@@ -38,5 +38,6 @@
 http://fradeve.org/media/images/
 
 * per cercare una parola tra i post:
-
-find  -type f -print0 | xargs -0 grep -il 'slide'
+	find  -type f -print0 | xargs -0 grep -il 'slide'
+* list all files in directories recursively
+	find ./ -type f
