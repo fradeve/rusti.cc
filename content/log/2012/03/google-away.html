@@ -7,7 +7,7 @@ tags:
     - server
 ---
 
-_Ultimo aggiornamento: 09 agosto 2012_
+_Ultimo aggiornamento: 29 agosto 2012_
 
 In questa pagina raccolgo alcune note sul mio progetto per il biennio 2011-2012: eliminare quasi totalmente la mia dipendenza da servizi web che non danno garanzie sulla sicurezza e sulla privacy dei dati, per passare ad un insieme di servizi basati sulla fiducia in chi li gestisce, e soprattutto sull'utilizzo di software libero. Questa idea nasce nell'estate del 2011 ed è cresciuta piano piano con il passare del tempo; probabilmente vedrà il compimento quest'anno. Gli ultimi a morire saranno sicuramente i social network, ma vedo [Diaspora][35] sempre più vicino. Sarebbe entusiasmante completare la migrazione entro il 29 settembre 2012, giorno in cui questo blog compirà 6 anni. Questa pagina è anche un'ottima occasione per fare il punto sui vari howto che ho scritto per il blog.
 
@@ -43,6 +43,8 @@ Ovviamente, [DuckDuckGo][9]
 Per ogni file, una copia locale e una copia online. La copia online è hostata su Box.net, in una cartella cifrata con EncFS, montata con [Davfs2][10] e sincronizzata con rsync, quest'ultimo usato sia verso la copia web che locale. Howto [qui][28].
 
 In fase di sperimentazione la possibilità di accedere ai dati via web tramite OwnCloud che legge la Box montata sul server tramite Davfs2 + EncFS; accesso mobile tramite [applicazione ufficiale][27] per Android.
+
+Il backup dei social network viene effettuato da [Backupify][49], in cerca di un sostituto _free software_.
 
 ### Blog ###
 Generato tramite [Markdown][11] + [Hyde][12] + GIT, sincronizzato via rsync, con statistiche offerte da [Awstats][13].
@@ -133,3 +135,4 @@ Lista delle cose da fare sincronizzata su PC e cellulare grazie ad [Todo.txt][40
    [46]: http://www.webmin.com/
    [47]: http://libre.fm/
    [48]: http://www.red-bean.com/decklin/lastfmsubmitd/
+   [49]: https://www.backupify.com/

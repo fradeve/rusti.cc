@@ -1,0 +1,50 @@
+---
+title: "Compiling VIM with Breakindent patch"
+created: !!timestamp '2012-09-10 10:00:00'
+charset: utf-8
+featured: yes
+tags:
+    - vim
+---
+
+[VIM Breakindent patch][1]'s story is quite frustrating, since it is a nice piece of code (really useful when you work with tag-like structured coding languages, e.g. LaTeX) but it has been [never integrated in standard VIM][2] due to some instability issues. In 2012, you always have to patch and compile VIM manually to get it working. This guide has been tested on Ubuntu 12.04 (many thanks to [ephemient][5] for pointing out the correct procedure, as a result of a [discussion][6] on Stackexchange).
+
+Get the sources:
+
+	sudo apt-get sources vim
+
+Download VIM breakindent patch file:
+
+	wget
+
+Set permissions on the sources and move the patch into the set of Debian patches:
+
+	cd vim-7.3.429
+	sudo chmod u=rw,g=r,o=r ../vim-breakindent.patch
+	sudo cp ../vim-breakindent.patch debian/patches/debian/.
+
+Add one new entry in `debian/changelog`, bumping version from `vim_7.3.429-2ubuntu2.1` to `vim_7.3.429-2ubuntu2.2`.
+
+Add `debian/vim-breakindent.patch` at the end of `debian/patches/series`
+
+Generate new source package
+
+	sudo pdebuild
+
+Compile the new `.dsc`:
+
+	sudo pbuilder build vim_7.3.429-2ubuntu2.2.dsc
+
+Install new debs:
+
+	sudo dpkg -i /var/cache/pbuilder/result/*.deb
+
+### Debian package ###
+As I write, [Eudoxos][3] is maintaining a [Launchpad repository][4] with Vim breakindent-patched compiled `.deb` packages.
+
+   [1]:
+   [2]:
+   [3]:
+   [4]:
+   [5]:
+   [6]:
