@@ -54,12 +54,13 @@ Il codice dell'immagine:
 				serversbackup [label="servers\nbackup",shape=folder,style=filled]
 			}
 
-			// scripts
+			// scripts and programs
 			offlineimap [label="offlineimap",shape=component]
 			rsync_off [label="rsync \noffline",shape=component]
 			rsync_on [label="rsync \nonline",shape=component]
 			webdav_edgar [label="DavFS2",shape=component]
 			script_rsnapshot [label="rsnapshot",shape=component]
+			firefox [label="Firefox",shape=component]
 			
 			// folders
 			mail [label="~/.mail",shape=folder,style=filled,fillcolor="#008000"]
@@ -83,6 +84,9 @@ Il codice dell'immagine:
 
 			aerofs [label="AeroFS",shape=component]
 			github [label="GitHub",shape=component]
+			ffsync [label="Firefox\nSync",shape=component]
+			gcalendar [label="GCalendar",shape=component]
+			gcontacts [label="GContacts",shape=component]
 		}
 
 		subgraph cluster_hosting{
@@ -211,6 +215,7 @@ Il codice dell'immagine:
 			sms [label="Android \nSMS",shape=box3d]
 			calendar [label="calendar",color=red,shape=component]
 			contacts [label="contacts",color=red,shape=component]
+			ff_mobile [label="Firefox\nmobile",shape=component]
 			chatmobile [label="Gtalk\nmobile",shape=egg]
 		}
 
@@ -225,9 +230,12 @@ Il codice dell'immagine:
 		chat -> gmail
 		chatmobile -> gmail
 
-		// owncloud -> android
+		// android
 		owncloud -> calendar [color=red]
 		owncloud -> contacts [color=red]
+		firefox -> ffsync -> ff_mobile
+		gcontacts -> contacts
+		gcalendar -> calendar
 
 		// backup edgar
 		filesystem_edgar -> script_rsnapshot -> rsnapshot -> rsnapshot_edgar_drop [color=forestgreen]
