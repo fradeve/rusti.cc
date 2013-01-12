@@ -7,7 +7,7 @@ tags:
     - backup
 ---
 
-_Ultimo aggiornamento: 01 maggio 2012_
+_Ultimo aggiornamento: 03 gennario 2013_
 
 Non ho molto tempo per spiegare l'immagine. In soldoni, è uno schema riassuntivo di come sono organizzati i miei dati ed i miei backup, realizzato anche per approfondire un po' la conoscenza di Graphviz. Il codice è in fondo al post.
 
@@ -46,19 +46,8 @@ Il codice dell'immagine:
 				rsnapshot [label="backup\ndir",shape=folder]
 			}
 			
-			subgraph cluster_aerofs {
-				style=filled;
-				color=white;
-				label = "AeroFS";
-
-				serversbackup [label="servers\nbackup",shape=folder,style=filled]
-			}
-
 			// scripts and programs
 			offlineimap [label="offlineimap",shape=component]
-			rsync_off [label="rsync \noffline",shape=component]
-			rsync_on [label="rsync \nonline",shape=component]
-			webdav_edgar [label="DavFS2",shape=component]
 			script_rsnapshot [label="rsnapshot",shape=component]
 			firefox [label="Firefox",shape=component]
 			
@@ -82,9 +71,12 @@ Il codice dell'immagine:
 			color=lightblue;
 			label = "Internet services";
 
-			aerofs [label="AeroFS",shape=component]
 			github [label="GitHub",shape=component]
 			ffsync [label="Firefox\nSync",shape=component]
+			librefm [label="Libre.fm",shape=component]
+			facebook [label="Facebook",shape=component]
+			twitter [label="Twitter",shape=component]
+			foursquare [label="Foursquare",shape=component]
 			gcalendar [label="GCalendar",shape=component]
 			gcontacts [label="GContacts",shape=component]
 		}
@@ -94,42 +86,13 @@ Il codice dell'immagine:
 			color=lightblue;
 			label = "Hosting services";
 
-			// boxes
-			boxnet1 [label="Box.net\nstorage 1",shape=box3d,style=filled,fillcolor=green]
-			boxnet2 [label="Box.net\nstorage 2",shape=box3d,style=filled,fillcolor=green]
-			boxnet3 [label="Box.net\nstorage 3",shape=box3d,style=filled,fillcolor=green]
-
 			subgraph cluster_droponline{
 				style=filled;
 				color=blue;
 				label = "Dropbox";
 
 				irssidrop [label="~/.irssi",shape=folder,style=filled,fillcolor=green]
-				rsnapshot_edgar_drop [label="backup\nedgar",shape=folder,style=filled,fillcolor=green]
-			}
-
-			subgraph cluster_4shared2{
-				style=filled;
-				color=blue;
-				label = "4shared2";
-
-				music3 [label="music3",shape=folder,style=filled,fillcolor=green]
-			}
-
-			subgraph cluster_4shared1{
-				style=filled;
-				color=blue;
-				label = "4shared1";
-
-				books4sh [label="books",shape=folder,style=filled,fillcolor=green]
-			}
-
-			subgraph cluster_4shared3{
-				style=filled;
-				color=blue;
-				label = "4shared3";
-
-				video4sh [label="video",shape=folder,style=filled,fillcolor=green]
+				rsnapshot_edgar_drop [label="backup\nedgar\novh\nparanoia",shape=folder,style=filled,fillcolor=green]
 			}
 		}
 
@@ -145,7 +108,6 @@ Il codice dell'immagine:
 				label = "320 Gb";
 
 				immagini_hd1 [label="immagini",shape=folder]
-				video_hd1 [label="video",shape=folder]
 				musica_hd1 [label="musica",shape=folder]
 				books_hd1 [label="libri",shape=folder]
 			}
@@ -156,9 +118,9 @@ Il codice dell'immagine:
 				label = "2 Tb";
 
 				immagini_hd2 [label="immagini",shape=folder]
-				video_hd2 [label="video",shape=folder]
 				musica_hd2 [label="musica",shape=folder]
 				books_hd2 [label="libri",shape=folder]
+				sw_hd2 [label="libri",shape=folder]
 			}
 		}
 
@@ -167,10 +129,9 @@ Il codice dell'immagine:
 			color=yellow;
 			label = "paranoia";
 
-			rsnapshot_paranoia [label="rsnapshot",shape=component]
+			//rsync_paranoia [label="rsync",shape=component]
 
 			filesystem_paranoia [label="filesystem",shape=folder]
-			backup_dir_paranoia [label="backup \ndir",shape=folder]
 			
 			subgraph cluster_pubwww_paranoia {
 				style=filled;
@@ -181,8 +142,8 @@ Il codice dell'immagine:
 				others_pubwww_paranoia [label="others",shape=folder]
 			}
 
-			filesystem_paranoia -> rsnapshot_paranoia -> backup_dir_paranoia
-			others_pubwww_paranoia -> rsnapshot_paranoia
+			//filesystem_paranoia -> rsync_paranoia -> script_rsnapshot
+			//others_pubwww_paranoia -> rsync_paranoia
 		}
 
 		subgraph cluster_ovh {
@@ -190,21 +151,34 @@ Il codice dell'immagine:
 			color=orange;
 			label = "ovh";
 
-			rsnapshot_ovh[label="rsnapshot",shape=component]
+			rsync_ovh[label="rsync",shape=component]
 			filesystem_ovh [label="filesystem",shape=folder]
-			backup_dir_ovh [label="backup \ndir",shape=folder]
 			
 			subgraph cluster_pubwww_ovh {
 				style=filled;
 				color=lightblue;
 				label = "Public www";
 
-				owncloud [label="owncloud",shape=component]
 				others_pubwww_ovh [label="others",shape=folder]
+				owncloud [label="owncloud",shape=component]
+				ttrss [label="TT-RSS",shape=component]
+				videodb [label="VideoDB",shape=component]
+				thinkup [label="ThinkUp",shape=component]
 			}
 
-			filesystem_ovh -> rsnapshot_ovh -> backup_dir_ovh
-			others_pubwww_ovh -> rsnapshot_ovh [ltail=cluster_pubwww_ovh]
+			filesystem_ovh -> rsync_ovh -> script_rsnapshot
+			others_pubwww_ovh -> html_back [ltail=cluster_pubwww_ovh]
+
+
+			// other backups
+			subgraph cluster_backup {
+				style=filled;
+				fillcolor=green;
+				label = "backups";
+
+				html_back [label="html\nbackups",shape=folder]
+				db_back [label="db\nbackups",shape=folder]
+			}
 		}
 
 		subgraph cluster_android {
@@ -213,10 +187,11 @@ Il codice dell'immagine:
 			label = "Android";
 
 			sms [label="Android \nSMS",shape=box3d]
-			calendar [label="calendar",color=red,shape=component]
-			contacts [label="contacts",color=red,shape=component]
+			calendar [label="calendar",shape=component]
+			contacts [label="contacts",shape=component]
 			ff_mobile [label="Firefox\nmobile",shape=component]
 			chatmobile [label="Gtalk\nmobile",shape=egg]
+			ttrssmobile [label="TT-RSS\nmobile",shape=component]
 		}
 
 		pings [label="pings",shape=egg]
@@ -232,11 +207,23 @@ Il codice dell'immagine:
 
 		// android
 		firefox -> ffsync -> ff_mobile
-		gcontacts -> contacts
+		ttrss -> ttrssmobile
 		gcalendar -> calendar
+		gcontacts -> contacts
 
-		// backup edgar
+		// server backups
 		filesystem_edgar -> script_rsnapshot -> rsnapshot -> rsnapshot_edgar_drop [color=forestgreen]
+
+		// service backups
+		facebook -> thinkup
+		twitter -> thinkup
+		foursquare -> thinkup
+		ttrss ->  db_back
+		videodb -> db_back
+		thinkup -> db_back
+		owncloud -> html_back
+		html_back -> rsync_ovh
+		db_back -> rsync_ovh
 
 		// mail - sms
 		sms -> gmail
@@ -245,35 +232,8 @@ Il codice dell'immagine:
 		riseup -> offlineimap [dir=both]
 		offlineimap -> mail
 		
-		// immagini
-		immagini_hd1 -> rsync_off [style=dotted]
-		rsync_off -> immagini_hd2 [style=dotted]
-		immagini_hd1 -> webdav_edgar -> rsync_on -> boxnet1 [style=dotted];
-
-		// video
-		video_hd1 -> rsync_off [style=bold]
-		rsync_off -> video_hd2 [style=bold]
-		video_hd1 -> webdav_edgar [style=bold]
-		webdav_edgar -> rsync_on [style=bold]
-		rsync_on -> video4sh [style=bold]
-
-		// musica
-		musica_hd1 -> rsync_off
-		rsync_off -> musica_hd2
-		musica_hd1 -> webdav_edgar -> rsync_on
-		rsync_on -> boxnet2
-		rsync_on -> boxnet3
-		rsync_on -> music3
-
-		// libri
-		books_hd1 -> rsync_off -> books_hd2 [color=goldenrod]
-		books_hd1 -> webdav_edgar -> rsync_on -> books4sh [color=goldenrod]
-
 		// internet services
 		github -> blog_pubwww [color=forestgreen]
-		backup_dir_ovh -> aerofs [color=forestgreen]
-		backup_dir_paranoia -> aerofs [color=red]
-		aerofs -> serversbackup [color=forestgreen]
 	}
 
 Qui si seguito, invece, i progetti a lungo termine:
@@ -282,11 +242,11 @@ Qui si seguito, invece, i progetti a lungo termine:
 		// TODO
 		// * legend
 		// * bold cluster labels
-		graph [ dpi = 300 ];
+		graph [ dpi = 500 ];
 		size ="4,6";	// table size
 		compound=true;
 		ranksep="1.5"
-		rankdir="LR"
+		rankdir="TB"
 
 		subgraph cluster_edgar {
 			style=filled;
@@ -332,6 +292,10 @@ Qui si seguito, invece, i progetti a lungo termine:
 			github [label="GitHub",shape=component]
 			ffsync [label="Firefox\nSync",shape=component]
 			librefm [label="Libre.fm",shape=component]
+			facebook [label="Facebook",shape=component]
+			twitter [label="Twitter",shape=component]
+			foursquare [label="Foursquare",shape=component]
+			brdcstit [label="brdcst.it",shape=component]
 		}
 
 		subgraph cluster_hosting{
@@ -345,7 +309,7 @@ Qui si seguito, invece, i progetti a lungo termine:
 				label = "Dropbox";
 
 				irssidrop [label="~/.irssi",shape=folder,style=filled,fillcolor=green]
-				rsnapshot_edgar_drop [label="backup\nedgar",shape=folder,style=filled,fillcolor=green]
+				rsnapshot_edgar_drop [label="backup\nedgar\novh\nparanoia\nrpi",shape=folder,style=filled,fillcolor=green]
 			}
 		}
 
@@ -372,10 +336,9 @@ Qui si seguito, invece, i progetti a lungo termine:
 			color=yellow;
 			label = "paranoia";
 
-			rsnapshot_paranoia [label="rsnapshot",shape=component]
+			rsync_paranoia [label="rsync",shape=component]
 
 			filesystem_paranoia [label="filesystem",shape=folder]
-			backup_dir_paranoia [label="backup \ndir",shape=folder]
 			
 			subgraph cluster_pubwww_paranoia {
 				style=filled;
@@ -386,8 +349,8 @@ Qui si seguito, invece, i progetti a lungo termine:
 				others_pubwww_paranoia [label="others",shape=folder]
 			}
 
-			filesystem_paranoia -> rsnapshot_paranoia -> backup_dir_paranoia
-			others_pubwww_paranoia -> rsnapshot_paranoia
+			filesystem_paranoia -> rsync_paranoia -> script_rsnapshot
+			others_pubwww_paranoia -> rsync_paranoia
 		}
 
 		subgraph cluster_ovh {
@@ -395,9 +358,8 @@ Qui si seguito, invece, i progetti a lungo termine:
 			color=orange;
 			label = "ovh";
 
-			rsnapshot_ovh[label="rsnapshot",shape=component]
+			rsync_ovh[label="rsync",shape=component]
 			filesystem_ovh [label="filesystem",shape=folder]
-			backup_dir_ovh [label="backup \ndir",shape=folder]
 			
 			subgraph cluster_pubwww_ovh {
 				style=filled;
@@ -407,8 +369,8 @@ Qui si seguito, invece, i progetti a lungo termine:
 				others_pubwww_ovh [label="others",shape=folder]
 			}
 
-			filesystem_ovh -> rsnapshot_ovh -> backup_dir_ovh
-			others_pubwww_ovh -> rsnapshot_ovh [ltail=cluster_pubwww_ovh]
+			filesystem_ovh -> rsync_ovh -> script_rsnapshot
+			others_pubwww_ovh -> rsync_ovh [ltail=cluster_pubwww_ovh]
 		}
 
 		subgraph cluster_rpi{
@@ -419,6 +381,9 @@ Qui si seguito, invece, i progetti a lungo termine:
 			sync_owncloud -> owncloud [color=blue]
 			lastexport [label="lastexport.py",shape=component]
 
+			rsync_rpi[label="rsync",shape=component]
+			filesystem_rpi [label="filesystem",shape=folder]
+
 			subgraph cluster_pubwww_rpi {
 				style=filled;
 				color=lightblue;
@@ -427,6 +392,7 @@ Qui si seguito, invece, i progetti a lungo termine:
 				owncloud [label="owncloud",shape=component]
 				ttrss [label="TT-RSS",shape=component]
 				videodb [label="VideoDB",shape=component]
+				thinkup [label="ThinkUp",shape=component]
 			}
 
 			// owncloud backups
@@ -447,9 +413,15 @@ Qui si seguito, invece, i progetti a lungo termine:
 				fillcolor=green;
 				label = "backups";
 
-				server_back [label="server\nbackups",shape=folder]
-				service_back [label="services\nbackups",shape=folder]
+				data_back [label="data\nbackups",shape=folder]
+				db_back [label="db\nbackups",shape=folder]
+				html_back [label="html\nbackups",shape=folder]
 			}
+
+			filesystem_rpi -> rsync_rpi -> script_rsnapshot
+			data_back -> rsync_rpi
+			db_back -> rsync_rpi
+			html_back -> rsync_rpi
 		}
 
 		subgraph cluster_android {
@@ -484,14 +456,17 @@ Qui si seguito, invece, i progetti a lungo termine:
 
 		// server backups
 		filesystem_edgar -> script_rsnapshot -> rsnapshot -> rsnapshot_edgar_drop [color=forestgreen]
-		backup_dir_ovh -> server_back
-		backup_dir_paranoia -> server_back
 
 		// service backups
-		github -> service_back
-		librefm -> lastexport -> service_back
-		ttrss -> service_back
-		videodb -> service_back
+		github -> data_back
+		librefm -> lastexport -> data_back
+		facebook -> thinkup
+		twitter -> thinkup
+		foursquare -> thinkup
+		ttrss -> db_back
+		videodb -> db_back
+		thinkup -> db_back
+		owncloud -> html_back
 
 		// mail - sms
 		sms -> gmail
