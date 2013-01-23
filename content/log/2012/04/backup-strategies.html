@@ -49,6 +49,7 @@ Il codice dell'immagine:
 			// scripts and programs
 			offlineimap [label="offlineimap",shape=component]
 			script_rsnapshot [label="rsnapshot",shape=component]
+			rsync [label="rsync",shape=component]
 			firefox [label="Firefox",shape=component]
 			
 			// folders
@@ -127,7 +128,7 @@ Il codice dell'immagine:
 		subgraph cluster_paranoia {
 			style=filled;
 			color=yellow;
-			label = "paranoia";
+			label = "server2\nparanoia";
 
 			//rsync_paranoia [label="rsync",shape=component]
 
@@ -146,10 +147,20 @@ Il codice dell'immagine:
 			//others_pubwww_paranoia -> rsync_paranoia
 		}
 
+		subgraph cluster_sgagliozza {
+			style=filled;
+			color=cyan;
+			label = "server3\nsgagliozza";
+
+			filesystem_sgagliozza [label="filesystem",shape=folder]
+			mail_back [label="mail\nbackup",shape=folder,style=filled,fillcolor=green]
+			
+		}
+
 		subgraph cluster_ovh {
 			style=filled;
 			color=orange;
-			label = "ovh";
+			label = "server1\novh";
 
 			rsync_ovh[label="rsync",shape=component]
 			filesystem_ovh [label="filesystem",shape=folder]
@@ -231,6 +242,7 @@ Il codice dell'immagine:
 		ai -> offlineimap [dir=both]
 		riseup -> offlineimap [dir=both]
 		offlineimap -> mail
+		mail -> rsync -> mail_back
 		
 		// internet services
 		github -> blog_pubwww [color=forestgreen]
@@ -266,6 +278,7 @@ Qui si seguito, invece, i progetti a lungo termine:
 			// scripts and programs
 			offlineimap [label="offlineimap",shape=component]
 			script_rsnapshot [label="rsnapshot",shape=component]
+			rsync [label="rsync",shape=component]
 			sync_owncloud [label="owncloud\nsync",shape=component]
 			firefox [label="Firefox",shape=component]
 			
@@ -351,6 +364,16 @@ Qui si seguito, invece, i progetti a lungo termine:
 
 			filesystem_paranoia -> rsync_paranoia -> script_rsnapshot
 			others_pubwww_paranoia -> rsync_paranoia
+		}
+
+		subgraph cluster_sgagliozza {
+			style=filled;
+			color=cyan;
+			label = "server3\nsgagliozza";
+
+			filesystem_sgagliozza [label="filesystem",shape=folder]
+			mail_back [label="mail\nbackup",shape=folder,style=filled,fillcolor=green]
+			
 		}
 
 		subgraph cluster_ovh {
@@ -474,6 +497,7 @@ Qui si seguito, invece, i progetti a lungo termine:
 		ai -> offlineimap [dir=both]
 		riseup -> offlineimap [dir=both]
 		offlineimap -> mail
+		mail -> rsync -> mail_back
 		
 		// immagini
 		immagini_hd1 -> sync_owncloud
