@@ -110,14 +110,14 @@ dell&#8217;installazione, avrà disponibili solo 30 Mib circa, quindi è consigl
 dotarsi di microSD di dimensioni pari o superiori ad 1 Gib). Si presume che la
 scheda sia inserita nel Neo; se non lo fosse, spegnetelo, inserite la scheda e
 riaccendetelo entrando in Openmoko. Fate il login via <span class="caps">SSH</span> nell&#8217;Openmoko,&nbsp;solitamente</p>
-<div class="codehilite"><pre><span class="n">ssh</span> <span class="n">root</span><span class="p">@</span>192<span class="p">.</span>168<span class="p">.</span>0<span class="p">.</span>202
+<div class="codehilite"><pre><span class="n">ssh</span> <span class="n">root</span><span class="err">@</span><span class="mf">192.168.0.202</span>
 </pre></div>
 
 
 <p>Dovreste essere posizionati nella home del sistema operativo.
 Adesso, scarichiamo lo script che ci permetterà di installare Debian, con il
 comando da&nbsp;<span class="caps">SSH</span></p>
-<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">pkg</span><span class="o">-</span><span class="n">fso</span><span class="p">.</span><span class="n">alioth</span><span class="p">.</span><span class="n">debian</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">freerunner</span><span class="o">/</span><span class="n">install</span><span class="p">.</span><span class="n">sh</span>
+<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//pkg-fso.alioth.debian.org/freerunner/install.sh</span>
 </pre></div>
 
 
@@ -138,7 +138,7 @@ quindi &#8220;uccidiamo&#8221; il processo di Qtopia,&nbsp;con</p>
 
 
 <p>Quindi finalmente eseguiamo lo&nbsp;script</p>
-<div class="codehilite"><pre><span class="n">SD_PART1_FS</span><span class="p">=</span><span class="n">vfat</span> <span class="o">./</span><span class="n">install</span><span class="p">.</span><span class="n">sh</span> <span class="n">all</span>
+<div class="codehilite"><pre><span class="n">SD_PART1_FS</span><span class="o">=</span><span class="n">vfat</span> <span class="p">.</span><span class="o">/</span><span class="n">install</span><span class="p">.</span><span class="n">sh</span> <span class="n">all</span>
 </pre></div>
 
 
@@ -187,12 +187,12 @@ problemi perché il Neo, pur avendo mantenuto il proprio indirizzo
 192.168.0.202, ha cambiato sistema operativo. Sul terminale uscirà un
 messaggio d&#8217;errore che potremo facilmente aggirare editando il file
 <em>~/.ssh./known_hosts</em> e cancellando tutto ciò che&nbsp;contiene:</p>
-<div class="codehilite"><pre><span class="n">nano</span> <span class="o">~/</span><span class="p">.</span><span class="n">ssh</span><span class="o">./</span><span class="n">known_hosts</span>
+<div class="codehilite"><pre><span class="n">nano</span> <span class="o">~/</span><span class="p">.</span><span class="n">ssh</span><span class="p">.</span><span class="o">/</span><span class="n">known_hosts</span>
 </pre></div>
 
 
 <p>Quindi,&nbsp;riproviamo:</p>
-<div class="codehilite"><pre><span class="n">ssh</span> <span class="n">root</span><span class="p">@</span>192<span class="p">.</span>168<span class="p">.</span>0<span class="p">.</span>202
+<div class="codehilite"><pre><span class="n">ssh</span> <span class="n">root</span><span class="err">@</span><span class="mf">192.168.0.202</span>
 </pre></div>
 
 
@@ -209,26 +209,26 @@ il filesystem check che rallenta di molto l&#8217;avvio di&nbsp;Debian: </p>
 
 <p>e trasformiamolo da&nbsp;così</p>
 <div class="codehilite"><pre><span class="n">rootfs</span>  <span class="o">/</span>
-<span class="n">ext2</span>    <span class="n">defaults</span><span class="p">,</span><span class="n">errors</span><span class="p">=</span><span class="n">remount</span><span class="o">-</span><span class="n">ro</span><span class="p">,</span><span class="n">noatime</span>      0 1 <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mmcblk0p1</span>  <span class="o">/</span><span class="n">boot</span>
-<span class="n">vfat</span>    <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        0 2 <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mtdblock6</span>  <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">flash</span>
-<span class="n">jffs2</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span><span class="p">,</span><span class="n">noauto</span>         0 2 <span class="n">proc</span>    <span class="o">/</span><span class="n">proc</span>           <span class="n">proc</span>
-<span class="n">defaults</span>                                0 0 <span class="n">tmpfs</span>   <span class="o">/</span><span class="n">tmp</span>            <span class="n">tmpfs</span>
-<span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        0 0 <span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lock</span>       <span class="n">tmpfs</span>
-<span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        0 0 <span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">run</span>        <span class="n">tmpfs</span>
-<span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        0 0 <span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">tmp</span>        <span class="n">tmpfs</span>
-<span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        0 0
+<span class="n">ext2</span>    <span class="n">defaults</span><span class="p">,</span><span class="n">errors</span><span class="o">=</span><span class="n">remount</span><span class="o">-</span><span class="n">ro</span><span class="p">,</span><span class="n">noatime</span>      <span class="mi">0</span> <span class="mi">1</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mmcblk0p1</span>  <span class="o">/</span><span class="n">boot</span>
+<span class="n">vfat</span>    <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        <span class="mi">0</span> <span class="mi">2</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mtdblock6</span>  <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">flash</span>
+<span class="n">jffs2</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span><span class="p">,</span><span class="n">noauto</span>         <span class="mi">0</span> <span class="mi">2</span> <span class="n">proc</span>    <span class="o">/</span><span class="n">proc</span>           <span class="n">proc</span>
+<span class="n">defaults</span>                                <span class="mi">0</span> <span class="mi">0</span> <span class="n">tmpfs</span>   <span class="o">/</span><span class="n">tmp</span>            <span class="n">tmpfs</span>
+<span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        <span class="mi">0</span> <span class="mi">0</span> <span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lock</span>       <span class="n">tmpfs</span>
+<span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        <span class="mi">0</span> <span class="mi">0</span> <span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">run</span>        <span class="n">tmpfs</span>
+<span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        <span class="mi">0</span> <span class="mi">0</span> <span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">tmp</span>        <span class="n">tmpfs</span>
+<span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        <span class="mi">0</span> <span class="mi">0</span>
 </pre></div>
 
 
 <p>a&nbsp;così:</p>
-<div class="codehilite"><pre><span class="n">rootfs</span>  <span class="o">/</span>               <span class="n">ext2</span>    <span class="n">defaults</span><span class="p">,</span><span class="n">errors</span><span class="p">=</span><span class="n">remount</span><span class="o">-</span>
-<span class="n">ro</span><span class="p">,</span><span class="n">noatime</span>      0 0 <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mmcblk0p1</span>  <span class="o">/</span><span class="n">boot</span>   <span class="n">vfat</span>    <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>
-0 0 <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mtdblock6</span>  <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">flash</span>      <span class="n">jffs2</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span><span class="p">,</span><span class="n">noauto</span>         0
-0 <span class="n">proc</span>    <span class="o">/</span><span class="n">proc</span>           <span class="n">proc</span>    <span class="n">defaults</span>                                0 0
-<span class="n">tmpfs</span>   <span class="o">/</span><span class="n">tmp</span>            <span class="n">tmpfs</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        0 0
-<span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lock</span>       <span class="n">tmpfs</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        0 0
-<span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">run</span>        <span class="n">tmpfs</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        0 0
-<span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">tmp</span>        <span class="n">tmpfs</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        0 0
+<div class="codehilite"><pre><span class="n">rootfs</span>  <span class="o">/</span>               <span class="n">ext2</span>    <span class="n">defaults</span><span class="p">,</span><span class="n">errors</span><span class="o">=</span><span class="n">remount</span><span class="o">-</span>
+<span class="n">ro</span><span class="p">,</span><span class="n">noatime</span>      <span class="mi">0</span> <span class="mi">0</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mmcblk0p1</span>  <span class="o">/</span><span class="n">boot</span>   <span class="n">vfat</span>    <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>
+<span class="mi">0</span> <span class="mi">0</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mtdblock6</span>  <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">flash</span>      <span class="n">jffs2</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span><span class="p">,</span><span class="n">noauto</span>         <span class="mi">0</span>
+<span class="mi">0</span> <span class="n">proc</span>    <span class="o">/</span><span class="n">proc</span>           <span class="n">proc</span>    <span class="n">defaults</span>                                <span class="mi">0</span> <span class="mi">0</span>
+<span class="n">tmpfs</span>   <span class="o">/</span><span class="n">tmp</span>            <span class="n">tmpfs</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        <span class="mi">0</span> <span class="mi">0</span>
+<span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lock</span>       <span class="n">tmpfs</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        <span class="mi">0</span> <span class="mi">0</span>
+<span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">run</span>        <span class="n">tmpfs</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        <span class="mi">0</span> <span class="mi">0</span>
+<span class="n">tmpfs</span>   <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">tmp</span>        <span class="n">tmpfs</span>   <span class="n">defaults</span><span class="p">,</span><span class="n">noatime</span>                        <span class="mi">0</span> <span class="mi">0</span>
 </pre></div>
 
 
@@ -239,12 +239,12 @@ Zhone, ma Xfce come desktop environment&nbsp;predefinito.</p>
 
 
 <p>e modifichiamo la riga 17 da&nbsp;così:</p>
-<div class="codehilite"><pre><span class="n">PROG_FSO</span><span class="p">=</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">zhone</span><span class="o">-</span><span class="n">session</span>
+<div class="codehilite"><pre><span class="n">PROG_FSO</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">zhone</span><span class="o">-</span><span class="n">session</span>
 </pre></div>
 
 
 <p>a&nbsp;così:</p>
-<div class="codehilite"><pre><span class="n">PROG_FSO</span><span class="p">=</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">startxfce4</span>
+<div class="codehilite"><pre><span class="n">PROG_FSO</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">startxfce4</span>
 </pre></div>
 
 
@@ -260,9 +260,9 @@ passaggi seguenti ci permetteranno di installare un pacchetto che farà
 percepire ad X una pressione prolungata del touchscreen come un click destro,
 correggendo una sfasatura della posizione del puntatore che si verifica a
 causa di un bug del&nbsp;pacchetto.</p>
-<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">ohli</span><span class="p">.</span><span class="n">de</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">xserver</span><span class="o">-</span><span class="n">xorg</span><span class="o">-</span><span class="n">input</span><span class="o">-</span><span class="n">tslib_0</span><span class="p">.</span>0<span class="p">.</span>4<span class="o">-</span>5<span class="o">+</span><span class="n">fso2_armel</span><span class="p">.</span><span class="n">deb</span>
-<span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">pkg</span><span class="o">-</span><span class="n">fso</span><span class="p">.</span><span class="n">alioth</span><span class="p">.</span><span class="n">debian</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">freerunner</span><span class="o">/</span><span class="n">pointercal</span> <span class="n">dpkg</span> <span class="o">-</span><span class="nb">i</span> <span class="n">xserver</span><span class="o">-</span>
-<span class="n">xorg</span><span class="o">-</span><span class="n">input</span><span class="o">-</span><span class="n">tslib_0</span><span class="p">.</span>0<span class="p">.</span>4<span class="o">-</span>5<span class="o">+</span><span class="n">fso2_armel</span><span class="p">.</span><span class="n">deb</span>
+<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//www.ohli.de/download/xserver-xorg-input-tslib_0.0.4-5+fso2_armel.deb</span>
+<span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//pkg-fso.alioth.debian.org/freerunner/pointercal dpkg -i xserver-</span>
+<span class="n">xorg</span><span class="o">-</span><span class="n">input</span><span class="o">-</span><span class="n">tslib_0</span><span class="mf">.0.4</span><span class="o">-</span><span class="mi">5</span><span class="o">+</span><span class="n">fso2_armel</span><span class="p">.</span><span class="n">deb</span>
 <span class="n">mv</span> <span class="n">pointercal</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">pointercal</span>
 <span class="n">shutdown</span> <span class="n">now</span>
 </pre></div>
@@ -271,7 +271,7 @@ causa di un bug del&nbsp;pacchetto.</p>
 <p>Al riavvio, tutto sarà sistemato. Per facilitarci la vita
 nelle prossime connessioni via <span class="caps">SSH</span>, possiamo modificare il file <em>/etc/hosts</em>
 ed inserire l&#8217;<span class="caps">IP</span> del nostro <span class="caps">PC</span> collegato al Neo via&nbsp;<span class="caps">USB</span>:</p>
-<div class="codehilite"><pre><span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">hosts</span> 192<span class="p">.</span>168<span class="p">.</span>0<span class="p">.</span>200 <span class="n">pc</span>
+<div class="codehilite"><pre><span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">hosts</span> <span class="mf">192.168.0.200</span> <span class="n">pc</span>
 </pre></div>
 
 

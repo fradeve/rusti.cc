@@ -93,9 +93,9 @@ Intel (ho una scheda grafica integrata Intel <span class="caps">945GM</span>) fo
 inattaccabili, ma dopo l&#8217;installazione, sebbene l&#8217;accelerazione grafica fosse
 abilitata, gli <span class="caps">FPS</span> erano ad un livello talmente basso da rasentare lo
 scandalo. Su <a href="http://forum.ubuntu-it.org/index.php/topic,250190.msg2017461.html#msg2017461">consiglio</a> del Forum ho inserito una riga per l&#8216;&#8220;uxa&#8221; nel mio&nbsp;xorg.conf:</p>
-<div class="codehilite"><pre><span class="n">Section</span> &quot;<span class="n">Device</span>&quot;
-    <span class="n">Identifier</span>      &quot;<span class="n">Configured</span> <span class="n">Video</span> <span class="n">Device</span>&quot;
-    <span class="n">Option</span>          &quot;<span class="n">AccelMethod</span>&quot; &quot;<span class="n">uxa</span>&quot;
+<div class="codehilite"><pre><span class="n">Section</span> <span class="s">&quot;Device&quot;</span>
+    <span class="n">Identifier</span>      <span class="s">&quot;Configured Video Device&quot;</span>
+    <span class="n">Option</span>          <span class="s">&quot;AccelMethod&quot;</span> <span class="s">&quot;uxa&quot;</span>
 <span class="n">EndSection</span>
 </pre></div>
 
@@ -107,15 +107,15 @@ mia fiducia in Ubuntu ha seriamente vacillato). Ancora una volta il <a href="htt
 e <a href="https://bugs.launchpad.net/ubuntu/+source/compiz/+bug/328232">Launchpad</a> mi son venuti in aiuto, ed alla fine ho dovuto disabilitare
 l&#8217;accelerazione grafica e Compiz, passando a Metacity, almeno fin quando le
 cose non si risolveranno. Qualcuno ha consigliato di passare da &#8220;uxa&#8221; ad&nbsp;&#8220;exa&#8221;,</p>
-<div class="codehilite"><pre><span class="n">Section</span> &quot;<span class="n">Device</span>&quot;
-    <span class="n">Identifier</span>      &quot;<span class="n">Configured</span> <span class="n">Video</span> <span class="n">Device</span>&quot;
-    <span class="n">Option</span>          &quot;<span class="n">AccelMethod</span>&quot; &quot;<span class="n">exa</span>&quot;
+<div class="codehilite"><pre><span class="n">Section</span> <span class="s">&quot;Device&quot;</span>
+    <span class="n">Identifier</span>      <span class="s">&quot;Configured Video Device&quot;</span>
+    <span class="n">Option</span>          <span class="s">&quot;AccelMethod&quot;</span> <span class="s">&quot;exa&quot;</span>
 <span class="n">EndSection</span>
 </pre></div>
 
 
 <p>ma a questo punto, tant&#8217;è, mi accontento di <a href="http://it.wikipedia.org/wiki/Metacity">Metacity</a>. Per abilitare&nbsp;Metacity:</p>
-<div class="codehilite"><pre><span class="n">gconftool</span><span class="o">-</span>2 <span class="o">-</span><span class="n">s</span> <span class="s">&#39;/apps/metacity/general/compositing_manager&#39;</span> <span class="o">--</span><span class="n">type</span> <span class="n">bool</span> <span class="n">true</span>
+<div class="codehilite"><pre><span class="n">gconftool</span><span class="o">-</span><span class="mi">2</span> <span class="o">-</span><span class="n">s</span> <span class="err">&#39;</span><span class="o">/</span><span class="n">apps</span><span class="o">/</span><span class="n">metacity</span><span class="o">/</span><span class="n">general</span><span class="o">/</span><span class="n">compositing_manager</span><span class="err">&#39;</span> <span class="o">--</span><span class="n">type</span> <span class="kt">bool</span> <span class="nb">true</span>
 </pre></div>
 
 

@@ -82,7 +82,7 @@
 <h2 id="usare-un-vhost-su-irc">Usare un vhost su&nbsp;<span class="caps">IRC</span></h2>
 <p>I <a href="http://en.wikipedia.org/wiki/Vhost_(IRC)#Hostmasks">vhost</a> sono servizi per mascherare alcuni dati visibili agli utenti connessi sul server <span class="caps">IRC</span> che stiamo usando. Nel caso un server <span class="caps">IRC</span> offra il servizio di vhost, ecco come utilizzarlo. I comandi riportati vengono utilizzati su <a href="http://www.irssi.org/"><span class="caps">IRSSI</span></a>.</p>
 <p>Collegarsi al&nbsp;server</p>
-<div class="codehilite"><pre><span class="o">/</span><span class="n">connect</span> <span class="n">irc</span><span class="p">.</span><span class="n">nomeserver</span><span class="p">.</span><span class="n">net</span> 6667
+<div class="codehilite"><pre><span class="o">/</span><span class="n">connect</span> <span class="n">irc</span><span class="p">.</span><span class="n">nomeserver</span><span class="p">.</span><span class="n">net</span> <span class="mi">6667</span>
 </pre></div>
 
 
@@ -92,18 +92,18 @@
 
 
 <p>registrare la propria email (dopo essersene creata una ad-hoc, consigliatissimo il servizio di <a href="http://www.autistici.org/it/index.html">Autistici/Inventati</a></p>
-<div class="codehilite"><pre><span class="o">/</span><span class="n">msg</span> <span class="n">NickServ</span> <span class="n">register</span> <span class="o">&lt;</span><span class="n">password</span><span class="o">&gt;</span> <span class="n">fake</span><span class="p">@</span><span class="n">mail</span><span class="p">.</span><span class="n">com</span>
+<div class="codehilite"><pre><span class="p">/</span><span class="nb">msg</span> <span class="nx">NickServ</span> <span class="nb">register</span> <span class="o">&lt;</span><span class="nx">password</span><span class="o">&gt;</span> <span class="nx">fake</span><span class="p">@</span><span class="nx">mail.com</span>
 </pre></div>
 
 
 <p>fare join nel canale del vhost e richiederne un&nbsp;servizio</p>
-<div class="codehilite"><pre><span class="o">/</span><span class="n">join</span> #<span class="n">vhost</span>
-<span class="sx">!vhost fakenick@qualsiasicosa</span>
+<div class="codehilite"><pre><span class="o">/</span><span class="n">join</span> <span class="err">#</span><span class="n">vhost</span>
+<span class="o">!</span><span class="n">vhost</span> <span class="n">fakenick</span><span class="err">@</span><span class="n">qualsiasicosa</span>
 </pre></div>
 
 
 <p>identificarsi finalmente con il nuovo nick fittizio, la mail fittizia e la password precedentemente&nbsp;registrata</p>
-<div class="codehilite"><pre><span class="o">/</span><span class="n">msg</span> <span class="n">NickServ</span> <span class="n"><span class="caps">IDENTIFY</span></span> <span class="o">&lt;</span><span class="n">password</span><span class="o">&gt;</span>
+<div class="codehilite"><pre><span class="p">/</span><span class="nb">msg</span> <span class="nx">NickServ</span> <span class="nx"><span class="caps">IDENTIFY</span></span> <span class="o">&lt;</span><span class="nx">password</span><span class="o">&gt;</span>
 </pre></div>
 
 

@@ -70,7 +70,7 @@
     </a>
 </h6>
 
-<p><em>Ultimo aggiornamento: 01 maggio&nbsp;2012</em></p>
+<p><em>Ultimo aggiornamento: 23 febbraio&nbsp;2013</em></p>
 <p>Non ho molto tempo per spiegare l&#8217;immagine. In soldoni, è uno schema riassuntivo di come sono organizzati i miei dati ed i miei backup, realizzato anche per approfondire un po&#8217; la conoscenza di Graphviz. Il codice è in fondo al&nbsp;post.</p>
 <p><center><img alt="" src="http://dl.dropbox.com/u/369614/blog/img_red/backup.png" /><br><em>Storie di ordinario backup</em></center></p>
 <p><em>Legenda</em></p>
@@ -81,503 +81,507 @@
 </ul>
 <p>Il codice&nbsp;dell&#8217;immagine:</p>
 <div class="codehilite"><pre><span class="n">digraph</span> <span class="n">G</span> <span class="p">{</span>
-    <span class="o">//</span> <span class="n"><span class="caps">TODO</span></span>
-    <span class="o">//</span> <span class="o">*</span> <span class="n">legend</span>
-    <span class="o">//</span> <span class="o">*</span> <span class="n">bold</span> <span class="n">cluster</span> <span class="n">labels</span>
-    <span class="n">graph</span> <span class="p">[</span> <span class="n">dpi</span> <span class="p">=</span> 300 <span class="p">];</span>
-    <span class="nb">size</span> <span class="p">=</span>&quot;4<span class="p">,</span>6&quot;<span class="p">;</span>    <span class="o">//</span> <span class="n">table</span> <span class="nb">size</span>
-    <span class="n">compound</span><span class="p">=</span><span class="n">true</span><span class="p">;</span>
-    <span class="n">ranksep</span><span class="p">=</span>&quot;1<span class="p">.</span>5&quot;
-    <span class="n">rankdir</span><span class="p">=</span>&quot;<span class="n"><span class="caps">LR</span></span>&quot;
+    <span class="c1">// <span class="caps">TODO</span></span>
+    <span class="c1">// * legend</span>
+    <span class="c1">// * bold cluster labels</span>
+    <span class="n">graph</span> <span class="p">[</span> <span class="n">dpi</span> <span class="o">=</span> <span class="mi">300</span> <span class="p">];</span>
+    <span class="n">size</span> <span class="o">=</span><span class="s">&quot;4,6&quot;</span><span class="p">;</span>    <span class="c1">// table size</span>
+    <span class="n">compound</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
+    <span class="n">ranksep</span><span class="o">=</span><span class="s">&quot;1.5&quot;</span>
+    <span class="n">rankdir</span><span class="o">=</span><span class="s">&quot;<span class="caps">LR</span>&quot;</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_edgar</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">lightgrey</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">edgar</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">lightgrey</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;edgar&quot;</span><span class="p">;</span>
 
-        <span class="o">//</span> <span class="n">boxes</span>
+        <span class="c1">// boxes</span>
         <span class="n">subgraph</span> <span class="n">cluster_drop</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">white</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Dropbox</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">white</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Dropbox&quot;</span><span class="p">;</span>
 
-            <span class="n">irssi</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="o">~/</span><span class="p">.</span><span class="n">irssi</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">rsnapshot</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">backup</span><span class="o">\</span><span class="n">ndir</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">irssi</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;~/.irssi&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">rsnapshot</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;backup</span><span class="se">\n</span><span class="s">dir&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
         <span class="p">}</span>
 
-        <span class="n">subgraph</span> <span class="n">cluster_aerofs</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">white</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">AeroFS</span>&quot;<span class="p">;</span>
+        <span class="c1">// scripts and programs</span>
+        <span class="n">offlineimap</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;offlineimap&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">script_rsnapshot</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;rsnapshot&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">rsync</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;rsync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">firefox</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Firefox&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
 
-            <span class="n">serversbackup</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">servers</span><span class="o">\</span><span class="n">nbackup</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">]</span>
-        <span class="p">}</span>
-
-        <span class="o">//</span> <span class="n">scripts</span> <span class="n">and</span> <span class="n">programs</span>
-        <span class="n">offlineimap</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">offlineimap</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">rsync_off</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">rsync</span> <span class="o">\</span><span class="n">noffline</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">rsync_on</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">rsync</span> <span class="o">\</span><span class="n">nonline</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">webdav_edgar</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">DavFS2</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">script_rsnapshot</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">rsnapshot</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">firefox</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Firefox</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-
-        <span class="o">//</span> <span class="n">folders</span>
-        <span class="n">mail</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="o">~/</span><span class="p">.</span><span class="n">mail</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span>&quot;#008000&quot;<span class="p">]</span>
-        <span class="n">filesystem_edgar</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">filesystem</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+        <span class="c1">// folders</span>
+        <span class="n">mail</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;~/.mail&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="s">&quot;#008000&quot;</span><span class="p">]</span>
+        <span class="n">filesystem_edgar</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;filesystem&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_mail</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Mail</span> <span class="n">services</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Mail services&quot;</span><span class="p">;</span>
 
-        <span class="n">ai</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">A</span><span class="o">/</span><span class="n">I</span> <span class="o">\</span><span class="n">nmail</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span>&quot;#808000&quot;<span class="p">]</span>
-        <span class="n">gmail</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Gmail</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">]</span>
-        <span class="n">riseup</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Riseup</span> <span class="o">\</span><span class="n">nmail</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span>&quot;#808000&quot;<span class="p">]</span>
+        <span class="n">ai</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;A/I </span><span class="se">\n</span><span class="s">mail&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="s">&quot;#808000&quot;</span><span class="p">]</span>
+        <span class="n">gmail</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Gmail&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">box3d</span><span class="p">]</span>
+        <span class="n">riseup</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Riseup </span><span class="se">\n</span><span class="s">mail&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="s">&quot;#808000&quot;</span><span class="p">]</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_services</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Internet</span> <span class="n">services</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Internet services&quot;</span><span class="p">;</span>
 
-        <span class="n">aerofs</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">AeroFS</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">github</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">GitHub</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">ffsync</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Firefox</span><span class="o">\</span><span class="n">nSync</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">gcalendar</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">GCalendar</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">gcontacts</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">GContacts</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">github</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;GitHub&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">ffsync</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Firefox</span><span class="se">\n</span><span class="s">Sync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">librefm</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Libre.fm&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">facebook</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Facebook&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">twitter</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Twitter&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">foursquare</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Foursquare&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">gcalendar</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;GCalendar&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">gcontacts</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;GContacts&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_hosting</span><span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Hosting</span> <span class="n">services</span>&quot;<span class="p">;</span>
-
-        <span class="o">//</span> <span class="n">boxes</span>
-        <span class="n">boxnet1</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Box</span><span class="p">.</span><span class="n">net</span><span class="o">\</span><span class="n">nstorage</span> 1&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
-        <span class="n">boxnet2</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Box</span><span class="p">.</span><span class="n">net</span><span class="o">\</span><span class="n">nstorage</span> 2&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
-        <span class="n">boxnet3</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Box</span><span class="p">.</span><span class="n">net</span><span class="o">\</span><span class="n">nstorage</span> 3&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Hosting services&quot;</span><span class="p">;</span>
 
         <span class="n">subgraph</span> <span class="n">cluster_droponline</span><span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">blue</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Dropbox</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">blue</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Dropbox&quot;</span><span class="p">;</span>
 
-            <span class="n">irssidrop</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="o">~/</span><span class="p">.</span><span class="n">irssi</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
-            <span class="n">rsnapshot_edgar_drop</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">backup</span><span class="o">\</span><span class="n">nedgar</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
-        <span class="p">}</span>
-
-        <span class="n">subgraph</span> <span class="n">cluster_4shared2</span><span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">blue</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;4<span class="n">shared2</span>&quot;<span class="p">;</span>
-
-            <span class="n">music3</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">music3</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
-        <span class="p">}</span>
-
-        <span class="n">subgraph</span> <span class="n">cluster_4shared1</span><span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">blue</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;4<span class="n">shared1</span>&quot;<span class="p">;</span>
-
-            <span class="n">books4sh</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">books</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
-        <span class="p">}</span>
-
-        <span class="n">subgraph</span> <span class="n">cluster_4shared3</span><span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">blue</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;4<span class="n">shared3</span>&quot;<span class="p">;</span>
-
-            <span class="n">video4sh</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">video</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
+            <span class="n">irssidrop</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;~/.irssi&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="n">green</span><span class="p">]</span>
+            <span class="n">rsnapshot_edgar_drop</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;backup</span><span class="se">\n</span><span class="s">edgar</span><span class="se">\n</span><span class="s">ovh</span><span class="se">\n</span><span class="s">paranoia&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="n">green</span><span class="p">]</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_ext_storage</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">lightgrey</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">External</span> <span class="o">\</span><span class="n">nstorage</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">lightgrey</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;External </span><span class="se">\n</span><span class="s">storage&quot;</span><span class="p">;</span>
 
-        <span class="o">//</span> <span class="n">hds</span>
+        <span class="c1">// hds</span>
         <span class="n">subgraph</span> <span class="n">cluster_hd1</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">white</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;320 <span class="n">Gb</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">white</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;320 Gb&quot;</span><span class="p">;</span>
 
-            <span class="n">immagini_hd1</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">immagini</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">video_hd1</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">video</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">musica_hd1</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">musica</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">books_hd1</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">libri</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">immagini_hd1</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;immagini&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">musica_hd1</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;musica&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">books_hd1</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;libri&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
         <span class="p">}</span>
 
         <span class="n">subgraph</span> <span class="n">cluster_hd2</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">white</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;2 <span class="n">Tb</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">white</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;2 Tb&quot;</span><span class="p">;</span>
 
-            <span class="n">immagini_hd2</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">immagini</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">video_hd2</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">video</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">musica_hd2</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">musica</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">books_hd2</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">libri</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">immagini_hd2</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;immagini&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">musica_hd2</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;musica&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">books_hd2</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;libri&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">sw_hd2</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;libri&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_paranoia</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">yellow</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">paranoia</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">yellow</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;server1</span><span class="se">\n</span><span class="s">paranoia&quot;</span><span class="p">;</span>
 
-        <span class="n">rsnapshot_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">rsnapshot</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">rsync_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;rsync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
 
-        <span class="n">filesystem_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">filesystem</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-        <span class="n">backup_dir_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">backup</span> <span class="o">\</span><span class="n">ndir</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+        <span class="n">filesystem_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;filesystem&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
 
         <span class="n">subgraph</span> <span class="n">cluster_pubwww_paranoia</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Public</span> <span class="n">www</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Public www&quot;</span><span class="p">;</span>
 
-            <span class="n">blog_pubwww</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">blog</span><span class="o">|</span><span class="n">site</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">others_pubwww_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">others</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">blog_pubwww</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;blog|site&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">others_pubwww_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;others&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
         <span class="p">}</span>
 
-        <span class="n">filesystem_paranoia</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_paranoia</span> <span class="o">-&gt;</span> <span class="n">backup_dir_paranoia</span>
-        <span class="n">others_pubwww_paranoia</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_paranoia</span>
+        <span class="n">filesystem_paranoia</span> <span class="o">-&gt;</span> <span class="n">rsync_paranoia</span> <span class="o">-&gt;</span> <span class="n">script_rsnapshot</span>
+        <span class="n">others_pubwww_paranoia</span> <span class="o">-&gt;</span> <span class="n">rsync_paranoia</span>
+    <span class="p">}</span>
+
+    <span class="n">subgraph</span> <span class="n">cluster_sgagliozza</span> <span class="p">{</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">cyan</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;server3</span><span class="se">\n</span><span class="s">sgagliozza&quot;</span><span class="p">;</span>
+
+        <span class="n">filesystem_sgagliozza</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;filesystem&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+        <span class="n">mail_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;mail</span><span class="se">\n</span><span class="s">backup&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="n">green</span><span class="p">]</span>
+
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_ovh</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">orange</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">ovh</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">orange</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;server2</span><span class="se">\n</span><span class="s">ovh&quot;</span><span class="p">;</span>
 
-        <span class="n">rsnapshot_ovh</span><span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">rsnapshot</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">filesystem_ovh</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">filesystem</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-        <span class="n">backup_dir_ovh</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">backup</span> <span class="o">\</span><span class="n">ndir</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+        <span class="n">rsync_ovh</span><span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;rsync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">filesystem_ovh</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;filesystem&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
 
         <span class="n">subgraph</span> <span class="n">cluster_pubwww_ovh</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Public</span> <span class="n">www</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Public www&quot;</span><span class="p">;</span>
 
-            <span class="n">owncloud</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">owncloud</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-            <span class="n">others_pubwww_ovh</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">others</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">others_pubwww_ovh</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;others&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">owncloud</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;owncloud&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+            <span class="n">ttrss</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;<span class="caps">TT</span>-<span class="caps">RSS</span>&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+            <span class="n">videodb</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;VideoDB&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+            <span class="n">thinkup</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;ThinkUp&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
         <span class="p">}</span>
 
-        <span class="n">filesystem_ovh</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_ovh</span> <span class="o">-&gt;</span> <span class="n">backup_dir_ovh</span>
-        <span class="n">others_pubwww_ovh</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_ovh</span> <span class="p">[</span><span class="n">ltail</span><span class="p">=</span><span class="n">cluster_pubwww_ovh</span><span class="p">]</span>
+        <span class="n">filesystem_ovh</span> <span class="o">-&gt;</span> <span class="n">rsync_ovh</span> <span class="o">-&gt;</span> <span class="n">script_rsnapshot</span>
+        <span class="n">others_pubwww_ovh</span> <span class="o">-&gt;</span> <span class="n">html_back</span> <span class="p">[</span><span class="n">ltail</span><span class="o">=</span><span class="n">cluster_pubwww_ovh</span><span class="p">]</span>
+
+        <span class="c1">// other backups</span>
+        <span class="n">subgraph</span> <span class="n">cluster_backup</span> <span class="p">{</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">fillcolor</span><span class="o">=</span><span class="n">green</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;backups&quot;</span><span class="p">;</span>
+
+            <span class="n">html_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;html</span><span class="se">\n</span><span class="s">backups&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">db_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;db</span><span class="se">\n</span><span class="s">backups&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+        <span class="p">}</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_android</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">pink</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Android</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">pink</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Android&quot;</span><span class="p">;</span>
 
-        <span class="n">sms</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Android</span> <span class="o">\</span><span class="n">nSMS</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">]</span>
-        <span class="n">calendar</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">calendar</span>&quot;<span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">red</span><span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">contacts</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">contacts</span>&quot;<span class="p">,</span><span class="n">color</span><span class="p">=</span><span class="n">red</span><span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">ff_mobile</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Firefox</span><span class="o">\</span><span class="n">nmobile</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">chatmobile</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Gtalk</span><span class="o">\</span><span class="n">nmobile</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">]</span>
+        <span class="n">sms</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Android </span><span class="se">\n</span><span class="s"><span class="caps">SMS</span>&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">box3d</span><span class="p">]</span>
+        <span class="n">calendar</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;calendar&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">contacts</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;contacts&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">ff_mobile</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Firefox</span><span class="se">\n</span><span class="s">mobile&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">chatmobile</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Gtalk</span><span class="se">\n</span><span class="s">mobile&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">egg</span><span class="p">]</span>
+        <span class="n">ttrssmobile</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;<span class="caps">TT</span>-<span class="caps">RSS</span></span><span class="se">\n</span><span class="s">mobile&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
     <span class="p">}</span>
 
-    <span class="n">pings</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">pings</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">]</span>
-    <span class="n">chat</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Gtalk</span><span class="o">\</span><span class="n">ndesktop</span><span class="o">|</span><span class="n">web</span><span class="o">\</span><span class="n">nlogs</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">]</span>
+    <span class="n">pings</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;pings&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">egg</span><span class="p">]</span>
+    <span class="n">chat</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Gtalk</span><span class="se">\n</span><span class="s">desktop|web</span><span class="se">\n</span><span class="s">logs&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">egg</span><span class="p">]</span>
 
-    <span class="o">//</span> ## <span class="n">bindings</span> ##
+    <span class="c1">// ## bindings ##</span>
 
-    <span class="o">//</span> <span class="n">chat</span>
-    <span class="n">irssidrop</span> <span class="o">-&gt;</span> <span class="n">irssi</span> <span class="p">[</span><span class="n">dir</span><span class="p">=</span><span class="n">both</span><span class="p">]</span>
+    <span class="c1">// chat</span>
+    <span class="n">irssidrop</span> <span class="o">-&gt;</span> <span class="n">irssi</span> <span class="p">[</span><span class="n">dir</span><span class="o">=</span><span class="n">both</span><span class="p">]</span>
     <span class="n">pings</span> <span class="o">-&gt;</span> <span class="n">riseup</span>
     <span class="n">chat</span> <span class="o">-&gt;</span> <span class="n">gmail</span>
     <span class="n">chatmobile</span> <span class="o">-&gt;</span> <span class="n">gmail</span>
 
-    <span class="o">//</span> <span class="n">android</span>
+    <span class="c1">// android</span>
     <span class="n">firefox</span> <span class="o">-&gt;</span> <span class="n">ffsync</span> <span class="o">-&gt;</span> <span class="n">ff_mobile</span>
-    <span class="n">gcontacts</span> <span class="o">-&gt;</span> <span class="n">contacts</span>
+    <span class="n">ttrss</span> <span class="o">-&gt;</span> <span class="n">ttrssmobile</span>
     <span class="n">gcalendar</span> <span class="o">-&gt;</span> <span class="n">calendar</span>
+    <span class="n">gcontacts</span> <span class="o">-&gt;</span> <span class="n">contacts</span>
 
-    <span class="o">//</span> <span class="n">backup</span> <span class="n">edgar</span>
-    <span class="n">filesystem_edgar</span> <span class="o">-&gt;</span> <span class="n">script_rsnapshot</span> <span class="o">-&gt;</span> <span class="n">rsnapshot</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_edgar_drop</span> <span class="p">[</span><span class="n">color</span><span class="p">=</span><span class="n">forestgreen</span><span class="p">]</span>
+    <span class="c1">// server backups</span>
+    <span class="n">filesystem_edgar</span> <span class="o">-&gt;</span> <span class="n">script_rsnapshot</span> <span class="o">-&gt;</span> <span class="n">rsnapshot</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_edgar_drop</span> <span class="p">[</span><span class="n">color</span><span class="o">=</span><span class="n">forestgreen</span><span class="p">]</span>
 
-    <span class="o">//</span> <span class="n">mail</span> <span class="o">-</span> <span class="n">sms</span>
+    <span class="c1">// service backups</span>
+    <span class="n">facebook</span> <span class="o">-&gt;</span> <span class="n">thinkup</span>
+    <span class="n">twitter</span> <span class="o">-&gt;</span> <span class="n">thinkup</span>
+    <span class="n">foursquare</span> <span class="o">-&gt;</span> <span class="n">thinkup</span>
+    <span class="n">ttrss</span> <span class="o">-&gt;</span>  <span class="n">db_back</span>
+    <span class="n">videodb</span> <span class="o">-&gt;</span> <span class="n">db_back</span>
+    <span class="n">thinkup</span> <span class="o">-&gt;</span> <span class="n">db_back</span>
+    <span class="n">owncloud</span> <span class="o">-&gt;</span> <span class="n">html_back</span>
+    <span class="n">html_back</span> <span class="o">-&gt;</span> <span class="n">rsync_ovh</span>
+    <span class="n">db_back</span> <span class="o">-&gt;</span> <span class="n">rsync_ovh</span>
+
+    <span class="c1">// mail - sms</span>
     <span class="n">sms</span> <span class="o">-&gt;</span> <span class="n">gmail</span>
-    <span class="n">gmail</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="p">=</span><span class="n">both</span><span class="p">]</span>
-    <span class="n">ai</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="p">=</span><span class="n">both</span><span class="p">]</span>
-    <span class="n">riseup</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="p">=</span><span class="n">both</span><span class="p">]</span>
+    <span class="n">gmail</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="o">=</span><span class="n">both</span><span class="p">]</span>
+    <span class="n">ai</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="o">=</span><span class="n">both</span><span class="p">]</span>
+    <span class="n">riseup</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="o">=</span><span class="n">both</span><span class="p">]</span>
     <span class="n">offlineimap</span> <span class="o">-&gt;</span> <span class="n">mail</span>
+    <span class="n">mail</span> <span class="o">-&gt;</span> <span class="n">rsync</span> <span class="o">-&gt;</span> <span class="n">mail_back</span>
 
-    <span class="o">//</span> <span class="n">immagini</span>
-    <span class="n">immagini_hd1</span> <span class="o">-&gt;</span> <span class="n">rsync_off</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="n">dotted</span><span class="p">]</span>
-    <span class="n">rsync_off</span> <span class="o">-&gt;</span> <span class="n">immagini_hd2</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="n">dotted</span><span class="p">]</span>
-    <span class="n">immagini_hd1</span> <span class="o">-&gt;</span> <span class="n">webdav_edgar</span> <span class="o">-&gt;</span> <span class="n">rsync_on</span> <span class="o">-&gt;</span> <span class="n">boxnet1</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="n">dotted</span><span class="p">];</span>
-
-    <span class="o">//</span> <span class="n">video</span>
-    <span class="n">video_hd1</span> <span class="o">-&gt;</span> <span class="n">rsync_off</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="n">bold</span><span class="p">]</span>
-    <span class="n">rsync_off</span> <span class="o">-&gt;</span> <span class="n">video_hd2</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="n">bold</span><span class="p">]</span>
-    <span class="n">video_hd1</span> <span class="o">-&gt;</span> <span class="n">webdav_edgar</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="n">bold</span><span class="p">]</span>
-    <span class="n">webdav_edgar</span> <span class="o">-&gt;</span> <span class="n">rsync_on</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="n">bold</span><span class="p">]</span>
-    <span class="n">rsync_on</span> <span class="o">-&gt;</span> <span class="n">video4sh</span> <span class="p">[</span><span class="n">style</span><span class="p">=</span><span class="n">bold</span><span class="p">]</span>
-
-    <span class="o">//</span> <span class="n">musica</span>
-    <span class="n">musica_hd1</span> <span class="o">-&gt;</span> <span class="n">rsync_off</span>
-    <span class="n">rsync_off</span> <span class="o">-&gt;</span> <span class="n">musica_hd2</span>
-    <span class="n">musica_hd1</span> <span class="o">-&gt;</span> <span class="n">webdav_edgar</span> <span class="o">-&gt;</span> <span class="n">rsync_on</span>
-    <span class="n">rsync_on</span> <span class="o">-&gt;</span> <span class="n">boxnet2</span>
-    <span class="n">rsync_on</span> <span class="o">-&gt;</span> <span class="n">boxnet3</span>
-    <span class="n">rsync_on</span> <span class="o">-&gt;</span> <span class="n">music3</span>
-
-    <span class="o">//</span> <span class="n">libri</span>
-    <span class="n">books_hd1</span> <span class="o">-&gt;</span> <span class="n">rsync_off</span> <span class="o">-&gt;</span> <span class="n">books_hd2</span> <span class="p">[</span><span class="n">color</span><span class="p">=</span><span class="n">goldenrod</span><span class="p">]</span>
-    <span class="n">books_hd1</span> <span class="o">-&gt;</span> <span class="n">webdav_edgar</span> <span class="o">-&gt;</span> <span class="n">rsync_on</span> <span class="o">-&gt;</span> <span class="n">books4sh</span> <span class="p">[</span><span class="n">color</span><span class="p">=</span><span class="n">goldenrod</span><span class="p">]</span>
-
-    <span class="o">//</span> <span class="n">internet</span> <span class="n">services</span>
-    <span class="n">github</span> <span class="o">-&gt;</span> <span class="n">blog_pubwww</span> <span class="p">[</span><span class="n">color</span><span class="p">=</span><span class="n">forestgreen</span><span class="p">]</span>
-    <span class="n">backup_dir_ovh</span> <span class="o">-&gt;</span> <span class="n">aerofs</span> <span class="p">[</span><span class="n">color</span><span class="p">=</span><span class="n">forestgreen</span><span class="p">]</span>
-    <span class="n">backup_dir_paranoia</span> <span class="o">-&gt;</span> <span class="n">aerofs</span> <span class="p">[</span><span class="n">color</span><span class="p">=</span><span class="n">red</span><span class="p">]</span>
-    <span class="n">aerofs</span> <span class="o">-&gt;</span> <span class="n">serversbackup</span> <span class="p">[</span><span class="n">color</span><span class="p">=</span><span class="n">forestgreen</span><span class="p">]</span>
+    <span class="c1">// internet services</span>
+    <span class="n">github</span> <span class="o">-&gt;</span> <span class="n">blog_pubwww</span> <span class="p">[</span><span class="n">color</span><span class="o">=</span><span class="n">forestgreen</span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 
 
 <p>Qui si seguito, invece, i progetti a lungo&nbsp;termine:</p>
 <div class="codehilite"><pre><span class="n">digraph</span> <span class="n">G</span> <span class="p">{</span>
-    <span class="o">//</span> <span class="n"><span class="caps">TODO</span></span>
-    <span class="o">//</span> <span class="o">*</span> <span class="n">legend</span>
-    <span class="o">//</span> <span class="o">*</span> <span class="n">bold</span> <span class="n">cluster</span> <span class="n">labels</span>
-    <span class="n">graph</span> <span class="p">[</span> <span class="n">dpi</span> <span class="p">=</span> 300 <span class="p">];</span>
-    <span class="nb">size</span> <span class="p">=</span>&quot;4<span class="p">,</span>6&quot;<span class="p">;</span>    <span class="o">//</span> <span class="n">table</span> <span class="nb">size</span>
-    <span class="n">compound</span><span class="p">=</span><span class="n">true</span><span class="p">;</span>
-    <span class="n">ranksep</span><span class="p">=</span>&quot;1<span class="p">.</span>5&quot;
-    <span class="n">rankdir</span><span class="p">=</span>&quot;<span class="n"><span class="caps">LR</span></span>&quot;
+    <span class="c1">// <span class="caps">TODO</span></span>
+    <span class="c1">// * legend</span>
+    <span class="c1">// * bold cluster labels</span>
+    <span class="n">graph</span> <span class="p">[</span> <span class="n">dpi</span> <span class="o">=</span> <span class="mi">500</span> <span class="p">];</span>
+    <span class="n">size</span> <span class="o">=</span><span class="s">&quot;4,6&quot;</span><span class="p">;</span>    <span class="c1">// table size</span>
+    <span class="n">compound</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
+    <span class="n">ranksep</span><span class="o">=</span><span class="s">&quot;1.5&quot;</span>
+    <span class="n">rankdir</span><span class="o">=</span><span class="s">&quot;<span class="caps">LR</span>&quot;</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_edgar</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">lightgrey</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">edgar</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">lightgrey</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;edgar&quot;</span><span class="p">;</span>
 
-        <span class="o">//</span> <span class="n">boxes</span>
+        <span class="c1">// boxes</span>
         <span class="n">subgraph</span> <span class="n">cluster_drop</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">white</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Dropbox</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">white</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Dropbox&quot;</span><span class="p">;</span>
 
-            <span class="n">irssi</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="o">~/</span><span class="p">.</span><span class="n">irssi</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">rsnapshot</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">backup</span><span class="o">\</span><span class="n">ndir</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">irssi</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;~/.irssi&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">rsnapshot</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;backup</span><span class="se">\n</span><span class="s">dir&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
         <span class="p">}</span>
 
-        <span class="o">//</span> <span class="n">scripts</span> <span class="n">and</span> <span class="n">programs</span>
-        <span class="n">offlineimap</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">offlineimap</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">script_rsnapshot</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">rsnapshot</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">sync_owncloud</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">owncloud</span><span class="o">\</span><span class="n">nsync</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">firefox</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Firefox</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">subgraph</span> <span class="n">cluster_hd1</span> <span class="p">{</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">white</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;320 Gb&quot;</span><span class="p">;</span>
 
-        <span class="o">//</span> <span class="n">folders</span>
-        <span class="n">mail</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="o">~/</span><span class="p">.</span><span class="n">mail</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span>&quot;#008000&quot;<span class="p">]</span>
-        <span class="n">filesystem_edgar</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">filesystem</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">immagini_hd1</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;immagini&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">video_hd1</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;video&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">musica_hd1</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;musica&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">books_hd1</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;libri&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+        <span class="p">}</span>
+
+        <span class="c1">// scripts and programs</span>
+        <span class="n">offlineimap</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;offlineimap&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">script_rsnapshot</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;rsnapshot&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">rsync</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;rsync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">sync_owncloud</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;owncloud</span><span class="se">\n</span><span class="s">sync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">firefox</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Firefox&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+
+        <span class="c1">// folders</span>
+        <span class="n">mail</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;~/.mail&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="s">&quot;#008000&quot;</span><span class="p">]</span>
+        <span class="n">filesystem_edgar</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;filesystem&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_mail</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Mail</span> <span class="n">services</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Mail services&quot;</span><span class="p">;</span>
 
-        <span class="n">ai</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">A</span><span class="o">/</span><span class="n">I</span> <span class="o">\</span><span class="n">nmail</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span>&quot;#808000&quot;<span class="p">]</span>
-        <span class="n">gmail</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Gmail</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">]</span>
-        <span class="n">riseup</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Riseup</span> <span class="o">\</span><span class="n">nmail</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span>&quot;#808000&quot;<span class="p">]</span>
+        <span class="n">ai</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;A/I </span><span class="se">\n</span><span class="s">mail&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="s">&quot;#808000&quot;</span><span class="p">]</span>
+        <span class="n">gmail</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Gmail&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">box3d</span><span class="p">]</span>
+        <span class="n">riseup</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Riseup </span><span class="se">\n</span><span class="s">mail&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">box3d</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="s">&quot;#808000&quot;</span><span class="p">]</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_services</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Internet</span> <span class="n">services</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Internet services&quot;</span><span class="p">;</span>
 
-        <span class="n">github</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">GitHub</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">ffsync</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Firefox</span><span class="o">\</span><span class="n">nSync</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">librefm</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Libre</span><span class="p">.</span><span class="n">fm</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">github</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;GitHub&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">ffsync</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Firefox</span><span class="se">\n</span><span class="s">Sync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">librefm</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Libre.fm&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">facebook</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Facebook&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">twitter</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Twitter&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">foursquare</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Foursquare&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">brdcstit</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;brdcst.it&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_hosting</span><span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Hosting</span> <span class="n">services</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Hosting services&quot;</span><span class="p">;</span>
 
         <span class="n">subgraph</span> <span class="n">cluster_droponline</span><span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">blue</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Dropbox</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">blue</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Dropbox&quot;</span><span class="p">;</span>
 
-            <span class="n">irssidrop</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="o">~/</span><span class="p">.</span><span class="n">irssi</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
-            <span class="n">rsnapshot_edgar_drop</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">backup</span><span class="o">\</span><span class="n">nedgar</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">]</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="n">subgraph</span> <span class="n">cluster_ext_storage</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">lightgrey</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">External</span> <span class="o">\</span><span class="n">nstorage</span>&quot;<span class="p">;</span>
-
-        <span class="o">//</span> <span class="n">hds</span>
-        <span class="n">subgraph</span> <span class="n">cluster_hd1</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">white</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;320 <span class="n">Gb</span>&quot;<span class="p">;</span>
-
-            <span class="n">immagini_hd1</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">immagini</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">video_hd1</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">video</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">musica_hd1</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">musica</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">books_hd1</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">libri</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">irssidrop</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;~/.irssi&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="n">green</span><span class="p">]</span>
+            <span class="n">rsnapshot_edgar_drop</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;backup</span><span class="se">\n</span><span class="s">edgar</span><span class="se">\n</span><span class="s">ovh</span><span class="se">\n</span><span class="s">paranoia</span><span class="se">\n</span><span class="s">rpi&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="n">green</span><span class="p">]</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_paranoia</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">yellow</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">paranoia</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">yellow</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;server 1</span><span class="se">\n</span><span class="s">paranoia&quot;</span><span class="p">;</span>
 
-        <span class="n">rsnapshot_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">rsnapshot</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">rsync_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;rsync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
 
-        <span class="n">filesystem_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">filesystem</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-        <span class="n">backup_dir_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">backup</span> <span class="o">\</span><span class="n">ndir</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+        <span class="n">filesystem_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;filesystem&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
 
         <span class="n">subgraph</span> <span class="n">cluster_pubwww_paranoia</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Public</span> <span class="n">www</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Public www&quot;</span><span class="p">;</span>
 
-            <span class="n">blog_pubwww</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">blog</span><span class="o">|</span><span class="n">site</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">others_pubwww_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">others</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">blog_pubwww</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;blog|site&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">others_pubwww_paranoia</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;others&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
         <span class="p">}</span>
 
-        <span class="n">filesystem_paranoia</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_paranoia</span> <span class="o">-&gt;</span> <span class="n">backup_dir_paranoia</span>
-        <span class="n">others_pubwww_paranoia</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_paranoia</span>
+        <span class="n">filesystem_paranoia</span> <span class="o">-&gt;</span> <span class="n">rsync_paranoia</span> <span class="o">-&gt;</span> <span class="n">script_rsnapshot</span>
+        <span class="n">others_pubwww_paranoia</span> <span class="o">-&gt;</span> <span class="n">rsync_paranoia</span>
+    <span class="p">}</span>
+
+    <span class="n">subgraph</span> <span class="n">cluster_sgagliozza</span> <span class="p">{</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">cyan</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;server3</span><span class="se">\n</span><span class="s">sgagliozza&quot;</span><span class="p">;</span>
+
+        <span class="n">rsync_sgagliozza</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;rsync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+
+        <span class="n">filesystem_sgagliozza</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;filesystem&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+
+        <span class="n">subgraph</span> <span class="n">cluster_pubwww_sgagliozza</span> <span class="p">{</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Public www&quot;</span><span class="p">;</span>
+
+            <span class="n">thblog_pubwww</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;th blog&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+        <span class="p">}</span>
+
+        <span class="n">filesystem_sgagliozza</span> <span class="o">-&gt;</span> <span class="n">rsync_sgagliozza</span> <span class="o">-&gt;</span> <span class="n">script_rsnapshot</span>
+        <span class="n">thblog_pubwww</span> <span class="o">-&gt;</span> <span class="n">rsync_sgagliozza</span>
+
+        <span class="n">mail_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;mail</span><span class="se">\n</span><span class="s">backup&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">,</span><span class="n">fillcolor</span><span class="o">=</span><span class="n">green</span><span class="p">]</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_ovh</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">orange</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">ovh</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">orange</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;server 2</span><span class="se">\n</span><span class="s"> ovh&quot;</span><span class="p">;</span>
 
-        <span class="n">rsnapshot_ovh</span><span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">rsnapshot</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">filesystem_ovh</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">filesystem</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-        <span class="n">backup_dir_ovh</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">backup</span> <span class="o">\</span><span class="n">ndir</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+        <span class="n">rsync_ovh</span><span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;rsync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">filesystem_ovh</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;filesystem&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
 
         <span class="n">subgraph</span> <span class="n">cluster_pubwww_ovh</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Public</span> <span class="n">www</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Public www&quot;</span><span class="p">;</span>
 
-            <span class="n">others_pubwww_ovh</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">others</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">others_pubwww_ovh</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;others&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
         <span class="p">}</span>
 
-        <span class="n">filesystem_ovh</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_ovh</span> <span class="o">-&gt;</span> <span class="n">backup_dir_ovh</span>
-        <span class="n">others_pubwww_ovh</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_ovh</span> <span class="p">[</span><span class="n">ltail</span><span class="p">=</span><span class="n">cluster_pubwww_ovh</span><span class="p">]</span>
+        <span class="n">filesystem_ovh</span> <span class="o">-&gt;</span> <span class="n">rsync_ovh</span> <span class="o">-&gt;</span> <span class="n">script_rsnapshot</span>
+        <span class="n">others_pubwww_ovh</span> <span class="o">-&gt;</span> <span class="n">rsync_ovh</span> <span class="p">[</span><span class="n">ltail</span><span class="o">=</span><span class="n">cluster_pubwww_ovh</span><span class="p">]</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_rpi</span><span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">brown</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">RPi</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">brown</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;RPi&quot;</span><span class="p">;</span>
 
-        <span class="n">sync_owncloud</span> <span class="o">-&gt;</span> <span class="n">owncloud</span> <span class="p">[</span><span class="n">color</span><span class="p">=</span><span class="n">blue</span><span class="p">]</span>
-        <span class="n">lastexport</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">lastexport</span><span class="p">.</span><span class="n">py</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">sync_owncloud</span> <span class="o">-&gt;</span> <span class="n">owncloud</span> <span class="p">[</span><span class="n">color</span><span class="o">=</span><span class="n">blue</span><span class="p">]</span>
+        <span class="n">lastexport</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;lastexport.py&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+
+        <span class="n">rsync_rpi</span><span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;rsync&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">filesystem_rpi</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;filesystem&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
 
         <span class="n">subgraph</span> <span class="n">cluster_pubwww_rpi</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">=</span><span class="n">lightblue</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Public</span> <span class="n">www</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">lightblue</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Public www&quot;</span><span class="p">;</span>
 
-            <span class="n">owncloud</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">owncloud</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-            <span class="n">ttrss</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n"><span class="caps">TT</span></span><span class="o">-</span><span class="n"><span class="caps">RSS</span></span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-            <span class="n">videodb</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">VideoDB</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
+            <span class="n">owncloud</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;owncloud&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+            <span class="n">ttrss</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;<span class="caps">TT</span>-<span class="caps">RSS</span>&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+            <span class="n">videodb</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;VideoDB&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+            <span class="n">thinkup</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;ThinkUp&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
         <span class="p">}</span>
 
-        <span class="o">//</span> <span class="n">owncloud</span> <span class="n">backups</span>
+        <span class="c1">// owncloud backups</span>
         <span class="n">subgraph</span> <span class="n">cluster_owncloud_backup</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">synced</span> <span class="n">owncloud</span> <span class="o">\</span><span class="n">nbackups</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">fillcolor</span><span class="o">=</span><span class="n">green</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;synced owncloud </span><span class="se">\n</span><span class="s">backups&quot;</span><span class="p">;</span>
 
-            <span class="n">immagini_back</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">immagini</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">video_back</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">video</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">musica_back</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">musica</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">books_back</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">libri</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">immagini_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;immagini&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">video_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;video&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">musica_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;musica&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">books_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;libri&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
         <span class="p">}</span>
 
-        <span class="o">//</span> <span class="n">other</span> <span class="n">backups</span>
+        <span class="c1">// other backups</span>
         <span class="n">subgraph</span> <span class="n">cluster_backup</span> <span class="p">{</span>
-            <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-            <span class="n">fillcolor</span><span class="p">=</span><span class="n">green</span><span class="p">;</span>
-            <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">backups</span>&quot;<span class="p">;</span>
+            <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+            <span class="n">fillcolor</span><span class="o">=</span><span class="n">green</span><span class="p">;</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;backups&quot;</span><span class="p">;</span>
 
-            <span class="n">server_back</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">server</span><span class="o">\</span><span class="n">nbackups</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
-            <span class="n">service_back</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">services</span><span class="o">\</span><span class="n">nbackups</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">data_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;data</span><span class="se">\n</span><span class="s">backups&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">db_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;db</span><span class="se">\n</span><span class="s">backups&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
+            <span class="n">html_back</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;html</span><span class="se">\n</span><span class="s">backups&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">folder</span><span class="p">]</span>
         <span class="p">}</span>
+
+        <span class="n">filesystem_rpi</span> <span class="o">-&gt;</span> <span class="n">rsync_rpi</span> <span class="o">-&gt;</span> <span class="n">script_rsnapshot</span>
+        <span class="n">data_back</span> <span class="o">-&gt;</span> <span class="n">rsync_rpi</span>
+        <span class="n">db_back</span> <span class="o">-&gt;</span> <span class="n">rsync_rpi</span>
+        <span class="n">html_back</span> <span class="o">-&gt;</span> <span class="n">rsync_rpi</span>
     <span class="p">}</span>
 
     <span class="n">subgraph</span> <span class="n">cluster_android</span> <span class="p">{</span>
-        <span class="n">style</span><span class="p">=</span><span class="n">filled</span><span class="p">;</span>
-        <span class="n">color</span><span class="p">=</span><span class="n">pink</span><span class="p">;</span>
-        <span class="n">label</span> <span class="p">=</span> &quot;<span class="n">Android</span>&quot;<span class="p">;</span>
+        <span class="n">style</span><span class="o">=</span><span class="n">filled</span><span class="p">;</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">pink</span><span class="p">;</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s">&quot;Android&quot;</span><span class="p">;</span>
 
-        <span class="n">sms</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Android</span> <span class="o">\</span><span class="n">nSMS</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">box3d</span><span class="p">]</span>
-        <span class="n">calendar</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">calendar</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">contacts</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">contacts</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">ff_mobile</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Firefox</span><span class="o">\</span><span class="n">nmobile</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
-        <span class="n">chatmobile</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Gtalk</span><span class="o">\</span><span class="n">nmobile</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">]</span>
-        <span class="n">ttrssmobile</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n"><span class="caps">TT</span></span><span class="o">-</span><span class="n"><span class="caps">RSS</span></span><span class="o">\</span><span class="n">nmobile</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">sms</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Android </span><span class="se">\n</span><span class="s"><span class="caps">SMS</span>&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">box3d</span><span class="p">]</span>
+        <span class="n">calendar</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;calendar&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">contacts</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;contacts&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">ff_mobile</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Firefox</span><span class="se">\n</span><span class="s">mobile&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
+        <span class="n">chatmobile</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Gtalk</span><span class="se">\n</span><span class="s">mobile&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">egg</span><span class="p">]</span>
+        <span class="n">ttrssmobile</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;<span class="caps">TT</span>-<span class="caps">RSS</span></span><span class="se">\n</span><span class="s">mobile&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">component</span><span class="p">]</span>
     <span class="p">}</span>
 
-    <span class="n">pings</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">pings</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">]</span>
-    <span class="n">chat</span> <span class="p">[</span><span class="n">label</span><span class="p">=</span>&quot;<span class="n">Gtalk</span><span class="o">\</span><span class="n">ndesktop</span><span class="o">|</span><span class="n">web</span><span class="o">\</span><span class="n">nlogs</span>&quot;<span class="p">,</span><span class="n">shape</span><span class="p">=</span><span class="n">egg</span><span class="p">]</span>
+    <span class="n">pings</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;pings&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">egg</span><span class="p">]</span>
+    <span class="n">chat</span> <span class="p">[</span><span class="n">label</span><span class="o">=</span><span class="s">&quot;Gtalk</span><span class="se">\n</span><span class="s">desktop|web</span><span class="se">\n</span><span class="s">logs&quot;</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="n">egg</span><span class="p">]</span>
 
-    <span class="o">//</span> ## <span class="n">bindings</span> ##
+    <span class="c1">// ## bindings ##</span>
 
-    <span class="o">//</span> <span class="n">chat</span>
-    <span class="n">irssidrop</span> <span class="o">-&gt;</span> <span class="n">irssi</span> <span class="p">[</span><span class="n">dir</span><span class="p">=</span><span class="n">both</span><span class="p">]</span>
+    <span class="c1">// chat</span>
+    <span class="n">irssidrop</span> <span class="o">-&gt;</span> <span class="n">irssi</span> <span class="p">[</span><span class="n">dir</span><span class="o">=</span><span class="n">both</span><span class="p">]</span>
     <span class="n">pings</span> <span class="o">-&gt;</span> <span class="n">riseup</span>
     <span class="n">chat</span> <span class="o">-&gt;</span> <span class="n">gmail</span>
     <span class="n">chatmobile</span> <span class="o">-&gt;</span> <span class="n">gmail</span>
 
-    <span class="o">//</span> <span class="n">android</span>
-    <span class="n">owncloud</span> <span class="o">-&gt;</span> <span class="n">calendar</span> <span class="p">[</span><span class="n">dir</span><span class="p">=</span><span class="n">both</span><span class="p">]</span>
-    <span class="n">owncloud</span> <span class="o">-&gt;</span> <span class="n">contacts</span> <span class="p">[</span><span class="n">dir</span><span class="p">=</span><span class="n">both</span><span class="p">]</span>
+    <span class="c1">// android</span>
+    <span class="n">owncloud</span> <span class="o">-&gt;</span> <span class="n">calendar</span> <span class="p">[</span><span class="n">dir</span><span class="o">=</span><span class="n">both</span><span class="p">]</span>
+    <span class="n">owncloud</span> <span class="o">-&gt;</span> <span class="n">contacts</span> <span class="p">[</span><span class="n">dir</span><span class="o">=</span><span class="n">both</span><span class="p">]</span>
     <span class="n">firefox</span> <span class="o">-&gt;</span> <span class="n">ffsync</span> <span class="o">-&gt;</span> <span class="n">ff_mobile</span>
     <span class="n">ttrss</span> <span class="o">-&gt;</span> <span class="n">ttrssmobile</span>
 
-    <span class="o">//</span> <span class="n">server</span> <span class="n">backups</span>
-    <span class="n">filesystem_edgar</span> <span class="o">-&gt;</span> <span class="n">script_rsnapshot</span> <span class="o">-&gt;</span> <span class="n">rsnapshot</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_edgar_drop</span> <span class="p">[</span><span class="n">color</span><span class="p">=</span><span class="n">forestgreen</span><span class="p">]</span>
-    <span class="n">backup_dir_ovh</span> <span class="o">-&gt;</span> <span class="n">server_back</span>
-    <span class="n">backup_dir_paranoia</span> <span class="o">-&gt;</span> <span class="n">server_back</span>
+    <span class="c1">// server backups</span>
+    <span class="n">filesystem_edgar</span> <span class="o">-&gt;</span> <span class="n">script_rsnapshot</span> <span class="o">-&gt;</span> <span class="n">rsnapshot</span> <span class="o">-&gt;</span> <span class="n">rsnapshot_edgar_drop</span> <span class="p">[</span><span class="n">color</span><span class="o">=</span><span class="n">forestgreen</span><span class="p">]</span>
 
-    <span class="o">//</span> <span class="n">service</span> <span class="n">backups</span>
-    <span class="n">github</span> <span class="o">-&gt;</span> <span class="n">service_back</span>
-    <span class="n">librefm</span> <span class="o">-&gt;</span> <span class="n">lastexport</span> <span class="o">-&gt;</span> <span class="n">service_back</span>
-    <span class="n">ttrss</span> <span class="o">-&gt;</span> <span class="n">service_back</span>
-    <span class="n">videodb</span> <span class="o">-&gt;</span> <span class="n">service_back</span>
+    <span class="c1">// service backups</span>
+    <span class="n">github</span> <span class="o">-&gt;</span> <span class="n">data_back</span>
+    <span class="n">librefm</span> <span class="o">-&gt;</span> <span class="n">lastexport</span> <span class="o">-&gt;</span> <span class="n">data_back</span>
+    <span class="n">facebook</span> <span class="o">-&gt;</span> <span class="n">thinkup</span>
+    <span class="n">twitter</span> <span class="o">-&gt;</span> <span class="n">thinkup</span>
+    <span class="n">foursquare</span> <span class="o">-&gt;</span> <span class="n">thinkup</span>
+    <span class="n">ttrss</span> <span class="o">-&gt;</span> <span class="n">db_back</span>
+    <span class="n">videodb</span> <span class="o">-&gt;</span> <span class="n">db_back</span>
+    <span class="n">thinkup</span> <span class="o">-&gt;</span> <span class="n">db_back</span>
+    <span class="n">owncloud</span> <span class="o">-&gt;</span> <span class="n">html_back</span>
 
-    <span class="o">//</span> <span class="n">mail</span> <span class="o">-</span> <span class="n">sms</span>
+    <span class="c1">// mail - sms</span>
     <span class="n">sms</span> <span class="o">-&gt;</span> <span class="n">gmail</span>
-    <span class="n">gmail</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="p">=</span><span class="n">both</span><span class="p">]</span>
-    <span class="n">ai</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="p">=</span><span class="n">both</span><span class="p">]</span>
-    <span class="n">riseup</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="p">=</span><span class="n">both</span><span class="p">]</span>
+    <span class="n">gmail</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="o">=</span><span class="n">both</span><span class="p">]</span>
+    <span class="n">ai</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="o">=</span><span class="n">both</span><span class="p">]</span>
+    <span class="n">riseup</span> <span class="o">-&gt;</span> <span class="n">offlineimap</span> <span class="p">[</span><span class="n">dir</span><span class="o">=</span><span class="n">both</span><span class="p">]</span>
     <span class="n">offlineimap</span> <span class="o">-&gt;</span> <span class="n">mail</span>
+    <span class="n">mail</span> <span class="o">-&gt;</span> <span class="n">rsync</span> <span class="o">-&gt;</span> <span class="n">mail_back</span>
 
-    <span class="o">//</span> <span class="n">immagini</span>
+    <span class="c1">// immagini</span>
     <span class="n">immagini_hd1</span> <span class="o">-&gt;</span> <span class="n">sync_owncloud</span>
     <span class="n">owncloud</span> <span class="o">-&gt;</span> <span class="n">immagini_back</span>
 
-    <span class="o">//</span> <span class="n">video</span>
+    <span class="c1">// video</span>
     <span class="n">video_hd1</span> <span class="o">-&gt;</span> <span class="n">sync_owncloud</span>
     <span class="n">owncloud</span> <span class="o">-&gt;</span> <span class="n">video_back</span>
 
-    <span class="o">//</span> <span class="n">musica</span>
+    <span class="c1">// musica</span>
     <span class="n">musica_hd1</span> <span class="o">-&gt;</span> <span class="n">sync_owncloud</span>
     <span class="n">owncloud</span> <span class="o">-&gt;</span> <span class="n">musica_back</span>
 
-    <span class="o">//</span> <span class="n">libri</span>
+    <span class="c1">// libri</span>
     <span class="n">books_hd1</span> <span class="o">-&gt;</span> <span class="n">sync_owncloud</span>
     <span class="n">owncloud</span> <span class="o">-&gt;</span> <span class="n">books_back</span>
 
-    <span class="o">//</span> <span class="n">internet</span> <span class="n">services</span>
-    <span class="n">github</span> <span class="o">-&gt;</span> <span class="n">blog_pubwww</span> <span class="p">[</span><span class="n">color</span><span class="p">=</span><span class="n">forestgreen</span><span class="p">]</span>
+    <span class="c1">// internet services</span>
+    <span class="n">github</span> <span class="o">-&gt;</span> <span class="n">blog_pubwww</span> <span class="p">[</span><span class="n">color</span><span class="o">=</span><span class="n">forestgreen</span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div></article>
 <div id="disqus_thread"></div>

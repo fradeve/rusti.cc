@@ -98,7 +98,7 @@ cambiando la&nbsp;riga</p>
 </li>
 </ul>
 <p>in </p>
-<div class="codehilite"><pre><span class="o">&lt;</span><span class="n">downloadUrl</span> <span class="n">protocol</span><span class="p">=</span>&quot;<span class="n">http</span>&quot; <span class="n">host</span><span class="p">=</span>&quot;<span class="n">a</span><span class="p">.</span><span class="n">tile</span><span class="p">.</span><span class="n">openstreetmap</span><span class="p">.</span><span class="n">org</span>&quot; <span class="n">path</span><span class="p">=</span>&quot;<span class="o">/</span>&quot;  <span class="o">/&gt;</span>
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="n">downloadUrl</span> <span class="n">protocol</span><span class="o">=</span><span class="s">&quot;http&quot;</span> <span class="n">host</span><span class="o">=</span><span class="s">&quot;a.tile.openstreetmap.org&quot;</span> <span class="n">path</span><span class="o">=</span><span class="s">&quot;/&quot;</span>  <span class="o">/&gt;</span>
 </pre></div>
 
 
@@ -114,8 +114,8 @@ cambiando la&nbsp;riga</p>
 </li>
 <li>
 <p>Nel comando che segue, selezioniamo la risoluzione che ci interessa&nbsp;ottenere:</p>
-<div class="codehilite"><pre><span class="n">Xvfb</span> <span class="o">-</span><span class="n">ac</span> <span class="p">:</span>1 <span class="o">-</span><span class="n">fbdir</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">marblefb</span> <span class="o">-</span><span class="n">screen</span> 0 4096<span class="n">x4096x24</span>
-<span class="n">x11vnc</span> <span class="o">-</span><span class="n">scale</span> <span class="p">.</span>5 <span class="o">-</span><span class="n">display</span> <span class="p">:</span>1
+<div class="codehilite"><pre><span class="n">Xvfb</span> <span class="o">-</span><span class="n">ac</span> <span class="o">:</span><span class="mi">1</span> <span class="o">-</span><span class="n">fbdir</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">marblefb</span> <span class="o">-</span><span class="n">screen</span> <span class="mi">0</span> <span class="mi">4096</span><span class="n">x4096x24</span>
+<span class="n">x11vnc</span> <span class="o">-</span><span class="n">scale</span> <span class="mf">.5</span> <span class="o">-</span><span class="n">display</span> <span class="o">:</span><span class="mi">1</span>
 </pre></div>
 
 
@@ -123,8 +123,8 @@ cambiando la&nbsp;riga</p>
 <li>
 <p>Apriamo una finestra vuota e visualizziamo Marble, sostituendo nel secondo
 comando qualsiasi risoluzione abbiamo scelto di&nbsp;adottare:</p>
-<div class="codehilite"><pre><span class="n">vncviewer</span> <span class="n">localhost</span> <span class="p">:</span>0
-<span class="n"><span class="caps">DISPLAY</span></span><span class="p">=:</span>1 <span class="n">marble</span> <span class="o">-</span><span class="n">geometry</span> 4096<span class="n">x4096</span><span class="o">+</span>0<span class="o">+</span>0
+<div class="codehilite"><pre><span class="n">vncviewer</span> <span class="n">localhost</span> <span class="o">:</span><span class="mi">0</span>
+<span class="n"><span class="caps">DISPLAY</span></span><span class="o">=:</span><span class="mi">1</span> <span class="n">marble</span> <span class="o">-</span><span class="n">geometry</span> <span class="mi">4096</span><span class="n">x4096</span><span class="o">+</span><span class="mi">0</span><span class="o">+</span><span class="mi">0</span>
 </pre></div>
 
 

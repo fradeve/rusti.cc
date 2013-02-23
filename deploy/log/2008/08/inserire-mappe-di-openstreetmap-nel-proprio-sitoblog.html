@@ -106,10 +106,10 @@ var map; //complex object of type OpenLayers.Map
 function init() {
 
 map = new OpenLayers.Map (&quot;map&quot;, {
-controls:[
-new OpenLayers.Control.Navigation(),
-new OpenLayers.Control.PanZoomBar(),
-new OpenLayers.Control.Attribution()],
+controls:<span class="cp">[</span>
+<span class="nb">new</span> <span class="nx">OpenLayers.Control.Navigation</span><span class="p">(),</span>
+<span class="nb">new</span> <span class="nx">OpenLayers.Control.PanZoomBar</span><span class="p">(),</span>
+<span class="nb">new</span> <span class="nx">OpenLayers.Control.Attribution</span><span class="p">()</span><span class="cp">]</span>,
 maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34),
 maxResolution: 156543.0399,
 numZoomLevels: 19,
@@ -161,10 +161,10 @@ default, dal [sito][3], cliccando su &#8220;permalink&#8221; in basso a destra d
 cercato la città o la regione di interesse e lo zoom gradito e copiando il
 nuovo indirizzo che nel frattempo sarà comparso nella barra del browser. Le
 coordinate e lo zoom vanno inserite in questo punto del file&nbsp;html:</p>
-<div class="codehilite"><pre><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="p">=</span>&quot;<span class="n">text</span><span class="o">/</span><span class="n">javascript</span>&quot;<span class="o">&gt;</span>
-<span class="n">var</span> <span class="n">lat</span><span class="p">=</span>41<span class="p">.</span>12925
-<span class="n">var</span> <span class="n">lon</span><span class="p">=</span>16<span class="p">.</span>5449
-<span class="n">var</span> <span class="n">zoom</span><span class="p">=</span>15
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+<span class="n">var</span> <span class="n">lat</span><span class="o">=</span><span class="mf">41.12925</span>
+<span class="n">var</span> <span class="n">lon</span><span class="o">=</span><span class="mf">16.5449</span>
+<span class="n">var</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">15</span>
 </pre></div>
 
 
@@ -184,7 +184,7 @@ coordinate e lo zoom vanno inserite in questo punto del file&nbsp;html:</p>
 
 
 <p>In questo script è implementato solo il layer di Osmarender (il software di rendering open source nato in casa OpenStreetMap e utilizzato dal progetto di rendering distribuito&nbsp;tiles@home):</p>
-<div class="codehilite"><pre><span class="n">layerTilesAtHome</span> <span class="p">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">Osmarender</span><span class="p">(</span>&quot;<span class="n">Osmarender</span>&quot;<span class="p">);</span>
+<div class="codehilite"><pre><span class="n">layerTilesAtHome</span> <span class="o">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">Osmarender</span><span class="p">(</span><span class="s">&quot;Osmarender&quot;</span><span class="p">);</span>
 <span class="n">map</span><span class="p">.</span><span class="n">addLayer</span><span class="p">(</span><span class="n">layerTilesAtHome</span><span class="p">);</span>
 </pre></div>
 
@@ -195,11 +195,11 @@ coordinate e lo zoom vanno inserite in questo punto del file&nbsp;html:</p>
 <li>CycleMap (la mappa con le isoipse utili ai&nbsp;ciclisti)</li>
 </ul>
 <p>Per aggiungere gli altri due layer è necessario modificare il codice precedente in questo&nbsp;modo:</p>
-<div class="codehilite"><pre><span class="n">layerTilesAtHome</span> <span class="p">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">Osmarender</span><span class="p">(</span>&quot;<span class="n">Osmarender</span>&quot;<span class="p">);</span>
+<div class="codehilite"><pre><span class="n">layerTilesAtHome</span> <span class="o">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">Osmarender</span><span class="p">(</span><span class="s">&quot;Osmarender&quot;</span><span class="p">);</span>
 <span class="n">map</span><span class="p">.</span><span class="n">addLayer</span><span class="p">(</span><span class="n">layerTilesAtHome</span><span class="p">);</span>
-<span class="n">layerMapnik</span> <span class="p">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">Mapnik</span><span class="p">(</span>&quot;<span class="n">Mapnik</span>&quot;<span class="p">);</span>
+<span class="n">layerMapnik</span> <span class="o">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">Mapnik</span><span class="p">(</span><span class="s">&quot;Mapnik&quot;</span><span class="p">);</span>
 <span class="n">map</span><span class="p">.</span><span class="n">addLayer</span><span class="p">(</span><span class="n">layerMapnik</span><span class="p">);</span>
-<span class="n">layerCycleMap</span> <span class="p">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">CycleMap</span><span class="p">(</span>&quot;<span class="n">CycleMap</span>&quot;<span class="p">);</span>
+<span class="n">layerCycleMap</span> <span class="o">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n"><span class="caps">OSM</span></span><span class="p">.</span><span class="n">CycleMap</span><span class="p">(</span><span class="s">&quot;CycleMap&quot;</span><span class="p">);</span>
 <span class="n">map</span><span class="p">.</span><span class="n">addLayer</span><span class="p">(</span><span class="n">layerCycleMap</span><span class="p">);</span>
 </pre></div>
 

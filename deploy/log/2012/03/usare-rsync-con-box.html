@@ -98,7 +98,7 @@
 
 
 <p>Aggiungere l&#8217;utente che utilizzerà DavFS2 al gruppo&nbsp;omonimo:</p>
-<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">adduser</span> $<span class="n"><span class="caps">USER</span></span> <span class="n">davfs2</span>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">adduser</span> <span class="err">$</span><span class="n"><span class="caps">USER</span></span> <span class="n">davfs2</span>
 </pre></div>
 
 
@@ -110,12 +110,12 @@
 <p>inserire la seguente riga in <code>/etc/fstab</code>:
 <!-- inserire la seguente riga in <code>/etc/fstab</code>, sostituendo al posto di <code>1000</code> in <code>uid</code> e <code>gid</code> l&#8217;userid e il groupid dell&#8217;utente che accederà alla Box: &#8212;>
 <!-- https://www.box.com/dav /media/box davfs rw,suid,dev,exec,noauto,nouser,async,uid=1000,gid=1000 0 0 --></p>
-<div class="codehilite"><pre><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">box</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">dav</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span>      <span class="n">davfs</span>   <span class="n">noauto</span><span class="p">,</span><span class="n">user</span>   0   0
+<div class="codehilite"><pre><span class="nl">https:</span><span class="c1">//www.box.com/dav /media/box      davfs   noauto,user   0   0</span>
 </pre></div>
 
 
 <p>Il file <code>/etc/davfs2/davfs2.conf</code> contiene le impostazioni valide per tutto il sistema; decommentare la seguente&nbsp;riga:</p>
-<div class="codehilite"><pre>    <span class="n">use_locks</span>       0
+<div class="codehilite"><pre>    <span class="n">use_locks</span>       <span class="mi">0</span>
 </pre></div>
 
 
@@ -127,13 +127,13 @@
 
 <p>Per evitare di dover inserire ogni volta le credenziali di accesso alla Box in fase di mount, creare il file <code>secrets</code>, attribuirgli i permessi corretti (<code>600</code>)</p>
 <div class="codehilite"><pre><span class="n">sudo</span> <span class="n">cp</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">davfs2</span><span class="o">/</span><span class="n">secrets</span> <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span>
-<span class="n">sudo</span> <span class="n">chown</span> $<span class="n"><span class="caps">USER</span></span> <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span><span class="o">/</span><span class="n">secrets</span>
-<span class="n">sudo</span> <span class="n">chmod</span> 600 <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span><span class="o">/</span><span class="n">secrets</span>
+<span class="n">sudo</span> <span class="n">chown</span> <span class="err">$</span><span class="n"><span class="caps">USER</span></span> <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span><span class="o">/</span><span class="n">secrets</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">600</span> <span class="o">~/</span><span class="p">.</span><span class="n">davfs2</span><span class="o">/</span><span class="n">secrets</span>
 </pre></div>
 
 
 <p>ed inserirvi i dati di&nbsp;accesso</p>
-<div class="codehilite"><pre><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span>  <span class="n">user</span><span class="p">@</span><span class="n">email</span><span class="p">.</span><span class="n">com</span>  <span class="n">password</span>
+<div class="codehilite"><pre><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span>  <span class="n">user</span><span class="err">@</span><span class="n">email</span><span class="p">.</span><span class="n">com</span>  <span class="n">password</span>
 </pre></div>
 
 
@@ -143,8 +143,8 @@
 
 
 <p>Possiamo dotarci di <em>alias</em> in <code>~/.bashrc</code> per montare e smontare rapidamente la Box (ricordando di dare un <code>source ~/.bashrc</code> per rendere operativi gli&nbsp;alias):</p>
-<div class="codehilite"><pre><span class="n">alias</span> <span class="n">boxmount</span><span class="p">=</span><span class="s">&#39;mount /media/box&#39;</span>
-<span class="n">alias</span> <span class="n">boxumount</span><span class="p">=</span><span class="s">&#39;umount /media/box&#39;</span>
+<div class="codehilite"><pre><span class="n">alias</span> <span class="n">boxmount</span><span class="o">=</span><span class="err">&#39;</span><span class="n">mount</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="err">&#39;</span>
+<span class="n">alias</span> <span class="n">boxumount</span><span class="o">=</span><span class="err">&#39;</span><span class="n">umount</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="err">&#39;</span>
 </pre></div>
 
 
@@ -159,8 +159,8 @@
 <li><em>media/box.backup</em>: la cartella in cui riverseremo i nostri dati da backuppare, collegata a <code>box.encfs</code></li>
 </ul>
 <p>Installare EncFS ed aggiungere il proprio utente al gruppo <code>fuse</code></p>
-<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">encfs</span>
-<span class="n">sudo</span> <span class="n">addgroup</span> <span class="o">&lt;</span><span class="n"><span class="caps">USER</span></span><span class="o">&gt;</span> <span class="n">fuse</span>
+<div class="codehilite"><pre><span class="nx">sudo</span> <span class="nx">apt</span><span class="na">-get</span> <span class="nb">install</span> <span class="nx">encfs</span>
+<span class="nx">sudo</span> <span class="nb">addgroup</span> <span class="o">&lt;</span><span class="nb"><span class="caps">USER</span></span><span class="o">&gt;</span> <span class="nx">fuse</span>
 </pre></div>
 
 
@@ -170,8 +170,8 @@
 
 
 <p>creare la cartella che conterrà il filesystem criptato, sistemare i permessi (sostituire ad <code>&lt;USER&gt;</code> il proprio nome utente sulla&nbsp;macchina)</p>
-<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span>
-<span class="n">sudo</span> <span class="n">chown</span> <span class="o">&lt;</span><span class="n"><span class="caps">USER</span></span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n"><span class="caps">USER</span></span><span class="o">&gt;</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span>
+<div class="codehilite"><pre><span class="nx">sudo</span> <span class="nx">mkdir</span> <span class="p">/</span><span class="nb">media</span><span class="p">/</span><span class="nx">box.encfs</span>
+<span class="nx">sudo</span> <span class="nb">chown</span> <span class="o">&lt;</span><span class="nb"><span class="caps">USER</span></span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="nb"><span class="caps">USER</span></span><span class="o">&gt;</span> <span class="p">/</span><span class="nb">media</span><span class="p">/</span><span class="nx">box.encfs</span>
 </pre></div>
 
 
@@ -184,23 +184,23 @@
 <p>durante la creazione, ci verranno chieste informazioni relative al sistema di cifratura; consiglio di selezionare l&#8217;opzione di default. Al termine della procedura, il filesystem criptato sarà attivo nella nostra&nbsp;Box.</p>
 <h2 id="3-installare-gli-script-per-correggere-le-timestamp">3 - Installare gli script per correggere le&nbsp;timestamp</h2>
 <p>La vera chicca: questi script fanno in modo che i file nel nostro filesystem criptato conservino le timestamp, permettendo a rsync di lavorare. Scaricare gli script&nbsp;con</p>
-<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">bazaar</span><span class="p">.</span><span class="n">launchpad</span><span class="p">.</span><span class="n">net</span><span class="o">/~</span><span class="n">germar</span><span class="o">/</span><span class="n">fusetime</span><span class="o">/</span><span class="n">trunk</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">head</span><span class="p">:</span><span class="o">/</span><span class="n">fusetime</span><span class="p">.</span><span class="n">py</span><span class="o">-</span>20120119150228<span class="o">-</span><span class="n">brsqa2ewllb9euc5</span><span class="o">-</span>1<span class="o">/</span><span class="n">fusetime</span><span class="p">.</span><span class="n">py</span>
-<span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">fusepy</span><span class="p">.</span><span class="n">googlecode</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">svn</span><span class="o">/</span><span class="n">trunk</span><span class="o">/</span><span class="n">fuse</span><span class="p">.</span><span class="n">py</span>
+<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//bazaar.launchpad.net/~germar/fusetime/trunk/download/head:/fusetime.py-20120119150228-brsqa2ewllb9euc5-1/fusetime.py</span>
+<span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//fusepy.googlecode.com/svn/trunk/fuse.py</span>
 </pre></div>
 
 
 <p>correggere i permessi, spostarli nella cartella degli&nbsp;eseguibili</p>
-<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">chown</span> <span class="n">root</span><span class="p">:</span><span class="n">root</span> <span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="n">fuse</span><span class="p">.</span><span class="n">py</span>
-<span class="n">sudo</span> <span class="n">chmod</span> 755 <span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="n">fuse</span><span class="p">.</span><span class="n">py</span>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">chown</span> <span class="n">root</span><span class="o">:</span><span class="n">root</span> <span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="n">fuse</span><span class="p">.</span><span class="n">py</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">755</span> <span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="n">fuse</span><span class="p">.</span><span class="n">py</span>
 <span class="n">sudo</span> <span class="n">mv</span> <span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="n">fuse</span><span class="p">.</span><span class="n">py</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span>
 </pre></div>
 
 
 <h2 id="4-creare-la-cartella-per-la-sincronizzazione-e-avviare-rsync">4 - Creare la cartella per la sincronizzazione e avviare&nbsp;rsync</h2>
 <p>Questo passaggio permetterà di correggere le timestamp grazie agli script installati prima e di avere in <code>/media</code> una cartella che avremo come destinazione per i nostri backup, collegata con quella criptata creata precedentemente. Creare la cartella, attribuire i permessi e avviare lo script sulle&nbsp;cartelle</p>
-<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span>
-<span class="n">sudo</span> <span class="n">chown</span> <span class="o">&lt;</span><span class="n"><span class="caps">USER</span></span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n"><span class="caps">USER</span></span><span class="o">&gt;</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span>
-<span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span>
+<div class="codehilite"><pre><span class="nx">sudo</span> <span class="nx">mkdir</span> <span class="p">/</span><span class="nb">media</span><span class="p">/</span><span class="nx">box.backup</span>
+<span class="nx">sudo</span> <span class="nb">chown</span> <span class="o">&lt;</span><span class="nb"><span class="caps">USER</span></span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="nb"><span class="caps">USER</span></span><span class="o">&gt;</span> <span class="p">/</span><span class="nb">media</span><span class="p">/</span><span class="nx">box.backup</span>
+<span class="nx">fusetime.py</span> <span class="p">/</span><span class="nb">media</span><span class="p">/</span><span class="nx">box.encfs</span><span class="o">/</span> <span class="p">/</span><span class="nb">media</span><span class="p">/</span><span class="nx">box.backup</span><span class="o">/</span>
 </pre></div>
 
 
@@ -210,13 +210,13 @@
 
 
 <p>Avviare <em>finalmente</em> la sincronizzazione, sostituendo <code>/path/to/files</code> al percorso che vogliamo backuppare; di seguito è riportata un&#8217;istanza di rsync con opzioni &#8220;base&#8221;, che andrà bene per qualsiasi&nbsp;esigenza</p>
-<div class="codehilite"><pre><span class="n">rsync</span> <span class="o">-</span><span class="n">r</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="nb">i</span> <span class="o">--</span><span class="n">times</span> <span class="o">--</span><span class="n">delete</span> <span class="o">--</span><span class="n">max</span><span class="o">-</span><span class="nb">size</span><span class="p">=</span>99<span class="p">.</span>5<span class="n">M</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="nb">perms</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">group</span> <span class="o">--</span><span class="n">progress</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">files</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span>
+<div class="codehilite"><pre><span class="n">rsync</span> <span class="o">-</span><span class="n">r</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="n">i</span> <span class="o">--</span><span class="n">times</span> <span class="o">--</span><span class="n">delete</span> <span class="o">--</span><span class="n">max</span><span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mf">99.5</span><span class="n">M</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">perms</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">group</span> <span class="o">--</span><span class="n">progress</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">files</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span>
 </pre></div>
 
 
 <p>Per sincronizzare le mie immagini, ho inserito qualche altra opzione per non copiare nel backup i file <code>Thumbs.db</code>, quelli che con estensione <code>.xmp</code> e <code>.bak</code>; vengono inoltre usati dei file parziali (così da non dover ricominciare da capo il backup di file di grosse dimensioni in caso di interruzioni) e man mano che il programma opera viene mostrato un log in tempo reale che mostra ogni singola operazione di&nbsp;rsync:</p>
-<div class="codehilite"><pre><span class="n">rsync</span> <span class="o">-</span><span class="n">r</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="nb">i</span> <span class="o">--</span><span class="n">times</span> <span class="o">--</span><span class="n">exclude</span> <span class="s">&#39;*.xmp&#39;</span> <span class="o">--</span><span class="n">exclude</span> <span class="s">&#39;*.bak&#39;</span> <span class="o">--</span><span class="n">exclude</span> <span class="s">&#39;Thumbs.db&#39;</span> <span class="o">--</span><span class="n">delete</span> <span class="o">\\</span>
-<span class="o">--</span><span class="n">max</span><span class="o">-</span><span class="nb">size</span><span class="p">=</span>99<span class="p">.</span>5<span class="n">M</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="nb">perms</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">group</span> <span class="o">-</span><span class="n">P</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">v</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">dati</span><span class="o">/</span><span class="n">archivio</span><span class="o">/</span><span class="n">immagini</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span>
+<div class="codehilite"><pre><span class="n">rsync</span> <span class="o">-</span><span class="n">r</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="n">i</span> <span class="o">--</span><span class="n">times</span> <span class="o">--</span><span class="n">exclude</span> <span class="err">&#39;</span><span class="o">*</span><span class="p">.</span><span class="n">xmp</span><span class="err">&#39;</span> <span class="o">--</span><span class="n">exclude</span> <span class="err">&#39;</span><span class="o">*</span><span class="p">.</span><span class="n">bak</span><span class="err">&#39;</span> <span class="o">--</span><span class="n">exclude</span> <span class="err">&#39;</span><span class="n">Thumbs</span><span class="p">.</span><span class="n">db</span><span class="err">&#39;</span> <span class="o">--</span><span class="n">delete</span> <span class="err">\</span>\
+<span class="o">--</span><span class="n">max</span><span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mf">99.5</span><span class="n">M</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">perms</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">group</span> <span class="o">-</span><span class="n">P</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">v</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">dati</span><span class="o">/</span><span class="n">archivio</span><span class="o">/</span><span class="n">immagini</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span>
 </pre></div>
 
 
@@ -241,7 +241,7 @@
 
 
 <p>oppure, concatenando i comandi per montare la Box, montare la partizione criptata (che richiederà comunque l&#8217;inserimento manuale della password) e lo script fusetime, è possibile creare un alias in <code>.bashrc</code> che faccia tutto da&nbsp;solo:</p>
-<div class="codehilite"><pre><span class="n">alias</span> <span class="n">boxmount</span><span class="p">=</span><span class="s">&#39;mount /media/box &amp;&amp; encfs /media/box/backup/ /media/box.encfs/ &amp;&amp; fusetime.py /media/box.encfs/ /media/box.backup/&#39;</span>
+<div class="codehilite"><pre><span class="n">alias</span> <span class="n">boxmount</span><span class="o">=</span><span class="err">&#39;</span><span class="n">mount</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span> <span class="o">&amp;&amp;</span> <span class="n">encfs</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="o">/</span><span class="n">backup</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span><span class="o">/</span> <span class="o">&amp;&amp;</span> <span class="n">fusetime</span><span class="p">.</span><span class="n">py</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">backup</span><span class="o">/</span><span class="err">&#39;</span>
 </pre></div>
 
 
@@ -263,7 +263,7 @@
 
 
 <p>Al nuovo comando per montare il filesystem criptato verrà aggiunto (anche nel vostro eventuale <code>.bashrc</code>) un parametro che indica dove reperire il file xml corretto; tale parametro varia in funzione della versione di EncFS (per cui EncFS 1.6 avrà <code>ENCFS&amp;_CONFIG</code>, EncFS 1.7 avrà <code>ENCFS7_CONFIG</code>):</p>
-<div class="codehilite"><pre><span class="n">ENCFS6_CONFIG</span><span class="p">=</span>&quot;<span class="o">~/</span><span class="p">.</span><span class="n">encfs6_box</span><span class="p">.</span><span class="n">xml</span>&quot; <span class="n">encfs</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="o">/</span><span class="n">backup</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span><span class="o">/</span>
+<div class="codehilite"><pre><span class="n">ENCFS6_CONFIG</span><span class="o">=</span><span class="s">&quot;~/.encfs6_box.xml&quot;</span> <span class="n">encfs</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="o">/</span><span class="n">backup</span><span class="o">/</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">box</span><span class="p">.</span><span class="n">encfs</span><span class="o">/</span>
 </pre></div>
 
 

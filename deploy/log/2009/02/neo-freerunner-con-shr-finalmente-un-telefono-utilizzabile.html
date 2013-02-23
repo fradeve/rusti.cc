@@ -269,7 +269,7 @@ di Mapnik, per capirci), è sufficiente sostituire nel file
 
 
 <p>con&nbsp;questa</p>
-<div class="codehilite"><pre><span class="n"><span class="caps">OSM</span></span><span class="o">|</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">tile</span><span class="p">.</span><span class="n">openstreetmap</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="c">%d/%d/%d.png|/home/root/Maps/<span class="caps">OSM</span>|0</span>
+<div class="codehilite"><pre><span class="n"><span class="caps">OSM</span></span><span class="o">|</span><span class="n">http</span><span class="o">:</span><span class="c1">//tile.openstreetmap.org/%d/%d/%d.png|/home/root/Maps/<span class="caps">OSM</span>|0</span>
 </pre></div>
 
 
@@ -280,7 +280,7 @@ aggiornate le mappe senza aprire/chiudere TangoGPS, altrimenti avrete perso&nbsp
 <h2 id="navit">Navit</h2>
 <p>La versione più aggiornata di Navit installabile sul Neo è
 quella <span class="caps">SVN</span>, e può essere installata dando i seguenti&nbsp;comandi:</p>
-<div class="codehilite"><pre><span class="n">echo</span> <span class="n">src</span> <span class="n">navit</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="p">.</span><span class="n">navit</span><span class="o">-</span><span class="n">project</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">navit</span><span class="o">/</span><span class="n">openmoko</span><span class="o">/</span><span class="n">svn</span> <span class="o">&gt;/</span><span class="n">etc</span><span class="o">/</span><span class="n">opkg</span><span class="o">/</span><span class="n">navit</span><span class="o">-</span><span class="n">feed</span><span class="p">.</span><span class="n">conf</span>
+<div class="codehilite"><pre><span class="n">echo</span> <span class="n">src</span> <span class="n">navit</span> <span class="n">http</span><span class="o">:</span><span class="c1">//download.navit-project.org/navit/openmoko/svn &gt;/etc/opkg/navit-feed.conf</span>
 <span class="n">opkg</span> <span class="n">update</span>
 <span class="n">opkg</span> <span class="n">install</span> <span class="n">navit</span>
 </pre></div>
@@ -302,8 +302,8 @@ spostiamo il file nella cartella <em>~/.navit</em>. Quindi, bisognerà sistemare
 
 <p>Fatto ciò, possiamo ancora fare in modo che Navit visualizzi i tasti &#8220;+&#8221; e &#8220;-&#8221; per lo zoom, per ingrandire e
  diminuire lo zoom della mappa durante la navigazione, portando da &#8220;enables=no&#8221; a &#8220;enables=yes&#8221; le voci ai righi 53 e&nbsp;54:</p>
-<div class="codehilite"><pre><span class="o">&lt;</span><span class="n">osd</span> <span class="n">enabled</span><span class="p">=</span>&quot;<span class="n">yes</span>&quot; <span class="n">type</span><span class="p">=</span>&quot;<span class="n">button</span>&quot; <span class="n">x</span><span class="p">=</span>&quot;<span class="o">-</span>96&quot; <span class="n">y</span><span class="p">=</span>&quot;<span class="o">-</span>96&quot; <span class="n">command</span><span class="p">=</span>&quot;<span class="n">zoom_in</span><span class="p">()</span>&quot; <span class="n">src</span><span class="p">=</span>&quot;<span class="n">zoom_in</span><span class="p">.</span><span class="n">xpm</span>&quot;<span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">osd</span> <span class="n">enabled</span><span class="p">=</span>&quot;<span class="n">yes</span>&quot; <span class="n">type</span><span class="p">=</span>&quot;<span class="n">button</span>&quot; <span class="n">x</span><span class="p">=</span>&quot;0&quot; <span class="n">y</span><span class="p">=</span>&quot;<span class="o">-</span>96&quot; <span class="n">command</span><span class="p">=</span>&quot;<span class="n">zoom_out</span><span class="p">()</span>&quot; <span class="n">src</span><span class="p">=</span>&quot;<span class="n">zoom_out</span><span class="p">.</span><span class="n">xpm</span>&quot;<span class="o">/&gt;</span>
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="n">osd</span> <span class="n">enabled</span><span class="o">=</span><span class="s">&quot;yes&quot;</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s">&quot;-96&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;-96&quot;</span> <span class="n">command</span><span class="o">=</span><span class="s">&quot;zoom_in()&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;zoom_in.xpm&quot;</span><span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="n">osd</span> <span class="n">enabled</span><span class="o">=</span><span class="s">&quot;yes&quot;</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;-96&quot;</span> <span class="n">command</span><span class="o">=</span><span class="s">&quot;zoom_out()&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;zoom_out.xpm&quot;</span><span class="o">/&gt;</span>
 </pre></div>
 
 

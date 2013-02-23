@@ -139,8 +139,8 @@ ottenuta la rete, aggiungiamo questa riga ai nostri&nbsp;repository:</p>
 
 
 <p>Scarichiamo ed aggiungiamo la chiave per i nuovi&nbsp;repository</p>
-<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">array</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span><span class="n">array</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">key</span><span class="p">.</span><span class="n">asc</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">key</span> <span class="n">add</span> <span class="n">http</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">array</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span><span class="n">array</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">key</span><span class="p">.</span><span class="n">asc</span>
+<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//www.array.org/ubuntu/array-apt-key.asc</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">key</span> <span class="n">add</span> <span class="n">http</span><span class="c1">//www.array.org/ubuntu/array-apt-key.asc</span>
 </pre></div>
 
 
@@ -150,7 +150,7 @@ ottenuta la rete, aggiungiamo questa riga ai nostri&nbsp;repository:</p>
 
 
 <p>Rimuoviamo il vecchio kernel per liberare spazio sull&#8217;hard&nbsp;disk:</p>
-<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">remove</span> <span class="n">linux</span><span class="o">-</span><span class="n">generic</span> <span class="n">linux</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">generic</span> <span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="o">-</span><span class="n">generic</span> <span class="n">linux</span><span class="o">-</span><span class="n">restricted</span><span class="o">-</span><span class="n">modules</span><span class="o">-</span><span class="n">generic</span>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">remove</span> <span class="n">linux</span><span class="o">-</span><span class="n">generic</span> <span class="n">linux</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">generic</span> <span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="o">-</span><span class="n">generic</span> <span class="n">linux</span><span class="o">-</span><span class="k">restricted</span><span class="o">-</span><span class="n">modules</span><span class="o">-</span><span class="n">generic</span>
 </pre></div>
 
 
@@ -162,18 +162,18 @@ installiamo un pacchetto <em>.deb</em> (con la sua dipendenza) che contiene i dr
 wireless aggiornati che al prossimo avvio del sistema verranno automaticamente
 inseriti nel nuovo&nbsp;kernel:</p>
 <div class="codehilite"><pre><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">dkms</span>
-<span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">mediafire</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>?<span class="n">jfrgzemgnjz</span>
+<span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//www.mediafire.com/?jfrgzemgnjz</span>
 <span class="n">sudo</span> <span class="n">gdebi</span> <span class="n">rt2860sta</span><span class="o">-</span><span class="n">dkms_</span><span class="o">*</span><span class="p">.</span><span class="n">deb</span>
 </pre></div>
 
 
 <p>Scarichiamo un pacchetto con gli script che renderanno operativi i tasti
 funzione&nbsp;dell&#8217;Asus:</p>
-<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">informatik</span><span class="p">.</span><span class="n">uni</span><span class="o">-</span><span class="n">bremen</span><span class="p">.</span><span class="n">de</span><span class="o">/~</span><span class="n">elmurato</span><span class="o">/</span><span class="n">EeePC</span><span class="o">/</span><span class="n">Intrepid_ACPI_scripts</span><span class="o">-</span><span class="n">EeePC_900A_901_1000</span><span class="p">.</span><span class="n">tar</span><span class="p">.</span><span class="n">gz</span>
+<div class="codehilite"><pre><span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//www.informatik.uni-bremen.de/~elmurato/EeePC/Intrepid_ACPI_scripts-EeePC_900A_901_1000.tar.gz</span>
 <span class="n">tar</span> <span class="n">xfvz</span> <span class="n">Intrepid_ACPI_scripts</span><span class="o">-</span><span class="n">EeePC_900A_901_1000</span><span class="p">.</span><span class="n">tar</span><span class="p">.</span><span class="n">gz</span>
 <span class="n">cd</span> <span class="n">Intrepid_ACPI_scripts</span><span class="o">-</span><span class="n">EeePC_900A_901_1000</span><span class="o">/</span>
 <span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">acpi</span><span class="o">-</span><span class="n">scripts</span><span class="p">.</span><span class="n">sh</span>
-<span class="n">sudo</span> <span class="o">./</span><span class="n">acpi</span><span class="o">-</span><span class="n">scripts</span><span class="p">.</span><span class="n">sh</span> <span class="n">install</span>
+<span class="n">sudo</span> <span class="p">.</span><span class="o">/</span><span class="n">acpi</span><span class="o">-</span><span class="n">scripts</span><span class="p">.</span><span class="n">sh</span> <span class="n">install</span>
 </pre></div>
 
 

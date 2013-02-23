@@ -75,7 +75,7 @@
 <p><span class="caps">NB</span>: una versione differente di questo stesso muttrc, con meno funzioni e flessibilità, è reperibile nel mio <a href="/log/2012/01/my-muttrc.html">post di gennaio</a>; ho voluto conservare il vecchio post senza aggiornarlo perché potrebbe tornare utile a chi cerca configurazioni più semplici e <em>monolitiche</em> (passatemi il&nbsp;termine).</p>
 <p>La caratteristica principale di questo nuovo muttrc è la modularità: ogni account ha un suo file di configurazione, nel quale sono riportati i settaggi validi per il medesimo, rimuovendo ogni configurazione precedente nel momento del caricamento, che avviene grazie a semplici&nbsp;shortcut.</p>
 <p>Rimangono valide le spiegazioni date nel post di gennaio. Tutti i file usati in questo tutorial sono hostati su <a href="https://github.com/fradeve/dotfiles">GitHub</a>, con l&#8217;esclusione di <a href="http://upsilon.cc/~zack/blog/posts/2011/01/how_to_use_Notmuch_with_Mutt/">mutt-notmuch</a>. Il codice è scaricabile dopo aver installato <span class="caps">GIT</span>, con il seguente&nbsp;comando:</p>
-<div class="codehilite"><pre><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">fradeve</span><span class="o">/</span><span class="n">dotfiles</span><span class="p">.</span><span class="n">git</span>
+<div class="codehilite"><pre><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="o">:</span><span class="c1">//github.com/fradeve/dotfiles.git</span>
 </pre></div>
 
 
@@ -99,8 +99,8 @@
 <li>un file per la configurazione di mutt in modalità archivio locale (<code>muttrc</code>)</li>
 </ul>
 <p>Può tornare utile inserire in <code>.bashrc</code> degli alias per avviare mutt in una delle due&nbsp;modalità:</p>
-<div class="codehilite"><pre><span class="n">alias</span> <span class="n">mutt</span><span class="p">=</span><span class="s">&#39;mutt -n -F /home/user/.mutt/muttrc&#39;</span>
-<span class="n">alias</span> <span class="n">mutton</span><span class="p">=</span><span class="s">&#39;mutt -n -F /home/user/.mutt/muttonrc&#39;</span>
+<div class="codehilite"><pre><span class="n">alias</span> <span class="n">mutt</span><span class="o">=</span><span class="err">&#39;</span><span class="n">mutt</span> <span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">F</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="p">.</span><span class="n">mutt</span><span class="o">/</span><span class="n">muttrc</span><span class="err">&#39;</span>
+<span class="n">alias</span> <span class="n">mutton</span><span class="o">=</span><span class="err">&#39;</span><span class="n">mutt</span> <span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">F</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="p">.</span><span class="n">mutt</span><span class="o">/</span><span class="n">muttonrc</span><span class="err">&#39;</span>
 </pre></div>
 
 
@@ -132,8 +132,8 @@
 <span class="na">socktimeout</span> <span class="o">=</span> <span class="s">60</span>
 <span class="na">ui</span> <span class="o">=</span> <span class="s"><span class="caps">TTY</span>.<span class="caps">TTYUI</span></span>
 
-<span class="c">### account1@host1.com </span>
-<span class="c">#######################</span>
+<span class="c1">### account1@host1.com </span>
+<span class="c1">#######################</span>
 
 <span class="k">[Account account1]</span>
 <span class="na">localrepository</span> <span class="o">=</span> <span class="s">local-account1</span>
@@ -151,8 +151,8 @@
 <span class="na">ssl</span> <span class="o">=</span> <span class="s">yes</span>
 <span class="na">realdelete</span> <span class="o">=</span> <span class="s">no</span>
 
-<span class="c">### account2@host2.com</span>
-<span class="c">######################################</span>
+<span class="c1">### account2@host2.com</span>
+<span class="c1">######################################</span>
 
 <span class="k">[Account account2]</span>
 <span class="na">localrepository</span> <span class="o">=</span> <span class="s">local-account2</span>
@@ -165,14 +165,14 @@
 <span class="k">[Repository remote-account2]</span>
 <span class="na">type</span> <span class="o">=</span> <span class="s"><span class="caps">IMAP</span></span>
 <span class="na">ssl</span> <span class="o">=</span> <span class="s">yes</span>
-<span class="c">#remoteport = 995</span>
+<span class="c1">#remoteport = 995</span>
 <span class="na">remotehost</span> <span class="o">=</span> <span class="s">mail.host2.org</span>
 <span class="na">remoteuser</span> <span class="o">=</span> <span class="s">account2@host2.org</span>
 <span class="na">remotepass</span> <span class="o">=</span> <span class="s">pw</span>
 <span class="na">realdelete</span> <span class="o">=</span> <span class="s">no</span>
 
-<span class="c">### account3@host3.net</span>
-<span class="c">######################################</span>
+<span class="c1">### account3@host3.net</span>
+<span class="c1">######################################</span>
 
 <span class="k">[Account account3]</span>
 <span class="na">localrepository</span> <span class="o">=</span> <span class="s">local-account3</span>
@@ -185,7 +185,7 @@
 <span class="k">[Repository remote-account3]</span>
 <span class="na">type</span> <span class="o">=</span> <span class="s"><span class="caps">IMAP</span></span>
 <span class="na">ssl</span> <span class="o">=</span> <span class="s">yes</span>
-<span class="c">#remoteport = 995</span>
+<span class="c1">#remoteport = 995</span>
 <span class="na">remotehost</span> <span class="o">=</span> <span class="s">mail.host3.net</span>
 <span class="na">remoteuser</span> <span class="o">=</span> <span class="s">account3@host3.net</span>
 <span class="na">remotepass</span> <span class="o">=</span> <span class="s">pw</span>
@@ -195,7 +195,7 @@
 
 <h3 id="netrc">~/.netrc</h3>
 <div class="codehilite"><pre><span class="n">machine</span> <span class="n">host1</span><span class="p">.</span><span class="n">com</span>
-<span class="n">login</span> <span class="n">account1</span><span class="p">@</span><span class="n">host1</span><span class="p">.</span><span class="n">com</span>
+<span class="n">login</span> <span class="n">account1</span><span class="err">@</span><span class="n">host1</span><span class="p">.</span><span class="n">com</span>
 <span class="n">password</span> <span class="n">pw</span>
 </pre></div></article>
 <div id="disqus_thread"></div>

@@ -90,7 +90,7 @@ tra Java e Xmonad, ed è facilmente&nbsp;risolvibile.</p>
 <p>ogni volta prima di aprire <span class="caps">JOSM</span>.
 Alternativamente, si potrebbe anche creare un <a href="http://news.softpedia.com/news/How-to-Customize-the-Shell-Prompt-40033.shtml">alias nel proprio .bashrc</a>,
 per eseguire il comando ogni volta che si desidera aprire&nbsp;<span class="caps">JOSM</span>:</p>
-<div class="codehilite"><pre><span class="n">alias</span> <span class="n">josm</span><span class="p">=</span><span class="s">&#39;wmname <span class="caps">LG3D</span> &amp;&amp; josm&#39;</span>
+<div class="codehilite"><pre><span class="n">alias</span> <span class="n">josm</span><span class="o">=</span><span class="err">&#39;</span><span class="n">wmname</span> <span class="n"><span class="caps">LG3D</span></span> <span class="o">&amp;&amp;</span> <span class="n">josm</span><span class="err">&#39;</span>
 </pre></div>
 
 
@@ -101,7 +101,7 @@ e OpenJDK 1.7. Speriamo bene&nbsp;:)</p>
 <p><strong><span class="caps">AGGIORNAMENTO</span> &#8211;&nbsp;14/07/10</strong></p>
 <p>Come mi han suggerito nel canale <span class="caps">IRC</span> del LUGBari, una soluzione alternativa è quella di
 aggiungere la seguente riga nel proprio .bashrc (almeno su&nbsp;Ubuntu/Debian):</p>
-<div class="codehilite"><pre><span class="n">_JAVA_AWT_WM_NONREPARENTING</span><span class="p">=</span>1<span class="p">;</span> <span class="n">export</span>
+<div class="codehilite"><pre><span class="n">_JAVA_AWT_WM_NONREPARENTING</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">export</span>
 <span class="n">_JAVA_AWT_WM_NONREPARENTING</span>
 </pre></div>
 

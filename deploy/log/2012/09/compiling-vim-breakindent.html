@@ -82,9 +82,9 @@
 
 
 <p>Set permissions on the sources and move the patch into the set of Debian&nbsp;patches:</p>
-<div class="codehilite"><pre><span class="n">cd</span> <span class="n">vim</span><span class="o">-</span>7<span class="p">.</span>3<span class="p">.</span>429
-<span class="n">sudo</span> <span class="n">chmod</span> <span class="n">u</span><span class="p">=</span><span class="n">rw</span><span class="p">,</span><span class="n">g</span><span class="p">=</span><span class="n">r</span><span class="p">,</span><span class="n">o</span><span class="p">=</span><span class="n">r</span> <span class="p">.</span><span class="o">./</span><span class="n">vim</span><span class="o">-</span><span class="n">breakindent</span><span class="p">.</span><span class="n">patch</span>
-<span class="n">sudo</span> <span class="n">cp</span> <span class="p">.</span><span class="o">./</span><span class="n">vim</span><span class="o">-</span><span class="n">breakindent</span><span class="p">.</span><span class="n">patch</span> <span class="n">debian</span><span class="o">/</span><span class="n">patches</span><span class="o">/</span><span class="n">debian</span><span class="o">/</span><span class="p">.</span>
+<div class="codehilite"><pre><span class="n">cd</span> <span class="n">vim</span><span class="o">-</span><span class="mf">7.3.429</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="n">u</span><span class="o">=</span><span class="n">rw</span><span class="p">,</span><span class="n">g</span><span class="o">=</span><span class="n">r</span><span class="p">,</span><span class="n">o</span><span class="o">=</span><span class="n">r</span> <span class="p">..</span><span class="o">/</span><span class="n">vim</span><span class="o">-</span><span class="n">breakindent</span><span class="p">.</span><span class="n">patch</span>
+<span class="n">sudo</span> <span class="n">cp</span> <span class="p">..</span><span class="o">/</span><span class="n">vim</span><span class="o">-</span><span class="n">breakindent</span><span class="p">.</span><span class="n">patch</span> <span class="n">debian</span><span class="o">/</span><span class="n">patches</span><span class="o">/</span><span class="n">debian</span><span class="o">/</span><span class="p">.</span>
 </pre></div>
 
 
@@ -96,12 +96,12 @@
 
 
 <p>Compile the new <code>.dsc</code>:</p>
-<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">pbuilder</span> <span class="n">build</span> <span class="n">vim_7</span><span class="p">.</span>3<span class="p">.</span>429<span class="o">-</span>2<span class="n">ubuntu2</span><span class="p">.</span>2<span class="p">.</span><span class="n">dsc</span>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">pbuilder</span> <span class="n">build</span> <span class="n">vim_7</span><span class="mf">.3.429</span><span class="o">-</span><span class="mi">2u</span><span class="n">buntu2</span><span class="mf">.2</span><span class="p">.</span><span class="n">dsc</span>
 </pre></div>
 
 
 <p>Install new&nbsp;debs:</p>
-<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">dpkg</span> <span class="o">-</span><span class="nb">i</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">cache</span><span class="o">/</span><span class="n">pbuilder</span><span class="o">/</span><span class="n">result</span><span class="o">/*</span><span class="p">.</span><span class="n">deb</span>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">cache</span><span class="o">/</span><span class="n">pbuilder</span><span class="o">/</span><span class="n">result</span><span class="o">/*</span><span class="p">.</span><span class="n">deb</span>
 </pre></div>
 
 
