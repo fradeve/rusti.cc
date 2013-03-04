@@ -3,19 +3,22 @@ new blog
 
 * CSS
     + consider using LessCSS -> http://lesscss.org/
-    + http://stevelosh.com/
+    + [g] http://stevelosh.com/
     + http://simonfosterdesign.com/blog/
     + http://informationarchitects.net/blog
 
+* font
+    + [g] http://hellohappy.org/beautiful-web-type/
+
 * icons
-    + https://github.com/aristath/elusive-iconfont
+    + [g] https://github.com/aristath/elusive-iconfont
 
 * dev badges / social
-    + https://github.com/mikaelbr/metabrag
-    + https://github.com/haschek/PubwichFork
+    + [g] https://github.com/mikaelbr/metabrag
+    + [g] https://github.com/haschek/PubwichFork
 
 * cv
-    + https://github.com/philipithomas/cv-philipithomas
+    + [g] https://github.com/philipithomas/cv-philipithomas
 
 * graphs (recap)
     + sistemare tutti i recap con raphael JS
