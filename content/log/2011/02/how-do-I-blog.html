@@ -40,71 +40,76 @@ Questo basta? No. Per giocare un po' con [Graphviz][7] (cosa che volevo fare da 
 <center>![][8]<br>_Collegamenti tra i vari servizi di social networking_</center>
 
     digraph G {
-	graph [ dpi = 300 ];
-	// table size
-	size ="4,6";
+        graph [ dpi = 300 ];
+        // table size
+        size ="4,6";
+        rankdir=RL;
 
-	//// LABELING ////
+        //// LABELING ////
 
-	// means
-	ttrss [label="TT-RSS \nRSS+OAuth ",shape=record,color=green]
-	brdcst [label="brdcst \nit!", shape=record,color=green]
-	ifttt [label="ifttt", shape=record,color=red]
-	feedburner[label="FeedBurner",shape=record,color=red]
-	pipes[label="Yahoo! \nPipes",shape=record,color=red]
+        // means
+        ttrss [label="TT-RSS",shape=record,color=green]
+        brdcst [label="brdcst \nit!", shape=record,color=green]
+        ifttt [label="ifttt", shape=record,color=red]
+        pipes[label="Yahoo! \nPipes",shape=record,color=red]
+        identicapubfeed [label="Identi.ca\npublic feed",shape=record,color=green]
 
-	// sources
-	ttrssshared [label="TT-RSS \nshared",shape=egg,color=green]
-	blog [label="Fradeve \nOpenblog",shape=egg,color=green]
-	mobile [label="mobile \ninput \n(email)",shape=egg,color=green]
-	github [label="GitHub \nactivity",shape=egg,color=green]
-	twitter [label="Twitter RT",shape=egg,color=red]
-	gmail [label="Gmail \nlabel RSS",shape=egg,color=red]
+        // sources
+        ttrssshared [label="TT-RSS \nshared",shape=egg,color=green]
+        blog [label="Fradeve \nOpenblog",shape=egg,color=green]
+        mobile [label="mobile \ninput \n(identi.ca web)",shape=egg,color=green]
+        desktop [label="bitlbee",shape=egg,color=green]
+        github [label="GitHub \nactivity",shape=egg,color=green]
+        twitter [label="Twitter RT",shape=egg,color=red]
+        flickr [label="Flickr shared",shape=egg,color=red]
 
-	// destinations
-	identica [label="Identi.ca \nstatus update",color=green]
-	linkedin [label="Linkedin \nstatus update",color=red]
-	facebook [label="Facebook \nstatus update",color=red]
-	planetub [label="planet Ubuntu-it",shape=tab,color=green]
-	oiablog [label="Blog O.I.A.",shape=tab,color=green]
+        // destinations
+        identica [label="Identi.ca",color=green]
+        linkedin [label="Linkedin \nstatus update",color=red]
+        facebook [label="Facebook \nstatus update",color=red]
+        planetub [label="planet Ubuntu-it",shape=tab,color=green]
+        oiablog [label="Blog O.I.A.",shape=tab,color=green]
+        pubwich [label="Pubwich\nfork",shape=tab,color=green]
 
-	//// CONNECTIONS ////
+        //// CONNECTIONS ////
 
-	// ping
-	mobile -> gmail [arrowhead=dot,color=darkorange1];
-	gmail -> ttrss [arrowhead=dot,color=darkorange1];
-	ttrss -> brdcst [arrowhead=dot,color=darkorange1];
-	brdcst -> facebook [arrowhead=dot,color=darkorange1];
-	brdcst -> identica [arrowhead=dot,color=darkorange1];
+        // ping
+        mobile -> identica [arrowhead=dot, color=darkorange];
+        desktop -> identica [arrowhead=dot, color=darkorange];
+        identica -> identicapubfeed [arrowhead=dot, color=darkorange];
+        identicapubfeed -> brdcst [arrowhead=dot, color=darkorange];
+        brdcst -> facebook [arrowhead=dot,color=darkorange];
+        identicapubfeed -> pubwich [arrowhead=dot,color=darkorange];
 
-	// connecting aggregators to blog
-	blog -> planetub [arrowhead=crow];
-	blog -> oiablog [arrowhead=crow];
+        // connecting aggregators to blog
+        blog -> planetub [arrowhead=crow];
+        blog -> oiablog [arrowhead=crow];
 
-	// blog
-	blog -> feedburner [color=lightseagreen];
-	feedburner -> brdcst [color=lightseagreen];
-	brdcst -> facebook [color=lightseagreen];
-	brdcst -> identica [color=lightseagreen];
+        // blog
+        subgraph cluster_drop {
+            style=filled;
+            color=grey;
+            label = "blog";
 
-	// RSS shared
-	ttrss -> ttrssshared [color=orchid];
-	ttrssshared -> feedburner [color=orchid];
-	feedburner -> brdcst [color=orchid];
-	brdcst -> facebook [color=orchid];
-	brdcst -> identica [color=orchid];
+            blog -> pubwich
+        }
 
-	// GitHub
-	github -> brdcst [style=bold,color=blue];
-	brdcst -> identica [style=bold,color=blue];
+        // RSS shared
+        ttrss -> ttrssshared [color=orchid];
+        ttrssshared -> pubwich [color=orchid];
 
-	github -> ifttt [style=bold];
-	ifttt -> linkedin [style=bold];
+        // GitHub
+        github -> brdcst -> identica [style=bold,color=blue];
+        github -> ifttt -> linkedin [style=bold,color=blue];
+        github -> pubwich [style=bold,color=blue];
 
-	// Twitter
-	twitter -> pipes -> ifttt -> linkedin;
-	pipes -> brdcst -> facebook;
+        // Twitter
+        twitter -> pipes -> brdcst -> facebook;
         brdcst -> identica;
+        pipes -> pubwich;
+        
+        //Flickr
+        flickr -> pubwich
     }
 
 Il comando per generarlo partendo dal file `graph.dot`:
