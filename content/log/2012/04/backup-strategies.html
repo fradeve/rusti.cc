@@ -7,7 +7,7 @@ tags:
     - backup
 ---
 
-_Ultimo aggiornamento: 23 febbraio 2013_
+_Ultimo aggiornamento: 19 maggio 2013_
 
 Non ho molto tempo per spiegare l'immagine. In soldoni, è uno schema riassuntivo di come sono organizzati i miei dati ed i miei backup, realizzato anche per approfondire un po' la conoscenza di Graphviz. Il codice è in fondo al post.
 
@@ -24,7 +24,6 @@ Il codice dell'immagine:
     digraph G {
         // TODO
         // * legend
-        // * bold cluster labels
         graph [ dpi = 300 ];
         size ="4,6";	// table size
         compound=true;
@@ -34,7 +33,7 @@ Il codice dell'immagine:
         subgraph cluster_edgar {
             style=filled;
             color=lightgrey;
-            label = "edgar";
+            label = <<b>edgar</b>>;
 
             // boxes
             subgraph cluster_drop {
@@ -43,24 +42,34 @@ Il codice dell'immagine:
                 label = "Dropbox";
 
                 irssi [label="~/.irssi",shape=folder]
-                rsnapshot [label="backup\ndir",shape=folder]
+                rsnapshot [label="~/.backup",shape=folder]
             }
             
             // scripts and programs
             offlineimap [label="offlineimap",shape=component]
             script_rsnapshot [label="rsnapshot",shape=component]
-            rsync [label="rsync",shape=component]
-            firefox [label="Firefox",shape=component]
             
             // folders
-            mail [label="~/.mail",shape=folder,style=filled,fillcolor="#008000"]
             filesystem_edgar [label="filesystem",shape=folder]
+
+            subgraph cluster_hd1 {
+                style=filled;
+                color="#008000";
+                label="sda1";
+
+                immagini_hd1 [label="img",shape=folder]
+                musica_hd1 [label="music",shape=folder]
+                books_hd1 [label="books",shape=folder]
+                mail_hd1 [label="mail",shape=folder]
+                video_hd1 [label="video",shape=folder]
+                dev_hd1 [label="dev",shape=folder]
+            }
         }
 
         subgraph cluster_mail {
             style=filled;
             color=lightblue;
-            label = "Mail services";
+            label = <<b>Mail services</b>>;
 
             ai [label="A/I \nmail",shape=box3d,style=filled,fillcolor="#808000"]
             gmail [label="Gmail",shape=box3d]
@@ -70,14 +79,14 @@ Il codice dell'immagine:
         subgraph cluster_services {
             style=filled;
             color=lightblue;
-            label = "Internet services";
+            label = <<b>Internet services</b>>;
 
             github [label="GitHub",shape=component]
-            ffsync [label="Firefox\nSync",shape=component]
             librefm [label="Libre.fm",shape=component]
             facebook [label="Facebook",shape=component]
             twitter [label="Twitter",shape=component]
             foursquare [label="Foursquare",shape=component]
+            identica [label="Identi.ca",shape=component]
             gcalendar [label="GCalendar",shape=component]
             gcontacts [label="GContacts",shape=component]
         }
@@ -85,50 +94,30 @@ Il codice dell'immagine:
         subgraph cluster_hosting{
             style=filled;
             color=lightblue;
-            label = "Hosting services";
+            label = <<b>Hosting services</b>>;
 
             subgraph cluster_droponline{
                 style=filled;
                 color=blue;
                 label = "Dropbox";
 
-                irssidrop [label="~/.irssi",shape=folder,style=filled,fillcolor=green]
+                irssidrop [label="irssi",shape=folder,style=filled,fillcolor=green]
                 rsnapshot_edgar_drop [label="backup\nedgar\novh\nparanoia",shape=folder,style=filled,fillcolor=green]
             }
-        }
 
-        subgraph cluster_ext_storage {
-            style=filled;
-            color=lightgrey;
-            label = "External \nstorage";
-
-            // hds
-            subgraph cluster_hd1 {
+            subgraph cluster_copyonlinee{
                 style=filled;
-                color=white;
-                label = "320 Gb";
+                color=blue;
+                label = "Copy";
 
-                immagini_hd1 [label="immagini",shape=folder]
-                musica_hd1 [label="musica",shape=folder]
-                books_hd1 [label="libri",shape=folder]
-            }
-
-            subgraph cluster_hd2 {
-                style=filled;
-                color=white;
-                label = "2 Tb";
-
-                immagini_hd2 [label="immagini",shape=folder]
-                musica_hd2 [label="musica",shape=folder]
-                books_hd2 [label="libri",shape=folder]
-                sw_hd2 [label="libri",shape=folder]
+                bookscopy [label="books",shape=folder,style=filled,fillcolor=green]
             }
         }
 
         subgraph cluster_paranoia {
             style=filled;
             color=yellow;
-            label = "server1\nparanoia";
+            label = <<b>server1</b> paranoia>;
 
             rsync_paranoia [label="rsync",shape=component]
 
@@ -147,20 +136,10 @@ Il codice dell'immagine:
             others_pubwww_paranoia -> rsync_paranoia
         }
 
-        subgraph cluster_sgagliozza {
-            style=filled;
-            color=cyan;
-            label = "server3\nsgagliozza";
-
-            filesystem_sgagliozza [label="filesystem",shape=folder]
-            mail_back [label="mail\nbackup",shape=folder,style=filled,fillcolor=green]
-            
-        }
-
         subgraph cluster_ovh {
             style=filled;
             color=orange;
-            label = "server2\novh";
+            label = <<b>server2</b> ovh>;
 
             rsync_ovh[label="rsync",shape=component]
             filesystem_ovh [label="filesystem",shape=folder]
@@ -171,10 +150,6 @@ Il codice dell'immagine:
                 label = "Public www";
 
                 others_pubwww_ovh [label="others",shape=folder]
-                owncloud [label="owncloud",shape=component]
-                ttrss [label="TT-RSS",shape=component]
-                videodb [label="VideoDB",shape=component]
-                thinkup [label="ThinkUp",shape=component]
             }
 
             filesystem_ovh -> rsync_ovh -> script_rsnapshot
@@ -184,7 +159,7 @@ Il codice dell'immagine:
             // other backups
             subgraph cluster_backup {
                 style=filled;
-                fillcolor=green;
+                fillcolor=white;
                 label = "backups";
 
                 html_back [label="html\nbackups",shape=folder]
@@ -192,32 +167,51 @@ Il codice dell'immagine:
             }
         }
 
+        subgraph cluster_rpi {
+            style=filled;
+            color=red;
+            label = <<b>server3</b> raspberry>;
+
+            owncloud [label="owncloud",shape=component]
+            ttrss [label="TT-RSS",shape=component]
+            videodb [label="VideoDB",shape=component]
+            thinkup [label="ThinkUp",shape=component]
+        }
+
+        subgraph cluster_sgagliozza {
+            style=filled;
+            color=cyan;
+            label = <<b>server4</b> sgagliozza>;
+
+            filesystem_sgagliozza [label="filesystem",shape=folder]
+            
+        }
+
         subgraph cluster_android {
             style=filled;
             color=pink;
-            label = "Android";
+            label = <<b>Android</b>>;
 
             sms [label="Android \nSMS",shape=box3d]
             calendar [label="calendar",shape=component]
             contacts [label="contacts",shape=component]
-            ff_mobile [label="Firefox\nmobile",shape=component]
             chatmobile [label="Gtalk\nmobile",shape=egg]
             ttrssmobile [label="TT-RSS\nmobile",shape=component]
         }
 
-        pings [label="pings",shape=egg]
         chat [label="Gtalk\ndesktop|web\nlogs",shape=egg]
         
         // ## bindings ##
 
         // chat
         irssidrop -> irssi [dir=both]
-        pings -> riseup
         chat -> gmail
         chatmobile -> gmail
 
+        // clouded files
+        books_hd1 -> bookscopy
+
         // android
-        firefox -> ffsync -> ff_mobile
         ttrss -> ttrssmobile
         gcalendar -> calendar
         gcontacts -> contacts
@@ -229,10 +223,6 @@ Il codice dell'immagine:
         facebook -> thinkup
         twitter -> thinkup
         foursquare -> thinkup
-        ttrss ->  db_back
-        videodb -> db_back
-        thinkup -> db_back
-        owncloud -> html_back
         html_back -> rsync_ovh
         db_back -> rsync_ovh
 
@@ -241,11 +231,13 @@ Il codice dell'immagine:
         gmail -> offlineimap [dir=both]
         ai -> offlineimap [dir=both]
         riseup -> offlineimap [dir=both]
-        offlineimap -> mail
-        mail -> rsync -> mail_back
+        offlineimap -> mail_hd1
         
         // internet services
         github -> blog_pubwww [color=forestgreen]
+
+        // dev backups
+        owncloud -> dev_hd1 [label="dd",ltail="cluster_rpi"]
     }
 
 Qui si seguito, invece, i progetti a lungo termine:
@@ -253,7 +245,6 @@ Qui si seguito, invece, i progetti a lungo termine:
     digraph G {
         // TODO
         // * legend
-        // * bold cluster labels
         graph [ dpi = 500 ];
         size ="4,6";	// table size
         compound=true;
@@ -263,7 +254,7 @@ Qui si seguito, invece, i progetti a lungo termine:
         subgraph cluster_edgar {
             style=filled;
             color=lightgrey;
-            label = "edgar";
+            label = <<b>edgar</b>>;
 
             // boxes
             subgraph cluster_drop {
@@ -272,36 +263,35 @@ Qui si seguito, invece, i progetti a lungo termine:
                 label = "Dropbox";
 
                 irssi [label="~/.irssi",shape=folder]
-                rsnapshot [label="backup\ndir",shape=folder]
+                rsnapshot [label="~/.backup",shape=folder]
             }
 
             subgraph cluster_hd1 {
                 style=filled;
-                color=white;
-                label = "320 Gb";
+                color="#008000";
+                label="sda1";
 
-                immagini_hd1 [label="immagini",shape=folder]
+                immagini_hd1 [label="img",shape=folder]
+                musica_hd1 [label="music",shape=folder]
+                books_hd1 [label="books",shape=folder]
+                mail_hd1 [label="mail",shape=folder]
                 video_hd1 [label="video",shape=folder]
-                musica_hd1 [label="musica",shape=folder]
-                books_hd1 [label="libri",shape=folder]
+                dev_hd1 [label="dev",shape=folder]
             }
             
             // scripts and programs
             offlineimap [label="offlineimap",shape=component]
             script_rsnapshot [label="rsnapshot",shape=component]
-            rsync [label="rsync",shape=component]
             sync_owncloud [label="owncloud\nsync",shape=component]
-            firefox [label="Firefox",shape=component]
             
             // folders
-            mail [label="~/.mail",shape=folder,style=filled,fillcolor="#008000"]
             filesystem_edgar [label="filesystem",shape=folder]
         }
 
         subgraph cluster_mail {
             style=filled;
             color=lightblue;
-            label = "Mail services";
+            label = <<b>Mail services</b>>;
 
             ai [label="A/I \nmail",shape=box3d,style=filled,fillcolor="#808000"]
             gmail [label="Gmail",shape=box3d]
@@ -311,28 +301,27 @@ Qui si seguito, invece, i progetti a lungo termine:
         subgraph cluster_services {
             style=filled;
             color=lightblue;
-            label = "Internet services";
+            label = <<b>Internet services</b>>;
 
             github [label="GitHub",shape=component]
-            ffsync [label="Firefox\nSync",shape=component]
             librefm [label="Libre.fm",shape=component]
             facebook [label="Facebook",shape=component]
             twitter [label="Twitter",shape=component]
             foursquare [label="Foursquare",shape=component]
-            brdcstit [label="brdcst.it",shape=component]
+            identica [label="Identi.ca",shape=component]
         }
 
         subgraph cluster_hosting{
             style=filled;
             color=lightblue;
-            label = "Hosting services";
+            label = <<b>Hosting services</b>>;
 
             subgraph cluster_droponline{
                 style=filled;
                 color=blue;
                 label = "Dropbox";
 
-                irssidrop [label="~/.irssi",shape=folder,style=filled,fillcolor=green]
+                irssidrop [label="irssi",shape=folder,style=filled,fillcolor=green]
                 rsnapshot_edgar_drop [label="backup\nedgar\novh\nparanoia\nrpi",shape=folder,style=filled,fillcolor=green]
             }
         }
@@ -340,7 +329,7 @@ Qui si seguito, invece, i progetti a lungo termine:
         subgraph cluster_paranoia {
             style=filled;
             color=yellow;
-            label = "server 1\nparanoia";
+            label = <<b>server 1</b> paranoia>;
 
             rsync_paranoia [label="rsync",shape=component]
 
@@ -362,7 +351,7 @@ Qui si seguito, invece, i progetti a lungo termine:
         subgraph cluster_sgagliozza {
             style=filled;
             color=cyan;
-            label = "server3\nsgagliozza";
+            label = <<b>server4</b> sgagliozza>;
 
             rsync_sgagliozza [label="rsync",shape=component]
 
@@ -378,14 +367,12 @@ Qui si seguito, invece, i progetti a lungo termine:
 
             filesystem_sgagliozza -> rsync_sgagliozza -> script_rsnapshot
             thblog_pubwww -> rsync_sgagliozza
-
-            mail_back [label="mail\nbackup",shape=folder,style=filled,fillcolor=green]
         }
 
         subgraph cluster_ovh {
             style=filled;
             color=orange;
-            label = "server 2\n ovh";
+            label = <<b>server2</b> ovh>;
 
             rsync_ovh[label="rsync",shape=component]
             filesystem_ovh [label="filesystem",shape=folder]
@@ -399,18 +386,28 @@ Qui si seguito, invece, i progetti a lungo termine:
             }
 
             filesystem_ovh -> rsync_ovh -> script_rsnapshot
-            others_pubwww_ovh -> rsync_ovh [ltail=cluster_pubwww_ovh]
+            others_pubwww_ovh -> html_back [ltail=cluster_pubwww_ovh]
+
+
+            // other backups
+            subgraph cluster_backup {
+                style=filled;
+                fillcolor=white;
+                label = "backups";
+
+                html_back [label="html\nbackups",shape=folder]
+                db_back [label="db\nbackups",shape=folder]
+            }
         }
 
         subgraph cluster_rpi{
             style=filled;
             color=brown;
-            label = "RPi";
+            label = <<b>server 3</b> RPi>;
 
             sync_owncloud -> owncloud [color=blue]
             lastexport [label="lastexport.py",shape=component]
 
-            rsync_rpi[label="rsync",shape=component]
             filesystem_rpi [label="filesystem",shape=folder]
 
             subgraph cluster_pubwww_rpi {
@@ -428,63 +425,46 @@ Qui si seguito, invece, i progetti a lungo termine:
             subgraph cluster_owncloud_backup {
                 style=filled;
                 fillcolor=green;
-                label = "synced owncloud \nbackups";
+                label = "RPi storage";
 
-                immagini_back [label="immagini",shape=folder]
+                immagini_back [label="img",shape=folder]
                 video_back [label="video",shape=folder]
-                musica_back [label="musica",shape=folder]
-                books_back [label="libri",shape=folder]
-            }
-
-            // other backups
-            subgraph cluster_backup {
-                style=filled;
-                fillcolor=green;
-                label = "backups";
-
+                musica_back [label="music",shape=folder]
+                books_back [label="books",shape=folder]
+                mail_back [label="mail",shape=folder]
                 data_back [label="data\nbackups",shape=folder]
-                db_back [label="db\nbackups",shape=folder]
-                html_back [label="html\nbackups",shape=folder]
             }
-
-            filesystem_rpi -> rsync_rpi -> script_rsnapshot
-            data_back -> rsync_rpi
-            db_back -> rsync_rpi
-            html_back -> rsync_rpi
         }
 
         subgraph cluster_android {
             style=filled;
             color=pink;
-            label = "Android";
+            label = <<b>Android</b>>;
 
             sms [label="Android \nSMS",shape=box3d]
             calendar [label="calendar",shape=component]
             contacts [label="contacts",shape=component]
-            ff_mobile [label="Firefox\nmobile",shape=component]
             chatmobile [label="Gtalk\nmobile",shape=egg]
             ttrssmobile [label="TT-RSS\nmobile",shape=component]
         }
 
-        pings [label="pings",shape=egg]
         chat [label="Gtalk\ndesktop|web\nlogs",shape=egg]
         
         // ## bindings ##
 
         // chat
         irssidrop -> irssi [dir=both]
-        pings -> riseup
         chat -> gmail
         chatmobile -> gmail
 
         // android
         owncloud -> calendar [dir=both]
         owncloud -> contacts [dir=both]
-        firefox -> ffsync -> ff_mobile
         ttrss -> ttrssmobile
 
         // server backups
         filesystem_edgar -> script_rsnapshot -> rsnapshot -> rsnapshot_edgar_drop [color=forestgreen]
+        owncloud -> dev_hd1 [label="dd",ltail="cluster_rpi"]
 
         // service backups
         github -> data_back
@@ -492,18 +472,16 @@ Qui si seguito, invece, i progetti a lungo termine:
         facebook -> thinkup
         twitter -> thinkup
         foursquare -> thinkup
-        ttrss -> db_back
-        videodb -> db_back
-        thinkup -> db_back
-        owncloud -> html_back
+        html_back -> rsync_ovh
+        db_back -> rsync_ovh
 
         // mail - sms
         sms -> gmail
         gmail -> offlineimap [dir=both]
         ai -> offlineimap [dir=both]
         riseup -> offlineimap [dir=both]
-        offlineimap -> mail
-        mail -> rsync -> mail_back
+        offlineimap -> mail_hd1 -> sync_owncloud
+        owncloud -> mail_back
         
         // immagini
         immagini_hd1 -> sync_owncloud
@@ -520,9 +498,6 @@ Qui si seguito, invece, i progetti a lungo termine:
         // libri
         books_hd1 -> sync_owncloud
         owncloud -> books_back
-
-        // internet services
-        github -> blog_pubwww [color=forestgreen]
     }
 
    [1]: http://dl.dropbox.com/u/369614/blog/img_red/backup.png
