@@ -5,5 +5,5 @@ extends: false
 
 {% set tag = site.tagger.tags['tangogps'] %}
 {% set source = site.content.node_from_relative_path('log') %}
-{% set walker = source.walk_resources_tagged_with_tangogps %}
+{% set walker = source['walk_resources_tagged_with_tangogps'] %}
 {% extends "tagged_posts.j2" %}

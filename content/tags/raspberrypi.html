@@ -3,7 +3,7 @@ extends: false
 
 ---
 
-{% set tag = site.tagger.tags['nokia'] %}
+{% set tag = site.tagger.tags['raspberrypi'] %}
 {% set source = site.content.node_from_relative_path('log') %}
-{% set walker = source['walk_resources_tagged_with_nokia'] %}
+{% set walker = source['walk_resources_tagged_with_raspberrypi'] %}
 {% extends "tagged_posts.j2" %}

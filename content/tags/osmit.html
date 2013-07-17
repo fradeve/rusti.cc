@@ -5,5 +5,5 @@ extends: false
 
 {% set tag = site.tagger.tags['osmit'] %}
 {% set source = site.content.node_from_relative_path('log') %}
-{% set walker = source.walk_resources_tagged_with_osmit %}
+{% set walker = source['walk_resources_tagged_with_osmit'] %}
 {% extends "tagged_posts.j2" %}

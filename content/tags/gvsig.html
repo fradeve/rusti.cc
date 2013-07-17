@@ -5,5 +5,5 @@ extends: false
 
 {% set tag = site.tagger.tags['gvsig'] %}
 {% set source = site.content.node_from_relative_path('log') %}
-{% set walker = source.walk_resources_tagged_with_gvsig %}
+{% set walker = source['walk_resources_tagged_with_gvsig'] %}
 {% extends "tagged_posts.j2" %}
