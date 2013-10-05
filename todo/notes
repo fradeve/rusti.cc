@@ -1,0 +1,46 @@
+inspiring blogs
+===============
+
+    + [g] http://stevelosh.com/
+    + http://simonfosterdesign.com/blog/
+    + http://informationarchitects.net/blog
+
+* font
+    + [g] http://hellohappy.org/beautiful-web-type/
+
+* icons
+    + [g] https://github.com/aristath/elusive-iconfont
+
+* dev badges / social
+    + [g] https://github.com/mikaelbr/metabrag
+    + [g] https://github.com/haschek/PubwichFork
+
+* cv
+    + [g] https://github.com/philipithomas/cv-philipithomas
+
+* graphs (recap)
+    + sistemare tutti i recap con raphael JS
+
+* deploy
+    + Fabric -> http://www.jeffknupp.com/blog/2012/02/09/starting-a-django-project-the-right-way/
+
+issues
+======
+
+* inserire l'intero XML nel post 2009/04/openmoko*navit*su*shr*testing ed eliminare il file
+
+tips
+====
+
+* per cercare una parola tra i post:
+
+	find  -type f -print0 | xargs -0 grep -il 'slide'
+
+* list all files in directories recursively
+
+	find ./ -type f
+
+useful vim macros
+=================
+
+:0,15 /    -^M0dwdwv$d/tags^MA ^[$pA,^[<80>kddd

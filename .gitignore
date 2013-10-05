@@ -1,3 +1,6 @@
-server_config.yaml
 .idea
-deploy/*
+output/*
+publishconf.py
+Makefile
+develop_server.sh
+fabfile.py

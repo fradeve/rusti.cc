@@ -1,6 +1,0 @@
----
-title: fradeve.org
-extends: atom.j2
-listable: false
-rss: true
----

@@ -1,0 +1,66 @@
+Title: Ubuntu Linux e OpenStreetMap nel primo mapping party pugliese: 20 dicembre
+Date:  2009-12-12 23:27:38
+tags: gnulinux, gps, openstreetmap, puglia, ruvodipuglia, terlizzi, ubuntu,
+
+<center>![][1]</center>
+
+**Domenica 20 dicembre 2009, a Ruvo di Puglia**, nel pomeriggio, avrà luogo il
+primo meeting degli utenti pugliesi di OpenStreetMap, gentilmente ospitato
+nella sede dell'**Associazione [VieDiFuga][3]**, in Via Cattedrale 130,
+nell'ambito dell'evento di 5 giorni "L'Arte per la Vita".
+
+
+[OpenStreetMap][4] è un progetto collaborativo per la creazione di una mappa libera del Pianeta, a
+cui tutti possono partecipare. L'Associazione VieDiFuga, nello spirito di
+promuovere la libera diffusione della cultura e del sapere, ospiterà i
+volenterosi mapper che vorranno partecipare alla mappatura libera della città
+di [Ruvo di Puglia][5] (BA). In questa occasione i due mapper pugliesi che
+stanno curando la liberazione dei dati, l'utente Sdonk (Alessandro De Noia,
+che si è interfacciato con lo staff che sta dietro al [SIT Puglia][6]), e
+l'utente Fradeve (Francesco de Virgilio, che insieme a Sdonk ed altri sta
+coordinando la stesura delle linee guida per l'importazione dei dati nel
+database del progetto), annunceranno la liberazione di tutti i dati
+cartografici regionali, per poter offrire a tutti i cittadini una mappa della
+Puglia libera e utilizzabile per ogni scopo. L'evento sarà il primo momento di
+"unione fisica" della comunità pugliese di OpenStreetMap, che al momento
+include quasi 50 volontari sparsi in tutto il "tacco d'Italia", dal Gargano a
+Santa Maria di Leuca. Parteciperanno in particolare i volontari che stanno
+mappando Barletta, Corato, Andria, Ruvo di Puglia, Terlizzi, Bisceglie,
+Molfetta, Bari. Durante la giornata si potrà approfittare della presenza degli
+utenti più esperti per chiarire dubbi riguardo al progetto, per scoprirne
+nuove sfaccettature ed applicabilità, e per ottenere assistenza. Verrà offerto
+supporto ai nuovi arrivati, su tutti i sistemi operativi: Microsoft Windows,
+Mac OSX ed in particolare Ubuntu GNU/Linux. Il programma di massima della
+giornata:
+
+  * ORE 15.30: incontro nella sede dell'Associazione VieDiFuga, talk
+aperto, introduzione ai concetti di Software Libero e mappa libera, annuncio e
+modalità liberazione dei dati del SIT Puglia
+
+  * ORE 16.30: briefing pre-mapping party, accoglienza dei nuovi utenti,
+installazione software e configurazione dei GPS
+
+  * ORE 17.30: mapping party per le vie di Ruvo
+
+  * ORE 18.30: nella sede dell'Associazione, disegno della mappa,
+caricamento dei dati su www.openstreetmap.org
+
+  * ORE 20.30: cena sociale :)
+
+**Tutte le informazioni tecniche in [questa pagina][7] del wiki di
+OpenStreetMap.** VieDiFuga e la comunità pugliese di OpenStreetMap invitano
+tutti i volontari di OpenStreetMap, gli utenti GNU/Linux, e tutte le persone
+interessate a partecipare, sarà un'esperienza di massima apertura al pubblico
+ed ai meno esperti. Ma, soprattutto, sarà un'esperienza divertente :D
+
+   [1]: http://dl.dropbox.com/u/369614/blog/img_red/locandina35x50.jpg
+
+   [3]: http://www.viedifuga.it/
+
+   [4]: http://www.openstreetmap.org/
+
+   [5]: http://it.wikipedia.org/wiki/Ruvo_di_Puglia
+
+   [6]: http://www.sit.puglia.it/
+
+   [7]: http://wiki.openstreetmap.org/wiki/Ruvo_Mapping_Party
