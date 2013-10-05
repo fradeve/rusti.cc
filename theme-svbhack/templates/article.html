@@ -6,7 +6,10 @@
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block header %}
-<p>Posted on {{ article.locale_date }}</p>
+    <p>Posted on {{ article.locale_date }}</p>
+    {% if article.lastupdated %}
+        <p>Updated on {{ article.lastupdated }}</p>
+    {% endif %}
 {% endblock %}
 
 {% block content %}

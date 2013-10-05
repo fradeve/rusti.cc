@@ -66,11 +66,12 @@
       <p>
       <a href="{{ SITEURL }}">Index</a> &#124; <a href="{{ SITEURL }}/archives.html">Archives</a>
       {% if FEED_ALL_ATOM %}
-      &#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom Feed</a>
+      &#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom</a>
       {% endif %}
       {% if FEED_ALL_RSS %}
-      &#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS Feed</a>
+      &#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS</a>
       {% endif %}
+      &#124; <a href="{{ SITEURL }}/featured.html">Featured*</a>
       </p>
       {% endblock header %}
     </header>
