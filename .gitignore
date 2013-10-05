@@ -1,3 +1,5 @@
 server_config.yaml
 .idea
 deploy/*
+output
+fabfile.py
