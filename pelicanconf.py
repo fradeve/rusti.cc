@@ -11,7 +11,7 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'it'
 
-THEME = 'theme-svbhack'
+THEME = 'andrewseidl-theme'
 
 ARTICLE_URL = 'log/{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_SAVE_AS = 'log/{date:%Y}/{date:%m}/{slug}.html'
@@ -19,18 +19,24 @@ ARTICLE_LANG_URL = 'log/{date:%Y}/{date:%m}/{slug}-{lang}.html'
 ARTICLE_LANG_SAVE_AS = 'log/{date:%Y}/{date:%m}/{slug}-{lang}.html'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = 'atom.xml'
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_RSS = 'feeds/rss.xml'
 CATEGORY_FEED_ATOM = None
+
+# Files
+PATH = 'content'
+STATIC_PATHS = ["images"]
 
 # Comments
 DISQUS_SITENAME = 'fradeveorig'
 
-# Blogroll
-LINKS =  (
-            ('About', 'http://me.fradeve.org'),
-            ('Code', 'http://github.com/fradeve'),
-            ('Social', 'http://fradeve.org/social.html'),
+# Links
+SOCIAL = (
+            ('icon-archive', SITEURL + '/archives.html'),
+            ('icon-tags', SITEURL + '/tags.html'),
+            ('icon-pushpin', SITEURL + '/featured.html'),
+            ('icon-user', 'http://me.fradeve.org'),
+            ('icon-github', 'http://github.com/fradeve')
          )
 
 DEFAULT_PAGINATION = 5

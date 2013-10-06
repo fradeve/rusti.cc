@@ -2,7 +2,7 @@ Title: RaspberryPi, my tips
 Date:  2013-07-17 16:00:00
 featured: yes
 lang: en
-lastupdated: 2013-07-23
+Modified: 2013-07-23
 tags: raspberrypi, cloud
 
 This is nothing more than few quick notes about setting up Raspberry Pi as a personal

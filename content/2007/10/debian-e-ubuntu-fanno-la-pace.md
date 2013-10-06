@@ -5,6 +5,7 @@ tags: ubuntu,
 <center>[![][1]][2]<br>[Debian - on anything][3]_Inserito originariamente da
 [Firefalcon][4]_</center>
 
+![Debian - on anything]({filename}/images/773000480_8a3f0b611e_m.jpg)
 
 Purtroppo, gravato da una impressionante mole di studio, non posso dilungarmi,
 comunque faccio un po' di eco alla notizia:
