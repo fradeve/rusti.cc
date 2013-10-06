@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content" class="body">
+    {% for article in dates %}
+        <header class="clearfix">
+            <h1>
+            	<a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+    			<abbr class="published" title="{{ article.date.isoformat() }}">
+      				<small>{{ article.date | strftime('%d %b %Y') }}</small>
+    			</abbr>
+    		</h1>
+        </header>
+    {% endfor %}
+</section>
+{% endblock %}
