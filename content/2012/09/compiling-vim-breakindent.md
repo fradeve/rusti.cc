@@ -43,3 +43,5 @@ As I write, [Eudoxos][3] is maintaining a [Launchpad repository][4] with Vim bre
    [2]: https://groups.google.com/forum/#!msg/vim_dev/VdMLVy_ZS2I/KsRNkREcBhgJ
    [3]: http://stackoverflow.com/users/761090/eudoxos
    [4]: https://launchpad.net/~eudoxos/+archive/ppa
+   [5]: http://stackoverflow.com/users/20713/ephemient
+   [6]: http://stackoverflow.com/questions/10998516/compiling-vim-with-breakindent-patch

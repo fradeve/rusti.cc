@@ -4,7 +4,7 @@
 {% for article in articles_page.object_list %}
     <header class="clearfix">
         <h1>
-            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>{% if article.featured %}*{% endif %}
             <abbr class="published" title="{{ article.date.isoformat() }}">
                 <small>{{ article.date | strftime('%d %b %Y') }}</small>
             </abbr>
