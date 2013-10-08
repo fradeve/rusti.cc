@@ -2,7 +2,8 @@ Hello, this is Francesco de Virgilio's website, originally forked from Fernando 
 
 * featured articles in post list support (`andrewseidl-theme/templates/index.html`); it reads `featured: yes` in metadata
 * "last updated" added in articles headings (`andrewseidl-theme/templates/article.html`); it reads `Modified` in metadata
-* fixed code CSS to the excellent [Solarized](https://github.com/altercation/solarized)
+* switched code CSS to the excellent [Solarized](https://github.com/altercation/solarized)
+* comments are hidden by default and can be toggled; comments count for each post are fetched using Disqus APIs and showed next to the "Comments" menu; if comments count is 0, "Comments" menu is greyed out (new variable `DISQUS_PUBLICKEY` in `pelicanconf.py` needed);
 * a Jinja2 template working with [g.raphael library](http://g.raphaeljs.com) to quickly insert graphs (under works)
 
 All the code from Fernando Paolo is "freely available" as reported from in [his blog](http://fspaolo.net/about/); all the other code is released under GNU GPL v3 licence, see LICENSE; all the javascript libraries are released in full respect of theire own licences.

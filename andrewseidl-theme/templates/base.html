@@ -11,45 +11,30 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow|PT+Serif' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-{% if FEED_ALL_ATOM %}
-    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
-{% endif %}
-{% if FEED_ALL_RSS %}
-    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
-{% endif %}
-{% if article and article.latex %}
-    {{ article.latex }}
-{% endif %}
-{% if page and page.latex %}
-    {{ page.latex }}
-{% endif %}
+    {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
+    {% if article and article.latex %}
+        {{ article.latex }}
+    {% endif %}
+    {% if page and page.latex %}
+        {{ page.latex }}
+    {% endif %}
 </head>
 
 <body>
-{% include 'github.html' %}
-    <div class="header-container">
+    {% include 'github.html' %}
 
+    <div class="header-container">
         <header id="masthead" class="wrapper clearfix">
             <h1 class="title"><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
             {% if SITESUBTITLE %}<strong>{{ SITESUBTITLE }}</strong>{% endif %}
-
-<!--             <nav>
-                <ul>
-{% for title, link in MENUITEMS %}
-                    <li><a href="{{ link }}">{{ title }}</a></li>
-{% endfor %}
-{% if DISPLAY_PAGES_ON_MENU %}
-{% for page in PAGES %}
-                    <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-{% endfor %}
-{% endif %}
-{% for cat, null in categories %}
-                    <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat | capitalize }}</a></li>
-{% endfor %}
-                </ul>
-            </nav> -->
         </header>
     </div>
+
     <div class="main-container">
         <div class="main wrapper clearfix">
             {% block content %}
@@ -60,39 +45,87 @@
     <div class="footer-container">
         <footer id="contentinfo" class="wrapper">
 
-<!--             <form action="http://google.com/search" method="get">
+            <!-- <form action="http://google.com/search" method="get">
                 <fieldset role="search">
                     <input type="hidden" name="q" value="site:aas.io" />
                     <input class="search" type="text" name="q" results="0" placeholder="Search" accesskey="/" />
                 </fieldset>
             </form> -->
 
-{% if SOCIAL %}
-            <div class="social">
-                <ul>
-{% if FEED_ALL_ATOM %}
-                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"><i class="icon-rss-sign"></i></a></li>
-{% endif %}
-{% if FEED_ALL_RSS %}
-                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"><i class="icon-rss"></i></a></li>
-{% endif %}
+            {% if SOCIAL %}
+                        <div class="social">
+                            <ul>
+                                {% if FEED_ALL_ATOM %}
+                                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"><i class="icon-rss-sign"></i></a></li>
+                                {% endif %}
+                                {% if FEED_ALL_RSS %}
+                                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"><i class="icon-rss"></i></a></li>
+                                {% endif %}
 
-{% for icon, link in SOCIAL %}
-                    <li><a href="{{ link }}"><i class="{{ icon }}"></i></a></li>
-{% endfor %}
-                </ul>
-            </div><!-- /.social -->
-{% endif %}
+                                {% for icon, link in SOCIAL %}
+                                    <li><a href="{{ link }}"><i class="{{ icon }}"></i></a></li>
+                                {% endfor %}
+                            </ul>
+                        </div><!-- /.social -->
+            {% endif %}
 
-            <div id="license">
-                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">{{ AUTHOR }}</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
-            </div>
             <small><a href="/humans.txt">humans.txt</a></small>
         </footer>
     </div>
 
-{% include 'analytics.html' %}
-{% include 'piwik.html' %}
-{% include 'disqus_script.html' %}
+    {% include 'analytics.html' %}
+    {% include 'piwik.html' %}
+    {% if DISQUS_SITENAME %}
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+        <script type="text/javascript">
+            var disqus_identifier = window.location.pathname;
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+        <script type="text/javascript">
+            function toggleComments() {
+                var commentDiv = document.getElementById("disqus_thread");
+                (commentDiv.style.display == "none") ? commentDiv.style.display = "block" : commentDiv.style.display = "none";
+                return false;
+            }
+        </script>
+
+        <script>
+            $(document).ready(function () {
+
+                var disqusPublicKey = "{{ DISQUS_PUBLICKEY }}";
+                var disqusShortname = "{{ DISQUS_SITENAME }}";
+                var urlArray = [];
+                urlArray.push('link:' + window.location.href);
+
+                $.ajax({
+                    type: 'GET',
+                    url: "https://disqus.com/api/3.0/threads/set.jsonp",
+                    data: { api_key: disqusPublicKey, forum : disqusShortname, thread : urlArray },
+                    cache: false,
+                    dataType: 'jsonp',
+                    success: function (result) {
+
+                        for (var i in result.response) {
+
+                            var countText = " comments";
+                            var count = result.response[i].posts;
+
+                            if (count == 0)
+                                $('#commentbutton').css('color', '#586e75')
+                            else
+                                $('#commentbutton').append(' (' + count + ')')
+                        }
+                    }
+                });
+            });
+        </script>
+    {% endif %}
+    {% include 'disqus_script.html' %}
 </body>
 </html>

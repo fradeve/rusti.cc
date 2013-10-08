@@ -1,6 +1,6 @@
 Title: Finalmente a casa: take 2
 Date:  2012-07-22 13:30:00
-tags: blog,
+tags: blog
 
 Il titolo probabilmente ricorda [qualcosa di già sentito](http://blog.fradeve.org/log/2007/09/finalmente-a-casa.html), ma fa niente. Questo post è una comunicazione di servizio: da oggi si "blogga come un hacker".
 

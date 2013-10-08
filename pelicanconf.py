@@ -29,6 +29,7 @@ STATIC_PATHS = ["images"]
 
 # Comments
 DISQUS_SITENAME = 'fradeveorig'
+DISQUS_PUBLICKEY = '4VY3RiHzHB4j6Z0jjyUpvKbVgM6homcEupgvIdIdrjNTaMtGh8Quz2w6Myy6VW4E'
 
 # Links
 SOCIAL = (
@@ -36,7 +37,7 @@ SOCIAL = (
             ('icon-tags', SITEURL + '/tags.html'),
             ('icon-pushpin', SITEURL + '/featured.html'),
             ('icon-user', 'http://me.fradeve.org'),
-            ('icon-github', 'http://github.com/fradeve')
+            ('icon-github', 'http://github.com/fradeve/fradeve.org')
          )
 
 DEFAULT_PAGINATION = 5

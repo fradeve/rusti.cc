@@ -2,7 +2,7 @@ Title: Compiling VIM with Breakindent patch
 Date:  2012-09-10 10:00:00
 featured: yes
 lang: en
-tags: vim,
+tags: vim
 
 [VIM Breakindent patch][1]'s story is quite frustrating, since it is a nice piece of code (really useful when you work with tag-like structured coding languages, e.g. LaTeX) but it has been [never integrated in standard VIM][2] due to some instability issues. In 2012, you always have to patch and compile VIM manually to get it working. This guide has been tested on Ubuntu 12.04 (many thanks to [ephemient][5] for pointing out the correct procedure, as a result of a [discussion][6] on Stackexchange).
 

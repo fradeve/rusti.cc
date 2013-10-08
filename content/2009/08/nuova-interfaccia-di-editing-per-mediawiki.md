@@ -1,6 +1,6 @@
 Title: Nuova interfaccia di editing per MediaWiki
 Date:  2009-08-07 07:30:33
-tags: gnuinux, wikimedia, wikipedia,
+tags: gnulinux, wikimedia, wikipedia
 
 Ormai non esiste internauta (e non solo) che non
 abbia usato (e contribuito, si spera) almeno una volta ad uno dei progetti
@@ -19,11 +19,10 @@ moda decisamente diffusa.
 Ma ancora oggi mi capita ogni tanto di sentire qualcuno (fare 90 minuti di
 treno ogni giorno significa anche questo) dire cose del tipo
 
-"l'altro giorno stavo consultando Wikipedia, l'articolo sulla fotosintesi
-clorofilliana è scritto veramente bene, molto molto chiaro e preciso; peccato
-però, c'era un errore su un termine, avrei voluto correggerlo ma onestamente
-non ci capisco niente sai, è cosi complicato..."
-
+> l'altro giorno stavo consultando Wikipedia, l'articolo sulla fotosintesi
+> clorofilliana è scritto veramente bene, molto molto chiaro e preciso; peccato
+> però, c'era un errore su un termine, avrei voluto correggerlo ma onestamente
+> non ci capisco niente sai, è cosi complicato...
 
 Per fortuna alla Wikimedia Foundation questo l'hanno capito, e qualche tempo
 fa hanno lanciato l'_usability project_, con lo scopo di migliorare
