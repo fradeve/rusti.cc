@@ -1,6 +1,6 @@
 Title: Ubuntu-it Wiki] Portale Giochi: 5 nuovi giochi
 Date:  2008-01-20 14:00:08
-tags: ubuntu,
+tags: ubuntu
 
 Nuovi aggiornamenti dal Portale Giochi del Wiki
 di Ubuntu-it: sono stati aggiunti 5 nuove guide:

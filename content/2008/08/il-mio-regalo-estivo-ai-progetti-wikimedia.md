@@ -1,6 +1,6 @@
 Title: Il mio regalo estivo ai progetti Wikimedia
 Date:  2008-08-21 17:42:01
-tags: ubuntu, wikimedia, wikipedia,
+tags: ubuntu, wikimedia, wikipedia
 
 Sconcertato da tanta calura, mi son dato
 all'upload massiccio su [Wikimedia Commons][1]: ho rilasciato sotto licenza

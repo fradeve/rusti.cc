@@ -1,6 +1,6 @@
 Title: Ubuntu: Facciamo un rias(s)unto
 Date:  2008-03-16 19:47:22
-tags: ubuntu,
+tags: ubuntu
 
 Ultimamente, sto facendo mente locale sui progetti del mondo Free
 Software/Free Culture che seguo personalmente ed ai quali contribuisco e mi

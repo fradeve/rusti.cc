@@ -1,6 +1,6 @@
 Title: Navigazione GPS: dallOpenmoko allAsus EEE
 Date:  2008-03-17 22:01:41
-tags: openmoko, python, ubuntu,
+tags: openmoko, python, ubuntu
 
 Ogni tanto mi stupisco di come il software sia in alcuni casi
 straordinariamente portabile. Se poi è sviluppato in Python.... ancora meglio!

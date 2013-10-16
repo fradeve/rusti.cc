@@ -1,6 +1,6 @@
 Title: Backuppare i brani preferiti di Amarok 1.4 in Dropbox, con un comando
 Date:  2010-08-10 23:07:46
-tags: ubuntu, gnulinux, dropbox, amarok,
+tags: ubuntu, gnulinux, dropbox, amarok
 
 Dropbox dà dipendenza, inutile
 negarlo. Da quando la uso mi è venuta pian piano la mania di sincronizzare
@@ -32,10 +32,12 @@ playlist che si possa ricordare, ad esempio "bellissime".
 Possiamo quindi passare ad Amarok, dopo averlo aperto, i seguenti comandi
 tramite dcop:
 
+    :::bash
 	dcop amarok playlistbrowser loadPlaylist bellissime
 
 Permette di caricare la playlist "bellissime" nel player;
 
+    :::bash
 	dcop amarok playlist saveM3u bellissime.m3u /home/user
 
 Permette di esportare la playlist appena caricata nella propria home,
@@ -45,16 +47,19 @@ sostituendo ovviamente "user" con il proprio nome utente.
 Possiamo quindi provare a concatenare i comandi, in un'unica stringa da
 aggiungere ai nostri alias di .bashrc, ad esempio:
 
+    :::bash
 	dcop amarok playlistbrowser loadPlaylist bellissime && dcop amarok playlist saveM3u bellissime.m3u /home/user && mv /home/user/bellissime.m3u ~/Dropbox/bellissime.m3u
 
 So che si poteva tranquillamente evitare
 l'ultimo comando, ma ho preferito aggiungere un passaggio per rendere le cose
 più semplici. Il nostro alias da aggiungere al file ~/.bashrc, quindi sarebbe:
 
+    :::bash
 	alias amarok-backup='dcop amarok playlistbrowser loadPlaylist bellissime && dcop amarok playlist saveM3u bellissime.m3u /home/user && mv /home/user/bellissime.m3u ~/Dropbox/bellissime.m3u'
 
 Infine, aggiorniamo il nostro bashrc con
 
+    :::bash
 	source ~/.bashrc
 
 Dovremo solamente stare attenti a seguire bene la procedura
@@ -62,12 +67,9 @@ prima di eseguire il comando "amarok-backup" da terminale, altrimenti potremmo
 incorrere in un crash (non chiedetemi perché):
 
   * aprire amarok
-
   * cancellare dalla voce "playlist" del menù omonimo le vecchie playlist
 salvate in home e poi trasferite, altrimenti il nuovo backup non funzionerà
-
   * dare il comando "amarok-backup" da terminale
-
   * chiudere amarok
 
 

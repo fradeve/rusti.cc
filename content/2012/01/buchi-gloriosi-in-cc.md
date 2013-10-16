@@ -1,6 +1,6 @@
 Title: Buchi gloriosi in Creative Commons
 Date:  2012-01-08 15:00:00
-tags: creativecommons, music,
+tags: creativecommons, music
 
 
 <center>![][2]<br>_Una copertina_</center>

@@ -1,6 +1,6 @@
 Title: PiX Bros in Italiano... vi presento il nuovo traduttore
 Date:  2007-10-01 21:16:31
-tags: ubuntu,
+tags: ubuntu
 
 Per chi non sapesse cos'è, [PiX Bros][1]
 è un gioco _platform_ sviluppato dalla PiX Juegos. Non è l'unico gioco che i

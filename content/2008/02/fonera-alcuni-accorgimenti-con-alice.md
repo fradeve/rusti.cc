@@ -1,6 +1,6 @@
 Title: Fonera: alcuni accorgimenti con Alice
 Date:  2008-02-18 22:50:47
-tags: ubuntu, fon,
+tags: ubuntu, fon
 
 In questi giorni, tempo di esami all'università, la Fonera mi ha dato
 improvvisamente un po' di filo da torcere: si disconnetteva praticamente ogni

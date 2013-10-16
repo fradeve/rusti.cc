@@ -1,6 +1,6 @@
 Title: Warcraft III nel Portale Giochi di Ubuntu-it
 Date:  2007-10-26 22:28:59
-tags: ubuntu,
+tags: ubuntu
 
 <center>[![][1]][2]<br>[World Of WarCraft][3] Inserito
 originariamente da [robertnelson][4]</center>

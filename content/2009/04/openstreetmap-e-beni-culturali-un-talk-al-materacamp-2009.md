@@ -1,6 +1,6 @@
 Title: OpenStreetMap e beni culturali: un talk al MateraCamp 2009
 Date:  2009-04-29 09:19:51
-tags: gnulinux, matera, openstreetmap, talk, lug,
+tags: gnulinux, matera, openstreetmap, talk, lug
 
 Ho il piacere di annunciare che sabato 2
 maggio terrò un talk al [MateraCamp 2009][1] dal titolo: _OpenStreetMap: una cartografia in wiki per rilanciare il turismo... e non

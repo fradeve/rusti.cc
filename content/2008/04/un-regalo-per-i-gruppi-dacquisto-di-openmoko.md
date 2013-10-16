@@ -1,6 +1,6 @@
 Title: Un regalo per i gruppi dacquisto di Openmoko
 Date:  2008-04-25 08:12:19
-tags: freerunner, openmoko,
+tags: freerunner, openmoko
 
 Forse la cosa non è molto risaputa,
 ma **Openmoko ha deciso di vendere anche in Europa**, non appena uscirà il Neo
@@ -21,12 +21,12 @@ davvero poco). Ovviamente questo lascia pensare che l'entrata in commercio del
 FreeRunner sia *veramente* molto vicina.... :D Di seguito, come sempre,
 riporto il testo originale della mail:
 
-	I decided to do something EXTRA for the
-	groups of people who are uniting to execute a group sales. Every 10 pack, will
-	come with a box of stuff. 10 pouches and 10 head sets.  So if you join a group
-	sales organization and buy with other people, then the 10 pack will include
-	these extras.  Sean and I are so happy with the way the community is coming
-	together around this idea of group sales that it just made sense.
+> I decided to do something EXTRA for the
+> groups of people who are uniting to execute a group sales. Every 10 pack, will
+> come with a box of stuff. 10 pouches and 10 head sets.  So if you join a group
+> sales organization and buy with other people, then the 10 pack will include
+> these extras.  Sean and I are so happy with the way the community is coming
+> together around this idea of group sales that it just made sense.
 
    [1]: http://wiki.openmoko.org/wiki/GroupSales#Italy
 

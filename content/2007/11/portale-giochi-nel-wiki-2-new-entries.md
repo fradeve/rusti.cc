@@ -1,6 +1,6 @@
 Title: Portale Giochi nel Wiki: 2 new entries
 Date:  2007-11-05 23:04:56
-tags: ubuntu,
+tags: ubuntu
 
 (Si scrive "entries"? Si accettano consigli) Appena iniziata questa settimana, abbiamo due novità nel Portale Giochi delle
 Wiki di Ubuntu-it:

@@ -1,6 +1,6 @@
 Title: Nokia N810 vs Openmoko: ma stiamo scherzando?
 Date:  2008-06-28 09:23:08
-tags: freerunner, nokia, openmoko,
+tags: freerunner, nokia, openmoko
 
 <center>![][1]</center>
 

@@ -1,6 +1,6 @@
 Title: In arrivo tonnellate di tracce GPX per la Turchia su OpenStreetMap
 Date:  2009-04-12 13:44:23
-tags: gnulinux, gps, openstreetmap,
+tags: gnulinux, gps, openstreetmap
 
 <center>[![In de verkeerskamer bij TomTom HQ][1]][2]</center>
 

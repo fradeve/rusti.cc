@@ -1,6 +1,6 @@
 Title: Debian e Ubuntu fanno la pace
 Date:  2007-10-25 16:37:31
-tags: ubuntu,
+tags: ubuntu
 
 <center>[![][1]][2]<br>[Debian - on anything][3]_Inserito originariamente da
 [Firefalcon][4]_</center>

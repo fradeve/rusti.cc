@@ -1,6 +1,6 @@
 Title: Aggiornamenti (ed errori) sul Portale Giochi
 Date:  2007-11-11 22:13:29
-tags: ubuntu,
+tags: ubuntu
 
 Considerando che nessuno è perfetto, mi devo
 scusare per alcune "imperfezioni" (chiamiamole così) in alcuni precedenti

@@ -1,6 +1,6 @@
 Title: Autoproduzione 1: i muffin
 Date:  2011-04-16 12:20:00
-tags: autoproduzione,
+tags: autoproduzione
 
 <center>![][2]<br>_Autoprodurre gli snack... mmmm..._</center>
 

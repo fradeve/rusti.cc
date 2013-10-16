@@ -1,6 +1,6 @@
 Title: [Ubuntu-it / Wiki] Portale Giochi: un mare di novità (a quota +142)
 Date:  2008-01-14 21:28:55
-tags: ubuntu,
+tags: ubuntu
 
 Il vero protagonista
 del Portale Giochi in questi ultimi mesi è [V][1]. Ragazzi, _fategli i

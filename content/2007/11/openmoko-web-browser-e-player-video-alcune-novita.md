@@ -1,6 +1,6 @@
 Title: Openmoko: web browser e player video + alcune novità
 Date:  2007-11-02 12:30:53
-tags: openmoko,
+tags: openmoko
 
 Come forse avrete recentemente
 appreso da [Pollycoke][1], sono usciti dagli uffici della FIC (grazie al
@@ -8,13 +8,13 @@ mitico reporter [MokoNinja][2]) due "video shock" sul browser e sul media-
 player integrati in Openmoko. A questo, si aggiungono alcune dichiarazioni
 recenti di [Harald Welte][3] secondo cui:
 
-	> We have now come to a point where the Openmoko SmartPhone Stack is almost
-	there. Especially Telephony, PIM and the mediaplayer have gotten much better
-	throughout the last months. We even have a nice new webkit-based browser with
-	a slick and simple interface. All in all it’s getting better every day and I’m
-	very confident, we’ll iron the last problems out within the next couple of
-	weeks… and this is where the actual fun begins — once you guys can implement
-	all your crazy ideas on top of this platform.
+> We have now come to a point where the Openmoko SmartPhone Stack is almost
+> there. Especially Telephony, PIM and the mediaplayer have gotten much better
+> throughout the last months. We even have a nice new webkit-based browser with
+> a slick and simple interface. All in all it’s getting better every day and I’m
+> very confident, we’ll iron the last problems out within the next couple of
+> weeks… and this is where the actual fun begins — once you guys can implement
+> all your crazy ideas on top of this platform.
 
 Succo del discorso: siamo arrivati a poter affermare che L'**Openmoko
 Smartphone è quasi pronto**. In particolare, telefonia, PIM (_Personal

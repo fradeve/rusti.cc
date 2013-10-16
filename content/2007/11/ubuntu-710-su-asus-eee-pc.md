@@ -1,6 +1,6 @@
 Title: Ubuntu 7.10 su Asus EEE PC
 Date:  2007-11-11 02:59:34
-tags: ubuntu, gnulinux, freerunner,
+tags: ubuntu, gnulinux, freerunner
 
 È ufficiale, la nostra _arancionissima_ distribuzione africana gira
 anche sul novello Asus EEE PC (quello che qualcuno, tentando di paragonarlo

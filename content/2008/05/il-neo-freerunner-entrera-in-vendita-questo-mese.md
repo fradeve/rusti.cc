@@ -14,11 +14,11 @@ Jooha ha comunicato che la sua azienda è diventata partner ufficiale di
 Openmoko per la vendita del Neo in India, rivelando che le vendite in India
 cominceranno entro il 30 maggio. Questo è lo stralcio di mail:
 
-	Ida Systems Pvt Ltd will be reselling the Neo Freerunner in India. After
-	careful consideration the the Retail Price in India has been fixed at Rs
-	20000/-. This includes all taxes, shipping to your address, 30 days return and
-	one year warranty. _We are hoping to be able to ship the Freerunners to
-	customers by end May._
+> Ida Systems Pvt Ltd will be reselling the Neo Freerunner in India. After
+> careful consideration the the Retail Price in India has been fixed at Rs
+> 20000/-. This includes all taxes, shipping to your address, 30 days return and
+> one year warranty. _We are hoping to be able to ship the Freerunners to
+> customers by end May._
 
 
 ## 2° indizio:##
@@ -27,10 +27,10 @@ Uno stralcio di conversazione sul canale IRC di Openmoko
 (#openmoko), in cui uno sviluppatore (SpeedEvil) dichiara ad un utente che la
 produzione sta per cominciare:
 
-	[16:03]
-	
-	<nezza-_-> anything new about massproduction etc? [16:03] <SpeedEvil> Starting
-	in a few days, with luck.
+> [16:03]
+> 
+> <nezza-_-> anything new about massproduction etc? [16:03] <SpeedEvil> Starting
+> in a few days, with luck.
 
 
 ## 3° indizio: ##
@@ -44,15 +44,14 @@ in tutto il mondo. Ovviamente se la FIC ha preso accordi con gli indiani per
 la vendita entro il 30 del mese, credo che le date verranno rispettate. Questa
 la mail originale:
 
-	The last Pre MP is done and mass production is slated to start on may 9.
-	Phones will start rolling off the lines, they will go through test, They will
-	be shipped to distribution. When the Phones hit the dock and are ready to
-	ship, I'll do a press release and announce to the list and the store will
-	open. So you have 3 steps: build phone. test phone. ship phone. Then we take
-	orders. I was very adamament about having phones in the disty ready to ship
-	before I opened the web shop. Also, I need to update everybody on software.
-	Sorry for the short response, but those are the facts as I have them
-
+> The last Pre MP is done and mass production is slated to start on may 9.
+> Phones will start rolling off the lines, they will go through test, They will
+> be shipped to distribution. When the Phones hit the dock and are ready to
+> ship, I'll do a press release and announce to the list and the store will
+> open. So you have 3 steps: build phone. test phone. ship phone. Then we take
+> orders. I was very adamament about having phones in the disty ready to ship
+> before I opened the web shop. Also, I need to update everybody on software.
+> Sorry for the short response, but those are the facts as I have them
 
 Quindi,
 dobbiamo aspettarci un comunicato stampa ufficiale da parte di Steve non

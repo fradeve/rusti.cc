@@ -1,6 +1,6 @@
 Title: Qtopia sbarca su Openmoko
 Date:  2007-10-09 10:41:13
-tags: gnulinux, openmoko, ubuntu,
+tags: gnulinux, openmoko, ubuntu
 
 Daniel Molkentin, sul [planet di KDE][1] (non mi odierete per
 questo, vero?) ha redatto un breve riassunto su ciò che è apprezzabile in

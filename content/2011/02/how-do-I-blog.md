@@ -1,6 +1,6 @@
 Title: How do I blog?
 Date:  2011-03-06 15:55:00
-tags: socialnetwork, blog, ubuntu,
+tags: socialnetwork, blog, ubuntu
 lastupdated: 2012-08-03
 
 ## Pippe ##

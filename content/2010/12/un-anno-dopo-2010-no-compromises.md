@@ -1,6 +1,6 @@
 Title: Un anno dopo: 2010, no compromises
 Date:  2010-12-22 00:10:00
-tags: openstreetmap, gnulinux, life,
+tags: openstreetmap, gnulinux, life
 
 Un altro anno è passato e, retorica a parte, tante cose sono cambiate. Le idee sono maturate, le esperienze si sono accumulate e Francesco è una persona migliore rispetto all'anno precedente. Ecco un 2010 di libertà in pillole:
 
@@ -29,6 +29,7 @@ Ed in tutto questo:
 ...ed ho partecipato ad un numero imprecisato di pizze nerd, birre nerd e LAN-party :D Tutto questo grazie agli amici, ai conoscenti e a tutte le formiche che si scambiano informazioni dentro e fuori gli atenei, dentro e fuori i social network, dentro e fuori appartamenti, ostelli, garage e monolocali; sempre con l'impressione generale che, in un'Italia che cola sempre più a picco ogni giorno che passa, tante piccole persone operose si battono ogni giorno per un mondo in cui a tutti sia garantità una consistente dose di libertà.
 
 ## Propositi per il 2011 ##
+
 * sostenere _quasi_ tutti gli esami che mi mancano per il conseguimento della laurea triennale;
 * mettere a punto e rendere attivo il sistema di [tagging dei beni culturali in OSM][1]
 

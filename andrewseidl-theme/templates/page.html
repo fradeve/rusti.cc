@@ -1,5 +1,9 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title }}{% endblock %}
+
+{% block title %}
+    {{ page.title }}
+{% endblock %}
+
 {% block content %}        
 			<article>
 				<header>
@@ -9,8 +13,7 @@
 				</header>
 
 				<div class="content">
-{{ page.content }}
+                    {{ page.content }}
 				</div>
 			</article>
-
 {% endblock %}

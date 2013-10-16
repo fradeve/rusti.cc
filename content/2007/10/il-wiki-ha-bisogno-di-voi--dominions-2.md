@@ -1,6 +1,6 @@
 Title: Il Wiki ha bisogno di voi: Dominions 2
 Date:  2007-10-07 13:05:16
-tags: ubuntu,
+tags: ubuntu
 
 Con il post di oggi, inauguro il topic "il Wiki
 ha bisogno di voi", ovvero: dove non arriva uno possono arrivare tanti.

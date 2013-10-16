@@ -1,7 +1,7 @@
 Title: Perché i dati geografici possono essere liberi
 Date:  2011-07-12 12:05:00
 featured: yes
-tags: openstreetmap,
+tags: openstreetmap
 
 Internet è grande, e rispecchia fondamentalmente le persone che lo popolano. Ogni tanto può capitare di imbattersi in affermazioni bislacche. Tanto per dirne una, oggi mi è capitato di leggere [un articolo][1] di Renzo Carlucci su RivistaGeomedia, che merita un'analisi punto per punto (considerato che non ho niente di meglio da fare). L'ottimo Maurizio Napolitano ha [ampiamente risposto][3] anche sul suo blog, leggete prima di tutto lì; questo è un post per l'uomo della strada.
 

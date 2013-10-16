@@ -1,7 +1,7 @@
 Title: OpenStreetMap: come usare Walking Papers
 Date:  2009-06-17 18:17:58
 featured: yes
-tags: gnulinux, openstreetmap, ubuntu,
+tags: gnulinux, openstreetmap, ubuntu
 
 Vorresti contribuire ad [OpenStreetMap][1] ma non
 hai un ricevitore GPS, e per di più la zona che ti interessa non è coperta

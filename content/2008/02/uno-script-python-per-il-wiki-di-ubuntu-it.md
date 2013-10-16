@@ -1,6 +1,6 @@
 Title: Uno script Python per il Wiki di Ubuntu-it
 Date:  2008-01-31 23:49:58
-tags: openmoko, python, ubuntu, wikipedia,
+tags: openmoko, python, ubuntu, wikipedia
 
 Questo sarà un post lungo, rimboccatevi le
 maniche..... Come forse avrete letto in qualche [post precedente][1], da poco
@@ -60,9 +60,6 @@ Insomma, non vi lascio a bocca asciutta. Ho creato una
 [paginetta apposita per lo script][9]: se avete suggerimenti, proteste o
 richieste di santità, mi farebbe piacere le scriveste lì. Per qualsiasi cosa,
 potete sempre e comunque scrivere a me o a [V][4]. Buon divertimento a tutti!
-
-
-Francesco
 
    [1]: http://dl.dropbox.com/u/369614/blog/public_html/FradeveOpenblog/posts/2008/01/giochi-ubuntu-it-a-quota-150-un-po-di-storia.html
 

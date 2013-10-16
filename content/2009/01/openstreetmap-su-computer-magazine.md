@@ -1,6 +1,6 @@
 Title: OpenStreetMap su Computer Magazine 2009-01-24
 Date:  2009-01-24 14:50:18
-tags: gnulinux, openstreetmap, ubuntu,
+tags: gnulinux, openstreetmap, ubuntu
 
 <center>[![manila supersized][1]][2]</center>
 

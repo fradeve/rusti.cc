@@ -1,6 +1,6 @@
 Title: Ubuntu-it: Due nuovi giochi nel wiki
 Date:  2007-12-12 00:21:30
-tags: ubuntu,
+tags: ubuntu
 
 Dopo un'ultima spulciatina al n°5 della rivista
 indipendente [Full Circle][1] (ne approfitto per fare un po di pubblicità), mi

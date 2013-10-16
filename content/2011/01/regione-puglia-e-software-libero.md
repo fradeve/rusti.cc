@@ -1,6 +1,6 @@
 Title: La Regione Puglia e il Software Libero: esperienze collaterali
 Date:  2011-01-01 17:00:00
-tags: openstreetmap, gnulinux,
+tags: openstreetmap, gnulinux
 
 ## Premessa ##
 In questi ultimi mesi si è molto discusso della posizione della Regione Puglia, coordinata dalla giunta Vendola, rispetto al Software Libero. Laddove i principi di SEL (il partito di Vendola) sembrano essere coerenti con quelli del Software Libero, le [scelte effettuate][1] sembrano andare nella [direzione opposta][2]. Non mi dilungherò qui sull'argomento, visto che fiumi di bit sono stati versati sulla questione. Ripoterò solo qualche piccolo successo che mi ha coinvolto.

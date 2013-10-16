@@ -3,7 +3,7 @@ Date:  2013-10-07 02:29:00
 Status: draft
 tags: fabric, python
 
-automated setup
+Automated setup
 ---------------
 
     cd
@@ -14,7 +14,7 @@ automated setup
 
     fab load:newproject
 
-manual setup
+Manual setup
 ------------
 
 ### GIT clone the project

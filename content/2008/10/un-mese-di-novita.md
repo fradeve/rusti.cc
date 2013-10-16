@@ -1,6 +1,6 @@
 Title: Un mese di novità...
 Date:  2008-10-30 01:08:58
-tags: gnulinux, openmoko, openstreetmap, ubuntu, wikimedia, wikipedia, life, lug, archaeology,
+tags: gnulinux, openmoko, openstreetmap, ubuntu, wikimedia, wikipedia, life, lug, archaeology
 
 Dopo una pausa lunga quasi due mesi, torno a scrivere sul mio blog, con un
 mare di novità. Mi perdonerete se mescolo un po' gli eventi relativi a

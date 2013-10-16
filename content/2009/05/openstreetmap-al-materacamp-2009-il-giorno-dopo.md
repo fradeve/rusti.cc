@@ -1,6 +1,6 @@
 Title: OpenStreetMap al MateraCamp 2009: il giorno dopo
 Date:  2009-05-03 13:32:35
-tags: gnulinux, matera, openmoko, openstreetmap, talk, ubuntu, lug,
+tags: gnulinux, matera, openmoko, openstreetmap, talk, ubuntu, lug
 
 <center>[![DSCF2939][1]][2]</center>
 

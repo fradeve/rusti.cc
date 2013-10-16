@@ -1,6 +1,6 @@
 Title: HOT Spot FON dentro il Politecnico di Bari
 Date:  2008-02-23 00:19:08
-tags: uniba,
+tags: uniba
 
 Lungi dal fare pubblicità ad alcun movimento
 studentesco interno al Politecnico di Bari, è d'obbligo dire che ce n'è uno

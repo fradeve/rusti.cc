@@ -1,7 +1,7 @@
 Title: Installare TeXLive da CTAN su Ubuntu Lucid
 Date:  2010-08-10 10:10:31
 featured: yes
-tags: ubuntu, latex, gnulinux,
+tags: ubuntu, latex, gnulinux
 
 _L'articolo è stato aggiornato dopo la pubblicazione iniziale_
 
@@ -54,6 +54,7 @@ non useremo mai.
 Semplice: disinstalliamo i pacchetti TeXLive
 di Debian e facciamo partire l'installer di TeXLive per Unix/Linux.
 
+    :::bash
 	sudo apt-get remove --purge texlive*
 
 È probabile che con
@@ -68,10 +69,12 @@ nuova installazione.
 A questo punto puliamo anche tutti i file della vecchia
 TeXLive:
 
+    :::bash
 	sudo rm -r /usr/share/texmf
 
 Scarichiamo ed estraiamo l'installer da rete di TeXLive:
 
+    :::bash
 	wget http://ftp.uniroma2.it/TeX/systems/texlive/tlnet/install-tl.zip
 	unzip install-tl.zip
 	rm install-tl.zip
@@ -86,6 +89,7 @@ Il "sudo" dell'ultimo comando è importante perché l'installazione di default
 di TeXLive è in una cartella di sistema (`/usr/local/texlive` per la
 precisione).
 
+    :::bash
 	sudo apt-get install libwx-perl perl-tk
 	cd install-tl*
 	sudo perl install-tl --gui -repository ftp://ftp.snt.utwente.nl/pub/software/tex/systems/texlive/tlnet/
@@ -118,13 +122,14 @@ cartella. Meglio è (come suggerito da RobiTeX) esportare il $PATH nel proprio f
 `.profile` così da mantenere tutti i file in `/usr/local`: ciò creerà meno problemi in fase
 di aggiornamento.
 
+        :::bash
 		echo 'export PATH=/usr/local/texlive/2010/bin/i386-linux:${PATH}' >> .profile
 
 Considerato che gli eseguibili d'ora in poi saranno in tale percorso, è comodo utilizzare un alias
 per tlmgr, visto che tutte le operazioni andranno svolte con i permessi di amministratore:
 
+        :::bash
 		alias sutlmgr='sudo /usr/local/texlive/2010/bin/i386-linux/tlmgr'
-
 
 Non resta che avviare l'installazione con "Installa TeXLive". Al termine,
 avrete un sistema LaTeX personalizzato, perfettamente funzionante, flessibile
@@ -139,24 +144,29 @@ la propria distribuzione.
 
  * recarsi nella cartella di installazione e creare una copia di backup della propria installazione:
 
+        :::bash
 		sudo cp -a 2010 2011
 
  * per risparmiare dello spazio, eliminare il contenuto della cartella dei backup annui della distribuzione vecchia:
 
+        :::bash
 		sudo rm /usr/local/texlive/2011/tlpkg/backups/*
 
  * modificare l'anno della distribuzione nei file `.profile` e `.bashrc` da 2010 a 2011
 
  * avviare tlmgr, caricare l'archivio di default (definito al momento dell'installazione) ed eseguire l'aggiornamento di tlmgr:
 		
+        :::bash
 		sutlmgr --gui
 
  * aggiornare i pacchetti con il comando classico:
 
+        :::bash
 		sutlmgr update --all
 
  * dopo aver provato a compilare qualche documento, se tutto funziona bene, potrete anche eliminare la distribuzione vecchia:
 
+        :::bash
 		sudo rm -r /usr/local/texlive/2010
 
 ## Ringraziamenti ##

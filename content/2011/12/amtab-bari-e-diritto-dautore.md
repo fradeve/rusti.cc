@@ -1,6 +1,6 @@
 Title: AMTAB Bari e diritto d'autore, chi semina raccoglie
 Date:  2011-12-02 21:00:00
-tags: life, bari, openstreetmap,
+tags: life, bari, openstreetmap
 
 Se sei in giro per Bari e tieni un pochetto alla salute dei tuoi nervi, eviti senz'altro
 di andare a spasso nel centro con l'auto, e alla fin fine usufruisci di uno dei più
@@ -26,7 +26,7 @@ l'utilizzo senza che ne venga citata la fonte. Fin qui, nessun problema;
 
 Manderò una mail-promemoria all'ufficio relazioni con il pubblico dell'AMTAB, che l'ultima volta si è
 dimostrato davvero gentile e disponibile, vediamo cosa succede. La cosa più interessante è che a quel
-livello di ingrandimento anche le mappe di [[OpenStreetMap|http://www.openstreetmap.org]] hanno una eccezionale copertura su Bari,
+livello di ingrandimento anche le mappe di [OpenStreetMap](http://www.openstreetmap.org) hanno una eccezionale copertura su Bari,
 e tutto potrebbe essere fatto senza scendere nell'illegalità e con il massimo della trasparenza.
 
 Boh, valli a capire.

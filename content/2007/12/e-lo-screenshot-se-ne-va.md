@@ -1,6 +1,6 @@
 Title: E lo screenshot se ne va...
 Date:  2007-12-02 11:19:48
-tags: ubuntu,
+tags: ubuntu
 
 Vorrei rendere partecipe la comunità del processo di
 "alleggerimento" del Portale Giochi nel Wiki: sono stati eliminati i doppi

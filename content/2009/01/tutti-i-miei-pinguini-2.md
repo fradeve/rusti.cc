@@ -1,6 +1,6 @@
 Title: Tutti i miei pinguini
 Date:  2009-01-27 09:57:48
-tags: gnulinux, openstreetmap, life,
+tags: gnulinux, openstreetmap, life
 
 Scusate il post banale, ma alle volte mi rincuora vedere come certi piccoli
 animaletti tornino ogni tanto a farci compagnia... non sto parlando dei

@@ -1,6 +1,6 @@
 Title: [Ubuntu-it/Wiki] Novità dal Portale Giochi alla Finanziaria 2007 sullOpen Source
 Date:  2007-12-31 00:08:38
-tags: ubuntu, stato,
+tags: ubuntu, stato
 
 Nell'ultimo giorno del 2008, l'infaticabile [V][1] ci regala l'aggiornamento
 alla guida di [Urban Terror][2], alla versione 4.1. Devo anche rendere noto

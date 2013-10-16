@@ -1,6 +1,6 @@
 Title: Installare pymedia su Ubuntu 8.10 Intrepid Ibex
 Date:  2008-12-11 14:31:13
-tags: openstreetmap, python, ubuntu, gnulinux,
+tags: openstreetmap, python, ubuntu, gnulinux
 
 Recentemente, ho avuto necessità di utilizzare la
 libreria [PyMedia][1], per renderizzare alcune tracce raccolte durante il
@@ -18,25 +18,31 @@ compilarvelo come segue.
 
 ## Passo 1. Ottenere pymedia ##
 
+    :::bash
 	wget http://internap.dl.sourceforge.net/sourceforge/pymedia/pymedia-1.3.7.3.tar.gz
 	tar xzvf pymedia-1.3.7.3.tar.gz cd pymedia-*
 
 ## Passo 2. Installare le dipendenze ##
+
+    :::bash
 	sudo apt-get install python-dev libogg-dev libvorbis-dev liblame-dev libfaad-dev libasound2-dev python-pygame
 
 ## Passo 3. Installare GCC 3.4 ##
-(PyMedia non si compilerà con GCC 4.0)+
+(PyMedia non si compilerà con GCC 4.0)
 
+    :::bash
 	sudo apt-get install gcc-3.4 g++-3.4 export CC=gcc-3.4
 
 ## Passo 4. Fare alcune modifiche al codice C ##
-Prima di compilare, in _<audio/acodec/acodec.c>_, alla
+Prima di compilare, in `<audio/acodec/acodec.c>`, alla
 linea 31, inserire quanto segue:
 
+    :::bash
 	#define HAVE_LRINTF
 
 In maniera tale da ottenere:
 
+    :::bash
 	#include avcodec.h
 	#define HAVE_LRINTF
 	#include "libavcodecdsputil.h"
@@ -44,10 +50,12 @@ In maniera tale da ottenere:
 
 ## Passo 5. Costruire e compilare pymedia ##
 
+    :::bash
 	sudo python setup.py build
 
 ## Passo 6. Essere bravi utenti Ubuntu e installare PyMedia con checkinstall ##
 
+    :::bash
 	sudo apt-get install checkinstall
 	sudo checkinstall python setup.py install
 
@@ -57,8 +65,9 @@ python setup.py install"._
 
 ## Passo 7. Controlliamo se funziona ##
 in un terminare digitare "python" e poi
-"import pymedia"; se non otteniamo errori, siamo a cavallo :D
+`import pymedia`; se non otteniamo errori, siamo a cavallo :D
 
+    :::bash
 	python >>> import pymedia
 
    [1]: http://pymedia.org/

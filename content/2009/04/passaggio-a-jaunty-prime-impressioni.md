@@ -1,6 +1,6 @@
 Title: Passaggio a Jaunty: prime impressioni
 Date:  2009-04-28 09:15:14
-tags: gnulinux, ubuntu, dell,
+tags: gnulinux, ubuntu, dell
 
 Sono passati due anni da quando ho comprato il
 mio primo portatile un Dell Inspiron 640m (14''), che dopo l'uscita dei
@@ -57,7 +57,7 @@ cose non si risolveranno. Qualcuno ha consigliato di passare da "uxa" ad
 ma a questo punto, tant'è, mi accontento di [Metacity][5]. Per abilitare
 Metacity:
 
-
+    :::basH
 	gconftool-2 -s '/apps/metacity/general/compositing_manager' --type bool true
 
 

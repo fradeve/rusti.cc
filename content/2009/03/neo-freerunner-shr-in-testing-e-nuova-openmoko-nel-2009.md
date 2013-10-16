@@ -29,11 +29,11 @@ Come si legge nel post, tutte le modifiche nel nuovo rilascio stabile saranno
 orientate ad ottenere un sistema operativo quanto più affidabile possibile.
 Nel contempo, nella unstable si lavorerà a:
 
-  * riscrittura di ophonekitd in vala
-  * aggiornamento all'ultima versione di Enlightment
-  * avvio dell'integrazione di opimd
-  * sostituzione di udev con mdev
-  * basare SHR sulla nuova configurazione minima della distribuzione promossa da mickeyl
+ * riscrittura di ophonekitd in vala
+ * aggiornamento all'ultima versione di Enlightment
+ * avvio dell'integrazione di opimd
+ * sostituzione di udev con mdev
+ * basare SHR sulla nuova configurazione minima della distribuzione promossa da mickeyl
 
 Mi permetto di ricordare ancora una volta a tutti di cambiare l'indirizzo dei
 propri feed di opkg, altrimenti con il prossimo aggiornamento si passerà alla

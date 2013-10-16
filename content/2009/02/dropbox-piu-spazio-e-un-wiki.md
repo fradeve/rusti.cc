@@ -1,6 +1,6 @@
 Title: Dropbox: più spazio e un wiki
 Date:  2009-02-28 14:29:10
-tags: dropbox, gnulinux,
+tags: dropbox, gnulinux
 
 <center>[![Unboxing my new HP, NYC, 5/17/08 - 5 of 34][1]][2]</center>
 

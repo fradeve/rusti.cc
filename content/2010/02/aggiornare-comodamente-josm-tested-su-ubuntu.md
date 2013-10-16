@@ -1,6 +1,6 @@
 Title: Aggiornare comodamente JOSM-tested su Ubuntu
 Date:  2010-02-22 16:20:29
-tags: ubuntu, openstreetmap, josm, gnulinux,
+tags: ubuntu, openstreetmap, josm, gnulinux
 
 Per chi non lo sapesse, [JOSM][1] è
 l'editor più importante tra tutti quelli disponibili per contribuire al
@@ -24,33 +24,34 @@ che far rockeggiare OpenStreetMap nella vostra città :D
 Incollo di seguito la
 sua mail:
 
-	Mi presento, sono Pasquale Ambrosini e faccio attualmente parte
-	della comunità pugliese di OpenStreetMap. Grazie all'ausilio di launchpad, ho
-	aperto un repository contenente le ultime versioni di josm-tested e josm-
-	latest.
-
-
-	Vi spiego in breve la politica che ho adottato.
-
-	Vi sarete sicuramente resi conto che nei repository Ubuntu, josm non è
-	aggiornato molto spesso, anzi, per dirla tutta gli aggiornamenti sono più
-	unici che rari. Quindi ho aperto un repository che contiene il pacchetto josm-
-	tested che, verrà aggiornato non appena aggiorneranno il software.
-	Convenzionalmente si potrà aggiornare dal gestore di pacchetti, come sempre.
-
-
-	Per josm-latest invece ho adottato una politica diversa, infatti la versione
-	unstable è soggetta a molti aggiornamenti nell'arco della settimana e sarebbe
-	impossibile "starci dietro", così ho scritto uno script in python con librerie
-	grafiche gtk che provvederà a verificare se, all'avvio ci sono aggiornamenti e
-	in caso positivo, vi comunicherà l'aggiornamento. Quindi sarete voi stessi ad
-	aggiornare, senza l'ausilio del gestore pacchetti, in maniera rapida e veloce.
-	Ci tengo a precisare che i due pacchetti "josm-tested" e "josm-latest" non
-	intaccano minimamente il pacchetto josm ma, useranno le vostre preferenze che
-	usate normalmente.
+> Mi presento, sono Pasquale Ambrosini e faccio attualmente parte
+> della comunità pugliese di OpenStreetMap. Grazie all'ausilio di launchpad, ho
+> aperto un repository contenente le ultime versioni di josm-tested e josm-
+> latest.
+> 
+> 
+> Vi spiego in breve la politica che ho adottato.
+> 
+> Vi sarete sicuramente resi conto che nei repository Ubuntu, josm non è
+> aggiornato molto spesso, anzi, per dirla tutta gli aggiornamenti sono più
+> unici che rari. Quindi ho aperto un repository che contiene il pacchetto josm-
+> tested che, verrà aggiornato non appena aggiorneranno il software.
+> Convenzionalmente si potrà aggiornare dal gestore di pacchetti, come sempre.
+> 
+> 
+> Per josm-latest invece ho adottato una politica diversa, infatti la versione
+> unstable è soggetta a molti aggiornamenti nell'arco della settimana e sarebbe
+> impossibile "starci dietro", così ho scritto uno script in python con librerie
+> grafiche gtk che provvederà a verificare se, all'avvio ci sono aggiornamenti e
+> in caso positivo, vi comunicherà l'aggiornamento. Quindi sarete voi stessi ad
+> aggiornare, senza l'ausilio del gestore pacchetti, in maniera rapida e veloce.
+> Ci tengo a precisare che i due pacchetti "josm-tested" e "josm-latest" non
+> intaccano minimamente il pacchetto josm ma, useranno le vostre preferenze che
+> usate normalmente.
 
 Per installare il repository su Ubuntu 9.10 (da terminale):
 
+    :::bash
 	sudo add-apt-repository ppa:pasquale-ambrosini/josm && sudo apt-get update
 
 Fatto ciò vi troverete i due pacchetti nel gestore pacchetti.

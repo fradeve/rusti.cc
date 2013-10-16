@@ -1,6 +1,6 @@
 Title: [Ubuntu-it/Wiki] Sei nuove guide nel Portale Giochi + Wine per tutti
 Date:  2007-12-24 10:45:13
-tags: ubuntu,
+tags: ubuntu
 
 Ebbene si, grazie agli sforzi
 congiunti dello straordinario maratoneta del Wiki (V, alias [Riccardo

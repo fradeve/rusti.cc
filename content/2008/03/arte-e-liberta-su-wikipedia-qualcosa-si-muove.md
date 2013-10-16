@@ -1,6 +1,6 @@
 Title: Arte e libertà su Wikipedia: qualcosa si muove
 Date:  2008-03-10 22:21:30
-tags: wikimedia, wikipedia, art,
+tags: wikimedia, wikipedia, art
 
 Qualcosa sta cambiando nel mondo
 dell'Arte. Procedo con ordine: come forse molti di voi sanno, il copyright è
@@ -69,44 +69,44 @@ dell'autorizzazione a riprodurre fotografie di opere d'arte custodite nei
 musei italiani, ma solo e soltanto per scopi educativi, illustrativi e non
 commerciali. Riporto il messaggio di seguito:
 
-	BENI CULTURALI. COMMISSIONE CULTURA APPROVA NUOVO CODICE, PIÙ LIBERTÀ A
-	WIKIPEDIA
-
-	
-	Una piccola ma significativa modifica è quella che oggi la
-	Commissione Cultura della Camera ha introdotto nel nuovo codice sui Beni
-	Culturali, su proposta del presidente della commissione Pietro Folena. Il
-	parere approvato, che recepisce in toto il nuovo codice, condiziona lo stesso
-	alla "liberalizzazione" dell'uso non commerciale delle immagini di beni
-	culturali, come le opere conservate nei musei. La formulazione del codice
-	attuale, difatti, richiede una speciale concessione da parte del museo, cosa
-	che ha costretto Wikipedia a cancellare le immagini dei quadri conservati nei
-	musei italiani. "Un danno di immagine per l'Italia e le sue istituzioni
-	culturali", ha argomentato Folena nella relazione. La nuova formulazione,
-	invece, consente il libero uso delle immagini dei beni culturali, prevedendo
-	l'autorizzazione solo nel caso in cui sia richiesto un intervento diretto da
-	parte dell'autorità che ha in affidamento il bene stesso. Pertanto la
-	riproduzione di immagini su Internet o su carta, se non a scopo commerciale,
-	torna ad essere libera come nel resto del mondo. Rimane invece fermo il
-	pagamento di un canone nel caso di usi commerciali (ad esempio la
-	realizzazione di guide turistiche). Di seguito il testo approvato dalla
-	commissione: Al fine di consentire la libera utilizzazione di immagini dei
-	beni stessi a fini non commerciali, si preveda l'esclusione, per tutti i
-	predetti fini, di canoni e procedure autorizzative, intervenendo sul comma 3
-	dell'articolo 108 del Codice nell'attuale testo, modificandone la formulazione
-	nel senso seguente: "3. Sono libere le riproduzioni dei beni da parte di
-	soggetti privati per uso personale, per motivi di studio o ricerca, per
-	illustrazione, discussione o critica e per qualsiasi altro scopo non
-	finalizzato all'uso commerciale della riproduzione, nonché da parte di
-	soggetti pubblici per finalità di valorizzazione. Nel caso in cui l'atto della
-	riproduzione richieda l'intervento o la sorveglianza da parte dell'autorità
-	che ha in consegna il bene, è obbligatoria la richiesta da parte del soggetto
-	che intende riprodurre il bene. Eventuali spese aggiuntive sono a carico dei
-	soggetti che riproducono il bene."
-
-	GUIDO IODICE Ufficio Stampa on.Pietro
-	Folena Deputato PRC-Sinistra Europea Presidente della Commissione Cultura
-	della Camera
+> BENI CULTURALI. COMMISSIONE CULTURA APPROVA NUOVO CODICE, PIÙ LIBERTÀ A
+> WIKIPEDIA
+> 
+> 
+> Una piccola ma significativa modifica è quella che oggi la
+> Commissione Cultura della Camera ha introdotto nel nuovo codice sui Beni
+> Culturali, su proposta del presidente della commissione Pietro Folena. Il
+> parere approvato, che recepisce in toto il nuovo codice, condiziona lo stesso
+> alla "liberalizzazione" dell'uso non commerciale delle immagini di beni
+> culturali, come le opere conservate nei musei. La formulazione del codice
+> attuale, difatti, richiede una speciale concessione da parte del museo, cosa
+> che ha costretto Wikipedia a cancellare le immagini dei quadri conservati nei
+> musei italiani. "Un danno di immagine per l'Italia e le sue istituzioni
+> culturali", ha argomentato Folena nella relazione. La nuova formulazione,
+> invece, consente il libero uso delle immagini dei beni culturali, prevedendo
+> l'autorizzazione solo nel caso in cui sia richiesto un intervento diretto da
+> parte dell'autorità che ha in affidamento il bene stesso. Pertanto la
+> riproduzione di immagini su Internet o su carta, se non a scopo commerciale,
+> torna ad essere libera come nel resto del mondo. Rimane invece fermo il
+> pagamento di un canone nel caso di usi commerciali (ad esempio la
+> realizzazione di guide turistiche). Di seguito il testo approvato dalla
+> commissione: Al fine di consentire la libera utilizzazione di immagini dei
+> beni stessi a fini non commerciali, si preveda l'esclusione, per tutti i
+> predetti fini, di canoni e procedure autorizzative, intervenendo sul comma 3
+> dell'articolo 108 del Codice nell'attuale testo, modificandone la formulazione
+> nel senso seguente: "3. Sono libere le riproduzioni dei beni da parte di
+> soggetti privati per uso personale, per motivi di studio o ricerca, per
+> illustrazione, discussione o critica e per qualsiasi altro scopo non
+> finalizzato all'uso commerciale della riproduzione, nonché da parte di
+> soggetti pubblici per finalità di valorizzazione. Nel caso in cui l'atto della
+> riproduzione richieda l'intervento o la sorveglianza da parte dell'autorità
+> che ha in consegna il bene, è obbligatoria la richiesta da parte del soggetto
+> che intende riprodurre il bene. Eventuali spese aggiuntive sono a carico dei
+> soggetti che riproducono il bene."
+> 
+> GUIDO IODICE Ufficio Stampa on.Pietro
+> Folena Deputato PRC-Sinistra Europea Presidente della Commissione Cultura
+> della Camera
 
 
 Certo, si tratta di un passo avanti,

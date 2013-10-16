@@ -1,6 +1,6 @@
 Title: Nuovi programmi su Openmoko
 Date:  2007-11-05 22:29:24
-tags: gnulinux, openmoko, python,
+tags: gnulinux, openmoko, python
 
 Nell'ultimo periodo si sta verificando una vera e propria
 esplosione per quanto riguarda il software per **Openmoko Angstrom GNU/Linux**

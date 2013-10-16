@@ -1,6 +1,6 @@
 Title: OpenStreetMap in Puglia: 200 km di bicicletta in 7 giorni
 Date:  2008-07-28 23:20:15
-tags: googlemaps, openstreetmap, terlizzi,
+tags: googlemaps, openstreetmap, terlizzi
 
 Si, è pressappoco quello che ho fatto con
 un concittadino: mappare il più possibile in 7 giorni (con le dovute pause,

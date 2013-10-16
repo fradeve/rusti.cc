@@ -1,6 +1,6 @@
 Title: Quaaanto manca
 Date:  2008-03-21 23:25:15
-tags: ubuntu,
+tags: ubuntu
 
 C'è ben poco da dire: buttate un occhio al counter sulla colonna destra del blog e...
 aspettiamo l'Airone!

@@ -1,6 +1,6 @@
 Title: Un uomo, una donna, una mappa
 Date:  2009-03-08 08:17:24
-tags: openmoko, openstreetmap,
+tags: openmoko, openstreetmap
 
 Tutto è cominciato dal libro di storia moderna della mia ragazza.
 Già, proprio quando, prima dell'esame, hai ripetuto tutto talmente tante volte

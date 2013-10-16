@@ -1,6 +1,6 @@
 Title: Network Manager + Ubuntu 8.10 + Asus 901
 Date:  2008-11-11 22:31:02
-tags: gnulinux, python, ubuntu,
+tags: gnulinux, python, ubuntu
 
 Uno dei problemi più interessanti in cui mi sono
 imbattuto dopo l'installazione di Ubuntu 8.10 "Intrepid Ibex" su Asus 901 è
@@ -36,10 +36,12 @@ La prima cosa da fare è installare sul proprio sistema i pacchetti aggiornati
 da SVN di NetworkManager, disponibili nel seguente repository su Launchpad,
 aggiungetelo al vostro source.list:
 
+    :::bash
 	deb http://ppa.launchpad.net/network-manager/ubuntu intrepid main
 
 Dopo aver dato un bel
 
+    :::bash
 	sudo apt-get update
 	sudo apt-get upgrade
 
@@ -48,6 +50,7 @@ avrete aggiornato i pacchetti.
 Adesso, dobbiamo commentare le seguenti righe (ammesso che le abbiate) nel
 file _/etc/network/interfaces_:
 
+    :::bash
 	sudo nano /etc/network/interfaces
 	#auto eth0
 	#iface eth0 inet manual
@@ -55,6 +58,7 @@ file _/etc/network/interfaces_:
 Salvate e chiudete il file. Ora, dopo un bel riavvio del sistema, provate a
 dare
 
+    :::bash
 	sudo killall NetworkManager
 	sudo killall nm-applet
 	NetworkManager

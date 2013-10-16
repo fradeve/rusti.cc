@@ -1,6 +1,6 @@
 Title: Giochi sul wiki di Ubuntu-it: aggiornamenti
 Date:  2008-05-06 23:34:39
-tags: freerunner, ubuntu,
+tags: freerunner, ubuntu
 
 È da un po' che, preso dalla febbre per
 l'imminente uscita del [Neo FreeRunner][1], non scrivo sui nuovi giochi che

@@ -1,6 +1,6 @@
 Title: Disponibile il poster personalizzabile per install-party di Ubuntu Hardy!
 Date:  2008-04-11 20:39:48
-tags: ubuntu,
+tags: ubuntu
 
 Con una tempestività straordinaria, [Yorick][3], un responsabile della
 promozione di Ubuntu a Bordeaux (Francia), ha creato un poster eccezionale con

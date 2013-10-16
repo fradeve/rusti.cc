@@ -1,6 +1,6 @@
 Title: Arrivati a CloudMade i nuovi server per OpenStreetMap
 Date:  2009-03-26 22:09:19
-tags: gnulinux, openstreetmap, server, ubuntu, life, nerd,
+tags: gnulinux, openstreetmap, server, ubuntu, life, nerd
 
 <center>[![DSC00195][1]][2]</center>
 
@@ -31,27 +31,26 @@ Vi lascio
 con una poesia dedicata ad OpenStreetMap che il mapper Mikel Maron ha
 pubblicato oggi nella mailing list internazionale... A presto :)
 
-    ooo-dee-bee-ell
-    sure does feel like hell!
-    lightning rods, lengthy flames
-    where we going to assign the blame?
-    hey! forget the naming names
-    finger points all out of joint
-
-    again
-
-    eye-aaa-enn-aaa-ell
-    doesn't that ring your bells?
-    a little courtesy, tip of the hat
-    forget the fail, go lolcat
-
-    we have the freely edible map
-    deliciously open, not proprietary crap
-    it is made by people like you
-    only need a license true
-    to our free hopes and dreams
-    and OSM will reign supreme
-
+> ooo-dee-bee-ell
+> sure does feel like hell!
+> lightning rods, lengthy flames
+> where we going to assign the blame?
+> hey! forget the naming names
+> finger points all out of joint
+> 
+> again
+> 
+> eye-aaa-enn-aaa-ell
+> doesn't that ring your bells?
+> a little courtesy, tip of the hat
+> forget the fail, go lolcat
+> 
+> we have the freely edible map
+> deliciously open, not proprietary crap
+> it is made by people like you
+> only need a license true
+> to our free hopes and dreams
+> and OSM will reign supreme
 
 
    [1]: http://dl.dropbox.com/u/369614/blog/img_red/3387504590_1a73c6ac87.jpg

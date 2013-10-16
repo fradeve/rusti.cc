@@ -1,6 +1,6 @@
 Title: Sei nuovi hotspot Fon in provincia di Bari
 Date:  2008-02-11 23:11:00
-tags: fon,
+tags: fon
 
 Da un anno a questa parte sono un fonero, credo sia percepibile guardando il banner sulla colonna a destra di questo blog.
 

@@ -1,6 +1,6 @@
 Title: Il disegno in Inkscape più grosso che abbia mai fatto
 Date:  2009-07-17 16:47:13
-tags: inkscape, ubuntu,
+tags: inkscape, ubuntu
 
 Il titolo parla da solo... per il
 compleanno di mio fratello ho pensato di fargli uno striscione 1m x 2m, un

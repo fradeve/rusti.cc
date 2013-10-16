@@ -1,6 +1,6 @@
 Title: Openmoko: il punto della situazione
 Date:  2007-10-02 15:07:08
-tags: nokia, openmoko, ubuntu,
+tags: nokia, openmoko, ubuntu
 
 Consultando un po' gli ultimi aggiornamenti alle Wiki ufficiali, e
 scartabellando mail dalla mailing list e con qualche domanda sul canale IRC,

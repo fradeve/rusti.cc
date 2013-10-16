@@ -1,6 +1,6 @@
 Title: Ubuntu-it ed OpenStreetMap in Puglia: 3 eventi da non perdere!
 Date:  2010-01-19 23:34:57
-tags: ubuntu, terlizzi, ruvodipuglia, openstreetmap, gnulinux, cern,
+tags: ubuntu, terlizzi, ruvodipuglia, openstreetmap, gnulinux, cern
 
 Il programma degli eventi
 pugliesi legati ad OpenStreetMap (ed Ubuntu in qualche caso) nei mesi di

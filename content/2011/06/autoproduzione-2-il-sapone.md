@@ -1,7 +1,7 @@
 Title: Autoproduzione 2: il sapone
 Date:  2011-06-18 12:20:00
 featured: yes
-tags: autoproduzione,
+tags: autoproduzione
 
 L'industria chimica è entrata sempre più prepotentemente nelle nostre vite, sotto tutti i punti di vista. Se da un lato l'enorme offerta dei più disparati prodotti per il corpo ci permette di risparmiare tempo (visto che l'unico sforzo che dobbiamo compiere è andare nel primo supermercato a comprare un flacone di sapone o bagnoschiuma), gli svantaggi sono molti, e non sempre molto evidenti; per citarne alcuni:
 

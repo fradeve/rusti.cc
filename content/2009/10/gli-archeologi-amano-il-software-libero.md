@@ -1,6 +1,6 @@
 Title: Gli archeologi amano il software libero
 Date:  2009-10-19 15:11:22
-tags: archaeology, gis, gnulinux, ubuntu,
+tags: archaeology, gis, gnulinux, ubuntu
 
 
 <center>[![Practical Archaeology Course, measuring][1]][2]<br>_Practical Archaeology Course by Wessex Archaeology, on Flickr, licensed CC-BY-

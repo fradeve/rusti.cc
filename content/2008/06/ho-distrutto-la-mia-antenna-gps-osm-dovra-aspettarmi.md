@@ -1,6 +1,6 @@
 Title: Ho distrutto la mia antenna GPS: OSM dovrà aspettarmi
 Date:  2008-06-19 23:40:49
-tags: openstreetmap, life,
+tags: openstreetmap, life
 
 L'avessi fatto apposta.... Mentre ero con
 Sdonk a mappare il parco comunale della mia città (un'area enorme mappata in

@@ -1,6 +1,6 @@
 Title: Unreal Tournament e Americas Army su Ubuntu
 Date:  2008-01-02 13:42:55
-tags: ubuntu,
+tags: ubuntu
 
 È con grande piacere che annuncio che ho rivisto e completato la guida
 all'installazione di [America's Army su Ubuntu][2] (una forma pomposa per dire

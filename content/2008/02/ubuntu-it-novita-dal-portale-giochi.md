@@ -1,9 +1,10 @@
 Title: [Ubuntu-it] Novità dal Portale Giochi
 Date:  2008-02-05 06:30:05
-tags: ubuntu,
+tags: ubuntu
 
 Febbraio inizia con qualche novità anche per il [Portale Giochi][2] del [Wiki
 di Ubuntu-it][3]:
+
  * [Stepmania][4] **64bit**
  * [Funguloids][5] (grazie a [Marbell][6])
  * [DreamChess][7]

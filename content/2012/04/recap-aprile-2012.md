@@ -1,7 +1,7 @@
 Title: Recap: aprile
 Date:  2012-04-27 11:00:00
 slug:  recap-aprile-2012
-tags: recap,
+tags: recap
 
 Obiettivi per il bimestre marzo-aprile 2012.
 

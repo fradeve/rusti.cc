@@ -1,6 +1,6 @@
 Title: Connettersi alla rete Uniba con Ubuntu
 Date:  2008-03-19 17:35:49
-tags: gnulinux, ubuntu,
+tags: gnulinux, ubuntu
 
 ## Introduzione ##
 

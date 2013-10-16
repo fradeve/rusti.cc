@@ -1,7 +1,6 @@
 Title: Ottenere immagini planetarie di OpenStreetMap con Marble
 Date:  2009-02-19 11:06:15
-tags: gnulinux, openstreetmap, python, ubuntu, wikipedia,
----
+tags: gnulinux, openstreetmap, python, ubuntu, wikipedia
 
 Ogni blog ha il suo post "tecnico", oggi
 è il mio turno... in questa guida vedremo come catturare immagini ad alta
@@ -17,35 +16,41 @@ non ho ancora avuto tempo di testare la guida.
 
   * Diventare root
 	
-	su
+        :::bash
+        su
 
   * Presumendo di aver già installato Marble (peraltro già presente nei
 repository di Ubuntu 8.10), modificare il file
 `/usr/share/kde4/apps/marble/data/maps/earth/openstreetmap/openstreetmap.dgml`
 cambiando la riga
 
-	<downloadUrl protocol="http" host="a.tile.openstreetmap.org" path="/"  />
+        :::xml
+        <downloadUrl protocol="http" host="a.tile.openstreetmap.org" path="/"  />
 
 in 
 
-	<downloadUrl protocol="http" host="a.tile.openstreetmap.org" path="/"  />
+        :::xml
+        <downloadUrl protocol="http" host="a.tile.openstreetmap.org" path="/"  />
 
 ed eliminando tutte le altre due righe "downloadUrl".
 
   * Installare i pacchetti necessari a simulare un desktop gigante:
 
+        :::bash
 		apt-get install xvfb x11xvnc xvnc4viewer imagemagick netpbm
 		mkdir /tmp/marblefb
 
   * Nel comando che segue, selezioniamo la risoluzione che ci interessa
 ottenere:
 
+        :::bash
 		Xvfb -ac :1 -fbdir /tmp/marblefb -screen 0 4096x4096x24
 		x11vnc -scale .5 -display :1
 
   * Apriamo una finestra vuota e visualizziamo Marble, sostituendo nel secondo
 comando qualsiasi risoluzione abbiamo scelto di adottare:
 
+        :::bash
 		vncviewer localhost :0
 		DISPLAY=:1 marble -geometry 4096x4096+0+0
 
@@ -53,6 +58,7 @@ comando qualsiasi risoluzione abbiamo scelto di adottare:
 piacerà, quindi date il comando per estrapolare l'immagine, che verrà salvata
 in `/tmp/marble.png`:
 
+        :::bash
 		xwdtopnm < /tmp/marblefb/Xvfb_screen0 | pnmtopng > /tmp/marble.png
 
 Se ne avete voglia, inviatemi pure i vostri screens _planetari_!

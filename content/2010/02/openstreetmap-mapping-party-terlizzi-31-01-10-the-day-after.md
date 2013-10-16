@@ -1,6 +1,6 @@
 Title: OpenStreetMap Mapping Party Terlizzi 31-01-10: the day after
 Date:  2010-02-01 23:25:32
-tags: ubuntu, terlizzi, openstreetmap, gnulinux,
+tags: ubuntu, terlizzi, openstreetmap, gnulinux
 
 <center>![][1]</center>
 

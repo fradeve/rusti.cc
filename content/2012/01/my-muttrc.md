@@ -1,6 +1,6 @@
 Title: My muttrc
 Date:  2012-01-12 15:00:00
-tags: mutt, mail,
+tags: mutt, mail
 
 _AGGIORNAMENTO: una nuova versione di questo script è disponibile e spiegata ampiamente in [questo][update] post._
 

@@ -1,6 +1,6 @@
 Title: OpenStreetMap a Terlizzi, un anno dopo
 Date:  2009-03-26 14:57:24
-tags: gnulinux, openstreetmap, terlizzi, ubuntu,
+tags: gnulinux, openstreetmap, terlizzi, ubuntu
 
 Come passa in fretta il tempo... e così, senza
 che ci abbia fatto troppo caso, è passato quasi un anno da quando ho avuto per

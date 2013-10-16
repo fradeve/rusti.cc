@@ -1,9 +1,9 @@
 Title: TomBoy + DropBox + GnomeDO, il trio irresistibile
 Date:  2009-02-24 01:48:16
-tags: dropbox, gnulinux, python, ubuntu,
+tags: dropbox, gnulinux, python, ubuntu
 
 Dopo aver usato per quasi un anno e mezzo
-[Basket][1]¹, e dopo essere passato (un anno e mezzo fa) a GNOME da KDE, oggi
+[Basket][^1], e dopo essere passato (un anno e mezzo fa) a GNOME da KDE, oggi
 mi sono finalmente redento all'irresistibile fascino di [TomBoy][2],
 l'arcinoto programma per prendere note ed appunti sull'ambiente desktop GNOME.
 
@@ -41,12 +41,12 @@ scaricare [questo file][7] ed inserirlo nella cartella dei plugin di TomBoy,
 con il seguente comando da terminale (che necessita di password di
 amministratore):
 
+    :::bash
 	sudo mv tomboy-reminder.dll /usr/lib/tomboy/addins/
 
 Detto ciò... Buon lavoro!!
 
-
-¹ Il solito programma per KDE, troppo carico di opzioni spesso inutili, grosso, troppo
+[^1] Il solito programma per KDE, troppo carico di opzioni spesso inutili, grosso, troppo
 complicato, poco maneggevole.
 
    [1]: http://basket.kde.org/

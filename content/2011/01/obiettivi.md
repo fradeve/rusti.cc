@@ -39,7 +39,7 @@ Un paio d'anni fa [avevo cominciato][8] con il cosiddetto "decluttering", metten
 ## Tracciare i progressi ##
 Almeno per gli obiettivi chiave, condividere un successo aumenta la voglia di impegnarsi per raggiungerlo. Ikiwiki, nondimeno, offre una simpatica _progressbar_ che può tornare utile allo scopo, eccola qui:
 
-[[!progress percent="0
+[[!progress percent="0]]
 
 Una [category apposita][10] in questo blog mi sembra il minimo che si possa fare...
 

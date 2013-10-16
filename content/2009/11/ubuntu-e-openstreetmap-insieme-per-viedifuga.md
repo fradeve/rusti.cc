@@ -1,6 +1,6 @@
 Title: Ubuntu e OpenStreetMap insieme per VieDiFuga
 Date:  2009-11-18 23:15:25
-tags: gnulinux, openstreetmap, ruvodipuglia, ubuntu,
+tags: gnulinux, openstreetmap, ruvodipuglia, ubuntu
 
 La comunità degli utenti GNU/Linux e dei mappper
 di [OpenStreetMap][3] (abbreviato OSM) in Puglia sta crescendo molto rapidamente.

@@ -1,6 +1,6 @@
 Title: Icone smart browsing per il Portale Giochi
 Date:  2007-11-28 21:22:23
-tags: ubuntu,
+tags: ubuntu
 
 Scusate la fretta, ma oggi il tempo è tiranno.
 Sono riuscito a tirare giù uno schizzo delle possibilità d'uso di queste icone

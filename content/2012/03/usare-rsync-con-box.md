@@ -1,9 +1,8 @@
 Title: Usare rsync con Box.net
 Date:  2012-03-23 23:00:00
 featured: yes
-tags: server,
-
-_Ultimo aggiornamento: 17 aprile 2012_
+tags: server
+Modified: 2012/04/17
 
 In questi giorni, [Box.net][1] sta regalando 50 Gb di spazio a chiunque apra un nuovo account e faccia almeno un login dall'applicazione ufficiale per Android, occasione davvero ghiotta. È la prima volta che utilizzo questo servizio e la prima cosa che ho notato, con enorme sconcerto, è che Box.net non supporta in nessun modo il _timestamp_ dei file. In altre parole, tutte le informazioni presenti nel file relativi alla data dell'ultima modifica (tanto per dirne una) vengono sovrascritte, con [sommo disappunto degli utenti][2]. Per chi avrebbe tanto voluto 50 Gb di cloud per fare una copia speculare e sincronizzata delle proprie foto, video, documenti con lo straordinario [rsync][3], tempi bui.
 
@@ -27,51 +26,62 @@ La cartella di WebDAV può essere montata sia dall'utente che sta utilizzando la
 
 Installare davfs2
 
+    :::bash
 	sudo apt-get install davfs2
 
 Permettere all'utente non-root di montare DavFS, rispondendo `Yes` alla riconfigurazione del pacchetto
 
+    :::bash
 	sudo dpkg-reconfigure davfs2
 
 Aggiungere l'utente che utilizzerà DavFS2 al gruppo omonimo:
 
+    :::bash
 	sudo adduser $USER davfs2
 
 creare la cartella in cui verrà montata la Box
 
+    :::bash
 	sudo mkdir /media/box
 
 inserire la seguente riga in `/etc/fstab`:
 <!-- inserire la seguente riga in `/etc/fstab`, sostituendo al posto di `1000` in `uid` e `gid` l'userid e il groupid dell'utente che accederà alla Box: -->
 <!-- https://www.box.com/dav /media/box davfs rw,suid,dev,exec,noauto,nouser,async,uid=1000,gid=1000 0 0 -->
 
+    :::bash
 	https://www.box.com/dav /media/box      davfs   noauto,user   0   0
 
 Il file `/etc/davfs2/davfs2.conf` contiene le impostazioni valide per tutto il sistema; decommentare la seguente riga:
 
-        use_locks       0
+    :::bash
+    use_locks       0
 
 Creare una copia del file delle configurazioni nella propria home
-
+  
+    :::bash
 	mkdir ~/.davfs2
 	cp /etc/davfs2/davfs2.conf ~/.davfs2
 
 Per evitare di dover inserire ogni volta le credenziali di accesso alla Box in fase di mount, creare il file `secrets`, attribuirgli i permessi corretti (`600`)
 
+    :::bash
 	sudo cp /etc/davfs2/secrets ~/.davfs2
 	sudo chown $USER ~/.davfs2/secrets
 	sudo chmod 600 ~/.davfs2/secrets
 
 ed inserirvi i dati di accesso
 
+    :::bash
 	/media/box	user@email.com	password
 
 Il file `~/.davfs/davfs2.conf` contiene le impostazioni per l'utente; in questo, specificare la posizione del file delle password appena creato, decommentando la riga come segue
 
+    :::bash
 	secrets         ~/.davfs2/secrets
 
 Possiamo dotarci di _alias_ in `~/.bashrc` per montare e smontare rapidamente la Box (ricordando di dare un `source ~/.bashrc` per rendere operativi gli alias):
 
+    :::bash
 	alias boxmount='mount /media/box'
 	alias boxumount='umount /media/box'
 
@@ -90,20 +100,24 @@ Alcune spiegazioni:
 
 Installare EncFS ed aggiungere il proprio utente al gruppo `fuse`
 
+    :::bash
 	sudo apt-get install encfs
 	sudo addgroup <USER> fuse
 
 decommentare la seguente riga in `/etc/fuse.conf`
 
+    :::bash
 	user_allow_other
 
 creare la cartella che conterrà il filesystem criptato, sistemare i permessi (sostituire ad `<USER>` il proprio nome utente sulla macchina)
 
+    :::bash
 	sudo mkdir /media/box.encfs
 	sudo chown <USER>:<USER> /media/box.encfs
 
 creare la cartella che ospiterà il filesystem criptato e il filesystem criptato
 
+    :::bash
 	mkdir /media/box/backup/
 	encfs /media/box/backup/ /media/box.encfs/
 
@@ -113,11 +127,13 @@ durante la creazione, ci verranno chieste informazioni relative al sistema di ci
 
 La vera chicca: questi script fanno in modo che i file nel nostro filesystem criptato conservino le timestamp, permettendo a rsync di lavorare. Scaricare gli script con
 
+    :::bash
 	wget http://bazaar.launchpad.net/~germar/fusetime/trunk/download/head:/fusetime.py-20120119150228-brsqa2ewllb9euc5-1/fusetime.py
 	wget http://fusepy.googlecode.com/svn/trunk/fuse.py
 
 correggere i permessi, spostarli nella cartella degli eseguibili
 
+    :::bash
 	sudo chown root:root fusetime.py fuse.py
 	sudo chmod 755 fusetime.py fuse.py
 	sudo mv fusetime.py fuse.py /usr/local/bin/
@@ -126,30 +142,36 @@ correggere i permessi, spostarli nella cartella degli eseguibili
 
 Questo passaggio permetterà di correggere le timestamp grazie agli script installati prima e di avere in `/media` una cartella che avremo come destinazione per i nostri backup, collegata con quella criptata creata precedentemente. Creare la cartella, attribuire i permessi e avviare lo script sulle cartelle
 
+    :::bash
 	sudo mkdir /media/box.backup
 	sudo chown <USER>:<USER> /media/box.backup
 	fusetime.py /media/box.encfs/ /media/box.backup/
 
 In caso di problemi o errori relativi a con `fusermount`, soluzione è [a portata di mano][8]. Installare rsync
 
+    :::bash
 	sudo apt-get install rsync
 
 Avviare _finalmente_ la sincronizzazione, sostituendo `/path/to/files` al percorso che vogliamo backuppare; di seguito è riportata un'istanza di rsync con opzioni "base", che andrà bene per qualsiasi esigenza
 
+    :::bash
 	rsync -r -a -i --times --delete --max-size=99.5M --no-perms --no-group --progress /path/to/files /media/box.backup/
 
 Per sincronizzare le mie immagini, ho inserito qualche altra opzione per non copiare nel backup i file `Thumbs.db`, quelli che con estensione `.xmp` e `.bak`; vengono inoltre usati dei file parziali (così da non dover ricominciare da capo il backup di file di grosse dimensioni in caso di interruzioni) e man mano che il programma opera viene mostrato un log in tempo reale che mostra ogni singola operazione di rsync:
 
+    :::bash
 	rsync -r -a -i --times --exclude '*.xmp' --exclude '*.bak' --exclude 'Thumbs.db' --delete \\
 	--max-size=99.5M --no-perms --no-group -P -v -v /media/dati/archivio/immagini/ /media/box.backup/
 
 Ricordare che in `/media/box.backup/` possiamo creare qualsiasi sottocartella, abbiamo la massima libertà; ad esempio, potremo avere rispettivamente come origine e destinazione del backup:
 
+    :::bash
 	/home/fradeve/Immagini	/media/box.backup/Immagini
 	/home/fradeve		/media/box.backup/fradeve
 
 Potremo quindi dimenticarci di tutte le altre cartelle create, che sono soltanto funzionali al sistema degli script e del filesystem, lavorando semplicemente su `/media/box.backup`. Quando la sincronizzazione sarà finita, potremo smontare le partizioni con i seguenti comandi
 
+    :::bash
 	fusermount -u /media/box.backup
 	fusermount -u /media/box.encfs
 	umount /media/box
@@ -158,11 +180,13 @@ Consiglio vivamente, dopo aver dato il comando di `umount` per smontare la Box v
 
 Dopo un eventuale riavvio del sistema, potremo far ripartire tutto montando nuovamente il filesystem criptato e avviando lo script
 
+    :::bash
 	encfs /media/box/backup/ /media/box.encfs/
 	fusetime.py /media/box.encfs/ /media/box.backup/
 
 oppure, concatenando i comandi per montare la Box, montare la partizione criptata (che richiederà comunque l'inserimento manuale della password) e lo script fusetime, è possibile creare un alias in `.bashrc` che faccia tutto da solo:
 
+    :::bash
 	alias boxmount='mount /media/box && encfs /media/box/backup/ /media/box.encfs/ && fusetime.py /media/box.encfs/ /media/box.backup/'
 
 fatto ciò, potremo avviare il comando di rsync riportato sopra. Il montaggio di filesystem cifrati in GNOME può essere automatizzato usando [gnome-encfs][9].
@@ -182,10 +206,12 @@ In altre parole, all'interno di ogni filesystem criptato creato con EncFS viene 
 
 Spostiamo il file nella nostra home, eliminandolo dalla Box 
 
+    :::bash
 	mv /media/box/backup/.encfs6.xml ~/.encfs6_box.xml
 
 Al nuovo comando per montare il filesystem criptato verrà aggiunto (anche nel vostro eventuale `.bashrc`) un parametro che indica dove reperire il file xml corretto; tale parametro varia in funzione della versione di EncFS (per cui EncFS 1.6 avrà `ENCFS&_CONFIG`, EncFS 1.7 avrà `ENCFS7_CONFIG`):
 
+    :::bash
 	ENCFS6_CONFIG="~/.encfs6_box.xml" encfs /media/box/backup/ /media/box.encfs/
 
 Questo significa anche che:
@@ -220,4 +246,3 @@ Sicuramente l'impossibilità di accedere da qualunque dispositivo ai propri dati
    [15]: https://help.ubuntu.com/community/EncryptedHome
    [16]: http://tomalison.com/reference/2010/04/03/webdav/
    [17]: http://ubuntuforums.org/showpost.php?p=11258734&postcount=34
-

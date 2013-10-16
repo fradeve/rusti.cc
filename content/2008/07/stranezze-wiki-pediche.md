@@ -1,6 +1,6 @@
 Title: Stranezze Wiki-pediche
 Date:  2008-07-06 12:49:30
-tags: wikimedia, gnulinux,
+tags: wikimedia, gnulinux
 
 Oggi due osservazioni. Ho notato che ultimamente i server di
 Wikipedia non si stanno comportando benone. Spesso (capita anche 2 o 3 volte

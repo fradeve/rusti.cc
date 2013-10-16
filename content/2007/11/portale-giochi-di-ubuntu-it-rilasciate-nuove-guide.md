@@ -1,6 +1,6 @@
 Title: Portale giochi di Ubuntu-it: rilasciate nuove guide
 Date:  2007-11-09 22:55:27
-tags: ubuntu,
+tags: ubuntu
 
 La mia attività di traduttore da studente
 universitario itinerante mi ha permesso di sfornare nuove guide; sono adesso

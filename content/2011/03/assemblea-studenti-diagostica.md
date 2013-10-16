@@ -1,6 +1,6 @@
 Title: Assemblea degli studenti di Diagnostica
 Date:  2011-03-27 20:00:00
-tags: diagnostica,
+tags: diagnostica
 
 OGGETTO:  CONVOCAZIONE ASSEMBLEA STUDENTESCA
 

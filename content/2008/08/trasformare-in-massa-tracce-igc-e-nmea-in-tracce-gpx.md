@@ -1,6 +1,6 @@
 Title: Trasformare in massa tracce igc e nmea in tracce gpx
 Date:  2008-08-18 16:42:55
-tags: python, openstreetmap,
+tags: python, openstreetmap
 
 Questo è un post scritto da [Sdonk][4], ospitato qui sul mio blog :)
 
@@ -23,41 +23,38 @@ per scaricare lo script][3]
 
 Qualche commento al codice:
 
-[[!format py """
-if formato in ListaFormati:
-	ListaFile = CercaFile(os.listdir('.') , formato)
-	else : print "Formato inesistente o non ancora implementato, esco dal programma."
-exit()
-""
+    :::python
+    if formato in ListaFormati:
+        ListaFile = CercaFile(os.listdir('.') , formato)
+        else : print "Formato inesistente o non ancora implementato, esco dal programma."
+    exit()
 
 Controlla il formato passato come argomento al programma e, se corretto (i formati
 accettati sono igc e nmea), restituisce una lista, attraverso la funzione
 os.listdir(cartella), con **tutti** i file contenuti nella cartella passata
 come argomento. 
 
-[[!format py """
-def CercaFile(lista, flag):
-for i in lista:
-	if flag in i:
-		gpx.append(i)
-		return gpx
-""
+    :::python
+    def CercaFile(lista, flag):
+    for i in lista:
+        if flag in i:
+            gpx.append(i)
+            return gpx
 
 
 La funzione CercaFile restituisce una nuova lista contenente soltanto i file con
 l'estensione interessata (igc o nmea), eliminando tutti gli altri file
 inutili.
 
-[[!format py """
-if ListaFile != []:
-	c = 0
-	for i in ListaFile:
-		stringa = "gpsbabel -i " + formato + " -f '" + i + "' -o gpx -F '" + i[0:-3] + "'gpx"
-		os.system(stringa)
-		c = c + 1 print "Ho trasformato " + str(c) + " file in gpx ed ho cancellato i file " + formato + ""
-else:
-print "Non ci sono file da convertire, ciao!" [/sourcecode]
-""
+    :::python
+    if ListaFile != []:
+        c = 0
+        for i in ListaFile:
+            stringa = "gpsbabel -i " + formato + " -f '" + i + "' -o gpx -F '" + i[0:-3] + "'gpx"
+            os.system(stringa)
+            c = c + 1 print "Ho trasformato " + str(c) + " file in gpx ed ho cancellato i file " + formato + ""
+    else:
+    print "Non ci sono file da convertire, ciao!" [/sourcecode]
 
 Controlla che ci siano
 file da convertire, in caso positivo passa al sistema, attraverso il la
@@ -66,11 +63,11 @@ La stringa che può sembrare complicata serve a trasformare i file mantenendo
 il nome originale. Per eseguire lo script basta copiare i file da trasformare
 nella stessa cartella dove è presente lo script e poi da terminale digitare:
 
-	$: python trasforma.py formato
+    :::bash
+	python trasforma.py formato
 
 dove `formato` deve essere sostituito con igc o con nmea a seconda del formato
 di partenza dei file.
-
 
 Semplice, veloce ed efficace a patto di aver gpsbabel
 installato, ovviamente!

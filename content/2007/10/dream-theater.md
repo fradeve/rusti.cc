@@ -1,6 +1,6 @@
 Title: Dream Theater
 Date:  2007-10-27 14:13:55
-tags: life,
+tags: life
 
 <center>[![][1]][2]<br>
 _[Dream Theater][3], inserito originariamente da [rick][4]._</center>

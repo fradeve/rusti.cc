@@ -1,6 +1,6 @@
 Title: Neo1973 alla riscossa!
 Date:  2008-04-10 21:44:51
-tags: openmoko,
+tags: openmoko
 
 {% from "macros.j2" import render_image %}
 {{ render_int_image('Foto by Roland @ Flickr', 'openmoko_riscossa.jpg', 'Foto by Roland @ Flickr', '') }}

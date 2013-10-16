@@ -1,6 +1,6 @@
 Title: Questione di personale
 Date:  2010-01-18 17:54:53
-tags: openstreetmap, nokia, gnulinux,
+tags: openstreetmap, nokia, gnulinux
 
 <center>![][1]<br>_Mapper da tutto il mondo allo State of the Map 2009_</center>
 
@@ -37,12 +37,12 @@ strade e prendono a cuore l'accuratezza delle mappe elaborate nei loro uffici.
 Il volantino suona più o meno cosi:
 
 
-	"Lo sai che?
-
-	NAVTEQ può contare su oltre 1000 esperti cartografici che si prendono cura di
-	creare ed aggiornare quotidianamente il database delle mappe NAVTEQ con i dati
-	della zona in cui risiedono. Ogni giorno sperimentano le strade e seguono
-	tragitti a piedi esattamente come fai tu."
+> "Lo sai che?
+> 
+> NAVTEQ può contare su oltre 1000 esperti cartografici che si prendono cura di
+> creare ed aggiornare quotidianamente il database delle mappe NAVTEQ con i dati
+> della zona in cui risiedono. Ogni giorno sperimentano le strade e seguono
+> tragitti a piedi esattamente come fai tu."
 
 
 Quando l'ho letto, ero in negozio e stavo per piegarmi in due dalle risate. È

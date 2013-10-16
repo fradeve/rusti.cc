@@ -1,6 +1,6 @@
 Title: Lho fatto: Asus EEE PC in arrivo
 Date:  2007-12-03 23:35:55
-tags: openmoko, ubuntu, wikipedia, dell,
+tags: openmoko, ubuntu, wikipedia, dell
 
 Non ho resistito: da quando ho saputo che l'uscita del [Neo1973
 con Openmoko][1] è slittata a febbraio 2008, mi sono concesso il lusso di

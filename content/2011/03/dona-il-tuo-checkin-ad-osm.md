@@ -1,6 +1,6 @@
 Title: Dona il tuo checkin ad OpenStreetMap!
 Date:  2011-03-15 20:45:00
-tags: openstreetmap,
+tags: openstreetmap
 
 Utilizzato con le dovute impostazioni di privacy, [Foursquare][1] è indubbiamente comodo: permette di conoscere la posizione dei propri contatti quando si gira per locali, o all'università, o in contesti di questo genere. Senza dubbio il vero successo, dal punto di vista commerciale, di Foursquare sta proprio nell'offrire un metodo veloce agli utenti per inserire i POIs (_Points of interest_).
 

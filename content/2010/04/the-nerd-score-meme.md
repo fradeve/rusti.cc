@@ -1,6 +1,6 @@
 Title: The nerd score meme
 Date:  2010-04-28 07:56:56
-tags: ubuntu, nerd, gnulinux,
+tags: ubuntu, nerd, gnulinux
 
 <center>[![I am nerdier than 95% of all people. Are you a nerd? Click here to take the Nerd Test, get nerdy images and jokes, and talk on the nerd forum!][1]][2]</cener>
 

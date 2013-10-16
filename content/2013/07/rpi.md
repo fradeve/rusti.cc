@@ -2,7 +2,7 @@ Title: RaspberryPi, my tips
 Date:  2013-07-17 16:00:00
 featured: yes
 lang: en
-Modified: 2013-07-23
+Modified: 2013/07/23
 tags: raspberrypi, cloud
 
 This is nothing more than few quick notes about setting up Raspberry Pi as a personal
@@ -19,6 +19,7 @@ Flash Raspbian
 Download Raspbian zip, extract it. Using Disk utility erase an SD card. Flash the `img`
 file using
 
+    :::bash
     dd bs=1M if=archlinux-hf-2013-02-11.img of=/dev/sdc
 
 Configure boot from USB
@@ -28,6 +29,7 @@ Flash an USB stick with the same raspbian as above, changing from `sdc` to `sdd`
 (probably). Mount the `boot` partition of the SD card and substitute the following
 contents with the file `cmdline.txt` in it:
 
+    :::bash
     dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/sda2 rootfstype=ext4 rootwait text
 
 Where `/dev/sda2` is device pointer of the USB stick on RPi (if it not works,
@@ -39,6 +41,7 @@ Configure clock values
 To avoid FS corruption issues, add a `config.txt` file with the following contents
 in the same dir of the SD card containing the file above (`cmdline.txt`)
 
+    :::bash
     core_freq 240
     arm_freq 650
     sdram_freq 350
@@ -64,6 +67,7 @@ Configure wicd-curses
 When on the Raspbian desktop, start the wifi tool and connect to a wifi net.
 Issue the followin commands:
 
+    ::: bash
     sudo apt-get update
     sudo apt-get install wicd-curses
 
@@ -76,15 +80,18 @@ Configure wired static IP
 
 Configure RPi to boot directly in TTY:
 
+    :::bash
     sudo raspi-config
     Start X-server after boot? -> no
 
 Halt the RPi
 
+    :::bash
     sudo halt
 
 Detach it from monitor, attach it to a wired router and connect to it using ssh
 
+    :::bash
     ssh rpi@192.168.1.100
 
 assuming that IP as the one assigned by default from the router. Using wicd-curses
@@ -95,6 +102,7 @@ Put RPi over the internet
 
 Change default user password:
 
+    :::bash
     passwd
 
 Change default SSH port in `/etc/ssh/sshd_config` (`Port 6724`).
@@ -104,22 +112,25 @@ The guide is [here](http://www.lucavallongo.com/blog/2012/11/raspberrypi-configu
 
 Autostart No-ip on every boot
 
+    :::bash
     sudo vim /etc/rc.local
     /usr/local/bin/noip2
 
 Start service
 
+    :::bash
     sudo /usr/local/bin/noip2
 
 Open router administration interface, in NAT -> Virtual Servers, forward ports as follows:
 
-    # Rule n.   # Service name      # Protocol  # Starting port     # Final port    # Local IP
-    1           Rpi SSH             All         6724                6724            192.168.1.124
-    2           Rpi WWW             All         80                  80              192.168.1.124
+    # Rule  # Service   # Protocol  # Starting port     # Final port    # Local IP
+    1       Rpi SSH     All         6724                6724            192.168.1.124
+    2       Rpi WWW     All         80                  80              192.168.1.124
 
 Clean the image
 ---------------
 
+    :::bash
     sudo apt-get remove midori python3 python3-minimal omxplayer gcc-4.4-base:armhf gcc-4.5-base:armhf gcc-4.6-base:armhf fonts-freefont-ttf
     sudo apt-get autoremove
 
@@ -133,36 +144,43 @@ Install encrypted partition
 
 * Using GParted, create a separate storage partition. We'll use
 
+        :::bash
         /           /dev/sda2
         rpidata     /dev/sda3
 
 * Connect to RPi, boot. Create encrypted partition:
 
+        :::bash
         cryptsetup -y -v luksFormat /dev/sda3
         cryptsetup luksOpen /dev/sda3 rpidata
 
 * Format newly created encrypted partition
 
+        :::bash
         sudo dd if=/dev/zero of=/dev/mapper/rpidata
         sudo mkfs.ext4 /dev/mapper/rpidata
 
 * Mount it
 
+        :::bash
         mkdir /home/user/crypt
         sudo mount /dev/mapper/rpidata /home/user/crypt
 
 To unmount
 
+    :::bash
     sudo umount /home/user/crypt
     cryptsetup luksClose rpidata
 
 To mount after boot
 
+    :::bash
     cryptsetup luksOpen /dev/sda3 rpidata
     sudo mount /dev/mapper/rpidata /home/user/crypt
 
 To save LUKS headers (disaster recovery)
 
+    :::bash
     cryptsetup luksHeaderBackup --header-backup-file luks_headers /dev/sda3
 
 Configure Bit Torrent Sync
@@ -172,8 +190,10 @@ Configure Bit Torrent Sync
 * create config file; `user` and `group` BTSync will use are written
   directly in the filename
 
+        :::bash
         cp /etc/btsync/samples/simple.conf /etc/btsync/config.pi.www-data.conf
 
+        :::json
         {
             "device_name": "rpi",
             "listening_port" : 0,
@@ -190,6 +210,7 @@ Configure Bit Torrent Sync
 
 * start BTSync service
 
+        :::bash
         sudo service btsync start
 
 Configure ownCloud storage with BTSync
@@ -205,10 +226,12 @@ That said,
 * set `datadirectory` as `/home/pi/crypt/owncloud` in `/var/www/owncloud/config/config.php`
 * change owner to `.btsync` folder
 
+        :::bash
         sudo chown -R www-data:www-data /home/pi/crypt/.btsync
 
 * change owner and permissions to ownCloud data dir
 
+        :::bash
         sudo chown -R www-data:www-data /home/pi/crypt/owncloud/fradeve/files/*
         sudo chmod -R u=rwx,g=rx,o=rx /home/pi/crypt/owncloud/fradeve/files/*
 
@@ -222,6 +245,7 @@ to this dir we have two ways:
 1.  run Rsnapshot as `pi` in another dir (e.g. `crypt/backup`)
     and later chmod and move files to `owncloud/user/files`
 
+        :::bash
         vim /home/pi/.bin/post_backup.sh
         
         ---
@@ -257,6 +281,7 @@ Install Ajenti
 
 Add the Debian repo as from instructions on the site.
 
+    :::bash
     sudo apt-get install python-pip python-dev libevent-dev
     sudo pip install -U gevent
     sudo pip install greenlet==dev
@@ -265,6 +290,7 @@ Add the Debian repo as from instructions on the site.
 Install Mozilla Weave
 ---------------------
 
+    :::bash
     cd /var/www
     sudo git clone https://github.com/balu-/FSyncMS.git
     sudo mv FSyncMS weave
@@ -276,6 +302,7 @@ With browser, connect to
 
 Select Sqlite.
 
+    :::bash
     sudo mv /var/www/weave/setup.php /home/pi/setup.php.old
 
 Connect to `http://yourserver.org/weave/index.php/`, if the following
@@ -291,6 +318,7 @@ After configuring, if the window freezes or nothing happens, simply wait.
 URL validation process on a custom server could take up to 10 minutes.
 When the `Next` button will be available (after several minutes) click it.
 
+    :::bash
     rm /home/pi/setup.php.old
 
 WARNING: from personal experience, changing machine name from Firefox Sync
@@ -302,6 +330,7 @@ Install Deluge
 
 ### Installation
 
+    :::bash
     mkdir /home/pi/crypt/deluge
     mkdir /home/pi/crypt/deluge/complete
     mkdir /home/pi/crypt/deluge/incomplete
@@ -310,6 +339,7 @@ Install Deluge
     
 Start Deluge for the 1st time and kill it
 
+    :::bash
     deluged
     sudo pkill deluged
     cp ~/.config/deluge/auth ~/.config/deluge/auth.old
@@ -322,6 +352,7 @@ Start Deluge for the 1st time and kill it
 E.g. `pi:testpassw:10`. Next, start Deluge console and enable remote connections
 to daemon:
 
+    :::bash
     deluged
     deluge-console
     
@@ -329,11 +360,13 @@ to daemon:
     config allow_remote
     exit
     
+    :::bash
     sudo pkill deluged
     deluged
 
 ### Web interface:
 
+    :::bash
     sudo apt-get install deluged python-mako deluge-web
     deluge-web
 
@@ -346,6 +379,7 @@ Connect to `serverip:8112` and access with defined credentials.
 
 ### Autostart at boot
 
+    :::bash
     sudo vim /etc/rc.local
 
     ---

@@ -1,6 +1,6 @@
 Title: Università di Bari: connettersi alla wifi degli studenti
 Date:  2009-02-07 16:35:22
-tags: gnulinux, ubuntu,
+tags: gnulinux, ubuntu
 
 In passato ho già parlato del servizio
 offerto dall'università degli Studi di Bari agli studenti: adeguandosi alle

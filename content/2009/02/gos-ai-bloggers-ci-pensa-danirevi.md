@@ -1,6 +1,6 @@
 Title: gOS ai bloggers, ci pensa DaniRevi
 Date:  2009-02-26 22:18:00
-tags: gnulinux,
+tags: gnulinux
 
 Dall'interessante pensata di un blogger, **DaniRevi**, nasce l'idea di
 regalare i "fatturati" del primo anno di blogging (200€) ad un fortunato

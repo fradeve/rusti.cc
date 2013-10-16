@@ -1,6 +1,6 @@
 Title: Shuttleworth vs Ballmer
 Date:  2007-10-15 16:37:44
-tags: gnulinux, microsoft, ubuntu,
+tags: gnulinux, microsoft, ubuntu
 
 Forse molti di voi avranno già letto la notizia, ma la riassumo in breve: dopo
 le accuse lanciate dal CEO di Microsoft al "mondo open source" (che io

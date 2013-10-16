@@ -1,6 +1,6 @@
 Title: PiX Juegos nel Portale Giochi
 Date:  2007-10-03 21:07:54
-tags: ubuntu, gnulinux,
+tags: ubuntu, gnulinux
 
 <center>![][1]<br>![][2]</center>
 

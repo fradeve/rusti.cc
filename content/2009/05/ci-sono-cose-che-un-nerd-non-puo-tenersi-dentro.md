@@ -1,6 +1,6 @@
 Title: Ci sono cose che un nerd non può tenersi dentro...
 Date:  2009-05-06 15:18:15
-tags: mail, gnulinux, gtd, ubuntu, nerd,
+tags: mail, gnulinux, gtd, ubuntu, nerd
 
 ...e le nuove scoperte in fatto di software sono una di quelle :)
 

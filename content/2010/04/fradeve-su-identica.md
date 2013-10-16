@@ -1,6 +1,6 @@
 Title: Fradeve su Identi.ca
 Date:  2010-04-12 13:01:43
-tags: ubuntu, socialnetwork, gnulinux, gtd,
+tags: ubuntu, socialnetwork, gnulinux, gtd
 
 Con questo brevissimo post, oltre a notificare a tutti i lettori che
 in questo periodo sono così impegnato che preferisco evitare di scrivere

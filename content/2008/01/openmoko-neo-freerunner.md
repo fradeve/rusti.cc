@@ -1,6 +1,6 @@
 Title: Openmoko Neo FreeRunner
 Date:  2008-01-27 00:09:16
-tags: freerunner, openmoko,
+tags: freerunner, openmoko
 
 Aprile si avvicina....
 

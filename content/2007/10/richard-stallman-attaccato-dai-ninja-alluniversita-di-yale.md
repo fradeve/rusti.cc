@@ -1,6 +1,6 @@
 Title: Richard Stallman attaccato dai ninja allUniversità di Yale
 Date:  2007-10-23 18:35:00
-tags: microsoft, ubuntu, rms,
+tags: microsoft, ubuntu, rms
 
 Anche oggi un lungo viaggio in treno, quindi ecco cosa vi propongo: ieri 21
 Ottobre, mentre si trovava a New Haven, nell'Università di Yale, Richard

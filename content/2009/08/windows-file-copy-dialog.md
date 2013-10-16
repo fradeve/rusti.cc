@@ -1,6 +1,6 @@
 Title: Windows File Copy Dialog
 Date:  2009-08-05 13:03:44
-tags: gnulinux, nerd,
+tags: gnulinux, nerd
 
 So che e banale...
 

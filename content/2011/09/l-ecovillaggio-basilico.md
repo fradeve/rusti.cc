@@ -1,6 +1,6 @@
 Title: Autoproduzione 3: l'ecovillaggio Basilico
 Date:  2011-09-06 10:40:00
-tags: autoproduzione,
+tags: autoproduzione
 
 Considerati i ritmi di crescita della popolazione mondiale e la sempre crescente richiesta di risorse (energetiche, alimentari, minerarie, ecc.) con il passare degli anni si manifesta sempre più prepotente l'idea che il nostro Pianeta, "nient'altro che un «puntolino» nell'universo, ma pur sempre l'unica casa che abbiamo" (cit. Carl Sagan) stia diventando troppo piccolo per accoglierci tutti.
 

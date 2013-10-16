@@ -1,6 +1,6 @@
 Title: Un appello per Ubuntu
 Date:  2008-03-02 14:09:48
-tags: ubuntu,
+tags: ubuntU
 
 Mi permetto di citare l'intervento di Riccardo Filippone:
 [http://ethernaly.altervista.org/it/diffondi_ubuntu_tg.php][2]

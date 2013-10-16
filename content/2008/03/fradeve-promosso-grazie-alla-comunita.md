@@ -1,6 +1,6 @@
 Title: Fradeve promosso, grazie alla Comunità
 Date:  2008-03-11 17:47:45
-tags: ubuntu,
+tags: ubuntu
 
 Oggi, con un giorno di ritardo, ho appreso che sono stato promosso da Editore
 di Sezione del Wiki di Ubuntu-it (nello specifico del Portale Giochi) ad

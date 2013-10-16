@@ -1,7 +1,7 @@
 Title: Announcing diGNU
 Date:  2011-06-16 19:50:00
 lang: en
-tags: webgis, server, archaeology, oia,
+tags: webgis, server, archaeology, oia
 
 As posted on archeos@lists.linux.it and open-archaeology@lists.okfn.org:
 

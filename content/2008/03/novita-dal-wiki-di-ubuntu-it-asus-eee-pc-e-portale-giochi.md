@@ -1,6 +1,6 @@
 Title: Novità dal Wiki di Ubuntu-it: Asus Eee PC e Portale Giochi
 Date:  2008-03-27 23:14:18
-tags: ubuntu,
+tags: ubuntu
 
 È un po' che non sparo per la rete qualche
 aggiornamento sulle ferventi attività che ogni giorno gorgogliano nel [Wiki

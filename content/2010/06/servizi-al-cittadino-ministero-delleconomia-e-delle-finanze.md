@@ -1,6 +1,6 @@
 Title: Servizi al cittadino? Ministero dell'Economia e delle Finanze
 Date:  2010-06-18 13:15:54
-tags: stato,
+tags: stato
 
 Ho scoperto che il
 Ministero dell'Economia e delle Finanze offre un servizio di rassegna stampa

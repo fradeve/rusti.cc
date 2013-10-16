@@ -1,6 +1,6 @@
 Title: Asus EEE e Xubuntu: la mia recensione
 Date:  2007-12-25 17:47:47
-tags: gnulinux, ubuntu,
+tags: gnulinux, ubuntu
 
 ## Premessa ##
 

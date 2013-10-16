@@ -1,6 +1,6 @@
 Title: Richard Stallman a Foggia: impressioni
 Date:  2010-06-01 18:52:49
-tags: ubuntu, rms, gnulinux, foggia,
+tags: ubuntu, rms, gnulinux, foggiA
 
 <center>![][1]<br>_RMS durante il talk a Foggia_</center>
 

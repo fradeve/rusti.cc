@@ -1,6 +1,6 @@
 Title: GNewArchaeology: pronte le pontificazioni
 Date:  2011-10-08 23:23:00
-tags: oia, archaeology, gis, gfoss, ubuntu,
+tags: oia, archaeology, gis, gfoss, ubuntu
 lastupdated: 2011-11-08
 
 

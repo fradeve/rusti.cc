@@ -1,8 +1,7 @@
 Title: Seeking for freedom
 Date:  2012-03-31 10:30:00
-tags: privacy, server,
-
-_Ultimo aggiornamento: 11 dicembre 2012_
+tags: privacy, server
+Modified: 2012-12-11
 
 In questa pagina raccolgo alcune note sul mio progetto per il biennio 2011-2012: eliminare quasi totalmente la mia dipendenza da servizi web che non danno garanzie sulla sicurezza e sulla privacy dei dati, per passare ad un insieme di servizi basati sulla fiducia in chi li gestisce, e soprattutto sull'utilizzo di software libero. Questa idea nasce nell'estate del 2011 ed è cresciuta piano piano con il passare del tempo; probabilmente vedrà il compimento quest'anno. Gli ultimi a morire saranno sicuramente i social network, ma vedo [Diaspora][35] sempre più vicino. Questa pagina è anche un'ottima occasione per fare il punto sui vari howto che ho scritto per il blog.
 

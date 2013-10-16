@@ -1,6 +1,6 @@
 Title: Ubuntu-it: cè qualcosa nellaria...
 Date:  2008-04-19 10:55:40
-tags: ubuntu,
+tags: ubuntu
 
 Non ve ne siete accorti anche voi? Da un po' di
 tempo a questa parte gli Editori del Wiki di Ubuntu-it sono particolarmente

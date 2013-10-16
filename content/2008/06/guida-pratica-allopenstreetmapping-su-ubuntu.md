@@ -1,6 +1,6 @@
 Title: Guida pratica allOpenStreetMapping su Ubuntu
 Date:  2008-06-01 09:43:13
-tags: gnulinux, nokia, openstreetmap, python, terlizzi, ubuntu, wikipedia,
+tags: gnulinux, nokia, openstreetmap, python, terlizzi, ubuntu, wikipedia
 
 <center>[www.openstreetmap.org][1]
 <br>

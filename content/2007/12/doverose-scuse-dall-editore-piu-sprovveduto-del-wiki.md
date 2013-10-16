@@ -1,6 +1,6 @@
 Title: Doverose scuse dalleditore più sprovveduto del Wiki...
 Date:  2007-12-07 11:08:29
-tags: ubuntu,
+tags: ubuntu
 
 Nel precedente post, ho
 affermato di aver cancellato tutti i "buon divertimento" dal Portale Giochi su

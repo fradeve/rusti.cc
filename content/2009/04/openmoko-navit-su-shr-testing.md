@@ -1,6 +1,6 @@
 Title: Openmoko: Navit su SHR-testing
 Date:  2009-04-07 18:26:28
-tags: gnulinux, gps, navit, openmoko, openstreetmap, ubuntu,
+tags: gnulinux, gps, navit, openmoko, openstreetmap, ubuntu
 
 <center>[![Navit on Openmoko][1]][2]</center>
 

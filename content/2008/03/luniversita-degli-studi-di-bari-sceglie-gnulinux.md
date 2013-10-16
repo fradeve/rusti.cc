@@ -1,6 +1,6 @@
 Title: LUniversità degli Studi di Bari sceglie GNU/Linux
 Date:  2008-03-13 23:29:36
-tags: gnulinux, python,
+tags: gnulinux, python
 
 <center>![][1]</center>
 

@@ -1,6 +1,6 @@
 Title: Neo FreeRunner con SHR: finalmente un telefono utilizzabile!
 Date:  2009-02-23 15:57:55
-tags: freerunner, gnulinux, kernel, openmoko, openstreetmap, python, tangogps, ubuntu,
+tags: freerunner, gnulinux, kernel, openmoko, openstreetmap, python, tangogps, ubuntU
 
 Come molti di voi sapranno, nel luglio
 2008 un'intraprendente società taiwanese ha rilasciato la prima versione "mass
@@ -139,6 +139,7 @@ spegnere il Neo senza un terminale. Possiamo ovviare a questo problema creando
 uno shortcut sul desktop. Basterà inserire il seguente file, che chiameremo
 _shutdown.desktop_ nella cartella _/usr/share/applications/_:
 
+    :::bash
 	[Desktop Entry]
 	Encoding=UTF-8
 	Version=0.7
@@ -186,11 +187,13 @@ Yaouh!, che non riesce quindi a scaricare alcun aggiornamento. Per ovviare a
 questo inconveniente, almeno per le mappe "standard" di OpenStreetMap (quelle
 di Mapnik, per capirci), è sufficiente sostituire nel file
 _~/.gconf/apps/tangogps/%gconf.xml_ questa riga:
-
+ 
+    :::bash
 	OSM
 
 con questa
 
+    :::bash
 	OSM|http://tile.openstreetmap.org/%d/%d/%d.png|/home/root/Maps/OSM|0
 
 rispettando gli spazi e la sintassi del resto del file.
@@ -205,6 +208,7 @@ tempo...
 La versione più aggiornata di Navit installabile sul Neo è
 quella SVN, e può essere installata dando i seguenti comandi:
 
+    :::bash
 	echo src navit http://download.navit-project.org/navit/openmoko/svn >/etc/opkg/navit-feed.conf
 	opkg update
 	opkg install navit
@@ -215,10 +219,12 @@ settimanalmente fornita da CloudMade, da [qui][8], e dopo averlo estratto dall'a
 spostiamo il file nella cartella _~/.navit_. Quindi, bisognerà sistemare il file di configurazione, con il seguente
 comando:
 
+    :::bash
 	cp /usr/share/navit/navit.xml ~/.navit/navit.xml
 
 Adesso inseriamo nel file una nuova dicitura "mapset", più o meno nei pressi del rigo 148:
 
+    :::html
 	<mapset enabled="yes">
 		       <map type="binfile" enabled="yes" data="/home/root/.navit/italy.navit.bin" />
 	</mapset>
@@ -226,6 +232,7 @@ Adesso inseriamo nel file una nuova dicitura "mapset", più o meno nei pressi de
 Fatto ciò, possiamo ancora fare in modo che Navit visualizzi i tasti "+" e "-" per lo zoom, per ingrandire e
  diminuire lo zoom della mappa durante la navigazione, portando da "enables=no" a "enables=yes" le voci ai righi 53 e 54:
 
+    :::html
 	<osd enabled="yes" type="button" x="-96" y="-96" command="zoom_in()" src="zoom_in.xpm"/>
 	<osd enabled="yes" type="button" x="0" y="-96" command="zoom_out()" src="zoom_out.xpm"/>
 

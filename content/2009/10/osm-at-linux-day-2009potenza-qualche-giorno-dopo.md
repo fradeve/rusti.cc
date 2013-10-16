@@ -1,6 +1,6 @@
 Title: OSM at Linux Day 2009@Potenza, qualche giorno dopo
 Date:  2009-10-28 18:25:40
-tags: lug , gnulinux, openstreetmap, ubuntu, talk,
+tags: lug , gnulinux, openstreetmap, ubuntu, talk
 
 <center>![][1]</center>
 

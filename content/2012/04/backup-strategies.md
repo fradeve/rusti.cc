@@ -1,7 +1,7 @@
 Title: Backup strategies
 Date:  2012-04-14 15:15:00
 featured: yes
-lastupdated: 2013-05-19
+Modified: 2013-05-19
 tags: backup
 
 Non ho molto tempo per spiegare l'immagine. In soldoni, è uno schema riassuntivo di come sono organizzati i miei dati ed i miei backup, realizzato anche per approfondire un po' la conoscenza di Graphviz. Il codice è in fondo al post.
@@ -16,6 +16,7 @@ _Legenda_
 
 Il codice dell'immagine:
 
+    :::bash
     digraph G {
         // TODO
         // * legend

@@ -1,6 +1,6 @@
 Title: L'influenza A: non capisco
 Date:  2009-09-06 12:16:51
-tags: apple, gnulinux, openmoko, ubuntu,
+tags: apple, gnulinux, openmoko, ubuntU
 
 Come avrete modo di intuire, non sono un fan della mela. Lo dico
 chiaramente, non sono affetto da [A-Adorazione][1]. Ho altri tipi di

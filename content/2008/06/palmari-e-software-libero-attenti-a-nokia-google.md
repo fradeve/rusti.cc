@@ -1,6 +1,6 @@
 Title: Palmari e Software Libero: attenti a Nokia e Google
 Date:  2008-06-14 17:53:23
-tags: freerunner, gnulinux, kernel, microsoft, nokia, openmoko, ubuntu, wikipedia,
+tags: freerunner, gnulinux, kernel, microsoft, nokia, openmoko, ubuntu, wikipediA
 
 <center>[![][1]][2]<br>_[Not everybody is as bad as they are dressed (translation by Ton)
 - Roland in NL (022)][3], inserito originariamente da [roland][4]._</center>

@@ -1,6 +1,6 @@
 Title: Stallman in Puglia, appuntamento doppio!
 Date:  2011-02-15 23:40:00
-tags: gnulinux, rms,
+tags: gnulinux, rms
 
 Preso da millemila peripezie, scrivo brevemente solo per ricordare che il nostro beneamato guru del software libero, Richard M. Stallman, in quella che sembra essere una vera febbre della Puglia per il Software Libero, incontrerà fans, simpatizzanti e fedeli della [Chiesa di Emacs][1] in ben due appuntamenti in Puglia solo a febbraio:
 

@@ -1,6 +1,7 @@
 Title: OpenStreetMap sull'Amtab di Bari. Ok, ma l'attribuzione?
 Date:  2011-01-01 23:30:00
-tags: bari, openstreetmap, life,
+tags: bari, openstreetmap, life
+Modified: 2011-01-11
 
 Immaginate la situazione: uno studente con un lavoro part-time in un negozio nel centro di Bari acchiappa al volo il bus dell'[Amtab][2] che lo ripoterà al park&ride dove ha mollato l'auto. Ecco, il suddetto studente si accascia soddisfatto sui sedili plasticosi del suddetto bus, accende il GPS del suo smartphone per avere una traccia GPX del percorso, per caricarla su un fantomatico progetto che permette agli utenti di creare una mappa in maniera collaborativa.
 

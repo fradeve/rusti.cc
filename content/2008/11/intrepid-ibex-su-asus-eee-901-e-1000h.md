@@ -1,6 +1,6 @@
 Title: Intrepid Ibex su Asus EEE 901 e 1000(H)
 Date:  2008-11-11 00:07:07
-tags: gnulinux, kernel, ubuntu,
+tags: gnulinux, kernel, ubuntu
 
 <center>![][1]</center>
 
@@ -72,19 +72,23 @@ chiama 2.6.27-7-eeepc, e per installarlo è necessaria una connessione cablata
 ad un modem o router, dato che la nostra wifi non funziona ancora. Una volta
 ottenuta la rete, aggiungiamo questa riga ai nostri repository:
 
+    :::bash
 	deb http://www.array.org/ubuntu intrepid eee
 
 Scarichiamo ed aggiungiamo la chiave per i nuovi repository
 
+    :::bash
 	wget http://www.array.org/ubuntu/array-apt-key.asc
 	sudo apt-key add http//www.array.org/ubuntu/array-apt-key.asc
 
 Installiamo il nuovo kernel con tutti i pacchetti raccomandati:
 
+    :::bash
 	sudo apt-get install linux-eeepc linux-headers-eeepc
 
 Rimuoviamo il vecchio kernel per liberare spazio sull'hard disk:
 
+    :::bash
 	sudo apt-get remove linux-generic linux-image-generic linux-headers-generic linux-restricted-modules-generic
 
 
@@ -97,6 +101,7 @@ installiamo un pacchetto _.deb_ (con la sua dipendenza) che contiene i driver
 wireless aggiornati che al prossimo avvio del sistema verranno automaticamente
 inseriti nel nuovo kernel:
 
+    :::bash
 	sudo apt-get install dkms
 	wget http://www.mediafire.com/?jfrgzemgnjz
 	sudo gdebi rt2860sta-dkms_*.deb
@@ -104,6 +109,7 @@ inseriti nel nuovo kernel:
 Scarichiamo un pacchetto con gli script che renderanno operativi i tasti
 funzione dell'Asus:
 
+    :::bash
 	wget http://www.informatik.uni-bremen.de/~elmurato/EeePC/Intrepid_ACPI_scripts-EeePC_900A_901_1000.tar.gz
 	tar xfvz Intrepid_ACPI_scripts-EeePC_900A_901_1000.tar.gz
 	cd Intrepid_ACPI_scripts-EeePC_900A_901_1000/
@@ -113,11 +119,13 @@ funzione dell'Asus:
 Fatto ciò, non resta che abilitare il tasto funzione del bluetooth, che di
 default è disabilitato negli script:
 
+    :::bash
 	sudo nano /etc/acpi/eeepc/eeepc-actions.sh
 
 decommentando (togliendo il cancelletto) la riga 89, relativa al bluetooth,
 che dovrebbe diventare così:
 
+    :::bash
 	/etc/acpi/eeepc/eeepc-bt-toggle.sh
 
 Riavviamo il PC e selezioniamo dal GRUB il nostro nuovo kernel targato eeepc,
@@ -134,6 +142,7 @@ paesi che non avete mai neanche sentito nominare. Si può ovviare a ciò
 rimuovendo da Synaptic tutti i pacchetti relativi ad "hplip" e tutti i font
 inutili con questo comando:
 
+    :::bash
 	sudo apt-get remove ttf-arabeyes ttf-arphic-ukai ttf-arphic-uming ttf-baekmuk
 	ttf-bengali-fonts ttf-devanagari-fonts ttf-gentium ttf-gujarati-fonts
 	ttf-indic-fonts ttf-kannada-fonts ttf-kochi-gothic ttf-lao ttf-malayalam-fonts
@@ -143,6 +152,7 @@ inutili con questo comando:
 Fossi in voi toglierei anche Brasero, visto che gli Asus EEE non hanno il
 masterizzatore ;)
 
+    :::bash
 	sudo apt-get remove --purge brasero
 
 E adesso, non vi resta che installare tutti i programmi di cui avete bisogno!

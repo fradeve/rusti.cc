@@ -40,7 +40,7 @@ SOCIAL = (
             ('icon-github', 'http://github.com/fradeve/fradeve.org')
          )
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = False
 
 DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'featured')
 

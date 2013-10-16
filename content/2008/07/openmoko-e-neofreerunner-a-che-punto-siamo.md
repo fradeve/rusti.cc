@@ -1,6 +1,6 @@
 Title: Openmoko e NeoFreerunner: a che punto siamo...
 Date:  2008-07-15 17:59:24
-tags: freerunner, gnulinux, nokia, openmoko, python, tangogps, wikipedia,
+tags: freerunner, gnulinux, nokia, openmoko, python, tangogps, wikipedia
 
 Dopo l'entrata in vendita (meno di un mese fa)
 del NeoFreerunner, il primo palmare/telefono completamente open-source,

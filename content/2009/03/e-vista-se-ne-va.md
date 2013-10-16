@@ -1,6 +1,6 @@
 Title: E Vista se ne va...
 Date:  2009-03-02 22:39:49
-tags: gnulinux, ubuntu, dell,
+tags: gnulinux, ubuntu, dell
 
 <center>[![delete_vista][1]][2]</center>
 

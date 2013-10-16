@@ -1,15 +1,15 @@
 Title: GFOSSDay 2011: il mio regno per un talk!
 Date:  2011-11-08 20:23:00
-tags: foggia, archaeology, gfoss, openstreetmap, ubuntu,
+tags: foggia, archaeology, gfoss, openstreetmap, ubuntu
 
 Annunciazione, annunciazione: il 24 ed il 25 novembre sarò a Foggia, presso il Dipartimento di Scienze Umane, per il GFOSSDay 2011, la giornata nazionale italiana dedicata al ssoftware geografico libero. Come sempre, parlerò brevemente delle applicazioni del GFOSS in archeologia e introdurrò gli astanti allo scintillante e geograficamente commovente mondo di OpenStreetMap, tutto quanto rigorosamente contornato da succulente patatine con il logo di Ubuntu.
 
-Tutti gli aggiornamenti in near-real-time direttamente su questo post (livetweeting con [[#gfossday2011|https://twitter.com/#!/search?q=%23GFOSSDAY11]]).
+Tutti gli aggiornamenti in near-real-time direttamente su questo post (livetweeting con [#gfossday2011](https://twitter.com/#!/search?q=%23GFOSSDAY11)).
 
 ## UPDATE: Day 1 ##
-Andata e ritorno in treno. Il GFOSSDay si è svolto nella nuova sede del Dipartimento di Scienze Umane, davvero accogliente e moderna. Come anche per l'ArcheoFOSS 2010, grazie ai ragazzi del Laboratorio di Archeologia Digitale e al team di [[GFOSS.it|http://www.gfoss.it]], tutto è andato per il meglio. Per punti:
+Andata e ritorno in treno. Il GFOSSDay si è svolto nella nuova sede del Dipartimento di Scienze Umane, davvero accogliente e moderna. Come anche per l'ArcheoFOSS 2010, grazie ai ragazzi del Laboratorio di Archeologia Digitale e al team di [GFOSS.it](http://www.gfoss.it), tutto è andato per il meglio. Per punti:
 
-* il tutorial su GRASS di Madi e Lucadelu è andato bene, anche se un po' lungo con i tempi, ma più che sufficiente a dare un'idea di come funziona "la Morte Nera" (GRASS GIS); peccato non essere riusciti a dare fondo al tutorial specifico per GRASS in archeologia, ma tant'è, le slide sono [[online|http://www.slideshare.net/madi468/gfossday2011-esercitazione]].
+* il tutorial su GRASS di Madi e Lucadelu è andato bene, anche se un po' lungo con i tempi, ma più che sufficiente a dare un'idea di come funziona "la Morte Nera" (GRASS GIS); peccato non essere riusciti a dare fondo al tutorial specifico per GRASS in archeologia, ma tant'è, le slide sono [online](http://www.slideshare.net/madi468/gfossday2011-esercitazione).
 * il tutorial su R si è dimostrato davvero all'altezza delle aspettative, IMHO soprattutto grazie ai code chunk di G. Calamita, pronti all'uso, perfettamente documentati e di facile utilizzo; ottima base di partenza per i neofiti.
 * nel pomeriggio ho preferito saltare la sessione in cui le PA presentavano i loro progetti perché ero perfettamente a conoscenza della partecipazione delle autorità pugliesi, con le quali non abbiamo avuto (come comunità di OpenStreetMap) dei buoni trascorsi; i presenti mi hanno confermato che i rapppresentanti dei servizi geografici e dei vari assessorati al territorio della Regione hanno semplicemente fritto aria, rendendosi ridicoli davanti alla comunità del software geografico libero (e davanti agli spettatori via internet) e dando spettacolo di chiusura mentale; mi dispiace immensamente constatare ancora una volta che la Puglia da questo punto di vista è una delle regioni più arretrare, persino tra quelle del sud Italia, visto che la Sicilia ha concesso il ricalco delle ortofoto regionali.
 
@@ -26,7 +26,7 @@ Da un lato alcuni amici di GFOSS.it e alcuni volontari dalla Puglia si sono mess
 
 ## Miscellanea ##
 * _Last but not least_, tutti i treni delle Ferrovie dello Stato da e per Foggia sono stati puntuali.
-* Grazie ad Antonio Falciano abbiamo anche un [[_sqworl_|http://sqworl.com/zj53cu]] delle presentazioni ;)
-* le mie slide, [[qui|http://www.slideshare.net/fradeve/osm-e-gfoss-geodati-e-software-liberi-in-archeologia]].
+* Grazie ad Antonio Falciano abbiamo anche un [_sqworl_](http://sqworl.com/zj53cu]] delle presentazioni) ;)
+* le mie slide, [qui](http://www.slideshare.net/fradeve/osm-e-gfoss-geodati-e-software-liberi-in-archeologia).
 * in attesa di capire dove si può reperire la registrazione dello streaming...
 

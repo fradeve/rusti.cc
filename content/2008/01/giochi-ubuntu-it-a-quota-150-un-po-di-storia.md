@@ -1,6 +1,6 @@
 Title: GIOCHI: Ubuntu-it a quota 150!!! Un po di storia....
 Date:  2008-01-28 00:05:36
-tags: ubuntu,
+tags: ubuntu
 
 Ebbene si, dopo tanti sforzi, notti insonni, libri chiusi e ditate sulla
 tastiera, il [Portale Giochi][2] del [Wiki di Ubuntu-it.org][3] arriva a **150

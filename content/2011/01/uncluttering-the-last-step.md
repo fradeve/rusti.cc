@@ -1,6 +1,6 @@
 Title: Uncluttering: the last step
 Date:  2011-01-31 15:00:00
-tags: life,
+tags: life
 
 [Ultimo rinnovo][rinnovo] parco macchine per i prossimi anni. Stop.
 

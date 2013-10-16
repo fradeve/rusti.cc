@@ -20,11 +20,13 @@ Caratteristiche:
   * Possibilità di scegliere dove salvare il QRCode
 
 Per aggiungere il repository alla propria lista, dare il seguente comando:
-
+ 
+    :::bash
 	sudo add-apt-repository ppa:pasquale-ambrosini/spyqr
 
 Quindi aggiornare i propri repository ed installare il pacchetto con
 
+    :::bash
 	sudo apt-get install spyqr
 
 È ancora in fase di test, per

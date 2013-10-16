@@ -1,6 +1,6 @@
 Title: Il Portale Giochi di Ubuntu-it diventa serioso :D
 Date:  2007-12-05 20:07:07
-tags: ubuntu,
+tags: ubuntu
 
 Su consiglio dell'onnipotente [Admin][1], ho
 eliminato tutte le diciture come "Buon divertimento! :D" al termine di ogni

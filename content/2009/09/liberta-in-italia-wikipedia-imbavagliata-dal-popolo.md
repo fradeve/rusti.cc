@@ -1,6 +1,6 @@
 Title: Libertà in Italia: Wikipedia imbavagliata dal 'Popolo'
 Date:  2009-09-26 18:18:24
-tags: stato, gnulinux, ubuntu, wikipedia,
+tags: stato, gnulinux, ubuntu, wikipediA
 
 Attenzione, in questo post di parla di:
 

@@ -1,6 +1,6 @@
 Title: Intel su Ubuntu 9.04? Don't worry... be happy!!
 Date:  2009-05-04 15:13:39
-tags: gnulinux, intel, ubuntu ,
+tags: gnulinux, intel, ubuntu
 
 Qualche post fa avevo parlato dei miei (e non
 solo) problemi con la scheda video integrata Intel in Ubuntu Jaunty

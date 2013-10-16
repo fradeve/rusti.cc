@@ -1,6 +1,6 @@
 Title: Perché OpenStreetMap? - Parte 2
 Date:  2008-05-22 15:18:41
-tags: freerunner, gnulinux, openmoko, openstreetmap, wikimedia,
+tags: freerunner, gnulinux, openmoko, openstreetmap, wikimediA
 
 Se i motivi raccolti nel precedente post non bastassero a farvi
 cambiare idea su quanto sia utile fare [OpenStreetMapping][1], se non siete

@@ -1,6 +1,6 @@
 Title: Hardy: prime esperienze
 Date:  2008-04-28 17:27:21
-tags: ubuntu, dell,
+tags: ubuntu, dell
 
 Come di consueto, anche io ho aggiornato ad Ubuntu 8.04 «Hardy Heron», e sono
 rimasto veramente a bocca aperta. Pur facendo parte della comunità di sviluppo

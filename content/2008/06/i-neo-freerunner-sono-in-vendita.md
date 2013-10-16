@@ -1,6 +1,6 @@
 Title: I Neo Freerunner sono in vendita!!
 Date:  2008-06-25 23:55:12
-tags: freerunner, openmoko, wikipedia,
+tags: freerunner, openmoko, wikipedia
 
 Ebbene si, dopo 2 anni di attesa, preoccupazioni, timori.... ma
 soprattutto dopo 2 anni di sviluppo e di test, abbiamo LA notizia: è ufficiale

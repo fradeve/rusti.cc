@@ -1,7 +1,7 @@
 Title: Anonimato in IRC
 Date:  2012-04-05 11:00:00
 featured: yes
-tags: irc, privacy,
+tags: irc, privacy
 
 Nonostante IRC possa sembrare un posto "sicuro" dal punto di vista della privacy, sarebbe meglio non farsi troppe illusioni, è un servizio che (come tutti gli altri) viene hostato su server e molto dipende dalla fiducia che riponiamo in chi li gestisce. Per precauzione, potremmo seguire alcuni di questi passi.
 
@@ -9,6 +9,7 @@ Nonostante IRC possa sembrare un posto "sicuro" dal punto di vista della privacy
 
 Insostituibile, [i2p][1]. Installiamolo seguendo le [istruzioni][2] riportate nel sito ufficiale, poi avviamolo con il comando
 
+    :::bash
 	sudo /etc/init.d/i2p start
 
 Si aprirà in automatico una pagina nel nostro browser predefinito, che punta all'indirizzo `http://127.0.0.1:7657`. La pagina per impostare i tunnel IRC è raggiungibile all'indirizzo `http://127.0.0.1:7657/i2ptunnel/list`. Modificando la voce "IRC Proxy", inserire come porta la 6667. Occorrerebbe anche assicurarsi che le porte del router siano aperte. Queste accortezze dovrebbero fare in modo che i2p riporti "OK" nella voce "stato della rete" presente nella pagina principale.
@@ -19,29 +20,35 @@ I [vhost][3] sono servizi per mascherare alcuni dati visibili agli utenti connes
 
 Collegarsi al server
 
+    :::bash
 	/connect irc.nomeserver.net 6667
 
 assegnarsi un nickname fittizio
 
+    :::bash
 	/nick fakenick
 
 registrare la propria email (dopo essersene creata una ad-hoc, consigliatissimo il servizio di [Autistici/Inventati][5]
 
+    :::bash
 	/msg NickServ register <password> fake@mail.com
 
 fare join nel canale del vhost e richiederne un servizio
 
+    :::bash
 	/join #vhost
 	!vhost fakenick@qualsiasicosa
 
 identificarsi finalmente con il nuovo nick fittizio, la mail fittizia e la password precedentemente registrata
 
+    :::bash
 	/msg NickServ IDENTIFY <password>
 
 ## Bloccare il CTCP ##
 
 [CTCP][9] è il protocollo per scambiare file e informazioni tra due client IRC; tra i comandi integrati in questo protocollo, quasi tutti (tranne ACTION) hanno dei lati negativi dal punto di vista della privacy e possono permettere a persone connesse allo stesso server di [ottenere informazioni][10] l'uno dell'altro. In IRSSI è possibile ignorare i CTCP inserendo i seguenti comandi nel file `.irssi/config`
 
+    :::bash
 	/ignore * CTCPS
 	/ignore * DCC
 

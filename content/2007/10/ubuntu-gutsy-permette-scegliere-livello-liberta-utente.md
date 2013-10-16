@@ -1,6 +1,6 @@
 Title: Ubuntu Gutsy 7.10 permette di scegliere il livello di libertà dellutente
 Date:  2007-10-17 20:25:58
-tags: ubuntu,
+tags: ubuntU
 
 Questo post è la traduzione di un articolo che recentemente Jonathan Carter ha diffuso sul
 suo [blog][1]. Il viaggio dall'Università a casa è lungo ed il treno è noioso

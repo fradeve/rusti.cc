@@ -1,6 +1,6 @@
 Title: Recap: febbraio
 Date:  2012-02-29 14:00:00
-tags: recap,
+tags: recap
 
 Obiettivi per il bimestre gennaio-febbraio 2012.
 

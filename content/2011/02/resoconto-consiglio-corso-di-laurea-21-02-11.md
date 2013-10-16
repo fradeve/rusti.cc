@@ -1,6 +1,6 @@
 Title: Resoconto Consiglio Corso di Laurea 21-02-11
 Date:  2011-02-24 21:00:00
-tags: diagnostica,
+tags: diagnostica
 
 Sunto di quanto è stato discusso nel CCL del Corso di Laurea Triennale, Specialistica e Magistrale in Diagnostica dei Beni Culturali del 21/02/11
 

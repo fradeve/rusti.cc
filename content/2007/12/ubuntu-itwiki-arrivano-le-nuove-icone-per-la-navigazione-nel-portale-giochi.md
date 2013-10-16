@@ -1,6 +1,6 @@
 Title: Ubuntu-it/Wiki: Arrivano le nuove icone per la navigazione nel Portale Giochi
 Date:  2007-12-12 14:37:07
-tags: ubuntu,
+tags: ubuntu
 
 Dopo varie peripezie,
 cominciano ad essere visibili i primi frutti degli sforzi per rendere più "leggibile"

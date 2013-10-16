@@ -2,8 +2,8 @@
 
 {% block content_title %}{% endblock %}
 
-{% block content %}        
-    {% for article in articles_page.object_list[0:5] %}
+{% block content %}
+    {% for article in articles_page.object_list %}
         <header class="clearfix">
             <h1>
                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>{% if article.featured %}*{% endif %}

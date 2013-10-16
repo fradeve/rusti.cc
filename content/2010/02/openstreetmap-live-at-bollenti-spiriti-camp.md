@@ -1,6 +1,6 @@
 Title: OpenStreetMap live @ Bollenti Spiriti Camp
 Date:  2010-02-06 12:52:45
-tags: calliope, openstreetmap, gnulinux,
+tags: calliope, openstreetmap, gnulinux
 
 <center>![][1]<br>_il nostro stand ;P_</center>
 

@@ -1,6 +1,6 @@
 Title: Esclusiva per Ubuntu-it: Ubuntu al CERN di Ginevra
 Date:  2010-02-10 09:49:14
-tags: ubuntu, gnulinux, cern,
+tags: ubuntu, gnulinux, cern
 
 <center>![][1]<br>_Cern by [Wikipedia][5]_</center>
 

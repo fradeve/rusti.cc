@@ -1,6 +1,6 @@
 Title: I CD di Ubuntu piombano a casa tua!
 Date:  2008-01-30 15:38:13
-tags: ubuntu,
+tags: ubuntu
 
 Riprendo un intervento fatto da [V][1] sul [suo blog][2]:
 

@@ -1,6 +1,6 @@
 Title: Ubuntu sbarca allUniversità di Bari
 Date:  2008-04-22 14:58:42
-tags: gnulinux, python, ubuntu, uniba, lug,
+tags: gnulinux, python, ubuntu, uniba, lug
 
 ...anche se soltanto come effetto collaterale.
 

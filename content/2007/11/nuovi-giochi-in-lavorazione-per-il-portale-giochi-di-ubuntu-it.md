@@ -1,6 +1,6 @@
 Title: Nuovi giochi in lavorazione per il Portale Giochi di Ubuntu-it
 Date:  2007-11-08 13:39:27
-tags: gnulinux, ubuntu,
+tags: gnulinux, ubuntu
 
 Curiosando tra le ultime uscite di
 Full Circle Magazine, ho trovato una serie di giochi, segnalati come tra i

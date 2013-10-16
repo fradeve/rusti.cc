@@ -1,6 +1,6 @@
 Title: Autoproduzione 4: lo yogurt
 Date:  2012-01-21 15:00:00
-tags: autoproduzione,
+tags: autoproduzione
 
 Qualche mese fa, durante la merenda, ho sterminato un vasetto di yogurt proveniente dagli avanzi della mensa scolastica della scuola nella quale mia madre esercita la professione di insegnante. La sorpresa è stata notevole, quando ho scoperto che il luogo di produzione era nientemeno che la Baviera (ricordiamolo, abito in Puglia). In altre parole, le mucche bavaresi scodellano litrate di latte che viene yogurtizzato, invasettato, inscatolato, refrigerato, messo su TIR/nave, portato da queste parti, sballato, smistato nelle mense, con il guadagno netto di un vasetto in plastica che nel migliore dei casi finisce nel riciclaggio, nel peggiore nei rifiuti indifferenziati. Come se in Puglia latte non se ne producesse.
 

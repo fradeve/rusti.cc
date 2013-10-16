@@ -1,6 +1,6 @@
 Title: Marco Travaglio e Ubuntu
 Date:  2008-01-12 00:17:56
-tags: ubuntu,
+tags: ubuntu
 
 Cosa c'entrano, direte voi?
 

@@ -1,6 +1,6 @@
 Title: Nuove guide nel Portale Giochi
 Date:  2007-10-30 09:03:42
-tags: ubuntu,
+tags: ubuntu
 
 Questa settimana entrano nel Portale Giochi delle Wiki di Ubuntu-
 it due nuove guide all'emulazione con Wine di giochi:

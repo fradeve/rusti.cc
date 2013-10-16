@@ -1,8 +1,7 @@
 Title: Testo integrale della lectio magistralis di Lawrence Lessig in Parlamento
 Date:  2010-03-16 15:22:17
 featured: yes
-tags: ubuntu, internet, gnulinux, creativecommons,
----
+tags: ubuntu, internet, gnulinux, creativecommonS
 
 <center>[![][1]][2]</center>
 

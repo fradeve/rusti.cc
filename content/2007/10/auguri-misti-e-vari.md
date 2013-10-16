@@ -1,6 +1,6 @@
 Title: Auguri misti e vari
 Date:  2007-10-09 22:40:01
-tags: ubuntu,
+tags: ubuntu
 
 Sono un utente Ubuntu da poco più di un anno, e membro di Ubuntu-it da un
 mese. In quest'anno, molto ho dato ad Ubuntu e molto la distribuzione ha dato

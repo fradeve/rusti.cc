@@ -1,6 +1,6 @@
 Title: Puglia: Ubuntu e Software Libero in biblioteca... perchè no?
 Date:  2009-11-20 08:03:14
-tags: calliope, gnulinux, terlizzi, ubuntu,
+tags: calliope, gnulinux, terlizzi, ubuntu
 
 <center>![][1]</center>
 

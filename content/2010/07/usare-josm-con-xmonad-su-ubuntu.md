@@ -1,6 +1,7 @@
 Title: Usare JOSM con Xmonad su Ubuntu
 Date:  2010-07-03 19:04:51
-tags: xmonad, ubuntu, openstreetmap, josm, gnome,
+tags: xmonad, ubuntu, openstreetmap, josm, gnome
+Modified: 2010/07/14
 
 Come molti di voi sapranno, JOSM è un programma in Java
 che viene utilizzato dai "mappatori liberi" per contribuire ad OpenStreetMap,
@@ -13,12 +14,14 @@ tra Java e Xmonad, ed è facilmente risolvibile.
 
 Su Debian/Ubuntu, è sufficiente installare il pacchetto [dwm-tools][2], e poi dare da terminale:
 
+    :::bash
 	wmname LG3D
 
 ogni volta prima di aprire JOSM.
 Alternativamente, si potrebbe anche creare un [alias nel proprio .bashrc][3],
 per eseguire il comando ogni volta che si desidera aprire JOSM:
 
+    :::bash
 	alias josm='wmname LG3D && josm'
 
 Per ulteriori informazioni, si può anche consultare il [wiki di Awesome][4] (progetto simile
@@ -32,6 +35,7 @@ e OpenJDK 1.7. Speriamo bene :)
 Come mi han suggerito nel canale IRC del LUGBari, una soluzione alternativa è quella di
 aggiungere la seguente riga nel proprio .bashrc (almeno su Ubuntu/Debian):
 
+    :::bash
 	_JAVA_AWT_WM_NONREPARENTING=1; export
 	_JAVA_AWT_WM_NONREPARENTING
 

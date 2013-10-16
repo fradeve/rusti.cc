@@ -1,6 +1,6 @@
 Title: GitHub!
 Date:  2012-04-27 11:00:00
-tags: gfloss, python,
+tags: gfloss, python
 
 Yes, we [code][1]!
 

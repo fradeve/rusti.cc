@@ -1,6 +1,6 @@
 Title: Anche la H Farm usa Ubuntu
 Date:  2007-10-20 22:04:51
-tags: ubuntu,
+tags: ubuntu
 
 Ebbene si, anche io guardo Uno Mattina. Di solito non mi da alcun
 vantaggio o sollievo guardarlo alle 6.30 di mattina, prima di scappare a

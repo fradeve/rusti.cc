@@ -1,6 +1,6 @@
 Title: Rilasciato gvSIG mobile per Openmoko
 Date:  2009-03-17 15:51:45
-tags: archaeology, gnulinux, gvsig, openmoko, ubuntu,
+tags: archaeology, gnulinux, gvsig, openmoko, ubuntu
 
 <!---
 <center>[![gvSIG mobile + Openmoko GNU/Linux + Neo FreeRunner][1]][2]</center>
@@ -15,6 +15,7 @@ y Transporte della Citta di Valenzia_, e promosso e testato da Joseph Reeves
 dell'[Oxford Archaeology][4] in campo archeologico. Per installare la neonata
 versione 0.11 sul proprio device, è sufficiente dare il seguente comando:
 
+    :::bash
 	opkg install http://downloads.thehumanjourney.net/gvsigmobile_0.11_armv4t.ipk
 
 A quanto pare - non me n'ero accorto - sono stato il primo utente a riuscire a

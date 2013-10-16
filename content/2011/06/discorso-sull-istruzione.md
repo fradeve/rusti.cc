@@ -1,6 +1,6 @@
 Title: Discorso sull'istruzione
 Date:  2011-06-06 23:55:00
-tags: life,
+tags: life
 
 Una persona a me cara che sta studiando in questo periodo, il mio esame di Fisica II che vedi lenti ma costanti progressi e chissà quali altri stimoli si sono amalgamati tutti insieme quando ho sentito qualcuno citare questo discorso del presidente USA [Barack Obama][1], che ho deciso di approfondire. Il discorso si è tenuto l'8 settembre 2009, davanti agli studenti della Wakefield High School di Arlington, in Virginia. Riporto di seguito la traduzione integrale, tratta da [qui][2], anche se sembra che i diritti sulla traduzione appartengano alla Stampa. Per questo e altri ovvi motivi, quanto segue esula dalla normale licenza CC di questo blog.
 

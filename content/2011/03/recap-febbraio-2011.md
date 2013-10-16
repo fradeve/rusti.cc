@@ -1,7 +1,7 @@
 Title: Recap: febbraio
 Date:  2011-03-08 10:00:00
 slug:  recap-febbraio-2011
-tags: recap,
+tags: recap
 
 Come [[promesso|posts/2011/01/obiettivi]], ecco a che punto siamo con gli obiettivi annuali, per il bimestre gennaio/febbraio:
 

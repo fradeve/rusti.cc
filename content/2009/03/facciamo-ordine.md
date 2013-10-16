@@ -1,6 +1,6 @@
 Title: Facciamo ordine
 Date:  2009-03-24 14:57:03
-tags: amarok, dell, dropbox, flickr, gtd, gnulinux, openmoko, openstreetmap, python, ubuntu, wikipedia,
+tags: amarok, dell, dropbox, flickr, gtd, gnulinux, openmoko, openstreetmap, python, ubuntu, wikipedia
 
 Negli ultimi due mesi mi sono dedicato ad una maniacale opera di sistemazione della
 mia vita. Troppe cose in sospeso, troppe idee in giro e troppi progetti non

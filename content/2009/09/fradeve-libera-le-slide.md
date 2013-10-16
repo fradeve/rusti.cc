@@ -1,6 +1,6 @@
 Title: Fradeve libera le slide ;)
 Date:  2009-09-08 18:24:06
-tags: creativecommons, gnulinux, slide,
+tags: creativecommons, gnulinux, slide
 
 <center>[![I Love Slides][1]][2]</center></center>
 

@@ -1,6 +1,6 @@
 Title: Primi esperimenti sul GPS del Neo FreeRunner
 Date:  2008-04-29 21:41:41
-tags: freerunner, nokia, openmoko,
+tags: freerunner, nokia, openmoko
 
 {% from "macros.j2" import render_image %}
 

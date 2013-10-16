@@ -1,6 +1,6 @@
 Title: Wikimedia Foundation: partito lautofinanziamento 2009
 Date:  2008-11-27 22:47:21
-tags: gnulinux, wikimedia, wikipedia,
+tags: gnulinux, wikimedia, wikipedia
 
 La missione della Wikimedia Foundation:
 

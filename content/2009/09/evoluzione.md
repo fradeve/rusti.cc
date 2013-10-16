@@ -1,6 +1,6 @@
 Title: Evoluzione?
 Date:  2009-09-22 21:49:57
-tags: gnulinux, openstreetmap, ubuntu, life,
+tags: gnulinux, openstreetmap, ubuntu, lifE
 
 Quest'anno si festeggia un evento importante, i 150 anni dalla pubblicazione dell'Origine
 delle Specie di Darwin (1859). Non sono un esperto di evoluzionismo, le mie

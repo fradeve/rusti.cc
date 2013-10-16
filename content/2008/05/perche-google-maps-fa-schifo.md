@@ -1,6 +1,6 @@
 Title: Perchè Google Maps fa schifo...
 Date:  2008-05-23 21:16:57
-tags: nokia, openstreetmap, wikipedia,
+tags: nokia, openstreetmap, wikipedia
 
 Diffamazione? No, constatazione dei fatti. Eviterò di ripetermi su
 alcune delle informazioni contenute nei miei [precedenti post][1]. Avevo in

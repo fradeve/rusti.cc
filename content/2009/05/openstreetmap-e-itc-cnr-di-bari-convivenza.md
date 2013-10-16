@@ -1,6 +1,6 @@
 Title: OpenStreetMap e ITC CNR di Bari: convivenza?
 Date:  2009-05-07 23:23:41
-tags: bari, gnulinux, openstreetmap, ubuntu,
+tags: bari, gnulinux, openstreetmap, ubuntu
 
 <center>[![[ebook] Community Participation and Geographical Information
 Systems][1]][2]</center>

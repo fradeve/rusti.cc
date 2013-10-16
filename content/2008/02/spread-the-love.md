@@ -1,6 +1,6 @@
 Title: Spread the love!
 Date:  2008-02-27 00:57:40
-tags: ubuntu, gnulinux,
+tags: ubuntu, gnulinux
 
 C'è bisogno di commenti? :D
 

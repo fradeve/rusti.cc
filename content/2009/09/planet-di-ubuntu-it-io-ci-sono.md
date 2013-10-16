@@ -1,6 +1,6 @@
 Title: Planet di Ubuntu-it, io ci sono
 Date:  2009-09-11 13:09:36
-tags: gnulinux, blog, ubuntu, ubuntuit,
+tags: gnulinux, blog, ubuntu, ubuntuit
 
 Eccomi!
 

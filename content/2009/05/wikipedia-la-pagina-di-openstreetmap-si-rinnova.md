@@ -1,6 +1,6 @@
 Title: Wikipedia: la pagina di OpenStreetMap si rinnova
 Date:  2009-05-18 15:39:41
-tags: gnulinux, openstreetmap, ubuntu, wikipedia,
+tags: gnulinux, openstreetmap, ubuntu, wikipedia
 
 <center>[![I love Wikipedia][1]][2]</center>
 

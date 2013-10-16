@@ -1,6 +1,6 @@
 Title: OpenBlog + OpenStreetMap = Sdonk
 Date:  2008-08-18 07:13:22
-tags: openstreetmap,
+tags: openstreetmap
 
 Fradeve OpenBlog si arricchisce di un editore: dopo l'esperienza
 dell'[OpenStreetCamping 2008][1], ho deciso di unire le mie forze (e di

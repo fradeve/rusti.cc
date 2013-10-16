@@ -1,6 +1,7 @@
 Title: Facebook Hack Party con Ubuntu
 Date:  2011-02-23 21:00:00
-tags: ubuntu, talk,
+tags: ubuntu, talk
+Modified: 2011-02-11
 
 <center>![][4]<br>_Paolo si finge un router e reindirizza il PC_</center>
 

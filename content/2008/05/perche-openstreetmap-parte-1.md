@@ -1,6 +1,6 @@
 Title: Perché OpenStreetMap? - Parte 1
 Date:  2008-05-17 15:17:05
-tags: openstreetmap,
+tags: openstreetmaP
 
 Perché mi costringe a fare un po' di sport (mountain bike, corsa,
 passeggiate)...  

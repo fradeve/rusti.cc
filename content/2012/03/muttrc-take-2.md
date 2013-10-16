@@ -1,16 +1,16 @@
 Title: muttrc, take 2
 Date:  2012-03-18 14:00:00
 featured: yes
-tags: mail, mutt,
+tags: mail, mutt
+Modified: 2012-08-09
 
-_Ultimo aggiornamento: 09 agosto 2012_
-
-NB: una versione differente di questo stesso muttrc, con meno funzioni e flessibilità, è reperibile nel mio [post di gennaio][1]; ho voluto conservare il vecchio post senza aggiornarlo perché potrebbe tornare utile a chi cerca configurazioni più semplici e _monolitiche_ (passatemi il termine).
+NB: una versione differente di questo stesso muttrc, con meno funzioni e flessibilità, è reperibile nel mio [post di gennaio]({filename}/log/2012/01/my-muttrc.html); ho voluto conservare il vecchio post senza aggiornarlo perché potrebbe tornare utile a chi cerca configurazioni più semplici e _monolitiche_ (passatemi il termine).
 
 La caratteristica principale di questo nuovo muttrc è la modularità: ogni account ha un suo file di configurazione, nel quale sono riportati i settaggi validi per il medesimo, rimuovendo ogni configurazione precedente nel momento del caricamento, che avviene grazie a semplici shortcut.
 
 Rimangono valide le spiegazioni date nel post di gennaio. Tutti i file usati in questo tutorial sono hostati su [GitHub][3], con l'esclusione di [mutt-notmuch][4]. Il codice è scaricabile dopo aver installato GIT, con il seguente comando:
 
+    :::bash
 	git clone https://github.com/fradeve/dotfiles.git
 
 I file utili a configurare mutt sono nella cartella `mutt-fradeve`.
@@ -36,6 +36,7 @@ Ovviamente, ci sarà:
 
 Può tornare utile inserire in `.bashrc` degli alias per avviare mutt in una delle due modalità:
 
+    :::bash
 	alias mutt='mutt -n -F /home/user/.mutt/muttrc'
 	alias mutton='mutt -n -F /home/user/.mutt/muttonrc'
 
@@ -58,12 +59,14 @@ Il contenuto dei file cifrati è il seguente.
 
 ### muttpass.gpg
 
+    :::bash
 	account1:	pw
 	account2:	pw	
 	account3:	pw
 
 ### offlineimaprc.gpg
 
+    :::bash
 	[general]
 	metadata = ~/.offlineimap
 	accounts = account1,account2,account3
@@ -132,11 +135,11 @@ Il contenuto dei file cifrati è il seguente.
 
 ### ~/.netrc
 
+    :::bash
 	machine host1.com
 	login account1@host1.com
 	password pw
 
-   [1]: [[log/2012/01/my-muttrc.html]]
    [2]: http://offlineimap.org
    [3]: https://github.com/fradeve/dotfiles
-   [4]: http://upsilon.cc/~zack/blog/posts/2011/01/how_to_use_Notmuch_with_Mutt/
+   [4]: http://upsilon.cc/~zack/blog/posts/2011/01/how_to_use_Notmuch_with_Mutt

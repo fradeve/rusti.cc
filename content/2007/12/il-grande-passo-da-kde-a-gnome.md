@@ -1,6 +1,6 @@
 Title: Il grande passo: da KDE a GNOME
 Date:  2007-12-15 22:59:13
-tags: ubuntu,
+tags: ubuntU
 
 Due considerazioni:
 

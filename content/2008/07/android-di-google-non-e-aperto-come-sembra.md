@@ -1,6 +1,6 @@
 Title: Android di Google non è aperto come sembra...
 Date:  2008-07-16 19:01:09
-tags: gnulinux, android,
+tags: gnulinux, android
 
 Nonostante il nerissimo periodo affettivo, trovo
 ancora la forza di scrivere qualcosa, spero possa risultare interessante.

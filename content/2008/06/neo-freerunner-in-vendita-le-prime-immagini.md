@@ -1,6 +1,6 @@
 Title: Neo Freerunner in vendita: le prime immagini
 Date:  2008-06-26 22:42:13
-tags: freerunner, openmoko,
+tags: freerunner, openmoko
 
 Ci sono un paio di inglesi che hanno già ricevuto
 il loro Neo Freerunner regolarmente acquistato online da un negozio in Gran

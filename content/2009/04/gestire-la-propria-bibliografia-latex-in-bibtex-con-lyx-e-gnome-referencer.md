@@ -1,6 +1,6 @@
 Title: Gestire la propria bibliografia LaTeX in BibTeX con LyX e GNOME Referencer
 Date:  2009-04-08 21:03:35
-tags: bibtex, gnulinux, latex, ubuntu,
+tags: bibtex, gnulinux, latex, ubuntu
 
 A dispetto del titolo
 piuttosto enigmatico, questo post nasce da un'esigenza precisa, quella di

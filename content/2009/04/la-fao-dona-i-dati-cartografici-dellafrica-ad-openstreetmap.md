@@ -1,6 +1,6 @@
 Title: La FAO dona i dati cartografici dell'Africa ad OpenStreetMap
 Date:  2009-04-13 23:14:20
-tags: fao, gnulinux, openstreetmap, ubuntu,
+tags: fao, gnulinux, openstreetmap, ubuntu
 
 <center>[![United Nations Vienna Forum][1]][2]</center>
 

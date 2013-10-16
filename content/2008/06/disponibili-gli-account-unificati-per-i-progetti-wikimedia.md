@@ -1,6 +1,6 @@
 Title: Disponibili gli account unificati per i progetti Wikimedia
 Date:  2008-06-02 21:27:03
-tags: wikimedia, wikipedia,
+tags: wikimedia, wikipedia
 
 Dal 27 maggio 2008, è stato reso pubblico
 dalla [Wikimedia Foundation][1] (della cui [sezione italiana][2] sono

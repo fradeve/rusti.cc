@@ -1,6 +1,6 @@
 Title: Getting Things GNOME + Tomboy = todo + note
 Date:  2010-02-01 21:55:23
-tags: gtd, gnulinux,
+tags: gtd, gnulinuX
 
 <center>![][1]</center>
 

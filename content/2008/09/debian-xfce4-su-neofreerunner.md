@@ -1,8 +1,7 @@
 Title: Debian + Xfce4 su NeoFreerunner
 Date:  2008-09-22 22:06:27
 featured: yes
-tags: freerunner, gnulinux, openmoko, pygtk, python, ubuntu,
----
+tags: freerunner, gnulinux, openmoko, pygtk, python, ubuntu
 
 Dopo l'arrivo del Neo FreeRunner, non ho resistito alla tentazione
 di installarci, in ordine, Qtopia, Openmoko 2008.08-update e poi Debian. Tra
@@ -34,6 +33,7 @@ via USB, quindi occorre avere accesso al palmare via SSH. Per farlo, è
 sufficiente seguire le [istruzioni presenti nel Wiki italiano][1]. Appena
 finito, potremo testare la connessione con un semplice
 
+    :::bash
 	ping www.google.it 
 
 
@@ -45,17 +45,20 @@ scheda sia inserita nel Neo; se non lo fosse, spegnetelo, inserite la scheda e
 riaccendetelo entrando in Openmoko. Fate il login via SSH nell'Openmoko,
 solitamente
 
+    :::bash
 	ssh root@192.168.0.202
 
 Dovreste essere posizionati nella home del sistema operativo.
 Adesso, scarichiamo lo script che ci permetterà di installare Debian, con il
 comando da SSH
 
+    :::bash
 	wget http://pkg-fso.alioth.debian.org/freerunner/install.sh
 
 Rendiamo eseguibile
 lo script con
 
+    :::bash
 	chmod +x install.sh
 
 A questo punto non ci resta che eseguire lo script per installare Debian. Lo
@@ -65,10 +68,12 @@ cancellato**, è bene che lo sappiate. Tuttavia, Qtopia o Openmoko (il secondo
 si basa comunque sul primo) potrebbero avere ancora accesso alla scheda,
 quindi "uccidiamo" il processo di Qtopia, con
 
+    :::bash
 	killall qpe
 
 Quindi finalmente eseguiamo lo script
 
+    :::bash
 	SD_PART1_FS=vfat ./install.sh all
 
 Specificando questa opzione, lo script creerà automaticamente la partizione
@@ -77,16 +82,19 @@ l'esecuzione dello script potremmo ricevere errori che fanno riferimento al
 fatto che la partizione _/dev/mmcblk0p1_ contiene un filesystem montato. In
 questo caso, possiamo smontarlo con
 
+    :::bash
 	umount /media/mmcblk0p1
 
 Oppure possiamo controllare qual'è il PID dei
 processi che usano quella partizione con il comando
 
+    :::bash
 	fuser -m /media/mmcblk0p1
 
 e quindi ucciderli tutti con il comando
 
-fuser -m /media/mmcblk0p1 | grep killall
+    :::bash
+    fuser -m /media/mmcblk0p1 | grep killall
 
 Attenzione: questi comandi non sempre funzionano,
 ma possono sicuramente tornare utili.
@@ -98,6 +106,7 @@ fare una passeggiata per digerire, perché l'installazione dura più di un'ora.
 Al termine, dovremmo trovare nel terminale un messaggio del tipo "_Done.
 Reboot and enjoy!_" Non ci resta che spegnere il Neo con il comando
 
+    :::bash
 	shutdown now
 
 Attenzione: ora che abbiamo un Neo in dual boot, per poter avviare uno dei due sistemi, dovremo
@@ -120,23 +129,28 @@ problemi perché il Neo, pur avendo mantenuto il proprio indirizzo
 messaggio d'errore che potremo facilmente aggirare editando il file
 _~/.ssh./known_hosts_ e cancellando tutto ciò che contiene:
 
+    :::bash
 	nano ~/.ssh./known_hosts
 
 Quindi, riproviamo:
 
+    :::bash
 	ssh root@192.168.0.202
 
 siamo in Debian! Installiamo un po di pacchetti utili:
 
+    :::bash
 	apt-get install xfce4 nano
 
 Al termine, sarà meglio editare il file _/etc/fstab_ per evitare 
 il filesystem check che rallenta di molto l'avvio di Debian: 
 
+    :::bash
 	nano /etc/fstab
 
 e trasformiamolo da così
 
+    :::bash
 	rootfs  /
 	ext2    defaults,errors=remount-ro,noatime      0 1 /dev/mmcblk0p1  /boot
 	vfat    defaults,noatime                        0 2 /dev/mtdblock6  /mnt/flash
@@ -149,6 +163,7 @@ e trasformiamolo da così
 
 a così:
 
+    :::bash
 	rootfs  /               ext2    defaults,errors=remount-
 	ro,noatime      0 0 /dev/mmcblk0p1  /boot   vfat    defaults,noatime
 	0 0 /dev/mtdblock6  /mnt/flash      jffs2   defaults,noatime,noauto         0
@@ -161,19 +176,23 @@ a così:
 Adesso, dobbiamo fare in modo che Debian all'avvio non carichi
 Zhone, ma Xfce come desktop environment predefinito.
 
+    :::bash
 	nano /etc/init.d/zhone-session
 
 e modifichiamo la riga 17 da così:
 
+    :::bash
 	PROG_FSO=/usr/bin/zhone-session
 
 a così:
 
+    :::bash
 	PROG_FSO=/usr/bin/startxfce4
 
 Adesso possiamo riavviare e goderci il nostro Xfce :D Per liberare un po'
  di spazio nella partizione root di Debian possiamo dare un bel
 	
+    :::bash
 	apt-get clean apt-get autoclean
 
 Di default, c'è un piccolo inconveniente: non esiste
@@ -183,6 +202,7 @@ percepire ad X una pressione prolungata del touchscreen come un click destro,
 correggendo una sfasatura della posizione del puntatore che si verifica a
 causa di un bug del pacchetto.
 
+    :::bash
 	wget http://www.ohli.de/download/xserver-xorg-input-tslib_0.0.4-5+fso2_armel.deb
 	wget http://pkg-fso.alioth.debian.org/freerunner/pointercal dpkg -i xserver-
 	xorg-input-tslib_0.0.4-5+fso2_armel.deb
@@ -193,6 +213,7 @@ Al riavvio, tutto sarà sistemato. Per facilitarci la vita
 nelle prossime connessioni via SSH, possiamo modificare il file _/etc/hosts_
 ed inserire l'IP del nostro PC collegato al Neo via USB:
 
+    :::bash
 	nano /etc/hosts 192.168.0.200 pc
 
 In questo modo potremo inviare file dal Debian al PC semplicemente scrivendo _scp

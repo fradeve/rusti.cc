@@ -1,6 +1,6 @@
 Title: Cosa succede?
 Date:  2010-11-08 14:30:00
-tags: talk, lug, ubuntu, gnulinux,
+tags: talk, lug, ubuntu, gnulinux
 
 Ultimamente sembra che questo blog abbia lampi di attività, intervallati da lunghissimi periodi di silenzio. Tante cose sono successe negli ultimi due mesi, di seguito un riassunto.
 
@@ -20,29 +20,29 @@ Nel frattempo, vi segnalo il sito intorno al quale orbita la comunità molfettes
 
 Ecco l'articoletto che ho scritto, [pubblicato su Il Fatto][8]:
 
-	Molfetta - Ieri, con l'ultimo appuntamento alla Fabbrica di San Domenico,
-	si è chiuso il mini corso su Ubuntu Linux, organizzato da Il Fatto Molfetta.
-	In questi tre appuntamenti intraprendenti volontari del Software Libero si sono
-	lanciati nell'installazione del sistema operativo libero sui computer dei partecipanti,
-	che in brevissimo tempo – bisogna riconoscerlo – sono riusciti ad entrare nell'ottica
-	di dover usare nuovi programmi e nuove applicazioni. Ancora una volta, come organizzatori,
-	abbiamo avuto conferma di due cose: la prima, è che esiste nell'animo umano una naturale tendenza
-	alla libertà: il pensiero di utilizzare un sistema operativo libero, semplice, gratuito
-	e innovativo sembra aver catturato l'attenzione e l'entusiasmo dei partecipanti,
-	e di questo siamo felicissimi.
-
-	La seconda cosa riguarda proprio l'entusiasmo: siamo giunti alla conclusione che è
-	difficile frenarlo, ed ormai è partito come una valanga inarrestabile. Confidiamo
-	nel fatto che i nuovi utenti Linux di oggi diventino i volontari di domani, per diffondere
-	a macchia d'olio non solo un sistema operativo, ma una maniera di pensare.
-
-	Gli appuntamenti “ufficiali” sono terminati, ma non l'entusiasmo. Per questo, insieme al
-	mini corso, abbiamo predisposto online un forum ed un blog, all'indirizzo
-	http://linux.ilfatto.net, che speriamo diventi un punto di riferimento per la comunità
-	molfettese (e non) e sul quale continueremo sia ad offrire supporto, sia ad organizzare
-	iniziative, sulla scia di quanto costruito fino ad ora.
-
-	Restate sintonizzati e... rock and roll!
+> Molfetta - Ieri, con l'ultimo appuntamento alla Fabbrica di San Domenico,
+> si è chiuso il mini corso su Ubuntu Linux, organizzato da Il Fatto Molfetta.
+> In questi tre appuntamenti intraprendenti volontari del Software Libero si sono
+> lanciati nell'installazione del sistema operativo libero sui computer dei partecipanti,
+> che in brevissimo tempo – bisogna riconoscerlo – sono riusciti ad entrare nell'ottica
+> di dover usare nuovi programmi e nuove applicazioni. Ancora una volta, come organizzatori,
+> abbiamo avuto conferma di due cose: la prima, è che esiste nell'animo umano una naturale tendenza
+> alla libertà: il pensiero di utilizzare un sistema operativo libero, semplice, gratuito
+> e innovativo sembra aver catturato l'attenzione e l'entusiasmo dei partecipanti,
+> e di questo siamo felicissimi.
+> 
+> La seconda cosa riguarda proprio l'entusiasmo: siamo giunti alla conclusione che è
+> difficile frenarlo, ed ormai è partito come una valanga inarrestabile. Confidiamo
+> nel fatto che i nuovi utenti Linux di oggi diventino i volontari di domani, per diffondere
+> a macchia d'olio non solo un sistema operativo, ma una maniera di pensare.
+> 
+> Gli appuntamenti “ufficiali” sono terminati, ma non l'entusiasmo. Per questo, insieme al
+> mini corso, abbiamo predisposto online un forum ed un blog, all'indirizzo
+> http://linux.ilfatto.net, che speriamo diventi un punto di riferimento per la comunità
+> molfettese (e non) e sul quale continueremo sia ad offrire supporto, sia ad organizzare
+> iniziative, sulla scia di quanto costruito fino ad ora.
+> 
+> Restate sintonizzati e... rock and roll!
 
    [1]: www.dropbox.com
    [2]: http://ikiwiki.info/

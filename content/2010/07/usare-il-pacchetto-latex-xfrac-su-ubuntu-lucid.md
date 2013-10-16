@@ -1,6 +1,6 @@
 Title: Usare il pacchetto LaTeX xfrac su Ubuntu Lucid
 Date:  2010-07-26 22:10:48
-tags: ubuntu, latex, gnulinux,
+tags: ubuntu, latex, gnulinux
 
 Questo è un post per smaliziati utenti LaTeX.
 Capita spesso di dover inserire nei propri documenti delle frazioni, e sarebbe
@@ -16,16 +16,19 @@ procedere.
 
 Scarichiamo il pacchetto da CTAN:
 
+    :::bash
 	wget http://mirror.ctan.org/macros/latex/contrib/mh.zip
 
 Spostiamolo nella cartella di sistema di LaTeX, estraiamo l'archivio e cancelliamo lo zip:
 
+    :::bash
 	sudo mv mh.zip /usr/share/texmf/tex/latex
 	sudo unzip /usr/share/texmf/tex/latex/mh.zip
 	sudo rm mh.zip
 
 Entriamo nella cartella e compiliamo il pacchetto
 
+    :::bash
 	cd mh
 	sudo tex *.dtx
 
@@ -35,6 +38,7 @@ dipende da alcuni file di stile (_template.sty_) che sono presenti nella nuova
 distribuzione di LaTeX (LaTeX3). Quindi, adesso sarà sufficiente installare
 l'apposito pacchetto e rigenerare la cache dei file di stile:
 
+    :::bash
 	sudo apt-get install texlive-latex3
 	sudo texhash
 

@@ -1,6 +1,6 @@
 Title: Ubuntu Linux e OpenStreetMap nel primo mapping party pugliese: 20 dicembre
 Date:  2009-12-12 23:27:38
-tags: gnulinux, gps, openstreetmap, puglia, ruvodipuglia, terlizzi, ubuntu,
+tags: gnulinux, gps, openstreetmap, puglia, ruvodipuglia, terlizzi, ubuntu
 
 <center>![][1]</center>
 

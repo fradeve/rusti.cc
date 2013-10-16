@@ -1,6 +1,6 @@
 Title: Nuovi giochi sul wiki
 Date:  2007-10-12 22:13:45
-tags: ubuntu,
+tags: ubuntu
 
 Un rapido aggiornamento sulle nuove guide ai giochi presenti nel wiki di
 Ubuntu-it:

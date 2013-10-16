@@ -1,6 +1,6 @@
 Title: ArcheoFOSS Roma 2009
 Date:  2009-04-27 16:03:26
-tags: archaeology, gis, gnulinux, openmoko, python, wikipedia,
+tags: archaeology, gis, gnulinux, openmoko, python, wikipedia
 
 Oggi e domani si terrà a Roma il quarto Workshop Italiano "**Open Source,
 Free Software e Open Format nei processi di ricerca archeologica**"; do

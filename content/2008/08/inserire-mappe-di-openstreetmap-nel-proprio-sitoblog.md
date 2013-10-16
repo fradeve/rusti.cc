@@ -1,6 +1,6 @@
 Title: Inserire mappe di OpenStreetMap nel proprio sito/blog
 Date:  2008-08-19 08:20:35
-tags: openstreetmap, webgis,
+tags: openstreetmap, webgis
 
 Qual'è la più grande soddisfazione per un
 mapper se non quella di mostrare i risultati del proprio lavoro sul sito o sul
@@ -11,6 +11,7 @@ uno script in Java. Essendo _pythonista_ convinto, di Java non capisco molto, ma
 il codice mi è sembrato molto intuitivo, vediamo insieme il codice della
 pagina html:
 
+    :::html
 	<html>
 	<head>
 	<title>Slippy map di Terlizzi</title>
@@ -83,6 +84,7 @@ delle stesse dimensioni della pagina html, nel caso vogliate personalizzare il
 titolo della pagina (quello che compare nella finestra del browser) dovete
 modificare ciò che e compreso nel tag <title></title>:
 
+    :::html
 	<title>Modificare questo testo</title>
 	
 Il passo successivo
@@ -92,6 +94,7 @@ cercato la città o la regione di interesse e lo zoom gradito e copiando il
 nuovo indirizzo che nel frattempo sarà comparso nella barra del browser. Le
 coordinate e lo zoom vanno inserite in questo punto del file html:
 
+    :::html
 	<script type="text/javascript">
 	var lat=41.12925
 	var lon=16.5449
@@ -99,12 +102,14 @@ coordinate e lo zoom vanno inserite in questo punto del file html:
 
 Se intendiamo utilizzare un solo tipo di layer (vedi punto successivo) possiamo lasciare invariata la porzione di script che inizializza gli oggetti della mappa, in caso contrario dobbiamo aggiungere il LayerSwitcher alla mappa per permettere agli utenti di cambiare layer al volo, modificando il codice che inizializza i controlli da così:
 
+    :::html
 	new OpenLayers.Control.Navigation(),
 	new OpenLayers.Control.PanZoomBar(),
 	new OpenLayers.Control.Attribution()],
 
 a così:
 
+    :::html
 	new OpenLayers.Control.Navigation(),
 	new OpenLayers.Control.PanZoomBar(),
 	new OpenLayers.Control.LayerSwitcher(),
@@ -112,6 +117,7 @@ a così:
 
 In questo script è implementato solo il layer di Osmarender (il software di rendering open source nato in casa OpenStreetMap e utilizzato dal progetto di rendering distribuito tiles@home):
 
+    :::html
 	layerTilesAtHome = new OpenLayers.Layer.OSM.Osmarender("Osmarender");
 	map.addLayer(layerTilesAtHome);
 
@@ -122,6 +128,7 @@ Volendo ottenere una mappa più interattiva è possibile aggiungere anche gli al
 
 Per aggiungere gli altri due layer è necessario modificare il codice precedente in questo modo:
 
+    :::html
 	layerTilesAtHome = new OpenLayers.Layer.OSM.Osmarender("Osmarender");
 	map.addLayer(layerTilesAtHome);
 	layerMapnik = new OpenLayers.Layer.OSM.Mapnik("Mapnik");
@@ -131,6 +138,7 @@ Per aggiungere gli altri due layer è necessario modificare il codice precedente
 
 Infine dobbiamo decidere soltanto le dimensioni di visualizzazione della mappa in modo da adattarla al contesto del nostro sito o blog, per fare ciò basta modificare le dimensioni proporzionali della mappa rispetto al `<div>` in cui è contenuta, in questo caso, essendo su di un file html a parte, ho deciso di lasciare le dimensioni della mappa grandi quanto la pagina html.
 
+    :::html
 	<div style="width:100%; height:100%" id="map"></div>
 
    [1]: http://wiki.openstreetmap.org/wiki/Main_Page

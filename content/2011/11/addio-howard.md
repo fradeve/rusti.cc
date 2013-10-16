@@ -1,9 +1,10 @@
 Title: Addio Howard!
 Date:  2011-11-11 23:23:00
-tags: ubuntu,
+tags: ubuntu
 
 I tempi cambiano, le esigenze anche.
 
+    :::diff
 	diff interessi_cur.html interessi_old.html
 
 	75,76c75,76

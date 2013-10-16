@@ -1,6 +1,6 @@
 Title: Neo FreeRunner: il video e le foto
 Date:  2008-04-30 22:42:44
-tags: freerunner, openmoko,
+tags: freerunner, openmoko
 
 Come potete vedere, non passa giorno che il vento non porti aria
 di novità: è spuntato su Youtube un nuovo video, uppato probabilmente da uno

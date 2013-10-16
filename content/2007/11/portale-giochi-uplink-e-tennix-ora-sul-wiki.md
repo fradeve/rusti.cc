@@ -1,6 +1,6 @@
 Title: [Portale Giochi] Uplink e Tennix ora sul Wiki
 Date:  2007-11-24 00:29:44
-tags: ubuntu,
+tags: ubuntu
 
 Sul wiki di Ubuntu-it, nel Portale Giochi, sono
 state aggiunte due nuove guide:

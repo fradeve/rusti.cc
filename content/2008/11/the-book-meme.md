@@ -1,6 +1,6 @@
 Title: The Book Meme
 Date:  2008-11-12 15:32:20
-tags: ubuntu, archaeology,
+tags: ubuntu, archaeology
 
 _Lo scavo sperimentale, dove si sviluppano le metodologie scientifiche,
 serve da pietra di paragone per misurare l'informazione che si perde negli

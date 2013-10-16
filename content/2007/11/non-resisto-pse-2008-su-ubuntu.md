@@ -1,6 +1,6 @@
 Title: Non resisto... PSE 2008 su Ubuntu
 Date:  2007-11-18 13:32:25
-tags: ubuntu,
+tags: ubuntu
 
 Grazie allo straordinario wikificatore [V][1] e agli altri
 collaboratori del Wiki, adesso il Portale Giochi del Wiki di Ubuntu-it ha una

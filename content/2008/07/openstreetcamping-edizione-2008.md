@@ -1,6 +1,6 @@
 Title: OpenStreetCamping, edizione 2008
 Date:  2008-07-24 23:17:36
-tags: openstreetmap, terlizzi, wikimedia, wikipedia,
+tags: openstreetmap, terlizzi, wikimedia, wikipediA
 
 <center>![][1]</center>
 

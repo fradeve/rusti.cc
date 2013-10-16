@@ -1,6 +1,6 @@
 Title: Ubuntu e OSM al mapping party di Ruvo: alcune ore dopo...
 Date:  2009-12-21 00:13:49
-tags: gnulinux, openstreetmap, ruvodipuglia, terlizzi, ubuntu,
+tags: gnulinux, openstreetmap, ruvodipuglia, terlizzi, ubuntU
 
 <center>![La prima fotografia della comunità pugliese di OpenStreetMap][1]<br>_La prima fotografia della comunità pugliese di OpenStreetMap_</center>
 

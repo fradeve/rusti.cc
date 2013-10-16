@@ -1,6 +1,6 @@
 Title: Twitter... e proviamo, dai...
 Date:  2009-05-11 19:06:18
-tags: gnulinux, socialnetwork, ubuntu,
+tags: gnulinux, socialnetwork, ubuntu
 
 <center>[![Fun Twitter shirt seen at LIFT][1]][2]</center>
 

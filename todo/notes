@@ -12,13 +12,19 @@ inspiring blogs
     + [g] https://github.com/mikaelbr/metabrag
     + [g] https://github.com/haschek/PubwichFork
 
-* graphs (recap)
-    + sistemare tutti i recap con raphael JS
-
 issues
 ======
 
 * inserire l'intero XML nel post 2009/04/openmoko*navit*su*shr*testing ed eliminare il file
+
+to dev
+======
+
+* fix all source code with pygments support
+* add "categories" and relative page
+* fix humans.txt
+* fix tag pages showing only first 5 posts
+* add jinja2 -> angularJS -> d3.js support for graphs
 
 tips
 ====
