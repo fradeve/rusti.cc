@@ -1,5 +1,7 @@
-[[!meta title="Autoproduzione 4: lo shampoo"]]
-[[!meta date="2011-02-DD HH:MM"]]
+Title: Autoproduzione 4: lo shampoo
+Date: 2013-11-10 1:00:00
+Status: draft
+tags: autoproduzione
 
 ## Costo/dose shampoo biologico ##
 Farina di ceci (500g)			1,90€
@@ -11,6 +13,3 @@ Semi di lino (500g)			1,80€
 Costo/dose = (0,054+0,038) =		0,092€
 
 ## Costo/dose shampoo industriale ##
-
-
-[[!tag autoproduzione]]

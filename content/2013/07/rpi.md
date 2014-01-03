@@ -170,7 +170,7 @@ To unmount
 
     :::bash
     sudo umount /home/user/crypt
-    cryptsetup luksClose rpidata
+    sudo cryptsetup luksClose rpidata
 
 To mount after boot
 
