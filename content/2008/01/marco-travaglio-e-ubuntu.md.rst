@@ -1,0 +1,25 @@
+Marco Travaglio e Ubuntu
+========================
+
+:date: 2008-01-12 00:17:56
+:tags: ubuntu
+
+Cosa c'entrano, direte voi?
+
+Ebbene, da un paio di mesi a questa parte, c'entrano eccome! Scherzi a
+parte, Marco Travaglio sembra essersi avvicinato ad Ubuntu... in
+particolare, ha accettato di fare una foto con me (che quel giorno
+portavo la maglia di Ubuntu, molto graziosamente regalatami al
+compleanno dalla mia ragazza) ed alcuni altri conoscenti.
+
+.. raw:: html
+
+   <center>
+
+|image0|
+
+.. raw:: html
+
+   </center>
+
+.. |image0| image:: http://farm2.static.flickr.com/1428/1413727578_a766e2e893_b.jpg
