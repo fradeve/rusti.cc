@@ -1,5 +1,8 @@
-Title: GRUB e l'opzione VGA in Ubuntu Natty Date: 2011-05-03 14:30:00
-tags: ubuntu
+GRUB e l'opzione VGA in Ubuntu Natty
+====================================
+
+:date: 2011-05-03 14:30:00
+:tags: ubuntu
 
 Dopo l'upgrade a Natty Narwal, a fasi alterne, GRUB sembrava non voler
 avviare la mia installazione. In sostanza, dopo l'avvio di tutti i

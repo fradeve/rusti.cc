@@ -1,4 +1,8 @@
-Title: Recap: aprile Date: 2011-05-02 20:30:00 tags: recap
+Recap: aprile
+=============
+
+:date: 2011-05-02 20:30:00
+:tags: recap
 
 Obiettivi annuali, bimestre marzo/aprile:
 

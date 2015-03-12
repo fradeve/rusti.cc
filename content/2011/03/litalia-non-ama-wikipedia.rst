@@ -1,8 +1,10 @@
-Title: L'Italia non ama Wikipedia Date: 2011-03-14 20:45:00 tags:
-wikimedia
+L'Italia non ama Wikipedia
+==========================
 
-`Wiki Loves
-Monuments <https://secure.wikimedia.org/wikipedia/commons/wiki/Commons:Wiki_Loves_Monuments_2011>`__
+:date: 2011-03-14 20:45:00
+:tags: wikimedia
+
+`Wiki Loves Monuments`__
 è un contest fotografico di calibro internazionale organizzato dai
 singoli capitoli nazionali della Wikimedia Foundation. In breve,
 consiste nell'upload da parte degli utenti di quante più immagini
@@ -15,10 +17,8 @@ quel che risulta nella lista ufficiale, non parteciperà.
 
 Perché, vi chiederete voi? Un simpatico riassunto della situazione
 (vista con gli occhi di un abitante dei Paesi Bassi) arriva da
-`GerardM <http://www.blogger.com/profile/14287269079265427282>`__; l'ho
-pescata direttamente dal `Planet
-Wikimedia <http://en.planet.wikimedia.org/>`__ (il post originale
-`qui <http://ultimategerardm.blogspot.com/2011/03/italy-loves-its-monuments.html>`__):
+`GerardM`__; l'ho pescata direttamente dal `Planet Wikimedia`__ 
+(il post originale `qui`__):
 
     Quando vai in vacanza in Italia, i monumenti, la cultura e il cibo
     sono le attrazioni principali. I turisti fanno le loro fotografie e
@@ -47,6 +47,10 @@ Wikimedia <http://en.planet.wikimedia.org/>`__ (il post originale
 
     Grazie, GerardM
 
-Riferimento: `Decreto 20 aprile
-2005 <http://www.ambientediritto.it/legislazione/beni%20culturali/2005/dm%2020apr2005.htm>`__.
+Riferimento: `Decreto 20 aprile 2005`__.
 Sad but true.
+
+.. __Wiki Loves Monuments: https://secure.wikimedia.org/wikipedia/commons/wiki/Commons:Wiki_Loves_Monuments_2011
+.. __GerardM: http://www.blogger.com/profile/14287269079265427282
+.. __qui: http://ultimategerardm.blogspot.com/2011/03/italy-loves-its-monuments.html
+.. __Decreto 20 aprile 2005: http://www.ambientediritto.it/legislazione/beni%20culturali/2005/dm%2020apr2005.htm

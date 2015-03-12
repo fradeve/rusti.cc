@@ -1,5 +1,9 @@
-Title: Announcing diGNU Date: 2011-06-16 19:50:00 lang: en tags: webgis,
-server, archaeology, oia
+Announcing diGNU
+================
+
+:date: 2011-06-16 19:50:00
+:lang: en
+:tags: webgis, server, archaeology, oia
 
 As posted on archeos@lists.linux.it and open-archaeology@lists.okfn.org:
 
@@ -88,7 +92,7 @@ requests to create a product modelled on the user base, on the concrete
 needs and on the dreams of every archeo-geek.
 
 I've already read some discussions on the database model, starting from
-iadb\ `1 <http://www.iadb.org.uk/>`__. We need to know your approach,
+iadb `iadb`__. We need to know your approach,
 assuming that nearly we don't have any standard, today.
 
 OK, give us contacts
@@ -101,3 +105,5 @@ the discussions that will take place in this ML, or simply mail me at
 ``francesco.devirgilio@fradeve.org``.
 
 Cheers
+
+.. __iadb: http://www.iadb.org.uk

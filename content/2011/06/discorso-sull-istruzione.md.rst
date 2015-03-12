@@ -1,14 +1,17 @@
-Title: Discorso sull'istruzione Date: 2011-06-06 23:55:00 tags: life
+Discorso sull'istruzione
+========================
+
+:date: 2011-06-06 23:55:00
+:tags: life
 
 Una persona a me cara che sta studiando in questo periodo, il mio esame
 di Fisica II che vedi lenti ma costanti progressi e chissà quali altri
 stimoli si sono amalgamati tutti insieme quando ho sentito qualcuno
-citare questo discorso del presidente USA `Barack
-Obama <https://en.wikipedia.org/wiki/Barack_Obama>`__, che ho deciso di
+citare questo discorso del presidente USA `Barack Obama`__,
+ che ho deciso di
 approfondire. Il discorso si è tenuto l'8 settembre 2009, davanti agli
 studenti della Wakefield High School di Arlington, in Virginia. Riporto
-di seguito la traduzione integrale, tratta da
-`qui <http://studiobaroni.wordpress.com/2009/09/10/obama-discorso-studenti-2009/>`__,
+di seguito la traduzione integrale, tratta da `qui`__,
 anche se sembra che i diritti sulla traduzione appartengano alla Stampa.
 Per questo e altri ovvi motivi, quanto segue esula dalla normale licenza
 CC di questo blog.
@@ -206,3 +209,5 @@ Random thoughts derived from everyday academic life
 -  le persone che "non vanno oltre" quello che un professore mediocre ha
    da insegnare, ancor di più
 
+.. __Barack Obama: https://en.wikipedia.org/wiki/Barack_Obama
+.. __qui: http://studiobaroni.wordpress.com/2009/09/10/obama-discorso-studenti-2009

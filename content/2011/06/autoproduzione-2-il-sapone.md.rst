@@ -1,5 +1,9 @@
-Title: Autoproduzione 2: il sapone Date: 2011-06-18 12:20:00 featured:
-yes tags: autoproduzione
+Autoproduzione 2: il sapone
+===========================
+
+:date: 2011-06-18 12:20:00
+:featured: yes
+:tags: autoproduzione
 
 L'industria chimica è entrata sempre più prepotentemente nelle nostre
 vite, sotto tutti i punti di vista. Se da un lato l'enorme offerta dei
@@ -9,8 +13,7 @@ supermercato a comprare un flacone di sapone o bagnoschiuma), gli
 svantaggi sono molti, e non sempre molto evidenti; per citarne alcuni:
 
 -  eccessiva aggressività sulla pelle
--  rilascio di `sostanze
-   inquinanti <http://www.doctorsegalla.com/newsletter/evolution03.php>`__
+-  rilascio di `sostanze inquinanti`__
    negli scarichi urbani
 -  acquisto e successivo smaltimento (anche se riciclaggio) di
    confezione in plastica
@@ -27,9 +30,9 @@ Non mi sembra il caso adesso di ripetere come procedere, il web offre
 già tutte le risorse di cui abbiamo bisogno, e le risposte alle più
 disparate domande. In particolare:
 
--  `ilmiosapone.it <http://www.ilmiosapone.it/>`__ ci spiega come fare
+-  `ilmiosapone.it`__ ci spiega come fare
    il sapone a freddo, ed è il metodo da me testato;
--  `lasaponaria.it <http://www.lasaponaria.it/>`__ ha uno shop da cui
+-  `lasaponaria.it`__ ha uno shop da cui
    comprare a prezzi economici (rispetto alle erboristerie della mia
    città) gli ingredienti necessari
 
@@ -91,3 +94,6 @@ Di seguito, le foto delle prime saponette:
 
 .. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/sapone_1.jpg
 .. |image1| image:: http://dl.dropbox.com/u/369614/blog/img_red/sapone_2.jpg
+.. __sostanze inquinanti: http://www.doctorsegalla.com/newsletter/evolution03.php
+.. __ilmiosapone.it: http://www.ilmiosapone.it
+.. __lasaponaria.it: http://www.lasaponaria.it

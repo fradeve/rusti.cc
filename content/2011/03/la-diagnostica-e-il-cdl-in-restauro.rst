@@ -1,5 +1,8 @@
-Title: La Diagnostica e i corsi di laurea in Restauro Date: 2011-03-28
-20:45:00 tags: diagnostica
+La Diagnostica e i corsi di laurea in Restauro
+==============================================
+
+:date: 2011-03-28 20:45:00
+:tags: diagnostica
 
 Considerato che molti studenti mi hanno chiesto informazioni in merito,
 ecco i chiarimenti del Prof. Adduci in merito alla questione dei corsi
