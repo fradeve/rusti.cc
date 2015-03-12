@@ -1,14 +1,15 @@
-Title: Perché i dati geografici possono essere liberi Date: 2011-07-12
-12:05:00 featured: yes tags: openstreetmap
+Perché i dati geografici possono essere liberi
+==============================================
+
+:date: 2011-07-12 12:05:00
+:featured: yes tags: openstreetmap
 
 Internet è grande, e rispecchia fondamentalmente le persone che lo
 popolano. Ogni tanto può capitare di imbattersi in affermazioni
-bislacche. Tanto per dirne una, oggi mi è capitato di leggere `un
-articolo <http://www.rivistageomedia.it/201107103458/Approfondimenti/perche-i-dati-geografici-non-possono-essere-liberi-se-vogliono-essere-onesti.html>`__
+bislacche. Tanto per dirne una, oggi mi è capitato di leggere `un articolo`__
 di Renzo Carlucci su RivistaGeomedia, che merita un'analisi punto per
 punto (considerato che non ho niente di meglio da fare). L'ottimo
-Maurizio Napolitano ha `ampiamente
-risposto <http://de.straba.us/2011/07/12/in-risposta-a-renzo-carlucci-su-geodati-non-devono-essere-liberi/>`__
+Maurizio Napolitano ha `ampiamente risposto`__
 anche sul suo blog, leggete prima di tutto lì; questo è un post per
 l'uomo della strada.
 
@@ -30,8 +31,7 @@ territorio mi sembra una giustificazione più che sufficiente.
    gratuitamente a disposizione di tutti. Per lo Stato o per la stessa
    amministrazione sarebbe una perdita non giustificata.
 
-Credo che qualcuno debba
-`spiegarlo <https://secure.wikimedia.org/wikipedia/en/wiki/Copyright_status_of_work_by_the_U.S._government>`__
+Credo che qualcuno debba `spiegarlo`__
 anche al governo degli USA, da quelle parti vige la regola che "tutto
 ciò che è prodotto con soldi pubblici, appartiene ai cittadini e quindi
 non è coperto da diritto d'autore" (geodati compresi). Il nome TIGER
@@ -95,8 +95,7 @@ non corretto dal punto di vista etico, IMHO.
 
 Bene, siamo tornati al medioevo. È un'affermazione così palesemente poco
 aggiornata sullo stato delle cose a livello internazionale che non
-merita una risposta più lunga di `un
-link <http://blogs.esri.com/Dev/blogs/publicsafety/archive/2010/01/20/Accessing-OpenStreetMap-data-within-ArcGIS-to-support-the-Haiti-Earthquake-Response.aspx>`__.
+merita una risposta più lunga di `un link`__.
 Persino ESRI ha riconosciuto l'utilità dei geodati aperti, *mica
 cotica*. Questa è roba che salva le vite, non scherziamo.
 
@@ -115,11 +114,9 @@ ciecamente. Meglio di così, in fondo, non poteva andare.
    poco affidabili? Provate pure, usate un navigatore con dati liberi e
    fatemi sapere.
 
-Come ha spontaneamente osservato il buon `David
-Paleino <http://www.hanskalabs.net/>`__, non mi risulta che TeleAtlas
+Come ha spontaneamente osservato il buon `David Paleino`__, non mi risulta che TeleAtlas
 abbia decine di migliaia di operatori che girano il mondo rilevando
-strade ed esercizi commerciali. E poi...
-`bang! <http://openls.geog.uni-heidelberg.de/osm-haiti/>`__
+strade ed esercizi commerciali. E poi... `bang!`__
 
 In My Honest Opinion
 --------------------
@@ -147,6 +144,13 @@ Il prof. Carlucci sa bene che l'onere della prova spetta a chi fa
 un'affermazione, non a chi vuole smentirla. Sarò felice di riportare e
 pubblicare link e casi concreti a supporto delle affermazioni di
 Carlucci, qualora ne vengano mostrati. Fino ad allora per quanto mi
-riguarda, lo dico senza offesa, si tratta solo di
-`FUD <https://secure.wikimedia.org/wikipedia/it/wiki/Fear,_uncertainty_and_doubt>`__,
+riguarda, lo dico senza offesa, si tratta solo di `FUD`__,
 ovvero informazioni "negative, vaghe, inaccurate". *Show us the code!*
+
+.. __un articolo: http://www.rivistageomedia.it/201107103458/Approfondimenti/perche-i-dati-geografici-non-possono-essere-liberi-se-vogliono-essere-onesti.html
+.. __ampiamente risposto: http://de.straba.us/2011/07/12/in-risposta-a-renzo-carlucci-su-geodati-non-devono-essere-liberi
+.. __spiegarlo: https://secure.wikimedia.org/wikipedia/en/wiki/Copyright_status_of_work_by_the_U.S._government
+.. __un link: http://blogs.esri.com/Dev/blogs/publicsafety/archive/2010/01/20/Accessing-OpenStreetMap-data-within-ArcGIS-to-support-the-Haiti-Earthquake-Response.aspx
+.. __David Paleino: http://www.hanskalabs.net
+.. __bang!: http://openls.geog.uni-heidelberg.de/osm-haiti
+.. __FUD: https://secure.wikimedia.org/wikipedia/it/wiki/Fear,_uncertainty_and_doubt
