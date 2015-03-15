@@ -1,6 +1,6 @@
-.idea
 output/*
 publishconf.py
 Makefile
 develop_server.sh
 fabfile.py
+cache

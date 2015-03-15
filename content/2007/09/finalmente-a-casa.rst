@@ -1,7 +1,7 @@
 Finalmente a casa
 =================
 
-:date:  2007-09-29 15:00:41
+:date: 2007-09-29 15:00:41
 :tags: gnulinux, openmoko, ubuntu, wikipedia, blog
 
 Buongiorno a tutti i lettori del Planet di **Ubuntu-it**, dopo un anno di
@@ -46,7 +46,7 @@ scrivere e commentare qui sul blog, oppure fare riferimento alla mia `pagina
 personale`_. Vorrei ricordare che, personalmente, è quasi impossibile
 testare di persona tutti i giochi dei quali scrivo, e (molto) spesso faccio
 riferimento alle guide di altri blog, come `UbuntuGame`_, o continuo nel
-progetto di traduzione del portale internazionale di `UbuntuGames`_.
+progetto di traduzione del portale internazionale di UbuntuGames.
 
 .. _pagina personale: http://wiki.ubuntu-it.org/FrancescoDeVirgilio
 .. _UbuntuGame: http://ubuntugame.blogspot.com

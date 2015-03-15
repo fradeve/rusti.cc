@@ -2,21 +2,21 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Perfectionanist'
+AUTHOR = 'fradeve'
 TAGLINE = 'WebGIS dev, free software enthusiast, folk music fellow and proud monkey descendant.'
-SITENAME = 'The perfectionanist'
-SITEURL = 'http://fradeve.org'
+SITENAME = 'Rustic'
+SITEURL = 'http://rusti.cc'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/London'
 
-DEFAULT_LANG = 'it'
+DEFAULT_LANG = 'en'
 
 THEME = 'andrewseidl-theme'
 
-ARTICLE_URL = 'log/{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_SAVE_AS = 'log/{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_LANG_URL = 'log/{date:%Y}/{date:%m}/{slug}-{lang}.html'
-ARTICLE_LANG_SAVE_AS = 'log/{date:%Y}/{date:%m}/{slug}-{lang}.html'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_LANG_URL = '{date:%Y}/{date:%m}/{slug}-{lang}.html'
+ARTICLE_LANG_SAVE_AS = '{date:%Y}/{date:%m}/{slug}-{lang}.html'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
