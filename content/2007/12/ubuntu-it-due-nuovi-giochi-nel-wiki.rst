@@ -18,19 +18,15 @@ infettano le cartelle della vostra home (avete capito bene) ;)
 Con queste due pagine, il Portale Giochi del Wiki di Ubuntu-it raggiunge
 le **130 guide**.
 
-.. raw:: html
+.. figure:: {filename}/images/qtzpositivo1qw1.png
+   :width: 80%
+   :align: center
+   :alt: screen1
 
-   <center>
+   Screen
 
-|image0|
-
-.. raw:: html
-
-   </center>
 
 Buon divertimento a tutti!
-
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/qtzpositivo1qw1.png
 
 .. _Full Circle:  http://fullcirclemagazine.org/issue-5
 .. _Lincity-NG:  http://wiki.ubuntu-it.org/Giochi/Simulazione/Lincity

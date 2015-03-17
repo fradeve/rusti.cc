@@ -1,5 +1,5 @@
-Novità dal Portale Giochi alla Finanziaria 2007 sull'Open Source
-================================================================
+Dal Portale Giochi alla Finanziaria 2007 sull'Open Source
+=========================================================
 
 :date: 2007-12-31 00:08:38
 :tags: ubuntu, stato

@@ -20,12 +20,11 @@ ARTICLE_LANG_SAVE_AS = '{date:%Y}/{date:%m}/{slug}-{lang}.html'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-FEED_ALL_RSS = 'feeds/rss.xml'
 CATEGORY_FEED_ATOM = None
 
 # Files
 PATH = 'content'
-STATIC_PATHS = ["images"]
+STATIC_PATHS = ['images']
 
 # Comments
 DISQUS_SITENAME = 'fradeveorig'

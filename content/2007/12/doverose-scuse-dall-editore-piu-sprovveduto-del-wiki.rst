@@ -20,4 +20,4 @@ parlerà nell'apposita discussione:
 Scusate ancora
 
 .. _Alessio: http://wiki.ubuntu-it.org/AlessioTreglia
-.. _link: <http://forum.ubuntu-it.org/index.php/topic,89172.msg946754.html#msg946754
+.. _link: http://forum.ubuntu-it.org/index.php/topic,89172.msg946754.html#msg946754

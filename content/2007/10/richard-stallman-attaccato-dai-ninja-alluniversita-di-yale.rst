@@ -21,15 +21,13 @@ Leggete la vignetta e lo scoprirete :D
 
 .. _xkcd: http.//www.xkcd.com
 
-.. raw:: html
+.. figure:: http://imgs.xkcd.com/comics/open_source.png
+   :width: 80%
+   :align: center
+   :alt: Ninjas vs Stallman
 
-   <center>
+   Ninjas!
 
-|image0|
-
-.. raw:: html
-
-   </center>
 
 Ok, forse non tutti masticano l'inglese:
 
@@ -60,5 +58,3 @@ Note:
    legno collegati nel centro da una corta catena, che si fanno ruotare
    per colpire il nemico (questa me l'ha spiegata mio fratello, quindi
    prendetevela con lui se li ho descritti male :D).
-
-.. |image0| image:: http://imgs.xkcd.com/comics/open_source.png

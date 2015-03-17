@@ -2,7 +2,7 @@ GTA San Andreas nel Portale Giochi - E il crack no-cd?
 ======================================================
 
 :date: 2007-11-28 22:43:42
-:tags: microsoft, ubuntU
+:tags: microsoft, ubuntu
 
 Il titolo del post dice tutto, e c'è ben poco da spiegare. Grazie agli
 sforzi di V, ancora una volta abbiamo una nuova wiki. Peccato soltanto

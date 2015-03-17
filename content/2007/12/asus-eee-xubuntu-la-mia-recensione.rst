@@ -112,15 +112,13 @@ avrà davanti il solito menù della live. Si seleziona l'opzione di avvio
 per Asus EEE (la seconda, credo) e si avvierà la live sul proprio Asus.
 Il resto è esattamente come una normale installazione di X/K/Ubuntu.
 
-.. raw:: html
+.. figure:: {filename}/images/screenshot1ga7.png
+   :width: 80%
+   :align: center
+   :alt: screen1
 
-   <center>
+   Screen 1
 
-|image0|
-
-.. raw:: html
-
-   </center>
 
 Dopo l'installazione, è tutto funzionante e riconosciuto: il wireless
 (ho faticato due giorni per far funzionare lo stesso identico chip
@@ -162,18 +160,16 @@ speso 10 minuti, ma non sono riuscito a farle fungere. Parlo di
 vista, eeeXubuntu mi ha molto deluso. Ma voglio smanettarci ancora un
 po' prima di giungere a conclusioni affrettate, quindi abbiate pazienza.
 
-.. raw:: html
+.. figure:: {filename}/images/screenshot2ht4.png
+   :width: 80%
+   :align: center
+   :alt: screen1
 
-   <center>
+   Screen 1
 
-|image1|
 
-.. raw:: html
-
-   </center>
-
-La fisicià
-----------
+La fisicità
+-----------
 
 La tastiera è ovviamente quella inglese (come ho specificato
 nell'introduzione), e fortunatamente da un paio d'anni ho superato il
@@ -228,6 +224,3 @@ libero. Speriamo che il mondo ne prenda consapevolezza, piano, piano....
 macchina giù a casa della mia ragazza. La sto aspettando da mezz'ora,
 sono collegato ad internet tramite la sua Fonera, e sto scrivendo
 sull'Asus* ;)
-
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/screenshot1ga7.png
-.. |image1| image:: http://dl.dropbox.com/u/369614/blog/img_red/screenshot2ht4.png

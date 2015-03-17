@@ -18,7 +18,7 @@ indagare sulle origini e sulle misteriose (ma quando?) storie dei vari
 DE. Finché, un giorno, la storia mi e stata sbattuta in faccia (è
 proprio il caso di dirlo) da Richard Stallman, del quale ho comprato - e
 lo dico con orgoglio - e divorato il libro: "*Software Libero, Pensiero
-Libero*\ ". E così, come un adolescente che si trova davanti alla vita
+Libero*". E così, come un adolescente che si trova davanti alla vita
 di colpo, mi son trovato di fronte all'annosa questione: KDE o GNOME?
 
 Che sia meglio un environment *nato libero* o uno che libero lo è

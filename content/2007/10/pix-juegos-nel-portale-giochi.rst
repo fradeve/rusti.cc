@@ -4,6 +4,12 @@ PiX Juegos nel Portale Giochi
 :date: 2007-10-03 21:07:54
 :tags: ubuntu, gnulinux
 
+.. figure:: {filename}/images/pixpang1.png
+
+
+.. figure:: {filename}/images/pixfrogger1.png
+
+
 Come promesso, sono ora disponibili le guide in wiki per i giochi `PiX
 Pang <http://wiki.ubuntu-it.org/Giochi/Puzzle/PiXPang>`__ e `PiX
 Frogger <http://wiki.ubuntu-it.org/Giochi/Puzzle/PiXFrogger>`__. Come
@@ -14,8 +20,7 @@ appassionati) che ha già offerto agli utenti GNU/Linux `PiX
 Bros <http://wiki.ubuntu-it.org/Giochi/Puzzle/PixBros>`__. Approfitto
 dell'occasione anche per rendere noto che la traduzione in italiano di
 PiX Bros, che mi era stata gentilmente chiesta da uno degli
-sviluppatori, si è conclusa e presto uscirà la versione 0.65 del gioco,
-la cui caratteristica più importante e appunto il "multilanguage".
+sviluppatori, si è conclusa e presto uscirà la versione 0.65 del gioco,teristica più importante e appunto il "multilanguage".
 
 Qualche nota a proposito del gioco: realizzato in grafica vettoriale
 (sul sito di `PiX Juegos <http://www.pixjuegos.com/?q=node/59>`__ è
@@ -31,5 +36,3 @@ appunto, di arcade.
 
 Buon divertimento!
 
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/pixpang1.png
-.. |image1| image:: http://dl.dropbox.com/u/369614/blog/img_red/pixfrogger1.png
