@@ -23,12 +23,8 @@ Tutto questo è stato testato sul palmare Motorola di Alex... chissà se
 il multi-boot sarà disponibile anche su Openmoko!!! Qui sotto, il video
 :D
 
+.. youtube:: -QqWIl-_KO4
+   :align: center
+
+
 .. _blog: http://thisvip.wordpress.com/2007/10/05/multi-boot-on-a1200-from-sd-card
-
-.. raw:: html
-
-   <center><object width="480" height="385">
-   <embed src="http://www.youtube.com/v/-QqWIl-_KO4?fs=1&amp;hl=it_IT" 
-   type="application/x-shockwave-flash" allowscriptaccess="always" 
-   allowfullscreen="true" width="480" height="385"></embed>
-   </object></center>
