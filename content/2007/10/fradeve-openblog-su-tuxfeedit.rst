@@ -33,7 +33,7 @@ TuxFeed.it:
     Ti chiediamo di segnalare la tua "indicizzazione su tuxfeed.it"
     scrivendo un post che "segnali" la nostra iniziativa, e inserendo il
     nostro piccolo banner linkato a tuxfeed.it, all'interno delle tue
-    pagine. Trovi il banner su (http://www.tuxfeed.it/about/)
+    pagine. Trovi il banner su http://www.tuxfeed.it/about/.
 
     Abbiamo pensato di non appesantire il sito con pubblicità inutili,
     spero apprezziate questa politica, se però volete sostenere

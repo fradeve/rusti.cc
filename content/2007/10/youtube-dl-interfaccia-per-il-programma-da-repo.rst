@@ -21,13 +21,14 @@ Ok, credo di aver parlato anche troppo, passiamo alla pratica.
 Installiamo le dipendenze (ovvero i pacchetti ``youtube-dl``, ``zenity``
 ed ``ffmpeg``). Da terminale, diamo un bel
 
-::
+.. code-block:: bash
 
     sudo nano /usr/bin/youtube-dl
 
+
 Incolliamo lo script vero e proprio
 
-::
+.. code-block:: bash
 
     #!/bin/bash
     # Funzione che configura il terminale da usare
@@ -160,9 +161,10 @@ Incolliamo lo script vero e proprio
 
 Sempre da terminale, eseguire il comando
 
-::
+.. code-block:: bash
 
     sudo chmod a+x /usr/bin/youtube-d
+
 
 Si potrà eseguire il programma con il comando da terminale youtube-dl
 

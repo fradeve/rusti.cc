@@ -17,13 +17,13 @@ chiedete come). Queste informazioni sono riportate in una risposta al
 post che ho citato in quell'articolo. Ringrazio chi me l'ha fatto notare
 ;)
 
-.. _presente nel wiki: <http://wiki.ubuntu-it.org/Giochi/Strategia/FreeCol
+.. _presente nel wiki: http://wiki.ubuntu-it.org/Giochi/Strategia/FreeCol
 
 Detto questo... oggi mi sono apprestato a provare ad installare
 Bridge Construction Set, uno dei giochi citati nel
 `Full Circle Magazine n°5`_, e del quale vorrei
 scrivere la wiki. Dopo aver fatto partire l'installer ed eseguito lo
-script per patchare la libreria Openal (il file e `bcs-linux-openal-fixer.sh`),
+script per patchare la libreria Openal (il file e ``bcs-linux-openal-fixer.sh``),
 l'unica cosa che ottengo è questa:
 
 .. code:: bash

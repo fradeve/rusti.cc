@@ -1,5 +1,5 @@
-Ubuntu 7.10 permette di scegliere il livello di libertà dell'utente
-===================================================================
+Ubuntu 7.10 permette di scegliere il livello di libertà
+=======================================================
 
 :date: 2007-10-17 20:25:58
 :tags: ubuntu

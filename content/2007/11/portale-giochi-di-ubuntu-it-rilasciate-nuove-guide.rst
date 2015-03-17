@@ -16,7 +16,7 @@ permesso di sfornare nuove guide; sono adesso presenti nel wiki
    Un RPG molto particolare, poiché mescola vari generi, tra cui il tiro
    a segno ed il platform. Peccato per la grafica un po' retro...
 
-Ho anche aggiornato la guida a **`Frets on Fire`_**,
+Ho anche aggiornato la guida a `Frets on Fire`_,
 ora che in Gutsy è presente anche nei Repository, è possibile
 installarlo comodamente dal proprio gestore di pacchetti ;)
 

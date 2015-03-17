@@ -6,8 +6,7 @@ PiX Juegos nel Portale Giochi
 
 .. figure:: {filename}/images/pixpang1.png
 
-
-.. figure:: {filename}/images/pixfrogger1.png
+   Pixpang!
 
 
 Come promesso, sono ora disponibili le guide in wiki per i giochi `PiX
@@ -21,6 +20,11 @@ Bros <http://wiki.ubuntu-it.org/Giochi/Puzzle/PixBros>`__. Approfitto
 dell'occasione anche per rendere noto che la traduzione in italiano di
 PiX Bros, che mi era stata gentilmente chiesta da uno degli
 sviluppatori, si è conclusa e presto uscirà la versione 0.65 del gioco,teristica più importante e appunto il "multilanguage".
+
+.. figure:: {filename}/images/pixfrogger1.png
+
+   PixFrogger!
+
 
 Qualche nota a proposito del gioco: realizzato in grafica vettoriale
 (sul sito di `PiX Juegos <http://www.pixjuegos.com/?q=node/59>`__ è
