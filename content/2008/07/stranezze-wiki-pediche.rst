@@ -11,11 +11,9 @@ capita che il collegamento ai server si interrompa, le modifiche non
 vengano salvate (per fortuna vengono ripristinate dallo stesso
 MediaWiki) o appaia un errore come nella schermata seguente:
 
-.. raw:: html
+.. figure:: {filename}/images/bisceglie1yv7.png
 
-   <center>
-    |image0|
-   </center>
+
 
 Adesso, una notizia più leggera: spesso ci dimentichiamo che il Software
 Libero ha anche delle "icone libere", rilasciate con licenza GNU o
@@ -26,14 +24,9 @@ lavoro sull'Enciclopedia, qualche wikipediano ha ben pensato di usare
 l'icona di Amarok per simboleggiare la categoria biologica dei
 mammiferi.
 
-.. raw:: html
+.. figure:: {filename}/images/amaroksi4.png
 
-   <center>
-    |image1|
-   </center>
+
 
 Che dire, è un utilizzo al quale non avevo mai pensato, di solito quando
 clicco sull'icona, parte la musica :D
-
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/bisceglie1yv7.png
-.. |image1| image:: http://dl.dropbox.com/u/369614/blog/img_red/amaroksi4.png

@@ -4,15 +4,9 @@ OpenStreetCamping, edizione 2008
 :date: 2008-07-24 23:17:36
 :tags: openstreetmap, terlizzi, wikimedia, wikipedia
 
-.. raw:: html
+.. figure:: {filename}/images/logooscuz9.png
 
-   <center>
 
-|image0|
-
-.. raw:: html
-
-   </center>
 
 Quest'anno, c'è qualcosa di nuovo sotto il sole estivo. Avete voglia di
 sole, mare, foreste, ciclismo nella natura? Siete appassionati di
@@ -27,9 +21,7 @@ bicicletta (infilata con la forza nella mia FIAT Panda che utilizzeremo
 per gli spostamenti) mapperemo quante più strade possibili. La nostra
 tenda è da 6 posti, e i mapper da tutto il mondo sono i benvenuti a
 trascorrere 10 giorni in nostra compagnia. **Saremo nel `Parco Nazionale
-del
-Gargano <http://it.wikipedia.org/wiki/Parco_nazionale_del_Gargano>`_
-dal 4 al 13 agosto.**
+del Gargano`_ dal 4 al 13 agosto.**
 
 .. _OpenStreetMap: http://www.openstreetmap.org
 .. _Alessandro: http://sdonk.org
@@ -94,10 +86,10 @@ per pubblicizzare un po l'idea attraverso i blog.
 Saluti,
 
 Francesco
-[`Fradeve11 <http://wiki.openstreetmap.org/index.php/User:Fradeve11>`_\ ]
+[`Fradeve11 <http://wiki.openstreetmap.org/index.php/User:Fradeve11>`_]
 
 Alessandro
-[`Sdonk <http://wiki.openstreetmap.org/index.php/User:Sdonk>`_\ ]
+[`Sdonk <http://wiki.openstreetmap.org/index.php/User:Sdonk>`_]
 
 .. _qui: http://www.openstreetmap.org/?lat=41.1312&lon=16.5453&zoom=13&layers=B00FTF
 .. _Gargano: http://it.wikipedia.org/wiki/Gargano
@@ -130,7 +122,6 @@ di contattarci.
 
 **Buone vacanze a tutti!!**
 
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/logooscuz9.png
 .. |casco2| image:: http://farm4.static.flickr.com/3061/2697864877_7932920fa9_b.jpg
 .. |0012| image:: http://farm4.static.flickr.com/3085/2696088893_07053b95c3_b.jpg
-.. _Parco Nazionale del Gargano: http://www.parcogargano.gov.it/servizi/notizie/notizie_homepage.aspx
+.. _Parco Nazionale del Gargano: http://it.wikipedia.org/wiki/Parco_nazionale_del_Gargano

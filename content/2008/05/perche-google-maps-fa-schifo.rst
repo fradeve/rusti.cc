@@ -54,28 +54,22 @@ propongo 3 mappe, quella satellitare di Google Maps, la stessa (senza
 immagini satellitari), e quella disegnata da me grazie ai miei tracciati
 GPX su OpenStreetMap (e presente in tutte le cartine del paese).
 
-.. raw:: html
 
-   <center>
+.. figure:: {filename}/images/casa1uy9.png
 
-|image0| **Google Maps, da satellite**
 
-.. raw:: html
+   **Google Maps, da satellite**
 
-   </center>
 
 Non vi sembra ci siano due vie di troppo? A me si. La *vera* situazione
 del mio quartiere è questa:
 
-.. raw:: html
 
-   <center>
+.. figure:: {filename}/images/casa3ab1.png
 
-|image1| **Da OpenStreetMap**
 
-.. raw:: html
+   **Da OpenStreetMap**
 
-   </center>
 
 2. I cortili privati diventano strade pubbliche, e non solo
 -----------------------------------------------------------
@@ -105,6 +99,4 @@ dell'OpenStreetMapping.
 Stay tuned e ricordate che *l'informazione libera passa anche dalla
 strada di casa vostra!*
 
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/casa1uy9.png
-.. |image1| image:: http://dl.dropbox.com/u/369614/blog/img_red/casa3ab1.png
 .. _ortofoto: http://it.wikipedia.org/wiki/Ortofoto

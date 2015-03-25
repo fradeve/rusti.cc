@@ -16,7 +16,7 @@ sembrato molto intuitivo, vediamo insieme il codice della pagina html:
 .. _wiki di OpenStreetMap: http://wiki.openstreetmap.org/wiki/Main_Page
 .. _OpenLayers Simple Example: http://wiki.openstreetmap.org/wiki/OpenLayers_Simple_Example
 
-::
+.. code-block:: html
 
     <html>
         <head>
@@ -87,16 +87,9 @@ stesse dimensioni della pagina html, nel caso vogliate personalizzare il
 titolo della pagina (quello che compare nella finestra del browser)
 dovete modificare ciò che e compreso nel tag
 
-.. raw:: html
+.. code-block:: html
 
-   <title></title>
-
-:
-
-::
-
-    :::html
-    <title>Modificare questo testo</title>
+   <title>Modificare questo testo</title>
 
 Il passo successivo consiste nel modificare le coordinate di origine
 della mappa e lo zoom di default, dal [sito][3], cliccando su
@@ -105,13 +98,12 @@ interesse e lo zoom gradito e copiando il nuovo indirizzo che nel
 frattempo sarà comparso nella barra del browser. Le coordinate e lo zoom
 vanno inserite in questo punto del file html:
 
-::
+.. code-block:: html
 
-    :::html
-    <script type="text/javascript">
-    var lat=41.12925
-    var lon=16.5449
-    var zoom=15
+   <script type="text/javascript">
+   var lat=41.12925
+   var lon=16.5449
+   var zoom=15
 
 Se intendiamo utilizzare un solo tipo di layer (vedi punto successivo)
 possiamo lasciare invariata la porzione di script che inizializza gli
@@ -119,32 +111,29 @@ oggetti della mappa, in caso contrario dobbiamo aggiungere il
 LayerSwitcher alla mappa per permettere agli utenti di cambiare layer al
 volo, modificando il codice che inizializza i controlli da così:
 
-::
+.. code-block:: html
 
-    :::html
-    new OpenLayers.Control.Navigation(),
-    new OpenLayers.Control.PanZoomBar(),
-    new OpenLayers.Control.Attribution()],
+   new OpenLayers.Control.Navigation(),
+   new OpenLayers.Control.PanZoomBar(),
+   new OpenLayers.Control.Attribution()],
 
 a così:
 
-::
+.. code-block:: html
 
-    :::html
-    new OpenLayers.Control.Navigation(),
-    new OpenLayers.Control.PanZoomBar(),
-    new OpenLayers.Control.LayerSwitcher(),
-    new OpenLayers.Control.Attribution()],
+   new OpenLayers.Control.Navigation(),
+   new OpenLayers.Control.PanZoomBar(),
+   new OpenLayers.Control.LayerSwitcher(),
+   new OpenLayers.Control.Attribution()],
 
 In questo script è implementato solo il layer di Osmarender (il software
 di rendering open source nato in casa OpenStreetMap e utilizzato dal
 progetto di rendering distribuito tiles@home):
 
-::
+.. code-block:: html
 
-    :::html
-    layerTilesAtHome = new OpenLayers.Layer.OSM.Osmarender("Osmarender");
-    map.addLayer(layerTilesAtHome);
+   layerTilesAtHome = new OpenLayers.Layer.OSM.Osmarender("Osmarender");
+   map.addLayer(layerTilesAtHome);
 
 Volendo ottenere una mappa più interattiva è possibile aggiungere anche
 gli altri due layer standard usati da OpenStreetMap nelle mappe del
@@ -156,15 +145,14 @@ sito:
 Per aggiungere gli altri due layer è necessario modificare il codice
 precedente in questo modo:
 
-::
+.. code-block:: html
 
-    :::html
-    layerTilesAtHome = new OpenLayers.Layer.OSM.Osmarender("Osmarender");
-    map.addLayer(layerTilesAtHome);
-    layerMapnik = new OpenLayers.Layer.OSM.Mapnik("Mapnik");
-    map.addLayer(layerMapnik);
-    layerCycleMap = new OpenLayers.Layer.OSM.CycleMap("CycleMap");
-    map.addLayer(layerCycleMap);
+   layerTilesAtHome = new OpenLayers.Layer.OSM.Osmarender("Osmarender");
+   map.addLayer(layerTilesAtHome);
+   layerMapnik = new OpenLayers.Layer.OSM.Mapnik("Mapnik");
+   map.addLayer(layerMapnik);
+   layerCycleMap = new OpenLayers.Layer.OSM.CycleMap("CycleMap");
+   map.addLayer(layerCycleMap);
 
 Infine dobbiamo decidere soltanto le dimensioni di visualizzazione della
 mappa in modo da adattarla al contesto del nostro sito o blog, per fare
@@ -173,8 +161,7 @@ ciò basta modificare le dimensioni proporzionali della mappa rispetto al
 a parte, ho deciso di lasciare le dimensioni della mappa grandi quanto
 la pagina html.
 
-::
+.. code-block:: html
 
-    :::html
-    <div style="width:100%; height:100%" id="map"></div>
+   <div style="width:100%; height:100%" id="map"></div>
 

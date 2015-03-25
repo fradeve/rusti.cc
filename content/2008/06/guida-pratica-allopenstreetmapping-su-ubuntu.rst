@@ -287,7 +287,7 @@ accetta molti file diversi (anche GPX e IGC) e può sovrapporne fino a 3
 contemporaneamente.
 
 Appena selezionati i file, premere il pulsante "Draw the map" in fondo a
-destra. ***RIPETO:** non fidarsi troppo di GMaps e soprattutto, nella
+destra. **RIPETO:** non fidarsi troppo di GMaps e soprattutto, nella
 maniera più assoluta, non copiare i nomi delle strade da li! Utilizzate
 questo servizio solo se siete disperati e cercate sempre di preferire il
 taccuino a Google Maps, che potrebbe inficiare ciò che vogliamo
@@ -373,7 +373,9 @@ Ecco come procedere:
    delle proprie esigenze (questo va benissimo se avete seguito le
    istruzioni sopra):
 
-       xmlstarlet tr ~/osmarender/osmarender.xsl ~/osmarender/osm-map-features-z17.xml > ~/osmarender/map.svg
+   .. code-block:: bash
+
+      xmlstarlet tr ~/osmarender/osmarender.xsl ~/osmarender/osm-map-features-z17.xml > ~/osmarender/map.svg
 
 Quando avrà terminato, nella cartella apparirà un file "map.svg", che
 potrete aprire con Inkscape. Bello, vero? Potrebbe essere necessario

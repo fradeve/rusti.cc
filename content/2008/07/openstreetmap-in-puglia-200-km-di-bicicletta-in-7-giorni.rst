@@ -18,13 +18,8 @@ Da **OpenStreetMap**, senza precauzioni: le strade `sono corrette`_ :D
 
 Ed ecco i miei edit sulla mappa:
 
-.. raw:: html
+.. figure:: {filename}/images/exportfp2.png
 
-   <center>
-
-|image0|
-
-   </center>
 
 Sono un bel po' di km. Sapete una cosa? Alle volte, girando sia da solo
 che in compagnia con la bicicletta e macinando queste strade, mi son
@@ -33,7 +28,6 @@ progetti di software libero, ma e ancor più bello quando si scolla il
 culo dalla sedia (le signore mi perdonino i termini crudi). Il mondo è
 la fuori, c\*\*\*o!! Armatevi di GPS ed uscite, pigroni!
 
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/exportfp2.png
 .. _dovute precauzioni: http://dl.dropbox.com/u/369614/blog/public_html/FradeveOpenblog/posts/2008/05/perche-google-maps-fa-schifo.html
 .. _Visualizzazione ingrandita della mappa: http://maps.google.it/maps?hl=it&q=terlizzi&ie=UTF8&ll=41.136908,16.546955&spn=0.009148,0.02326&t=h&z=14&source=embed
 .. _sono corrette: http://www.openstreetmap.org/?lat=41.1312&lon=16.5453&zoom=14&layers=B00FTF

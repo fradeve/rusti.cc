@@ -4,15 +4,9 @@ Nokia N810 vs Openmoko: ma stiamo scherzando?
 :date: 2008-06-28 09:23:08
 :tags: freerunner, nokia, openmoko
 
-.. raw:: html
+.. figure:: {filename}/images/frerunbr9.png
 
-   <center>
 
-|image0|
-
-.. raw:: html
-
-   </center>
 
 Nell'ambito del mio probabile coinvolgimento in un progetto di
 valorizzazione del patrimonio artistico/culturale di Bari tramite
@@ -24,15 +18,9 @@ un occhio al Nokia N810. Sono rimasto scandalizzato.
 
 La situazione è intuitiva:
 
-.. raw:: html
+.. figure:: {filename}/images/tabcx0.png
 
-   <center>
 
-|image1|
-
-.. raw:: html
-
-   </center>
 
 E secondo voi, dovrei pagare **450€** per un aggeggio come l'N810 che -
 è INGOMBRANTE - non telefona ne manda SMS - ha un GPS che dura 5 giorni
@@ -43,6 +31,3 @@ portarmi in giro un N810 ed un telefono? È vero, al Neo FreeRunner manca
 la fotocamera e la tastiera, ma le tecnologie tochscreen integrate in
 Openmoko permettono di scrivere molto tranquillamente e velocemente.
 Scusate, ma preferisco `Openmoko <http://openmoko.com/>`_.
-
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/frerunbr9.png
-.. |image1| image:: http://dl.dropbox.com/u/369614/blog/img_red/tabcx0.png

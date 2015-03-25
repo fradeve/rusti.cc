@@ -7,5 +7,5 @@ Uno spunto per le politiche, in ritardo...
 Perdonatemi amici del `Planet di Ubuntu-it <http://planet.ubuntu-it.org/>`__ 
 e di TuxFeed, ma proprio non ho resistito:
 
-TODO
-yoig86tk054uatezxehif5hfh9.jpg
+
+.. figure:: {filename}/images/yoig86tk054uatezxehif5hfh9.jpg

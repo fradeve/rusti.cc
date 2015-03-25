@@ -4,18 +4,13 @@ Palmari e Software Libero: attenti a Nokia e Google
 :date: 2008-06-14 17:53:23
 :tags: freerunner, gnulinux, kernel, microsoft, nokia, openmoko, ubuntu, wikipedia
 
-.. raw:: html
 
-   <center>
+.. figure:: {filename}/images/266111504_6f5143fd4a.jpg
+   :alt: http://www.flickr.com/photos/roland/266111504/
 
-|image0|\ \ *`Not everybody is as bad as they are dressed (translation
-by Ton) - Roland in NL
-(022) <http://www.flickr.com/photos/roland/266111504/>`_, inserito
-originariamente da `roland <http://www.flickr.com/people/roland/>`_.*
+   Not everybody is as bad as they are dressed (translation
+   by Ton) - Roland in NL
 
-.. raw:: html
-
-   </center>
 
 Negli ultimi anni, stiamo piano piano assistendo all'esplosione di nuovi
 PC sempre più piccoli. L'annunciata rivoluzione degli UMPC (tra cui
@@ -97,8 +92,6 @@ di interfaccia sotto Creative Commons e software tutto sotto licenza
 GNU. Supporta le GTK+, le Qt e le librerie di Enlightment.
 Personalmente, mi mette l'acquolina in bocca. Voi che ne pensate?
 
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/266111504_6f5143fd4a.jpg
-   :target: http://www.flickr.com/photos/roland/266111504/
 .. _DRM: http://it.wikipedia.org/wiki/Digital_rights_management
 .. _chiudere il codice rendendolo proprietario: http://arstechnica.com/news.ars/post/20071106-why-google-chose-the-apache-software-license-over-gplv2.html
 .. _compatibile con la licenza GNU v3: http://en.wikipedia.org/wiki/Apache_License

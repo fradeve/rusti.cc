@@ -9,13 +9,13 @@ attività che ogni giorno gorgogliano nel `Wiki Italiano di Ubuntu`_.
 
 - Sicuramente, una delle piu importanti - soprattutto per le vendite
   eccezionali del prodotto in questione - è la guida all'installazione
-  e configurazione di Ubuntu su `**Asus Eee PC**`_, a cura di Hattory.
+  e configurazione di Ubuntu su `*Asus Eee PC*`_, a cura di Hattory.
 
 - Da ricordare, la nuova guida all'`installazione di Ubuntu da penna USB`_.
   (tradotta gomito a gomito con quella dell'Asus Eee).
 
 .. _Wiki Italiano di Ubuntu: http://wiki.ubuntu-it.org
-.. _**Asus Eee PC**: http://wiki.ubuntu-it.org/Hardware/Notebook/AsusEeePC
+.. _*Asus Eee PC*: http://wiki.ubuntu-it.org/Hardware/Notebook/AsusEeePC
 .. _installazione di Ubuntu da penna USB: http://wiki.ubuntu-it.org/Installazione/DaSupportoUSB
 
 Inoltre, ci sono molte new entry nel Portale Giochi, grazie alla

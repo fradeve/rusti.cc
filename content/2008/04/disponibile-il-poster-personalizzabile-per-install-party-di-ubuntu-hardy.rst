@@ -19,7 +19,7 @@ Il poster è rilasciato sotto licenza CC NC-BY-SA 2.5, ed è disponibile
 per la modifica e gli adattamenti del caso nel formato svg (è stato
 creato con `Inkscape`_, che personalmente adoro...).
 
-In qualsiasi caso, `**questo**`_ è il link per il download.
+In qualsiasi caso, `*questo*`_ è il link per il download.
 
 Buon install- party!!
 
@@ -28,4 +28,4 @@ Buon install- party!!
 .. _Gruppo Promozione: http://wiki.ubuntu-it.org/GruppoPromozione
 .. _Wiki di Ubuntu-it: http://wiki.ubuntu-it.org/Documentazione/Indice
 .. _Inkscape: http://www.inkscape.org
-.. _**questo**: http://wiki.ubuntu-it.org/GruppoPromozione/MaterialeInformativo/Materiale?action=AttachFile&do=get&target=poster_hardy_it.svg
+.. _*questo*: http://wiki.ubuntu-it.org/GruppoPromozione/MaterialeInformativo/Materiale?action=AttachFile&do=get&target=poster_hardy_it.svg
