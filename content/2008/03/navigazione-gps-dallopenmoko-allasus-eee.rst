@@ -22,7 +22,7 @@ sbavate :D
 
 Dimenticavo: Navit ha delle bellissime funzioni (in interfaccia grafica
 non ricordo, ma da linea di comando sicuramente) per scaricare le
-cartine direttamente da `**OpenStreetMaps**`_. Come dicevano
+cartine direttamente da `*OpenStreetMap*`_. Come dicevano
 gli antichi: "Mens libra in corpore libre" (FLOSS-Latin version).
 
 .. _NavIt: http://www.navit-project.org
@@ -30,4 +30,4 @@ gli antichi: "Mens libra in corpore libre" (FLOSS-Latin version).
 .. _Openmoko: http://www.openmoko.com
 .. _Neo1973: http://www.openmoko.com/products-neo-base-00-stdkit.html
 .. _Asus EEE: http://www.fradeve.altervista.org/2007/12/25/asus-eee-xubuntu-la-mia-recensione
-.. _**OpenStreetMaps**: http://www.openstreetmap.org
+.. _*OpenStreetMap*: http://www.openstreetmap.org

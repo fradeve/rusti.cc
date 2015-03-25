@@ -8,15 +8,6 @@ C'è ben poco da dire... sarà forse che il mio blog è un po' minimalista,
 sarà che qualche immagine parla piu di molte parole... comunque, qualche
 settimana fa ho visto `questo sito`_ e
 non sono riuscito a resistere all'impulso di provarlo a casa.
-
-.. _questo sito: http://www.decluttered.com
-
-
-.. figure:: http://www.decluttered.com/vmardian-03.jpg
-   :alt: http://www.decluttered.com/vmardian-03.jpg
-
-
-
 Una scappata al più vicino ferramenta del paese, ed ecco il risultato:
 non ho più neanche un cavo a terra.
 
@@ -47,3 +38,5 @@ per qualche nuova creazione ;) Ovviamente segnalatemele, magari pubblico
 qualche foto sul blog!
 
 Per la serie: ***fatelo a casa!***
+
+.. _questo sito: http://www.decluttered.com
