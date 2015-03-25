@@ -6,7 +6,6 @@ Openmoko Neo FreeRunner
 
 Aprile si avvicina....
 
-
 .. youtube:: k-qu_jy-HuA
    :align: center
 

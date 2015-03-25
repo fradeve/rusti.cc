@@ -4,15 +4,15 @@
 :date: 2008-02-05 06:30:05
 :tags: ubuntu
 
-Febbraio inizia con qualche novità anche per il `Portale Giochi`__
-del `Wiki di Ubuntu-it`__:
+Febbraio inizia con qualche novità anche per il `Portale Giochi`_
+del `Wiki di Ubuntu-it`_:
 
--  `Stepmania`__ **64bit**
--  `Funguloids`__ (grazie a `Marbell`__)
--  `DreamChess`__
--  `Vertris`__
--  `EmiliaPinball`__
--  `Hedgewars`__
+-  `Stepmania`_ **64bit**
+-  `Funguloids`_ (grazie a `Marbell`_)
+-  `DreamChess`_
+-  `Vertris`_
+-  `EmiliaPinball`_
+-  `Hedgewars`_
 
 Il portale conta attualmente **154 guide**!
 

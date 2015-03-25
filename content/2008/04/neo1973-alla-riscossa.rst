@@ -4,15 +4,13 @@ Neo1973 alla riscossa!
 :date: 2008-04-10 21:44:51
 :tags: openmoko
 
-.. raw:: html
 
-   <center>
 
-Foto by `Roland @ Flick <http://flickr.com/photos/roland/2049683212>`_
+.. figure:: {filename}/images/2049683212_629d3fd030_m.jpg
+   :alt: http://flickr.com/photos/roland/2049683212
 
-.. raw:: html
+   Foto by `Roland @ Flick <http://flickr.com/photos/roland/2049683212>`_
 
-   </center>
 
 Gli ultimi aggiornamenti sull'avanzamento dei lavori sull'ormai
 famigerato telefoninux, il Neo1973, promettono davvero bene.

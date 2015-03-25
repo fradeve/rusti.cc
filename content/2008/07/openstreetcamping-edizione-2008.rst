@@ -133,3 +133,4 @@ di contattarci.
 .. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/logooscuz9.png
 .. |casco2| image:: http://farm4.static.flickr.com/3061/2697864877_7932920fa9_b.jpg
 .. |0012| image:: http://farm4.static.flickr.com/3085/2696088893_07053b95c3_b.jpg
+.. _Parco Nazionale del Gargano: http://www.parcogargano.gov.it/servizi/notizie/notizie_homepage.aspx

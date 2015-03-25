@@ -6,16 +6,10 @@ Spread the love!
 
 C'è bisogno di commenti? :D
 
-.. raw:: html
 
-   <center>
+.. figure:: {filename}/images/ubuntu-equation.gif
 
-|image0|
 
-.. raw:: html
-
-   </center>
 
 Diffondete, diffondete!
 
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/ubuntu-equation.gif

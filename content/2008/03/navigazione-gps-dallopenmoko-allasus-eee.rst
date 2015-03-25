@@ -1,5 +1,5 @@
 Navigazione GPS: dallOpenmoko all'Asus EEE
-=========================================
+==========================================
 
 :date: 2008-03-17 22:01:41
 :tags: openmoko, python, ubuntu

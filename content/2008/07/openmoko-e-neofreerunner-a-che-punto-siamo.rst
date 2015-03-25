@@ -162,7 +162,6 @@ la navigazione GPS su Openmoko: sto parlando di
 aeree da OpenAerialMap.org e Maps-For-Free.org. Questi programmi sono
 l'ideale anche per tutti i mapper che vogliono cimentarsi in OSM.
 
-.. _gvSIG: http://blogs.thehumanjourney.net/finds/resource/4.png
 .. _tangoGPS: http://www.youtube.com/watch?v=hn7wuxlTNvs
 .. _OSM: http://www.openstreetmap.org/
 
@@ -184,7 +183,6 @@ supporta anche Java: è anche per questo che `gvSIG`_ gira sul palmare. Con
 questo porting di Java, si apre un mondo di possibilità!
 
 .. _Jalimo: https://wiki.evolvis.org/jalimo/index.php/Main_Page
-.. _gvSIG: http://en.wikipedia.org/wiki/GvSIG
 
 Design aperto e creatività
 --------------------------
@@ -201,4 +199,5 @@ che qualche azienda non approfitti dell'idea e ne produca dei modelli
 reali, mettendoli in commercio. I vantaggi dell'hardware libero ;)
 
 .. _file CAD: http://openmoko.com/download-cad.html
-.. _guaina: http://www.sureda.org/Portfolio/Portfolio.htm
+.. _stupenda guaina: http://www.sureda.org/Portfolio/Portfolio.htm
+.. _gvSIG: http://blogs.thehumanjourney.net/finds/resource/4.png

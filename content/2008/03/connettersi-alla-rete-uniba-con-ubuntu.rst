@@ -9,7 +9,7 @@ Introduzione
 
 Dopo qualche iniziale momento di perplessità, sono riuscito a far
 connettere il mio Asus EEE con Ubuntu alla rete wifi messa a
-disposizione dall'\ `Università degli Studi di Bari`_. Ho parlato di perplessità
+disposizione dall'`Università degli Studi di Bari`_. Ho parlato di perplessità
 perché ho provato per due giorni a connettermi e mi sono accorto solo
 oggi di aver ricordato male la password (avevo cominciato a credere che
 il problema fosse Ubuntu :D ).
@@ -43,8 +43,8 @@ dovrete connettervi, la seconda è una vecchia rete che, sebbene
 accessibile, sarà presto sospesa. Una volta ordinato al network manager
 di Ubuntu di connettersi a *wifi-uniba*, apparirà una finestrella in cui
 si dovrà selezionare il tipo di login. Dovrete selezionare (tra 4
-opzioni) la modalità "**LEAP**\ " e nel sottomenù che vi appare,
-selezionare il protocollo "**IEEE 802.1x**\ ". La modalità LEAP prevede
+opzioni) la modalità "**LEAP**" e nel sottomenù che vi appare,
+selezionare il protocollo "**IEEE 802.1x**". La modalità LEAP prevede
 (a differenza delle altre) l'inserimento di due valori, un nome utente
 ed una password, che sono esattamente quelli con cui vi siete registrati
 ad Esse3. Fatto ciò, dovreste essere connessi. Da terminale provate a

@@ -89,7 +89,7 @@ chiunque. Giusto per ristabilire l'equilibrio cosmico, una percorso
 Google Maps è una strada percorribile con qualsiasi mezzo;
 interessante....
 
-3) Le `ortofoto  di Google Earth non sono poi cosi "orto"
+3) Le ortofoto  di Google Earth non sono poi cosi "orto"
 ---------------------------------------------------------
 
 Se lo fossero, i tracciati GPX catturati dal mio ricevitore GPS

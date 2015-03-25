@@ -11,15 +11,10 @@ Il vero protagonista del Portale Giochi in questi ultimi mesi è
 
 Dalle sue mani fatate arrivano le seguenti guide:
 
-.. raw:: html
+.. figure:: {filename}/images/CRRCsim.jpg
 
-   <center>
 
-|image0|
 
-.. raw:: html
-
-   </center>
 
 -  `CRRCsim <http://wiki.ubuntu-it.org/Giochi/Simulazione/CrrcSim>`_:
    un simpatico simulatore di volo di aeromodelli... da provare!
@@ -51,8 +46,6 @@ Grazie agli sforzi congiunti di queste persone, oggi, la Comunità
 Italiana di Ubuntu può fregiarsi di ben ***142 GUIDE***!!! Che dire....
 grazie di cuore a tutti. Il sogno, rimane sempre di toccare quota 150
 entro Febbraio, chissà... ;)
-
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/CRRCsim.jpg
 
 .. _CRRCsim: http://wiki.ubuntu-it.org/Giochi/Simulazione/CrrcSim
 .. _Aggiunta installazione server UT 4.1: http://wiki.ubuntu-it.org/Giochi/Azione/UrbanTerror

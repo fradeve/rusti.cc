@@ -7,12 +7,12 @@ Novità dal Wiki di Ubuntu-it: Asus Eee PC e Portale Giochi
 È un po' che non sparo per la rete qualche aggiornamento sulle ferventi
 attività che ogni giorno gorgogliano nel `Wiki Italiano di Ubuntu`_.
 
--  Sicuramente, una delle piu importanti - soprattutto per le vendite
-   eccezionali del prodotto in questione - è la guida all'installazione
-   e configurazione di Ubuntu su `**Asus Eee PC**`_, a cura di Hattory.
+- Sicuramente, una delle piu importanti - soprattutto per le vendite
+  eccezionali del prodotto in questione - è la guida all'installazione
+  e configurazione di Ubuntu su `**Asus Eee PC**`_, a cura di Hattory.
 
--  Da ricordare, la nuova guida all'\ `installazione di Ubuntu da penna USB`_.
-   (tradotta gomito a gomito con quella dell'Asus Eee).
+- Da ricordare, la nuova guida all'`installazione di Ubuntu da penna USB`_.
+  (tradotta gomito a gomito con quella dell'Asus Eee).
 
 .. _Wiki Italiano di Ubuntu: http://wiki.ubuntu-it.org
 .. _**Asus Eee PC**: http://wiki.ubuntu-it.org/Hardware/Notebook/AsusEeePC
@@ -25,19 +25,12 @@ Marbell, Dr.Euge), e all'instancabile nuovo Editore del Portale Giochi
 `V <http://wiki.ubuntu-it.org/RiccardoFilippone>`_:
 
 -  `Monsterz <http://wiki.ubuntu-it.org/Giochi/Puzzle/Monsterz>`_
-
 -  `Kobo Deluxe <http://wiki.ubuntu-it.org/Giochi/Puzzle/KoboDeluxe>`_
-
 -  `Free Orion <http://wiki.ubuntu-it.org/Giochi/Strategia/FreeOrion>`_
-
 -  `OpenTyrian <http://wiki.ubuntu-it.org/Giochi/Puzzle/OpenTyrian>`_
-
 -  `Epiphany <http://wiki.ubuntu-it.org/Giochi/Puzzle/Epiphany>`_
-
 -  `Nikwi Deluxe <http://wiki.ubuntu-it.org/Giochi/Puzzle/NikwiDeluxe>`_
-
 -  `HeXen <http://wiki.ubuntu-it.org/Giochi/Azione/HeXen2>`_
-
 -  `PrBoom <http://wiki.ubuntu-it.org/Giochi/Azione/PrBoom>`_
 
 Con questi, il Portale Giochi tocca le **164 guide**. Approfitto anche

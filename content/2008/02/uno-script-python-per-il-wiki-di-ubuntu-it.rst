@@ -53,18 +53,18 @@ Nel frattempo, vi lascio un regalo. Come V ben sa, ho creato uno
 **script in Python** che permette di **creare molto velocemente le
 voci** per il Portale; ho integrato funzioni di:
 
--  controllo del NomeWiki (il nome del gioco viene automaticamente
-   formattato secondo questa forma, se viene inserito in maniera
-   scorretta);
+- controllo del NomeWiki (il nome del gioco viene automaticamente
+  formattato secondo questa forma, se viene inserito in maniera
+  scorretta);
 
--  inserimento veloce dei dati nella tabella descrittiva del gioco;
+- inserimento veloce dei dati nella tabella descrittiva del gioco;
 
--  selezione veloce (e assistita) della Licenza;
+- selezione veloce (e assistita) della Licenza;
 
--  inserimento della pagina nella propria Pagina Prove (se incompleta) o
-   apertura di Firefox alla voce corrispondente (in modalità edit, se la
-   guida è completa); anche sul nome utente inserito in quest'ultimo
-   caso c'è il controllo sul NomeWiki.
+- inserimento della pagina nella propria Pagina Prove (se incompleta) o
+  apertura di Firefox alla voce corrispondente (in modalità edit, se la
+  guida è completa); anche sul nome utente inserito in quest'ultimo
+  caso c'è il controllo sul NomeWiki.
 
 Insomma, non vi lascio a bocca asciutta. Ho creato una 
 `paginetta apposita per lo script`_: se avete suggerimenti, proteste o 

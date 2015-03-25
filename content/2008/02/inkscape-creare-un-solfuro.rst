@@ -2,7 +2,7 @@ Inkscape: creare un solfuro
 ===========================
 
 :date: 2008-02-16 01:03:36
-tags: life, ubuntu, gnulinux
+:tags: life, ubuntu, gnulinux
 
 Titolo strano, eh? La verità è che sto leggendo un po' di post su
 Liferea (dall'Asus EEE, mentre aspetto la mia ragazza in macchina sotto

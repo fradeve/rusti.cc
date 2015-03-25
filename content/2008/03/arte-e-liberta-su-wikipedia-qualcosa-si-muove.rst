@@ -68,7 +68,6 @@ da `Wikipedia`_.
 .. _Wikipedia: http://it.wikipedia.org/w/index.php?title=Bacco_%28Caravaggio%29&oldid=14414841
 
 L'Associazione non-profit `WikiMedia Italia`_ ha
-.. _WikiMedia Italia: http://wikimedia.it
 ricevuto un comunicato dalla segreteria di uno degli onorevoli
 interessati dal nuovo Codice dei Beni Culturali, che avvisava
 dell'avvenuta presa di coscienza del Parlamento e dell'introduzione, nel
@@ -178,3 +177,5 @@ l'artista concede forma all'opera, l'opera stessa è parte del Mondo e
 dei suoi mutamenti, ed il miglior modo di donare al Mondo la
 conoscibilità dell'opera (oltre all'esposizione nel Museo) è quella di
 donarla alle "genti", ponendola nel Pubblico Dominio.
+
+.. _WikiMedia Italia: http://wikimedia.it

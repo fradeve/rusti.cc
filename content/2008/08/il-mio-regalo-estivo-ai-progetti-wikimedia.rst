@@ -20,10 +20,11 @@ vettoriale, tradotte in più lingue
 culturali - da Wikipedia a `Wikiversity`_, a Wikibooks e cosi via.
 
 Morale: se avete anche voi illustrazioni, fotografie, schemi, grafici
-ecc. ecc., fate un bell'upload su Wikimedia Commons` e
+ecc. ecc., fate un bell'`upload su Wikimedia Commons`_ e
 rilasciateli con licenza copyleft, farete un bel favore alla cultura.
 
 .. _Wikimedia Commons: http://commons.wikimedia.org/wiki/Pagina_principale
 .. _Category\:Petrology diagrams: http://commons.wikimedia.org/wiki/Category:Petrology_diagrams
 .. _Wikipedia: http://it.wikipedia.org/wiki/Pagina_principale
 .. _Wikiversity: http://it.wikiversity.org/wiki/Pagina_principale
+.. _upload su Wikimedia Commons: http://commons.wikimedia.org/wiki/Special:UploadWizard

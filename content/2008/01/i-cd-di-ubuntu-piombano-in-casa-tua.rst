@@ -1,15 +1,5 @@
-I CD di Ubuntu piombano a casa tua!
-===================================
-
-:date: 2008-01-30 15:38:13
-:tags: ubuntu
-
-Riprendo un intervento fatto da `V`_ sul `suo blog`_:
-
-
 .. figure:: {filename}/images/91755061cj5.jpg
 
-   
 
 
 Anche se potrà sembrare una cosa strana a molti, avere a disposizione
@@ -20,7 +10,6 @@ conosciuto come `Digital Divide`_.
 
 .. figure:: {filename}/images/manixubuntucq0.png
 
-   
 
 
 Per avvicinarsi a Linux oltre alle numerose occasioni offerte dalle
@@ -40,7 +29,7 @@ installazione di Ubuntu ma che non hanno accesso ad una linea a banda
 larga per scaricarlo o non possono aspettare 4-6 settimane per riceverlo
 da Shipit Ubuntu. Oltre al CD-Rom, verrà inviato anche un adesivo di
 Ubuntu, per fare richiesta e per approfondimenti sulla possibilità di
-avere il CD-Rom di Ubuntu in breve tempo `cliccate QUI`_.
+avere il CD-Rom di Ubuntu in `breve tempo cliccate QUI`_.
 Se invece siete interessati solo agli adesivi cliccate `qui`_;
 sarete indirizzati alla pagina del progetto Sticker.
 
@@ -50,5 +39,5 @@ sarete indirizzati alla pagina del progetto Sticker.
 .. _Canonical: http://www.canonical.com
 .. _Shipit Ubuntu: https://shipit.ubuntu.com
 .. _Gruppo Promozione: http://wiki.ubuntu-it.org/GruppoPromozione
-.. _cliccate QUI: http://wiki.ubuntu-it.org/GruppoPromozione/ProgettoCDUbuntu
+.. _breve tempo cliccate QUI: http://wiki.ubuntu-it.org/GruppoPromozione/ProgettoCDUbuntu
 .. _qui: http://wiki.ubuntu-it.org/GruppoPromozione/StickerUbuntu
