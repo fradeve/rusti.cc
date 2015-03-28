@@ -8,7 +8,7 @@ Gli archeologi amano il software libero
 .. figure:: {filename}/images/2897528561_885ed21ae0.jpg
    :alt: http://www.flickr.com/photos/wessexarchaeology/2897528561/
 
-   Practical Archaeology Course, measuring, by Wessex Archaeology, on Flickr, licensed CC-BY- NC-SA*
+   Practical Archaeology Course, measuring, by Wessex Archaeology, on Flickr, licensed CC-BY- NC-SA
 
 
 Dov'è finito Fradeve? In molti se lo saranno chiesto vedendomi
@@ -113,13 +113,14 @@ delle più sfrenate aspettative ed esigenze, ma molto più potente,
 flessibile e creativo di quello proprietario. Archeologi, alla
 riscossa!!
 
-*PS: tempo fa (e mi scuso per il ritardo) `M.
-Fioretti <http://digifreedom.net/>`_ mi ha segnalato un `suo
-articolo <http://www.linux.com/archive/articles/55248>`_ su linux.com,
-a proposito di archeologia open source: lettura vivamente consigliata.*
+*PS*: tempo fa (e mi scuso per il ritardo) `M. Fioretti`_ mi ha 
+segnalato un `suo articolo`_ su linux.com, a proposito di archeologia 
+open source: lettura vivamente consigliata.
 
 .. _Siponto: http://it.wikipedia.org/wiki/Siponto
 .. _Manfredonia: http://it.wikipedia.org/wiki/Manfredonia
 .. _Tabula Peuntingeriana: http://it.wikipedia.org/wiki/Tabula_Peuntingeriana
 .. _ArcheOS: http://www.arc-team.com/archeos/wiki/doku.php
 .. _Arc-Team: http://www.arc-team.com
+.. _M. Fioretti: http://digifreedom.net
+.. _suo articolo: http://www.linux.com/archive/articles/55248
