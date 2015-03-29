@@ -54,14 +54,14 @@ will:
 
 Other features we will likely introduce:
 
--  full support for osteoarchaeology and paleopathology data,
-   comprehensive of detailed data sheets exportation, using LaTeX
--  support real-time collaboration between field and office connecting
-   databases with mobile GIS (gvSIG mobile?)
--  a full-featured quantitative archaeology analysis system, based on a
-   KISS web interface to R and using PostGIS data
--  here we are: a plugin system to easily add features to the whole
-   product
+- full support for osteoarchaeology and paleopathology data,
+  comprehensive of detailed data sheets exportation, using LaTeX
+- support real-time collaboration between field and office connecting
+  databases with mobile GIS (gvSIG mobile?)
+- a full-featured quantitative archaeology analysis system, based on a
+  KISS web interface to R and using PostGIS data
+- here we are: a plugin system to easily add features to the whole
+  product
 
 Where we are now?
 -----------------

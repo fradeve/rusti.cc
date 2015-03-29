@@ -1,0 +1,52 @@
+Recap: 2011 
+===========
+
+:date: 2012-01-08 20:30:00
+:tags: recap
+
+Obiettivi annuali, sunto:
+
+Libri
+-----
+
+Nessun progresso concreto [[!progress percent="50]]
+
+Esami
+-----
+
+Wow, ci sono novità! [[!progress percent="30]]
+
+Jogging
+-------
+
+[[!progress percent="49]]
+
+Quest'anno si conclude con gli obiettivi a metà, ma sono successe un po'
+d'altre cose:
+
+- passaggio definitivo da gmail.com ad `autistici.org`_; finalmente un po' di
+  privacy riguardo ciò che leggo e scrivo via posta;
+- un `muttrc`_ completamente
+  ristrutturato e nuovamente funzionale, anche con due account di posta
+  (verrà postato a breve);
+- passaggio definitivo da Empathy a `IRSSI`_;
+- 2 conferenze sul software geografico libero (in `archeologia`_ 
+  e `non`_ con le relative slides, per la prima volta completamente in LaTeX;
+- uncluttering: eliminato vario materiale inutile, venduto un PC fisso
+  (`howard`_) e nuova workstation solo con Thinkpad (edgar);
+- fondata `OIA`_;
+- ho imparato ad autoprodurre `muffin`_, `sapone`_, yogurt, `ecc`_;
+- visitate Berlino e Munchen;
+- tanto tanto tanto lavoro
+- una nota dolce :)
+
+.. _autistici.org: http://www.autistici.org
+.. _muttrc: {filename}/2012/01/my-muttrc.rst
+.. _IRSSI: http://www.irssi.org
+.. _archeologia: {filename}/2011/gnewarchaeology-nuove-pontificazioni.rst
+.. _non: {filename}/2011/11/gfossday-il-mio-regno-per-talk.rst
+.. _howard: {filename}/2011/11/addio-howard.rst
+.. _OIA: http://www.openoia.fradeve.org
+.. _muffin: {filename}/2011/04/autoproduzione-1-i-muffin.rst
+.. _sapone: {filename}/2011/06/autoproduzione-2-il-sapone.rst
+.. _ecc: {filename}/2011/09/l-ecovillaggio-basilico.rst
