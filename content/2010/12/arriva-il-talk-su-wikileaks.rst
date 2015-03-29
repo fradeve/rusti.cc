@@ -6,13 +6,13 @@ Arriva il talk su WikiLeaks!
 
 Ricevo, partecipo, sottoscrivo e ripubblico: il 29 dicembre 2010 alle
 18.00, presso la sede dell'Associazione VieDiFuga (via Cattedrale 103,
-Ruvo di Puglia, BA) `sdonk`__ terrà un talk dal
+Ruvo di Puglia, BA) `sdonk`_ terrà un talk dal
 titolo *Wikileaks e la libera informazione*, in occasione
 dell'inaugurazione del server mirror di WikiLeaks sponsorizzato tramite
 una raccolta fondi dall'Associazione stessa. Il mio invito (come
 qualcuno ha scritto in questi giorni) è a spegnere le luci di Natale e
 ad accendere le menti.
-`Qui`__ l'evento su Facciabuco.
+`Qui`_ l'evento su Facciabuco.
 
 Ecco il comunicato:
 
@@ -48,8 +48,8 @@ Update
 ------
 
 Com'è andata a finire? Bene! Grazie all'impegno di VieDiFuga è stato
-messo su il sito `www.wikileaksitalia.com`__ mirror di
-quello internazionale più famoso. Inoltre, `qui su Slideshare`__
+messo su il sito `www.wikileaksitalia.com`_ mirror di
+quello internazionale più famoso. Inoltre, `qui su Slideshare`_
 potete trovare le slide della serata ;)
 
 .. _sdonk: http://blog.sdonk.org

@@ -16,16 +16,16 @@ Questo blog era precedentemente hostato su un dominio netsons
 regole di hosting gratuito di Netsons, sono stato costretto a cercare
 una soluzione per hostare il mio blog gratuitamente da qualche altra
 parte. E la soluzione è arrivata -- incredibilmente -- prima dalla
-*Public folder* di `Dropbox`__, poi dalla magnanimità di `Sdonk`__, 
+*Public folder* di `Dropbox`_, poi dalla magnanimità di `Sdonk`_, 
 che si è gentilmente offerto di ospitare queste pagine sul suo server, 
 *paranoia*. Per farla breve, questo blog adesso è un insieme di pagine 
 statiche, generate da un motore di wiki/blogging (*bliki*) open source, 
-di nome `Ikiwiki`__. Non è stato neanche tanto semplice
+di nome `Ikiwiki`_. Non è stato neanche tanto semplice
 migrare tutti i commenti su Disqus, ma tant'è, alla fine ci sono
 riuscito. Mi riservo di approfondire il tema in un post successivo.
 Soprattutto, in questo lungo periodo di assenza, tutti i post sono stati
 migrati dal tremendo html generato da Wordpress allo squisito
-`Markdown`__.
+`Markdown`_.
 Prossimamente, ne leggerete delle belle.
 
 Ubuntu Linux a Molfetta (BA) con Il Fatto!
@@ -33,7 +33,7 @@ Ubuntu Linux a Molfetta (BA) con Il Fatto!
 
 Questa mi sembra la notizia più interessante degli ultimi mesi. Grazie
 all'impegno e alla disponibilità di un editore locale, quello de 
-`Il Fatto`__ (che viene distribuito a Molfetta e
+`Il Fatto`_ (che viene distribuito a Molfetta e
 Bisceglie). Il suddetto editore si è premurato di mettere a nostra
 disposizione, con la collaborazione del Comune di Molfetta, una sala
 (quella della biblioteca presso la "Fabbrica di San Domenico") nella
@@ -52,31 +52,25 @@ che i presupposti ci sono :D
 
 Nel frattempo, vi segnalo il sito intorno al quale orbita la comunità
 molfettese degli utenti di Ubuntu:
-`http://linux.ilfatto.net`__. Se vi siete
+`http://linux.ilfatto.net`_. Se vi siete
 persi gli appuntamenti perché non l'avete letto o non avete avuto modo
 di partecipare, non vi preoccupate, continuate a seguire il sito e vi
 terremo aggiornati sulle prossime iniziative!
 
-.. raw:: html
+.. figure:: {filename}/images/linux_ilfatto.jpg
 
-   <center>
 
-|image0|\ \_Uno stuolo di volontari procede alle installazioni mentre
-parlo di Ubuntu\_
+   Uno stuolo di volontari procede alle installazioni mentre parlo di Ubuntu
 
-.. raw:: html
 
-   </center>
+.. figure:: {filename}/images/ilfattolinux.jpg
+   :alt: http://www.ilfatto.net/ilfattolinux.jpg
 
-   <center>
 
-|image1|\ \ `*La locandina dell'evento* <http://www.ilfatto.net/ilfattolinux.jpg>`__
+   La locandina dell'evento
 
-.. raw:: html
 
-   </center>
-
-Ecco l'articoletto che ho scritto, `pubblicato su Il Fatto`__:
+Ecco l'articoletto che ho scritto, `pubblicato su Il Fatto`_:
 
     Molfetta - Ieri, con l'ultimo appuntamento alla Fabbrica di San
     Domenico, si è chiuso il mini corso su Ubuntu Linux, organizzato da
@@ -106,8 +100,6 @@ Ecco l'articoletto che ho scritto, `pubblicato su Il Fatto`__:
 
     Restate sintonizzati e... rock and roll!
 
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/linux_ilfatto.jpg
-.. |image1| image:: http://dl.dropbox.com/u/369614/blog/img_red/ilfattolinux.jpg
 .. _Dropbox: www.dropbox.com
 .. _Sdonk: http://blog.sdonk.org
 .. _Ikiwiki: http://ikiwiki.info

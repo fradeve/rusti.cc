@@ -4,7 +4,6 @@ OpenStreetMap live @ Bollenti Spiriti Camp
 :date: 2010-02-06 12:52:45
 :tags: calliope, openstreetmap, gnulinux
 
-
 .. figure:: {filename}/images/dscf3513.jpg
 
 

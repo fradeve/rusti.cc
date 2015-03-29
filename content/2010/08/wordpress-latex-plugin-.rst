@@ -6,18 +6,13 @@ Wordpress latex plugin!
 
 This blog is now LaTeX-powered! LOL
 
-.. raw:: html
 
-   <center>
+.. figure:: {filename}/images/equation.png
 
-.. figure:: http://dl.dropbox.com/u/369614/blog/img_red/equation.png
-   :alt: equazione\_latex
 
-   equazione\_latex
-::
+.. code-block:: latex
 
-    :::latex
-    \underset{\text{pirosseno ferroso}}{4FeSiO_{3}} + O_{2}+nH_{2}O\rightleftharpoons
-    \underset{\text{limonite}}{4FeO_{3}\cdot nH_{2}O}+\underset{\text{silice
-    disciolta}}{4SiO_{2}}
+   \underset{\text{pirosseno ferroso}}{4FeSiO_{3}} + O_{2}+nH_{2}O\rightleftharpoons
+   \underset{\text{limonite}}{4FeO_{3}\cdot nH_{2}O}+\underset{\text{silice
+   disciolta}}{4SiO_{2}}
 

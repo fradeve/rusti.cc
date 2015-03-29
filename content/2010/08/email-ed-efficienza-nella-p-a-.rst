@@ -12,7 +12,7 @@ Con questo post non sto riportando email private, ma lo scambio di
 informazioni avvenuto tra un cittadino italiano ed un ufficio della
 pubblica amministrazione nel pieno svolgimento delle sue funzioni.
 
-A pochi sarà sfuggita la `polemica`__
+A pochi sarà sfuggita la `polemica`_
 inaugurata dall'amministrazione comunale leghista del Comune di Adro,
 nella persona del sindaco Danilo Oscar Lancini. Mio fratello, colpito
 non so bene se dall'arroganza o dalla cecità morale delle quali

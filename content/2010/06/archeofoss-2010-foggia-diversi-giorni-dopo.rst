@@ -8,21 +8,17 @@ Ho ripescato dalla mia penna USB alcune annotazioni scritte in treno
 durante i giorni dell'ArcheoFOSS di Foggia 2010. Le pubblico, con un pò
 di ritardo ;)
 
-.. raw:: html
+.. figure:: {filename}/images/DSCF3738.JPG
 
-   <center>
 
-|image0|\ \_Le giovani leve del software libero in archeologia :)\_
+   Le giovani leve del software libero in archeologia :)
 
-.. raw:: html
-
-   </center>
 
 ArchaeoFOSS, primo giorno
 =========================
 
 Ieri e oggi [sono stato] sarò a Foggia, nel Museo Civico, per il
-`Workshop Nazionale sul Software Libero in Archeologia`__,
+`Workshop Nazionale sul Software Libero in Archeologia`_,
 l'ArchaeoFOSS 2010. La conferenza è alla sua quinta edizione, e per
 quanto possano piacerci i formalismi, permettetemi, è proprio il caso di
 dire che "ruleggia". È diventata un'incredibile fucina di idee,
@@ -34,18 +30,14 @@ era a Roma, quest'anno è stato ospitato nel Museo Civico di Foggia (che
 consiglio a tutti di visitare, molto ricco e ben organizzato). Programma
 della mattina:
 
--  breve introduzione dei professori e del rettore;
-
--  prima carrellata di interventi sulle tecnologie da campo open source
+- breve introduzione dei professori e del rettore;
+- prima carrellata di interventi sulle tecnologie da campo open source
    (GPS e affini);
-
--  pausa pranzo (è incredibile quanto siano convenienti i ristoranti in
+- pausa pranzo (è incredibile quanto siano convenienti i ristoranti in
    centro a Foggia);
-
--  seconda carrellata pomeridiana sui database, condita da cenni sulle
+- seconda carrellata pomeridiana sui database, condita da cenni sulle
    licenze libere;
-
--  tanta allegria.
+- tanta allegria.
 
 Volendo fare una breve panoramica, negli ultimi anni si è avuta una vera
 e propria trasformazione del settore. Il campo dei beni culturali,
@@ -88,16 +80,15 @@ PostGIS e PostgreSQL, passando per QuantumGIS e GRASS GIS. Salvo poi
 svilupparle appositamente per le proprie esigenze, come accade in altre
 occasioni. Oppure, tentare di sviluppare dei driver alternativi per il
 trasferimento dei dati da dispositivi completamente proprietari, come
-hanno fatto Stefano Costa e Luca Bezzi, con
-`TotalOpenStation <http://tops.berlios.de/>`__, un software per il
-trasferimento dei dati registrati dalla stazione totale al PC e ai
-palmari dotati di sistemi operativi GNU/Linux, come
-`Openmoko <http://www.openmoko.com/>`__ o Maemo.
+hanno fatto Stefano Costa e Luca Bezzi, con `TotalOpenStation`_, un 
+software per il trasferimento dei dati registrati dalla stazione totale 
+al PC e ai palmari dotati di sistemi operativi GNU/Linux, come
+`Openmoko`_ o Maemo.
 
 Ma le novità hanno raggiunto orizzonti impressionanti. Sono allo studio
 da parte di alcune università di sistemi di analisi basati su software
 GIS open source, mentre in alcuni punti d'Italia (soprattutto a Napoli e
-`Foggia`__)
+`Foggia`_)
 sono allo studio sistemi di ricostruzione di scavi archeologici in 3D,
 in stile Second Life, realizzati rigorosamente su Debian e solo con
 software open source (ricordate Blender?).
@@ -196,7 +187,6 @@ attivamente alla ricerca e all'introduzione di nuove idee.
 
 Speriamo sia così :)
 
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/DSCF3738.JPG
 .. _Workshop Nazionale sul Software Libero in Archeologia: http://www.archeologiadigitale.it/archeofoss/2010.html
 .. _TotalOpenStation: http://tops.berlios.de
 .. _Openmoko: http://www.openmoko.com

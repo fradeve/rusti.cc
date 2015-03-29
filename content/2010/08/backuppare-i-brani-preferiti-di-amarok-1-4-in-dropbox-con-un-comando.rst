@@ -18,7 +18,7 @@ assegno 5 stelle su Amarok (uso Amarok 1.4, il 2 non mi convince per
 niente). In questo post vedremo proprio come creare una scorciatoia da
 terminale per ordinare ad Amarok di salvare in un file .m3u, in una
 cartella a nostro piacimento, ad esempio... Dropbox! Il gioco sta tutto
-in `dcop`__, componente sul quale Amarok 1.4 basa molte delle sue 
+in `dcop`_, componente sul quale Amarok 1.4 basa molte delle sue 
 funzioni relative alla gestione della musica (dcop è stato sostituito 
 da d-bus in Amarok 2, per una migliore integrazione con KDE4).
 
@@ -31,17 +31,15 @@ ad esempio "bellissime".
 Possiamo quindi passare ad Amarok, dopo averlo aperto, i seguenti
 comandi tramite dcop:
 
-::
+.. code-block:: bash
 
-    :::bash
-    dcop amarok playlistbrowser loadPlaylist bellissime
+   dcop amarok playlistbrowser loadPlaylist bellissime
 
 Permette di caricare la playlist "bellissime" nel player;
 
-::
+.. code-block:: bash
 
-    :::bash
-    dcop amarok playlist saveM3u bellissime.m3u /home/user
+   dcop amarok playlist saveM3u bellissime.m3u /home/user
 
 Permette di esportare la playlist appena caricata nella propria home,
 sostituendo ovviamente "user" con il proprio nome utente.
@@ -49,26 +47,23 @@ sostituendo ovviamente "user" con il proprio nome utente.
 Possiamo quindi provare a concatenare i comandi, in un'unica stringa da
 aggiungere ai nostri alias di .bashrc, ad esempio:
 
-::
+.. code-block:: bash
 
-    :::bash
-    dcop amarok playlistbrowser loadPlaylist bellissime && dcop amarok playlist saveM3u bellissime.m3u /home/user && mv /home/user/bellissime.m3u ~/Dropbox/bellissime.m3u
+   dcop amarok playlistbrowser loadPlaylist bellissime && dcop amarok playlist saveM3u bellissime.m3u /home/user && mv /home/user/bellissime.m3u ~/Dropbox/bellissime.m3u
 
 So che si poteva tranquillamente evitare l'ultimo comando, ma ho
 preferito aggiungere un passaggio per rendere le cose più semplici. Il
 nostro alias da aggiungere al file ~/.bashrc, quindi sarebbe:
 
-::
+.. code-block:: bash
 
-    :::bash
-    alias amarok-backup='dcop amarok playlistbrowser loadPlaylist bellissime && dcop amarok playlist saveM3u bellissime.m3u /home/user && mv /home/user/bellissime.m3u ~/Dropbox/bellissime.m3u'
+   alias amarok-backup='dcop amarok playlistbrowser loadPlaylist bellissime && dcop amarok playlist saveM3u bellissime.m3u /home/user && mv /home/user/bellissime.m3u ~/Dropbox/bellissime.m3u'
 
 Infine, aggiorniamo il nostro bashrc con
 
-::
+.. code-block:: bash
 
-    :::bash
-    source ~/.bashrc
+   source ~/.bashrc
 
 Dovremo solamente stare attenti a seguire bene la procedura prima di
 eseguire il comando "amarok-backup" da terminale, altrimenti potremmo

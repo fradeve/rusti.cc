@@ -4,17 +4,14 @@ Richard Stallman a Foggia: impressioni
 :date: 2010-06-01 18:52:49
 :tags: ubuntu, rms, gnulinux, foggia
 
-.. raw:: html
 
-   <center>
+.. figure:: {filename}/images/stallman.JPG
 
-|image0|\ \_RMS durante il talk a Foggia\_
 
-.. raw:: html
+   RMS durante il talk a Foggia.
 
-   </center>
 
-Come ho scritto `qualche post fa`__,
+Come ho scritto `qualche post fa`_,
 le cose accadono, per caso, improvvisamente. Ed è proprio così che son
 venuto a sapere che RMS avrebbe tenuto una *lectio magistralis* (o come
 piace dire a noi geek, un talk) nel liceo classico Lanza di Foggia. Come
@@ -56,7 +53,7 @@ esattamente ciò che fa Apple con l'iPod). O ancora, esistono i DRM, e
 questo è un capitolo a parte, ma che mette comunque a rischio la libertà
 di scambio/condivisione dell'informazione. Qualche piccolo rischio tocca
 anche agli utenti Ubuntu, è sempre bene tenere gli occhi aperti ai
-pacchetti proprietari (a proposito, installate `questo`__)!
+pacchetti proprietari (a proposito, installate `questo`_)!
 
 Esiste un interessante ventaglio di possibili violazioni della licenza
 GNU e di minacce alle nostre libertà personali. Ed una delle cose che
@@ -96,10 +93,9 @@ impressioni:
 
 Per concludere, ringrazio pubblicamente tutti quelli che hanno
 contribuito ad organizzare l'evento, i volontari del Lanza ed in primis
-`Flavio Tisi`__, che ha contattato RMS e le istituzioni che 
+Flavio Tisi, che ha contattato RMS e le istituzioni che 
 cominciano ad aprire gli occhi e spalancare le orecchie alle
 novità del software libero :)
 
-.. |image0| image:: http://dl.dropbox.com/u/369614/blog/img_red/stallman.JPG
 .. _qualche post fa: http://dl.dropbox.com/u/369614/blog/public_html/FradeveOpenblog/posts/2010/05/things-happens.html
 .. _questo: http://it.wikipedia.org/wiki/Vrms

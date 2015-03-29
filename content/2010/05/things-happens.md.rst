@@ -13,13 +13,13 @@ giornata, ed ha a che fare con free software.
 Però per fare questo, serve tempo, ed il tempo è sempre limitato. Cosa
 sta per arrivare:
 
--  ArcheoFOSS 2010: il software libero in archeologia, impressioni e
-   considerazioni
--  Richard Stallman a Foggia, cos'è successo
--  la prima community virtuale degli archeologi che lavorano con
-   software libero è in arrivo...
--  OpenStreetMap riesce ad ottenere il permesso di ricalcare i WMS del
-   Portale Cartografico Nazionale
--  e naturalmente, le mie impressioni sulla nuova Ubuntu ;)
+- ArcheoFOSS 2010: il software libero in archeologia, impressioni e
+  considerazioni
+- Richard Stallman a Foggia, cos'è successo
+- la prima community virtuale degli archeologi che lavorano con
+  software libero è in arrivo...
+- OpenStreetMap riesce ad ottenere il permesso di ricalcare i WMS del
+  Portale Cartografico Nazionale
+- e naturalmente, le mie impressioni sulla nuova Ubuntu ;)
 
 Stay tuned ;)
