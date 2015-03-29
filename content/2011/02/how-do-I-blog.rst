@@ -83,7 +83,7 @@ aggregatore di feed RSS devono passare prima da `FeedBurner`_ per
 essere formattati in Atom (invece che RSS) prima di essere inoltrati via
 Brdcst. Purtroppo Brdcst non inoltra verso Linkedin, per cui i retweet
 (Twitter RT, presi via RSS pubblico) devono passare a questo scopo
-attraverso `Iffft`_. Tutti i servizi in verde sono realizzati
+attraverso `Ifttt`_. Tutti i servizi in verde sono realizzati
 utilizzando software libero, quelli in rosso sono proprietari.
 
 

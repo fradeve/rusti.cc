@@ -27,7 +27,7 @@ Negli ultimi tempi ho approfondito il concetto di "generazione zero",
 ovvero la tendenza di alcune persone nate dopo gli Anni '80 ad evitare
 gli sprechi ed il consumismo. In altre parole: quanto di ciò che
 compriamo ci è veramente necessario? Non è il caso di pensare al fatto
-che molti degli oggetti che possediamo `in realtà non ci servono`_.
+che molti degli oggetti che possediamo in realtà non ci servono.
 Obiettivo per il nuovo anno: poche cose, semplici, funzionanti. Questa
 riflessione è cominciata nel 2010:
 
@@ -95,6 +95,6 @@ possa fare...
 .. _Xmonad: http://xmonad.org
 .. _Ikiwiki: http://ikiwiki.info
 .. _Mutt: http://www.mutt.org
-.. _in realtà non ci servono: {filename}/2008/01/unclutter-your-desk.rst
+.. _avevo cominciato: {filename}/2008/01/unclutter-your-desk.rst
 .. _sostituiti entrambi: {filename}/2011/01/uncluttering-the-last-step
 .. _category apposita: http://rusti.cc/tags/resume.html

@@ -20,7 +20,7 @@ Come sempre, perché sbattersi?
 
 - `Google tracks you`_
 - `Internet privacy`_
-- `Debian: leaving the cloud`_ interessante elenco di software
+- Debian: `leaving the cloud`_ interessante elenco di software
   liberi che possono sostituire quelli dei servizi cloud
 
 Da sistemare, parziali
@@ -177,7 +177,7 @@ Lista delle cose da fare sincronizzata su PC e cellulare grazie a `Todo.txt`_.
 .. _Hyde: http://hyde.github.com
 .. _Awstats: http://awstats.sourceforge.net
 .. _Autistici/Inventati: http://www.autistici.org/it
-.. _Riseup: https://riseup.net/it
+.. _Riseup.net: https://riseup.net/it
 .. _Mutt: http://www.mutt.org
 .. _OfflineIMAP: http://offlineimap.org
 .. _K-9 Mail: https://code.google.com/p/k9mail
@@ -189,7 +189,7 @@ Lista delle cose da fare sincronizzata su PC e cellulare grazie a `Todo.txt`_.
 .. _A/I Bookmarks: https://link.autistici.org
 .. _TT-RSS: http://tt-rss.org
 .. _TT-RSS-mobile: https://github.com/mboinet/ttrss-mobile
-.. _applicatione ufficiale: https://gitorious.org/owncloud/android
+.. _applicazione ufficiale: https://gitorious.org/owncloud/android
 .. _qui: {filename}/2012/03/usare-rsync-con-box.rst
 .. _Brdcst it!: http://brdcst.it
 .. _ifttt: http://ifttt.com
@@ -203,7 +203,7 @@ Lista delle cose da fare sincronizzata su PC e cellulare grazie a `Todo.txt`_.
 .. _howto qui: {filename}/2010/08/installare-texlive-da-ctan-su-ubuntu-lucid.rst
 .. _Todo.txt: http://www.todotxt.com
 .. _FeedBurner: http://feedburner.google.com
-.. _Debian: leaving the cloud: http://wiki.debian.org/FreedomBox/LeavingTheCloud
+.. _leaving the cloud: leaving the cloud: http://wiki.debian.org/FreedomBox/LeavingTheCloud
 .. _Webmin: http://www.webmin.com
 .. _Libre.fm: http://libre.fm
 .. _lastfmsubmitd: http://www.red-bean.com/decklin/lastfmsubmitd

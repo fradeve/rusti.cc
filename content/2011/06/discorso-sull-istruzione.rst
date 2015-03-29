@@ -7,8 +7,7 @@ Discorso sull'istruzione
 Una persona a me cara che sta studiando in questo periodo, il mio esame
 di Fisica II che vedi lenti ma costanti progressi e chissà quali altri
 stimoli si sono amalgamati tutti insieme quando ho sentito qualcuno
-citare questo discorso del presidente USA `Barack Obama`_,
- che ho deciso di
+citare questo discorso del presidente USA `Barack Obama`_, che ho deciso di
 approfondire. Il discorso si è tenuto l'8 settembre 2009, davanti agli
 studenti della Wakefield High School di Arlington, in Virginia. Riporto
 di seguito la traduzione integrale, tratta da `qui`_,

@@ -56,10 +56,9 @@ above (`cmdline.txt`)
    sdram_freq 350
    over_voltage=2
 
-This will underclock RPi to assure stability. Values taken from `this
-thread`_.
+This will underclock RPi to assure stability. Values taken from `this thread`_.
 
-.. _thread: http://raspberrypi.stackexchange.com/questions/2069/filesystem-corruption-on-the-sd-card
+.. _this thread: http://raspberrypi.stackexchange.com/questions/2069/filesystem-corruption-on-the-sd-card
 
 Boot, configure base system
 ---------------------------

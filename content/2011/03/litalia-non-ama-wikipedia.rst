@@ -54,3 +54,4 @@ Sad but true.
 .. _GerardM: http://www.blogger.com/profile/14287269079265427282
 .. _qui: http://ultimategerardm.blogspot.com/2011/03/italy-loves-its-monuments.html
 .. _Decreto 20 aprile 2005: http://www.ambientediritto.it/legislazione/beni%20culturali/2005/dm%2020apr2005.htm
+.. _Planet Wikimedia: https://en.planet.wikimedia.org

@@ -41,7 +41,7 @@ SOCIAL = (
             ('icon-archive', SITEURL + '/archives.html'),
             ('icon-tags', SITEURL + '/tags.html'),
             ('icon-pushpin', SITEURL + '/featured.html'),
-            ('icon-user', 'http://me.fradeve.org'),
+            ('icon-user', SITEURL + '/pages/social.html'),
             ('icon-github', 'http://github.com/fradeve/fradeve.org')
          )
 
