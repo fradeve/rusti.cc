@@ -35,7 +35,7 @@ quindi faccio un riassunto:
 
 Spero di non aver dimenticato niente, si accettano suggerimenti.
 
-.. _precedenti post: http://fradeve.org/2008/05/perche-google-maps-fa-schifo.html
+.. _precedenti post: {filename}/2008/05/perche-google-maps-fa-schifo.rst
 
 2) Cosa serve?
 --------------

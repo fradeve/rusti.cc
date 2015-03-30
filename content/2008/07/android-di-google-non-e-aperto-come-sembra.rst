@@ -12,11 +12,6 @@ operativo basato su GNU/Linux per cellulari/palmari, non è
 Non mi piace essere autoreferenziale, ma `ne avevo già parlato`_
 in passato.
 
-.. _ArsTechnica: http://arstechnica.com/news.ars/post/20080715-googles-android-platform-not-so-open-after-all.html
-.. _Android: http://it.wikipedia.org/wiki/Android
-.. _open source come Google ha più volte affermato: http://code.google.com/android
-.. _ne avevo già parlato: http://fradeve.org/2008/06/palmari-e-software-libero-attenti-a-nokia-google.html
-
 In breve, a quanto pare, mentre la maggior parte della community di
 sviluppatori volontari di Android è costretta ad usare una versione
 dell'SDK aggiornata a Febbraio di quest'anno, e stanno chiedendosi
@@ -44,3 +39,8 @@ A questo punto, vien da chiedersi: dato che Google ha nascosto la nuova
 SDK dietro un accordo di non divulgazione, **quante altre cose sta
 nascondendo, dicendo nel frattempo al mondo che "Noi di Google crediamo
 nell'Open Source"?**
+
+.. _ArsTechnica: http://arstechnica.com/news.ars/post/20080715-googles-android-platform-not-so-open-after-all.html
+.. _Android: http://it.wikipedia.org/wiki/Android
+.. _open source come Google ha più volte affermato: http://code.google.com/android
+.. _ne avevo già parlato: {filename}/2008/06/palmari-e-software-libero-attenti-a-nokia-google.rst

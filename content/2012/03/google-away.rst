@@ -60,7 +60,6 @@ Funzionanti
 Sistemi operativi
 ~~~~~~~~~~~~~~~~~
 
-- Vedi pagina hardware su `sito`_
 - tutti i servizi su server sono offerti grazie a `Lighttpd`_, su 
   server amministrato con `Webmin`_
 
@@ -165,7 +164,6 @@ Todo
 Lista delle cose da fare sincronizzata su PC e cellulare grazie a `Todo.txt`_.
 
 
-.. _sito: http://me.fradeve.org/interessi.html
 .. _OwnCloud: http://owncloud.org
 .. _Amarok: http://amarok.kde.org
 .. _Box.net: http://www.box.com

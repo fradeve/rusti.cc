@@ -41,7 +41,7 @@ Per ulteriori info, ecco la `pagina dei tweak`_ di SHR e il
 wiki di Navit. Si ringrazia per l'aiuto `Christ van Willegen`_.
 
 .. _qui: http://download.navit-project.org/navit/openmoko/svn/
-.. _scaricare il mio file: http://dl.getdropbox.com/u/369614/navit.xml
+.. _scaricare il mio file: http://rusti.cc/static/navit.xml
 .. _CloudMade: http://downloads.cloudmade.com/europe/italy#breadcrumbs
 .. _pagina dei tweak: http://shr-project.org/trac/wiki/Tweaks>`_ di SHR e il `wiki di Navit <http://wiki.navit-project.org/index.php/Main_Page
 .. _Christ van Willegen: https://launchpad.net/%7Ecvwillegen+launchpad

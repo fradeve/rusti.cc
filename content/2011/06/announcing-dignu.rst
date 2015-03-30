@@ -102,7 +102,7 @@ At now, we don't have a website, will be up in some weeks, but we're
 already working on django, database and PostGIS issues. If you're
 interested in the project or have any suggestion, please append it to
 the discussions that will take place in this ML, or simply mail me at
-`francesco.devirgilio@fradeve.org`.
+`francesco.devirgilio@inventati.org`.
 
 Cheers
 

@@ -102,6 +102,6 @@ ulteriori sviluppi e dimostrazioni. Intanto, l'entrata in vendita del
 Neo FreeRunner si fa sempre più vicina ;)
 
 .. _Andrzej "balrog-kun" Zaborowski: http://unadventure.wordpress.com/2008/04/28/unscientific-gps-note
-.. _Neo FreeRunner: http://fradeve.org/log/2008/04/le-sbalorditive-prestazioni-gps-del-neo-freerunner.html
+.. _Neo FreeRunner: {filename}/2008/04/le-sbalorditive-prestazioni-gps-del-neo-freerunner.rst
 .. _JOSM: http://wiki.openstreetmap.org/index.php/It:JOSM
 .. _OpenStreetMap: http://www.openstreetmap.org

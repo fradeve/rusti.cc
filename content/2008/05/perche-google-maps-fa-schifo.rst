@@ -21,7 +21,7 @@ mappe di Google integrate, Fradeve ci venga a dire che fanno schifo?
 
 Possibile.
 
-.. _precedenti post: http://fradeve.org/2008/05/perche-openstreetmap-parte-2.html
+.. _precedenti post: {filename}/2008/05/perche-openstreetmap-parte-2.rst
 
 1. Le vie appaiono, le vie scompaiono
 -------------------------------------

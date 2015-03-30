@@ -24,7 +24,7 @@ CATEGORY_FEED_ATOM = None
 
 # Files
 PATH = 'content'
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'static']
 
 PLUGINS = ['pelican_youtube']
 

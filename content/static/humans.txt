@@ -1,0 +1,16 @@
+/* TEAM */
+    Chef:Francesco de Virgilio
+    Contact: fradeve [at] inventati.org
+    Twitter: @fradeve
+    From:London, United Kingdom
+
+/* THANKS */
+
+    (First) Andrew Seidl
+    Pelican Theme
+
+/* SITE */
+    Last update:2014/03/30
+    Language: Italiano / English
+    Doctype:HTML5
+    IDE: Vim

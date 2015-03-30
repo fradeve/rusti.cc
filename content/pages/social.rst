@@ -17,8 +17,8 @@ Social
 - `slideshare`_
 - `academia.edu`_
 
-.. _gpg: {filename}/static/fradeve_gpg.txt
-.. _cv: {filename}/static/fradeve_cv.pdf
+.. _gpg: https://pgp.mit.edu/pks/lookup?op=get&search=0xD2DC673BEA878B70
+.. _cv: http://rusti.cc/static/fradeve_cv.pdf
 .. _linkedin: http://uk.linkedin.com/in/francescodevirgilio/en
 .. _github: https://github.com/fradeve
 .. _twitter: https://twitter.com/fradeve

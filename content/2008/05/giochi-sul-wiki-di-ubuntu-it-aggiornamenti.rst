@@ -22,7 +22,7 @@ Approfitto per ringraziare `cristian_c`_ per i numerosi suggerimenti e
 
 Buon divertimento a tutti!
 
-.. _Neo FreeRunner: http://fradeve.org/2008/04/neo-freerunner-il-video-e-le-foto.html
+.. _Neo FreeRunner: {filename}/2008/04/neo-freerunner-il-video-e-le-foto.rst
 .. _Portale Giochi: http://wiki.ubuntu-it.org/Giochi
 .. _Cave9: http://wiki.ubuntu-it.org/Giochi/Simulazione/Cave9
 .. _TuxFootball: http://wiki.ubuntu-it.org/Giochi/Sport/TuxFootball
