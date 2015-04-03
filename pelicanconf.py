@@ -12,6 +12,7 @@ TIMEZONE = 'Europe/London'
 DEFAULT_LANG = 'en'
 
 THEME = 'andrewseidl-theme'
+TYPOGRIFY = True
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
@@ -31,10 +32,6 @@ PLUGINS = ['pelican_youtube']
 # Comments
 DISQUS_SITENAME = 'fradeveorig'
 DISQUS_PUBLICKEY = '4VY3RiHzHB4j6Z0jjyUpvKbVgM6homcEupgvIdIdrjNTaMtGh8Quz2w6Myy6VW4E'
-
-# Piwik statistics
-PIWIK_URL = 'www.stats.rusti.cc'
-PIWIK_SITE_ID = '1'
 
 # Links
 SOCIAL = (

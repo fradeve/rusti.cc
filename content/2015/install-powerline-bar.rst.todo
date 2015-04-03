@@ -1,0 +1,10 @@
+clone git repo
+git checkout cairo-love
+make
+sudo make install
+
+yaourt -S terminus
+
+fc-cache -rv
+xset fp rehash
+
