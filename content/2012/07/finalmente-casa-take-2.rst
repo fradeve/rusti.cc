@@ -29,7 +29,7 @@ aggiunto, invece:
 
 Tutto il codice è rilasciato in licenza GNU GPL v3, mentre le librerie
 javascript ovviamente conservano la licenza originaria. Per ulteriori
-informazioni, consultare il file `README.md` `qui`_.
+informazioni, consultare il file ``README.md`` `qui`_.
 
 Inoltre, tutto il mio codice pubblico è stato trasferito su GitHub, per
 una serie di motivi:
