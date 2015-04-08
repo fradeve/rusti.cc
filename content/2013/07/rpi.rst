@@ -219,8 +219,8 @@ To save LUKS headers (disaster recovery)
 Configure Bit Torrent Sync
 --------------------------
 
-- add repos, update and install ````btsync````
-- create config file; ````user```` and ````group```` BTSync will use are
+- add repos, update and install ``btsync``
+- create config file; ``user`` and ``group`` BTSync will use are
   written directly in the filename
 
   .. code-block:: bash
@@ -366,7 +366,7 @@ Setup FF Sync from Firefox using the following custom server address
 
 After configuring, if the window freezes or nothing happens, simply
 wait. URL validation process on a custom server could take up to 10
-minutes. When the ````Next```` button will be available (after several
+minutes. When the ``Next`` button will be available (after several
 minutes) click it.
 
 .. code-block:: bash
@@ -404,7 +404,7 @@ Start Deluge for the 1st time and kill it
    user:pw:level
    ---
 
-E.g. ````pi:testpassw:10````. Next, start Deluge console and enable remote
+E.g. ``pi:testpassw:10``. Next, start Deluge console and enable remote
 connections to daemon:
 
 .. code-block:: bash
