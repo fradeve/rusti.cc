@@ -27,7 +27,7 @@ con il seguente comando:
 
    git clone https://github.com/fradeve/dotfiles.git
 
-I file utili a configurare mutt sono nella cartella `mutt-fradeve`.
+I file utili a configurare mutt sono nella cartella ``mutt-fradeve``.
 
 Perché un muttrc modulare
 -------------------------
@@ -57,15 +57,15 @@ leggere la posta velocemente e direttamente da IMAP quando sono a casa,
 o dall'archivio aggiornato in locale quando sono in viaggio. Questo
 significa che per ogni account da configurare viene creato:
 
-- un file di configurazione per la lettura via IMAP (`conf_on`)
-- un file di configurazione per la lettura via archivio locale (`conf_off`)
+- un file di configurazione per la lettura via IMAP (``conf_on``)
+- un file di configurazione per la lettura via archivio locale (``conf_off``)
 
 Ovviamente, ci sarà:
 
-- un file per la configurazione di mutt in modalità IMAP (`muttonrc`)
-- un file per la configurazione di mutt in modalità archivio locale (`muttrc`)
+- un file per la configurazione di mutt in modalità IMAP (``muttonrc``)
+- un file per la configurazione di mutt in modalità archivio locale (``muttrc``)
 
-Può tornare utile inserire in `.bashrc` degli alias per avviare mutt
+Può tornare utile inserire in ``.bashrc`` degli alias per avviare Mutt
 in una delle due modalità:
 
 .. code-block:: bash
@@ -76,7 +76,7 @@ in una delle due modalità:
 INSTALL
 -------
 
-Il file INSTALL riporta tutto ciò che serve per far funzionare il gioco.
+Il file ``INSTALL`` riporta tutto ciò che serve per far funzionare il gioco.
 
 La sezione 2 riporta i software da installare per far funzionare tutto.
 Alcuni di questi vengono esplicitamente richiamati nei due file rc di
@@ -85,15 +85,15 @@ semplicemente funzioni utili, e nessun numero di riga è stato riportato.
 
 In particolare, tra i passaggi preliminari (sezione 3), troviamo:
 
--  file da copiare, spesso nella cartella di mutt nella propria home
--  file da decifrare e inserire nella propria home (contenenti le
-   password ed i dati sensibili)
--  file che rimangono al loro posto in Dropbox e vengono caricati
-   direttamente da lì
--  file che rimangono al loro posto in Dropbox e vengono *symlinkati*
-   nella home
+- file da copiare, spesso nella cartella di mutt nella propria home
+- file da decifrare e inserire nella propria home (contenenti le
+  password ed i dati sensibili)
+- file che rimangono al loro posto in Dropbox e vengono caricati
+  direttamente da lì
+- file che rimangono al loro posto in Dropbox e vengono *symlinkati*
+  nella home
 
-La sezione 4 riporta la riga da inserire in crontab (`crontab -e`) per
+La sezione 4 riporta la riga da inserire in crontab (``crontab -e``) per
 avviare la sincronizzazione di offlineIMAP ogni 5 minuti.
 
 File cifrati

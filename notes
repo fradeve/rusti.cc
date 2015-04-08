@@ -20,10 +20,6 @@ issues
 to dev
 ======
 
-* fix all source code with pygments support
-* add "categories" and relative page
-* fix humans.txt
-* fix tag pages showing only first 5 posts
 * add jinja2 -> angularJS -> d3.js support for graphs
 
 tips
