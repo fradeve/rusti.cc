@@ -1,3 +1,11 @@
+I CD di Ubuntu piombano a casa tua!
+===================================
+
+:date: 2008-01-30
+:tags: ubuntu
+
+Riprendo un intervento fatto da `V`_ sul `suo blog`_:
+
 .. figure:: {filename}/images/91755061cj5.jpg
 
 

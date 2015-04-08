@@ -191,7 +191,7 @@ Lista delle cose da fare sincronizzata su PC e cellulare grazie a `Todo.txt`_.
 .. _qui: {filename}/2012/03/usare-rsync-con-box.rst
 .. _Brdcst it!: http://brdcst.it
 .. _ifttt: http://ifttt.com
-.. _questo post: {filename}/2011/02/how-do-i-blog.rst
+.. _questo post: {filename}/2011/02/how-do-I-blog.rst
 .. _Google tracks you: http://donttrack.us
 .. _Internet privacy: https://en.wikipedia.org/wiki/Internet_privacy
 .. _Diaspora: http://diasporaproject.org

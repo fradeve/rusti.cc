@@ -4,7 +4,7 @@ L'Università degli Studi di Bari sceglie GNU/Linux
 :date: 2008-03-13 23:29:36
 :tags: gnulinux, python
 
-.. figure:: {filename}/images/800px-26_UNIVERSITA%27_DI_BARI.jpg
+.. figure:: {filename}/images/800px-26_UNIVERSITA'_DI_BARI.jpg
  
 
 Sono le piccole cose che rendono felice la giornata: come forse non

@@ -1,8 +1,10 @@
 Usare rsync con Box.net
 =======================
 
-Date: 2012-03-23 23:00:00 featured: yes
-tags: server Modified: 2012/04/17
+:date: 2012-03-23 23:00:00
+:featured: yes
+:tags: server
+:modified: 2012-04-17
 
 In questi giorni, `Box.net`_ sta regalando 50 Gb di
 spazio a chiunque apra un nuovo account e faccia almeno un login
@@ -148,14 +150,14 @@ della Box al login (e solo dopo la disponibilità di una connessione
 internet, per evitare errori) può essere `automatizzato`_.
 Se tutto procede bene, andiamo oltre.
 
-*ATTENZIONE*: Il parametro `cache_size` in `~/.davfs2/davfs2.conf` è
+*ATTENZIONE*: Il parametro ``cache_size`` in ``~/.davfs2/davfs2.conf`` è
 commentato di default. Ciò significa che man mano che DavFS2 trasferisce
 i file dal filesystem locale a quello remoto di Box, ne lascia una copia
 (criptata) nella cache. Non avendo nessun limite impostato, ciò potrebbe
 riempire la partizione in cui è presente la cache (impedendo ad Ubuntu
 di avviarsi se la cache è nella partizine root -- GNU/Linux deve avere
 almeno il 4% di spazio libero in root). È pertanto vivamente consigliato
-di abilitare il parametro `cache_size`, impostando un limite
+di abilitare il parametro ``cache_size``, impostando un limite
 ragionevole (per me 250 Mb).
 
 .. _automatizzato: http://blog.nguyenvq.com/2011/12/08/mount-box-net-on-ubuntu-linux-via-webdav
@@ -165,15 +167,15 @@ ragionevole (per me 250 Mb).
 
 Alcune spiegazioni:
 
-- `media/box`: punto di mount della Box via WebDAV
-- `media/box/backup`: la cartella che ``fisicamente`` conterrà i dati,
+- ``media/box``: punto di mount della Box via WebDAV
+- ``media/box/backup``: la cartella che ``fisicamente`` conterrà i dati,
   nella nostra Box
-- `media/box.encfs` la cartella in cui verrà montato il filesystem
+- ``media/box.encfs`` la cartella in cui verrà montato il filesystem
   criptato, non leggibile
-- `media/box.backup`: la cartella in cui riverseremo i nostri dati da
-  backuppare, collegata a `box.encfs`
+- ``media/box.backup``: la cartella in cui riverseremo i nostri dati da
+  backuppare, collegata a ``box.encfs``
 
-Installare EncFS ed aggiungere il proprio utente al gruppo `fuse`
+Installare EncFS ed aggiungere il proprio utente al gruppo ``fuse``
 
 .. code-block:: bash
 
@@ -332,7 +334,7 @@ ATTENZIONE: questa sezione è ancora in fase di testing, ed ho avuto
 molti problemi nel farla funzionare. Attendere ulteriori sviluppi prima
 di testarla sui propri dati. In breve: nonostante teoricamente tutto
 debba funzionare come riportato di seguito, una volta cancellato il file
-`encfs6.xml` dalla radice della cartella cifrata, il filesystem
+``encfs6.xml`` dalla radice della cartella cifrata, il filesystem
 cifrato non viene più montato.
 
 È sufficiente consultare qualche `howto`_
@@ -346,7 +348,7 @@ problematiche di sicurezza all'interno di un'installazione standard:
     a hacker.
 
 In altre parole, all'interno di ogni filesystem criptato creato con
-EncFS viene generato un file, `.encfs6.xml` che non contiene (no di
+EncFS viene generato un file, ``.encfs6.xml`` che non contiene (no di
 certo!) la password di cifratura, ma riassume comunque informazioni che
 potrebbero tornare utili a chiunque voglia tentare di decifrare i dati a
 nostra insaputa. Inoltre, per ovvi motivi, essendo un file di
@@ -366,10 +368,10 @@ Spostiamo il file nella nostra home, eliminandolo dalla Box
    mv /media/box/backup/.encfs6.xml ~/.encfs6_box.xml
 
 Al nuovo comando per montare il filesystem criptato verrà aggiunto
-(anche nel vostro eventuale `.bashrc`) un parametro che indica dove
+(anche nel vostro eventuale ``.bashrc``) un parametro che indica dove
 reperire il file xml corretto; tale parametro varia in funzione della
-versione di EncFS (per cui EncFS 1.6 avrà `ENCFS&_CONFIG`, EncFS 1.7
-avrà `ENCFS7_CONFIG`):
+versione di EncFS (per cui EncFS 1.6 avrà ``ENCFS&_CONFIG``, EncFS 1.7
+avrà ``ENCFS7_CONFIG``):
 
 .. code-block:: bash
 
@@ -378,13 +380,13 @@ avrà `ENCFS7_CONFIG`):
 Questo significa anche che:
 
 -  se un giorno configurerete una nuova macchina per accedere alla
-   vostra Box criptata, `.encfs6_box.xml` dovrete inserirlo a mano nel
+   vostra Box criptata, ``.encfs6_box.xml`` dovrete inserirlo a mano nel
    sistema, perché non sarà più presente in Box. Se non sapete come
-   garantire la sicurezza della copia di `.encfs6_box.xml` che avrete
+   garantire la sicurezza della copia di ``.encfs6_box.xml`` che avrete
    salvato in una penna USB, è possibile cifrarlo con `GPG`_ o usare
    la `steganografia`_
 -  se usate gnome-encfs per montare la partizione all'avvio, dovrete
-   fare attenzione a specificare il percorso di `.encfs6_box.xml`
+   fare attenzione a specificare il percorso di ``.encfs6_box.xml``
    perché tutto funzioni automaticamente al login
 
 Integrazioni
@@ -397,7 +399,7 @@ i vari script è demotivante. Tuttavia, armandosi di un VPS e un po' di
 pazienza, si potrebbe configurare un'istanza di
 `ownCloud`_, che potrebbe accedere ai file
 tramite una configurazione come quella descritta nella sezione 1,
-montata semplicemente in `/media/data`. Tra l'altro, ownCloud ha anche
+montata semplicemente in ``/media/data``. Tra l'altro, ownCloud ha anche
 un'`applicazione per Android`_: e con questo, chiudo.
 
 Ulteriori riferimenti

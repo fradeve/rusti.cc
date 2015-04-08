@@ -19,7 +19,7 @@ Nel testo ho evidenziato i passaggi che ritengo più significativi,
 potrebbero servire in futuro nei momenti di scoramento.
 
 Barack Obama, 8 settembre 2009
-==============================
+------------------------------
 
 So che per molti di voi questo è il primo giorno di scuola. E per chi è
 all’asilo o all’inizio delle medie o delle superiori è l’inizio di una
@@ -173,7 +173,7 @@ deludete le vostre famiglie, il vostro Paese e voi stessi. Rendeteci
 orgogliosi di voi. So che potete farlo.
 
 Considerazioni
-==============
+--------------
 
 In breve, per evitare facili critiche:
 
@@ -200,7 +200,7 @@ In breve, per evitare facili critiche:
   langue.
 
 Lo sfogo
-========
+--------
 
 Random thoughts derived from everyday academic life
 

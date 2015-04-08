@@ -178,7 +178,7 @@ Il comando per generarlo partendo dal file ``graph.dot``:
 .. _blog dei rappresentanti del corso di laurea: http://www.tecnologiebcuniba.org/wordpress
 .. _Pipes: http://pipes.yahoo.com
 .. _creato: http://pipes.yahoo.com/pipes/pipe.info?\ *id=71bcdf728b59016dd430d09863e0f731
-.. _diagnostica: {filename}/tags/diagnostica.html
+.. _diagnostica: {filename}/tag/diagnostica.html
 .. _Twitterfeed: http://twitterfeed.com
 .. _Graphviz: http://www.graphviz.org
 .. _Brdcst it!: http://www.brdcst.it

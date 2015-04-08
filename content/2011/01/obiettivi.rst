@@ -96,5 +96,5 @@ possa fare...
 .. _Ikiwiki: http://ikiwiki.info
 .. _Mutt: http://www.mutt.org
 .. _avevo cominciato: {filename}/2008/01/unclutter-your-desk.rst
-.. _sostituiti entrambi: {filename}/2011/01/uncluttering-the-last-step
+.. _sostituiti entrambi: {filename}/2011/01/uncluttering-the-last-step.rst
 .. _category apposita: http://rusti.cc/tags/resume.html

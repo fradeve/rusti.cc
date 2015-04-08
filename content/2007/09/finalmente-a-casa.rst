@@ -1,7 +1,7 @@
 Finalmente a casa
 =================
 
-:date: 2007-09-29 15:00:41
+:date: 2007-09-29 15:01:01
 :tags: gnulinux, openmoko, ubuntu, wikipedia, blog
 
 Buongiorno a tutti i lettori del Planet di **Ubuntu-it**, dopo un anno di
@@ -14,7 +14,7 @@ alla dovizia e all'impegno con cui i ragazzi del Gruppo Documentazione si
 cimentano nel Wiki.
 
 Come nasce questo blog
-======================
+----------------------
 
 La necessità è prima di tutto
 l'avere una voce (uno strillone?) nel Planet per quanto concerne il `Portale
@@ -55,9 +55,8 @@ Approfitto quindi dell'occasione per ringraziare della collaborazione tutto lo
 staff di UbuntuGame e di UbuntuGames (in particolare Zimotti per il primo e
 Coringao per il secondo).
 
-
 Non solo giochi
-===============
+---------------
 
 Oltre alla nostra distro
 preferita, mi occupo nel poco tempo libero che mi rimane di `Wikipedia`_,

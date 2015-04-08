@@ -15,7 +15,7 @@ di ritardo ;)
 
 
 ArchaeoFOSS, primo giorno
-=========================
+-------------------------
 
 Ieri e oggi [sono stato] sarò a Foggia, nel Museo Civico, per il
 `Workshop Nazionale sul Software Libero in Archeologia`_,
@@ -110,7 +110,7 @@ dibattito sullo scenario dell'open source in archeologia e per un
 pomeriggio di laboratori pratici con MeshLab.
 
 ArcheoFOSS, secondo giorno
-==========================
+--------------------------
 
 Uno degli aspetti più interessanti dell'ArcheoFOSS è l'accento che è
 stato posto sulla collaborazione: adesso lascio da parte la mia
