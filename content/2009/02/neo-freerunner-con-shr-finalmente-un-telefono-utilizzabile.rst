@@ -133,7 +133,7 @@ sessione (proprio come un PC!), poi il Neo va in standby. La spiacevole
 quanto inutile apparizione del menù può essere evitata dando i seguenti
 comandi:
 
-1. xrandr -o 1
+1. ``xrandr -o 1``
 
 2. fare click sulla chiave inglese presente nell'angolo in alto a
    sinistra della barra superiore
@@ -155,7 +155,7 @@ interromperà l'installazione. Per ovviare a questo problema, sarà
 sufficiente ridare il comando di installazione, inserendo la dicitura *
 --force-depends* tra opkg e install. Ad esempio, per installare Navit:
 
-::
+.. code-block:: bash
 
     opkg --force-depends install navit
 
@@ -165,10 +165,10 @@ Inserire un tasto per lo spegnimento
 Dopo aver eliminato il menù che appare alla pressione del tasto Power,
 non ci sarà più modo di spegnere il Neo senza un terminale. Possiamo
 ovviare a questo problema creando uno shortcut sul desktop. Basterà
-inserire il seguente file, che chiameremo *shutdown.desktop* nella
-cartella */usr/share/applications/*:
+inserire il seguente file, che chiameremo ``shutdown.desktop`` nella
+cartella ``/usr/share/applications/``:
 
-::
+.. code-block:: bash
 
     :::bash
     [Desktop Entry]
@@ -221,19 +221,17 @@ programma, e non sono più reperibili da Yaouh!, che non riesce quindi a
 scaricare alcun aggiornamento. Per ovviare a questo inconveniente,
 almeno per le mappe "standard" di OpenStreetMap (quelle di Mapnik, per
 capirci), è sufficiente sostituire nel file
-*~/.gconf/apps/tangogps/%gconf.xml* questa riga:
+``~/.gconf/apps/tangogps/%gconf.xml`` questa riga:
 
-::
+.. code-block:: bash
 
-    :::bash
-    OSM
+   OSM
 
 con questa
 
-::
+.. code-block:: bash
 
-    :::bash
-    OSM|http://tile.openstreetmap.org/%d/%d/%d.png|/home/root/Maps/OSM|0
+   OSM|http://tile.openstreetmap.org/%d/%d/%d.png|/home/root/Maps/OSM|0
 
 rispettando gli spazi e la sintassi del resto del file. Attenzione però:
 il file in questione viene sovrascritto da TangoGPS ad ogni chiusura del
@@ -247,46 +245,42 @@ Navit
 La versione più aggiornata di Navit installabile sul Neo è quella SVN, e
 può essere installata dando i seguenti comandi:
 
-::
+.. code-block:: bash
 
-    :::bash
-    echo src navit http://download.navit-project.org/navit/openmoko/svn >/etc/opkg/navit-feed.conf
-    opkg update
-    opkg install navit
+   echo src navit http://download.navit-project.org/navit/openmoko/svn >/etc/opkg/navit-feed.conf
+   opkg update
+   opkg install navit
 
 Scarichiamo la cartografia italiana di OpenStreetMap aggiornata
 settimanalmente fornita da CloudMade, da
 `qui <http://downloads.cloudmade.com/europe/italy/italy.navit.bin.zip>`_,
 e dopo averlo estratto dall'archivio, spostiamo il file nella cartella
-*~/.navit*. Quindi, bisognerà sistemare il file di configurazione, con
+``~/.navit``. Quindi, bisognerà sistemare il file di configurazione, con
 il seguente comando:
 
-::
+.. code-block:: bash
 
-    :::bash
-    cp /usr/share/navit/navit.xml ~/.navit/navit.xml
+   cp /usr/share/navit/navit.xml ~/.navit/navit.xml
 
-Adesso inseriamo nel file una nuova dicitura "mapset", più o meno nei
+Adesso inseriamo nel file una nuova dicitura ``mapset``, più o meno nei
 pressi del rigo 148:
 
-::
+.. code-block:: html
 
-    :::html
-    <mapset enabled="yes">
-               <map type="binfile" enabled="yes" data="/home/root/.navit/italy.navit.bin" />
-    </mapset>
+   <mapset enabled="yes">
+              <map type="binfile" enabled="yes" data="/home/root/.navit/italy.navit.bin" />
+   </mapset>
 
 Fatto ciò, possiamo ancora fare in modo che Navit visualizzi i tasti "+"
 e "-" per lo zoom, per ingrandire e diminuire lo zoom della mappa
-durante la navigazione, portando da "enables=no" a "enables=yes" le voci
+durante la navigazione, portando da ``enables=no`` a ``enables=yes`` le voci
 ai righi 53 e 54:
 
-::
+.. code-block:: html
 
-    :::html
-    <osd enabled="yes" type="button" x="-96" y="-96" command="zoom_in()" src="zoom_in.xpm"/>
-    <osd enabled="yes" type="button" x="0" y="-96" command="zoom_out()" src="zoom_out.xpm"/>
+   <osd enabled="yes" type="button" x="-96" y="-96" command="zoom_in()" src="zoom_in.xpm"/>
+   <osd enabled="yes" type="button" x="0" y="-96" command="zoom_out()" src="zoom_out.xpm"/>
 
 Tutte le indicazioni per il tweak dell'interfaccia grafica di Navit sono
 qui. Per usare Navit è molto utile ruotare lo schermo in orizzontale; è
-possibile ottenere una comoda applicazione con tanto di icona nel menù
+possibile ottenere una comoda applicazione con tanto di icona nel menù.

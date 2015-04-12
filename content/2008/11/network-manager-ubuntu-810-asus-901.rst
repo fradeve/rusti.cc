@@ -34,41 +34,37 @@ La prima cosa da fare è installare sul proprio sistema i pacchetti
 aggiornati da SVN di NetworkManager, disponibili nel seguente repository
 su Launchpad, aggiungetelo al vostro source.list:
 
-::
+.. code-block:: bash
 
-    :::bash
-    deb http://ppa.launchpad.net/network-manager/ubuntu intrepid main
+   deb http://ppa.launchpad.net/network-manager/ubuntu intrepid main
 
 Dopo aver dato un bel
 
-::
+.. code-block:: bash
 
-    :::bash
-    sudo apt-get update
-    sudo apt-get upgrade
+   sudo apt-get update
+   sudo apt-get upgrade
 
 avrete aggiornato i pacchetti.
 
 Adesso, dobbiamo commentare le seguenti righe (ammesso che le abbiate)
-nel file */etc/network/interfaces*:
+nel file ``/etc/network/interfaces``:
 
-::
+.. code-block:: bash
 
-    :::bash
-    sudo nano /etc/network/interfaces
-    #auto eth0
-    #iface eth0 inet manual
+   sudo nano /etc/network/interfaces
+   #auto eth0
+   #iface eth0 inet manual
 
 Salvate e chiudete il file. Ora, dopo un bel riavvio del sistema,
 provate a dare
 
-::
+.. code-block:: bash
 
-    :::bash
-    sudo killall NetworkManager
-    sudo killall nm-applet
-    NetworkManager
-    nm-applet
+   sudo killall NetworkManager
+   sudo killall nm-applet
+   NetworkManager
+   nm-applet
 
 Quindi, dovreste assistere al magico avvio dell'applet di NetworkManager
 nella vostra traybar, e connettervi senza troppi problemi.

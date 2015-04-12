@@ -1,8 +1,9 @@
-In arrivo tonnellate di tracce GPX per la Turchia su OpenStreetMap
-==================================================================
+Donate tonnellate di tracce GPX per la Turchia su OpenStreetMap
+===============================================================
 
 :date: 2009-04-12 13:44:23
 :tags: gnulinux, gps, openstreetmap
+:slug: in-arrivo-tonnellate-di-tracce-gpx-per-la-turchia-su-openstreetmap
 
 
 .. figure:: {filename}/images/2870810772_7c4758f819.jpg

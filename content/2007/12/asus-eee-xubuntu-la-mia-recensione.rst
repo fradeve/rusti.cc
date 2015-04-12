@@ -72,7 +72,7 @@ avvio del sistema, ma nel complesso non credo molta perché è veramente
 reattivo. L'aspetto è WindowsXP- like (a partire dallo stile dei tasti
 di chiusura, minimizza, ecc). Dicevo, le pecche: credetemi, mi sono
 sentito un attimo **perso** quando, tentando di installare un pacchetto
-via *apt*, mi sono chiesto: "**dov'e il terminale**\ "?? Ebbene, il
+via ``apt``, mi sono chiesto: "**dov'e il terminale**"?? Ebbene, il
 terminale non è tra i programmi listati. Infatti, per averne uno bisogna
 usare la combinazione di tasti CTRL+ALT+T. Non la trovo una scelta molto
 saggia, ma comunque comprensibile, considerato il pubblico al quale è
@@ -130,7 +130,7 @@ ammutolire il mio Asus è abbassare manualmente il suono dal regolatore
 di Xubuntu. Per il solo avvio, Xubuntu impiega solo 110/120 Mib dei 512
 totali, un vero successo. Il rapporto tra mousepad e schermo è studiato
 molto bene, a primo impatto il mousepad è troppo piccolo per uno schermo
-del genere, ma "*la sensazione è illusoria*\ " (frase da Elii?). La mia
+del genere, ma "*la sensazione è illusoria*" (frase da Elii?). La mia
 MMC, munita di apposito adattatore che l'ha fatta diventare una SD,
 viene perfettamente riconosciuta e montata da eeeXubuntu, che ci impiega
 meno di un nanosecondo, ed eccola lì sul Desktop.

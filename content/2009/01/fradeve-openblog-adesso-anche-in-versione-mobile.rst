@@ -1,8 +1,9 @@
-Fradeve OpenBlog adesso anche in versione mobile!
-=================================================
+Fradeve OpenBlog anche in versione mobile!
+==========================================
 
 :date: 2009-01-27 11:05:24
 :tags: freerunner, gnulinux, openmoko
+:slug: fradeve-openblog-adesso-anche-in-versione-mobile
 :modified: 2010/10/03
 
 *Aggiornamento: fate finta che questo post non esista, è relativo al

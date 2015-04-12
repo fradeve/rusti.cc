@@ -19,7 +19,7 @@ manutenzione** e non di grandi opere di ristrutturazione (se volete
 esprimere la questione in altri termini, diciamo che il grosso del
 lavoro è fatto). Negli ultimi 2 mesi, inoltre, si è affacciata dalle
 parti del Portale Giochi una persona straordinaria, V (aka 
-`**Riccardo Filippone**`_), che ha
+`Riccardo Filippone`_), che ha
 contribuito attivamente alla salvaguardia dell'ecosistema ludico e alla
 "ripopolazione" dell'ambiente con specie "rare" e "preziose" (come la
 sua guida a Wine). Insomma, per dirla con uno slogan: "Su V, potete
@@ -30,7 +30,7 @@ dell'occasione per dirgli "**Te l'avevo detto....**" :D
 .. _post precedente: http://dl.dropbox.com/u/369614/blog/public_html/FradeveOpenblog/posts/2008/01/giochi-ubuntu-it-a-quota-150-un-po-di-storia.html
 .. _Portale Giochi: http://wiki.ubuntu-it.org/Giochi
 .. _mitico Admin: http://wiki.ubuntu-it.org/AlessioTreglia
-.. _**Riccardo Filippone**: http://wiki.ubuntu-it.org/RiccardoFilippone
+.. _Riccardo Filippone: http://wiki.ubuntu-it.org/RiccardoFilippone
 .. _membership: http://forum.ubuntu-it.org/index.php/topic,157703.0.html
 
 Dove voglio arrivare? Come ho detto prima, negli ultimi mesi ho dedicato
@@ -38,16 +38,16 @@ quasi la totalità delle mie energie (e delle mie notti, beninteso) alla
 sistemazione del Portale Giochi (arrivando ad editare anche 130 pagine
 nel giro di 2 ore); la naturale conseguenza di tutto questo è che ho
 trascurato altri progetti a cui volentieri mi dedicavo prima (sto
-parlando di `*Wikipedia*`_, del Wiki di `*Openmoko*`_ e di `*OpenStreetMap*`_).
+parlando di `Wikipedia`_, del Wiki di `Openmoko`_ e di `OpenStreetMap`_).
 I tempi mi sembrano maturi per potersi riavvicinare a questi altri meravigliosi
 obiettivi liberi. Sia chiaro, non si tratta di un addio. Ho intenzione
 di rimanere l'editore del Portale Giochi, e quando posso, di sistemare
 dove possibile. Soltanto, diciamo che per qualche mese "*uscirò a farmi
-un giro*\ " ("*si, cara, vado a comprare le sigarette...*\ ").
+un giro*" ("*si, cara, vado a comprare le sigarette...*\ ").
 
-.. _*Wikipedia*: http://it.wikipedia.org/wiki/Utente:Fradeve11
-.. _*Openmoko*: http://wiki.openmoko.org/wiki/User:Fradeve11
-.. _*OpenStreetMap*: http://www.openstreetmap.org
+.. _Wikipedia: http://it.wikipedia.org/wiki/Utente:Fradeve11
+.. _Openmoko: http://wiki.openmoko.org/wiki/User:Fradeve11
+.. _OpenStreetMap: http://www.openstreetmap.org
 
 Nel frattempo, vi lascio un regalo. Come V ben sa, ho creato uno
 **script in Python** che permette di **creare molto velocemente le

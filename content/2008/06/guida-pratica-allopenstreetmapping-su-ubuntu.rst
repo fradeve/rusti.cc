@@ -182,19 +182,19 @@ essere istantanea. Possiamo chiudere GPSBabel. È possibile fare la
 stessa cosa da terminale, il comando è (ovviamente, posizionarsi nella
 cartella che contiene i file igc prima di dare il comando):
 
-::
+.. code-block:: bash
 
     gpsbabel -i igc -f nomefile.igc -o gpx -F nomefile.gpx
 
 Per tenerlo meglio a mente, la struttura delle opzioni comando dovrebbe
 essere questa (correggetemi se sbaglio):
 
--  **-i**: "input", viene seguito dall'estensione del file da
-   trasformare (nel nostro caso, igc);
--  **-f**: "file" identifica il nome del file di input;
--  **-o**: "output", viene seguito dall'estensione del file di
-   destinazione (per noi, gpx);
--  **-F**: "File" identifica il nome del file di output.
+- ``-i``: "input", viene seguito dall'estensione del file da
+  trasformare (nel nostro caso, igc);
+- ``-f``: "file" identifica il nome del file di input;
+- ``-o``: "output", viene seguito dall'estensione del file di
+  destinazione (per noi, gpx);
+- ``-F``: "File" identifica il nome del file di output.
 
 .. _FExplorer: http://www.gosymbian.com/fexplorer_new.php
 

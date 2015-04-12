@@ -8,7 +8,7 @@ Questione di personale
 .. figure:: {filename}/images/3715653401_47a35f5b55_b.jpg
 
 
-   Mapper da tutto il mondo allo State of the Map 2009\_
+   Mapper da tutto il mondo allo State of the Map 2009
 
 
 Negli ultimi tempi sto lavorando per un famoso produttore di telefonini

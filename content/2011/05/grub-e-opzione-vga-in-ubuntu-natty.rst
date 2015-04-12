@@ -13,7 +13,7 @@ parlava di un problema legato alla voce `vga`.
 
 Uno dei grandissimi vantaggi di GRUB è la possibilità di modificare in
 tempo reale le opzioni della voce di avvio con la pressione del tasto
-`e`, per cui mi è sembrato ragionevole eliminare la voce `vga=775` e
+``e``, per cui mi è sembrato ragionevole eliminare la voce ``vga=775`` e
 tentare un avvio, cosa che ha funzionato.
 
 `Indagando oltre`_

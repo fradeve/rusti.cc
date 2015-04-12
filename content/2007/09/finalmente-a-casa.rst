@@ -62,7 +62,7 @@ Oltre alla nostra distro
 preferita, mi occupo nel poco tempo libero che mi rimane di `Wikipedia`_,
 Openmoko ed OpenStreetMap. Sulla prima, c'è ben poco da dire. Su
 `Openmoko`_, vorrei spendere qualche parola in più, a partire dal motto:
-_"Openmoko: Free Your Phone"_. Considerata l'ampia diffusione di sistemi
+"Openmoko: Free Your Phone". Considerata l'ampia diffusione di sistemi
 operativi proprietari sui cellulari (così come -- una volta -- sui PC),
 **Openmoko GNU/Linux** si propone l'ambizioso obiettivo di creare una
 distribuzione compatibile con (quasi) tutti i PDA/TabletPC in circolazione. Lo

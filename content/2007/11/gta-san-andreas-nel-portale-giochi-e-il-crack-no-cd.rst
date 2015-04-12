@@ -45,11 +45,11 @@ del Wiki di Ubuntu- it), ma credo che, **in casa mia**, se compro il CD
 
 Ci sarebbe inoltre da sottolineare che il crack no-cd non modifica
 alcunché, va solo a sostituire l'eseguibile del gioco. Per quanto mi
-riguarda, vale anche l'osservazione: "*Il crack no-cd, se usato con un
+riguarda, vale anche l'osservazione: "Il crack no-cd, se usato con un
 gioco installato da cd originale, dovrebbe essere legale perchè, nel
 caso di Wine, lo scopo del suo utilizzo è permettere al gioco che io ho
 **legalmente acquistato** di girare sulla **mia** macchina, che non deve
-avere necessariamente il sistema operativo di Microsoft.*\ "
+avere necessariamente il sistema operativo di Microsoft."
 
 Rimane quindi da capire se sul Portale Giochi di Ubuntu-it si debba
 parlare o meno di questi crack, ed in che termini. Per avere un parere

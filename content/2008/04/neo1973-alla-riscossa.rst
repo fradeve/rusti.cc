@@ -32,7 +32,6 @@ di Aprile ;)
 
 .. _Qui: http://wiki.openmoko.org/wiki/Community_Updates
 
-::
 
     The DVT run, the design verification was completed a bit ago and the
     designhas been verified. For a shortTime I had some worries about
@@ -52,4 +51,3 @@ di Aprile ;)
 
     I have a very small number of samples headed my way and I want to make
     sure"I listen to ideas and proposals I havent heard.
-

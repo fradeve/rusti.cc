@@ -38,7 +38,7 @@ testo il nome della città o del luogo che stiamo cercando.
 
 Appena abbiamo terminato, facciamo click su **Make**. Verrà generata
 dopo qualche secondo una pagina con un link per scaricare la nostra
-mappa in PDF (`*Download map PDF for print*`_).
+mappa in PDF (`Download map PDF for print`_).
 Stampiamola, anche in bianco e nero.
 
 
@@ -121,6 +121,6 @@ mapping party!
 
 Che dire... buon divertimento!
 
-.. _*Download map PDF for print*: http://paperwalking-uploads.s3.amazonaws.com/prints/v3lr7z32/walking-paper-v3lr7z32.pdf
+.. _Download map PDF for print: http://paperwalking-uploads.s3.amazonaws.com/prints/v3lr7z32/walking-paper-v3lr7z32.pdf
 .. _www.openstreetmap.org: http://www.openstreetmap.org
 .. _features: http://wiki.openstreetmap.org/wiki/Map_Features

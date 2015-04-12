@@ -26,7 +26,7 @@ scrivere la wiki. Dopo aver fatto partire l'installer ed eseguito lo
 script per patchare la libreria Openal (il file e ``bcs-linux-openal-fixer.sh``),
 l'unica cosa che ottengo è questa:
 
-.. code:: bash
+.. code-block:: bash
 
     fradeve@dhcppc2:~/BridgeConstructionSetDemo$ ./bcs fcntl: Operation not
     permitted fcntl: Operation not permitted

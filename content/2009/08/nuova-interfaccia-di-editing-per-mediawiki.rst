@@ -50,7 +50,7 @@ che si avvicina per la prima volta al wiki.
 
 Ricordo a tutti che è possibile provare in prima persona queste novità,
 votare e fornire suggerimenti per rendere questo sistema ancora
-migliore, tramite il `sito dei prototipi`_ della Wikimedia Foundation:
+migliore, tramite il `sito dei prototipi`_ della Wikimedia Foundation.
 
 .. _Wikimedia Foundation: http://wikimediafoundation.org/wiki/Home
 .. _Wikipedia: http://it.wikipedia.org

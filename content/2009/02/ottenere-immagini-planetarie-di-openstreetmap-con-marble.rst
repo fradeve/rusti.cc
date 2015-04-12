@@ -29,9 +29,12 @@ tempo di testare la guida.
      su
 
 - Presumendo di aver già installato Marble (peraltro già presente nei
-   repository di Ubuntu 8.10), modificare il file
-   ``/usr/share/kde4/apps/marble/data/maps/earth/openstreetmap/openstreetmap.dgml``
-   cambiando la riga
+  repository di Ubuntu 8.10), modificare il file ``openstreetmap.dgml``
+  cambiando la riga
+
+  .. code-block:: bash
+
+     vim /usr/share/kde4/apps/marble/data/maps/earth/openstreetmap/openstreetmap.dgml
 
 
   .. code-block:: xml
@@ -45,7 +48,7 @@ tempo di testare la guida.
 
      <downloadUrl protocol="http" host="a.tile.openstreetmap.org" path="/"  />
 
-ed eliminando tutte le altre due righe "downloadUrl".
+ed eliminando tutte le altre due righe ``downloadUrl``.
 
 - Installare i pacchetti necessari a simulare un desktop gigante:
 

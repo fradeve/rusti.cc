@@ -98,7 +98,7 @@ inserire la seguente riga in ``/etc/fstab``:
 
    https://www.box.com/dav /media/box      davfs   noauto,user   0   0
 
-Il file `/etc/davfs2/davfs2.conf` contiene le impostazioni valide per
+Il file ``/etc/davfs2/davfs2.conf`` contiene le impostazioni valide per
 tutto il sistema; decommentare la seguente riga:
 
 .. code-block:: bash
@@ -113,8 +113,8 @@ Creare una copia del file delle configurazioni nella propria home
    cp /etc/davfs2/davfs2.conf ~/.davfs2
 
 Per evitare di dover inserire ogni volta le credenziali di accesso alla
-Box in fase di mount, creare il file `secrets`, attribuirgli i
-permessi corretti (`600`)
+Box in fase di mount, creare il file ``secrets``, attribuirgli i
+permessi corretti (``600``)
 
 .. code-block:: bash
 
@@ -128,7 +128,7 @@ ed inserirvi i dati di accesso
 
    /media/box  user@email.com  password
 
-Il file `~/.davfs/davfs2.conf` contiene le impostazioni per l'utente;
+Il file ``~/.davfs/davfs2.conf`` contiene le impostazioni per l'utente;
 in questo, specificare la posizione del file delle password appena
 creato, decommentando la riga come segue
 
@@ -136,8 +136,8 @@ creato, decommentando la riga come segue
 
    secrets         ~/.davfs2/secrets
 
-Possiamo dotarci di *alias* in `~/.bashrc` per montare e smontare
-rapidamente la Box (ricordando di dare un `source ~/.bashrc` per
+Possiamo dotarci di *alias* in ``~/.bashrc`` per montare e smontare
+rapidamente la Box (ricordando di dare un ``source ~/.bashrc`` per
 rendere operativi gli alias):
 
 .. code-block:: bash
@@ -145,7 +145,7 @@ rendere operativi gli alias):
    alias boxmount='mount /media/box'
    alias boxumount='umount /media/box'
 
-Proviamo a montare la Box con il comando `boxmount`. Il montaggio
+Proviamo a montare la Box con il comando ``boxmount``. Il montaggio
 della Box al login (e solo dopo la disponibilità di una connessione
 internet, per evitare errori) può essere `automatizzato`_.
 Se tutto procede bene, andiamo oltre.
@@ -379,15 +379,15 @@ avrà ``ENCFS7_CONFIG``):
 
 Questo significa anche che:
 
--  se un giorno configurerete una nuova macchina per accedere alla
-   vostra Box criptata, ``.encfs6_box.xml`` dovrete inserirlo a mano nel
-   sistema, perché non sarà più presente in Box. Se non sapete come
-   garantire la sicurezza della copia di ``.encfs6_box.xml`` che avrete
-   salvato in una penna USB, è possibile cifrarlo con `GPG`_ o usare
-   la `steganografia`_
--  se usate gnome-encfs per montare la partizione all'avvio, dovrete
-   fare attenzione a specificare il percorso di ``.encfs6_box.xml``
-   perché tutto funzioni automaticamente al login
+- se un giorno configurerete una nuova macchina per accedere alla
+  vostra Box criptata, ``.encfs6_box.xml`` dovrete inserirlo a mano nel
+  sistema, perché non sarà più presente in Box. Se non sapete come
+  garantire la sicurezza della copia di ``.encfs6_box.xml`` che avrete
+  salvato in una penna USB, è possibile cifrarlo con `GPG`_ o usare
+  la `steganografia`_
+- se usate gnome-encfs per montare la partizione all'avvio, dovrete
+  fare attenzione a specificare il percorso di ``.encfs6_box.xml``
+  perché tutto funzioni automaticamente al login
 
 Integrazioni
 ------------

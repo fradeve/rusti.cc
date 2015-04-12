@@ -2,7 +2,7 @@ Getting Things GNOME + Tomboy = todo + note
 ===========================================
 
 :date: 2010-02-01 21:55:23
-:tags: gtd, gnulinuX
+:tags: gtd, gnulinux
 
 .. figure:: {filename}/images/gtg-0.2-all-shad.png
 

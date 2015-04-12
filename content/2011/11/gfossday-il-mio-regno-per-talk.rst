@@ -102,7 +102,7 @@ Miscellanea
 
 - *Last but not least*, tutti i treni delle Ferrovie dello Stato da e
   per Foggia sono stati puntuali.
-- Grazie ad Antonio Falciano abbiamo anche un `*sqworl*`_ ;)
+- Grazie ad Antonio Falciano abbiamo anche un `sqworld`_ ;)
 - le mie slide, `qui`_
 - in attesa di capire dove si può reperire la registrazione dello
   streaming...
@@ -110,5 +110,5 @@ Miscellanea
 .. _#gfossday2011: https://twitter.com/#!/search?q=%23GFOSSDAY11
 .. _GFOSS.it: http://www.gfoss.it
 .. _online: http://www.slideshare.net/madi468/gfossday2011-esercitazione
-.. _*sqworl*: http://sqworl.com/zj53cu]]%20delle%20presentazioni
+.. _sqworld: http://sqworl.com/zj53cu]]%20delle%20presentazioni
 .. _qui: http://www.slideshare.net/fradeve/osm-e-gfoss-geodati-e-software-liberi-in-archeologia

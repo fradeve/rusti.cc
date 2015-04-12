@@ -13,6 +13,5 @@ Se volete partecipare all'iniziativa, qui i link:
 
 ::
 
-    http://www.danirevi.it/wp-content/uploads/2008/02/contest.jpg
     http://www.danirevi.it/contest-danirevi-ti-regala-un-computer.html
 

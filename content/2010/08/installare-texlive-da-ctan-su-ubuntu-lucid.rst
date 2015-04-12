@@ -27,7 +27,7 @@ ambito scientifico perché permette di ottenere risultati incomparabili
 rispetto a qualsiasi altro editor per qualità, semplicità ed efficienza
 del sistema. LaTeX è distribuito in pacchetti, ognuno dei quali ha una
 propria funzione. I pacchetti sono organizzati in un repository online
-(`CTAN`_, Comprehensive TeX Archive Network).
+(`CTAN`_, `Comprehensive TeX Archive Network`).
 Debian non fa altro che creare raccolte di questi pacchetti in base alle
 loro funzioni, e li distribuisce. Com'è ovvio, i pacchetti vengono
 aggiornati molto più spesso di quanto la stessa Debian non faccia, ma
@@ -47,7 +47,7 @@ sul disco fisso (sul PC di casa possiamo anche soprassedere, ma vogliamo
 parlare di quanto spazio TeXLive si mangia sul netbook?). Quindi, o
 tutto o niente: su Debian non è possibile installare da repository solo
 il pacchettino LaTeX che ci interessa per le funzioni matematiche, tocca
-beccarci tutto il "latex-science", con decine di tool che non useremo
+beccarci tutto il ``latex-science``, con decine di tool che non useremo
 mai.
 
 Come risolvere?
@@ -121,14 +121,13 @@ grossomodo:
 
 -  *crea i collegamenti nelle directory di sistema*: cambiando in "Si",
    e spuntando anche "*crea i collegamenti simbolici nelle directory
-   standard*\ ", TeXLive installerà dei link nella propria cartella
+   standard*", TeXLive installerà dei link nella propria cartella
    degli eseguibili (solitamente ``/usr/bin``), utile per avere tutti i
    comandi di LaTeX a portata di mano anche dal terminale; sarebbe una
    scelta consigliata, se non fosse per il fatto che ciò sporca la
    suddetta cartella. Meglio è (come suggerito da RobiTeX) esportare il
    $PATH nel proprio file ``.profile`` così da mantenere tutti i file in
    ``/usr/local``: ciò creerà meno problemi in fase di aggiornamento.
-
 
    .. code-block:: bash
 
@@ -157,42 +156,42 @@ Aggiornamento annuale
 TeXLive esce in una nuova versione ogni anno. Di seguito i passi per
 aggiornare la propria distribuzione.
 
--  recarsi nella cartella di installazione e creare una copia di backup
-   della propria installazione:
+- recarsi nella cartella di installazione e creare una copia di backup
+  della propria installazione:
 
-   .. code-block:: bash
+  .. code-block:: bash
 
-      sudo cp -a 2010 2011
+     sudo cp -a 2010 2011
 
--  per risparmiare dello spazio, eliminare il contenuto della cartella
-   dei backup annui della distribuzione vecchia:
+- per risparmiare dello spazio, eliminare il contenuto della cartella
+  dei backup annui della distribuzione vecchia:
 
-   .. code-block:: bash
+  .. code-block:: bash
 
-      sudo rm /usr/local/texlive/2011/tlpkg/backups/*
+     sudo rm /usr/local/texlive/2011/tlpkg/backups/*
 
--  modificare l'anno della distribuzione nei file ``.profile`` e
-   ``.bashrc`` da 2010 a 2011
+- modificare l'anno della distribuzione nei file ``.profile`` e
+  ``.bashrc`` da 2010 a 2011
 
--  avviare tlmgr, caricare l'archivio di default (definito al momento
-   dell'installazione) ed eseguire l'aggiornamento di tlmgr:
+- avviare tlmgr, caricare l'archivio di default (definito al momento
+  dell'installazione) ed eseguire l'aggiornamento di tlmgr:
 
-   .. code-block:: bash
+  .. code-block:: bash
 
-      sutlmgr --gui
+     sutlmgr --gui
 
--  aggiornare i pacchetti con il comando classico:
+- aggiornare i pacchetti con il comando classico:
 
-   .. code-block:: bash
+  .. code-block:: bash
 
-      sutlmgr update --all
+     sutlmgr update --all
 
--  dopo aver provato a compilare qualche documento, se tutto funziona
-   bene, potrete anche eliminare la distribuzione vecchia:
+- dopo aver provato a compilare qualche documento, se tutto funziona
+  bene, potrete anche eliminare la distribuzione vecchia:
 
-    .. code-block:: bash
+  .. code-block:: bash
 
-       sudo rm -r /usr/local/texlive/2010
+     sudo rm -r /usr/local/texlive/2010
 
 Ringraziamenti
 --------------

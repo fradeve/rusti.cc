@@ -27,11 +27,15 @@ conterrà:
 -  Memoria interna: Flash da 256 Mb
 -  Accelerazione 3D: SMedia 3362 Graphics Accelerator
 
-Insieme al palmare, si riceverà (sempre nel pacchetto base): \* cavo
-USB/alimentazione \* custodia in neoprene \* penna/stilo/laser \*
-plettro per chitarra (per aprire il cell) \* batteria da 1700 (identica
-a quella dei Nokia serie 60) \* Scheda di memoria MicroSD da 512 Mb (il
-Neo1973 supporta MicroSD fino ad 8 Gb!)
+Insieme al palmare, si riceverà (sempre nel pacchetto base):
+
+- cavo USB/alimentazione
+- custodia in neoprene
+- penna/stilo/laser
+- plettro per chitarra (per aprire il cell)
+- batteria da 1700 (identica a quella dei Nokia serie 60)
+- scheda di memoria MicroSD da 512 Mb (il Neo1973 supporta MicroSD fino ad 8 Gb!)
+
 
 | **Quando uscirà:**
 | tra il 1° ed il 15 Dicembre

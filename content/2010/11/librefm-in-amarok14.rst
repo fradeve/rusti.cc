@@ -18,14 +18,14 @@ Amarok e da altri programmi di riproduzione musicale, e con questo
 piccolo accorgimento sarà possibile invarle anche (o solo) verso
 LibreFM.
 
-- Installare il pacchetto `lastfmsubmitd`
+- Installare il pacchetto ``lastfmsubmitd``
 
   .. code-block:: bash
 
      sudo apt-get install lastfmsubmitd
 
 - Durante l'installazione, inserire il proprio nome utente e password
-  di LibreFM e mantenere il gruppo "lastfm", quindi confermare.
+  di LibreFM e mantenere il gruppo ``lastfm``, quindi confermare.
 - Dare i permessi di lettura/scrittura al file di configurazione di
   lastfmsubmitd:
 
@@ -65,7 +65,6 @@ il tar.gz appena scaricato --> Esegui
 - Impostare i permessi nelle cartelle con i log e l'accesso al gruppo
   selezionato durante l'installazione:
 
-
   .. code-block:: bash
 
      sudo chown :lastfm /var/log/lastfm/ /var/spool/lastfm/ -R
@@ -93,7 +92,7 @@ del video, la cui sintassi però non corrisponde a quella accettata nel
 database di Libre.fm, per cui da quel momento in poi nessuna canzone
 verrà inviata al sito. Ho testato personalmente il problema e sono stato
 costretto a cancellare un paio di registrazioni dal log in
-`/var/log/lastfm/`. Per ulteriori info sul funzionamento per Amarok 2,
+``/var/log/lastfm/``. Per ulteriori info sul funzionamento per Amarok 2,
 consultare la `pagina apposita`_ sul wiki di Amarok.
 
 Buono scrobbling!

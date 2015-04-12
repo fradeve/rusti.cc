@@ -85,14 +85,14 @@ Quindi finalmente eseguiamo lo script
 Specificando questa opzione, lo script creerà automaticamente la
 partizione Vfat per l'avvio, che altrimenti avremmo dovuto creare
 manualmente. Durante l'esecuzione dello script potremmo ricevere errori
-che fanno riferimento al fatto che la partizione `/dev/mmcblk0p1`
+che fanno riferimento al fatto che la partizione ``/dev/mmcblk0p1``
 contiene un filesystem montato. In questo caso, possiamo smontarlo con
 
 .. code-block:: bash
 
     umount /media/mmcblk0p1
 
-Oppure possiamo controllare qual'è il PID dei processi che usano quella
+Oppure possiamo controllare qual è il PID dei processi che usano quella
 partizione con il comando
 
 .. code-block:: bash
@@ -111,7 +111,7 @@ tornare utili.
 Adesso, andiamo a prenderci un bel cappuccino, un cornetto, ed una fetta
 di torta. Forse sarebbe meglio anche fare una passeggiata per digerire,
 perché l'installazione dura più di un'ora. Al termine, dovremmo trovare
-nel terminale un messaggio del tipo "*Done. Reboot and enjoy!*\ " Non ci
+nel terminale un messaggio del tipo "*Done. Reboot and enjoy!*" Non ci
 resta che spegnere il Neo con il comando
 
 .. code-block:: bash
@@ -123,7 +123,7 @@ dei due sistemi, dovremo **per forza accenderlo accedendo alla NOR**;
 per farlo, tenere premuto il pulsante AUX, quindi premere
 contemporaneamente POWER e dopo che AUX ha emesso un lampeggìo, lasciare
 POWER. Da questo menù, sarà possibile selezionare l'opzione *boot* per
-avviare Openmoko o Qtopia e l'opzione *Boot from SD (FAT+ext2) *\ per
+avviare Openmoko o Qtopia e l'opzione *Boot from SD (FAT+ext2)* per
 avviare Debian. Scorrere il menù con il tasto AUX e selezionare la
 seconda voce con POWER. Debian non ci metterà molto ad avviarsi (meno di
 Openmoko 2008.08). Rimarremo delusi, forse ci aspettiamo un bel desktop
@@ -136,7 +136,7 @@ della Supermucca di APT :) Logghiamoci via SSH. Probabilmente avremo
 problemi perché il Neo, pur avendo mantenuto il proprio indirizzo
 192.168.0.202, ha cambiato sistema operativo. Sul terminale uscirà un
 messaggio d'errore che potremo facilmente aggirare editando il file
-`~/.ssh./known_hosts` e cancellando tutto ciò che contiene:
+``~/.ssh./known_hosts`` e cancellando tutto ciò che contiene:
 
 .. code-block:: bash
 
@@ -154,7 +154,7 @@ siamo in Debian! Installiamo un po di pacchetti utili:
 
     apt-get install xfce4 nano
 
-Al termine, sarà meglio editare il file `/etc/fstab` per evitare il
+Al termine, sarà meglio editare il file ``/etc/fstab`` per evitare il
 filesystem check che rallenta di molto l'avvio di Debian:
 
 .. code-block:: bash
@@ -230,7 +230,7 @@ a causa di un bug del pacchetto.
     shutdown now
 
 Al riavvio, tutto sarà sistemato. Per facilitarci la vita nelle prossime
-connessioni via SSH, possiamo modificare il file */etc/hosts* ed
+connessioni via SSH, possiamo modificare il file ``/etc/hosts`` ed
 inserire l'IP del nostro PC collegato al Neo via USB:
 
 .. code-block:: bash
@@ -238,7 +238,7 @@ inserire l'IP del nostro PC collegato al Neo via USB:
     nano /etc/hosts 192.168.0.200 pc
 
 In questo modo potremo inviare file dal Debian al PC semplicemente
-scrivendo `scp file.est nomeutente@pc\:~`.
+scrivendo ``scp file.est nomeutente@pc\:~``.
 
 E adesso, la parte più importante: telefonare. Potremo avviare Zhone da
 **Menù -> Office -> Zhone**. Appena avviato, il software riconoscerà

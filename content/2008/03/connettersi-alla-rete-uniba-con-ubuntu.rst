@@ -50,9 +50,9 @@ ed una password, che sono esattamente quelli con cui vi siete registrati
 ad Esse3. Fatto ciò, dovreste essere connessi. Da terminale provate a
 dare il comando
 
-::
+.. code-block:: bash
 
-    ping www.google.it
+   ping www.google.it
 
 per scoprire che effettivamente Google risponde.
 
@@ -73,7 +73,7 @@ la proxy è normalmente configurabile selezionando da Firefox
     MODIFICA -- PREFERENZE -- AVANZATE -- scheda RETE -- CONNESSIONE -- Impostazioni
 
 e selezionando l'opzione "*Configurazione automatica dei proxy
-(URL)*\ ", inserendo nel campo di testo l'indirizzo
+(URL)*", inserendo nel campo di testo l'indirizzo
 
 ::
 
@@ -82,8 +82,6 @@ e selezionando l'opzione "*Configurazione automatica dei proxy
 Fatto ciò, fare clic su "Ricarica" e dare l'OK. Dovrebbe essere
 possibile navigare. Alternativamente, è sempre possibile usare le
 impostazioni manuali:
-
-::
 
     Configurazione manuale del server proxy http: wifiproxy.ict.uniba.it
     Porta: 8080 

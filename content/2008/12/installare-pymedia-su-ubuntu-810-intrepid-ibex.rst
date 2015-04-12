@@ -12,7 +12,7 @@ Italia (e nel mondo) a Pompei.
 PyMedia è una libreria che permette a Python di manipolare file
 multimediali (audio/video/immagini). Il problema è che PyMedia non
 esiste nei repository di Ubuntu 8.10 Intrepid Ibex, e l'unico pacchetto
-*.deb* disponibile in rete è adatto a Python 2.4 e ad una vecchia
+`.deb` disponibile in rete è adatto a Python 2.4 e ad una vecchia
 versione di Ubuntu. Per questo, ho compilato e pacchettizzato con
 `checkinstall`_
 PyMedia per Ubuntu 8.10 Intrepid Ibex. Il pacchetto potete scaricarlo da
@@ -25,60 +25,60 @@ PyMedia per Ubuntu 8.10 Intrepid Ibex. Il pacchetto potete scaricarlo da
 Passo 1. Ottenere pymedia
 -------------------------
 
-::
+.. code-block:: bash
 
-    wget http://internap.dl.sourceforge.net/sourceforge/pymedia/pymedia-1.3.7.3.tar.gz
-    tar xzvf pymedia-1.3.7.3.tar.gz cd pymedia-*
+   wget http://internap.dl.sourceforge.net/sourceforge/pymedia/pymedia-1.3.7.3.tar.gz
+   tar xzvf pymedia-1.3.7.3.tar.gz cd pymedia-*
 
 Passo 2. Installare le dipendenze
 ---------------------------------
 
-::
+.. code-block:: bash
 
-    sudo apt-get install python-dev libogg-dev libvorbis-dev liblame-dev libfaad-dev libasound2-dev python-pygame
+   sudo apt-get install python-dev libogg-dev libvorbis-dev liblame-dev libfaad-dev libasound2-dev python-pygame
 
 Passo 3. Installare GCC 3.4
 ---------------------------
 
 (PyMedia non si compilerà con GCC 4.0)
 
-::
+.. code-block:: bash
 
-    sudo apt-get install gcc-3.4 g++-3.4 export CC=gcc-3.4
+   sudo apt-get install gcc-3.4 g++-3.4 export CC=gcc-3.4
 
 Passo 4. Fare alcune modifiche al codice C
 ------------------------------------------
 
-Prima di compilare, in `<audio/acodec/acodec.c>`, alla linea 31,
+Prima di compilare, in ``<audio/acodec/acodec.c>``, alla linea 31,
 inserire quanto segue:
 
-::
+.. code-block:: C
 
-    #define HAVE_LRINTF
+   #define HAVE_LRINTF
 
 In maniera tale da ottenere:
 
-::
+.. code-block:: C
 
-    #include avcodec.h
-    #define HAVE_LRINTF
-    #include "libavcodecdsputil.h"
-    #include "version.h"
+   #include avcodec.h
+   #define HAVE_LRINTF
+   #include "libavcodecdsputil.h"
+   #include "version.h"
 
 Passo 5. Costruire e compilare pymedia
 --------------------------------------
 
-::
+.. code-block:: bash
 
-    sudo python setup.py build
+   sudo python setup.py build
 
 Passo 6. Essere bravi utenti Ubuntu e installare PyMedia con checkinstall
 -------------------------------------------------------------------------
 
-::
+.. code-block:: bash
 
-    sudo apt-get install checkinstall
-    sudo checkinstall python setup.py install
+   sudo apt-get install checkinstall
+   sudo checkinstall python setup.py install
 
 *Nota: Se si vuole essere dei cattivi utenti Ubuntu, è possibile
 installare PyMmedia senza creare il .deb, sostituendo il comando
@@ -90,7 +90,7 @@ Passo 7. Controlliamo se funziona
 in un terminare digitare "python" e poi ``import pymedia``; se non
 otteniamo errori, siamo a cavallo :D
 
-::
+.. code-block:: python
 
-    python >>> import pymedia
+   python >>> import pymedia
 

@@ -10,7 +10,7 @@ Debian e Ubuntu fanno la pace
 
 
 Purtroppo, gravato da una impressionante mole di studio, non posso
-dilungarmi, comunque faccio un po' di eco alla `notizia`_:
+dilungarmi, comunque faccio un po' di eco alla `notizia`_.
 
 .. _notizia: http://pollycoke.wordpress.com/2007/10/25/debian-e-ubuntu-la-pagina-della-concordia/#more-3416
 

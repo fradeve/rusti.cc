@@ -40,7 +40,7 @@ Entriamo nella cartella e compiliamo il pacchetto
 In questo momento, il pacchetto avrebbe dovuto funzionare, ma ci darà
 errore perché, come è stato `segnalato`_
 nel bug tracker di Debian, xfrac dipende da alcuni file di stile
-(*template.sty*) che sono presenti nella nuova distribuzione di LaTeX
+(``template.sty``) che sono presenti nella nuova distribuzione di LaTeX
 (LaTeX3). Quindi, adesso sarà sufficiente installare l'apposito
 pacchetto e rigenerare la cache dei file di stile:
 

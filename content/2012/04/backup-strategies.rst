@@ -19,10 +19,10 @@ codice è in fondo al post.
 
 *Legenda*
 
--  in verde le cartelle cifrate
--  sono state usate forme e frecce differenti per distinguere i processi
--  le linee tratteggiate indicano le componenti che devono ancora essere
-   implementate
+- in verde le cartelle cifrate
+- sono state usate forme e frecce differenti per distinguere i processi
+- le linee tratteggiate indicano le componenti che devono ancora essere
+  implementate
 
 Il codice dell'immagine:
 

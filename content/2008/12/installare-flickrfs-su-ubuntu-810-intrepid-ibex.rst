@@ -42,11 +42,11 @@ account PRO, è esattamente cio che fa per voi ;)
 Passo 1
 -------
 
-Installiamo il pacchetto `flickrfs` da Synaptic o da linea di comando:
+Installiamo il pacchetto ``flickrfs`` da Synaptic o da linea di comando:
 
-::
+.. code-block:: bash
 
-    sudo apt-get install flickrfs
+   sudo apt-get install flickrfs
 
 Passo 2
 -------
@@ -54,15 +54,15 @@ Passo 2
 Assicuriamoci che FUSE sia incluso tra i moduli del kernel (e ciò
 dovrebbe essere vero di default nel 99% dei casi):
 
-::
+.. code-block:: bash
 
-    lsmod | grep -i fuse
+   lsmod | grep -i fuse
 
 Se tutto è ok, dovrebbe essere visualizzata una linea del genere:
 
-::
+.. code-block:: bash
 
-    fuse        52892 3
+   fuse        52892 3
 
 Passo 3
 -------
@@ -71,9 +71,9 @@ Creiamo una cartella (dove più ci piace) in cui verranno "ospitate" le
 nostre cartelle di Flickr; io l'ho montata in ``/media``, come qualsiasi
 altra penna USB o hard disk esterno:
 
-::
+.. code-block:: bash
 
-    sudo mkdir /media/flickrfs
+   sudo mkdir /media/flickrfs
 
 Passo 4
 -------
@@ -81,17 +81,17 @@ Passo 4
 Ordiniamo a Flickrfs di "montarsi" all'interno della cartella appena
 creata:
 
-::
+.. code-block:: bash
 
-    sudo flickrfs /media/flickrfs
+   sudo flickrfs /media/flickrfs
 
 Appena il programma avrà terminato di aggiornare i nostri set, potremo
 aprire Nautilus con privilegi di amministratore e accedere alla nostra
 cartella:
 
-::
+.. code-block:: bash
 
-    sudo nautilus /media/flickrfs
+   sudo nautilus /media/flickrfs
 
 Ed ecco le nostre cartelle. Potremo importare/esportare foto come se
 fossimo in una nostra normalissima cartella di sistema, con il
