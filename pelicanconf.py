@@ -4,14 +4,15 @@ from __future__ import unicode_literals
 
 AUTHOR = 'fradeve'
 TAGLINE = 'WebGIS dev, free software enthusiast, folk music fellow and proud monkey descendant.'
-SITENAME = 'Rustic'
+SITENAME = 'A rustic guy'
 SITEURL = 'http://rusti.cc'
 
 TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en'
 
-THEME = 'andrewseidl-theme'
+THEME = 'tufte-theme'
+CSS_FILE = 'tufte.css'
 TYPOGRIFY = True
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
@@ -27,7 +28,8 @@ CATEGORY_FEED_ATOM = None
 PATH = 'content'
 STATIC_PATHS = ['images', 'static']
 
-PLUGINS = ['pelican_youtube']
+PLUGINS = ['pelican_youtube', 'span']
+PLUGIN_PATHS = ["/home/fradeve/git/rusti.cc/span"]
 
 # Comments
 DISQUS_SITENAME = 'fradeveorig'

@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="author" href="{{ SITEURL}}/static/humans.txt" />
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow|PT+Serif' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     {% if FEED_ALL_ATOM %}
@@ -30,8 +29,8 @@
 
     <div class="header-container">
         <header id="masthead" class="wrapper clearfix">
-            <h1 class="title"><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
-            {% if SITESUBTITLE %}<strong>{{ SITESUBTITLE }}</strong>{% endif %}
+            <h1 class="title">{{ SITENAME }}</h1>
+            {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
         </header>
     </div>
 
@@ -73,8 +72,6 @@
         </footer>
     </div>
 
-    {% include 'analytics.html' %}
-    {% include 'piwik.html' %}
     {% if DISQUS_SITENAME %}
         <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
 
@@ -127,22 +124,6 @@
         </script>
     {% endif %}
     {% include 'disqus_script.html' %}
-
-    <!-- Piwik -->
-        <script type="text/javascript">
-            var _paq = _paq || [];
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-                var u="//www.stats.rusti.cc/";
-                _paq.push(['setTrackerUrl', u+'piwik.php']);
-                _paq.push(['setSiteId', 1]);
-                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-            })();
-        </script>
-        <noscript><p><img src="//www.stats.rusti.cc/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-    <!-- End Piwik Code -->
 
 </body>
 </html>

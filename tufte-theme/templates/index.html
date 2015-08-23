@@ -5,12 +5,12 @@
 {% block content %}        
     {% for article in articles_page.object_list[0:5] %}
         <header class="clearfix">
-            <h1>
+            <h3>
                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>{% if article.featured %}*{% endif %}
-                <abbr class="published" title="{{ article.date.isoformat() }}">
+                <p class="published" title="{{ article.date.isoformat() }}">
                     <small>{{ article.date | strftime('%d %b %Y') }}</small>
-                </abbr>
-            </h1>
+                </p>
+            </h3>
         </header>
     {% endfor %}
 
