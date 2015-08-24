@@ -210,10 +210,24 @@ h1 .code, h2 .code, h3 .code { font-size: 0.80em; }
 
 pre.code { width: 52.5%;
            padding-left: 2.5%;
-           overflow-x: scroll; 
+           overflow-x: auto; 
          }
 
 .fullwidth { max-width: 90%; }
+
+pre::-webkit-scrollbar,figure
+.highlight::-webkit-scrollbar {
+    height:.4em;
+    background:rgba(0,0,0,0.15);
+    border-radius:10px
+}
+
+pre::-webkit-scrollbar-thumb:horizontal,figure
+.highlight::-webkit-scrollbar-thumb:horizontal {
+    background:rgba(0,0,0,0.15);
+    -webkit-border-radius:4px;
+    border-radius:4px
+}
 
 span.newthought { font-variant: small-caps;
                   font-size: 1.2em; }

@@ -14,11 +14,11 @@
             </h2>
             <br>
                 <abbr title="Published">
-                    published: <small>{{ article.date | strftime('%d/%m/%Y') }}</small>
+                    pub: <small>{{ article.date | strftime('%d/%m/%Y') }}</small>
                 </abbr>
                 {% if article.modified %}
                 <abbr title="Updated">
-                    updated: <small>{{ article.modified | strftime('%d/%m/%Y') }}</small>
+                    upd: <small>{{ article.modified | strftime('%d/%m/%Y') }}</small>
                 </abbr>
                 {% endif %}
         </header>

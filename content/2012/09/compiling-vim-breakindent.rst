@@ -22,16 +22,14 @@ Ubuntu 12.04 (many thanks to
 
 Get the sources:
 
-.. parsed-literal::
-   :class: "code"
+.. code::
 
    sudo apt-get sources vim
 
 Download VIM breakindent patch file and set permissions on the sources 
 and move the patch into the set of Debian patches:
 
-.. parsed-literal::
-   :class: "code"
+.. code::
 
    cd vim-7.3.429
    sudo chmod u=rw,g=r,o=r ../vim-breakindent.patch
@@ -45,22 +43,19 @@ Add :span:`debian/vim-breakindent.patch|code` at the end of
 
 Generate new source package
 
-.. parsed-literal::
-   :class: "code"
+.. code::
 
    sudo pdebuild
 
 Compile the new :span:`.dsc|code`:
 
-.. parsed-literal::
-   :class: "code"
+.. code::
 
    sudo pbuilder build vim_7.3.429-2ubuntu2.2.dsc
 
 Install new debs:
 
-.. parsed-literal::
-   :class: "code"
+.. code::
 
    sudo dpkg -i /var/cache/pbuilder/result/\*.deb
 
