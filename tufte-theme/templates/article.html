@@ -13,14 +13,12 @@
                 {% endif %}
             </h2>
             <br>
-                <abbr class="published" title="Published" style="padding-left: 8px;">
-                    <i style="font-size: 17px;"class="icon-rocket"> </i>
-                    <small>{{ article.date | strftime('%d/%m/%Y') }}</small>
+                <abbr title="Published">
+                    published: <small>{{ article.date | strftime('%d/%m/%Y') }}</small>
                 </abbr>
                 {% if article.modified %}
-                <abbr class="published" title="Updated">
-                    <i style="font-size: 17px;"class="icon-time"> </i>
-                    <small>{{ article.modified | strftime('%d/%m/%Y') }}</small>
+                <abbr title="Updated">
+                    updated: <small>{{ article.modified | strftime('%d/%m/%Y') }}</small>
                 </abbr>
                 {% endif %}
         </header>
