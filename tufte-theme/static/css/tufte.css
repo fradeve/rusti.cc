@@ -210,21 +210,22 @@ h1 .code, h2 .code, h3 .code { font-size: 0.80em; }
 
 .marginnote .code, .sidenote .code { font-size: 1rem; }
 
-pre.code { width: 52.5%;
+div.highlight { width: 52.5%;
            padding-left: 2.5%;
            overflow-x: auto; 
+	   border-radius: 5px;
          }
 
 .fullwidth { max-width: 90%; }
 
-pre::-webkit-scrollbar,figure
+div::-webkit-scrollbar,figure
 .highlight::-webkit-scrollbar {
     height:.4em;
     background:rgba(0,0,0,0.15);
     border-radius:10px
 }
 
-pre::-webkit-scrollbar-thumb:horizontal,figure
+div::-webkit-scrollbar-thumb:horizontal,figure
 .highlight::-webkit-scrollbar-thumb:horizontal {
     background:rgba(0,0,0,0.15);
     -webkit-border-radius:4px;
