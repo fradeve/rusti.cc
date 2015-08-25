@@ -223,16 +223,14 @@ To save LUKS headers (disaster recovery)
 Configure Bit Torrent Sync
 --------------------------
 
-- add repos, update and install ``btsync``
-- create config file; ``user`` and ``group`` BTSync will use are
-  written directly in the filename
+Add repos, update and install ``btsync``; create config file; ``user`` 
+and ``group`` BTSync will use are written directly in the filename
 
-  .. code-block:: bash
+    .. code-block:: bash
 
-     cp /etc/btsync/samples/simple.conf /etc/btsync/config.pi.www-data.conf
+       cp /etc/btsync/samples/simple.conf /etc/btsync/config.pi.www-data.conf
 
-
-  .. code-block:: json
+    .. code-block:: json
 
        {
            "device_name": "rpi",
@@ -248,9 +246,9 @@ Configure Bit Torrent Sync
            }
        }
 
-- start BTSync service
+start BTSync service
 
-  .. code-block:: bash
+    .. code-block:: bash
 
        sudo service btsync start
 
@@ -259,74 +257,75 @@ Configure ownCloud storage with BTSync
 
 Remember that ownCloud sets
 
--  *folder* permissions to ``u=rwx,g=rx,o=rx``
--  *files* permissions to ``u=rw,g=r,o=r``
+-  folder permissions to ``u=rwx,g=rx,o=rx``
+-  files permissions to ``u=rw,g=r,o=r``
 
 That said,
 
-- set ``datadirectory`` as ``/home/pi/crypt/owncloud`` in
-  ``/var/www/owncloud/config/config.php``
-- change owner to ``.btsync`` folder
+set ``datadirectory`` to ``/home/pi/crypt/owncloud`` 
+in ``/var/www/owncloud/config/config.php``
 
-  .. code::
+change owner to ``.btsync`` folder
 
-     sudo chown -R www-data:www-data /home/pi/crypt/.btsync
+.. code-block:: bash
 
--  change owner and permissions to ownCloud data dir
+   sudo chown -R www-data:www-data /home/pi/crypt/.btsync
 
-  .. code::
+change owner and permissions to ownCloud data dir
 
-     sudo chown -R www-data:www-data /home/pi/crypt/owncloud/fradeve/files/*
-     sudo chmod -R u=rwx,g=rx,o=rx /home/pi/crypt/owncloud/fradeve/files/*
+.. code-block:: bash
 
-Configure Rsnaphost backup compatible with ownCloud + BTSync
-------------------------------------------------------------
+   sudo chown -R www-data:www-data /home/pi/crypt/owncloud/fradeve/files/*
+   sudo chmod -R u=rwx,g=rx,o=rx /home/pi/crypt/owncloud/fradeve/files/*
+
+Configure an Rsnaphost backup with ownCloud + BTSync
+----------------------------------------------------
 
 Since ``owncloud/user/files`` needs permissions ``u=rwx,g=rx``, to
 Rsnapshot to this dir we have two ways:
 
-0. run Rsnaphost as ``www-data``, but this way ssh will fail
-1. run Rsnapshot as ``pi`` in another dir (e.g. ``crypt/backup``) and
-   later chmod and move files to ``owncloud/user/files``
+- run Rsnaphost as ``www-data``, but this way ssh will fail
+- run Rsnapshot as ``pi`` in another dir (e.g. ``crypt/backup``) and
+  later chmod and move files to ``owncloud/user/files``
 
-   .. code::
+.. code-block:: bash
 
-      vim /home/pi/.bin/post_backup.sh
+   vim /home/pi/.bin/post_backup.sh
 
-      ---
-      #!/bin/bash
+   ---
+   #!/bin/bash
 
-      TEMPDIR=$HOME/crypt/rsnap_temp/daily.0
-      DEST=$HOME/crypt/owncloud/fradeve/files/dev
+   TEMPDIR=$HOME/crypt/rsnap_temp/daily.0
+   DEST=$HOME/crypt/owncloud/fradeve/files/dev
 
-      # change folders ownership
-      sudo chown -R www-data:www-data $HOME/crypt/rsnap_temp/daily.0
+   # change folders ownership
+   sudo chown -R www-data:www-data $HOME/crypt/rsnap_temp/daily.0
 
-      # change permissions on folders, apply some compatible with ownCloud
-      sudo find $HOME/crypt/rsnap_temp/daily.0 -type f -exec sudo chmod u=rwx,g=rx,o=rx {} \;
+   # change permissions on folders, apply some compatible with ownCloud
+   sudo find $HOME/crypt/rsnap_temp/daily.0 -type f -exec sudo chmod u=rwx,g=rx,o=rx {} \;
 
-      # change permissions on files, apply some compatible with ownCloud
-      sudo find $HOME/crypt/rsnap_temp/daily.0 -type d -exec sudo chmod u=rwx,g=rx,o=rx {} \;
+   # change permissions on files, apply some compatible with ownCloud
+   sudo find $HOME/crypt/rsnap_temp/daily.0 -type d -exec sudo chmod u=rwx,g=rx,o=rx {} \;
 
-      for D in $TEMPDIR/*; do
-          if [ -d "${D}" ]; then
-              sudo rm -r $DEST/${D##*/}                       # remove old dir in dest
-              sudo mv $TEMPDIR/${D##*/} $DEST/${D##*/}        # move new dir to dest
-          fi
-      done
+   for D in $TEMPDIR/*; do
+       if [ -d "${D}" ]; then
+           sudo rm -r $DEST/${D##*/}                       # remove old dir in dest
+           sudo mv $TEMPDIR/${D##*/} $DEST/${D##*/}        # move new dir to dest
+       fi
+   done
 
-      # delete rsnapshot root
-      sudo rm -r $TEMPDIR 
-      ---
+   # delete rsnapshot root
+   sudo rm -r $TEMPDIR 
+   ---
 
-      chmod +x .bin/movetoowncloud.sh
+   chmod +x .bin/movetoowncloud.sh
 
 Install Ajenti
 --------------
 
 Add the Debian repo as from instructions on the site.
 
-.. code::
+.. code-block:: bash
 
    sudo apt-get install python-pip python-dev libevent-dev
    sudo pip install -U gevent
@@ -336,7 +335,7 @@ Add the Debian repo as from instructions on the site.
 Install Mozilla Weave
 ---------------------
 
-.. code::
+.. code-block:: bash
 
    cd /var/www
    sudo git clone https://github.com/balu-/FSyncMS.git
@@ -351,7 +350,7 @@ With browser, connect to
 
 Select Sqlite.
 
-.. code::
+.. code-block:: bash
 
    sudo mv /var/www/weave/setup.php /home/pi/setup.php.old
 
@@ -387,7 +386,7 @@ Install Deluge
 Installation
 ~~~~~~~~~~~~
 
-.. code::
+.. code-block:: bash
 
    mkdir /home/pi/crypt/deluge
    mkdir /home/pi/crypt/deluge/complete
@@ -397,7 +396,7 @@ Installation
 
 Start Deluge for the 1st time and kill it
 
-.. code::
+.. code-block:: bash
 
    deluged
    sudo pkill deluged
@@ -411,7 +410,7 @@ Start Deluge for the 1st time and kill it
 E.g. ``pi:testpassw:10``. Next, start Deluge console and enable remote
 connections to daemon:
 
-.. code::
+.. code-block:: bash
 
    deluged
    deluge-console
@@ -421,7 +420,7 @@ connections to daemon:
    exit
 
 
-.. code::
+.. code-block:: bash
 
    sudo pkill deluged
    deluged
@@ -429,7 +428,7 @@ connections to daemon:
 Web interface:
 ~~~~~~~~~~~~~~
 
-.. code::
+.. code-block:: bash
 
    sudo apt-get install deluged python-mako deluge-web
    deluge-web
@@ -444,7 +443,7 @@ Connect to ``serverip:8112`` and access with defined credentials.
 Autostart at boot
 ~~~~~~~~~~~~~~~~~
 
-.. code::
+.. code-block:: bash
 
    sudo vim /etc/rc.local
 
