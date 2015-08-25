@@ -78,7 +78,7 @@ cartella dove è presente lo script e poi da terminale digitare:
 
    python trasforma.py formato
 
-dove ``formato`` deve essere sostituito con igc o con nmea a seconda del
+dove :span:`formato|code` deve essere sostituito con igc o con nmea a seconda del
 formato di partenza dei file.
 
 Semplice, veloce ed efficace a patto di aver gpsbabel installato,

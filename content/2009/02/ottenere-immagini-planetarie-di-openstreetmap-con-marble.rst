@@ -29,7 +29,7 @@ tempo di testare la guida.
      su
 
 - Presumendo di aver già installato Marble (peraltro già presente nei
-  repository di Ubuntu 8.10), modificare il file ``openstreetmap.dgml``
+  repository di Ubuntu 8.10), modificare il file :span:`openstreetmap.dgml|code`
   cambiando la riga
 
   .. code-block:: bash
@@ -48,7 +48,7 @@ tempo di testare la guida.
 
      <downloadUrl protocol="http" host="a.tile.openstreetmap.org" path="/"  />
 
-ed eliminando tutte le altre due righe ``downloadUrl``.
+ed eliminando tutte le altre due righe :span:`downloadUrl|code`.
 
 - Installare i pacchetti necessari a simulare un desktop gigante:
 
@@ -75,7 +75,7 @@ ed eliminando tutte le altre due righe ``downloadUrl``.
 
 -  Adesso giostrate con Marble fino a quando la figura ottenuta non vi
    piacerà, quindi date il comando per estrapolare l'immagine, che verrà
-   salvata in ``/tmp/marble.png``:
+   salvata in :span:`/tmp/marble.png|code`:
 
   .. code-block:: bash
 

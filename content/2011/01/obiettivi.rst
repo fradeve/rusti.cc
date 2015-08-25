@@ -41,7 +41,7 @@ riflessione è cominciata nel 2010:
   modello
 - venduto l'iPod Touch 3Gs 32Gb a favore di un vecchio iPod Video 30Gb,
   compatibilissimo con Ubuntu anche senza jailbreak
-- venduto Asus 901 (``allan``) e ceduto Dell Inspiron 640m (``poe``);
+- venduto Asus 901 (:span:`allan|code`) e ceduto Dell Inspiron 640m (:span:`poe|code`);
   `sostituiti entrambi`_ con Lenovo Thinkpad X100e
 - acquistato un serverino per 11€/anno, economico, con un Atom e poca
   ram, ma perfetto per farci girare un blog statico

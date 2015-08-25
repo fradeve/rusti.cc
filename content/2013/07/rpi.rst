@@ -21,7 +21,7 @@ Flash Raspbian
 --------------
 
 Download Raspbian zip, extract it. Using Disk utility erase an SD card.
-Flash the ``img`` file using
+Flash the :span:`img|code` file using
 
 .. code-block:: bash
 
@@ -31,23 +31,23 @@ Configure boot from USB
 -----------------------
 
 Flash an USB stick with the same raspbian as above, changing from
-``sdc`` to ``sdd`` (probably). Mount the ``boot`` partition of the SD
-card and substitute the following contents with the file ``cmdline.txt``
+:span:`sdc|code` to :span:`sdd|code` (probably). Mount the :span:`boot|code` partition of the SD
+card and substitute the following contents with the file :span:`cmdline.txt|code`
 in it:
 
 .. code-block:: bash
 
    dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/sda2 rootfstype=ext4 rootwait text
 
-Where ``/dev/sda2`` is device pointer of the USB stick on RPi (if it not
-works, try changing to ``/dev/sda1``.
+Where :span:`/dev/sda2|code` is device pointer of the USB stick on RPi (if it not
+works, try changing to :span:`/dev/sda1|code`.
 
 Configure clock values
 ----------------------
 
-To avoid FS corruption issues, add a ``config.txt`` file with the
+To avoid FS corruption issues, add a :span:`config.txt|code` file with the
 following contents in the same dir of the SD card containing the file
-above (``cmdline.txt``)
+above (:span:`cmdline.txt|code`)
 
 .. code-block:: bash
 
@@ -112,7 +112,7 @@ using ssh
 
 assuming that IP as the one assigned by default from the router. Using
 wicd-curses a wired static IP can be configured. We'll assume it as
-``192.168.1.124``.
+:span:`192.168.1.124|code`.
 
 Put RPi over the internet
 -------------------------
@@ -123,7 +123,7 @@ Change default user password:
 
    passwd
 
-Change default SSH port in ``/etc/ssh/sshd_config`` (``Port 6724``).
+Change default SSH port in :span:`/etc/ssh/sshd_config|code` (:span:`Port 6724|code`).
 
 Sign in at www.no-ip.com, install the client and start it. The guide is
 `here`_.
@@ -223,8 +223,8 @@ To save LUKS headers (disaster recovery)
 Configure Bit Torrent Sync
 --------------------------
 
-Add repos, update and install ``btsync``; create config file; ``user`` 
-and ``group`` BTSync will use are written directly in the filename
+Add repos, update and install :span:`btsync|code`; create config file; :span:`user|code` 
+and :span:`group|code` BTSync will use are written directly in the filename
 
     .. code-block:: bash
 
@@ -257,15 +257,15 @@ Configure ownCloud storage with BTSync
 
 Remember that ownCloud sets
 
--  folder permissions to ``u=rwx,g=rx,o=rx``
--  files permissions to ``u=rw,g=r,o=r``
+-  folder permissions to :span:`u=rwx,g=rx,o=rx|code`
+-  files permissions to :span:`u=rw,g=r,o=r|code`
 
 That said,
 
-set ``datadirectory`` to ``/home/pi/crypt/owncloud`` 
-in ``/var/www/owncloud/config/config.php``
+set :span:`datadirectory|code` to :span:`/home/pi/crypt/owncloud|code` 
+in :span:`/var/www/owncloud/config/config.php|code`
 
-change owner to ``.btsync`` folder
+change owner to :span:`.btsync|code` folder
 
 .. code-block:: bash
 
@@ -281,12 +281,12 @@ change owner and permissions to ownCloud data dir
 Configure an Rsnaphost backup with ownCloud + BTSync
 ----------------------------------------------------
 
-Since ``owncloud/user/files`` needs permissions ``u=rwx,g=rx``, to
+Since :span:`owncloud/user/files|code` needs permissions :span:`u=rwx,g=rx|code`, to
 Rsnapshot to this dir we have two ways:
 
-- run Rsnaphost as ``www-data``, but this way ssh will fail
-- run Rsnapshot as ``pi`` in another dir (e.g. ``crypt/backup``) and
-  later chmod and move files to ``owncloud/user/files``
+- run Rsnaphost as :span:`www-data|code`, but this way ssh will fail
+- run Rsnapshot as :span:`pi|code` in another dir (e.g. :span:`crypt/backup|code`) and
+  later chmod and move files to :span:`owncloud/user/files|code`
 
 .. code-block:: bash
 
@@ -354,7 +354,7 @@ Select Sqlite.
 
    sudo mv /var/www/weave/setup.php /home/pi/setup.php.old
 
-Connect to ``http://yourserver.org/weave/index.php/``, if the following
+Connect to :span:`http://yourserver.org/weave/index.php/|code`, if the following
 message will show up, everything works as expected.
 
 ::
@@ -369,7 +369,7 @@ Setup FF Sync from Firefox using the following custom server address
 
 After configuring, if the window freezes or nothing happens, simply
 wait. URL validation process on a custom server could take up to 10
-minutes. When the ``Next`` button will be available (after several
+minutes. When the :span:`Next|code` button will be available (after several
 minutes) click it.
 
 .. code::
@@ -407,7 +407,7 @@ Start Deluge for the 1st time and kill it
    user:pw:level
    ---
 
-E.g. ``pi:testpassw:10``. Next, start Deluge console and enable remote
+E.g. :span:`pi:testpassw:10|code`. Next, start Deluge console and enable remote
 connections to daemon:
 
 .. code-block:: bash
@@ -435,10 +435,10 @@ Web interface:
 
 Remember to:
 
--  open port 8112 on iptables ``sudo iptables -A INPUT -p tcp -m tcp --dport 8112 -j ACCEPT``
+-  open port 8112 on iptables :span:`sudo iptables -A INPUT -p tcp -m tcp --dport 8112 -j ACCEPT|code`
 -  forward port 8112 to local ip on router
 
-Connect to ``serverip:8112`` and access with defined credentials.
+Connect to :span:`serverip:8112|code` and access with defined credentials.
 
 Autostart at boot
 ~~~~~~~~~~~~~~~~~

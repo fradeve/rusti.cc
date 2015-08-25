@@ -19,8 +19,8 @@ Paki ha creato un PPA per gli utenti Ubuntu/Debian in cui distribuisce
 le due versioni di JOSM, entrambe aggiornate all'ultima disponibile, che
 verranno rese disponibili velocissimamente non appena rilasciate sul
 sito ufficiale. Per partire con l'installazione, è sufficiente
-aggiungere il repository di Paki e installare i pacchetti ``josm-tested`` o
-``josm-latest``. Più comodo di così :) Adesso non resta che far rockeggiare
+aggiungere il repository di Paki e installare i pacchetti :span:`josm-tested|code` o
+:span:`josm-latest|code`. Più comodo di così :) Adesso non resta che far rockeggiare
 OpenStreetMap nella vostra città :D
 
 Incollo di seguito la sua mail:

@@ -157,7 +157,7 @@ precedente in questo modo:
 Infine dobbiamo decidere soltanto le dimensioni di visualizzazione della
 mappa in modo da adattarla al contesto del nostro sito o blog, per fare
 ciò basta modificare le dimensioni proporzionali della mappa rispetto al
-``<div>`` in cui è contenuta, in questo caso, essendo su di un file html
+:span:`<div>|code` in cui è contenuta, in questo caso, essendo su di un file html
 a parte, ho deciso di lasciare le dimensioni della mappa grandi quanto
 la pagina html.
 

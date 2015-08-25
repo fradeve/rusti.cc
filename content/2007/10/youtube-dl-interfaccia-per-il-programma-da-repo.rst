@@ -18,8 +18,8 @@ video in vari formati (mpeg, avi, 3gp, Wmv).
 .. _Davide Contalbo: http://contalbodavide.blogspot.com
 
 Ok, credo di aver parlato anche troppo, passiamo alla pratica.
-Installiamo le dipendenze (ovvero i pacchetti ``youtube-dl``, ``zenity``
-ed ``ffmpeg``). Da terminale, diamo un bel
+Installiamo le dipendenze (ovvero i pacchetti :span:`youtube-dl|code`, :span:`zenity|code`
+ed :span:`ffmpeg|code`). Da terminale, diamo un bel
 
 .. code-block:: bash
 

@@ -35,9 +35,9 @@ Ed in tutto questo:
 - 75 giornate lavorative collezionate
 - sono diventato un power-user di: plain `LaTeX`_, VIM, GIT, Ikiwiki,
   Mutt
-- mi son dotato di un nuovo server (``paranoia``, sponsorizzato dal
+- mi son dotato di un nuovo server (:span:`paranoia|code`, sponsorizzato dal
   miiiiitico `Sdonk <http://www.sdonk.org>`_), un pc fisso con SSD
-  (``edgar``), un telefono con Android
+  (:span:`edgar|code`), un telefono con Android
 - attivato e configurato, con Sdonk, un relay `TOR`_
 - ho partecipato a 2 bandi regionali per giovani imprenditori
 - ho imparato a cucinare i dolci (che, scherziamo?)

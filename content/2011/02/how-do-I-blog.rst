@@ -167,7 +167,7 @@ utilizzando software libero, quelli in rosso sono proprietari.
         flickr -> pubwich
     }
 
-Il comando per generarlo partendo dal file ``graph.dot``:
+Il comando per generarlo partendo dal file :span:`graph.dot|code`:
 
 .. code-block:: bash
 

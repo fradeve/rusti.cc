@@ -49,7 +49,7 @@ Passo 3. Installare GCC 3.4
 Passo 4. Fare alcune modifiche al codice C
 ------------------------------------------
 
-Prima di compilare, in ``<audio/acodec/acodec.c>``, alla linea 31,
+Prima di compilare, in :span:`<audio/acodec/acodec.c>|code`, alla linea 31,
 inserire quanto segue:
 
 .. code-block:: C
@@ -87,7 +87,7 @@ precedente con "sudo python setup.py install".*
 Passo 7. Controlliamo se funziona
 ---------------------------------
 
-in un terminare digitare "python" e poi ``import pymedia``; se non
+in un terminare digitare "python" e poi :span:`import pymedia|code`; se non
 otteniamo errori, siamo a cavallo :D
 
 .. code-block:: python

@@ -48,7 +48,7 @@ Dopo aver dato un bel
 avrete aggiornato i pacchetti.
 
 Adesso, dobbiamo commentare le seguenti righe (ammesso che le abbiate)
-nel file ``/etc/network/interfaces``:
+nel file :span:`/etc/network/interfaces|code`:
 
 .. code-block:: bash
 

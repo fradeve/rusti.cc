@@ -47,7 +47,7 @@ sul disco fisso (sul PC di casa possiamo anche soprassedere, ma vogliamo
 parlare di quanto spazio TeXLive si mangia sul netbook?). Quindi, o
 tutto o niente: su Debian non è possibile installare da repository solo
 il pacchettino LaTeX che ci interessa per le funzioni matematiche, tocca
-beccarci tutto il ``latex-science``, con decine di tool che non useremo
+beccarci tutto il :span:`latex-science|code`, con decine di tool che non useremo
 mai.
 
 Come risolvere?
@@ -89,7 +89,7 @@ mezza giornata (a seconda della quantità di pacchetti di default che
 vorrete installare, ed in funzione della velocità della vostra
 connessione). Il "sudo" dell'ultimo comando è importante perché
 l'installazione di default di TeXLive è in una cartella di sistema
-(``/usr/local/texlive`` per la precisione).
+(:span:`/usr/local/texlive|code` per la precisione).
 
 .. code-block:: bash
 
@@ -122,12 +122,12 @@ grossomodo:
 -  *crea i collegamenti nelle directory di sistema*: cambiando in "Si",
    e spuntando anche "*crea i collegamenti simbolici nelle directory
    standard*", TeXLive installerà dei link nella propria cartella
-   degli eseguibili (solitamente ``/usr/bin``), utile per avere tutti i
+   degli eseguibili (solitamente :span:`/usr/bin|code`), utile per avere tutti i
    comandi di LaTeX a portata di mano anche dal terminale; sarebbe una
    scelta consigliata, se non fosse per il fatto che ciò sporca la
    suddetta cartella. Meglio è (come suggerito da RobiTeX) esportare il
-   $PATH nel proprio file ``.profile`` così da mantenere tutti i file in
-   ``/usr/local``: ciò creerà meno problemi in fase di aggiornamento.
+   $PATH nel proprio file :span:`.profile|code` così da mantenere tutti i file in
+   :span:`/usr/local|code`: ciò creerà meno problemi in fase di aggiornamento.
 
    .. code-block:: bash
 
@@ -170,8 +170,8 @@ aggiornare la propria distribuzione.
 
      sudo rm /usr/local/texlive/2011/tlpkg/backups/*
 
-- modificare l'anno della distribuzione nei file ``.profile`` e
-  ``.bashrc`` da 2010 a 2011
+- modificare l'anno della distribuzione nei file :span:`.profile|code` e
+  :span:`.bashrc|code` da 2010 a 2011
 
 - avviare tlmgr, caricare l'archivio di default (definito al momento
   dell'installazione) ed eseguire l'aggiornamento di tlmgr:

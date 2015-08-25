@@ -23,7 +23,7 @@ Detto questo... oggi mi sono apprestato a provare ad installare
 Bridge Construction Set, uno dei giochi citati nel
 `Full Circle Magazine n°5`_, e del quale vorrei
 scrivere la wiki. Dopo aver fatto partire l'installer ed eseguito lo
-script per patchare la libreria Openal (il file e ``bcs-linux-openal-fixer.sh``),
+script per patchare la libreria Openal (il file e :span:`bcs-linux-openal-fixer.sh|code`),
 l'unica cosa che ottengo è questa:
 
 .. code-block:: bash
