@@ -41,7 +41,7 @@ SOCIAL = (
             ('tags', SITEURL + '/tags.html'),
             ('feat', SITEURL + '/featured.html'),
             ('me', SITEURL + '/pages/social.html'),
-            ('gh', 'http://github.com/fradeve/rusti.cc')
+            ('gh', 'https://github.com/fradeve/rusti.cc')
          )
 
 DEFAULT_PAGINATION = False

@@ -16,20 +16,20 @@
 {% endblock content %}
 
 {% block social %}
-    {% if SOCIAL %}
-                <div class="social">
-                    {% if FEED_ALL_ATOM %}
-                        <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">atom</a> ⋅ 
-                    {% endif %}
-                    {% if FEED_ALL_RSS %}
-                       <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate">rss</a> ⋅ 
-                    {% endif %}
-
-                    {% for icon, link in SOCIAL %}
-                    <a href="{{ link }}">{{icon}}</a>{% if not loop.last %} ⋅ {% endif %}
-                    {% endfor %}
-                     ⋅ <a href="{{ SITEURL }}/static/humans.txt">humans</a>
-                </div>
-    {% endif %}
     <br>
+    {% if SOCIAL %}
+	<div class="social">
+	    {% if FEED_ALL_ATOM %}
+		<a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">atom</a> ⋅ 
+	    {% endif %}
+	    {% if FEED_ALL_RSS %}
+	       <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate">rss</a> ⋅ 
+	    {% endif %}
+
+	    {% for icon, link in SOCIAL %}
+	    <a href="{{ link }}">{{icon}}</a>{% if not loop.last %} ⋅ {% endif %}
+	    {% endfor %}
+	     ⋅ <a href="{{ SITEURL }}/static/humans.txt">humans</a>
+	</div>
+    {% endif %}
 {% endblock social %}
