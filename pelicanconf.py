@@ -37,11 +37,11 @@ DISQUS_PUBLICKEY = '4VY3RiHzHB4j6Z0jjyUpvKbVgM6homcEupgvIdIdrjNTaMtGh8Quz2w6Myy6
 
 # Links
 SOCIAL = (
-            ('icon-archive', SITEURL + '/archives.html'),
-            ('icon-tags', SITEURL + '/tags.html'),
-            ('icon-pushpin', SITEURL + '/featured.html'),
-            ('icon-user', SITEURL + '/pages/social.html'),
-            ('icon-github', 'http://github.com/fradeve/fradeve.org')
+            ('posts', SITEURL + '/archives.html'),
+            ('tags', SITEURL + '/tags.html'),
+            ('feat', SITEURL + '/featured.html'),
+            ('me', SITEURL + '/pages/social.html'),
+            ('gh', 'http://github.com/fradeve/rusti.cc')
          )
 
 DEFAULT_PAGINATION = False

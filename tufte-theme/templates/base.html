@@ -44,31 +44,9 @@
     <div class="footer-container">
         <footer id="contentinfo" class="wrapper">
 
-            <!-- <form action="http://google.com/search" method="get">
-                <fieldset role="search">
-                    <input type="hidden" name="q" value="site:aas.io" />
-                    <input class="search" type="text" name="q" results="0" placeholder="Search" accesskey="/" />
-                </fieldset>
-            </form> -->
+            {% block social %}
+            {% endblock social %}
 
-            {% if SOCIAL %}
-                        <div class="social">
-                            <ul>
-                                {% if FEED_ALL_ATOM %}
-                                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"><i class="icon-rss-sign"></i></a></li>
-                                {% endif %}
-                                {% if FEED_ALL_RSS %}
-                                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"><i class="icon-rss"></i></a></li>
-                                {% endif %}
-
-                                {% for icon, link in SOCIAL %}
-                                    <li><a href="{{ link }}"><i class="{{ icon }}"></i></a></li>
-                                {% endfor %}
-                            </ul>
-                        </div><!-- /.social -->
-            {% endif %}
-
-            <small><a href="{{ SITEURL }}/static/humans.txt">humans.txt</a></small>
         </footer>
     </div>
 

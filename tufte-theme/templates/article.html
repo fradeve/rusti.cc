@@ -25,8 +25,7 @@
 
         <div class="content">
             {{ article.content }}
-            <center>
-                <div style="font-size: 40px; color: #b44; padding-bottom: 20px">.</div>
+            <div class="section">
                 <h3>
                     {% if article.tags %}
                         <p>
@@ -37,7 +36,7 @@
                         </p>
                     {% endif %}
                 </h3>
-            </center>
+            </div>
         </div>
         {% if DISQUS_SITENAME %}
             <div class="comments">
