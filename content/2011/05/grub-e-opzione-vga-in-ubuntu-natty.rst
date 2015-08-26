@@ -13,7 +13,7 @@ parlava di un problema legato alla voce `vga`.
 
 Uno dei grandissimi vantaggi di GRUB è la possibilità di modificare in
 tempo reale le opzioni della voce di avvio con la pressione del tasto
-``e``, per cui mi è sembrato ragionevole eliminare la voce ``vga=775`` e
+:span:`e|code`, per cui mi è sembrato ragionevole eliminare la voce :span:`vga=775|code` e
 tentare un avvio, cosa che ha funzionato.
 
 `Indagando oltre`_
@@ -22,7 +22,7 @@ la risoluzione e profondità di colore durante l'avvio del sistema
 operativo. Per qualche arcano motivo la mia scheda grafica (nVidia
 Corporation G80 GeForce 8800 GTS rev a2) o i driver in uso (proprietari,
 purtroppo) non supporta la modalità 775 e quindi eliminando o
-modificando la voce ``vga`` quantomeno il sistema si avvia. Che fare,
+modificando la voce :span:`vga|code` quantomeno il sistema si avvia. Che fare,
 procedere per tentativi, o qualcuno conosce una maniera più coerente di
 affrontare la situazione?
 

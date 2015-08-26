@@ -4,15 +4,17 @@
 {% block content %}
 <article>
   <div id="article_text">
-  <h1>Featured articles:</h1>
-    <dl>
+  <h2>Featured articles:</h2>
       {% for article in dates %}
         {% if article.featured %}
-          <dt>{{ article.locale_date }}</dt>
-          <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+        <header class="clearfix">
+	  <h3>
+		  <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+		  <p>{{ article.locale_date }}</p>
+	  <h3>
+        </header>
         {% endif %}
       {% endfor %}
-    </dl>
   </div>
 </article>
 {% endblock %}

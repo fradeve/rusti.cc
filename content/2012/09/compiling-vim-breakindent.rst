@@ -2,7 +2,6 @@ Compiling VIM with Breakindent patch
 ====================================
 
 :date: 2012-09-10 10:00:00
-:featured: yes
 :lang: en
 :modified: 2015-04-08
 :tags: vim
@@ -27,14 +26,8 @@ Get the sources:
 
    sudo apt-get sources vim
 
-Download VIM breakindent patch file:
-
-.. code-block:: bash
-
-   wget
-
-Set permissions on the sources and move the patch into the set of Debian
-patches:
+Download VIM breakindent patch file and set permissions on the sources 
+and move the patch into the set of Debian patches:
 
 .. code-block:: bash
 
@@ -42,11 +35,11 @@ patches:
    sudo chmod u=rw,g=r,o=r ../vim-breakindent.patch
    sudo cp ../vim-breakindent.patch debian/patches/debian/.
 
-Add one new entry in ``debian/changelog``, bumping version from
-``vim_7.3.429-2ubuntu2.1`` to ``vim_7.3.429-2ubuntu2.2``.
+Add one new entry in :span:`debian/changelog|code`, bumping version from
+:span:`vim_7.3.429-2ubuntu2.1|code` to :span:`vim_7.3.429-2ubuntu2.2|code`.
 
-Add ``debian/vim-breakindent.patch`` at the end of
-``debian/patches/series``
+Add :span:`debian/vim-breakindent.patch|code` at the end of
+:span:`debian/patches/series|code`.
 
 Generate new source package
 
@@ -54,7 +47,7 @@ Generate new source package
 
    sudo pdebuild
 
-Compile the new ``.dsc``:
+Compile the new :span:`.dsc|code`:
 
 .. code-block:: bash
 
@@ -71,7 +64,7 @@ Debian package
 ~~~~~~~~~~~~~~
 
 As I write, `Eudoxos`_ is maintaining a `Launchpad repository`_ with Vim
-breakindent-patched compiled ``.deb`` packages.
+breakindent-patched compiled :span:`.deb|code` packages.
 
 .. _VIM Breakindent patch: https://retracile.net/wiki/VimBreakIndent
 .. _never integrated in standard VIM: https://groups.google.com/forum/#!msg/vim_dev/VdMLVy_ZS2I/KsRNkREcBhgJ

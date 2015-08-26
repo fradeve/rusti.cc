@@ -10,18 +10,18 @@ quella che sembra essere una vera febbre della Puglia per il Software
 Libero, incontrerà fans, simpatizzanti e fedeli della `Chiesa di Emacs`_
 in ben due appuntamenti in Puglia solo a febbraio:
 
-| *Giovedì 17 febbraio 2011* Castellana Grotte (BA)
-| presso la scuola
-| I.T.I.S. "Luigi Dell'Erba"
-| Via della Resistenza, 40
-| 70013 Castellana Grotte (Ba)
-| `link alla notizia`_
+	*Giovedì 17 febbraio 2011* Castellana Grotte (BA)
+	presso la scuola
+	I.T.I.S. "Luigi Dell'Erba"
+	Via della Resistenza, 40
+	70013 Castellana Grotte (Ba)
+	`link alla notizia`_
 
-| *Venerdì 18 febbraio 2011* Lecce
-| presso la
-| facoltà di Ingegneria dell'Università del Salento,
-| nel complesso Ecotekne, nell'aula Y1 a partire dalle ore 10.30
-| link alla `notizia`_
+	*Venerdì 18 febbraio 2011* Lecce
+	presso la
+	facoltà di Ingegneria dell'Università del Salento,
+	nel complesso Ecotekne, nell'aula Y1 a partire dalle ore 10.30
+	link alla `notizia`_
 
 Purtroppo, preso da esami/lavoro/incombenze non riuscirò ad esserci, ma
 per tutti i pugliesi ed i lucani è senz'altro un'occasione da non

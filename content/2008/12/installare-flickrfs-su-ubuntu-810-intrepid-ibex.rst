@@ -42,7 +42,7 @@ account PRO, è esattamente cio che fa per voi ;)
 Passo 1
 -------
 
-Installiamo il pacchetto ``flickrfs`` da Synaptic o da linea di comando:
+Installiamo il pacchetto :span:`flickrfs|code` da Synaptic o da linea di comando:
 
 .. code-block:: bash
 
@@ -68,7 +68,7 @@ Passo 3
 -------
 
 Creiamo una cartella (dove più ci piace) in cui verranno "ospitate" le
-nostre cartelle di Flickr; io l'ho montata in ``/media``, come qualsiasi
+nostre cartelle di Flickr; io l'ho montata in :span:`/media|code`, come qualsiasi
 altra penna USB o hard disk esterno:
 
 .. code-block:: bash

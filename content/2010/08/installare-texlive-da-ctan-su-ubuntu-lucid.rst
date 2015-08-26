@@ -47,7 +47,7 @@ sul disco fisso (sul PC di casa possiamo anche soprassedere, ma vogliamo
 parlare di quanto spazio TeXLive si mangia sul netbook?). Quindi, o
 tutto o niente: su Debian non è possibile installare da repository solo
 il pacchettino LaTeX che ci interessa per le funzioni matematiche, tocca
-beccarci tutto il ``latex-science``, con decine di tool che non useremo
+beccarci tutto il :span:`latex-science|code`, con decine di tool che non useremo
 mai.
 
 Come risolvere?
@@ -89,7 +89,7 @@ mezza giornata (a seconda della quantità di pacchetti di default che
 vorrete installare, ed in funzione della velocità della vostra
 connessione). Il "sudo" dell'ultimo comando è importante perché
 l'installazione di default di TeXLive è in una cartella di sistema
-(``/usr/local/texlive`` per la precisione).
+(:span:`/usr/local/texlive|code` per la precisione).
 
 .. code-block:: bash
 
@@ -100,38 +100,43 @@ l'installazione di default di TeXLive è in una cartella di sistema
 Le opzioni da selezionare in questa fase sono altamente soggettive, ma
 grossomodo:
 
--  *Schemi selezionati*: evitate scheme-full, installerà l'intera
-   TeXLive, son diversi Gib e probabilmente non vi servirà mai tutto;
-   basic-scheme per la mia esperienza è andato più che bene.
+Schemi selezionati
+  evitate :span:`scheme-full|code`, installerà l'intera
+  TeXLive, son diversi Gib e probabilmente non vi servirà mai tutto;
+  :span:`basic-scheme|code` per la mia esperienza è andato più che bene.
 
--  *collezioni di base*: permette di selezionare collezioni di pacchetti
-   da installare in base alle loro funzioni; consigliati quelli
-   scientifici, quelli per la grafica e quelli relativi alle
-   bibliografie; se avete paura di mettere troppo o troppo poco, non vi
-   preoccupate, TeXLive è cosi flessibile che dopo potrete
-   aggiungere/rimuovere pacchetti senza sforzo e senza sporcare il
-   sistema.
+collezioni di base
+  permette di selezionare collezioni di pacchetti
+  da installare in base alle loro funzioni; consigliati quelli
+  scientifici, quelli per la grafica e quelli relativi alle
+  bibliografie; se avete paura di mettere troppo o troppo poco, non vi
+  preoccupate, TeXLive è cosi flessibile che dopo potrete
+  aggiungere/rimuovere pacchetti senza sforzo e senza sporcare il
+  sistema.
 
--  *collezioni di lingue*: spuntate solo quelle che realmente vi
-   interessano (italiano, inglese, francese, tedesco, spagnolo, latino,
-   ecc.)
+collezioni di lingue
+  spuntate solo quelle che realmente vi
+  interessano (italiano, inglese, francese, tedesco, spagnolo, latino,
+  ecc.)
 
--  *installa la documentazione per font e macro*: ho inserito "No" e
-   vivo benissimo; idem per "Installa i sorgenti per font e macro";
+installa la documentazione per font e macro
+  ho inserito "No" e
+  vivo benissimo; idem per "Installa i sorgenti per font e macro";
 
--  *crea i collegamenti nelle directory di sistema*: cambiando in "Si",
-   e spuntando anche "*crea i collegamenti simbolici nelle directory
-   standard*", TeXLive installerà dei link nella propria cartella
-   degli eseguibili (solitamente ``/usr/bin``), utile per avere tutti i
-   comandi di LaTeX a portata di mano anche dal terminale; sarebbe una
-   scelta consigliata, se non fosse per il fatto che ciò sporca la
-   suddetta cartella. Meglio è (come suggerito da RobiTeX) esportare il
-   $PATH nel proprio file ``.profile`` così da mantenere tutti i file in
-   ``/usr/local``: ciò creerà meno problemi in fase di aggiornamento.
+crea i collegamenti nelle directory di sistema
+  cambiando in "Si",
+  e spuntando anche "*crea i collegamenti simbolici nelle directory
+  standard*", TeXLive installerà dei link nella propria cartella
+  degli eseguibili (solitamente :span:`/usr/bin|code`), utile per avere tutti i
+  comandi di LaTeX a portata di mano anche dal terminale; sarebbe una
+  scelta consigliata, se non fosse per il fatto che ciò sporca la
+  suddetta cartella. Meglio è (come suggerito da RobiTeX) esportare il
+  $PATH nel proprio file :span:`.profile|code` così da mantenere tutti i file in
+  :span:`/usr/local|code`: ciò creerà meno problemi in fase di aggiornamento.
 
-   .. code-block:: bash
+.. code-block:: bash
 
-      echo 'export PATH=/usr/local/texlive/2010/bin/i386-linux:${PATH}' >> .profile
+   echo 'export PATH=/usr/local/texlive/2010/bin/i386-linux:${PATH}' >> .profile
 
 Considerato che gli eseguibili d'ora in poi saranno in tale percorso, è
 comodo utilizzare un alias per tlmgr, visto che tutte le operazioni
@@ -156,42 +161,42 @@ Aggiornamento annuale
 TeXLive esce in una nuova versione ogni anno. Di seguito i passi per
 aggiornare la propria distribuzione.
 
-- recarsi nella cartella di installazione e creare una copia di backup
-  della propria installazione:
+recarsi nella cartella di installazione e creare una copia di backup
+della propria installazione:
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     sudo cp -a 2010 2011
+   sudo cp -a 2010 2011
 
-- per risparmiare dello spazio, eliminare il contenuto della cartella
-  dei backup annui della distribuzione vecchia:
+per risparmiare dello spazio, eliminare il contenuto della cartella
+dei backup annui della distribuzione vecchia:
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     sudo rm /usr/local/texlive/2011/tlpkg/backups/*
+   sudo rm /usr/local/texlive/2011/tlpkg/backups/*
 
-- modificare l'anno della distribuzione nei file ``.profile`` e
-  ``.bashrc`` da 2010 a 2011
+modificare l'anno della distribuzione nei file :span:`.profile|code` e
+:span:`.bashrc|code` da 2010 a 2011
 
-- avviare tlmgr, caricare l'archivio di default (definito al momento
-  dell'installazione) ed eseguire l'aggiornamento di tlmgr:
+avviare tlmgr, caricare l'archivio di default (definito al momento
+dell'installazione) ed eseguire l'aggiornamento di tlmgr:
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     sutlmgr --gui
+   sutlmgr --gui
 
-- aggiornare i pacchetti con il comando classico:
+aggiornare i pacchetti con il comando classico:
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     sutlmgr update --all
+   sutlmgr update --all
 
-- dopo aver provato a compilare qualche documento, se tutto funziona
-  bene, potrete anche eliminare la distribuzione vecchia:
+dopo aver provato a compilare qualche documento, se tutto funziona
+bene, potrete anche eliminare la distribuzione vecchia:
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     sudo rm -r /usr/local/texlive/2010
+   sudo rm -r /usr/local/texlive/2010
 
 Ringraziamenti
 --------------

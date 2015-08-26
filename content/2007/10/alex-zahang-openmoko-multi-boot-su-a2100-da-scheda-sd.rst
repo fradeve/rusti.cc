@@ -15,16 +15,15 @@ file come il menu.lst del GRUB nella scheda SD, così da poter
 controllare facilmente i parametri del kernel. Il sistema da lui creato
 funziona cosi:
 
-1. Carica il ``menu.lst`` dalla scheda MicroSD, e mostra un menù di
+1. Carica il :span:`menu.lst|code` dalla scheda MicroSD, e mostra un menù di
    boot, dal quale si possono selezionare i parametri di boot.
-2. Carica ``zlimage`` da scheda MicroSD, e ne fa il boot.
+2. Carica :span:`zlimage|code` da scheda MicroSD, e ne fa il boot.
 
 Tutto questo è stato testato sul palmare Motorola di Alex... chissà se
 il multi-boot sarà disponibile anche su Openmoko!!! Qui sotto, il video
 :D
 
 .. youtube:: -QqWIl-_KO4
-   :align: center
 
 
 .. _blog: http://thisvip.wordpress.com/2007/10/05/multi-boot-on-a1200-from-sd-card

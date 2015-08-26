@@ -10,7 +10,7 @@ funzionante Navit sul Neo FreeRunner con distribuzione SHR-testing. È
 anche una valida maniera per prendere una nota, visto che certe cose
 tendo a dimenticarle :D
 
-1. installare Navit con il comando ``opkg install navit``; è possibile
+1. installare Navit con il comando :span:`opkg install navit|code`; è possibile
    reperire anche la versione svn da `qui`_.
 
 2. di default, Navit presenta una configurazione a dir poco schifosa.
@@ -18,21 +18,21 @@ tendo a dimenticarle :D
    sostituire il file XML che la gestisce. Se non avete voglia di
    indagare le misteriose (ma non troppo) configurazioni di Navit, vi
    consiglio di `scaricare il mio file`_ di configurazione e inserirlo 
-   nelle cartelle ``~/.navit`` e ``/usr/share/navit`` (sostituendo 
+   nelle cartelle :span:`~/.navit|code` e :span:`/usr/share/navit|code` (sostituendo 
    eventualmente un navit.xml già presente).
 
-3. installare la libreria libgps17 con il comando "ipkg install
-   libgps17" (notare bene, "ipkg" non "opkg"!)
+3. installare la libreria libgps17 con il comando :span:`ipkg install
+   libgps17|code` (notare bene, :span:`ipkg|code` non :span:`opkg|code`!)
 
-4. andare nella cartella ``/usr/lib`` e dare il comando
-   ``ln -s libgps.so.17 libgps.so.16`` per fare in modo che Navit faccia
+4. andare nella cartella :span:`/usr/lib|code` e dare il comando
+   :span:`ln -s libgps.so.17 libgps.so.16|code` per fare in modo che Navit faccia
    riferimento alla libreria giusta
 
 5. scaricare la cartografia di OpenStreetMap per l'Italia da
    `CloudMade`_; al termine del download, estrarre il file compresso
 
-6. spostare sul palmare il file ``italy.navit.bin`` appena estratto,
-   nella cartella ``~/.navit``
+6. spostare sul palmare il file :span:`italy.navit.bin|code` appena estratto,
+   nella cartella :span:`~/.navit|code`
 
 7. avviare Navit e godersi lo spettacolo del routing completamente
    realizzato con dati, software e hardware LIBERO :D

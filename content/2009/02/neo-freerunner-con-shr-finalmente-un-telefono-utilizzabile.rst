@@ -133,7 +133,7 @@ sessione (proprio come un PC!), poi il Neo va in standby. La spiacevole
 quanto inutile apparizione del menù può essere evitata dando i seguenti
 comandi:
 
-1. ``xrandr -o 1``
+1. :span:`xrandr -o 1|code`
 
 2. fare click sulla chiave inglese presente nell'angolo in alto a
    sinistra della barra superiore
@@ -165,8 +165,8 @@ Inserire un tasto per lo spegnimento
 Dopo aver eliminato il menù che appare alla pressione del tasto Power,
 non ci sarà più modo di spegnere il Neo senza un terminale. Possiamo
 ovviare a questo problema creando uno shortcut sul desktop. Basterà
-inserire il seguente file, che chiameremo ``shutdown.desktop`` nella
-cartella ``/usr/share/applications/``:
+inserire il seguente file, che chiameremo :span:`shutdown.desktop|code` nella
+cartella :span:`/usr/share/applications/|code`:
 
 .. code-block:: bash
 
@@ -221,7 +221,7 @@ programma, e non sono più reperibili da Yaouh!, che non riesce quindi a
 scaricare alcun aggiornamento. Per ovviare a questo inconveniente,
 almeno per le mappe "standard" di OpenStreetMap (quelle di Mapnik, per
 capirci), è sufficiente sostituire nel file
-``~/.gconf/apps/tangogps/%gconf.xml`` questa riga:
+:span:`~/.gconf/apps/tangogps/%gconf.xml|code` questa riga:
 
 .. code-block:: bash
 
@@ -255,14 +255,14 @@ Scarichiamo la cartografia italiana di OpenStreetMap aggiornata
 settimanalmente fornita da CloudMade, da
 `qui <http://downloads.cloudmade.com/europe/italy/italy.navit.bin.zip>`_,
 e dopo averlo estratto dall'archivio, spostiamo il file nella cartella
-``~/.navit``. Quindi, bisognerà sistemare il file di configurazione, con
+:span:`~/.navit|code`. Quindi, bisognerà sistemare il file di configurazione, con
 il seguente comando:
 
 .. code-block:: bash
 
    cp /usr/share/navit/navit.xml ~/.navit/navit.xml
 
-Adesso inseriamo nel file una nuova dicitura ``mapset``, più o meno nei
+Adesso inseriamo nel file una nuova dicitura :span:`mapset|code`, più o meno nei
 pressi del rigo 148:
 
 .. code-block:: html
@@ -273,7 +273,7 @@ pressi del rigo 148:
 
 Fatto ciò, possiamo ancora fare in modo che Navit visualizzi i tasti "+"
 e "-" per lo zoom, per ingrandire e diminuire lo zoom della mappa
-durante la navigazione, portando da ``enables=no`` a ``enables=yes`` le voci
+durante la navigazione, portando da :span:`enables=no|code` a :span:`enables=yes|code` le voci
 ai righi 53 e 54:
 
 .. code-block:: html

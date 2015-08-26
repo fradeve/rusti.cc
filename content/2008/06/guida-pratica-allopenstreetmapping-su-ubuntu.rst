@@ -189,12 +189,12 @@ cartella che contiene i file igc prima di dare il comando):
 Per tenerlo meglio a mente, la struttura delle opzioni comando dovrebbe
 essere questa (correggetemi se sbaglio):
 
-- ``-i``: "input", viene seguito dall'estensione del file da
+- :span:`-i|code`: "input", viene seguito dall'estensione del file da
   trasformare (nel nostro caso, igc);
-- ``-f``: "file" identifica il nome del file di input;
-- ``-o``: "output", viene seguito dall'estensione del file di
+- :span:`-f|code`: "file" identifica il nome del file di input;
+- :span:`-o|code`: "output", viene seguito dall'estensione del file di
   destinazione (per noi, gpx);
-- ``-F``: "File" identifica il nome del file di output.
+- :span:`-F|code`: "File" identifica il nome del file di output.
 
 .. _FExplorer: http://www.gosymbian.com/fexplorer_new.php
 

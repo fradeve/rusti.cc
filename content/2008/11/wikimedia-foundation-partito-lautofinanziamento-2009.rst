@@ -6,9 +6,9 @@ Wikimedia Foundation: partito lautofinanziamento 2009
 
 La missione della Wikimedia Foundation:
 
-*Empower and engage people around the world to collect and develop
-educational content under a free license or in the public domain, and to
-disseminate it effectively and globally.*
+	Empower and engage people around the world to collect and develop
+	educational content under a free license or in the public domain, and to
+	disseminate it effectively and globally.
 
 Vorrei ricordare a tutti i lettori che in queste ultime settimane è
 ripartita la campagna di autofinanziamento per i progetti della

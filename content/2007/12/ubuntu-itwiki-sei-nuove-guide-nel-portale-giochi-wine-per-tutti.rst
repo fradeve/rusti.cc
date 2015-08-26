@@ -31,7 +31,7 @@ configurazione di Wine, disponibile nella pagina `Emulatori/Wine/Configurazione`
 per configurare il noto programma Wine con un occhio di riguardo per i
 giochi. Ci voleva, eh? Ovviamente per commenti, pareri e critiche su
 qualsiasi wiki nel Portale, potete scrivermi a
-``fradeve @ubuntu-it.org``. Insomma, anche sotto Natale le novità non
+:span:`fradeve @ubuntu-it.org|code`. Insomma, anche sotto Natale le novità non
 mancano, e ce n'è veramente per tutti i Gutsy (citando il banner nella
 Home del sito).
 

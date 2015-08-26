@@ -22,63 +22,62 @@ tempo di testare la guida.
 .. figure:: {filename}/images/marble.jpg
 
 
-- Diventare root
+Diventare root
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     su
+   su
 
-- Presumendo di aver già installato Marble (peraltro già presente nei
-  repository di Ubuntu 8.10), modificare il file ``openstreetmap.dgml``
-  cambiando la riga
+Presumendo di aver già installato Marble (peraltro già presente nei
+repository di Ubuntu 8.10), modificare il file :span:`openstreetmap.dgml|code`
+cambiando la riga
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     vim /usr/share/kde4/apps/marble/data/maps/earth/openstreetmap/openstreetmap.dgml
-
-
-  .. code-block:: xml
-
-     <downloadUrl protocol="http" host="a.tile.openstreetmap.org" path="/"  />
+   vim /usr/share/kde4/apps/marble/data/maps/earth/openstreetmap/openstreetmap.dgml
 
 
-  in
+.. code-block:: xml
 
-  .. code-block:: xml
+   <downloadUrl protocol="http" host="a.tile.openstreetmap.org" path="/"  />
 
-     <downloadUrl protocol="http" host="a.tile.openstreetmap.org" path="/"  />
+in
 
-ed eliminando tutte le altre due righe ``downloadUrl``.
+.. code-block:: xml
 
-- Installare i pacchetti necessari a simulare un desktop gigante:
+   <downloadUrl protocol="http" host="a.tile.openstreetmap.org" path="/"  />
 
-  .. code-block:: bash
+ed eliminando tutte le altre due righe :span:`downloadUrl|code`.
 
-     apt-get install xvfb x11xvnc xvnc4viewer imagemagick netpbm
-     mkdir /tmp/marblefb
+Installare i pacchetti necessari a simulare un desktop gigante:
 
--  Nel comando che segue, selezioniamo la risoluzione che ci interessa
-   ottenere:
+.. code-block:: bash
 
-  .. code-block:: bash
+   apt-get install xvfb x11xvnc xvnc4viewer imagemagick netpbm
+   mkdir /tmp/marblefb
 
-     Xvfb -ac :1 -fbdir /tmp/marblefb -screen 0 4096x4096x24
-     x11vnc -scale .5 -display :1
+Nel comando che segue, selezioniamo la risoluzione che ci interessa
+ottenere:
 
--  Apriamo una finestra vuota e visualizziamo Marble, sostituendo nel
-   secondo comando qualsiasi risoluzione abbiamo scelto di adottare:
+.. code-block:: bash
 
-  .. code-block:: bash
+   Xvfb -ac :1 -fbdir /tmp/marblefb -screen 0 4096x4096x24
+   x11vnc -scale .5 -display :1
 
-     vncviewer localhost :0
-     DISPLAY=:1 marble -geometry 4096x4096+0+0
+Apriamo una finestra vuota e visualizziamo Marble, sostituendo nel
+secondo comando qualsiasi risoluzione abbiamo scelto di adottare:
 
--  Adesso giostrate con Marble fino a quando la figura ottenuta non vi
-   piacerà, quindi date il comando per estrapolare l'immagine, che verrà
-   salvata in ``/tmp/marble.png``:
+.. code-block:: bash
 
-  .. code-block:: bash
+   vncviewer localhost :0
+   DISPLAY=:1 marble -geometry 4096x4096+0+0
 
-     xwdtopnm < /tmp/marblefb/Xvfb_screen0 | pnmtopng > /tmp/marble.png
+Adesso giostrate con Marble fino a quando la figura ottenuta non vi
+piacerà, quindi date il comando per estrapolare l'immagine, che verrà
+salvata in :span:`/tmp/marble.png|code`:
+
+.. code-block:: bash
+
+   xwdtopnm < /tmp/marblefb/Xvfb_screen0 | pnmtopng > /tmp/marble.png
 
 Se ne avete voglia, inviatemi pure i vostri screens *planetari*!

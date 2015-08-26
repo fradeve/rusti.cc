@@ -28,7 +28,9 @@ Risposta:
     laurea. Se l'offerta formativa aderirà sostanzialmente alle
     indicazioni del Ministero è estremamente ragionevole ipotizzare il
     riconoscimento di 210 cfu dei 300 del nostro corso di laurea.
+
     Attualmente sono attivati i "diplomi specialistici in restauro"
     delle Accademie che hanno una maggiore autonomia. In ogni caso ad
     oggi nessuna Accademia ha attivato un diploma ai sensi del Decreto
     del 30 Dicembre.
+

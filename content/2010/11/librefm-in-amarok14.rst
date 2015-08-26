@@ -18,67 +18,68 @@ Amarok e da altri programmi di riproduzione musicale, e con questo
 piccolo accorgimento sarà possibile invarle anche (o solo) verso
 LibreFM.
 
-- Installare il pacchetto ``lastfmsubmitd``
+Installare il pacchetto :span:`lastfmsubmitd|code`
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     sudo apt-get install lastfmsubmitd
+   sudo apt-get install lastfmsubmitd
 
-- Durante l'installazione, inserire il proprio nome utente e password
-  di LibreFM e mantenere il gruppo ``lastfm``, quindi confermare.
-- Dare i permessi di lettura/scrittura al file di configurazione di
-  lastfmsubmitd:
+Durante l'installazione, inserire il proprio nome utente e password
+di LibreFM e mantenere il gruppo :span:`lastfm|code`, quindi confermare.
 
-  .. code-block:: bash
+Dare i permessi di lettura/scrittura al file di configurazione di
+lastfmsubmitd:
 
-     sudo chmod 777 /etc/lastfmsubmitd.conf
+.. code-block:: bash
 
-- In linea di massima, bisogna assicurarsi che l'utente con il quale si
-  utilizza il pc sia nel gruppo indicato durante l'installazione
-  (*lastfm*), e che il suddetto gruppo sia proprietario della cartella
-  nella quale vengono tenuti i log della musica ascoltata da inviare a
-  Libre.fm (ma per quest'ultimo punto, dovrete attendere l'ultimo punto
-  della guida).
+   sudo chmod 777 /etc/lastfmsubmitd.conf
 
-- Modificare il file ``/etc/lastfmsubmitd.conf`` e fare in modo che il
-  risultato finale sia questo (inserendo ovviamente al posto degli
-  asterischi nome utente e password del proprio account libre.fm):
+In linea di massima, bisogna assicurarsi che l'utente con il quale si
+utilizza il pc sia nel gruppo indicato durante l'installazione
+(*lastfm*), e che il suddetto gruppo sia proprietario della cartella
+nella quale vengono tenuti i log della musica ascoltata da inviare a
+Libre.fm (ma per quest'ultimo punto, dovrete attendere l'ultimo punto
+della guida).
 
-  .. code-block:: bash
+Modificare il file :span:`/etc/lastfmsubmitd.conf|code` e fare in modo che il
+risultato finale sia questo (inserendo ovviamente al posto degli
+asterischi nome utente e password del proprio account libre.fm):
 
-     [server]
-     url=http://turtle.libre.fm/
+.. code-block:: bash
 
-     [account]
-     user = *****
-     password = *****
+   [server]
+   url=http://turtle.libre.fm/
 
-- Scaricare e installare il plugin per Amarok 1.4:
+   [account]
+   user = *****
+   password = *****
 
-  .. code-block:: bash
+Scaricare e installare il plugin per Amarok 1.4:
 
-     wget http://ebanana.orconhosting.net.nz/librefm.amarokscript.tar.gz
+.. code-block:: bash
+
+   wget http://ebanana.orconhosting.net.nz/librefm.amarokscript.tar.gz
 
 Da amarok: Tools --> Gestore script --> Installa script --> Selezionare
 il tar.gz appena scaricato --> Esegui
 
-- Impostare i permessi nelle cartelle con i log e l'accesso al gruppo
-  selezionato durante l'installazione:
+Impostare i permessi nelle cartelle con i log e l'accesso al gruppo
+selezionato durante l'installazione:
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     sudo chown :lastfm /var/log/lastfm/ /var/spool/lastfm/ -R
-     sudo chmod -R 775 /var/log/lastfm/ /var/spool/lastfm/
+   sudo chown :lastfm /var/log/lastfm/ /var/spool/lastfm/ -R
+   sudo chmod -R 775 /var/log/lastfm/ /var/spool/lastfm/
 
-- Fare in modo che lastfmsubmitd si avvii automaticamente all'ingresso
-  in Ubuntu, inserendo una voce in "Applicazioni d'Avvio": Sistema -->
-  Preferenze --> Applicazioni d'avvio --> Aggiungi
+Fare in modo che lastfmsubmitd si avvii automaticamente all'ingresso
+in Ubuntu, inserendo una voce in "Applicazioni d'Avvio": Sistema -->
+Preferenze --> Applicazioni d'avvio --> Aggiungi
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     Nome: lastfmsubmitd
-     Comando: /usr/bin/lastfmsubmitd
-     Commento: qualsiasi cosa
+   Nome: lastfmsubmitd
+   Comando: /usr/bin/lastfmsubmitd
+   Commento: qualsiasi cosa
 
 Amarok 2
 --------
@@ -92,7 +93,7 @@ del video, la cui sintassi però non corrisponde a quella accettata nel
 database di Libre.fm, per cui da quel momento in poi nessuna canzone
 verrà inviata al sito. Ho testato personalmente il problema e sono stato
 costretto a cancellare un paio di registrazioni dal log in
-``/var/log/lastfm/``. Per ulteriori info sul funzionamento per Amarok 2,
+:span:`/var/log/lastfm/|code`. Per ulteriori info sul funzionamento per Amarok 2,
 consultare la `pagina apposita`_ sul wiki di Amarok.
 
 Buono scrobbling!

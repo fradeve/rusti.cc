@@ -6,28 +6,26 @@
     </style>
     <article>
         <header class="clearfix">
-            <h1>
-                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title}}</a>
+            <h2>
+                {{ article.title}}
                 {% if article.featured %}
                     <i style="font-size: 17px;"class="icon-pushpin"> </i>
                 {% endif %}
-                <abbr class="published" title="Published" style="padding-left: 8px;">
-                    <i style="font-size: 17px;"class="icon-rocket"> </i>
-                    <small>{{ article.date | strftime('%d/%m/%Y') }}</small>
+            </h2>
+            <br>
+                <abbr title="Published">
+                    pub: <small>{{ article.date | strftime('%d/%m/%Y') }}</small>
                 </abbr>
                 {% if article.modified %}
-                <abbr class="published" title="Updated">
-                    <i style="font-size: 17px;"class="icon-time"> </i>
-                    <small>{{ article.modified | strftime('%d/%m/%Y') }}</small>
+                <abbr title="Updated">
+                    upd: <small>{{ article.modified | strftime('%d/%m/%Y') }}</small>
                 </abbr>
                 {% endif %}
-            </h1>
         </header>
 
         <div class="content">
             {{ article.content }}
-            <center>
-                <div style="font-size: 40px; color: #b44; padding-bottom: 20px">.</div>
+            <div class="section">
                 <h3>
                     {% if article.tags %}
                         <p>
@@ -38,7 +36,7 @@
                         </p>
                     {% endif %}
                 </h3>
-            </center>
+            </div>
         </div>
         {% if DISQUS_SITENAME %}
             <div class="comments">

@@ -72,7 +72,7 @@ avvio del sistema, ma nel complesso non credo molta perché è veramente
 reattivo. L'aspetto è WindowsXP- like (a partire dallo stile dei tasti
 di chiusura, minimizza, ecc). Dicevo, le pecche: credetemi, mi sono
 sentito un attimo **perso** quando, tentando di installare un pacchetto
-via ``apt``, mi sono chiesto: "**dov'e il terminale**"?? Ebbene, il
+via :span:`apt|code`, mi sono chiesto: "**dov'e il terminale**"?? Ebbene, il
 terminale non è tra i programmi listati. Infatti, per averne uno bisogna
 usare la combinazione di tasti CTRL+ALT+T. Non la trovo una scelta molto
 saggia, ma comunque comprensibile, considerato il pubblico al quale è

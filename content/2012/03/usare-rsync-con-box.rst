@@ -57,8 +57,8 @@ Contro
   dimensione
 - la sincronizzazione sembra essere un po' lenta
 
-1 - Montare la Box in ``/media`` tramite WebDAV
------------------------------------------------
+1 - Montare la Box in :span:`/media|code` tramite WebDAV
+--------------------------------------------------------
 
 La cartella di WebDAV può essere montata sia dall'utente che sta
 utilizzando la macchina sia dall'account di root. In questa guida è
@@ -73,7 +73,7 @@ Installare davfs2
 
    sudo apt-get install davfs2
 
-Permettere all'utente non-root di montare DavFS, rispondendo ``Yes``
+Permettere all'utente non-root di montare DavFS, rispondendo :span:`Yes|code`
 alla riconfigurazione del pacchetto
 
 .. code-block:: bash
@@ -92,13 +92,13 @@ creare la cartella in cui verrà montata la Box
 
    sudo mkdir /media/box
 
-inserire la seguente riga in ``/etc/fstab``:
+inserire la seguente riga in :span:`/etc/fstab|code`:
 
 .. code-block:: bash
 
    https://www.box.com/dav /media/box      davfs   noauto,user   0   0
 
-Il file ``/etc/davfs2/davfs2.conf`` contiene le impostazioni valide per
+Il file :span:`/etc/davfs2/davfs2.conf|code` contiene le impostazioni valide per
 tutto il sistema; decommentare la seguente riga:
 
 .. code-block:: bash
@@ -113,8 +113,8 @@ Creare una copia del file delle configurazioni nella propria home
    cp /etc/davfs2/davfs2.conf ~/.davfs2
 
 Per evitare di dover inserire ogni volta le credenziali di accesso alla
-Box in fase di mount, creare il file ``secrets``, attribuirgli i
-permessi corretti (``600``)
+Box in fase di mount, creare il file :span:`secrets|code`, attribuirgli i
+permessi corretti (:span:`600|code`)
 
 .. code-block:: bash
 
@@ -128,7 +128,7 @@ ed inserirvi i dati di accesso
 
    /media/box  user@email.com  password
 
-Il file ``~/.davfs/davfs2.conf`` contiene le impostazioni per l'utente;
+Il file :span:`~/.davfs/davfs2.conf|code` contiene le impostazioni per l'utente;
 in questo, specificare la posizione del file delle password appena
 creato, decommentando la riga come segue
 
@@ -136,8 +136,8 @@ creato, decommentando la riga come segue
 
    secrets         ~/.davfs2/secrets
 
-Possiamo dotarci di *alias* in ``~/.bashrc`` per montare e smontare
-rapidamente la Box (ricordando di dare un ``source ~/.bashrc`` per
+Possiamo dotarci di *alias* in :span:`~/.bashrc|code` per montare e smontare
+rapidamente la Box (ricordando di dare un :span:`source ~/.bashrc|code` per
 rendere operativi gli alias):
 
 .. code-block:: bash
@@ -145,19 +145,19 @@ rendere operativi gli alias):
    alias boxmount='mount /media/box'
    alias boxumount='umount /media/box'
 
-Proviamo a montare la Box con il comando ``boxmount``. Il montaggio
+Proviamo a montare la Box con il comando :span:`boxmount|code`. Il montaggio
 della Box al login (e solo dopo la disponibilità di una connessione
 internet, per evitare errori) può essere `automatizzato`_.
 Se tutto procede bene, andiamo oltre.
 
-*ATTENZIONE*: Il parametro ``cache_size`` in ``~/.davfs2/davfs2.conf`` è
+*ATTENZIONE*: Il parametro :span:`cache_size|code` in :span:`~/.davfs2/davfs2.conf|code` è
 commentato di default. Ciò significa che man mano che DavFS2 trasferisce
 i file dal filesystem locale a quello remoto di Box, ne lascia una copia
 (criptata) nella cache. Non avendo nessun limite impostato, ciò potrebbe
 riempire la partizione in cui è presente la cache (impedendo ad Ubuntu
 di avviarsi se la cache è nella partizine root -- GNU/Linux deve avere
 almeno il 4% di spazio libero in root). È pertanto vivamente consigliato
-di abilitare il parametro ``cache_size``, impostando un limite
+di abilitare il parametro :span:`cache_size|code`, impostando un limite
 ragionevole (per me 250 Mb).
 
 .. _automatizzato: http://blog.nguyenvq.com/2011/12/08/mount-box-net-on-ubuntu-linux-via-webdav
@@ -167,29 +167,29 @@ ragionevole (per me 250 Mb).
 
 Alcune spiegazioni:
 
-- ``media/box``: punto di mount della Box via WebDAV
-- ``media/box/backup``: la cartella che ``fisicamente`` conterrà i dati,
+- :span:`media/box|code`: punto di mount della Box via WebDAV
+- :span:`media/box/backup|code`: la cartella che :span:`fisicamente|code` conterrà i dati,
   nella nostra Box
-- ``media/box.encfs`` la cartella in cui verrà montato il filesystem
+- :span:`media/box.encfs|code` la cartella in cui verrà montato il filesystem
   criptato, non leggibile
-- ``media/box.backup``: la cartella in cui riverseremo i nostri dati da
-  backuppare, collegata a ``box.encfs``
+- :span:`media/box.backup|code`: la cartella in cui riverseremo i nostri dati da
+  backuppare, collegata a :span:`box.encfs|code`
 
-Installare EncFS ed aggiungere il proprio utente al gruppo ``fuse``
+Installare EncFS ed aggiungere il proprio utente al gruppo :span:`fuse|code`
 
 .. code-block:: bash
 
    sudo apt-get install encfs
    sudo addgroup <USER> fuse
 
-decommentare la seguente riga in ``/etc/fuse.conf``
+decommentare la seguente riga in :span:`/etc/fuse.conf|code`
 
 .. code-block:: bash
 
    user_allow_other
 
 creare la cartella che conterrà il filesystem criptato, sistemare i
-permessi (sostituire ad ``<USER>`` il proprio nome utente sulla
+permessi (sostituire ad :span:`<USER>|code` il proprio nome utente sulla
 macchina)
 
 .. code-block:: bash
@@ -234,7 +234,7 @@ correggere i permessi, spostarli nella cartella degli eseguibili
 --------------------------------------------------------------
 
 Questo passaggio permetterà di correggere le timestamp grazie agli
-script installati prima e di avere in ``/media`` una cartella che avremo
+script installati prima e di avere in :span:`/media|code` una cartella che avremo
 come destinazione per i nostri backup, collegata con quella criptata
 creata precedentemente. Creare la cartella, attribuire i permessi e
 avviare lo script sulle cartelle
@@ -245,7 +245,7 @@ avviare lo script sulle cartelle
    sudo chown <USER>:<USER> /media/box.backup
    fusetime.py /media/box.encfs/ /media/box.backup/
 
-In caso di problemi o errori relativi a con ``fusermount``, soluzione è
+In caso di problemi o errori relativi a con :span:`fusermount|code`, soluzione è
 `a portata di mano`_.
 
 Installare rsync
@@ -255,7 +255,7 @@ Installare rsync
 
    sudo apt-get install rsync
 
-Avviare *finalmente* la sincronizzazione, sostituendo ``/path/to/files``
+Avviare *finalmente* la sincronizzazione, sostituendo :span:`/path/to/files|code`
 al percorso che vogliamo backuppare; di seguito è riportata un'istanza
 di rsync con opzioni "base", che andrà bene per qualsiasi esigenza
 
@@ -264,8 +264,8 @@ di rsync con opzioni "base", che andrà bene per qualsiasi esigenza
    rsync -r -a -i --times --delete --max-size=99.5M --no-perms --no-group --progress /path/to/files /media/box.backup/
 
 Per sincronizzare le mie immagini, ho inserito qualche altra opzione per
-non copiare nel backup i file ``Thumbs.db``, quelli che con estensione
-``.xmp`` e ``.bak``; vengono inoltre usati dei file parziali (così da
+non copiare nel backup i file :span:`Thumbs.db|code`, quelli che con estensione
+:span:`.xmp|code` e :span:`.bak|code`; vengono inoltre usati dei file parziali (così da
 non dover ricominciare da capo il backup di file di grosse dimensioni in
 caso di interruzioni) e man mano che il programma opera viene mostrato
 un log in tempo reale che mostra ogni singola operazione di rsync:
@@ -275,7 +275,7 @@ un log in tempo reale che mostra ogni singola operazione di rsync:
    rsync -r -a -i --times --exclude '*.xmp' --exclude '*.bak' --exclude 'Thumbs.db' --delete \\
    --max-size=99.5M --no-perms --no-group -P -v -v /media/dati/archivio/immagini/ /media/box.backup/
 
-Ricordare che in ``/media/box.backup/`` possiamo creare qualsiasi
+Ricordare che in :span:`/media/box.backup/|code` possiamo creare qualsiasi
 sottocartella, abbiamo la massima libertà; ad esempio, potremo avere
 rispettivamente come origine e destinazione del backup:
 
@@ -286,7 +286,7 @@ rispettivamente come origine e destinazione del backup:
 
 Potremo quindi dimenticarci di tutte le altre cartelle create, che sono
 soltanto funzionali al sistema degli script e del filesystem, lavorando
-semplicemente su ``/media/box.backup``. Quando la sincronizzazione sarà
+semplicemente su :span:`/media/box.backup|code`. Quando la sincronizzazione sarà
 finita, potremo smontare le partizioni con i seguenti comandi
 
 .. code-block:: bash
@@ -295,10 +295,10 @@ finita, potremo smontare le partizioni con i seguenti comandi
    fusermount -u /media/box.encfs
    umount /media/box
 
-Consiglio vivamente, dopo aver dato il comando di ``umount`` per
+Consiglio vivamente, dopo aver dato il comando di :span:`umount|code` per
 smontare la Box via WebDAV, di attendere che davfs finisca di scrivere
 le modifiche ancora in cache sulla risorsa WebDAV che, come si può
-intuire dal parametro ``async`` di ``/etc/fstab``, era stata montata per
+intuire dal parametro :span:`async|code` di :span:`/etc/fstab|code`, era stata montata per
 l'I/O asincrono per ottimizzarne le prestazioni; se si tenta di killare
 il processo mentre sta scrivendo i dati ancora in cache potrebbero
 verificarsi perdite di dati.
@@ -313,7 +313,7 @@ montando nuovamente il filesystem criptato e avviando lo script
 
 oppure, concatenando i comandi per montare la Box, montare la partizione
 criptata (che richiederà comunque l'inserimento manuale della password)
-e lo script fusetime, è possibile creare un alias in ``.bashrc`` che
+e lo script fusetime, è possibile creare un alias in :span:`.bashrc|code` che
 faccia tutto da solo:
 
 .. code-block:: bash
@@ -334,7 +334,7 @@ ATTENZIONE: questa sezione è ancora in fase di testing, ed ho avuto
 molti problemi nel farla funzionare. Attendere ulteriori sviluppi prima
 di testarla sui propri dati. In breve: nonostante teoricamente tutto
 debba funzionare come riportato di seguito, una volta cancellato il file
-``encfs6.xml`` dalla radice della cartella cifrata, il filesystem
+:span:`encfs6.xml|code` dalla radice della cartella cifrata, il filesystem
 cifrato non viene più montato.
 
 È sufficiente consultare qualche `howto`_
@@ -348,7 +348,7 @@ problematiche di sicurezza all'interno di un'installazione standard:
     a hacker.
 
 In altre parole, all'interno di ogni filesystem criptato creato con
-EncFS viene generato un file, ``.encfs6.xml`` che non contiene (no di
+EncFS viene generato un file, :span:`.encfs6.xml|code` che non contiene (no di
 certo!) la password di cifratura, ma riassume comunque informazioni che
 potrebbero tornare utili a chiunque voglia tentare di decifrare i dati a
 nostra insaputa. Inoltre, per ovvi motivi, essendo un file di
@@ -368,10 +368,10 @@ Spostiamo il file nella nostra home, eliminandolo dalla Box
    mv /media/box/backup/.encfs6.xml ~/.encfs6_box.xml
 
 Al nuovo comando per montare il filesystem criptato verrà aggiunto
-(anche nel vostro eventuale ``.bashrc``) un parametro che indica dove
+(anche nel vostro eventuale :span:`.bashrc|code`) un parametro che indica dove
 reperire il file xml corretto; tale parametro varia in funzione della
-versione di EncFS (per cui EncFS 1.6 avrà ``ENCFS&_CONFIG``, EncFS 1.7
-avrà ``ENCFS7_CONFIG``):
+versione di EncFS (per cui EncFS 1.6 avrà :span:`ENCFS&_CONFIG|code`, EncFS 1.7
+avrà :span:`ENCFS7_CONFIG|code`):
 
 .. code-block:: bash
 
@@ -380,13 +380,13 @@ avrà ``ENCFS7_CONFIG``):
 Questo significa anche che:
 
 - se un giorno configurerete una nuova macchina per accedere alla
-  vostra Box criptata, ``.encfs6_box.xml`` dovrete inserirlo a mano nel
+  vostra Box criptata, :span:`.encfs6_box.xml|code` dovrete inserirlo a mano nel
   sistema, perché non sarà più presente in Box. Se non sapete come
-  garantire la sicurezza della copia di ``.encfs6_box.xml`` che avrete
+  garantire la sicurezza della copia di :span:`.encfs6_box.xml|code` che avrete
   salvato in una penna USB, è possibile cifrarlo con `GPG`_ o usare
   la `steganografia`_
 - se usate gnome-encfs per montare la partizione all'avvio, dovrete
-  fare attenzione a specificare il percorso di ``.encfs6_box.xml``
+  fare attenzione a specificare il percorso di :span:`.encfs6_box.xml|code`
   perché tutto funzioni automaticamente al login
 
 Integrazioni
@@ -399,7 +399,7 @@ i vari script è demotivante. Tuttavia, armandosi di un VPS e un po' di
 pazienza, si potrebbe configurare un'istanza di
 `ownCloud`_, che potrebbe accedere ai file
 tramite una configurazione come quella descritta nella sezione 1,
-montata semplicemente in ``/media/data``. Tra l'altro, ownCloud ha anche
+montata semplicemente in :span:`/media/data|code`. Tra l'altro, ownCloud ha anche
 un'`applicazione per Android`_: e con questo, chiudo.
 
 Ulteriori riferimenti

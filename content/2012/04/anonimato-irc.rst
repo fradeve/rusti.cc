@@ -22,9 +22,9 @@ nel sito ufficiale, poi avviamolo con il comando
    sudo /etc/init.d/i2p start
 
 Si aprirà in automatico una pagina nel nostro browser predefinito, che
-punta all'indirizzo ``http://127.0.0.1:7657``. La pagina per impostare i
+punta all'indirizzo :span:`http://127.0.0.1:7657|code`. La pagina per impostare i
 tunnel IRC è raggiungibile all'indirizzo
-``http://127.0.0.1:7657/i2ptunnel/list``. Modificando la voce "IRC
+:span:`http://127.0.0.1:7657/i2ptunnel/list|code`. Modificando la voce "IRC
 Proxy", inserire come porta la 6667. Occorrerebbe anche assicurarsi che
 le porte del router siano aperte. Queste accortezze dovrebbero fare in
 modo che i2p riporti "OK" nella voce "stato della rete" presente nella
@@ -81,7 +81,7 @@ comandi integrati in questo protocollo, quasi tutti (tranne ACTION)
 hanno dei lati negativi dal punto di vista della privacy e possono
 permettere a persone connesse allo stesso server di `ottenere informazioni`_ l'uno
 dell'altro. In IRSSI è possibile ignorare i CTCP inserendo i seguenti
-comandi nel file ``.irssi/config``
+comandi nel file :span:`.irssi/config|code`
 
 .. code-block:: bash
 
@@ -97,7 +97,7 @@ questi:
 - usare la porta SSL per la connessione al server IRC se non si dispone
   di i2p
 - usare una cartella criptata con `EncFS`_ o `Tomb`_ per le impostazioni 
-  di IRSSI (``.irssi``), così da mettere al sicuro i log, le password e le 
+  di IRSSI (:span:`.irssi|code`), così da mettere al sicuro i log, le password e le 
   email delle nostre attività di chat
 - usare il plugin `OTR`_ di IRSSI 
   per cifrare le nostre comunicazioni sul server e fare in modo che non

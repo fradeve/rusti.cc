@@ -4,14 +4,15 @@ from __future__ import unicode_literals
 
 AUTHOR = 'fradeve'
 TAGLINE = 'WebGIS dev, free software enthusiast, folk music fellow and proud monkey descendant.'
-SITENAME = 'Rustic'
+SITENAME = 'A rustic guy'
 SITEURL = 'http://rusti.cc'
 
 TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en'
 
-THEME = 'andrewseidl-theme'
+THEME = 'tufte-theme'
+CSS_FILE = 'tufte.css'
 TYPOGRIFY = True
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
@@ -27,7 +28,8 @@ CATEGORY_FEED_ATOM = None
 PATH = 'content'
 STATIC_PATHS = ['images', 'static']
 
-PLUGINS = ['pelican_youtube']
+PLUGINS = ['pelican_youtube', 'span']
+PLUGIN_PATHS = ["/home/fradeve/git/rusti.cc/span"]
 
 # Comments
 DISQUS_SITENAME = 'fradeveorig'
@@ -35,11 +37,11 @@ DISQUS_PUBLICKEY = '4VY3RiHzHB4j6Z0jjyUpvKbVgM6homcEupgvIdIdrjNTaMtGh8Quz2w6Myy6
 
 # Links
 SOCIAL = (
-            ('icon-archive', SITEURL + '/archives.html'),
-            ('icon-tags', SITEURL + '/tags.html'),
-            ('icon-pushpin', SITEURL + '/featured.html'),
-            ('icon-user', SITEURL + '/pages/social.html'),
-            ('icon-github', 'http://github.com/fradeve/fradeve.org')
+            ('posts', SITEURL + '/archives.html'),
+            ('tags', SITEURL + '/tags.html'),
+            ('feat', SITEURL + '/featured.html'),
+            ('me', SITEURL + '/pages/social.html'),
+            ('gh', 'https://github.com/fradeve/rusti.cc')
          )
 
 DEFAULT_PAGINATION = False

@@ -3,3 +3,4 @@ publishconf.py
 Makefile
 develop_server.sh
 cache
+*.swp

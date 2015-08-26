@@ -28,8 +28,8 @@ tra le altre cose, all'integrazione della nuova versione di Illume
 
 Ciò significa che tutti i proprietari di un Neo FreeRunner che hanno
 installato SHR-unstable devono al più presto editare i file dei
-repository presenti in ``/etc/opkg``, per evitare che ulteriori
-aggiornamenti tramite ``opkg update`` portino ad aggiornare la
+repository presenti in :span:`/etc/opkg|code`, per evitare che ulteriori
+aggiornamenti tramite :span:`opkg update|code` portino ad aggiornare la
 distribuzione del proprio palmare ad "unstable", che sarà tale nel vero
 senso della parola.
 
