@@ -4,12 +4,6 @@ Intrepid Ibex su Asus EEE 901 e 1000(H)
 :date: 2008-11-11 00:07:07
 :tags: gnulinux, kernel, ubuntu
 
-<center>
-
-|image0|
-
-</center>
-
 In questi giorni, dopo aver venduto a giugno il mio storico Asus 701 (su
 cui era installata Ubuntu EEE 7.10) ho ricevuto il nuovo Asus EEE 901
 con monitor da 8,9''. Un bel passo avanti, e finalmente uno schermo un
@@ -87,30 +81,26 @@ volta ottenuta la rete, aggiungiamo questa riga ai nostri repository:
 
 ::
 
-    :::bash
     deb http://www.array.org/ubuntu intrepid eee
 
 Scarichiamo ed aggiungiamo la chiave per i nuovi repository
 
-::
+.. code-block:: bash
 
-    :::bash
-    wget http://www.array.org/ubuntu/array-apt-key.asc
-    sudo apt-key add http//www.array.org/ubuntu/array-apt-key.asc
+   wget http://www.array.org/ubuntu/array-apt-key.asc
+   sudo apt-key add http//www.array.org/ubuntu/array-apt-key.asc
 
 Installiamo il nuovo kernel con tutti i pacchetti raccomandati:
 
-::
+.. code-block:: bash
 
-    :::bash
-    sudo apt-get install linux-eeepc linux-headers-eeepc
+   sudo apt-get install linux-eeepc linux-headers-eeepc
 
 Rimuoviamo il vecchio kernel per liberare spazio sull'hard disk:
 
-::
+.. code-block:: bash
 
-    :::bash
-    sudo apt-get remove linux-generic linux-image-generic linux-headers-generic linux-restricted-modules-generic
+  sudo apt-get remove linux-generic linux-image-generic linux-headers-generic linux-restricted-modules-generic
 
 *EDIT: Xan mi segnala che negli ultimi rilasci del kernel i driver
 aggiornati per il wireless sono stati inclusi. Non ho controllato, ma
@@ -120,41 +110,37 @@ passo...*
 Scarichiamo ed installiamo un pacchetto *.deb* (con la sua dipendenza)
 che contiene i driver wireless aggiornati che al prossimo avvio del
 sistema verranno automaticamente inseriti nel nuovo kernel:
+ 
+.. code-block:: bash
 
-::
-
-    :::bash
-    sudo apt-get install dkms
-    wget http://www.mediafire.com/?jfrgzemgnjz
-    sudo gdebi rt2860sta-dkms_*.deb
+   sudo apt-get install dkms
+   wget http://www.mediafire.com/?jfrgzemgnjz
+   sudo gdebi rt2860sta-dkms_*.deb
 
 Scarichiamo un pacchetto con gli script che renderanno operativi i tasti
 funzione dell'Asus:
 
-::
+.. code-block:: bash
 
-    :::bash
-    wget http://www.informatik.uni-bremen.de/~elmurato/EeePC/Intrepid_ACPI_scripts-EeePC_900A_901_1000.tar.gz
-    tar xfvz Intrepid_ACPI_scripts-EeePC_900A_901_1000.tar.gz
-    cd Intrepid_ACPI_scripts-EeePC_900A_901_1000/
-    chmod +x acpi-scripts.sh
-    sudo ./acpi-scripts.sh install
+   wget http://www.informatik.uni-bremen.de/~elmurato/EeePC/Intrepid_ACPI_scripts-EeePC_900A_901_1000.tar.gz
+   tar xfvz Intrepid_ACPI_scripts-EeePC_900A_901_1000.tar.gz
+   cd Intrepid_ACPI_scripts-EeePC_900A_901_1000/
+   chmod +x acpi-scripts.sh
+   sudo ./acpi-scripts.sh install
 
 Fatto ciò, non resta che abilitare il tasto funzione del bluetooth, che
 di default è disabilitato negli script:
 
-::
+.. code-block:: bash
 
-    :::bash
-    sudo nano /etc/acpi/eeepc/eeepc-actions.sh
+   sudo nano /etc/acpi/eeepc/eeepc-actions.sh
 
 decommentando (togliendo il cancelletto) la riga 89, relativa al
 bluetooth, che dovrebbe diventare così:
 
-::
+.. code-block:: bash
 
-    :::bash
-    /etc/acpi/eeepc/eeepc-bt-toggle.sh
+   /etc/acpi/eeepc/eeepc-bt-toggle.sh
 
 Riavviamo il PC e selezioniamo dal GRUB il nostro nuovo kernel targato
 eeepc, e tutto dovrebbe funzionare!!
@@ -170,22 +156,20 @@ neanche sentito nominare. Si può ovviare a ciò rimuovendo da Synaptic
 tutti i pacchetti relativi ad "hplip" e tutti i font inutili con questo
 comando:
 
-::
+.. code-block:: bash
 
-    :::bash
-    sudo apt-get remove ttf-arabeyes ttf-arphic-ukai ttf-arphic-uming ttf-baekmuk
-    ttf-bengali-fonts ttf-devanagari-fonts ttf-gentium ttf-gujarati-fonts
-    ttf-indic-fonts ttf-kannada-fonts ttf-kochi-gothic ttf-lao ttf-malayalam-fonts
-    ttf-mgopen ttf-oriya-fonts ttf-punjabi-fonts ttf-tamil-fonts ttf-telugu-fonts
-    ttf-thai-tlwg
+   sudo apt-get remove ttf-arabeyes ttf-arphic-ukai ttf-arphic-uming ttf-baekmuk
+   ttf-bengali-fonts ttf-devanagari-fonts ttf-gentium ttf-gujarati-fonts
+   ttf-indic-fonts ttf-kannada-fonts ttf-kochi-gothic ttf-lao ttf-malayalam-fonts
+   ttf-mgopen ttf-oriya-fonts ttf-punjabi-fonts ttf-tamil-fonts ttf-telugu-fonts
+   ttf-thai-tlwg
 
 Fossi in voi toglierei anche Brasero, visto che gli Asus EEE non hanno
 il masterizzatore ;)
+ 
+.. code-block:: bash
 
-::
-
-    :::bash
-    sudo apt-get remove --purge brasero
+   sudo apt-get remove --purge brasero
 
 E adesso, non vi resta che installare tutti i programmi di cui avete
 bisogno!

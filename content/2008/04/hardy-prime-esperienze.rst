@@ -36,7 +36,7 @@ Avvio del sistema
 Nessuna novità, almeno sulla mia macchina, ci impiega pressappoco quanto
 impiegava prima.
 
-VELOCITÀ DEL SISTEMA
+Velocità del sistema
 --------------------
 
 Qui avrei molto da dire.... è *decisamente* molto più veloce, scattante

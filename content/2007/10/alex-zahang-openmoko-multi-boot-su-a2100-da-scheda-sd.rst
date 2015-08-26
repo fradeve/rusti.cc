@@ -24,7 +24,6 @@ il multi-boot sarà disponibile anche su Openmoko!!! Qui sotto, il video
 :D
 
 .. youtube:: -QqWIl-_KO4
-   :align: center
 
 
 .. _blog: http://thisvip.wordpress.com/2007/10/05/multi-boot-on-a1200-from-sd-card

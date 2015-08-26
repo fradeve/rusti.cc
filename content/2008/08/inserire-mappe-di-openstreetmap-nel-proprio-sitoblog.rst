@@ -4,7 +4,7 @@ Inserire mappe di OpenStreetMap nel proprio sito/blog
 :date: 2008-08-19 08:20:35
 :tags: openstreetmap, webgis
 
-Qual'è la più grande soddisfazione per un mapper se non quella di
+Qual è la più grande soddisfazione per un mapper se non quella di
 mostrare i risultati del proprio lavoro sul sito o sul blog personale?
 Spulciando il `wiki di OpenStreetMap`_ mi sono
 imbattuto nella pagina `OpenLayers Simple Example`_
