@@ -61,6 +61,8 @@ thead th { border-bottom: 1px solid #AAAAAA;
            border-spacing: 5px 5px; }
 
 td.text { text-align: left; }
+dt { margin-top: 10px; }
+dd { width: 55% }
 
 span.table-label { padding-top: 8px; } /* to maintain height relative to table header row */
 
@@ -97,8 +99,6 @@ table.booktabs { width: auto;
 .booktabs tbody tr td.c { text-align: center !important; }
 .booktabs tbody tr td.r { text-align: right !important; }
 
-#disqus_thread {padding-right: 15%}
-
 article { position: relative;
           padding: 5rem 0rem; }
 
@@ -129,7 +129,8 @@ li { padding: 0.5rem 0; }
 figure { max-width: 55%;
          -webkit-margin-start: 0;
          -webkit-margin-end: 0;
-         margin-bottom: 3em; }
+         margin-bottom: 3em; 
+       }
 
 figcaption { float: right;
              clear: right;
@@ -142,6 +143,8 @@ figcaption { float: right;
              position: relative; }
 
 figure.fullwidth figcaption { margin-right: 24%; }
+
+.figure { margin-top: 2em; }
 
 a { color: #111;
     text-decoration: none;
@@ -206,7 +209,7 @@ p, footer, div.table-wrapper { width: 55%; }
         font-size: 1.125rem;
         line-height: 1.6; }
 
-h1 .code, h2 .code, h3 .code { font-size: 0.80em; }
+h1 .code, h2 .code, h3 .code, dd .code { font-size: 0.80em; }
 
 .marginnote .code, .sidenote .code { font-size: 1rem; }
 
@@ -214,6 +217,7 @@ div.highlight { width: 52.5%;
            padding-left: 2.5%;
            overflow-x: auto; 
 	   border-radius: 5px;
+	   margin-top: 10px;
          }
 
 .fullwidth { max-width: 90%; }

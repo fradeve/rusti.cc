@@ -20,19 +20,19 @@ LibreFM.
 
 Installare il pacchetto :span:`lastfmsubmitd|code`
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     sudo apt-get install lastfmsubmitd
+   sudo apt-get install lastfmsubmitd
 
 Durante l'installazione, inserire il proprio nome utente e password
 di LibreFM e mantenere il gruppo :span:`lastfm|code`, quindi confermare.
 
 Dare i permessi di lettura/scrittura al file di configurazione di
-  lastfmsubmitd:
+lastfmsubmitd:
 
-  .. code-block:: bash
+.. code-block:: bash
 
-     sudo chmod 777 /etc/lastfmsubmitd.conf
+   sudo chmod 777 /etc/lastfmsubmitd.conf
 
 In linea di massima, bisogna assicurarsi che l'utente con il quale si
 utilizza il pc sia nel gruppo indicato durante l'installazione

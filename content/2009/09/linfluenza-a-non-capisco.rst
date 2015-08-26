@@ -77,7 +77,6 @@ chi dorme col proprio Mac di uscire di casa e cercare, nell'ordine:
 - condividere quanto sopra
 
 .. youtube:: POiNqP4savI
-   :align: center
 
 
 .. _A-Adorazione: http://it.wikipedia.org/wiki/Apple

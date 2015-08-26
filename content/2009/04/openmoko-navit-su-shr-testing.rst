@@ -21,8 +21,8 @@ tendo a dimenticarle :D
    nelle cartelle :span:`~/.navit|code` e :span:`/usr/share/navit|code` (sostituendo 
    eventualmente un navit.xml già presente).
 
-3. installare la libreria libgps17 con il comando "ipkg install
-   libgps17" (notare bene, "ipkg" non "opkg"!)
+3. installare la libreria libgps17 con il comando :span:`ipkg install
+   libgps17|code` (notare bene, :span:`ipkg|code` non :span:`opkg|code`!)
 
 4. andare nella cartella :span:`/usr/lib|code` e dare il comando
    :span:`ln -s libgps.so.17 libgps.so.16|code` per fare in modo che Navit faccia
