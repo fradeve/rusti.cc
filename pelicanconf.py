@@ -28,8 +28,8 @@ CATEGORY_FEED_ATOM = None
 PATH = 'content'
 STATIC_PATHS = ['images', 'static']
 
-PLUGINS = ['pelican_youtube', 'span']
-PLUGIN_PATHS = ["/home/fradeve/git/rusti.cc/span"]
+PLUGINS = ['pelican_youtube', 'span', 'series']
+PLUGIN_PATHS = ["/home/fradeve/git/rusti.cc/plugins"]
 
 # Comments
 DISQUS_SITENAME = 'fradeveorig'
