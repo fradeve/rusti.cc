@@ -1,6 +1,9 @@
 GNewArchaeology: pronte le pontificazioni 
 =========================================
 
+.. role:: raw-html(raw)
+   :format: html
+
 :date: 2011-10-08 23:23:00
 :tags: oia, archaeology, gis, gfoss, ubuntu 
 :lastupdated: 2011-11-08
@@ -80,40 +83,34 @@ Miscellanea
   archeologia: un riassunto di ciò che già c'è può aiutare ad avere dei
   riferimenti e a continuare a discutere:
 
-GFLOSS in archeologia (hostata da Gfoss.it)
-
-http://gfoss.it/cgi-bin/mailman/listinfo/archeologia
-
-GNU/Linux e software libero in archeologia (hostata da Linux.it)
-
-http://lists.linux.it/listinfo/archaeology
+- `GFLOSS in archeologia`_ (hostata da Gfoss.it)
+- `GNU/Linux e software libero in archeologia`_ (hostata da Linux.it)
 
 Per partecipare alle discussioni in ArcheOS queste sono le possibilità:
 
-utenti: http://lists.linux.it/listinfo/archeos/
+- `utenti`_
+- `dev`_
 
-dev: http://lists.linux.it/listinfo/archeos-dev
+Il materiale del mio intervento: `paper`_, `slide`_, `codice`_
 
-- Il materiale del mio intervento:
-  `paper`_
-  `slide`_
-  `codice`_
+Citazioni famose
+----------------
 
-[Cit. Renzo Davoli]
--------------------
+    il software con libertà intellettuale deve essere visto come un
+    diritto, e la proprietà delle licenze come un'eccezione temporanea
+    alla libertà intellettuale;
+    il diritto fondamentale alla conoscenza è la libertà intellettuale:
+    libero software, libera università (coerenza della didattica);
+    in un regime di monopolio, l'ultima cosa desiderata è l'evoluzione,
+    perché danneggia lo stato delle cose (ovvero il controllo sulla
+    situazione operata dal monopolista);
+    "L'hacker è una persona che, assetata di conoscenza, non vuole che
+    vengano posti limiti a questa. Non crede a nulla per fede."
+    "Insegnando software proprietario nelle università si formano dei
+    perdenti."
 
-- il software con libertà intellettuale deve essere visto come un
-  diritto, e la proprietà delle licenze come un'eccezione temporanea
-  alla libertà intellettuale;
-- il diritto fondamentale alla conoscenza è la libertà intellettuale:
-  libero software, libera università (coerenza della didattica);
-- in un regime di monopolio, l'ultima cosa desiderata è l'evoluzione,
-  perché danneggia lo stato delle cose (ovvero il controllo sulla
-  situazione operata dal monopolista);
-- "L'hacker è una persona che, assetata di conoscenza, non vuole che
-  vengano posti limiti a questa. Non crede a nulla per fede."
-- "Insegnando software proprietario nelle università si formano dei
-  perdenti."
+    :raw-html:`<footer>Renzo Davoli</footer>`
+
 
 .. _GNewArchaeology: http://www.gnewarchaeology.it
 .. _#GNewArchaeology: https://twitter.com/#!/search/realtime/%23GNewArchaeology
@@ -125,4 +122,8 @@ dev: http://lists.linux.it/listinfo/archeos-dev
 .. _KISS: https://secure.wikimedia.org/wikipedia/en/wiki/KISS_principle
 .. _paper: http://uniba-it.academia.edu/FrancescodeVirgilio/Talks/59792/Introduzione_allutilizzo_di_GRASS_GIS_in_archeologia_un_manuale_collaborativo
 .. _slide: http://www.slideshare.net/fradeve/introduzione-allutilizzo-di-grass-gis-in-archeologia-un-manuale-collaborativo
-.. _codice: http://bazaar.launchpad.net/~fradeve/grass-arch/trunk/files/head:/paper_presentazione
+.. _codice: https://github.com/fradeve/grass-arch/tree/master/paper_presentazione
+.. _GFLOSS in archeologia: http://gfoss.it/cgi-bin/mailman/listinfo/archeologia
+.. _GNU/Linux e software libero in archeologia: http://lists.linux.it/listinfo/archaeology
+.. _utenti: http://lists.linux.it/listinfo/archeos/
+.. _dev: http://lists.linux.it/listinfo/archeos-dev
