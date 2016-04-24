@@ -40,7 +40,7 @@ LINKS = (
             ('code', 'https://github.com/fradeve'),
             ('me', SITEURL + '/pages/social.html'),
             ('tags', SITEURL + '/tags.html'),
-            ('archives', 'https://github.com/fradeve/rusti.cc/archive'),
+            ('archives', 'https://github.com/fradeve/rusti.cc/tree/master/archive'),
          )
 
 DEFAULT_PAGINATION = False
