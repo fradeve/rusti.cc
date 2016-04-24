@@ -3,6 +3,7 @@ OSMit 2009: qualche giorno dopo...
 
 :date: 2009-06-10 22:39:00
 :tags: gfoss, gnulinux, openmoko, openstreetmap, osmit, trento, ubuntu, talk
+:headline: Resoconto dell'OSMit 2009 a Trento
 
 Due parole: OSMit 2009
 

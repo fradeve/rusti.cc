@@ -3,6 +3,7 @@ Cosa succede?
 
 :date: 2010-11-08 14:30:00
 :tags: talk, lug, ubuntu, gnulinux
+:headline: Reconto dei talk degli ultimi mesi
 
 Ultimamente sembra che questo blog abbia lampi di attività, intervallati
 da lunghissimi periodi di silenzio. Tante cose sono successe negli

@@ -3,6 +3,7 @@ La Puglia verso OpenStreetMap: 28 novembre a Conversano (BA)
 
 :date: 2009-11-24 17:07:47
 :tags: archaeology, gnulinux, openstreetmap, puglia, talk
+:headline: Un talk su OpenStreetMap a Conversano
 
 
 .. figure:: {filename}/images/locandinadh.jpg

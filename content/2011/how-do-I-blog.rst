@@ -4,6 +4,7 @@ How do I blog?
 :date: 2011-03-06 15:55:00
 :tags: socialnetwork, blog, ubuntu
 :modified: 2012-08-03
+:headline: Graphviz per esempi: i feed di questo blog
 
 Pippe
 -----

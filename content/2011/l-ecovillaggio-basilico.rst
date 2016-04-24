@@ -3,6 +3,7 @@ Autoproduzione 3: l'ecovillaggio Basilico
 
 :date: 2011-09-06 10:40:00
 :tags: autoproduzione
+:headline: Ho vissuto in un ecovillaggio per due settimane, il resoconto
 
 Considerati i ritmi di crescita della popolazione mondiale e la sempre
 crescente richiesta di risorse (energetiche, alimentari, minerarie,

@@ -3,6 +3,7 @@ The Book Meme
 
 :date: 2008-11-12 15:32:20
 :tags: ubuntu, archaeology
+:headline: Una citazione random da un libro
 
 *Lo scavo sperimentale, dove si sviluppano le metodologie scientifiche,
 serve da pietra di paragone per misurare l'informazione che si perde

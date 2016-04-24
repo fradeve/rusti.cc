@@ -1,10 +1,11 @@
-Graphviz example: backup strategies
-===================================
+Graphviz example: backups
+=========================
 
 :date: 2012-04-14 15:15:00
 :featured: yes
 :modified: 2013-05-19
 :tags: backup
+:headline: Graphviz per esempi: la struttura dei backup
 
 Non ho molto tempo per spiegare l'immagine. In soldoni, è uno schema
 riassuntivo di come sono organizzati i miei dati ed i miei backup,

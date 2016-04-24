@@ -3,6 +3,7 @@ GFOSSDay 2011: il mio regno per un talk!
 
 :date: 2011-11-08 20:23:00
 :tags: foggia, archaeology, gfoss, openstreetmap, ubuntu
+:headline: Resoconto degli interventi al GFOSSDay di Foggia
 
 Annunciazione, annunciazione: il 24 ed il 25 novembre sarò a Foggia,
 presso il Dipartimento di Scienze Umane, per il GFOSSDay 2011, la

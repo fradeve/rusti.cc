@@ -5,6 +5,7 @@ Lectio magistralis di Lessig in Parlamento: testo integrale
 :featured: yes
 :tags: ubuntu, internet, gnulinux, creativecommons
 :slug: testo-integrale-della-lectio-magistralis-di-lawrence-lessig-in-parlamento
+:headline: Una traduzione dell'intervento, senza commenti
 
 .. figure:: {filename}/images/lessig.jpg
 

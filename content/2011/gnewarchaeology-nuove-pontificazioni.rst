@@ -7,6 +7,7 @@ GNewArchaeology: pronte le pontificazioni
 :date: 2011-10-08 23:23:00
 :tags: oia, archaeology, gis, gfoss, ubuntu 
 :lastupdated: 2011-11-08
+:headline: Resoconto degli interventi al GNewArchaeology di Ferrara
 
 Con la presente, la lieta novella: le mie vacue pontificazioni su GFLOSS
 e Ubuntu in archeologia saranno ospitate dalla conferenza

@@ -3,6 +3,7 @@ La Regione Puglia e il Software Libero: esperienze collaterali
 
 :date: 2011-01-01 17:00:00
 :tags: openstreetmap, gnulinux
+:headline: Un resoconto degli ultimi avvenimenti in Puglia riguardo i progetti collaborativi
 
 Premessa
 --------

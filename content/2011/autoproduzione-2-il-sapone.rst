@@ -4,6 +4,7 @@ Autoproduzione 2: il sapone
 :date: 2011-06-18 12:20:00
 :featured: yes
 :tags: autoproduzione
+:headline: Autoprodurre il sapone
 
 L'industria chimica è entrata sempre più prepotentemente nelle nostre
 vite, sotto tutti i punti di vista. Se da un lato l'enorme offerta dei

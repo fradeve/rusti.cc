@@ -3,6 +3,7 @@ Perché i dati geografici possono essere liberi
 
 :date: 2011-07-12 12:05:00
 :featured: yes tags: openstreetmap
+:headline: Una risposta articolata a chi tenta di screditare qualita' e valori dei progetti collaborativi
 
 Internet è grande, e rispecchia fondamentalmente le persone che lo
 popolano. Ogni tanto può capitare di imbattersi in affermazioni

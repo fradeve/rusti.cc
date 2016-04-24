@@ -3,6 +3,7 @@ AMTAB Bari e diritto d'autore, chi semina raccoglie
 
 :date: 2011-12-02 21:00:00
 :tags: life, bari, openstreetmap
+:headline: Violazine delle condizioni di licenza di OpenStreetMap a Bari
 
 Se sei in giro per Bari e tieni un pochetto alla salute dei tuoi nervi,
 eviti senz'altro di andare a spasso nel centro con l'auto, e alla fin

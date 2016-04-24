@@ -3,6 +3,7 @@ OpenStreetMap Mapping Party Terlizzi 31-01-10: the day after
 
 :date: 2010-02-01 23:25:32
 :tags: ubuntu, terlizzi, openstreetmap, gnulinux
+:headline: Un altro mapping party per OpenStreetMap in Puglia
 
 .. figure:: {filename}/images/dsc02544resized.jpg
 

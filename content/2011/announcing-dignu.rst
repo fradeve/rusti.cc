@@ -4,6 +4,7 @@ Announcing diGNU
 :date: 2011-06-16 19:50:00
 :lang: en
 :tags: webgis, server, archaeology, oia
+:headline: A new open source software for archaeologists is coming
 
 As posted on archeos@lists.linux.it and open-archaeology@lists.okfn.org:
 

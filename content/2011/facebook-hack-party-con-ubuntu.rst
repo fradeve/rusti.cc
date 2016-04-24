@@ -4,6 +4,7 @@ Facebook Hack Party con Ubuntu
 :date: 2011-02-23 21:00:00
 :tags: ubuntu, talk
 :modified: 2011-02-11
+:headline: Un talk per spiegare come si viola la privacy degli utenti di Facebook
 
 .. figure:: {filename}/images/2011-03-03-210658.jpg
 

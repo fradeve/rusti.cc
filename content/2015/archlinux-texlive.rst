@@ -5,6 +5,7 @@ TexLive and ArchLinux
 :featured: no
 :lang: en
 :tags: archlinux, latex
+:headline: How to properly configure TeXLive on ArchLinux
 
 After some troubles with getting :span:`tlmgr|code` to work on ArchLinux, I decided to switch to a more "archist" way to handle my TeXLive installation: :span:`texlive-localmanager-git|code`. Few notes below.
 

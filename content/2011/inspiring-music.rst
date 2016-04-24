@@ -3,6 +3,7 @@ Inspiring music
 
 :date: 2011-07-30 19:09:38
 :tags: music
+:headline: Nothing better than music
 
 Here is a quick list of tracks which inspires me, every day and every
 time I listen them. The rules:

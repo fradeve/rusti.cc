@@ -3,6 +3,7 @@ ArcheoFOSS 2011, Foggia: diversi giorni dopo
 
 :date: 2010-06-01 18:42:41
 :tags: ubuntu, openmoko, gnulinux, gis, foggia, archaeology
+:headline: Resoconto dell'ArcheoFOSS 2011
 
 Ho ripescato dalla mia penna USB alcune annotazioni scritte in treno
 durante i giorni dell'ArcheoFOSS di Foggia 2010. Le pubblico, con un pò

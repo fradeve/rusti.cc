@@ -3,6 +3,7 @@ Ubuntu e OpenStreetMap insieme per VieDiFuga
 
 :date: 2009-11-18 23:15:25
 :tags: gnulinux, openstreetmap, ruvodipuglia, ubuntu
+:headline: Talk e mapping party a Ruvo di Puglia
 
 La comunità degli utenti GNU/Linux e dei mappper di
 `OpenStreetMap`_ (abbreviato OSM) in

@@ -3,6 +3,7 @@ Discorso sull'istruzione
 
 :date: 2011-06-06 23:55:00
 :tags: life
+:headline: La mia traduzione di un interessante discorso di Barack Obama
 
 Una persona a me cara che sta studiando in questo periodo, il mio esame
 di Fisica II che vedi lenti ma costanti progressi e chissà quali altri

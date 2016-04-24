@@ -4,6 +4,7 @@ Anonimato in IRC
 :date: 2012-04-05 11:00:00
 :featured: yes
 :tags: irc, privacy
+:headline: Come tutelare la propria privacy in IRC
 
 Nonostante IRC possa sembrare un posto "sicuro" dal punto di vista della
 privacy, sarebbe meglio non farsi troppe illusioni, è un servizio che

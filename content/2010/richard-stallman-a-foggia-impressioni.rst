@@ -3,6 +3,7 @@ Richard Stallman a Foggia: impressioni
 
 :date: 2010-06-01 18:52:49
 :tags: ubuntu, rms, gnulinux, foggia
+:headline: Reconto dell'intervento di Stallman a Foggia
 
 
 .. figure:: {filename}/images/stallman.JPG

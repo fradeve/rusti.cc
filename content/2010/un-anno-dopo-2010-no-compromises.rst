@@ -3,6 +3,7 @@ Un anno dopo: 2010, no compromises
 
 :date: 2010-12-22 00:10:00
 :tags: openstreetmap, gnulinux, life
+:headline: Resoconto delle attivita' dell'ultimo anno
 
 Un altro anno è passato e, retorica a parte, tante cose sono cambiate.
 Le idee sono maturate, le esperienze si sono accumulate e Francesco è

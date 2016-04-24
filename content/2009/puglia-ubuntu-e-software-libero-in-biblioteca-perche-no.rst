@@ -3,7 +3,7 @@ Puglia: Ubuntu e Software Libero in biblioteca... perchè no?
 
 :date: 2009-11-20 08:03:14
 :tags: calliope, gnulinux, terlizzi, ubuntu
-
+:headline: Open Source in biblioteca a Terlizzi
 
 
 .. figure:: {filename}/images/49064575.png

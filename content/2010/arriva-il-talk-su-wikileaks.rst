@@ -3,6 +3,7 @@ Arriva il talk su WikiLeaks!
 
 :date: 2010-12-20 13:30:00
 :tags: talk
+:headline: Un talk su WikiLeaks a Ruvo di Puglia
 
 Ricevo, partecipo, sottoscrivo e ripubblico: il 29 dicembre 2010 alle
 18.00, presso la sede dell'Associazione VieDiFuga (via Cattedrale 103,

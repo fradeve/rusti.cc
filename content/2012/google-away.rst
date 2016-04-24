@@ -4,6 +4,7 @@ Seeking for freedom
 :date: 2012-03-31 10:30:00
 :tags: privacy, server
 :modified: 2012-12-11
+:headline: Una lista di alternative libere a popolari software e servizi web
 
 In questa pagina raccolgo alcune note sul mio progetto per il biennio
 2011-2012: eliminare quasi totalmente la mia dipendenza da servizi web

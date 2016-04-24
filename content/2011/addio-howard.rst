@@ -3,6 +3,7 @@ Addio Howard!
 
 :date: 2011-11-11 23:23:00
 :tags: ubuntu
+:headline: Un computer in meno, ecco il diff
 
 I tempi cambiano, le esigenze anche.
 
