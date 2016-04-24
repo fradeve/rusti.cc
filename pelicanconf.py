@@ -2,18 +2,18 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'fradeve'
-TAGLINE = 'WebGIS dev, free software enthusiast, folk music fellow and proud monkey descendant.'
+AUTHOR = 'Francesco de Virgilio'
+TAGLINE = 'Python and GIS developer, free software enthusiast, folk music fellow and proud monkey descendant.'
 SITENAME = 'A rustic guy'
 SITEURL = 'http://rusti.cc'
 
 TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en'
+LOCALE = 'en_GB.utf8'
 
-THEME = 'tufte-theme'
-CSS_FILE = 'tufte.css'
-TYPOGRIFY = True
+THEME = 'pelicanyan'
+CSS_FILE = 'wide.css'
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
@@ -36,17 +36,15 @@ DISQUS_SITENAME = 'fradeveorig'
 DISQUS_PUBLICKEY = '4VY3RiHzHB4j6Z0jjyUpvKbVgM6homcEupgvIdIdrjNTaMtGh8Quz2w6Myy6VW4E'
 
 # Links
-SOCIAL = (
-            ('posts', SITEURL + '/archives.html'),
-            ('tags', SITEURL + '/tags.html'),
-            ('feat', SITEURL + '/featured.html'),
+LINKS = (
+            ('code', 'https://github.com/fradeve'),
             ('me', SITEURL + '/pages/social.html'),
-            ('gh', 'https://github.com/fradeve/rusti.cc')
+            ('tags', SITEURL + '/tags.html'),
+            ('archives', 'https://github.com/fradeve/rusti.cc/archive'),
          )
 
 DEFAULT_PAGINATION = False
-
-DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'featured')
+DIRECT_TEMPLATES = ('tags')
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

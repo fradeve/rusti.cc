@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block head %}
+  {{ super() }}
+  {% for keyword in article.keywords %}
+    <meta name="keywords" contents="{{keyword}}" />
+  {% endfor %}
+
+  {% for description in article.description %}
+    <meta name="description" contents="{{description}}" />
+  {% endfor %}
+
+  {% for tag in article.tags %}
+    <meta name="tags" contents="{{tag}}" />
+  {% endfor %}
+
+{% endblock %}
+
+{% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+    <div class="posts">
+    <div class="post">
+        <h1 class="post-title">
+          {{ article.title }}
+        </h1>
+        {% if article.headline %}
+        <h2 class="post-title">{{ article.headline }}</h2>
+        {% endif %}
+        <span class="post-date">{{ article.locale_date | capitalize }}</span>
+
+        {{ article.content }}
+    </div>
+    {% if DISQUS_SITENAME %}
+      <div class="comments">
+        <center><p><a id="commentbutton" href="#" onclick="javascript:toggleComments();return false;">Comments</a></p></center>
+        <div id="disqus_thread" style="display: none"></div>
+      </div>
+      {% endif %}
+    </div>
+{% endblock %}
