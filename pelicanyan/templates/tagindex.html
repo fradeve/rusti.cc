@@ -4,14 +4,13 @@
 
 {% block content %}
     {% for article in articles_page.object_list %}
-        <header class="clearfix">
-            <h1>
-                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>{% if article.featured %}*{% endif %}
-                <abbr class="published" title="{{ article.date.isoformat() }}">
-                    <small>{{ article.date | strftime('%d %b %Y') }}</small>
-                </abbr>
+        <div class="post">
+            <h1 class="post-title" style="display: inline">
+                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
             </h1>
-        </header>
+            <span class="post-date" style="display: inline">{{ article.locale_date }}</span>
+            <span class="headline" style="display: block">{{ article.headline }}</span>
+        </div>
     {% endfor %}
 
     {% for page in PAGES %}
@@ -19,6 +18,6 @@
             <h1>
                 <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
             </h1>
-            </header> -->
+    </header> -->
     {% endfor %}
 {% endblock content %}

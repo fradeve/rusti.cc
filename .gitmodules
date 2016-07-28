@@ -1,3 +1,6 @@
 [submodule "span"]
 	path = span
 	url = git@github.com:vianney-g/span.git
+[submodule "plugins/span"]
+	path = plugins/span
+	url = git@github.com:vianney-g/span.git

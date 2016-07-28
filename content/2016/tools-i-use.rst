@@ -1,7 +1,7 @@
 Tools I use
 ===========
 
-:date: 2016-06-31 16:00:00
+:date: 2016-06-30 16:00:00
 :featured: no
 :lang: en
 :tags: tools
@@ -54,7 +54,7 @@ Text editing
 Shell
 -----
 
-* konsole
+* st
 * zsh
 * tmux
 * tmuxp
@@ -96,7 +96,7 @@ Instant messaging
 Todo
 ----
 
-* Taskwarrior
+* TaskWarrior
 
 Blog
 ----
