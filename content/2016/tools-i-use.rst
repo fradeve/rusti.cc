@@ -5,7 +5,7 @@ Tools I use
 :featured: no
 :lang: en
 :tags: tools
-:headline: Tools I use
+:headline: A minimalistic toolkit for minimalistic developer
 
 In any human activity more complex than harvesting fruit from bushes, a proper 
 tool is needed.
@@ -54,7 +54,7 @@ Text editing
 Shell
 -----
 
-* st
+* `st`_
 * zsh
 * tmux
 * tmuxp
@@ -63,7 +63,7 @@ Shell
 Bookmarks
 ---------
 
-* jotmuch
+* `jotmuch`_
 
 Email
 -----
@@ -71,9 +71,9 @@ Email
 * mutt
 * offlineimap
 * notmuch
-* pycarddav
+* `pycarddav`_
 * spamassassin
-* isbg
+* `isbg`_
 
 Privacy
 -------
@@ -85,6 +85,7 @@ Music
 -----
 
 * mpd
+* mpdscribble
 * ncmpcpp
 * beets
 
@@ -110,3 +111,15 @@ Sync and backup
 * rdiffbackup
 * btsync
 
+X11
+---
+
+* `sxiv`_
+* `zathura`_
+
+.. _st: http://st.suckless.org/
+.. _isbg: https://github.com/isbg/isbg
+.. _sxiv: https://github.com/muennich/sxiv
+.. _zathura: https://pwmt.org/projects/zathura/
+.. _pycarddav: https://github.com/geier/pycarddav
+.. _jotmuch: https://github.com/fradeve/jotmuch

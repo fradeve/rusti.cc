@@ -27,7 +27,7 @@ def regenerate():
     local('pelican -r -s pelicanconf.py')
 
 def serve():
-    local('cd {deploy_path} && python -m http.server'.format(**env))
+    local('cd {deploy_path} && python -m SimpleHTTPServer 8888'.format(**env))
 
 def reserve():
     build()
