@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = 'Francesco de Virgilio'
 TAGLINE = 'Python and GIS developer, free software enthusiast, folk music fellow and proud monkey descendant.'
@@ -29,7 +30,10 @@ PATH = 'content'
 STATIC_PATHS = ['images', 'static']
 
 PLUGINS = ['pelican_youtube', 'span', 'series']
-PLUGIN_PATHS = ["/home/fradeve/git/rusti.cc/plugins"]
+PLUGIN_PATHS = [
+    os.environ['PELICAN_PLUGIN_PATH'] or
+    "/home/fradeve/git/rusti.cc/plugins"
+]
 
 # Comments
 DISQUS_SITENAME = 'fradeveorig'
