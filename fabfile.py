@@ -52,3 +52,7 @@ def publish():
         local_dir=DEPLOY_PATH.rstrip('/') + '/',
         delete=True
     )
+
+def dbuild():
+    local('docker build -t rusti.cc .')
+    local('docker run -p 80:80 rusti.cc')
