@@ -37,11 +37,12 @@ Coding
 * Fabric
 * Sphinx
 
-* GIT
 * Docker
+* Git
+* `Hub`_
+* `cdiff`_
+* vimdiff
 * Gogs
-* Hub
-* cdiff
 
 Text editing
 ------------
@@ -74,6 +75,13 @@ Email
 * `pycarddav`_
 * spamassassin
 * `isbg`_
+* links
+* mpack
+* goobook
+* urlview	
+* antiword
+* shred
+* a2ps
 
 Privacy
 -------
@@ -117,9 +125,17 @@ X11
 * `sxiv`_
 * `zathura`_
 
+Tools I don't use
+-----------------
+
+* any Google service, except Gmail (mailing lists only) and Google Calendar
+
+
 .. _st: http://st.suckless.org/
 .. _isbg: https://github.com/isbg/isbg
 .. _sxiv: https://github.com/muennich/sxiv
 .. _zathura: https://pwmt.org/projects/zathura/
 .. _pycarddav: https://github.com/geier/pycarddav
 .. _jotmuch: https://github.com/fradeve/jotmuch
+.. _Hub: https://github.com/github/huB
+.. _cdiff: https://pypi.python.org/pypi/cdiff

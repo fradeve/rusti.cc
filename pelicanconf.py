@@ -13,7 +13,7 @@ TIMEZONE = 'Europe/London'
 DEFAULT_LANG = 'en'
 LOCALE = 'en_GB.utf8'
 
-THEME = 'pelicanyan'
+THEME = 'theme'
 CSS_FILE = 'wide.css'
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
@@ -30,10 +30,13 @@ PATH = 'content'
 STATIC_PATHS = ['images', 'static']
 
 PLUGINS = ['pelican_youtube', 'span', 'series']
-PLUGIN_PATHS = [
-    os.environ['PELICAN_PLUGIN_PATH'] or
-    "/home/fradeve/git/rusti.cc/plugins"
-]
+
+try:
+    PLUGIN_PATHS = [
+        os.environ['PELICAN_PLUGIN_PATH']
+    ]
+except KeyError:
+    PLUGIN_PATHS = ["/home/fradeve/git/rusti.cc/plugins"]
 
 # Comments
 DISQUS_SITENAME = 'fradeveorig'
