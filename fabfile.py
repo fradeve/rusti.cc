@@ -54,5 +54,5 @@ def publish():
     )
 
 def dbuild():
-    local('docker build -t rusti.cc .')
-    local('docker run -p 80:80 rusti.cc')
+    local('docker build -t fradeve/rusti.cc:latest .')
+    local('docker run -p 80:80 fradeve/rusti.cc')
