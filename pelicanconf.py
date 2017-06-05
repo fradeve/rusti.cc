@@ -4,7 +4,10 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = 'Francesco de Virgilio'
-TAGLINE = 'Python and GIS developer, free software enthusiast, folk music fellow and proud monkey descendant.'
+TAGLINE = (
+    'Python and GIS developer, free software enthusiast, folk music fellow and '
+    'proud monkey descendant.'
+)
 SITENAME = 'A rustic guy'
 SITEURL = 'http://rusti.cc'
 
@@ -44,11 +47,11 @@ DISQUS_PUBLICKEY = '4VY3RiHzHB4j6Z0jjyUpvKbVgM6homcEupgvIdIdrjNTaMtGh8Quz2w6Myy6
 
 # Links
 LINKS = (
-            ('code', 'https://github.com/fradeve'),
-            ('me', SITEURL + '/pages/social.html'),
-            ('tags', SITEURL + '/tags.html'),
-            ('archives', 'https://github.com/fradeve/rusti.cc/tree/master/archive'),
-         )
+    ('archives', 'https://github.com/fradeve/rusti.cc/tree/master/archive'),
+    ('tags', SITEURL + '/tags.html'),
+    ('code', 'https://github.com/fradeve'),
+    ('social', SITEURL + '/pages/social.html'),
+)
 
 DEFAULT_PAGINATION = False
 DIRECT_TEMPLATES = ('tags')

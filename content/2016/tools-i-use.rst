@@ -27,6 +27,8 @@ Window manager
 
 * i3
 * dunst
+* Electro7's `custom`_ lemonbar
+* rofi
 
 Coding
 ------
@@ -36,6 +38,7 @@ Coding
 * Tox
 * Fabric
 * Sphinx
+* Snakeviz
 
 * Docker
 * Git
@@ -64,7 +67,7 @@ Shell
 Bookmarks
 ---------
 
-* `jotmuch`_
+* `buku`_
 
 Email
 -----
@@ -82,12 +85,17 @@ Email
 * antiword
 * shred
 * a2ps
+* newsbeuter
+* elinks
 
 Privacy
 -------
 
 * pass
+* rofi-pass
 * gpg
+* tomb
+* openvpn
 
 Music
 -----
@@ -100,12 +108,18 @@ Music
 Instant messaging
 -----------------
 
-* weechat (with few plugins)
+* whatsapp
 
 Todo
 ----
 
 * TaskWarrior
+
+Time tracking
+-------------
+
+* spt
+* TimeWarrior
 
 Blog
 ----
@@ -136,6 +150,7 @@ Tools I don't use
 .. _sxiv: https://github.com/muennich/sxiv
 .. _zathura: https://pwmt.org/projects/zathura/
 .. _pycarddav: https://github.com/geier/pycarddav
-.. _jotmuch: https://github.com/fradeve/jotmuch
+.. _buku: https://github.com/jarun/Buku
 .. _Hub: https://github.com/github/huB
 .. _cdiff: https://pypi.python.org/pypi/cdiff
+.. _custom: https://github.com/electro7/dotfiles/tree/master/.i3/lemonbar
